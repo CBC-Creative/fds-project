@@ -21,5 +21,5 @@ Contributors names
 
 ## Version History
 
-- 0.1 | 11/14/2022
-  - Initial Commit and Setup
+- 0.1
+  - 11/14/2022 - Initial Commit and Setup
