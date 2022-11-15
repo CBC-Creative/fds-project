@@ -1,0 +1,56 @@
+/* Root Document Styles */
+
+:root {
+  --fds-font-family: 'Raleway', sans-serif;
+  --fds-black: #000000;
+  --fds-grey-600: #707070;
+  --fds-grey-400: #e2e2e2;
+  --fds-grey-200: #f7f7f7;
+  --fds-white: #ffffff;
+  --fds-yellow: #fdb913;
+  --fds-fs-900: 2.5rem;
+  --fds-fs-700: 1.375rem;
+  --fds-fs-500: 1.1875rem;
+  --fds-fs-300: 0.8125rem;
+  --fds-fs-200: 0.6875rem;
+  --fds-fs-100: 0.5625rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fds-font-family);
+  font-size: 1rem;
+}
+
+/* Helper Classes */
+
+.zindex-900 {
+  z-index: 900;
+}
+
+/* Homepage Navigation Styles */
+
+.initial-scrolled {
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+}
+.initial-scrolled:hover {
+  background-color: #333;
+}
+/* .initial-scrolled:hover .navbar-brand svg,
+.scrolled-up .navbar-brand svg {
+  filter: brightness(0) saturate(100%);
+} */
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+}
