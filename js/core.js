@@ -1,3 +1,4 @@
+// Custom Navication JS
 document.addEventListener('DOMContentLoaded', function () {
   el_autohide = document.querySelector('.autohide');
 
@@ -21,5 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // window.addEventListener
   }
   // if
-});
-// DOMContentLoaded  end
+}); // DOMContentLoaded  end
+
+// Custom Navication JS end
