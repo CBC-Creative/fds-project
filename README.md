@@ -15,6 +15,8 @@ This is the repository to hold all HTML/CSS/JS files for the new Fellowes Digita
 Contributors names
 
 - Ronald Fuquay
+- Kinjal Patil
+- Royson Rajan
 - Kevin Couch
 - Kathir Kamatchi
 - Navaid Faiz
