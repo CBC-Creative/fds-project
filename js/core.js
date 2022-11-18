@@ -25,8 +25,3 @@ document.addEventListener('DOMContentLoaded', function () {
 }); // DOMContentLoaded  end
 
 // Custom Navication JS end
-
-/* data-src background image start */
-$( ".data-src" ).each(function() {var attr = $(this).attr('data-image-src');if (typeof attr !== typeof undefined && attr !== false) {$(this).css('background-image', 'url('+attr+')');}var mediaQuery = function(v, ov) {return "(-webkit-min-device-pixel-ratio: "+v+")," +"(min--moz-device-pixel-ratio: "+v+")," +"(-o-min-device-pixel-ratio: "+ov+"),"  +"(min-resolution: "+v+"dppx)" };
-        });
-/* data-src background image end */

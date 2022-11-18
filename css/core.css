@@ -85,23 +85,14 @@ h3 {
 }
 /* Homepage Navigation Styles end */
 /* Homepage Content Styles start */
-.bg-cover{background-size: cover;}
-.data-src{background-repeat: no-repeat;}
-.bg-center{background-position: center center;}
-.bg-top-center{background-position: top center;}
-.homepage-content-banners{min-height: 400px;color: var(--fds-white); padding: 2rem 0rem;margin-bottom: 20px;}
-.homepage-content-banners:first-child{margin-top: 20px;}
-.homepage-content-banners h2{font-size: 32px; line-height: 39px; font-weight: bold;  margin-bottom: 30px;}
-.home-page-banner-sub-title1{font-size: 19px; line-height: 30px; margin-bottom: 20px;}
+.homepage-content-banners{color: var(--fds-white);}
+.homepage-content-banners h2{font-size: 32px; line-height: 39px;}
+.home-page-banner-sub-title1{font-size: 19px; line-height: 30px;}
 .homepage-content-banners h3{font-size: 16px; line-height: 28px;}
+.min-vh-50{min-height: 50vh;}
 @media (min-width:768px){
-  .homepage-content-banners{min-height: 450px; margin-bottom: 50px;}
-  .homepage-content-banners:first-child{margin-top: 50px;}
-  .homepage-content-banners h2{font-size: 40px; line-height: 47px;  margin-bottom: 40px;}
+  .homepage-content-banners h2{font-size: 40px; line-height: 47px;}
   .homepage-content-banners h3{font-size: 19px; line-height: 44px;}
-  .home-page-banner-sub-title1{font-size: 22px; line-height: 34px; margin-bottom: 30px;}
-}
-@media (min-width:992px){
-  .homepage-content-banners{min-height: 600px;}
+  .home-page-banner-sub-title1{font-size: 22px; line-height: 34px;}
 }
 /* Homepage Content Styles end */
