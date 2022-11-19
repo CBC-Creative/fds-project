@@ -187,7 +187,7 @@ a.hero-link {
   font-weight: bold;
 }
 
-@media (min-width: 9928px) {
+@media (min-width: 992px) {
   .footer-menu-heading {
     pointer-events: none;
     touch-action: none;
