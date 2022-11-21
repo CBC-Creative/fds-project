@@ -235,3 +235,18 @@ a.hero-link {
   display: inline-block;
   margin-left: 5px;
 }
+
+/* megacat-ws page css start */
+.category-sub-title1 {
+  font-size: var(--fds-fs-500);
+}
+
+@media (min-width: 768px) {
+  .category-sub-title1 {
+    font-size: var(--fds-fs-700);
+  }
+}
+.playimg{position: absolute;top: 50%;width: 80px;height: 80px;margin-top: -40px;left: 50%;margin-left: -40px;}
+
+
+/* megacat-ws page css end */
