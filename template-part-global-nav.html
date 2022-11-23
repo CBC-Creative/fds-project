@@ -29,7 +29,7 @@
     <header role="banner">
       <!-- Navbar -->
       <nav
-        class="navbar navbar-expand-xl fixed-top navbar-light bg-light shadow-0"
+        class="navbar navbar-expand-xl fixed-top navbar-light bg-white shadow-0"
         id="main-navbar"
         role="navigation"
       >
@@ -70,40 +70,362 @@
           </a>
 
           <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+          <div class="d-flex">
+            <a class="mx-2 d-block d-xl-none text-black" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
 
           <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left links -->
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Modular Walls</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Furniture</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Air Quality Management</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Workspace</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Business Machines</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our Company</a>
-              </li>
+              <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+        Modular Walls <i class="fas fa-angle-right d-xl-none d-block"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Modular Walls</div>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Products</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Titan</a></li>
+              <li><a class="sub-dropdown-item" href="#">Volo</a></li>
+              <li><a class="sub-dropdown-item" href="#">Trendwall</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Process</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Inspiration</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Resources</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+        Furniture <i class="fas fa-angle-right d-xl-none d-block"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Furniture</div>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Workstations</a>
+            <ul class="sub-dropdown-menu">
+                            
+              <li><a class="sub-dropdown-item" href="#">Panel Systems</a></li>
+              <li><a class="sub-dropdown-item" href="#">Desking</a></li>
+              <li><a class="sub-dropdown-item" href="#">Benching</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Seating</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Elea</a></li>
+            </ul>
+          </li>         
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Tables, Privacy & Modesty Screens</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Height Adjustable Tables</a></li>
+              <li><a class="sub-dropdown-item" href="#">Training Tables</a></li>
+              <li><a class="sub-dropdown-item" href="#">Conference Room Tables</a></li>
+              <li><a class="sub-dropdown-item" href="#">Collaborative and Side Tables</a></li>
+              <li><a class="sub-dropdown-item" href="#">Privacy & Modesty Screens</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Storage</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Lateral & Pedestals</a></li>
+              <li><a class="sub-dropdown-item" href="#">Bookcases & Credenzas</a></li>
+              <li><a class="sub-dropdown-item" href="#">Lockers &Towers</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Collections</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Intrinsic</a></li>
+              <li><a class="sub-dropdown-item" href="#">Trig</a></li>
+              <li><a class="sub-dropdown-item" href="#">Capture</a></li>
+              <li><a class="sub-dropdown-item" href="#">Choices</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Process</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Inspiriation</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Resources</a>
+          </li>
+        </ul>
+      </li> 
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+        Air Quality Management <i class="fas fa-angle-right d-xl-none d-block"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Air Quality Management</div>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Array Networked Air Purifiers</a>
+            <ul class="sub-dropdown-menu">
+                            
+              <li><a class="sub-dropdown-item" href="#">Ceiling Mounted</a></li>
+              <li><a class="sub-dropdown-item" href="#">Recessed</a></li>
+              <li><a class="sub-dropdown-item" href="#">Wall Mounted</a></li>
+              <li><a class="sub-dropdown-item" href="#">Floor Stand</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Array Monitoring Systems		</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Display</a></li>
+              <li><a class="sub-dropdown-item" href="#">Sensors</a></li>
+              <li><a class="sub-dropdown-item" href="#">Software</a></li>
+            </ul>
+          </li>         
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">AeraMax Air Purifiers</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
+              <li><a class="sub-dropdown-item" href="#">Smal Office</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Filters & Accessories</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Networked/Commercial</a></li>
+              <li><a class="sub-dropdown-item" href="#">Smal Office</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item" href="#">Services</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Industries</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Resources</a>
+          </li>
+        </ul>
+      </li> 
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+        Workspace <i class="fas fa-angle-right d-xl-none d-block"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Workspace</div>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Monitor Arms</a>
+            <ul class="sub-dropdown-menu">
+                            
+              <li><a class="sub-dropdown-item" href="#">Rising</a></li>
+              <li><a class="sub-dropdown-item" href="#">Evolve</a></li>
+              <li><a class="sub-dropdown-item" href="#">Edge</a></li>
+              <li><a class="sub-dropdown-item" href="#">Sena</a></li>
+              <li><a class="sub-dropdown-item" href="#">Eppa</a></li>
+              <li><a class="sub-dropdown-item" href="#">Kata</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Power Solutions</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Railway</a></li>
+              <li><a class="sub-dropdown-item" href="#">Flexcharge Power Hub</a></li>
+              <li><a class="sub-dropdown-item" href="#">Flexcharge Desktop Power</a></li>
+            </ul>
+          </li>         
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Lighting</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Amble</a></li>
+              <li><a class="sub-dropdown-item" href="#">Lustre</a></li>
+              <li><a class="sub-dropdown-item" href="#">Lily</a></li>
+              <li><a class="sub-dropdown-item" href="#">Lucera</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Ergonomic Accessories</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Sit to Stand</a></li>
+              <li><a class="sub-dropdown-item" href="#">Laptop Holders & Risers	</a></li>
+              <li><a class="sub-dropdown-item" href="#">Foot Support</a></li>
+              <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
+              <li><a class="sub-dropdown-item" href="#">Anti-fatigue Mats</a></li>
+              <li><a class="sub-dropdown-item" href="#">CPU Holders</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Work From Home</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Monitor Arms</a></li>
+              <li><a class="sub-dropdown-item" href="#">Monitor & Laptop Stands</a></li>
+              <li><a class="sub-dropdown-item" href="#">Foot & Back Supports</a></li>
+              <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
+              <li><a class="sub-dropdown-item" href="#">Wrist Supports</a></li>
+              <li><a class="sub-dropdown-item" href="#">Document Holders</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Process</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Inspiration</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Resources</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+        Business Machines <i class="fas fa-angle-right d-xl-none d-block"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Business Machines</div>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Paper Shredders</a>
+            <ul class="sub-dropdown-menu">
+                            
+              <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
+              <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+              <li><a class="sub-dropdown-item" href="#">Personal</a></li>
+              <li><a class="sub-dropdown-item" href="#">Government</a></li>
+              <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Laminating</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Office</a></li>
+              <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+              <li><a class="sub-dropdown-item" href="#">Personal</a></li>
+              <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+            </ul>
+          </li>         
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Binding</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Office</a></li>
+              <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+              <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Stapling</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">Staplers</a></li>
+              <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+            </ul>
+          </li> 
+          <li>
+            <a class="dropdown-item sub-dropdown" href="#">Collections</a>
+            <ul class="sub-dropdown-menu">                            
+              <li><a class="sub-dropdown-item" href="#">LX Series</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Resources</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+        Our Company <i class="fas fa-angle-right d-xl-none d-block"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Our Company</div>
+          <li>
+            <a class="dropdown-item" href="#">Worklife</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Inspiration</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Innovations</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Why Fellowes</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Locations</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Sustainability</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">GIVE</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Careers</a>
+          </li>
+        </ul>
+      </li>
             </ul>
             <!-- Left links -->
             <!-- Right elements -->
@@ -117,7 +439,7 @@
                 <i class="far fa-user"></i>
               </a>
               <!-- Icon -->
-              <a class="text-reset mx-2" href="#">
+              <a class="text-reset mx-2 d-none d-xl-block" href="#">
                 <i class="fas fa-search"></i>
               </a>
               <!-- Flag -->
@@ -602,7 +924,7 @@
                 </svg>
               </a>
               <!-- Contract Partners Link -->
-              <a class="text-reset mx-2 menu-link" href="#">Contract Partners</a>
+              <a class="text-reset mx-2 menu-link d-none d-xl-block" href="#">Contract Partners</a>
             </div>
             <!-- Right elements -->
           </div>
