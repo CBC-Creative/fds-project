@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var closemobilenav = document.getElementsByClassName('navbar-collapse');
   var closemobilenavtoggle = document.getElementsByClassName('navbar-toggler');
   var opennavbar = document.getElementsByClassName('navbar');
+
   for (let s = 0; s < searchtab.length; s++) {
     searchtab[s].addEventListener('click', function () {
       searchtab[s].classList.toggle('searchshow');
