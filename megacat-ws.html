@@ -19,10 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- MDB -->
+    <!-- MDB ESSENTIAL -->
     <link rel="stylesheet" href="css/mdb-css/mdb.min.css" />
+    <!-- MDB PLUGINS -->
+    <link rel="stylesheet" href="css/mdb-css/plugins/css/all.min.css" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="css/core.css" />
+    <!-- Category Page Styles -->
+    <link rel="stylesheet" href="css/categorypage.css" />
   </head>
   <body>
     <!-- Workspace Category Page Content Begins -->
@@ -35,41 +39,99 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1 class="mb-0 fw-bold">SUPPORTING YOUR MOST PRODUCTIVE WORKLIFE</h1>              
+              <h1 class="mb-0 fw-bold">SUPPORTING YOUR MOST PRODUCTIVE WORKLIFE</h1>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="pt-4 pb-4 min-vh-50 text-black pt-md-5 pb-md-5 mb-md-6 mb-3"  aria-label="section">
+      <section
+        class="pt-4 pb-4 min-vh-50 text-black pt-md-5 pb-md-5 mb-md-6 mb-3"
+        aria-label="section"
+      >
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="mb-md-5 mb-4 fw-bold text-center">Product Categories</h2>              
+              <h2 class="mb-md-5 mb-4 fw-bold text-center">Product Categories</h2>
             </div>
             <div class="col-12 text-lg-start text-center">
-              <div class="row">
-                <div class="col-lg-3 col-sm-6 col-12 mb-lg-0 mb-3">
-                  <div class="mb-md-4 mb-2"><img src="img/category-imgs/FPO Product Image_320x320.jpg" alt="Monitor Arms" class="img-fluid" /></div>
-                  <h5 class="mb-0"><strong>Monitor Arms</strong></h5>
+              <div class="multi-carousel" data-mdb-items="4">
+                <div class="multi-carousel-inner">
+                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
+                    <a href="#">
+                      <div class="mb-md-4 mb-2">
+                        <img
+                          src="img/category-imgs/FPO Product Image_320x320.jpg"
+                          data-mdb-img="img/category-imgs/FPO Product Image_320x320.jpg"
+                          alt="Monitor Arms"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h5 class="mb-0 text-black"><strong>Monitor Arms</strong></h5>
+                    </a>
+                  </div>
+                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
+                    <a href="#">
+                      <div class="mb-md-4 mb-2">
+                        <img
+                          src="img/category-imgs/FPO Product Image_320x320.jpg"
+                          data-mdb-img="img/category-imgs/FPO Product Image_320x320.jpg"
+                          alt="Power Solutions"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h5 class="mb-0 text-black"><strong>Power Solutions</strong></h5>
+                    </a>
+                  </div>
+                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
+                    <a href="#">
+                      <div class="mb-md-4 mb-2">
+                        <img
+                          src="img/category-imgs/FPO Product Image_320x320.jpg"
+                          data-mdb-img="img/category-imgs/FPO Product Image_320x320.jpg"
+                          alt="Lighting"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h5 class="mb-0 text-black"><strong>Lighting</strong></h5>
+                    </a>
+                  </div>
+                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
+                    <a href="#">
+                      <div class="mb-md-4 mb-2">
+                        <img
+                          src="img/category-imgs/FPO Product Image_320x320.jpg"
+                          data-mdb-img="img/category-imgs/FPO Product Image_320x320.jpg"
+                          alt="Ergonomic Accessories"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h5 class="mb-0 text-black"><strong>Ergonomic Accessories</strong></h5>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-12 mb-lg-0 mb-3">
-                  <div class="mb-md-4 mb-2"><img src="img/category-imgs/FPO Product Image_320x320.jpg" alt="Power Solutions" class="img-fluid" /></div>
-                  <h5 class="mb-0"><strong>Power Solutions</strong></h5>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 mb-sm-0 mb-3">
-                  <div class="mb-md-4 mb-2"><img src="img/category-imgs/FPO Product Image_320x320.jpg" alt="Lighting" class="img-fluid" /></div>
-                  <h5 class="mb-0"><strong>Lighting</strong></h5>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 mb-0">
-                  <div class="mb-md-4 mb-2"><img src="img/category-imgs/FPO Product Image_320x320.jpg" alt="Ergonomic Accessories" class="img-fluid" /></div>
-                  <h5 class="mb-0"><strong>Ergonomic Accessories</strong></h5>
-                </div>
+                <button
+                  class="carousel-control carousel-control-prev ms-md-n5"
+                  type="button"
+                  tabindex="0"
+                  data-mdb-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button
+                  class="carousel-control carousel-control-next me-md-n5"
+                  type="button"
+                  tabindex="0"
+                  data-mdb-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section
         class="homepage-content-banners d-flex align-items-center text-center text-white bg-image mb-md-6 mb-3 pt-4 pb-4 min-vh-50"
         aria-label="section"
@@ -166,15 +228,18 @@
         </div>
       </section>
       <section
-        class="homepage-content-banners text-center text-white overflow-hidden"
-        aria-label="section"        
+        class="homepage-content-banners text-center text-white overflow-hidden mb-md-6 mb-5"
+        aria-label="section"
       >
         <div class="container-fluid px-0">
           <div class="row">
             <div class="col-12 col-md-4 mb-md-0 mb-4">
-              <div class="bg-image pt-4 pb-4 min-vh-50 d-flex align-items-center justify-content-center flex-column" style="background-image: url('img/category-imgs/FPO Box 3F_380x500.jpg')">
+              <div
+                class="bg-image pt-4 pb-4 min-vh-50 d-flex align-items-center justify-content-center flex-column"
+                style="background-image: url('img/category-imgs/FPO Box 3F_380x500.jpg')"
+              >
                 <h2 class="mb-md-5 mb-4 fw-bold">Design Process</h2>
-                <div class="category-sub-title1 mb-md-4 mb-3 lh-base">
+                <div class="banner-sub-title1 mb-md-4 mb-3 lh-base">
                   Tools and Quoting from concept to completion
                 </div>
                 <h3 class="mb-0 lh-base">
@@ -183,12 +248,15 @@
                     <i class="custom-chevron"></i>
                   </a>
                 </h3>
-              </div>              
+              </div>
             </div>
             <div class="col-12 col-md-4 mb-md-0 mb-4">
-              <div class="bg-image pt-4 pb-4 min-vh-50 d-flex align-items-center justify-content-center flex-column" style="background-image: url('img/category-imgs/FPO Box 3R_435x600.jpg')">
+              <div
+                class="bg-image pt-4 pb-4 min-vh-50 d-flex align-items-center justify-content-center flex-column"
+                style="background-image: url('img/category-imgs/FPO Box 3R_435x600.jpg')"
+              >
                 <h2 class="mb-md-5 mb-4 fw-bold">Sustainability</h2>
-                <div class="category-sub-title1 mb-md-4 mb-3 lh-base">
+                <div class="banner-sub-title1 mb-md-4 mb-3 lh-base">
                   Ut enim ad minima veniam, quis nostrum
                 </div>
                 <h3 class="mb-0 lh-base">
@@ -197,12 +265,15 @@
                     <i class="custom-chevron"></i>
                   </a>
                 </h3>
-              </div>              
+              </div>
             </div>
             <div class="col-12 col-md-4 mb-md-0 mb-0">
-              <div class="bg-image pt-4 pb-4 min-vh-50 d-flex align-items-center justify-content-center flex-column" style="background-image: url('img/category-imgs/FPO Box2R_668x600.jpg')">
+              <div
+                class="bg-image pt-4 pb-4 min-vh-50 d-flex align-items-center justify-content-center flex-column"
+                style="background-image: url('img/category-imgs/FPO Box2R_668x600.jpg')"
+              >
                 <h2 class="mb-md-5 mb-4 fw-bold">Fellowes Difference</h2>
-                <div class="category-sub-title1 mb-md-4 mb-3 lh-base">
+                <div class="banner-sub-title1 mb-md-4 mb-3 lh-base">
                   Ut enim ad minima veniam, quis nostrum
                 </div>
                 <h3 class="mb-0 lh-base">
@@ -211,15 +282,17 @@
                     <i class="custom-chevron"></i>
                   </a>
                 </h3>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <!-- Workspace Category Page Content Ends -->
-    <!-- MDB -->
+    <!-- MDB ESSENTIAL -->
     <script type="text/javascript" src="js/mdb-js/mdb.min.js"></script>
+    <!-- MDB PLUGINS -->
+    <script type="text/javascript" src="js/mdb-js/plugins/js/all.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script>
   </body>

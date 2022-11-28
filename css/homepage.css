@@ -4,13 +4,4 @@
 
 /* Homepage Content Styles start */
 
-.home-page-banner-sub-title1 {
-  font-size: var(--fds-fs-500);
-}
-
-@media (min-width: 768px) {
-  .home-page-banner-sub-title1 {
-    font-size: var(--fds-fs-700);
-  }
-}
 /* Homepage Content Styles end */

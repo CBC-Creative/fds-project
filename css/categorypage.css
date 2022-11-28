@@ -1,0 +1,50 @@
+/* Multi-Carousel CSS START */
+.multi-carousel-item h5 {
+  font-size: var(--fds-fs-500);
+}
+
+.carousel-control {
+  color: var(--fds-grey-400);
+  z-index: 20;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  color: var(--fds-grey-600);
+}
+
+.multi-carousel {
+  position: relative;
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item {
+  vertical-align: top;
+}
+
+.multi-carousel:before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Multi-Carousel CSS END */
+
+/* Video Section CSS START */
+
+.playimg {
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+/* Video Section CSS END */
