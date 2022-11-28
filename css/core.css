@@ -507,6 +507,8 @@ a.hero-link {
   .sub-dropdown-menu li:first-child .sub-dropdown-item {
     padding: 0rem 1.5rem 0.2rem;
   }
+  .dropdown:hover .dropdown-toggle{color: var(--fds-black);}
+  .dropdown:hover .dropdown-toggle:after{opacity: 1;}
 }
 
 @media (max-width: 1199.98px) {
@@ -641,8 +643,8 @@ a.hero-link {
 
   .nav-link:after,
   .menu-link:after {
-    left: 30px;
-    top: 30px;
+    left: 18px;
+    top: 45px;
   }
 
   .sub-dropdown-menu {

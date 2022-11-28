@@ -1,5 +1,72 @@
 /* Homepage Navigation Styles start */
-
+.navbar{background: var(--fds-white);}
+@media (min-width:1200px){
+  .navbar{background: transparent;}
+  .navbar:hover{
+    background: var(--fds-white);
+  }
+  .navbar .navbar-brand svg{
+    fill:var(--fds-white);
+    transition: all 0.5s ease-in-out;
+  }
+  .scrolled-up{
+    background: var(--fds-white);
+  }  
+  .navbar:hover .navbar-brand svg, .scrolled-up .navbar-brand svg{
+    fill:var(--fds-black);
+  }
+  .top-scrolled-up{background: transparent;}
+  .opensearch{background: var(--fds-white);}  
+  .top-scrolled-up .navbar-brand svg{fill:var(--fds-white);}
+  .opensearch .navbar-brand svg{fill:var(--fds-black);}
+  .nav-link, .menu-link{color: var(--fds-white);}
+  .navbar:hover .nav-link, .navbar:hover .menu-link{color: #97989c;}
+  .scrolled-up .nav-link, .scrolled-up .menu-link{color: #97989c;}
+  .top-scrolled-up .nav-link, .top-scrolled-up .menu-link{color: var(--fds-white);}
+  .opensearch .menu-link, .opensearch .nav-link{color: #97989c;}
+  .navbar .nav-link:focus, .navbar .nav-link:hover, .scrolled-up .nav-link:focus, .scrolled-up .nav-link:hover, .navbar .dropdown:hover .nav-link, .scrolled-up .dropdown:hover .nav-link{
+    color: var(--fds-black);
+}
+.navbar .stroke-svg svg{
+  stroke:var(--fds-white);
+  transition: all 0.5s ease-in-out;
+}
+.navbar:hover .stroke-svg svg, .scrolled-up .stroke-svg svg{
+  stroke:var(--fds-black);
+}
+.top-scrolled-up .stroke-svg svg{
+  stroke:var(--fds-white);
+}
+.opensearch .stroke-svg svg{
+  stroke:var(--fds-black);
+}
+.navbar .right-nav svg{
+  fill:var(--fds-white);
+  transition: all 0.5s ease-in-out;
+}
+.navbar:hover .right-nav svg, .scrolled-up .right-nav svg{
+  fill:var(--fds-black);
+}
+.top-scrolled-up .right-nav svg{
+  fill:var(--fds-white);
+}
+.opensearch .right-nav svg{
+  fill:var(--fds-black);
+}
+.right-nav li:last-child .nav-link{color: var(--fds-white);}
+.navbar:hover .right-nav li:last-child .nav-link{color: #97989c;}
+.scrolled-up .right-nav li:last-child .nav-link{color: #97989c;}
+.top-scrolled-up .right-nav li:last-child .nav-link{color: var(--fds-white);}
+.opensearch .right-nav li:last-child .nav-link{color: #97989c;}
+.right-nav li:last-child .nav-link:hover{
+  color: var(--fds-black) !important;
+}
+}
+@media (max-width: 1199.98px) {
+  .navbar .stroke-svg svg{
+    stroke:var(--fds-black);
+  }
+}
 /* Homepage Navigation Styles end */
 
 /* Homepage Content Styles start */
