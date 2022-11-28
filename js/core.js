@@ -31,19 +31,26 @@ document.addEventListener('DOMContentLoaded', function () {
   var searchtabdiv = document.getElementsByClassName('search-div');
   var closemobilenav = document.getElementsByClassName('navbar-collapse');
   var closemobilenavtoggle = document.getElementsByClassName('navbar-toggler');
+  var opennavbar = document.getElementsByClassName('navbar');
+
   for (let s = 0; s < searchtab.length; s++) {
     searchtab[s].addEventListener('click', function () {
       searchtab[s].classList.toggle('searchshow');
       searchtabdiv[s].classList.toggle('searchdivshow');
+      if (mediaQuerymax1200.matches) {
       closemobilenav[s].classList.remove('show');
       closemobilenavtoggle[s].classList.add('collapsed');
+      }
+      if (mediaQuery1200.matches) {
+        opennavbar[0].classList.toggle('opensearch');
+        }
     });
   }
   if (mediaQuery1200.matches) {
     var dropdown = document.getElementsByClassName('dropdown-toggle');
     for (let v = 0; v < dropdown.length; v++) {
       dropdown[v].removeAttribute('data-mdb-toggle');
-    }
+    } 
   }
   if (mediaQuerymax1200.matches) {
     var navContainers = document.getElementsByClassName('dropdown-toggle');
