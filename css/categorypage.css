@@ -35,8 +35,8 @@
 
 /* Multi-Carousel CSS END */
 /* navigationbodytop Section CSS START */
-@media (min-width:1200px){
-  .bodynavfixedtop{
+@media (min-width: 1200px) {
+  .bodynavfixedtop {
     padding-top: 69px;
   }
 }
