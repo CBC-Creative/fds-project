@@ -158,9 +158,7 @@ a.hero-link {
   opacity: 0;
   transform: translateX(-50%);
   transition: opacity 0.5s ease-in-out;
-
   margin-left: 0;
-  vertical-align: initial;
   border: none;
 }
 
