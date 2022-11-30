@@ -10,15 +10,23 @@ document.addEventListener('DOMContentLoaded', function () {
   // Check if the media query 1200px is true
   if (mediaQuery1200.matches) {
     // Run Code
-    var last_scroll_top = 0;
+    var last_scroll_top = 0;    
     window.addEventListener('scroll', function () {
-      let scroll_top = window.scrollY;
+      let scroll_top = window.scrollY;    
       if (scroll_top < last_scroll_top) {
         el_autohide.classList.remove('scrolled-down');
         el_autohide.classList.add('scrolled-up');
+        el_autohide.classList.add('autohide');  
+        document.getElementsByTagName("body")[0].classList.add('bodynavfixedtop');     
       } else {
         el_autohide.classList.remove('scrolled-up');
+        el_autohide.classList.remove('autohide');
+        document.getElementsByTagName("body")[0].classList.remove('bodynavfixedtop'); 
         el_autohide.classList.add('scrolled-down');
+      }
+      if (scroll_top < 10) {
+        el_autohide.classList.remove('autohide');
+        document.getElementsByTagName("body")[0].classList.remove('bodynavfixedtop'); 
       }
       last_scroll_top = scroll_top;
     });
