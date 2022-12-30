@@ -8,6 +8,7 @@
   --fds-grey-600: #707070;
   --fds-grey-400: #e2e2e2;
   --fds-grey-200: #f7f7f7;
+  --fds-grey-100: #f2f2f2;
   --fds-white: #ffffff;
   --fds-yellow: #fdb913;
   --mdb-nav-link-color: --fds-grey-600;
@@ -23,12 +24,16 @@
   --fds-fs-600: 1.25rem;
   /* 19px = 1.1875rem */
   --fds-fs-500: 1.1875rem;
-  /* 17px = 1.063rem */
-  --fds-fs-400: 1.063rem;
-  /* 16px = 1rem */
-  --fds-fs-350: 1rem;
+   /* 17px = 1.063rem */
+   --fds-fs-400: 1.063rem;
+   /* 16px = 1rem */
+   --fds-fs-350: 1rem;
+  /* 14px = 0.875rem */
+  --fds-fs-320:0.875rem;
   /* 13px = 0.8125rem */
   --fds-fs-300: 0.8125rem;
+   /* 12px = 0.75rem */
+   --fds-fs-250: 0.75rem;
   /* 11px = 0.6875rem */
   --fds-fs-200: 0.6875rem;
   /* 10px = 0.625rem */
@@ -1375,30 +1380,49 @@ section h1 {
   font-size: 0.875rem;
   line-height: 24px;
 }
-.ordernumber-box {
-  background: var(--fds-grey-200);
-  padding: 1rem 1.5rem;
-}
-@media (min-width: 768px) {
-  .min-content-height-checkout-options {
-    min-height: 80px;
-  }
-  .border-right-checkout-option {
-    border-right: 1px solid var(--fds-grey-400);
-  }
-  .fields-maindiv {
-    min-height: 225px;
-  }
-}
-@media (min-width: 992px) {
-  .min-content-height-checkout-options {
-    min-height: 60px;
-  }
-}
-@media (min-width: 1200px) {
-  .custom-width-div {
-    width: 85%;
-    margin: 0 auto;
-  }
-}
 /* my-cart-checkout-option page css end */
+
+/* manage-account pages css start */
+.myaccout-titlebar{background: var(--fds-grey-100);padding: 1.5rem 0;}
+.myaccount-nav{list-style: none; padding-left: 0;}
+.myaccount-nav li{padding: 0.6rem 0rem; border-bottom: 1px solid var(--fds-grey-400);}
+
+.myaccount-nav li:last-child{border-bottom: none;}
+.myaccount-nav li a{color: var(--fds-black);}
+.hoverarrow{opacity: 0; width: 0;  margin-right: 0rem;-webkit-transition-duration: 0.4s;-moz-transition-duration: 0.4s;transition-duration: 0.4s;}
+.myaccount-nav li a:hover .hoverarrow{opacity: 1; width: 8px;margin-right: 0.5rem;}
+.bulletactiveimg{display: none; margin-right: 0.5rem;}
+.myaccount-nav li.myaccount-active .bulletactiveimg, .active-menu-mobile .bulletactiveimg{display: inline-block;}
+.mobile-navigationmyaccount{cursor: pointer; padding: 1rem 0rem;font-size: var(--fds-fs-300);}
+.mobile-navigationmyaccount .active-menu-mobile a{color: var(--fds-black); font-size: var(--fds-fs-200);}
+.mobile-navigationmyaccount .active-menu-mobile img{ margin-right: 0.2rem; width: 7px;}
+.font-weight-medium{font-weight: 500;}
+.sidecontent-div .sidecontent-item{border-top: 1px solid var(--fds-grey-400); padding: 1rem 0rem;}
+.sidecontent-div .sidecontent-item:last-child{border-bottom: 1px solid var(--fds-grey-400);}
+.sidecontent-div .sidecontent-item .btn{color: var(--fds-black); font-weight: 600; font-size: var(--fds-fs-350);}
+.addresstitle{font-weight: 600;}
+.addressbtns .btn{width: 100%; font-size: var(--fds-fs-320) !important;}
+.form-btn{color: var(--fds-black); font-size: var(--fds-fs-350);font-weight: 600;}
+#newaddress .modal-header, #newcard .modal-header{justify-content: center;}
+#newaddress .btn-close, #newcard .btn-close{position: absolute; right: 1rem; opacity: 1;}
+.eligibleproductname{font-size: var(--fds-fs-350);font-weight: 600;}
+.product-smalltext{font-size: var(--fds-fs-320);}
+.font-weight-600{font-weight: 600;}
+.passwordlist{padding-left: 1rem;color: var(--fds-grey-700);}
+.checked{color: #3CBC1E;}
+.visacard{width: 35px;}
+.form-outline .form-control~.form-notch div, .form-outline .form-control~.form-notch div, .form-outline .form-control~.form-notch div{ border-color: var(--fds-grey-700);}
+.datepicker-toggle-button{pointer-events: auto !important;}
+.form-check-input[type=checkbox]:checked, .form-check-input[type=checkbox]:checked:focus{width: 18px; height: 18px;}
+.smallfont-sizebtn{font-size: var(--fds-fs-250) !important;}
+.form-outline .form-control.form-control-lg, .form-outline .form-control.form-control-lg~.form-label{font-size: var(--fds-fs-400);}
+@media (min-width:768px){.myaccount-nav li:first-child{padding-top: 0;}}
+@media (min-width:992px){
+  .addressbtns .btn{width: 180px;}
+}
+@media (max-width:767.98px){
+  .myaccount-nav{display: none;}
+  .myaccount-nav.active{display: block; border-top: 1px solid var(--fds-grey-600);}
+  .mobile-top-spacing-none{padding-top: 0;}
+}
+/* manage-account pages css end */
