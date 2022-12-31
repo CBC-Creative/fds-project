@@ -896,12 +896,17 @@ section h1 {
   color: var(--fds-black);
 }
 .form-outline .form-control {
-  padding: 1rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   color: var(--fds-grey-800);
   font-size: var(--fds-fs-400);
 }
 .form-outline .form-control.form-control-lg ~ .form-label {
-  padding-top: 1.2rem;
+  padding-top: 1rem;
+}
+
+.form-outline .form-control.form-control-lg.active ~ .form-label,
+.form-outline .form-control.form-control-lg:focus ~ .form-label {
+  transform: translateY(-1.5rem) translateY(0.1rem) scale(0.8);
 }
 .form-outline .form-control:focus ~ .form-label {
   color: var(--fds-black);
