@@ -10,11 +10,18 @@
   --fds-grey-200: #f7f7f7;
   --fds-white: #ffffff;
   --fds-yellow: #fdb913;
+  --fds-green: #657471;
+  --fds-medium-brown: #948d8a;
+  --fds-tan: #f6f5f3;
   --mdb-nav-link-color: --fds-grey-600;
   --mdb-nav-link-hover-color: --fds-black;
   /* Custom Font Sizes based on 16px = 1rem */
+  /* 50px = 2.5rem */
+  --fds-fs-910: 3.125rem;
   /* 40px = 2.5rem */
   --fds-fs-900: 2.5rem;
+  /* 33px = 2rem */
+  --fds-fs-825: 2.0625rem;
   /* 32px = 2rem */
   --fds-fs-800: 2rem;
   /* 22px = 1.375rem */
@@ -120,8 +127,29 @@ a.hero-link {
 
 /* Helper Classes */
 
+.mw-1000 {
+  max-width: 62.5rem;
+  margin-inline: auto;
+}
+
+.min-vh-25 {
+  min-height: 25%;
+}
+
 .min-vh-50 {
   min-height: 50vh;
+}
+
+.mh-300 {
+  min-height: 300px;
+}
+
+.mh-600 {
+  min-height: 600px;
+}
+
+.mh-700 {
+  min-height: 700px;
 }
 
 .zindex-900 {
