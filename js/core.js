@@ -2,6 +2,7 @@
 const mediaQuery1200 = window.matchMedia('(min-width: 1200px)');
 const mediaQuerymax1200 = window.matchMedia('(max-width: 1199.98px)');
 const mediaQuery992 = window.matchMedia('(min-width: 992px)');
+const mediaQueryMax992 = window.matchMedia('(max-width: 992px)');
 
 // Custom Global Navication JS
 const el_autohide = document.querySelector('#main-navbar');

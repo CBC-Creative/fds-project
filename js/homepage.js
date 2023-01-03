@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let scroll_top = window.scrollY;
       if (scroll_top < 10) {
         el_autohide1.classList.add('top-scrolled-up');
-      } else{
+      } else {
         el_autohide1.classList.remove('top-scrolled-up');
       }
     });

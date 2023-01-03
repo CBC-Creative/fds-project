@@ -118,4 +118,242 @@
 
 /* Homepage Content Styles start */
 
+.innovations-text {
+  font-size: var(--fds-fs-725);
+  line-height: 1.5;
+}
+
+.callout-text {
+  font-weight: 900;
+  color: var(--fds-green);
+}
+
+.agency-section {
+  background-color: var(--fds-green);
+  padding-top: 2.25rem;
+  padding-inline: 2.25rem;
+}
+
+.homepage-agency-title {
+  font-size: var(--fds-fs-850);
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 2.688rem;
+}
+
+.homepage-patent-slide-inner {
+  display: grid;
+}
+
+.homepage-patent-slide-item h5 {
+  font-size: var(--fds-fs-400);
+  padding-bottom: 2.5rem;
+}
+
+.homepage-patent-slide-item i:before {
+  position: absolute;
+  top: 6px;
+  font-size: 10px;
+}
+
+.homepage-patent-slide-item-text {
+  margin-left: 15px;
+}
+
+#homepage-process-grid {
+  max-width: 425px;
+  margin-inline: auto;
+}
+
+#homepage-process-grid .multi-carousel-inner {
+  gap: 3rem;
+  vertical-align: top;
+}
+
+#homepage-process-grid .multi-carousel-item {
+  flex: 1;
+  max-width: 100%;
+}
+
+h5.grid-title {
+  font-size: var(--fds-fs-750);
+  font-weight: 400;
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item img {
+  max-height: 425px;
+}
+
+.carousel-control-prev {
+  margin-left: -3rem !important;
+}
+
+.carousel-control-next {
+  margin-right: -3rem !important;
+}
+
+.ideate-section,
+.homepage-recent-stories {
+  padding-block: 3rem;
+  overflow: hidden;
+}
+
+.ideate-title {
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+
+.ideate-subtitle {
+  font-size: var(--fds-fs-500);
+  margin-bottom: 2.5rem;
+}
+
+.ideate-image {
+  position: absolute;
+  scale: 2.5;
+  bottom: 0;
+  transform-origin: bottom center;
+}
+
+.lets-work-section {
+  line-height: 0;
+}
+
+.lets-work-section h2 {
+  font-weight: 400;
+}
+
+.lets-work-section-title {
+  margin-bottom: 2rem;
+}
+
+.lets-work-section-subtitle {
+  font-size: var(--fds-fs-500);
+  margin-bottom: 3.5rem;
+  line-height: 1.3;
+}
+
+.lets-work-section .link-underlined {
+  font-size: var(--fds-fs-500);
+}
+
+#homepage-recent-stories {
+  max-width: 425px;
+  margin-inline: auto;
+}
+
+#homepage-recent-stories .multi-carousel-inner {
+  gap: 2rem;
+}
+
+#homepage-recent-stories .multi-carousel-item {
+  flex: 1;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.homepage-last-section {
+  padding-block: 4.375rem;
+}
+
+.homepage-last-section-grid {
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 425px;
+  margin-inline: auto;
+}
+
+.last-section-item h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.last-section-item-description {
+  line-height: 1.2;
+}
+
+.last-section-item {
+  flex: 1;
+  min-height: 380px;
+}
+
+.give-icon img {
+  display: inline-block;
+  max-width: 60px;
+}
+
+@media (min-width: 992px) {
+  .innovations-text {
+    font-size: var(--fds-fs-825);
+  }
+  #homepage-patent-slider {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .homepage-patent-slide-item h5 {
+    padding-bottom: 6.25rem;
+  }
+  .homepage-patent-slide-inner {
+    grid-template-columns: 1fr 600px;
+  }
+  #homepage-process-grid {
+    max-width: 100%;
+    margin-inline: initial;
+  }
+  #homepage-process-grid .multi-carousel-item {
+    max-width: 33%;
+  }
+  .ideate-section,
+  .homepage-recent-stories {
+    padding-block: 6.25rem;
+  }
+  .homepage-last-section-grid {
+    gap: 1rem;
+    flex-direction: row;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+  .ideate-title {
+    padding-bottom: 2.5rem;
+  }
+  .ideate-subtitle {
+    margin-bottom: 1.5rem;
+  }
+  .ideate-image {
+    scale: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .lets-work-section-title {
+    margin-bottom: 3rem;
+  }
+  .lets-work-section-subtitle {
+    font-size: var(--fds-fs-700);
+  }
+  #homepage-recent-stories {
+    max-width: 100%;
+    margin-inline: initial;
+  }
+  #homepage-recent-stories .multi-carousel-item {
+    max-width: 25%;
+  }
+  .homepage-last-section {
+    padding-block: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .agency-section {
+    padding-top: 6.25rem;
+  }
+  .homepage-agency-title {
+    font-size: var(--fds-fs-910);
+    font-weight: 300;
+    margin-bottom: 4.688rem;
+  }
+}
+
 /* Homepage Content Styles end */
