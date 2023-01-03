@@ -1,0 +1,23 @@
+#aqmslider .carousel-indicators{position: relative;width: 100%;justify-content: space-between; margin-left: 0; margin-right: 0;}
+#aqmslider .carousel-indicators [data-mdb-target]{width: 100%;margin: 0;margin-top: 0;height: auto;border: none; border-bottom: 8px solid transparent;}
+#aqmslider .carousel-indicators [data-mdb-target]:last-child{border-bottom: 0;}
+#aqmslider .carousel-caption{text-align: left;left: 70px;right: inherit;bottom: 70px; width: 50%;}
+.thumb-before img{height: 80px; object-fit: cover;}
+.thumb-caption {position: absolute; bottom:0rem; text-indent: 0;padding: 1rem;left: 0;text-align: left;z-index: 20; color: var(--fds-white); font-size: var(--fds-fs-300); line-height: var(--fds-fs-600); width: 100%;}
+.thumb-caption::before{content: '';width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: #3c434b;background-blend-mode: multiply; z-index: -1;opacity: 0.94;}
+.banner-title-aqm{font-size: var(--fds-fs-600);line-height: 2.5rem;}
+#aqmslider .carousel-indicators{display: flex;flex-direction: column;margin-bottom: 0;}
+#aqmslider .carousel-item img{height: 100vh; object-fit: cover;}
+.thumb-before img{height: auto; object-fit: cover;}
+.mobile-slides button{border: none; margin: 0; padding: 0; width: 100%;}
+.mobile-slides .thumb-title{font-size: 1.125rem; line-height: 1.313rem; margin-bottom: 0.625rem;}
+@media (min-width:992px){
+  .banner-title-aqm{font-size: 2.188rem;line-height: 2.5rem;text-shadow: 3px 3px 5px #00000050;  }
+  .thumb-caption {font-size: var(--fds-fs-200);padding: 0rem 1rem;bottom:1rem; line-height: 0.875rem; background: transparent;}
+  .thumb-caption::before{display: none;}
+  .thumb-before img{height: 32.80vh; object-fit: cover;}
+  #aqmslider .thumb-before::before{content: '';width: 100%;height: 100%;position: absolute;background: #272725;opacity: 0.49;top: 0;left: 0;z-index: 10;}
+  #aqmslider .carousel-item img{height: 100vh;}
+  #aqmslider .carousel-caption{width: 45%;}
+  #aqmslider .carousel-caption p{font-size: var(--fds-fs-500); line-height: 1.5rem;text-shadow: 3px 3px 5px #00000050;}
+}
