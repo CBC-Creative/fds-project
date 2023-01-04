@@ -16,14 +16,22 @@
   --mdb-nav-link-color: --fds-grey-600;
   --mdb-nav-link-hover-color: --fds-black;
   /* Custom Font Sizes based on 16px = 1rem */
-  /* 50px = 2.5rem */
+  /* 55px = 3.438rem */
+  --fds-fs-950: 3.438rem;
+  /* 50px = 3.125rem */
   --fds-fs-910: 3.125rem;
   /* 40px = 2.5rem */
   --fds-fs-900: 2.5rem;
-  /* 33px = 2rem */
+  /* 35px = 2.1875rem */
+  --fds-fs-850: 2.1875rem;
+  /* 33px = 2.0625rem */
   --fds-fs-825: 2.0625rem;
   /* 32px = 2rem */
   --fds-fs-800: 2rem;
+  /* 28px = 1.75rem */
+  --fds-fs-750: 1.75rem;
+  /* 25.6px = 1.6rem */
+  --fds-fs-725: 1.6rem;
   /* 22px = 1.375rem */
   --fds-fs-700: 1.375rem;
   /* 20px = 1.25rem */
@@ -34,11 +42,11 @@
   --fds-fs-400: 1.063rem;
   /* 16px = 1rem */
   --fds-fs-350: 1rem;
-  /* 14px = 0.8125rem */
+  /* 14px = 0.875rem */
   --fds-fs-325: 0.875rem;
   /* 13px = 0.8125rem */
   --fds-fs-300: 0.8125rem;
-  /* 12px = 0.8125rem */
+  /* 12px = 0.75rem */
   --fds-fs-250: 0.75rem;
   /* 11px = 0.6875rem */
   --fds-fs-200: 0.6875rem;
@@ -100,6 +108,20 @@ a.hero-link {
   font-size: var(--fds-fs-500);
 }
 
+a.link-underlined::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: var(--fds-yellow);
+  width: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
+  border: none;
+  top: 30px;
+}
+
 @media (min-width: 768px) {
   h1,
   h2 {
@@ -126,6 +148,20 @@ a.hero-link {
 }
 
 /* Helper Classes */
+
+.clear-fix {
+  display: block;
+}
+
+.clear-fix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.py-6 {
+  padding-block: 6.25rem;
+}
 
 .mw-1000 {
   max-width: 62.5rem;
@@ -178,6 +214,21 @@ a.hero-link {
   width: 1px !important;
 }
 
+@media (max-width: 768px) {
+  .mh-700 {
+    min-height: 600px;
+  }
+
+  .cf-med {
+    display: block;
+  }
+
+  .cf-med:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
 /* Global Nav Styles */
 .autohide {
   position: fixed;
