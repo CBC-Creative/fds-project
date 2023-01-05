@@ -10,12 +10,16 @@
   --fds-grey-200: #f7f7f7;
   --fds-white: #ffffff;
   --fds-yellow: #fdb913;
+  --fds-blue: #778495;
+  --fds-light-blue: #DCE5F1;
   --fds-green: #657471;
   --fds-medium-brown: #948d8a;
   --fds-tan: #f6f5f3;
   --mdb-nav-link-color: --fds-grey-600;
   --mdb-nav-link-hover-color: --fds-black;
   /* Custom Font Sizes based on 16px = 1rem */
+  /* 55px = 3.438rem */
+  --fds-fs-950: 3.438rem;
   /* 50px = 3.125rem */
   --fds-fs-910: 3.125rem;
   /* 40px = 2.5rem */
