@@ -1,0 +1,31 @@
+/* Multi-Carousel CSS START */
+.multi-carousel .multi-carousel-inner .multi-carousel-item img{max-height:initial; width: 100%;}
+.multi-carousel-item h5 {font-size: var(--fds-fs-600); font-weight: 600; line-height: 2.75rem; position: absolute;text-align: center;width: 100%;padding: 0px 1rem;bottom: 2rem;}
+.multi-carousel-item.active h5{bottom: 3rem;}
+.black-gradient::before{content: '';position: absolute; left: 0; bottom: 0; width: 100%;background: transparent linear-gradient(180deg, #00000000 0%, #00000093 100%) 0% 0% no-repeat padding-box;height: 100px;}
+.active .black-gradient::before{height: 129px;}
+.black-gradient:after{content: ''; width: 0; height: 0; border-left: 15px solid transparent;border-right: 15px solid transparent;border-bottom: 15px solid var(--fds-white);position: absolute;left: 50%;bottom: 0;margin-left: -15px;display: none;}
+.black-gradient:hover:after, .active .black-gradient:after {display: block;}
+.carousel-control {color: var(--fds-grey-400);z-index: 20;}
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {color: var(--fds-grey-600);}
+.multi-carousel {position: relative;}
+.multi-carousel .multi-carousel-inner .multi-carousel-item {vertical-align: top;padding: 0 10px;}
+.multi-carousel:before {position: absolute;inset: 0;content: '';background: rgb(255, 255, 255);background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);z-index: 10;pointer-events: none;}
+.logos-gray img{    filter: grayscale(1);}
+.logos-gray img:hover{    filter: grayscale(0);}
+.logo-slide{display: none;}
+.show.logo-slide{display: block;}
+.tile-devider{height: 2px;background-color: var(--fds-yellow);width: 35px;margin: 0 auto;}
+.logos-gray div{width:49%;}
+@media (min-width:992px){
+  .logos-gray div{width: 19%;}
+  .multi-carousel-item:hover .logo-slide{display: block;}
+  .logoslider .multi-carousel .multi-carousel-inner{overflow-y: inherit;}
+}
+@media (max-width:767px){
+  .logoslider  .multi-carousel:before{background: transparent;}
+}
+/* Multi-Carousel CSS END */
