@@ -196,7 +196,8 @@ button:not(:disabled) {
 
 .homepage-logo-carousel .carousel-control-next,
 .homepage-logo-carousel .carousel-control-prev {
-  width: 15% !important;
+  width: 8%;
+  margin-inline: -10%;
 }
 @media (min-width: 768px) {
   .banner-title span {
@@ -337,7 +338,7 @@ h5.grid-title {
   max-height: initial;
   width: 100%;
 }
-.multi-carousel-item h5 {
+.homepage-logo-carousel .multi-carousel-item h5 {
   font-size: var(--fds-fs-600);
   font-weight: 600;
   line-height: 2.75rem;
@@ -380,15 +381,16 @@ h5.grid-title {
 .active .black-gradient:after {
   display: block;
 }
-.carousel-control {
-  color: var(--fds-grey-400);
+.homepage-logo-carousel .carousel-control {
+  color: var(--fds-grey-600);
   z-index: 20;
 }
+
 .carousel-control-next:focus,
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover {
-  color: var(--fds-grey-600);
+  color: var(--fds-black);
 }
 .multi-carousel {
   position: relative;
@@ -397,15 +399,6 @@ h5.grid-title {
   vertical-align: top;
   padding: 0 10px;
   cursor: pointer;
-}
-.multi-carousel:before {
-  position: absolute;
-  inset: 0;
-  content: '';
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
-  z-index: 10;
-  pointer-events: none;
 }
 .logos-gray img {
   filter: grayscale(1);
@@ -429,6 +422,10 @@ h5.grid-title {
   width: 49%;
 }
 @media (min-width: 992px) {
+  .homepage-logo-carousel .carousel-control-next,
+  .homepage-logo-carousel .carousel-control-prev {
+    margin-inline: 0%;
+  }
   .logos-gray div {
     width: 19%;
   }
@@ -437,6 +434,15 @@ h5.grid-title {
   }
   .logoslider .multi-carousel .multi-carousel-inner {
     overflow-y: inherit;
+  }
+  .multi-carousel-withfade:before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
+    z-index: 10;
+    pointer-events: none;
   }
 }
 @media (max-width: 767px) {
@@ -481,6 +487,9 @@ h5.grid-title {
   flex: 1;
   max-width: 100%;
   vertical-align: top;
+}
+#homepage-recent-stories .carousel-control {
+  margin-inline: -10% !important;
 }
 
 .homepage-last-section {

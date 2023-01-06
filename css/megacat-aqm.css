@@ -1,65 +1,218 @@
-.megacaraqmbg img{height: 500px; object-fit: cover; object-position: top center;}
-.megacaraqmbg::before{content: '';width: 100%; height: 100%;background: transparent linear-gradient(90deg, #000000 0%, #00000000 100%) 0% 0% no-repeat;
-position: absolute; opacity: 0.43;}
-.banner-title{font-size: var(--fds-fs-800); line-height: 2.375rem; font-weight: 300;}
-.megacat-caption{position: absolute;bottom: 50px; width: 250px;bottom: 10.5rem;}
-.healthyair-section{background: var(--fds-tan);}
-.bigptext{font-size: var(--fds-fs-500); line-height: 1.5rem;}
-.healthyiconbox .bigptext{font-size: var(--fds-fs-250); line-height: var(--fds-fs-350);}
-.font-weight-medium{font-weight: 500;}
-.font-weight-300{font-weight: 300;}
-.healthyair-section{padding: 4rem 0rem;}
-.iconrow-top-spacing{padding-top:1rem;}
-.healthyairicons img{height: 1.875rem; margin-right:1.5rem;}
-.bluesection{background: var(--fds-blue);}
-.title-yellow-line{height: 2px;background-color: var(--fds-yellow);width: 35px;border: none;margin: 0 auto;}
-.room-phases{gap: 20px;}
-.yellowboxwithdiscription{background: var(--fds-tan); padding: 2rem 2rem;}
-.light-blue-box{background: var(--fds-light-blue);}
-.tab-box{padding: 2rem 2rem 1rem 2rem;}
-.safeairstoriestabbox .nav-pills .nav-link{background: none; text-align: left; border-radius: 0; padding: 0.8rem 1.5rem; font-size: var(--fds-fs-400); line-height: var( --fds-fs-725); color: var(--fds-black); text-transform: none; margin-bottom: 0;}
-.safeairstoriestabbox .nav-pills .nav-link::after{display: none;}
-.safeairstoriestabbox .nav-pills .nav-link.active, .nav-pills .show>.nav-link{background: #F2F8FF;}
-.tab-logo-box{background: var(--fds-tan);padding: 2rem 2rem;}
-.tab-logo-box img{filter: grayscale(1);}
-.tab-logo-box img:hover{filter: grayscale(0);}
-.tab-dropdown{  margin: 0;padding: 10px 24px 10px 24px;background: #F2F8FF; font-weight: 500; cursor: pointer;}
-.tab-logo-box .logos-gray div{width: 20%;}
-.tab-img{padding:2rem;background: var(--fds-light-blue);}
-@media (min-width:768px){.banner-title{font-size: var(--fds-fs-900); line-height: var(--fds-fs-900);}.megacat-caption{width:420px;bottom: 7.5rem;}.megacaraqmbg img{height: 700px;}
-.healthyair-section{padding: 7.188rem 0rem;}
-.iconrow-top-spacing{padding-top:4rem;}
-.healthyairicons{margin-bottom: 2.188rem;}
-.healthyairicons img{height: 3.125rem; margin-right: 0;}
-.healthyiconbox .bigptext{font-size: var(--fds-fs-500); line-height: 1.5rem;}
-.yellowboxwithdiscription{padding: 2rem 3rem;}
-.tab-box{padding: 3rem 2rem;}
-.tab-logo-box .logos-gray div{width: 20%;}
-.safeairstoriestabbox h2{font-size: var(--fds-fs-850); line-height: var(--fds-fs-725);}
+.megacaraqmbg img {
+  height: 500px;
+  object-fit: cover;
+  object-position: top center;
 }
-@media (min-width:992px){
-  .megacat-caption{width:600px;}
-  .banner-title{font-size: var(--fds-fs-950); line-height: 3.75rem;}
-  .yellowboxwithdiscription{min-height: 225px;}
+.megacaraqmbg::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(90deg, #000000 0%, #00000000 100%) 0% 0% no-repeat;
+  position: absolute;
+  opacity: 0.43;
 }
-@media (min-width:1200px){
-  .room-phases{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
-  .yellowboxwithdiscription{min-height: 175px;}
-  .light-blue-box.tab-box{min-height: 750px;}
-  .tab-img{padding: 0;}
-  .tab-img img{height: 607px; object-fit: cover;}
-  .tab-box{padding: 3rem 2rem;}
+.banner-title {
+  font-size: var(--fds-fs-800);
+  line-height: 2.375rem;
+  font-weight: 300;
 }
-@media (max-width:1199.98px){
-  .tab-box .nav-pills{display: none;}
-  .tab-box .nav-pills.showpills{display: block;}
-  .safeairstoriestabbox .nav-pills .nav-link.active, .nav-pills .show>.nav-link{background: transparent; display: none;}
+.megacat-caption {
+  position: absolute;
+  bottom: 50px;
+  width: 250px;
+  bottom: 10.5rem;
 }
-@media (max-width:991px){
-  @media screen and (orientation:landscape) {
-    .megacat-caption{bottom: 2.5rem;}
+.healthyair-section {
+  background: var(--fds-tan);
+}
+.bigptext {
+  font-size: var(--fds-fs-500);
+  line-height: 1.5rem;
+}
+.healthyiconbox .bigptext {
+  font-size: var(--fds-fs-250);
+  line-height: var(--fds-fs-350);
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.healthyair-section {
+  padding: 4rem 0rem;
+}
+.iconrow-top-spacing {
+  padding-top: 1rem;
+}
+.healthyairicons img {
+  height: 1.875rem;
+  margin-right: 1.5rem;
+}
+.bluesection {
+  background: var(--fds-blue);
+}
+.title-yellow-line {
+  height: 2px;
+  background-color: var(--fds-yellow);
+  width: 35px;
+  border: none;
+  margin: 0 auto;
+}
+.room-phases {
+  gap: 20px;
+}
+.yellowboxwithdiscription {
+  background: var(--fds-tan);
+  padding: 2rem 2rem;
+}
+.light-blue-box {
+  background: var(--fds-light-blue);
+}
+.tab-box {
+  padding: 2rem 2rem 1rem 2rem;
+}
+.safeairstoriestabbox .nav-pills .nav-link {
+  background: none;
+  text-align: left;
+  border-radius: 0;
+  padding: 0.8rem 1.5rem;
+  font-size: var(--fds-fs-400);
+  line-height: var(--fds-fs-725);
+  color: var(--fds-black);
+  text-transform: none;
+  margin: 0;
+}
+.safeairstoriestabbox .nav-pills .nav-link::after {
+  display: none;
+}
+.safeairstoriestabbox .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #f2f8ff;
+}
+.tab-logo-box {
+  background: var(--fds-tan);
+  padding: 2rem 2rem;
+}
+.tab-logo-box img {
+  filter: grayscale(1);
+}
+.tab-logo-box img:hover {
+  filter: grayscale(0);
+}
+.tab-dropdown {
+  margin: 0;
+  padding: 10px 24px 10px 24px;
+  background: #f2f8ff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tab-logo-box .logos-gray div {
+  width: 20%;
+}
+.tab-img {
+  padding: 2rem;
+  background: var(--fds-light-blue);
+}
+@media (min-width: 768px) {
+  .banner-title {
+    font-size: var(--fds-fs-900);
+    line-height: var(--fds-fs-900);
+  }
+  .megacat-caption {
+    width: 420px;
+    bottom: 7.5rem;
+  }
+  .megacaraqmbg img {
+    height: 700px;
+  }
+  .healthyair-section {
+    padding: 7.188rem 0rem;
+  }
+  .iconrow-top-spacing {
+    padding-top: 4rem;
+  }
+  .healthyairicons {
+    margin-bottom: 2.188rem;
+  }
+  .healthyairicons img {
+    height: 3.125rem;
+    margin-right: 0;
+  }
+  .healthyiconbox .bigptext {
+    font-size: var(--fds-fs-500);
+    line-height: 1.5rem;
+  }
+  .yellowboxwithdiscription {
+    padding: 2rem 3rem;
+  }
+  .tab-box {
+    padding: 3rem 2rem;
+  }
+  .tab-logo-box .logos-gray div {
+    width: 20%;
+  }
+  .safeairstoriestabbox h2 {
+    font-size: var(--fds-fs-850);
+    line-height: var(--fds-fs-725);
+  }
+}
+@media (min-width: 992px) {
+  .megacat-caption {
+    width: 600px;
+  }
+  .banner-title {
+    font-size: var(--fds-fs-950);
+    line-height: 3.75rem;
+  }
+  .yellowboxwithdiscription {
+    min-height: 225px;
+  }
+}
+@media (min-width: 1200px) {
+  .room-phases {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .yellowboxwithdiscription {
+    min-height: 175px;
+  }
+  /* .light-blue-box.tab-box {
+    min-height: 750px;
+  } */
+  .tab-img {
+    padding: 0;
+  }
+  .tab-img img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .tab-box {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .tab-box .nav-pills {
+    display: none;
+  }
+  .tab-box .nav-pills.showpills {
+    display: block;
+  }
+  .safeairstoriestabbox .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: transparent;
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  @media screen and (orientation: landscape) {
+    .megacat-caption {
+      bottom: 2.5rem;
+    }
     .megacaraqmbg img {
       height: 360px;
-  }
+    }
   }
 }

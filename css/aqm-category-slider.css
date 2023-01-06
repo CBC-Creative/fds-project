@@ -50,7 +50,7 @@
   background: #3c434b;
   background-blend-mode: multiply;
   z-index: -1;
-  opacity: 0.94;
+  opacity: 0.74;
 }
 .banner-title-aqm {
   font-size: var(--fds-fs-600);
