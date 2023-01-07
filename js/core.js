@@ -9,7 +9,7 @@ const el_autohide = document.querySelector('#main-navbar');
 
 document.addEventListener('DOMContentLoaded', function () {
   // Check if the media query 1200px is true
-  if (mediaQuery1200.matches) {
+  if (mediaQuery1200.matches && el_autohide) {
     // Run Code
     var last_scroll_top = 0;
     window.addEventListener('scroll', function () {

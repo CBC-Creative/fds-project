@@ -3,7 +3,7 @@ const el_autohide1 = document.querySelector('#main-navbar');
 
 document.addEventListener('DOMContentLoaded', function () {
   // Check if the media query 1200px is true
-  if (mediaQuery1200.matches) {
+  if (mediaQuery1200.matches && el_autohide1) {
     // Run Code
     window.addEventListener('scroll', function () {
       let scroll_top = window.scrollY;
@@ -24,14 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var logodivmain = document.getElementsByClassName('logo-content-main');
   for (let one = 0; one < maincarousel.length; one++) {
     var adddynamicclass = maincarousel[one].children;
-    //console.log(adddynamicclass);
     adddynamicclass.forEach((element) => {
       element.setAttribute('data-item', 'item' + [one++]);
     });
   }
   for (let logoone = 0; logoone < logodivmain.length; logoone++) {
     var adddynamicclasslogo = logodivmain[logoone].children;
-    //console.log(adddynamicclass);
     adddynamicclasslogo.forEach((element) => {
       element.setAttribute('data-content-item', 'item' + [logoone++]);
     });
@@ -44,13 +42,11 @@ function logofunction() {
     imageclick[imageindex].addEventListener('click', function () {
       var imageParent = this.parentNode;
       var currentItem = imageParent.parentNode.getAttribute('data-item');
-      //console.log(currentItem);
       var removeactive = document.getElementsByClassName('multi-carousel-item'); //divsToHide is an array
       for (var re = 0; re < removeactive.length; re++) {
         removeactive[re].classList.remove('active');
       }
       imageParent.parentNode.classList.add('active');
-      // console.log(imageParent.parentNode.classList);
       var divsToHide = document.getElementsByClassName('logo-slide'); //divsToHide is an array
       for (var i = 0; i < divsToHide.length; i++) {
         divsToHide[i].style.display = 'none'; // depending on what you're doing
@@ -100,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
         var imageclick1 = document.getElementsByClassName('slideimageclick');
         var imageParent1 = imageclick1[0].parentNode;
         var currentItem1 = imageParent1.parentNode.getAttribute('data-item');
-        console.log(currentItem1);
         var removeactive1 = document.getElementsByClassName('multi-carousel-item'); //divsToHide is an array
         for (var re1 = 0; re1 < removeactive1.length; re1++) {
           removeactive1[re1].classList.remove('active');
@@ -133,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
       var imageclick1 = document.getElementsByClassName('slideimageclick');
       var imageParent1 = imageclick1[0].parentNode;
       var currentItem1 = imageParent1.parentNode.getAttribute('data-item');
-      console.log(currentItem1);
       var removeactive1 = document.getElementsByClassName('multi-carousel-item'); //divsToHide is an array
       for (var re1 = 0; re1 < removeactive1.length; re1++) {
         removeactive1[re1].classList.remove('active');
