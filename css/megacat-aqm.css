@@ -1,5 +1,133 @@
+#aqmslider .carousel-indicators {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+}
+#aqmslider .carousel-indicators [data-mdb-target] {
+  width: 100%;
+  margin: 0;
+  margin-top: 0;
+  height: auto;
+  border: none;
+}
+#aqmslider .carousel-indicators [data-mdb-target]:last-child {
+  border-bottom: 0;
+}
+#aqmslider .carousel-caption {
+  text-align: left;
+  left: 70px;
+  right: inherit;
+  bottom: 70px;
+  width: 50%;
+}
+.thumb-before img {
+  height: 80px;
+  object-fit: cover;
+}
+.thumb-caption {
+  position: absolute;
+  bottom: 0rem;
+  text-indent: 0;
+  padding: 1rem;
+  left: 0;
+  text-align: left;
+  z-index: 20;
+  color: var(--fds-white);
+  font-size: var(--fds-fs-300);
+  line-height: var(--fds-fs-600);
+  width: 100%;
+}
+.thumb-caption::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3c434b;
+  background-blend-mode: multiply;
+  z-index: -1;
+  opacity: 0.74;
+}
+.banner-title-aqm {
+  font-size: var(--fds-fs-600);
+  line-height: 2.5rem;
+}
+#aqmslider .carousel-indicators {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+#aqmslider .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+.thumb-before img {
+  height: auto;
+  object-fit: cover;
+}
+.mobile-slides button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mobile-slides .thumb-title {
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 992px) {
+  #aqmslider .carousel-indicators [data-mdb-target] {
+    border-bottom: 8px solid transparent;
+  }
+  .banner-title-aqm {
+    font-size: 2.188rem;
+    line-height: 2.5rem;
+    text-shadow: 3px 3px 5px #00000050;
+  }
+  .thumb-caption {
+    font-size: var(--fds-fs-200);
+    padding: 0rem 1rem;
+    bottom: 1rem;
+    line-height: 0.875rem;
+    background: transparent;
+  }
+  .thumb-caption::before {
+    display: none;
+  }
+  .thumb-before img {
+    height: 228px;
+    object-fit: cover;
+  }
+  #aqmslider .thumb-before::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #272725;
+    opacity: 0.49;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  #aqmslider .carousel-item img {
+    height: 700px;
+  }
+  #aqmslider .carousel-caption {
+    width: 45%;
+  }
+  #aqmslider .carousel-caption p {
+    font-size: var(--fds-fs-500);
+    line-height: 1.5rem;
+    text-shadow: 3px 3px 5px #00000050;
+  }
+}
+
 .megacaraqmbg img {
-  height: 500px;
+  height: 600px;
   object-fit: cover;
   object-position: top center;
 }
@@ -19,7 +147,8 @@
 .megacat-caption {
   position: absolute;
   bottom: 50px;
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   bottom: 10.5rem;
 }
 .healthyair-section {
@@ -64,7 +193,7 @@
 }
 .yellowboxwithdiscription {
   background: var(--fds-tan);
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
 }
 .light-blue-box {
   background: var(--fds-light-blue);
@@ -74,7 +203,8 @@
 }
 .safeairstoriestabbox .nav-pills .nav-link {
   background: none;
-  text-align: left;
+  display: block;
+  text-align: center;
   border-radius: 0;
   padding: 0.8rem 1.5rem;
   font-size: var(--fds-fs-400);
@@ -106,13 +236,30 @@
   background: #f2f8ff;
   font-weight: 500;
   cursor: pointer;
+  position: relative;
 }
+
+.safeairstoriestabbox i.fa-chevron-down {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  right: 10px;
+  pointer-events: none;
+}
+
 .tab-logo-box .logos-gray div {
-  width: 20%;
+  width: 33%;
 }
 .tab-img {
   padding: 2rem;
   background: var(--fds-light-blue);
+}
+.safeairstoriestabbox .tab-img img {
+  min-height: 300px;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .banner-title {
@@ -120,7 +267,7 @@
     line-height: var(--fds-fs-900);
   }
   .megacat-caption {
-    width: 420px;
+    max-width: 420px;
     bottom: 7.5rem;
   }
   .megacaraqmbg img {
@@ -158,8 +305,11 @@
   }
 }
 @media (min-width: 992px) {
+  .safeairstoriestabbox i.fa-chevron-down {
+    display: none;
+  }
   .megacat-caption {
-    width: 600px;
+    max-width: 630px;
   }
   .banner-title {
     font-size: var(--fds-fs-950);
@@ -204,15 +354,5 @@
   .nav-pills .show > .nav-link {
     background: transparent;
     display: none;
-  }
-}
-@media (max-width: 991px) {
-  @media screen and (orientation: landscape) {
-    .megacat-caption {
-      bottom: 2.5rem;
-    }
-    .megacaraqmbg img {
-      height: 360px;
-    }
   }
 }
