@@ -1,56 +1,26 @@
-/* Multi-Carousel CSS START */
-.multi-carousel-item h5 {
-  font-size: var(--fds-fs-500);
+.cat-last-section__text {
+  max-width: 400px;
+  margin-inline: auto;
+  padding-block: 2.125rem;
 }
 
-.carousel-control {
-  color: var(--fds-grey-400);
-  z-index: 20;
+.cat-last-section__title {
+  font-size: var(--fds-fs-600);
+  font-weight: 300;
+  margin-bottom: 1.25rem;
 }
 
-.carousel-control-next:focus,
-.carousel-control-next:hover,
-.carousel-control-prev:focus,
-.carousel-control-prev:hover {
-  color: var(--fds-grey-600);
+.cat-last-section__discription {
+  font-size: var(--fds-fs-350);
+  font-weight: 300;
+  line-height: 1.4;
 }
 
-.multi-carousel {
-  position: relative;
-}
-
-.multi-carousel .multi-carousel-inner .multi-carousel-item {
-  vertical-align: top;
-}
-
-.multi-carousel:before {
-  position: absolute;
-  inset: 0;
-  content: '';
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
-  z-index: 10;
-  pointer-events: none;
-}
-
-/* Multi-Carousel CSS END */
-/* navigationbodytop Section CSS START */
-@media (min-width: 1200px) {
-  .bodynavfixedtop {
-    padding-top: 69px;
+@media (min-width: 768px) {
+  .cat-last-section__title {
+    font-size: var(--fds-fs-700);
+  }
+  .cat-last-section__discription {
+    font-size: 1rem;
   }
 }
-/* navigationbodytop Section CSS END */
-/* Video Section CSS START */
-
-.playimg {
-  position: absolute;
-  top: 50%;
-  width: 80px;
-  height: 80px;
-  margin-top: -40px;
-  left: 50%;
-  margin-left: -40px;
-}
-
-/* Video Section CSS END */
