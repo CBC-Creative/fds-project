@@ -8,6 +8,24 @@ const mediaQueryMax992 = window.matchMedia('(max-width: 992px)');
 const el_autohide = document.querySelector('#main-navbar');
 
 document.addEventListener('DOMContentLoaded', function () {
+  if (el_autohide) {
+    const countries = document.querySelectorAll('.country-grid__item');
+
+    for (let cntry = 0; cntry < countries.length; cntry++) {
+      countries[cntry].addEventListener('click', (e) => {
+        countries.forEach((country) => {
+          if (country !== e.currentTarget) {
+            country.classList.remove('country-selected');
+          } else if (country == e.currentTarget) {
+            country.classList.add('country-selected');
+          }
+        });
+      });
+    }
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
   // Check if the media query 1200px is true
   if (mediaQuery1200.matches && el_autohide) {
     // Run Code
