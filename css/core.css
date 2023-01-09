@@ -22,8 +22,12 @@
   --fds-fs-950: 3.438rem;
   /* 50px = 3.125rem */
   --fds-fs-910: 3.125rem;
+  /* 44px = 2.75rem */
+  --fds-fs-905: 2.75rem;
   /* 40px = 2.5rem */
   --fds-fs-900: 2.5rem;
+  /* 36px = 2.25rem */
+  --fds-fs-860: 2.25rem;
   /* 35px = 2.1875rem */
   --fds-fs-850: 2.1875rem;
   /* 33px = 2.0625rem */
@@ -40,6 +44,8 @@
   --fds-fs-600: 1.25rem;
   /* 19px = 1.1875rem */
   --fds-fs-500: 1.1875rem;
+   /* 18px = 1.125rem */
+   --fds-fs-450: 1.125rem;
   /* 17px = 1.063rem */
   --fds-fs-400: 1.063rem;
   /* 16px = 1rem */
