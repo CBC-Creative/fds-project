@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>My Account Payment Methods</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/Favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB ESSENTIAL -->
+    <link rel="stylesheet" href="css/mdb-css/mdb.min.css" />
+    <!-- MDB PLUGINS -->
+    <link rel="stylesheet" href="css/mdb-css/plugins/css/all.min.css" />
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/my-cart.css" />
+    <link rel="stylesheet" href="css/my-account-pages.css" />
+  </head>
+
+  <body style="min-height: 200vh; position: relative">
+    <!-- Start your project here-->
+
+   <!-- Start your project here-->
+   
+  <!-- Temporary Hero -->
+  <section class="band myaccout-titlebar text-black">
+    <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-10 offset-md-1 text-center">
+              <h1 class="mb-0">My Account</h1>
+          </div>
+      </div>     
+    </div>       
+  </section>
+  <section class="band section-spacing mobile-top-spacing-none text-black">
+    <div class="container">
+      <div class="row gx-md-5">
+          <div class="col-12 col-md-4 col-lg-3 mb-md-0 mb-4">
+              <div class="d-flex d-md-none mobile-navigationmyaccount justify-content-between">
+                <div>MENU</div>
+                <div class="active-menu-mobile"></div>
+              </div>
+              <ul class="myaccount-nav">
+                <li><a href="manage-account.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Manage Account</a></li>
+                <li><a href="my-account-information.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Account Information</a></li>
+                <li><a href="my-account-register-your-product.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Register Your Product</a></li>
+                <li><a href="my-eligible-replacements.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Your Eligible Replacements</a></li>
+                <li><a href="my-account-recent-orders.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Order History</a></li>
+                <li><a href="my-account-address-book.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Address Book</a></li>
+                <li class="myaccount-active"><a href="my-account-payment-methods.html"><img src="img/bullet.svg" class="bulletactiveimg" alt="Fellowes" />Payment Methods</a></li>
+                <li><a href="my-account-password-reset.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Password Reset</a></li>
+                <li><a href="#"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Logout</a></li>
+              </ul>
+          </div>
+          <div class="col-12 col-md-8 col-lg-9">
+              <div class="sub-title mb-3">Saved Payment Methods</div>
+              <p class="font-weight-medium">Add and remove payment methods below</p>
+              <div class="sidecontent-div">
+                <div class="sidecontent-item">
+                  <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-8 col-sm-7 col-12 mb-sm-0 mb-3">
+                      <div class="addresstitle mb-2">Business Card</div>
+                      <div class="font-weight-medium">
+                        VISA<br/>XXXX-XXXX-XXXX-1234<br/>Exp. 03/2027
+                      </div>                      
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-5 col-12 text-sm-end">
+                      <div><a href="#" class="btn btn-primary w-100 smallfont-sizebtn">DELETE CARD</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidecontent-item">
+                  <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-8 col-sm-7 col-12 mb-sm-0 mb-3">
+                      <div class="addresstitle mb-2">Personal Card</div>
+                      <div class="font-weight-medium">
+                        VISA<br/>XXXX-XXXX-XXXX-1234<br/>Exp. 03/2027
+                      </div>                      
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-5 col-12 text-sm-end">
+                      <div><a href="#" class="btn btn-primary w-100 smallfont-sizebtn">DELETE CARD</a></div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="sidecontent-item border-bottom-0 pt-md-4">
+                  <a href="#" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#newcard">ADD NEW CARD</a>
+                </div>               
+              </div>
+          </div>
+      </div>     
+    </div>       
+  </section>
+  <!-- Modal -->
+<div class="modal fade" id="newcard" tabindex="-1" aria-labelledby="Addnewcard" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title sub-title text-black" id="Addnewcard">Add Credit Card</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-md-5">
+        <form action="addcard">
+          <div class="form-group">
+            <select class="select form-control-lg">
+              <option value="Select Address">Select Address</option>
+              <option value="Address 1">Address 1</option>
+              <option value="Address 2">Address 2</option>
+              <option value="Address 3">Address 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-outline">
+              <input type="text" id="Nickname" class="form-control form-control-lg" />
+              <label class="form-label" for="Nickname">Nickname</label>
+            </div>
+          </div>          
+          <div class="form-group">
+            <div class="form-outline">
+              <input type="text" id="Address1" class="form-control form-control-lg" />
+              <label class="form-label" for="Address1">Address 1</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-outline">
+              <input type="text" id="Address2" class="form-control form-control-lg" />
+              <label class="form-label" for="Address2">Address 2</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-outline">
+              <input type="text" id="City" class="form-control form-control-lg" />
+              <label class="form-label" for="City">City</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 col-12">
+              <div class="form-group">
+                <div class="form-outline">
+                  <input type="text" id="State" class="form-control form-control-lg" />
+                  <label class="form-label" for="State">State</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12">
+              <div class="form-group">
+                <div class="form-outline">
+                  <input type="text" id="ZipCode" class="form-control form-control-lg" />
+                  <label class="form-label" for="ZipCode">Zip Code</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-outline">
+              <input type="text" id="Telephone" class="form-control form-control-lg" />
+              <label class="form-label" for="Telephone">Telephone (555-555-5555)</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-outline">
+              <input type="text" id="NameonCard" class="form-control form-control-lg" />
+              <label class="form-label" for="NameonCard">Name on Card</label>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-lg-12 col-12">
+                <div class="form-group">
+                  <div class="form-outline creditcarddiv">
+                    <input type="text" id="CreditCardNumber" class="form-control form-control-lg" />
+                    <label class="form-label" for="CreditCardNumber">Credit Card Number</label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <div class="form-outline">
+                    <input type="text" id="expmonth" class="form-control form-control-lg" />
+                    <label class="form-label" for="expmonth">Exp. Month</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <div class="form-outline">
+                    <input type="text" id="expyear" class="form-control form-control-lg" />
+                    <label class="form-label" for="expyear">Exp. Year</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <div class="form-outline">
+                    <input type="text" id="cvc" class="form-control form-control-lg" />
+                    <label class="form-label" for="cvc">CVC</label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          <div class="form-group text-center mb-0 mt-3 mt-md-4">
+            <button type="submit" class="btn btn-primary form-btn">SUBMIT</button>
+          </div>
+        </form>
+      </div>      
+    </div>
+  </div>
+</div>
+    <!-- End your project here-->
+
+    <!-- MDB ESSENTIAL -->
+    <script type="text/javascript" src="js/mdb-js/mdb.min.js"></script>
+    <!-- MDB PLUGINS -->
+    <script type="text/javascript" src="js/mdb-js/plugins/js/all.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/core.js"></script> 
+    <script type="text/javascript" src="js/my-account-common.js"></script> 
+      
+  </body>
+</html>
