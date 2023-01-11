@@ -45,8 +45,8 @@
   --fds-fs-600: 1.25rem;
   /* 19px = 1.1875rem */
   --fds-fs-500: 1.1875rem;
-   /* 18px = 1.125rem */
-   --fds-fs-450: 1.125rem;
+  /* 18px = 1.125rem */
+  --fds-fs-450: 1.125rem;
   /* 17px = 1.063rem */
   --fds-fs-400: 1.063rem;
   /* 16px = 1rem */
@@ -339,7 +339,7 @@ a.two-col-section__link::after {
 }
 
 .mh-600 {
-  min-height: 500px;
+  min-height: 600px;
 }
 .mh-700 {
   min-height: 600px;
@@ -386,9 +386,6 @@ a.two-col-section__link::after {
 @media (min-width: 992px) {
   .col50 {
     max-width: 50%;
-  }
-  .mh-600 {
-    min-height: 600px;
   }
   .mh-700 {
     min-height: 700px;
