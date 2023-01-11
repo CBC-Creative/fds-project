@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>My Account Information</title>
+    <title>My Account Recent Orders</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/Favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -33,7 +33,7 @@
     <!-- Start your project here-->
 
    <!-- Start your project here-->
-  
+   
   <!-- Temporary Hero -->
   <section class="band myaccout-titlebar text-black">
     <div class="container">
@@ -54,10 +54,10 @@
               </div>
               <ul class="myaccount-nav">
                 <li><a href="manage-account.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Manage Account</a></li>
-                <li class="myaccount-active"><a href="my-account-information.html"><img src="img/bullet.svg" class="bulletactiveimg" alt="Fellowes" />Account Information</a></li>
+                <li><a href="my-account-information.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Account Information</a></li>
                 <li><a href="my-account-register-your-product.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Register Your Product</a></li>
                 <li><a href="my-eligible-replacements.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Your Eligible Replacements</a></li>
-                <li><a href="my-account-recent-orders.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Order History</a></li>
+                <li class="myaccount-active"><a href="my-account-recent-orders.html"><img src="img/bullet.svg" class="bulletactiveimg" alt="Fellowes" />Order History</a></li>
                 <li><a href="my-account-address-book.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Address Book</a></li>
                 <li><a href="my-account-payment-methods.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Payment Methods</a></li>
                 <li><a href="my-account-password-reset.html"><img src="img/bullet-hover.svg" class="hoverarrow" alt="Fellowes" />Password Reset</a></li>
@@ -65,40 +65,47 @@
               </ul>
           </div>
           <div class="col-12 col-md-8 col-lg-9">
-              <div class="sub-title mb-3 mb-md-4">Account Information</div>
-              <form action="accountinformation">
-                <div class="form-group">
-                  <div class="form-outline">
-                    <input type="text" id="FName" class="form-control form-control-lg" />
-                    <label class="form-label" for="FName">Bruce</label>
-                  </div>                  
+              <div class="sub-title mb-3">Recent Orders</div>
+              <p class="font-weight-medium">See your order history listed below:</p>
+              <div class="sidecontent-div">
+                <div class="sidecontent-item">
+                  <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-8 col-sm-7 col-12 mb-sm-0 mb-3">
+                      <div class="addresstitle mb-2">Order #01000037-MOB-US</div>
+                      <div class="product-smalltext mb-2">
+                        <span class="font-weight-medium">Purchase Date:</span> 8/26/2022 2:49 PM
+                      </div>
+                      <div class="product-smalltext mb-2">
+                        <span class="font-weight-medium">Order Total:</span> $8.95
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-5 col-12 text-sm-end">
+                      <div><a href="my-account-recent-orders-details.html" class="btn btn-primary w-100 smallfont-sizebtn">VIEW & TRACK ORDER</a></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <div class="form-outline">
-                    <input type="text" id="LName" class="form-control form-control-lg" />
-                    <label class="form-label" for="LName">Wayne</label>
-                  </div>                  
-                </div>
-                <div class="form-group">
-                  <div class="form-outline">
-                    <input type="tel" id="phonenumber" class="form-control form-control-lg" />
-                    <label class="form-label" for="phonenumber">1-555-555-5555</label>
-                  </div>                  
-                </div>
-                <div class="form-group">
-                  <div class="form-outline">
-                    <input type="text" id="email" disabled class="form-control form-control-lg" />
-                    <label class="form-label" for="email">eMail</label>
-                  </div>                  
-                </div>
-                <div class="form-group text-end">
-                  <button type="submit" class="btn btn-primary form-btn">UPDATE</button>
-                </div>
-              </form>
+                <div class="sidecontent-item">
+                  <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-8 col-sm-7 col-12 mb-sm-0 mb-3">
+                      <div class="addresstitle mb-2">Order #01000037-MOB-US</div>
+                      <div class="product-smalltext mb-2">
+                        <span class="font-weight-medium">Purchase Date:</span> 8/26/2022 2:49 PM
+                      </div>
+                      <div class="product-smalltext mb-2">
+                        <span class="font-weight-medium">Order Total:</span> $8.95
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-5 col-12 text-sm-end">
+                      <div><a href="my-account-recent-orders-details.html" class="btn btn-primary w-100 smallfont-sizebtn">VIEW & TRACK ORDER</a></div>
+                    </div>
+                  </div>
+                </div>                
+              </div>
           </div>
       </div>     
     </div>       
   </section>
+  
     <!-- End your project here-->
 
     <!-- MDB ESSENTIAL -->
@@ -107,6 +114,6 @@
     <script type="text/javascript" src="js/mdb-js/plugins/js/all.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script> 
-    <script type="text/javascript" src="js/my-account-common.js"></script>   
+    <script type="text/javascript" src="js/my-account-common.js"></script>
   </body>
 </html>
