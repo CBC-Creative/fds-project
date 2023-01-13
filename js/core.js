@@ -35,17 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (scroll_top < last_scroll_top) {
         el_autohide.classList.remove('scrolled-down');
         el_autohide.classList.add('scrolled-up');
-        el_autohide.classList.add('autohide');
-        document.getElementsByTagName('body')[0].classList.add('bodynavfixedtop');
       } else {
         el_autohide.classList.remove('scrolled-up');
-        el_autohide.classList.remove('autohide');
-        document.getElementsByTagName('body')[0].classList.remove('bodynavfixedtop');
         el_autohide.classList.add('scrolled-down');
-      }
-      if (scroll_top < 10) {
-        el_autohide.classList.remove('autohide');
-        document.getElementsByTagName('body')[0].classList.remove('bodynavfixedtop');
       }
       last_scroll_top = scroll_top;
     });

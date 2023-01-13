@@ -22,8 +22,7 @@
     fill: var(--fds-black);
   }
   .top-scrolled-up {
-    background: #000;
-    background: transparent;
+    background-color: transparent;
   }
   .opensearch {
     background: var(--fds-white);

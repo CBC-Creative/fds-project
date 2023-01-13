@@ -420,12 +420,16 @@ a.two-col-section__link::after {
 }
 
 /* Global Nav Styles */
-.autohide {
+#main-navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+.bodynavfixedtop {
+  height: 70px;
 }
 
 .scrolled-down {
@@ -714,7 +718,7 @@ a.two-col-section__link::after {
   background-color: transparent;
 }
 
-.country-selector-modal .modal {
+.country-selector-modal.modal {
   z-index: 9999;
 }
 
