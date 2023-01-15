@@ -272,6 +272,7 @@
 
   .showOnMobile {
     display: block;
+    margin-top: 4rem;
   }
   .categorytextsizes:hover .vertical-align-middle-content {
     display: table-cell;
