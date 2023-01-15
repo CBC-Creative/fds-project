@@ -362,6 +362,10 @@ a.two-col-section__link::after {
   z-index: 900;
 }
 
+.mt-md-6 {
+  margin-top: 3.5rem !important;
+}
+
 .top-50px {
   top: 50px;
 }

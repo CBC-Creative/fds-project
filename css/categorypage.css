@@ -14,6 +14,7 @@
   font-size: var(--fds-fs-350);
   font-weight: 300;
   line-height: 1.4;
+  padding-inline: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -22,5 +23,6 @@
   }
   .cat-last-section__discription {
     font-size: 1rem;
+    padding-inline: 0;
   }
 }
