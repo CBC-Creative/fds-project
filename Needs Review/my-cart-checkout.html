@@ -31,7 +31,7 @@
     <!-- Start your project here-->
 
     <!-- Start your project here-->
-  
+
     <!-- Temporary Hero -->
     <section class="band section-spacing text-black">
       <div class="container">
@@ -96,6 +96,8 @@
                               type="text"
                               id="FirstName"
                               class="form-control form-control-lg"
+                              required
+                              aria-required="true"
                             />
                             <label class="form-label" for="FirstName">First Name</label>
                           </div>
@@ -153,9 +155,11 @@
                         <div class="form-group">
                           <div class="form-outline">
                             <input
-                              type="text"
+                              type="phone"
                               id="Telephone"
                               class="form-control form-control-lg"
+                              required
+                              aria-required="true"
                             />
                             <label class="form-label" for="Telephone"
                               >Telephone (555-555-5555)</label
@@ -187,6 +191,7 @@
                         </div>
                       </fieldset>
                       <div class="form-group text-end mb-0 continue-btn">
+                        <!-- <button type="submit" class="btn btn-primary">CONTINUE</button> -->
                         <a href="#" class="btn btn-primary">CONTINUE</a>
                       </div>
                     </div>
@@ -867,7 +872,7 @@
                           </p>
                         </div>
                         <div class="form-group text-center mb-0">
-                          <a href="#" class="btn btn-primary">PLACE ORDER</a>
+                          <button type="submit" class="btn btn-primary">PLACE ORDER</button>
                         </div>
                       </fieldset>
                     </div>
