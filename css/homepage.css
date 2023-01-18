@@ -2,6 +2,11 @@
 .navbar {
   background: var(--fds-white);
 }
+
+#main-navbar {
+  border-bottom: none;
+}
+
 @media (min-width: 1200px) {
   .navbar {
     background: #000;
