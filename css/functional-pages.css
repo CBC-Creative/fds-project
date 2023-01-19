@@ -184,12 +184,18 @@
 #newaddress .modal-header,
 #newcard .modal-header {
   justify-content: center;
+  border-bottom: none;
 }
 #newaddress .btn-close,
 #newcard .btn-close {
   position: absolute;
   right: 1rem;
   opacity: 1;
+}
+
+#newaddress .modal-dialog,
+#newcard .modal-dialog {
+  transform: translateY(90px);
 }
 .eligibleproductname {
   font-size: var(--fds-fs-350);
@@ -234,11 +240,6 @@
 @media (min-width: 768px) {
   .myaccount-nav li:first-child {
     padding-top: 0;
-  }
-}
-@media (min-width: 992px) {
-  .addressbtns .btn {
-    width: 180px;
   }
 }
 @media (max-width: 767.98px) {
