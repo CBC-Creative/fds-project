@@ -873,7 +873,7 @@ a.two-col-section__link::after {
 
   .dropdown-item {
     color: var(--fds-black);
-    font-weight: bold;
+    font-weight: 500;
     text-align: left;
     font-size: var(--fds-fs-325);
     transition: all 0.5s ease-out;
