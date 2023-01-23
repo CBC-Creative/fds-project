@@ -227,7 +227,7 @@ button:not(:disabled) {
   }
   #homepagebannerslider .carousel-item img {
     height: auto;
-    min-height: 800px;
+    min-height: 700px;
     object-fit: cover;
   }
   #homepagebannerslider .carousel-caption {
