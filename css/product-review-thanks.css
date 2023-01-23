@@ -1,0 +1,10 @@
+.form-btn {
+    font-size: var(--fds-fs-325);
+    width: 100%;
+}
+
+@media (min-width:992px) {
+    .form-btn {
+        width: 58%;
+    }
+}

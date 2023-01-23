@@ -1,0 +1,39 @@
+.product-registration-box {
+    border-top: 1px solid var(--fds-grey-400);
+    border-bottom: 1px solid var(--fds-grey-400);
+}
+
+.gray-link,
+.gray-link:hover,
+.gray-link:focus,
+.gray-link:active {
+    color: var(--fds-grey-700);
+    text-decoration: underline;
+}
+
+.product-line {
+    border-top: 1px solid var(--fds-grey-400);
+}
+.square-radio 
+.form-check-input[type=radio]{
+    border-radius: unset;
+    background: transparent;
+    border-color: var(--fds-grey-700);
+}
+.register-selection{
+    font-size: var(--fds-fs-300);
+}
+.form-check-input[type=radio]:checked:after {
+    border-radius: 0;
+    position: absolute;
+    margin-left: 0rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: var(--fds-grey-700);
+}
+
+@media only screen and (max-width: 768px) {
+ .research-studie{
+    text-align: left;
+ }
+}
