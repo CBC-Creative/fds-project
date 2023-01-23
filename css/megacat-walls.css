@@ -31,15 +31,69 @@
   border: none;
   margin: 0 auto;
 }
-.titanvategorybg{background: url(../img/megacat-walls/product-category-titan.jpg) no-repeat; background-size: cover; background-position: center center; position: relative;}
-.volovategorybg{background: url(../img/megacat-walls/product-category-volo.jpg) no-repeat; background-size: cover; background-position: center center; position: relative;}
-.trendwallvategorybg{background: url(../img/megacat-walls/product-category-trendwall.jpg) no-repeat; background-size: cover; background-position: center center; position: relative;}
-.category-content::before{content: '';background: rgba(59, 59, 59, 0.8);position: absolute;width: 100%;height: 100%;left: 0;z-index: -1; top: 0;}
-.category-title{font-size: var(--fds-fs-860); line-height: var(--fds-fs-905);}
-.categorytextsizes p, .categorytextsizes a{font-size: var(--fds-fs-450); line-height: var(--fds-fs-725);}
-.categorytextsizes ul{font-size: var(--fds-fs-325);line-height: var(--fds-fs-600);}
-.category-content{-webkit-transition-duration: 0.6s;-moz-transition-duration: 0.6s;transition-duration: 0.6s;height: 100%; width: 100%;display: table;position:relative; }
-.vertical-align-middle-content{display: table-cell;vertical-align: top;width: 100%;}
+.titanvategorybg {
+  background: url(../img/megacat-walls/product-category-titan.jpg) no-repeat;
+  background-size: cover;
+  background-position: center left;
+  position: relative;
+}
+.volovategorybg {
+  background: url(../img/megacat-walls/product-category-volo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center left;
+  position: relative;
+}
+.trendwallvategorybg {
+  background: url(../img/megacat-walls/product-category-trendwall.jpg) no-repeat;
+  background-size: cover;
+  background-position: center left;
+  position: relative;
+}
+.category-content::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+  top: 0;
+}
+.category-title {
+  font-size: var(--fds-fs-860);
+  line-height: var(--fds-fs-905);
+}
+.categorytextsizes p,
+.categorytextsizes a {
+  font-size: var(--fds-fs-350);
+  line-height: var(--fds-fs-725);
+}
+.categorytextsizes ul {
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-600);
+}
+.category-content {
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+}
+
+.showOnMobile {
+  display: none;
+}
+
+.showOnMobile.show {
+  display: block;
+}
+.vertical-align-middle-content {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
 
 .yellowboxwithdiscription {
   background: var(--fds-tan);
@@ -48,72 +102,227 @@
 .light-blue-box {
   background: var(--fds-light-blue);
 }
-.wall-slider-caption{background: var(--fds-green); padding: 5.625rem 0rem 3.625rem 0rem;}
-.wall-slider .carousel-indicators{margin-bottom: 0;}
-.wall-slider .carousel-indicators [data-mdb-target]{width: 9px; height: 9px;border-radius: 50%; background: transparent; border: 1px solid #ffffff;}
-.wall-slider .active[data-mdb-target]{background: var(--fds-white);}
-.wall-slider-caption h5{font-size: var( --fds-fs-850); line-height: var(--fds-fs-900);}
-.customer-service-section{background: url(../img/megacat-walls/obsessive.jpg) no-repeat; background-size: cover; background-position: top center; min-height: 600px; padding: 2rem 0;position: relative;}
-.customer-service-section::before{content: '';position: absolute; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%;}
-.ideate-concept-create-section{background: url(../img/megacat-walls/ideate-concept-create.jpg) no-repeat; background-size: cover; background-position: center center; min-height: 600px; padding: 2rem 0;position: relative;}
-.ideate-concept-create-section::before{content: '';position: absolute; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%;}
 
-.tools-bg{background: url(../img/megacat-walls/right-tools.jpg) no-repeat; background-size: cover;min-height: 350px; background-position: center center;}
-.production-bg{background: url(../img/megacat-walls/on-time-prod.jpg) no-repeat; background-size: cover;min-height: 350px; background-position: center center;}
-.tanbg{background: var(--fds-tan);}
-.box-title{font-size: var(--fds-fs-725);line-height: var(--fds-fs-800);}
-.sideboxcontent{padding: 3rem 2rem; width: 100%; margin: 0 auto;display: flex; flex-direction: column; justify-content: center;}
-.green-bg{background: var(--fds-green);min-height: 300px;}
-.cta-title{font-size: var(--fds-fs-850); line-height: var(--fds-fs-900);}
-.ctaptext{font-size: var(--fds-fs-500); line-height:var(--fds-fs-725);}
+.wall-slider .slide-image {
+  position: relative;
+  height: 100%;
+  max-height: 700px;
+  min-height: 315px;
+}
+
+.wall-slider img {
+  height: 100%;
+  max-height: 700px;
+  min-height: 315px;
+  object-fit: cover;
+}
+.wall-slider-caption {
+  background: var(--fds-green);
+  padding: 5.625rem 0rem 3.625rem 0rem;
+}
+.wall-slider .carousel-indicators {
+  margin-bottom: 0;
+  gap: 1.875rem;
+}
+
+.wall-slider .carousel-control-next,
+.wall-slider .carousel-control-prev {
+  opacity: 7;
+}
+.wall-slider .carousel-indicators [data-mdb-target] {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.wall-slider .active[data-mdb-target] {
+  background: var(--fds-white);
+}
+.wall-slider-caption h5 {
+  font-size: var(--fds-fs-850);
+  line-height: var(--fds-fs-900);
+}
+.customer-service-section {
+  background: url(../img/megacat-walls/obsessive-mobile.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px;
+  padding: 2rem 0;
+  position: relative;
+}
+.customer-service-section::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+}
+.ideate-concept-create-section {
+  background: url(../img/megacat-walls/ideate-concept-create.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px;
+  padding: 2rem 0;
+  position: relative;
+}
+.ideate-concept-create-section::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.tools-bg {
+  background: url(../img/megacat-walls/right-tools.jpg) no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  background-position: center center;
+}
+.production-bg {
+  background: url(../img/megacat-walls/on-time-prod.jpg) no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  background-position: center center;
+}
+.tanbg {
+  background: var(--fds-tan);
+}
+.box-title {
+  font-size: var(--fds-fs-725);
+  line-height: var(--fds-fs-800);
+}
+.sideboxcontent {
+  padding: 3rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.green-bg {
+  background: var(--fds-green);
+  min-height: 300px;
+}
+.cta-title {
+  font-size: var(--fds-fs-850);
+  line-height: var(--fds-fs-900);
+}
+.ctaptext {
+  font-size: var(--fds-fs-500);
+  line-height: var(--fds-fs-725);
+}
 @media (min-width: 768px) {
   .banner-title {
     font-size: var(--fds-fs-900);
     line-height: var(--fds-fs-900);
-  }  
+  }
   .megacaraqmbg img {
     height: 700px;
   }
   .yellowboxwithdiscription {
     padding: 2rem 3rem;
   }
-  .wall-slider-caption h5{font-size: var(--fds-fs-900); line-height: 2.938rem;}
-  .sideboxcontent{padding: 7rem 2rem;min-height: 600px;}
-  .tools-bg, .production-bg{min-height: 600px;}
-  .box-title{font-size: 1.875rem;line-height: var(--fds-fs-850);}
-  .cta-title{font-size: var(--fds-fs-905); line-height: var(--fds-fs-950);}
-  .ctaptext{font-size: 1.438rem; line-height: 1.875rem;}
+  .wall-slider-caption h5 {
+    font-size: var(--fds-fs-900);
+    line-height: 2.938rem;
+  }
+  .sideboxcontent {
+    padding: 7rem 2rem;
+    min-height: 600px;
+  }
+  .tools-bg,
+  .production-bg {
+    min-height: 600px;
+  }
+  .box-title {
+    font-size: 1.875rem;
+    line-height: var(--fds-fs-850);
+  }
+  .cta-title {
+    font-size: var(--fds-fs-905);
+    line-height: var(--fds-fs-950);
+  }
+  .ctaptext {
+    font-size: 1.438rem;
+    line-height: 1.875rem;
+  }
 }
 @media (min-width: 992px) {
-    .banner-title {
+  .banner-title {
     font-size: var(--fds-fs-950);
     line-height: 3.75rem;
   }
   .yellowboxwithdiscription {
     min-height: 225px;
   }
-  .categorytextsizes{min-height: 520px;}
-  .category-content{position: absolute;bottom: -70%;}
-  .categorytextsizes:hover .category-content{bottom: 0%;display: table;width: 100%;}
-.categorytextsizes:hover .vertical-align-middle-content{display: table-cell;vertical-align: middle;width: 100%;}
-.sideboxcontent{padding: 7rem 5rem;}
+  .categorytextsizes {
+    min-height: 450px;
+  }
+  .category-content {
+    position: absolute;
+    bottom: -60%;
+  }
+  .categorytextsizes:hover .category-content {
+    bottom: 0%;
+    display: table;
+    width: 100%;
+  }
+
+  .showOnMobile {
+    display: block;
+    margin-top: 4rem;
+  }
+  .categorytextsizes:hover .vertical-align-middle-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .sideboxcontent {
+    padding: 7rem 5rem;
+  }
+  .customer-service-section {
+    background: url(../img/megacat-walls/obsessive.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  .customer-service-section::before {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .yellowboxwithdiscription {
     min-height: 175px;
   }
-  .categorytextsizes{min-height: 600px;}
-  .category-content{bottom: -74%;}
-  .sideboxcontent{width: 80%;}
+  .categorytextsizes {
+    min-height: 500px;
+  }
+  .category-content {
+    bottom: -66%;
+  }
+  .sideboxcontent {
+    width: 80%;
+  }
 }
-@media (min-width:1600px){.sideboxcontent{width: 55%;}}
+@media (min-width: 1600px) {
+  .sideboxcontent {
+    width: 55%;
+  }
+}
 @media (max-width: 991px) {
-  @media screen and (orientation: landscape) {    
+  @media screen and (orientation: landscape) {
     .megacaraqmbg img {
       height: 360px;
     }
   }
-  .category-content ul{display: none;}
-  .category-content ul.show{display: block;}
-  .categorytextsizes{margin-bottom: 5px;}
+  .category-content .listtoshowonmobile {
+    display: none;
+  }
+  .category-content .listtoshowonmobile.show {
+    display: block;
+  }
+  .categorytextsizes {
+    margin-bottom: 5px;
+  }
 }

@@ -2,6 +2,11 @@
 .navbar {
   background: var(--fds-white);
 }
+
+#main-navbar {
+  border-bottom: none;
+}
+
 @media (min-width: 1200px) {
   .navbar {
     background: #000;
@@ -22,8 +27,7 @@
     fill: var(--fds-black);
   }
   .top-scrolled-up {
-    background: #000;
-    background: transparent;
+    background-color: transparent;
   }
   .opensearch {
     background: var(--fds-white);
@@ -223,7 +227,7 @@ button:not(:disabled) {
   }
   #homepagebannerslider .carousel-item img {
     height: auto;
-    min-height: 800px;
+    min-height: 700px;
     object-fit: cover;
   }
   #homepagebannerslider .carousel-caption {
