@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
   for (let s = 0; s < searchtab.length; s++) {
     searchtab[s].addEventListener('click', function () {
       searchtab[s].classList.toggle('searchshow');
-      searchtabdiv[s].classList.toggle('searchdivshow');
+      searchtabdiv[0].classList.toggle('searchdivshow');
       if (mediaQuerymax1200.matches) {
         closemobilenav[s].classList.remove('show');
         closemobilenavtoggle[s].classList.add('collapsed');

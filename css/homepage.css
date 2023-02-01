@@ -1,4 +1,10 @@
 /* Homepage Navigation Styles start */
+@media (max-width: 1199px) {
+  #primary-content {
+    padding-top: 70px;
+  }
+}
+
 .navbar {
   background: var(--fds-white);
 }
@@ -8,32 +14,31 @@
 }
 
 @media (min-width: 1200px) {
-  .navbar {
-    background: #000;
-    background: transparent;
+  #main-navbar {
+    background-color: rgba(0, 0, 0, 0.3);
   }
-  .navbar:hover {
+  #main-navbar:hover {
     background: var(--fds-white);
   }
   .navbar .navbar-brand svg {
     fill: var(--fds-white);
     transition: all 0.5s ease-in-out;
   }
-  .scrolled-up {
+  #main-navbar.scrolled-up {
     background: var(--fds-white);
   }
   .navbar:hover .navbar-brand svg,
   .scrolled-up .navbar-brand svg {
     fill: var(--fds-black);
   }
-  .top-scrolled-up {
-    background-color: transparent;
+  #main-navbar.top-scrolled-up {
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .opensearch {
     background: var(--fds-white);
   }
   .top-scrolled-up .navbar-brand svg {
-    fill: var(--fds-white);
+    fill: var(--fds-white) !important;
   }
   .opensearch .navbar-brand svg {
     fill: var(--fds-black);
@@ -84,12 +89,12 @@
     fill: var(--fds-white);
     transition: all 0.5s ease-in-out;
   }
-  .navbar:hover .right-nav svg,
-  .scrolled-up .right-nav svg {
+  #main-navbar:hover .right-nav svg,
+  #main-navbar.scrolled-up .right-nav svg {
     fill: var(--fds-black);
   }
-  .top-scrolled-up .right-nav svg {
-    fill: var(--fds-white);
+  #main-navbar.top-scrolled-up .right-nav svg {
+    fill: var(--fds-white) !important;
   }
   .opensearch .right-nav svg {
     fill: var(--fds-black);
@@ -189,8 +194,7 @@
 }
 #homepagebannerslider [type='button']:not(:disabled),
 #homepagebannerslider [type='reset']:not(:disabled),
-[type='submit']:not(:disabled),
-button:not(:disabled) {
+[type='submit']:not(:disabled) {
   text-shadow: 3px 3px 5px #00000050;
 }
 .carousel-control-next,

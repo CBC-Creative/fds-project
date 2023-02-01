@@ -458,6 +458,12 @@ a.two-col-section__link::after {
   z-index: 1000;
   border-bottom: 1px solid var(--fds-grey-200);
   min-height: 70px;
+  background-color: #fff;
+}
+
+#main-navbar .container-fluid {
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .bodynavfixedtop {
@@ -604,6 +610,10 @@ a.two-col-section__link::after {
 
 .right-nav li:last-child .nav-link:hover {
   color: var(--fds-black);
+}
+
+.stroke-svg svg {
+  stroke: #000;
 }
 
 .search-div {
@@ -1176,8 +1186,9 @@ a.two-col-section__link::after {
 
   .country-grid__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    column-gap: 3rem;
   }
 
   .country-grid__item {
