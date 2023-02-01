@@ -24,8 +24,8 @@
   #main-navbar.scrolled-up {
     background: var(--fds-white);
   }
-  .navbar:hover .navbar-brand svg,
-  .scrolled-up .navbar-brand svg {
+  #main-navbar:hover .navbar-brand svg,
+  #main-navbar.scrolled-up .navbar-brand svg {
     fill: var(--fds-black);
   }
   #main-navbar.top-scrolled-up {
