@@ -17,9 +17,6 @@
   #main-navbar {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  #main-navbar:hover {
-    background: var(--fds-white);
-  }
   .navbar .navbar-brand svg {
     fill: var(--fds-white);
     transition: all 0.5s ease-in-out;
@@ -33,6 +30,10 @@
   }
   #main-navbar.top-scrolled-up {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  #main-navbar:hover,
+  #main-navbar.top-scrolled-up:hover {
+    background: var(--fds-white);
   }
   .opensearch {
     background: var(--fds-white);
