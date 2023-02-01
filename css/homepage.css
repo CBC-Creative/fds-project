@@ -38,8 +38,11 @@
   .opensearch {
     background: var(--fds-white);
   }
-  .top-scrolled-up .navbar-brand svg {
-    fill: var(--fds-white) !important;
+  #main-navbar.top-scrolled-up .navbar-brand svg {
+    fill: var(--fds-white);
+  }
+  #main-navbar.top-scrolled-up:hover .navbar-brand svg {
+    fill: var(--fds-black);
   }
   .opensearch .navbar-brand svg {
     fill: var(--fds-black);
