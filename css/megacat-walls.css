@@ -1,7 +1,7 @@
 .megacaraqmbg img {
   height: 500px;
   object-fit: cover;
-  object-position: top center;
+  object-position: bottom center;
 }
 .banner-title {
   font-size: var(--fds-fs-800);
@@ -163,15 +163,21 @@
   background-size: cover;
   background-position: center center;
   min-height: 600px;
-  padding: 2rem 0;
   position: relative;
 }
-.ideate-concept-create-section::before {
-  content: '';
-  position: absolute;
-  background: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
+
+.future-forward-section {
+  background: url(../img/megacat-walls/walls-slider-balance-mobile.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .future-forward-section {
+    background: url(../img/megacat-walls/walls-slider-balance.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .tools-bg {
@@ -213,6 +219,32 @@
   font-size: var(--fds-fs-500);
   line-height: var(--fds-fs-725);
 }
+
+.icon-row {
+  max-width: 80%;
+  margin-inline: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.icon-row__heading {
+  font-size: var(--fds-fs-500);
+  line-height: 1;
+  margin-block-end: 1rem;
+}
+
+.icon-row__item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-content: start;
+}
+
+.icon-item__img {
+  max-height: 50px;
+}
+
 @media (min-width: 768px) {
   .banner-title {
     font-size: var(--fds-fs-900);
@@ -247,6 +279,19 @@
   .ctaptext {
     font-size: 1.438rem;
     line-height: 1.875rem;
+  }
+  .icon-row {
+    max-width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .icon-row__heading {
+    font-size: var(--fds-fs-725);
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+  }
+  .icon-row__item {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 992px) {
@@ -289,6 +334,10 @@
   }
   .customer-service-section::before {
     background: rgba(0, 0, 0, 0.3);
+  }
+  .icon-row {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {

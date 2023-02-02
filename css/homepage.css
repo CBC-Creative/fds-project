@@ -652,36 +652,6 @@ h5.grid-title {
   margin-inline: -10% !important;
 }
 
-.homepage-last-section {
-  padding-block: 4.375rem;
-}
-
-.homepage-last-section-grid {
-  gap: 1rem;
-  flex-direction: column;
-  max-width: 425px;
-  margin-inline: auto;
-}
-
-.last-section-item h2 {
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.last-section-item-description {
-  line-height: 1.2;
-}
-
-.last-section-item {
-  flex: 1;
-  min-height: 380px;
-}
-
-.give-icon img {
-  display: inline-block;
-  max-width: 60px;
-}
-
 @media (min-width: 992px) {
   .innovations-text {
     font-size: var(--fds-fs-825);
@@ -709,12 +679,6 @@ h5.grid-title {
   .homepage-recent-stories {
     padding-block: 6.25rem;
   }
-  .homepage-last-section-grid {
-    gap: 1rem;
-    flex-direction: row;
-    max-width: 1300px;
-    margin-inline: auto;
-  }
   .ideate-title {
     padding-bottom: 2.5rem;
   }
@@ -739,9 +703,6 @@ h5.grid-title {
   }
   #homepage-recent-stories .multi-carousel-item {
     max-width: 25%;
-  }
-  .homepage-last-section {
-    padding-block: 0;
   }
   .safeairstoriestabbox i.fa-chevron-down {
     display: none;
