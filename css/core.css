@@ -18,6 +18,7 @@
   --fds-medium-brown: #ebe5df;
   --fds-lighter-brown: #b7b2ae;
   --fds-tan: #f6f5f3;
+  --fds-dark-tan: #948d8a;
 
   --mdb-nav-link-color: --fds-grey-600;
   --mdb-nav-link-hover-color: --fds-black;
@@ -195,6 +196,10 @@ a.link-underlined::after {
 
 .fds-tan-bg {
   background-color: var(--fds-tan);
+}
+
+.fds-dark-tan-bg {
+  background-color: var(--fds-dark-tan);
 }
 
 .fds-green-bg {
@@ -396,6 +401,12 @@ a.two-col-section__link::after {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .break-word {
+    display: block;
+  }
+}
+
 .mh-300 {
   min-height: 300px;
 }
@@ -575,7 +586,6 @@ a.two-col-section__link::after {
 .banner-text__subtitle {
   font-size: var(--fds-fs-500);
   font-weight: 400;
-  max-width: 550px;
 }
 
 .header-banner-text a.link-underlined::after {
@@ -588,6 +598,7 @@ a.two-col-section__link::after {
     left: 3em;
     bottom: 4em;
     right: unset;
+    max-width: 550px;
   }
   .banner-text__header {
     font-size: var(--fds-fs-907);
