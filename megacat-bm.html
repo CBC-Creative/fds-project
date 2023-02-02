@@ -33,16 +33,11 @@
   <body class="position-relative">
     <a href="#primary-content" class="skip-to-main-content-link">Skip to main content</a>
 
-    <!-- Nav will usually go here-->
     <header role="banner">
       <!-- Navbar -->
-      <nav
-        class="navbar navbar-expand-xl navbar-light bg-white shadow-0"
-        id="main-navbar"
-        role="navigation"
-      >
+      <nav class="navbar navbar-expand-xl navbar-light shadow-0" id="main-navbar" role="navigation">
         <!-- Container wrapper -->
-        <div class="container-fluid mx-3 mx-lg-4 py-0 px-0">
+        <div class="container-fluid py-0 px-4">
           <!-- Navbar brand -->
           <a class="navbar-brand" href="#">
             <svg
@@ -69,7 +64,6 @@
                     data-name="Path 2"
                     d="M741.532,250.891l3.141-7.951h4.22l1.041,7.961,3.51-7.961h5.539l-7.541,14.553h-4.685l-.98-7.981H745.7l-3.135,7.981h-4.759l-3.267-14.553H740.1Zm42.3-4.207a5.69,5.69,0,0,0-2.665-.709c-.6,0-1.655.254-1.771.991-.158.992,1.434,1.134,2.121,1.276,2.331.484,3.965,1.617,3.54,4.311-.609,3.835-4.343,5.423-7.714,5.423a9.213,9.213,0,0,1-5.4-1.564l1.7-3.192c.934.739,3.108.949,4.383.949.654,0,1.671-.312,1.792-1.107.177-1.137-1.428-1.192-2.977-1.617s-3.035-1.22-2.625-3.828c.567-3.572,4.047-5.158,7.221-5.158a10.571,10.571,0,0,1,4.646.937Zm-60.816,3.542c-.408,2.144.48,3.644,2.536,3.644s3.5-1.221,3.955-3.644c.379-2.026-.456-3.675-2.511-3.675s-3.537,1.358-3.98,3.675m11.827,0c-.769,4.939-5.2,7.75-9.778,7.75-4.551,0-8.146-2.784-7.374-7.75s5.2-7.766,9.776-7.766,8.139,2.806,7.376,7.766m-24.556,10.51,3.549-22.421h4.913L715.2,260.737Zm-6.19-3.24,3.547-22.417h4.916L709.01,257.5Zm64.508-9.2a2.475,2.475,0,0,0-2.644-2.5,3.789,3.789,0,0,0-3.657,2.5Zm-6.761,2.774c-.343,2.1.615,3.239,2.81,3.239a3.628,3.628,0,0,0,2.941-1.337h4.952a9.536,9.536,0,0,1-8.461,5c-4.975,0-8.253-2.726-7.433-7.75.792-4.847,4.7-7.766,9.59-7.766,5.213,0,7.821,3.118,7.009,8.083l-.091.532ZM699.738,248.3a2.477,2.477,0,0,0-2.648-2.5,3.791,3.791,0,0,0-3.656,2.5Zm-6.761,2.774c-.341,2.1.615,3.239,2.812,3.239a3.629,3.629,0,0,0,2.937-1.337h4.954a9.529,9.529,0,0,1-8.462,5c-4.979,0-8.253-2.726-7.431-7.75.793-4.847,4.7-7.766,9.588-7.766,5.216,0,7.825,3.118,7.012,8.083l-.087.532Zm-9.818-10.892-.692,4.01h5.853l-.778,4.447h-5.856l-1.565,8.858h-6.257l3.811-21.895h13.819l-.772,4.581Z"
                     transform="translate(-673.865 -235.08)"
-                    fill="#000"
                     fill-rule="evenodd"
                   />
                 </g>
@@ -165,37 +159,6 @@
                 </g>
               </svg>
             </a>
-            <div class="search-div d-xl-none d-block">
-              <div class="container">
-                <div class="row align-items-center">
-                  <div class="col-md-8 col-12 mb-md-0 mb-3">
-                    <div>
-                      <form action="" method="">
-                        <div class="form-outline rounded-0">
-                          <input
-                            type="search"
-                            class="form-control form-control-lg"
-                            aria-label="Search"
-                            id="nav-search-field-1"
-                          />
-                          <label class="form-label" for="nav-search-field-1">Search</label>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg">search</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-3 offset-md-1 col-12">
-                    <div class="search-title">Popular Search Terms:</div>
-                    <ul class="search-list">
-                      <li>Fellowes Shredder</li>
-                      <li>Volo Wall System</li>
-                      <li>Bulldog Shredder</li>
-                      <li>LX Series</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
             <button
               class="navbar-toggler"
               type="button"
@@ -214,10 +177,42 @@
             <!-- Left links -->
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <!-- Dropdown -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Modular Walls <i class="fas fa-angle-right d-xl-none d-block"></i>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Modular Walls
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Products</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Titan</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Volo</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Trendwall</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Process</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Inspiration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -303,10 +298,71 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Air Quality Management <i class="fas fa-angle-right d-xl-none d-block"></i>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Air Quality Management
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#"
+                      >Array Networked Air Purifiers & Monitoring</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <div class="d-lg-inline-flex flex-xl-nowrap w-100">
+                        <li class="sub-dropdown-menu-title pe-xl-4 mb-3 mb-xl-4">
+                          Networked Air Purifiers
+                          <ul class="inner-list">
+                            <li><a class="sub-dropdown-item" href="#">Ceiling Mounted</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Recessed</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Wall Mounted</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Floor Stand</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub-dropdown-menu-title mb-3 mb-xl-4">
+                          Monitoring
+                          <ul class="inner-list">
+                            <li><a class="sub-dropdown-item" href="#">Display</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Sensors</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Software</a></li>
+                          </ul>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">AeraMax Air Purifiers</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Filters & Accessories</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Networked/Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Industries</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -502,7 +558,7 @@
               <!-- Icon -->
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle stroke-svg"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -521,7 +577,6 @@
                       d="M3.014,6.627h15a.879.879,0,0,1,.822.923v9.482a.881.881,0,0,1-.823.925H9.874a.319.319,0,0,0-.241.112h0L7,21.027a.432.432,0,0,1-.745-.346V18.831a.831.831,0,0,0-.779-.875H3.451a.881.881,0,0,1-.823-.925V7.061a.415.415,0,0,1,.387-.434Z"
                       transform="translate(-2.053 -6.052)"
                       fill="none"
-                      stroke="#000"
                       stroke-miterlimit="10"
                       stroke-width="1.15"
                     />
@@ -616,7 +671,12 @@
                 </ul>
               </li>
               <li class="nav-item search-dropdown d-xl-block d-none">
-                <a class="nav-link" href="javascript:;" id="navbarDropdownMenuLink" role="button">
+                <a
+                  class="nav-link stroke-svg"
+                  href="javascript:;"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="search-icon svg-icons-serach"
@@ -630,7 +690,6 @@
                         data-name="Ellipse 27"
                         transform="translate(-2180 -24666)"
                         fill="none"
-                        stroke="#000"
                         stroke-width="1.25"
                       >
                         <circle cx="7" cy="7" r="7" stroke="none" />
@@ -708,37 +767,6 @@
                   </svg>
                 </a>
               </li>
-              <div class="search-div d-xl-block d-none">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-md-8 col-12 mb-md-0 mb-3">
-                      <div>
-                        <form action="" method="">
-                          <div class="form-outline rounded-0">
-                            <input
-                              type="search"
-                              class="form-control form-control-lg"
-                              aria-label="Search"
-                              id="nav-search-field-2"
-                            />
-                            <label class="form-label" for="nav-search-field-2">Search</label>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg">search</button>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-md-3 offset-md-1 col-12">
-                      <div class="search-title">Popular Search Terms:</div>
-                      <ul class="search-list">
-                        <li>Fellowes Shredder</li>
-                        <li>Volo Wall System</li>
-                        <li>Bulldog Shredder</li>
-                        <li>LX Series</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <li class="nav-item">
                 <button
                   class="nav-link flag-nav-link"
@@ -771,6 +799,40 @@
 
     <div class="bodynavfixedtop" role="presentation"></div>
 
+    <!-- Search Dropdown -->
+
+    <div class="search-div">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 col-12 mb-md-0 mb-3">
+            <div>
+              <form action="" method="">
+                <div class="form-outline rounded-0">
+                  <input
+                    type="search"
+                    class="form-control form-control-lg"
+                    aria-label="Search"
+                    id="nav-search-field-2"
+                  />
+                  <label class="form-label" for="nav-search-field-2">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">search</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1 col-12">
+            <div class="search-title">Popular Search Terms:</div>
+            <ul class="search-list">
+              <li>Fellowes Shredder</li>
+              <li>Volo Wall System</li>
+              <li>Bulldog Shredder</li>
+              <li>LX Series</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Country Modal -->
     <div
       class="country-selector-modal modal fade"
@@ -791,151 +853,145 @@
             <div class="country-grid">
               <div class="country-grid__title">Choose Your Country</div>
               <div class="country-grid__wrapper">
-                <div class="country-grid__column">
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Australia.svg"
-                        alt="Flag of Australia"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Australia</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Belgium.svg"
-                        alt="Flag of Belgium"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Belgium</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Canada.svg"
-                        alt="Flag of Canada"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Canada</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/France.svg"
-                        alt="Flag of France"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">France</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Germany.svg"
-                        alt="Flag of Germany"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Germany</div>
-                    </a>
-                  </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Australia.svg"
+                      alt="Flag of Australia"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Australia</div>
+                  </a>
                 </div>
-                <div class="country-grid__column">
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Italy.svg"
-                        alt="Flag of Italy"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Italy</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Mexico.svg"
-                        alt="Flag of Mexico"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Mexico</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Netherlands.svg"
-                        alt="Flag of Netherlands"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Netherlands</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Poland.svg"
-                        alt="Flag of Poland"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Poland</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Spain.svg"
-                        alt="Flag of Spain"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Spain</div>
-                    </a>
-                  </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Belgium.svg"
+                      alt="Flag of Belgium"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Belgium</div>
+                  </a>
                 </div>
-                <div class="country-grid__column">
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Switzerland.svg"
-                        alt="Flag of Switzerland"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Switzerland</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/United Kingdom.svg"
-                        alt="Flag of United Kingdom"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">United Kingdom</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item country-selected">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/United States.svg"
-                        alt="Flag of United States"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">United States</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Other.svg"
-                        alt="Other Countries Icon"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Other</div>
-                    </a>
-                  </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Canada.svg"
+                      alt="Flag of Canada"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Canada</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/France.svg"
+                      alt="Flag of France"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">France</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Germany.svg"
+                      alt="Flag of Germany"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Germany</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Italy.svg"
+                      alt="Flag of Italy"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Italy</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Mexico.svg"
+                      alt="Flag of Mexico"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Mexico</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Netherlands.svg"
+                      alt="Flag of Netherlands"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Netherlands</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Poland.svg"
+                      alt="Flag of Poland"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Poland</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Spain.svg"
+                      alt="Flag of Spain"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Spain</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Switzerland.svg"
+                      alt="Flag of Switzerland"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Switzerland</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/United Kingdom.svg"
+                      alt="Flag of United Kingdom"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">United Kingdom</div>
+                  </a>
+                </div>
+                <div class="country-grid__item country-selected">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/United States.svg"
+                      alt="Flag of United States"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">United States</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Other.svg"
+                      alt="Other Countries Icon"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Other</div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -965,94 +1021,81 @@
         />
       </section>
 
-      <!-- Supporting Worklife Section -->
-
-      <section
-        class="d-flex justify-content-center align-items-center fds-light-brown-bg mh-300"
-        aria-label="section"
-      >
-        <div class="fullwidth-text-block text-white text-uppercase fw-300 text-center lh-sm">
-          Supporting Your Most Productive Worklife
-        </div>
-      </section>
-
       <!-- Product Category Carousel -->
       <section
-        class="p-4 p-lg-5 mh-600 d-flex align-items-center justify-content-center"
+        class="p-4 p-lg-5 mh-600 mw-1400 d-flex align-items-center justify-content-center"
         aria-label="section"
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="mb-md-5 mb-4 text-center fw-300">Explore Our Business Machines</h2>
-            </div>
-            <div class="col-12 text-lg-start text-center">
-              <div class="prod-cat-carousel multi-carousel" data-mdb-items="4">
-                <div class="multi-carousel-inner multi-carousel-withfade">
-                  <div class="multi-carousel-item">
-                    <a href="#">
-                      <img
-                        src="img/megacat-bm/prod-cat-shredding.jpg"
-                        data-mdb-img="img/megacat-bm/prod-cat-shredding.jpg"
-                        alt="Shredding"
-                        class="img-fluid"
-                      />
-                      <h5 class="prod-cat-carousel-title"><strong>Shredding</strong></h5>
-                    </a>
-                  </div>
-                  <div class="multi-carousel-item">
-                    <a href="#">
-                      <img
-                        src="img/megacat-bm/prod-cat-laminating.jpg"
-                        data-mdb-img="img/megacat-bm/prod-cat-laminating.jpg"
-                        alt="Laminating"
-                        class="img-fluid"
-                      />
-                      <h5 class="prod-cat-carousel-title"><strong>Laminating</strong></h5>
-                    </a>
-                  </div>
-                  <div class="multi-carousel-item">
-                    <a href="#">
-                      <img
-                        src="img/megacat-bm/prod-cat-binding.jpg"
-                        data-mdb-img="img/megacat-bm/prod-cat-binding.jpg"
-                        alt="Binding"
-                        class="img-fluid"
-                      />
-                      <h5 class="prod-cat-carousel-title"><strong>Binding</strong></h5>
-                    </a>
-                  </div>
-                  <div class="multi-carousel-item">
-                    <a href="#">
-                      <img
-                        src="img/megacat-bm/prod-cat-stapling.jpg"
-                        data-mdb-img="img/megacat-bm/prod-cat-stapling.jpg"
-                        alt="Stapling"
-                        class="img-fluid"
-                      />
-                      <h5 class="prod-cat-carousel-title"><strong>Stapling</strong></h5>
-                    </a>
-                  </div>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-md-5 mb-4 text-center fw-300">Explore Our Business Machines</h2>
+          </div>
+          <div class="col-12 text-lg-start text-center">
+            <div class="prod-cat-carousel multi-carousel" data-mdb-items="4">
+              <div class="multi-carousel-inner multi-carousel-withfade">
+                <div class="multi-carousel-item">
+                  <a href="#">
+                    <img
+                      src="img/megacat-bm/prod-cat-shredding.jpg"
+                      data-mdb-img="img/megacat-bm/prod-cat-shredding.jpg"
+                      alt="Shredding"
+                      class="img-fluid"
+                    />
+                    <h5 class="prod-cat-carousel-title"><strong>Shredding</strong></h5>
+                  </a>
                 </div>
-                <button
-                  class="carousel-control carousel-control-prev ms-md-n5"
-                  type="button"
-                  tabindex="0"
-                  data-mdb-slide="prev"
-                >
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">View Previous Product</span>
-                </button>
-                <button
-                  class="carousel-control carousel-control-next me-md-n5"
-                  type="button"
-                  tabindex="0"
-                  data-mdb-slide="next"
-                >
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">View Next Product</span>
-                </button>
+                <div class="multi-carousel-item">
+                  <a href="#">
+                    <img
+                      src="img/megacat-bm/prod-cat-laminating.jpg"
+                      data-mdb-img="img/megacat-bm/prod-cat-laminating.jpg"
+                      alt="Laminating"
+                      class="img-fluid"
+                    />
+                    <h5 class="prod-cat-carousel-title"><strong>Laminating</strong></h5>
+                  </a>
+                </div>
+                <div class="multi-carousel-item">
+                  <a href="#">
+                    <img
+                      src="img/megacat-bm/prod-cat-binding.jpg"
+                      data-mdb-img="img/megacat-bm/prod-cat-binding.jpg"
+                      alt="Binding"
+                      class="img-fluid"
+                    />
+                    <h5 class="prod-cat-carousel-title"><strong>Binding</strong></h5>
+                  </a>
+                </div>
+                <div class="multi-carousel-item">
+                  <a href="#">
+                    <img
+                      src="img/megacat-bm/prod-cat-stapling.jpg"
+                      data-mdb-img="img/megacat-bm/prod-cat-stapling.jpg"
+                      alt="Stapling"
+                      class="img-fluid"
+                    />
+                    <h5 class="prod-cat-carousel-title"><strong>Stapling</strong></h5>
+                  </a>
+                </div>
               </div>
+              <button
+                class="carousel-control carousel-control-prev"
+                type="button"
+                tabindex="0"
+                data-mdb-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">View Previous Product</span>
+              </button>
+              <button
+                class="carousel-control carousel-control-next"
+                type="button"
+                tabindex="0"
+                data-mdb-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">View Next Product</span>
+              </button>
             </div>
           </div>
         </div>
@@ -1091,69 +1134,55 @@
       </section>
 
       <!-- Lamination Section -->
-      <section class="fds-tan-bg overflow-hidden">
-        <div class="fullwidth-two-col two-col-section mh-600">
-          <div class="two-col-section__column text-black align-self-center">
-            <div class="two-col-section__text-block">
-              <div class="container pt-5 px-5 pt-md-0 px-lg-0">
-                <div class="two-col-section__title lh-sm">
-                  The Fastest Way to Perfect Lamination
-                </div>
-                <div class="two-col-section__description">
-                  Designed for easy operation and enhanced productivity, Fellowes laminators deliver
-                  high quality performance for all your laminating needs. Select the best laminator
-                  for your office, classroom or home laminating projects.
-                </div>
-                <a
-                  href="#"
-                  class="two-col-section__link link-underlined text-black position-relative"
-                  >Explore Laminators</a
-                >
+
+      <section class="text-img-columns py-md-5 fds-tan-bg">
+        <div class="container-fluid mw-1200 py-md-5 px-0 px-md-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 text-column px-5 px-md-0 my-5 my-md-0">
+              <h2>The Fastest Way to Perfect Lamination</h2>
+              <div class="text-column__desc">
+                Designed for easy operation and enhanced productivity, Fellowes laminators deliver
+                high quality performance for all your laminating needs. Select the best laminator
+                for your office, classroom or home laminating projects.
+              </div>
+              <div class="position-relative mt-3">
+                <a href="#" class="link-underlined text-black">Explore Laminators</a>
               </div>
             </div>
-          </div>
-          <div
-            class="two-col-section__column bg-image"
-            style="background-image: url(/img/megacat-bm/perfect-lamination.jpg)"
-          >
-            <img
-              class="d-block d-md-none w-100 position-relative"
-              src="/img/megacat-bm/perfect-lamination.jpg"
-              alt="A woman sitting at a desk laminating a project"
-            />
+            <div class="col-12 col-md-7 image-column mt-4 my-md-0">
+              <img
+                src="./img/megacat-bm/perfect-lamination.jpg"
+                alt="Image of a woman sitting at a desk laminating an image."
+                class="d-block w-100"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Bounding Section -->
-      <section class="fds-tan-bg overflow-hidden">
-        <div class="fullwidth-two-col two-col-section mh-600">
-          <div class="two-col-section__column order-1 order-md-2 text-black align-self-center">
-            <div class="two-col-section__text-block">
-              <div class="container pt-5 px-5 pt-md-0 px-lg-0">
-                <div class="two-col-section__title lh-sm">Bound to Impress</div>
-                <div class="two-col-section__description">
-                  How you present yourself says a lot about you­—so naturally you want to showcase
-                  your work in the best possible way. A binding system gives your documents a
-                  finished, professional look.
-                </div>
-                <a
-                  href="#"
-                  class="two-col-section__link link-underlined text-black position-relative"
-                  >Explore Binding Machines</a
-                >
+
+      <section class="text-img-columns py-md-5 bg-white">
+        <div class="container-fluid mw-1200 py-md-5 px-0 px-md-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 text-column px-5 px-md-0 my-5 my-md-0">
+              <h2>Bound to Impress</h2>
+              <div class="text-column__desc">
+                How you present yourself says a lot about you­—so naturally you want to showcase
+                your work in the best possible way. A binding system gives your documents a
+                finished, professional look.
+              </div>
+              <div class="position-relative mt-3">
+                <a href="#" class="link-underlined text-black">Binding Machines</a>
               </div>
             </div>
-          </div>
-          <div
-            class="two-col-section__column order-2 order-md-1 bg-image"
-            style="background-image: url(/img/megacat-bm/bound-to-impress.jpg)"
-          >
-            <img
-              class="d-block d-md-none w-100 position-relative"
-              src="/img/megacat-bm/bound-to-impress.jpg"
-              alt="A binding machine sitting on a desk"
-            />
+            <div class="col-12 col-md-7 image-column mt-4 my-md-0">
+              <img
+                src="./img/megacat-bm/bound-to-impress.jpg"
+                alt="Image of a woman sitting at a desk laminating an image."
+                class="d-block w-100"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -1186,45 +1215,69 @@
         </div>
       </section>
 
-      <!-- Last Section -->
-      <section class="cat-last-section text-black py-5 px-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6 mb-5 mb-lg-0 text-center">
-              <div>
-                <img
-                  src="img/category-imgs/Sustainability.jpg"
-                  class="cat-last-section__image img-fluid w-100"
-                  alt="Business Machines that Love the Earth"
-                />
-              </div>
-              <div class="fds-tan-bg">
-                <div class="cat-last-section__text">
-                  <div class="cat-last-section__title">Business Machines that Love the Earth</div>
-                  <p class="cat-last-section__discription">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut quis nostrud labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
+      <!-- Last Section Begins -->
+      <section
+        class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
+        style="padding-inline: 2.25rem"
+      >
+        <div class="last-section-grid col-12 d-flex">
+          <div
+            class="last-section-item bg-image"
+            style="background-image: url(/img/homepage-imgs/family.jpg)"
+          >
+            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+              <h2>Family</h2>
+              <p class="last-section-item-description">
+                Over 105 years ago, Harry Fellowes began presenting his original Bankers Box to
+                Chicago area bankers which addressed a growing problem: disorganized paper records.
+                Today Fellowes Brands is a global leader in a broad range of innovative solutions
+                which help professionals be their best and feel their best.
+              </p>
+              <a
+                href="#"
+                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+                >Learn About Our Initiatives</a
+              >
             </div>
-            <div class="col-12 col-lg-6 text-center">
+          </div>
+          <div
+            class="last-section-item bg-image"
+            style="background-image: url(/img/homepage-imgs/give.jpg)"
+          >
+            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
               <div>
-                <img
-                  src="img/category-imgs/Unleashing-Work-Life.jpg"
-                  class="cat-last-section__image img-fluid w-100"
-                  alt="Unleashing WorkLife Potential"
-                />
+                <h2>
+                  <span class="give-icon"><img src="/img/homepage-imgs/give.svg" alt="" /></span>
+                  GIVE
+                </h2>
               </div>
-              <div class="fds-tan-bg">
-                <div class="cat-last-section__text">
-                  <div class="cat-last-section__title">Unleashing WorkLife Potential</div>
-                  <p class="cat-last-section__discription">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut quis nostrud labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
+              <p class="last-section-item-description">
+                Fellowes GIVE is a celebrated corporate initiative that allows us to partner with
+                organizations meeting significant needs around the world.
+              </p>
+              <a
+                href="#"
+                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+                >Learn About Our Initiatives</a
+              >
+            </div>
+          </div>
+          <div
+            class="last-section-item bg-image"
+            style="background-image: url(/img/homepage-imgs/earth.jpg)"
+          >
+            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+              <h2>Earth</h2>
+              <p class="last-section-item-description">
+                How we shape the world of work today has a profound impact on the world of tomorrow.
+                By building sustainability and stewardship into every level of our organization, we
+                can protect the work life potential of our children and grandchildren.
+              </p>
+              <a
+                href="#"
+                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+                >Learn About Our Initiatives</a
+              >
             </div>
           </div>
         </div>

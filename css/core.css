@@ -346,6 +346,11 @@ a.two-col-section__link::after {
   padding-block: 6.25rem;
 }
 
+.mw-1400 {
+  max-width: 87.5rem;
+  margin-inline: auto;
+}
+
 .mw-1200 {
   max-width: 75rem;
   margin-inline: auto;
@@ -618,6 +623,10 @@ a.two-col-section__link::after {
   .last-section {
     padding-block: 0;
   }
+}
+
+.text-img-columns {
+  overflow: hidden;
 }
 
 .text-column h2 {
