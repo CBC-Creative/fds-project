@@ -26,13 +26,6 @@
   font-size: 0;
 }
 
-@media (min-width: 768px) {
-  .prod-cat-carousel .carousel-control {
-    width: 3%;
-    margin-inline: -3%;
-  }
-}
-
 .prod-cat-carousel.multi-carousel .multi-carousel-inner .multi-carousel-item img {
   max-height: 320px;
 }
