@@ -17,6 +17,12 @@
   padding-inline: 1rem;
 }
 
+.megacaraqmbg img {
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom center;
+}
+
 @media (min-width: 768px) {
   .cat-last-section__title {
     font-size: var(--fds-fs-700);
@@ -24,5 +30,8 @@
   .cat-last-section__discription {
     font-size: 1rem;
     padding-inline: 0;
+  }
+  .megacaraqmbg img {
+    height: 700px;
   }
 }

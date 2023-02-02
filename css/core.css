@@ -189,6 +189,10 @@ a.link-underlined::after {
   background-color: var(--fds-lighter-brown);
 }
 
+.fds-med-brown-bg {
+  background-color: var(--fds-medium-brown);
+}
+
 .fds-tan-bg {
   background-color: var(--fds-tan);
 }
@@ -387,6 +391,11 @@ a.two-col-section__link::after {
   min-height: 50vh;
 }
 
+.mh-img-350 {
+  min-height: 350px;
+  object-fit: cover;
+}
+
 .mh-300 {
   min-height: 300px;
 }
@@ -439,6 +448,10 @@ a.two-col-section__link::after {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 
   opacity: 0.5;
+}
+
+.dark-img-overlay.ideate-image::before {
+  opacity: 0.25 !important;
 }
 
 .visually-hidden {
@@ -546,6 +559,7 @@ a.two-col-section__link::after {
 .header-banner-text {
   position: absolute;
   left: 2em;
+  right: 2em;
   bottom: 2em;
   color: #fff;
   text-shadow: 3px 3px 5px #00000050;
@@ -561,6 +575,7 @@ a.two-col-section__link::after {
 .banner-text__subtitle {
   font-size: var(--fds-fs-500);
   font-weight: 400;
+  max-width: 550px;
 }
 
 .header-banner-text a.link-underlined::after {
@@ -572,6 +587,7 @@ a.two-col-section__link::after {
   .header-banner-text {
     left: 3em;
     bottom: 4em;
+    right: unset;
   }
   .banner-text__header {
     font-size: var(--fds-fs-907);
