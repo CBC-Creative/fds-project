@@ -712,7 +712,7 @@ h5.grid-title {
   .homepage-last-section-grid {
     gap: 1rem;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 1300px;
     margin-inline: auto;
   }
   .ideate-title {
