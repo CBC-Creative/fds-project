@@ -186,6 +186,10 @@ a.link-underlined::after {
 
 /* Colors */
 
+.fds-light-blue-bg {
+  background-color: #dae5f2;
+}
+
 .fds-light-brown-bg {
   background-color: var(--fds-lighter-brown);
 }
@@ -384,6 +388,14 @@ a.two-col-section__link::after {
   min-height: 600px;
 }
 
+@media (min-width: 768px) {
+  .mh-700-at768 {
+    min-height: 700px;
+    object-fit: cover;
+    object-position: right;
+  }
+}
+
 .mh-700 {
   min-height: 600px;
 }
@@ -399,6 +411,11 @@ a.two-col-section__link::after {
 .mh-img-350 {
   min-height: 350px;
   object-fit: cover;
+}
+
+.blue-text {
+  color: var(--fds-blue);
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
