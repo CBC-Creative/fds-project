@@ -6,7 +6,7 @@
     padding: 0.75rem 3.125rem;
     border-radius: 1.875rem;
     text-transform: capitalize;
-    border: 1px solid transparent;
+    border: 0.063rem solid transparent;
 }
 
 .product-details-tabination .nav-link:after,
@@ -16,7 +16,7 @@
 
 .product-details-tabination .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    border: 1px solid var(--fds-grey-600);
+    border: 0.063rem solid var(--fds-grey-600);
     background-color: var(--fds-white);
     color: var(--fds-black);
 }
@@ -39,7 +39,7 @@
 }
 
 .icon-with-details {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
 }
 
 .icon-with-details:nth-child(odd) {
@@ -51,7 +51,7 @@
 }
 
 .icon-with-details .icon img {
-    width: 50px;
+    width: 3.125rem;
 }
 
 .pdf-text a {
@@ -60,8 +60,8 @@
 }
 
 .submit-button button {
-    font-size: 16px;
-    padding: 10px 50px;
+    font-size: 1rem;
+    padding: 0.625rem 3.125rem;
     font-weight: 700;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .given-review-details .card {
-    border: 1px solid var(--fds-grey-600);
+    border: 0.063rem solid var(--fds-grey-600);
     border-radius: 0;
 }
 
@@ -116,10 +116,10 @@
 }
 
 .response-box {
-    border: 1px solid var(--fds-grey-600);
-    border-radius: 15px;
-    padding: 20px 30px;
-	margin-top: 20px;
+    border: 0.063rem solid var(--fds-grey-400);
+    border-radius: 0.938rem;
+    padding: 1.25rem 1.875rem;
+    margin-top: 1.25rem;
 }
 
 .text-italic {
@@ -127,9 +127,9 @@
 }
 
 .review-feedback-btn {
-    border: 1px solid var(--fds-grey-200);
+    border: 0.063rem solid var(--fds-grey-200);
     font-size: var(--fds-fs-325);
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 .response-box {
@@ -148,7 +148,7 @@
 
 .product-detail-list ul li {
     color: var(--fds-black);
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 
 }
 
@@ -157,13 +157,13 @@
 }
 
 .quantity {
-    width: 50px;
+    width: 3.125rem;
 }
 
 .quantity input {
     text-align: center;
-    width: 50px;
-    border: 2px solid var(--fds-grey-400)
+    width: 3.125rem;
+    border: 0.125rem solid var(--fds-grey-400)
 }
 
 .add-to-card-btn button {
@@ -171,127 +171,160 @@
 }
 
 .btn-floating {
-    height: 25px;
-    width: 25px;
+    height: 1.563rem;
+    width: 1.563rem;
 }
 
 .breadcrumb-item+.breadcrumb-item {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .breadcrumb-item+.breadcrumb-item:before {
     content: "\f105" !important;
     font-family: fontawesome;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 .text-primary {
     color: var(--fds-yellow) !important;
 }
-.given-review-details{
-	margin-bottom: 30px;
+
+.given-review-details {
+    margin-bottom: 1.875rem;
 }
-ul#ex1{
-	flex-wrap: nowrap;
-	overflow-x: auto;
-	
-	justify-content: unset !important;
+
+ul#ex1 {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    justify-content: unset !important;
 
 }
-.pdf-icon img{
-	width:50px !important;
+
+.pdf-icon img {
+    width: 3.125rem !important;
 }
-.product-details-tabination .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
-	margin:20px;
-	justify-content: center;
+
+.product-details-tabination .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    margin: 1.25rem;
+    justify-content: center;
 }
-.details{
-	padding-top: 15px;
-	text-align: center;
+
+.details {
+    padding-top: 0.938rem;
+    text-align: center;
 }
+
 .response-box.mb-4::before {
     z-index: 0;
     content: '';
     transform: rotate(135deg);
     position: absolute;
-    left: 20px;
-    top: -11px;
+    left: 1.25rem;
+    top: -0.8rem;
     background: red;
     background: #fff;
-    border-bottom: 1px solid var(--fds-grey-600);
-    width: 20px;
-    border-left: 1px solid var(--fds-grey-600);
-    height: 20px;
+    border-bottom: 0.063rem solid var(--fds-grey-400);
+    width: 1.5rem;
+    border-left: 0.063rem solid var(--fds-grey-400);
+    height: 1.5rem;
 }
-.text-yellow{
-	color: var(--fds-yellow);
-}
-#carouselExampleIndicators .carousel-indicators{
-	width:100%;
-	justify-content: flex-start;
-	margin-right:unset;	
-	margin-left:unset;	
-}
-.bg-grey{
-	background-color: var(--fds-grey-200);
-}
-.pdf-icon img{
-	width:50px !important;
-}
-@media(min-width:768px){
-	.response-box{
-		margin-top: 0;
-	}
-	ul#ex1{
-	
-		justify-content: space-between !important;
-	
-	}
 
-	.pdf-icon img{
-		width:100% !important;
-	}
-	ul#ex1{
-		flex-wrap: wrap;
-	
-	}
-	ul#ex1 li{
-		flex: 0 0 50%;
-		
-	}
-	.details{
-		padding-top: 0;
-		text-align: left;
-	}
-	.response-box.mb-4::before {
-		z-index: 0;
-		content: '';
-		transform: rotate(45deg);
-		position: absolute;
-		left: -11px;
-		top: 20%;
-		background: red;
-		background: #fff;
-		border-bottom: 1px solid var(--fds-grey-600);
-		;
-		width: 20px;
-		border-left: 1px solid var(--fds-grey-600);
-		;
-	
-		height: 20px;
-	
-	
-	}
+.text-yellow {
+    color: var(--fds-yellow);
 }
-@media(min-width:992px){
-	.given-review-details{
-		margin-bottom:unset;
-	}
-	.product-details-tabination .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
-		margin:unset;
 
-	}
-	ul#ex1 li{
-		flex: 0 0 auto;
-	}
+#carouselExampleIndicators .carousel-indicators {
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: unset;
+    margin-left: unset;
+}
+
+.bg-grey {
+    background-color: var(--fds-grey-200);
+}
+
+.pdf-icon img {
+    width: 3.125rem !important;
+}
+
+.guideline-center {
+    width: 12px;
+    position: relative;
+    top: -1px;
+}
+
+@media(min-width:768px) {
+    .response-box {
+        margin-top: 0;
+    }
+
+    ul#ex1 {
+
+        justify-content: space-between !important;
+
+    }
+
+    .pdf-icon img {
+        width: 100% !important;
+    }
+
+    ul#ex1 {
+        flex-wrap: wrap;
+
+    }
+
+    ul#ex1 li {
+        flex: 0 0 50%;
+
+    }
+
+    .details {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .response-box.mb-4::before {
+        z-index: 0;
+        content: '';
+        transform: rotate(45deg);
+        position: absolute;
+        left: -12px;
+        top: 20%;
+        background: red;
+        background: #fff;
+        border-bottom: 0.063rem solid var(--fds-grey-400);
+        ;
+        width: 1.5rem;
+        border-left: 0.063rem solid var(--fds-grey-400);
+        ;
+
+        height: 1.5rem;
+
+
+    }
+}
+
+@media(min-width:992px) {
+    .given-review-details {
+        margin-bottom: unset;
+    }
+
+    .product-details-tabination .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link {
+        margin: unset;
+
+    }
+
+    ul#ex1 li {
+        flex: 0 0 auto;
+    }
+}
+
+@media(min-width:1400px) {
+    .shredding-image-full-width {
+        background-position: top center;
+    }
 }

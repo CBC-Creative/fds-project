@@ -40,9 +40,9 @@
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a class="text-black" href="#">Home</a></li>
-							<li class="breadcrumb-item"><a class="text-black" href="#">Library</a></li>
+							<li class="breadcrumb-item"><a class="text-black" href="#">Page</a></li>
 							<li class="breadcrumb-item active" aria-current="page"><a class="text-black"
-									href="#">Data</a></li>
+									href="#">Page</a></li>
 						</ol>
 					</nav>
 				</div>
@@ -62,17 +62,20 @@
 									<div class="row">
 										<div class="col-md-3 col-3">
 											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-1.png" alt="">
+												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-1.png"
+													alt="">
 											</div>
 										</div>
 										<div class="col-md-3 col-3">
 											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-2.png" alt="">
+												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-2.png"
+													alt="">
 											</div>
 										</div>
 										<div class="col-md-3 col-3">
 											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-3.png" alt="">
+												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-3.png"
+													alt="">
 											</div>
 										</div>
 										<div class="col-md-3 col-3">
@@ -82,8 +85,8 @@
 										</div>
 									</div>
 								</div>
-								
-								
+
+
 							</div>
 						</div>
 
@@ -96,133 +99,136 @@
 								</a>
 
 								<div class="d-flex text-primary mb-3 flex-wrap">
-									<ul class="rating mb-3 me-2" data-mdb-toggle="rating" data-mdb-readonly="true"
+									<ul class="rating mb-3" data-mdb-toggle="rating" data-mdb-readonly="true"
 										data-mdb-value="4">
 										<li>
-											<i class="far fa-star fa-sm text-primary ps-0" title="Bad"></i>
+											<i class="far fa-star fa-sm text-black ps-0" title="Bad"></i>
 										</li>
 										<li>
-											<i class="far fa-star fa-sm text-primary" title="Poor"></i>
+											<i class="far fa-star fa-sm text-black" title="Poor"></i>
 										</li>
 										<li>
-											<i class="far fa-star fa-sm text-primary" title="OK"></i>
+											<i class="far fa-star fa-sm text-black" title="OK"></i>
 										</li>
 										<li>
-											<i class="far fa-star fa-sm text-primary" title="Good"></i>
+											<i class="far fa-star fa-sm text-black" title="Good"></i>
 										</li>
 										<li>
-											<i class="far fa-star fa-sm text-primary" title="Excellent"></i>
+											<i class="far fa-star fa-sm text-black" title="Excellent"></i>
 										</li>
 									</ul>
-									<div class="d-flex">
-										<a class="px-2 text-black fw-600" href="">Read Reviews <i
-												class="fas fa-angle-right text-yellow"></i></a>
-										<a class="px-2 text-black fw-600" href="">Write Reviews <i
-												class="fas fa-angle-right text-yellow"></i></a>
+									<div class="guideline-image  me-2">
+										<img src="./img/pdp-imgs/guidelines-black.svg"
+											class="img-fluid guideline-center">
 									</div>
 
+									<div class="d-flex">
+										<a class="px-2 text-black fw-600" href="">Read Reviews <i
+												class="fas fa-angle-right text-yellow mx-1"></i></a>
+										<a class="px-2 text-black fw-600" href="">Write Reviews <i
+												class="fas fa-angle-right text-yellow mx-1"></i></a>
+									</div>
 								</div>
-								<div class="mb-4">
+							</div>
 
-									<form action="">
-										<div
-											class="d-flex flex-wrap flex-lg-nowrap justify-content-evenly justify-content-md-between	 align-items-center">
-											<!-- Colors -->
-											<div class="colors">
-												<div class="d-flex">
+							<div class="mb-4">
 
-
-													<input type="radio" class="btn-check" name="options"
-														id="color-danger" autocomplete="off" />
-													<label class="btn btn-danger btn-floating me-2 mb-2 shadow-0"
-														for="color-danger"></label>
-
-													<input type="radio" class="btn-check" name="options"
-														id="color-success" autocomplete="off" />
-													<label class="btn btn-success btn-floating me-2 mb-2 shadow-0"
-														for="color-success"></label>
+								<form action="">
+									<div
+										class="d-flex flex-wrap flex-lg-nowrap justify-content-evenly justify-content-md-between	 align-items-center">
+										<!-- Colors -->
+										<div class="colors">
+											<div class="d-flex">
 
 
+												<input type="radio" class="btn-check" name="options" id="color-danger"
+													autocomplete="off" />
+												<label class="btn btn-danger btn-floating me-2 mb-2 shadow-0"
+													for="color-danger"></label>
 
-												</div>
+												<input type="radio" class="btn-check" name="options" id="color-success"
+													autocomplete="off" />
+												<label class="btn btn-success btn-floating me-2 mb-2 shadow-0"
+													for="color-success"></label>
+
+
+
 											</div>
-											<!-- Price -->
-											<div class="price ">
-												<h5 class="mb-3">
-													<span class="align-middle text-black f-26">$304.99</span>
-												</h5>
+										</div>
+										<!-- Price -->
+										<div class="price ">
+											<h5 class="mb-3">
+												<span class="align-middle text-black f-26">$304.99</span>
+											</h5>
+										</div>
+										<!-- Quantity -->
+										<div class="quantity">
+											<div class="form-outline">
+												<input type="number" id="typeNumber" class="" value="1" min="1" />
+												<label class="sr-only" for="typeNumber">Quantity</label>
 											</div>
-											<!-- Quantity -->
-											<div class="quantity">
-												<div class="form-outline">
-													<input type="number" id="typeNumber" class="" value="1" min="1" />
-													<label class="sr-only" for="typeNumber">Quantity</label>
-												</div>
-											</div>
-											<div class="add-to-card-btn">
-												<button type="button"
-													class="fw-600 text-black btn btn-primary btn-rounded me-2">
-													</i>Add to cart
-												</button>
-											</div>
-
-
-
+										</div>
+										<div class="add-to-card-btn">
+											<button type="button"
+												class="fw-600 text-black btn btn-primary btn-rounded me-2">
+												</i>Add to cart
+											</button>
 										</div>
 
 
 
-									</form>
-								</div>
-
-
-								<div class="product-detail-list">
-									<ul class="m-0 ">
-										<li>100% Jam Proof System: Unlike other paper shredders, the LX200 automatically
-											detects and powers through tough jobs to prevent jams instead of just
-											reversing them
-										</li>
-										<li> Optimal Shredding: This heavy-duty shredder can shred 12 pages and speed
-											through the toughest jobs including staples, paper clips, credit cards, junk
-											mail and more
-										</li>
-										<li> SafeSense Protection: Keep hands and pets safe thanks to intuitive,
-											patented technology that stops shredding when hands or paws touch the paper
-											entry—no unplugging or locking necessary
-										</li>
-										<li> Efficiency Meter: Indicates the ideal number of sheets that can be shredded
-											at a time
-										</li>
-										<li> Bin Full Indicator: Know when the bin is nearly full and when it needs to
-											be emptied</li>
-									</ul>
-								</div>
-
-
-								<div class="d-flex flex-wrap align-items-center mt-3">
-									<a href="" class=" px-2 text-black align-middle">
-										<img class="img-fluid px-1" src="./img/pdp-imgs/video-icon.svg"
-											alt="video-icon">
-										<span class="px-1 text-underline">Product Video</span>
-									</a>
-									<a href="" class=" px-2 text-black">
-										<img class="img-fluid px-1" src="./img/pdp-imgs/landmark-icon.svg"
-											alt="retailer-icon">
-										<span class="px-1 text-underline ">Find a Retailer</span> </a>
-								</div>
+									</div>
 
 
 
+								</form>
 							</div>
-							<!-- Details -->
-						</div>
-					</div>
-					
-				</section>
-				<!-- Section: Product details -->
+							<div class="product-detail-list">
+								<ul class="m-0 ">
+									<li>100% Jam Proof System: Unlike other paper shredders, the LX200 automatically
+										detects and powers through tough jobs to prevent jams instead of just
+										reversing them
+									</li>
+									<li> Optimal Shredding: This heavy-duty shredder can shred 12 pages and speed
+										through the toughest jobs including staples, paper clips, credit cards, junk
+										mail and more
+									</li>
+									<li> SafeSense Protection: Keep hands and pets safe thanks to intuitive,
+										patented technology that stops shredding when hands or paws touch the paper
+										entry—no unplugging or locking necessary
+									</li>
+									<li> Efficiency Meter: Indicates the ideal number of sheets that can be shredded
+										at a time
+									</li>
+									<li> Bin Full Indicator: Know when the bin is nearly full and when it needs to
+										be emptied</li>
+								</ul>
+							</div>
 
+
+							<div class="d-flex flex-wrap align-items-center mt-3">
+								<a href="" class=" px-2 text-black align-middle">
+									<img class="img-fluid px-1" src="./img/pdp-imgs/video-icon.svg" alt="video-icon">
+									<span class="px-1 text-underline">Product Video</span>
+								</a>
+								<a href="" class=" px-2 text-black">
+									<img class="img-fluid px-1" src="./img/pdp-imgs/landmark-icon.svg"
+										alt="retailer-icon">
+									<span class="px-1 text-underline ">Find a Retailer</span> </a>
+							</div>
+
+
+
+						</div>
+						<!-- Details -->
+					</div>
 			</div>
-			<!-- Container for demo purpose -->
+
+			</section>
+			<!-- Section: Product details -->
+
+		</div>
+		<!-- Container for demo purpose -->
 		</div>
 		<div class="product-changable-images bg-grey py-3 d-none d-md-block">
 			<div class="container-fluid">
@@ -249,8 +255,8 @@
 					</div>
 				</div>
 			</div>
-			
-			
+
+
 		</div>
 		<!-- Start Shredding Image full width section -->
 		<section class="shredding-image-full-width mb-4"></section>
@@ -652,7 +658,7 @@
 							aria-labelledby="product-features-tab">
 							<div class="product-features">
 								<div class=" text-black mb-4">
-									<h3 class="fw-600">Product Features</h3>
+									<h3 class="fw-600">Product Specifications</h3>
 								</div>
 								<div class="icon-with-details mb-4">
 									<div class="row align-items-center">
@@ -733,6 +739,26 @@
 
 									</div>
 								</div>
+								<div class="icon-with-details mb-4">
+									<div class="row align-items-center">
+										<div class="col-md-1">
+											<div class="icon">
+												<img class="img-fluid" src="./img/pdp-imgs/specs-safesense.jpg"
+													alt="specs-jam-proof.jpg">
+											</div>
+										</div>
+
+										<div class="col-md-11">
+											<div class="details">
+												<h5>SafeSense®</h5>
+												<p class="mb-0">Autmatically stops shredding when hands or paws touch
+													the paper entry.
+												</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
 
 							</div>
 						</div>
@@ -772,8 +798,8 @@
 														your
 														results</span></div>
 											</div>
-											<div class="row md-0 mb-lg-3">
-												<div class="col-lg-4">
+											<div class="row md-0 mb-lg-3 ">
+												<div class=" col-xl-4 col-lg-12   mb-md-0  mb-lg-3	mb-xl-0 ">
 													<div class="form-group mb-3 mb-lg-0">
 														<select class="select form-control-lg" id="selectone">
 															<option value="Select Your Device Brand">
@@ -785,7 +811,7 @@
 														</select>
 													</div>
 												</div>
-												<div class="col-lg-4">
+												<div class="col-xl-4 col-lg-6">
 													<div class="form-group  mb-3 mb-lg-0">
 														<select class="select form-control-lg" id="selectone">
 															<option value="Select Your Device Brand">
@@ -797,7 +823,7 @@
 														</select>
 													</div>
 												</div>
-												<div class="col-lg-4">
+												<div class=" col-xl-4 col-lg-6">
 													<div class="form-group  mb-3 mb-lg-0">
 														<select class="select form-control-md " id="selectone">
 															<option value="Select Your Device Brand">
@@ -1068,7 +1094,7 @@
 
 										<div class="col-lg-6">
 											<div class="product-mainbox align-items-center mb-2">
-												<div class="mb-3"><span class="fw-600 text-black">“Great Upgrade”</span>
+												<div class="mb-4"><span class="fw-600 text-black">“Great Upgrade”</span>
 												</div>
 												<div class="row mb-md-2">
 													<div class="col-md-7 col-12">
@@ -1369,6 +1395,14 @@
 													class="text-italic">Report inappropriate content</span>
 											</p>
 										</div>
+										<div class="row">
+											<div
+												class="submit-button mb-3 mb-lg-0 d-flex justify-content-center justify-content-md-end mt-4">
+												<button class="text-uppercase btn btn-primary text-black form-btn">
+													Post A Comment
+												</button>
+											</div>
+										</div>
 									</div>
 
 
@@ -1380,7 +1414,7 @@
 
 									<div class="col-lg-6">
 										<div class="product-mainbox align-items-center mb-2">
-											<div class="mb-3"><span class="fw-600 text-black">“Great Upgrade”</span>
+											<div class="mb-4"><span class="fw-600 text-black">“So far, So good”</span>
 											</div>
 											<div class="row mb-md-2">
 												<div class="col-md-7 col-12">
@@ -1629,15 +1663,13 @@
 														</li>
 														<li class="d-flex">
 															<span class="review-tag fw-600">Industry:</span>
-															<div class="review-tag-ans">Daily Use</div>
+															<div class="review-tag-ans">Mortgage/Real Estate</div>
 														</li>
 													</ul>
 
 												</div>
 											</div>
 										</div>
-
-
 									</div>
 								</div>
 
