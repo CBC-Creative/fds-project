@@ -23,6 +23,14 @@
   object-position: bottom center;
 }
 
+.megacaraqmbg.topcenter img {
+  object-position: top center;
+}
+
+.megacaraqmbg.centercenter img {
+  object-position: center center;
+}
+
 @media (min-width: 768px) {
   .cat-last-section__title {
     font-size: var(--fds-fs-700);
