@@ -140,7 +140,7 @@ a.hero-link {
   font-size: var(--fds-fs-500);
 }
 
-a.link-underlined::after {
+.link-underlined::after {
   content: '';
   display: block;
   position: absolute;
@@ -727,8 +727,8 @@ a.two-col-section__link::after {
   font-weight: 400;
 }
 
-.text-img-columns a.link-underlined::after,
-a.link-left.link-underlined::after {
+.text-img-columns .link-underlined::after,
+.link-left.link-underlined::after {
   left: 0;
   transform: none;
 }
