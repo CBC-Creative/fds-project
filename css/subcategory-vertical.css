@@ -1,0 +1,26 @@
+.plp-item__options {
+  display: flex;
+  gap: 1rem;
+}
+
+.options__color-selector {
+  max-width: 35px;
+}
+
+.plp-inner-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 1rem;
+}
+
+.plp-item__options .form-check {
+  padding-left: 0;
+}
+
+.options__prod-image {
+  flex: 1;
+}
+
+.options__prod-image img {
+  width: 100%;
+}
