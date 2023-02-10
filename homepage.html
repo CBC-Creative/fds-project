@@ -32,18 +32,13 @@
   <body class="position-relative">
     <a href="#primary-content" class="skip-to-main-content-link">Skip to main content</a>
 
-    <!-- Nav will usually go here-->
     <header role="banner">
       <!-- Navbar -->
-      <nav
-        class="navbar navbar-expand-xl fixed-top navbar-light shadow-0"
-        id="main-navbar"
-        role="navigation"
-      >
+      <nav class="navbar navbar-expand-xl navbar-light shadow-0" id="main-navbar" role="navigation">
         <!-- Container wrapper -->
-        <div class="container-fluid mx-3 mx-lg-4 py-0 px-0">
+        <div class="container-fluid py-0 px-4">
           <!-- Navbar brand -->
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./homepage.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="112.579"
@@ -163,37 +158,6 @@
                 </g>
               </svg>
             </a>
-            <div class="search-div d-xl-none d-block">
-              <div class="container">
-                <div class="row align-items-center">
-                  <div class="col-md-8 col-12 mb-md-0 mb-3">
-                    <div>
-                      <form action="" method="">
-                        <div class="form-outline rounded-0">
-                          <input
-                            type="search"
-                            class="form-control form-control-lg"
-                            aria-label="Search"
-                            id="nav-search-field-1"
-                          />
-                          <label class="form-label" for="nav-search-field-1">Search</label>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg">search</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-3 offset-md-1 col-12">
-                    <div class="search-title">Popular Search Terms:</div>
-                    <ul class="search-list">
-                      <li>Fellowes Shredder</li>
-                      <li>Volo Wall System</li>
-                      <li>Bulldog Shredder</li>
-                      <li>LX Series</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
             <button
               class="navbar-toggler"
               type="button"
@@ -212,15 +176,47 @@
             <!-- Left links -->
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <!-- Dropdown -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-walls.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Modular Walls <i class="fas fa-angle-right d-xl-none d-block"></i>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Modular Walls
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Products</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Titan</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Volo</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Trendwall</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Process</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Inspiration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="./megacat-furniture.html"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-mdb-toggle="dropdown"
@@ -301,15 +297,76 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-aqm.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Air Quality Management <i class="fas fa-angle-right d-xl-none d-block"></i>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Air Quality Management
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#"
+                      >Array Networked Air Purifiers & Monitoring</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <div class="d-lg-inline-flex flex-xl-nowrap w-100">
+                        <li class="sub-dropdown-menu-title pe-xl-4 mb-3 mb-xl-4">
+                          Networked Air Purifiers
+                          <ul class="inner-list">
+                            <li><a class="sub-dropdown-item" href="#">Ceiling Mounted</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Recessed</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Wall Mounted</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Floor Stand</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub-dropdown-menu-title mb-3 mb-xl-4">
+                          Monitoring
+                          <ul class="inner-list">
+                            <li><a class="sub-dropdown-item" href="#">Display</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Sensors</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Software</a></li>
+                          </ul>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">AeraMax Air Purifiers</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Filters & Accessories</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Networked/Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Industries</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="./megacat-workspace.html"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-mdb-toggle="dropdown"
@@ -390,7 +447,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="./megacat-bm.html"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-mdb-toggle="dropdown"
@@ -498,9 +555,9 @@
             <!-- Right elements -->
             <div class="right-nav d-flex align-items-center">
               <!-- Icon -->
-              <li class="nav-item dropdown stroke-svg">
+              <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle stroke-svg"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -612,8 +669,13 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item search-dropdown d-xl-block d-none stroke-svg">
-                <a class="nav-link" href="javascript:;" id="navbarDropdownMenuLink" role="button">
+              <li class="nav-item search-dropdown d-xl-block d-none">
+                <a
+                  class="nav-link stroke-svg"
+                  href="javascript:;"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="search-icon svg-icons-serach"
@@ -647,6 +709,7 @@
                         y2="1"
                         transform="translate(-2169 -24655)"
                         fill="none"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-width="1.25"
                         opacity="0"
@@ -702,37 +765,6 @@
                   </svg>
                 </a>
               </li>
-              <div class="search-div d-xl-block d-none">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-md-8 col-12 mb-md-0 mb-3">
-                      <div>
-                        <form action="" method="">
-                          <div class="form-outline rounded-0">
-                            <input
-                              type="search"
-                              class="form-control form-control-lg"
-                              aria-label="Search"
-                              id="nav-search-field-2"
-                            />
-                            <label class="form-label" for="nav-search-field-2">Search</label>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg">search</button>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-md-3 offset-md-1 col-12">
-                      <div class="search-title">Popular Search Terms:</div>
-                      <ul class="search-list">
-                        <li>Fellowes Shredder</li>
-                        <li>Volo Wall System</li>
-                        <li>Bulldog Shredder</li>
-                        <li>LX Series</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <li class="nav-item">
                 <button
                   class="nav-link flag-nav-link"
@@ -763,6 +795,40 @@
       <!-- Navbar -->
     </header>
 
+    <!-- Search Dropdown -->
+
+    <div class="search-div">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 col-12 mb-md-0 mb-3">
+            <div>
+              <form action="" method="">
+                <div class="form-outline rounded-0">
+                  <input
+                    type="search"
+                    class="form-control form-control-lg"
+                    aria-label="Search"
+                    id="nav-search-field-2"
+                  />
+                  <label class="form-label" for="nav-search-field-2">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">search</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1 col-12">
+            <div class="search-title">Popular Search Terms:</div>
+            <ul class="search-list">
+              <li>Fellowes Shredder</li>
+              <li>Volo Wall System</li>
+              <li>Bulldog Shredder</li>
+              <li>LX Series</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Country Modal -->
     <div
       class="country-selector-modal modal fade"
@@ -783,151 +849,145 @@
             <div class="country-grid">
               <div class="country-grid__title">Choose Your Country</div>
               <div class="country-grid__wrapper">
-                <div class="country-grid__column">
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Australia.svg"
-                        alt="Flag of Australia"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Australia</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Belgium.svg"
-                        alt="Flag of Belgium"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Belgium</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Canada.svg"
-                        alt="Flag of Canada"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Canada</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/France.svg"
-                        alt="Flag of France"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">France</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Germany.svg"
-                        alt="Flag of Germany"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Germany</div>
-                    </a>
-                  </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Australia.svg"
+                      alt="Flag of Australia"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Australia</div>
+                  </a>
                 </div>
-                <div class="country-grid__column">
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Italy.svg"
-                        alt="Flag of Italy"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Italy</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Mexico.svg"
-                        alt="Flag of Mexico"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Mexico</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Netherlands.svg"
-                        alt="Flag of Netherlands"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Netherlands</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Poland.svg"
-                        alt="Flag of Poland"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Poland</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Spain.svg"
-                        alt="Flag of Spain"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Spain</div>
-                    </a>
-                  </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Belgium.svg"
+                      alt="Flag of Belgium"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Belgium</div>
+                  </a>
                 </div>
-                <div class="country-grid__column">
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Switzerland.svg"
-                        alt="Flag of Switzerland"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Switzerland</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/United Kingdom.svg"
-                        alt="Flag of United Kingdom"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">United Kingdom</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item country-selected">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/United States.svg"
-                        alt="Flag of United States"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">United States</div>
-                    </a>
-                  </div>
-                  <div class="country-grid__item">
-                    <a href="#" class="d-flex align-items-center" role="button">
-                      <img
-                        src="/img/flags/Other.svg"
-                        alt="Other Countries Icon"
-                        class="country-grid__flag"
-                      />
-                      <div class="country-grid__link">Other</div>
-                    </a>
-                  </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Canada.svg"
+                      alt="Flag of Canada"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Canada</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/France.svg"
+                      alt="Flag of France"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">France</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Germany.svg"
+                      alt="Flag of Germany"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Germany</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Italy.svg"
+                      alt="Flag of Italy"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Italy</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Mexico.svg"
+                      alt="Flag of Mexico"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Mexico</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Netherlands.svg"
+                      alt="Flag of Netherlands"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Netherlands</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Poland.svg"
+                      alt="Flag of Poland"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Poland</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Spain.svg"
+                      alt="Flag of Spain"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Spain</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Switzerland.svg"
+                      alt="Flag of Switzerland"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Switzerland</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/United Kingdom.svg"
+                      alt="Flag of United Kingdom"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">United Kingdom</div>
+                  </a>
+                </div>
+                <div class="country-grid__item country-selected">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/United States.svg"
+                      alt="Flag of United States"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">United States</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Other.svg"
+                      alt="Other Countries Icon"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Other</div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -952,6 +1012,7 @@
               />
               <div class="carousel-caption container">
                 <div class="banner-title"><span>INTRODUCING</span><br />RISING™ MONITOR ARMS</div>
+                <div class="banner-cta">Explore</div>
               </div>
             </div></a
           >
@@ -963,9 +1024,10 @@
                 alt="ARRAY™ AIR PURIFICATION"
               />
               <div class="carousel-caption container">
-                <div class="banner-title text-black">
+                <div class="banner-title">
                   <span>INTRODUCING</span><br />ARRAY™ AIR PURIFICATION
                 </div>
+                <div class="banner-cta">Explore</div>
               </div>
             </div></a
           >
@@ -978,6 +1040,7 @@
               />
               <div class="carousel-caption container">
                 <div class="banner-title"><span>INTRODUCING</span><br />TITAN™ MODULAR WALLS</div>
+                <div class="banner-cta">Explore</div>
               </div>
             </div></a
           >
@@ -989,9 +1052,8 @@
                 alt="RISING LOFT™"
               />
               <div class="carousel-caption container">
-                <div class="banner-title text-black">
-                  <span>INTRODUCING</span><br />RISING LOFT™
-                </div>
+                <div class="banner-title"><span>INTRODUCING</span><br />RISING LOFT™</div>
+                <div class="banner-cta">Explore</div>
               </div>
             </div></a
           >
@@ -1003,14 +1065,15 @@
                 alt="LX SERIES™"
               />
               <div class="carousel-caption container">
-                <div class="banner-title text-black"><span>INTRODUCING</span><br />LX SERIES™</div>
+                <div class="banner-title"><span>INTRODUCING</span><br />LX SERIES™</div>
+                <div class="banner-cta">Explore</div>
               </div>
             </div></a
           >
 
           <!-- Controls -->
           <button
-            class="carousel-control-prev d-md-block d-none"
+            class="carousel-control-prev"
             type="button"
             data-mdb-target="#homepagebannerslider"
             data-mdb-slide="prev"
@@ -1019,7 +1082,7 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next d-md-block d-none"
+            class="carousel-control-next"
             type="button"
             data-mdb-target="#homepagebannerslider"
             data-mdb-slide="next"
@@ -1129,11 +1192,10 @@
       <!-- Carousel wrapper -->
 
       <!-- Innovations section -->
-      <section class="text-center mh-300 d-flex justify-content-center align-items-center">
-        <h2 class="innovations-text text-uppercase p-5 mb-0">
-          Innovations that
-          <span class="cf-med callout-text">Unleash</span>
-          worklife potential
+      <section class="text-center d-flex d-md-none justify-content-center align-items-center">
+        <h2 class="innovations-text text-uppercase p-5">
+          Innovations that&mldr;
+          <div class="cf-med callout-text">Unleash worklife potential</div>
         </h2>
       </section>
 
@@ -1149,7 +1211,15 @@
         >
           <div class="container">
             <div class="row">
-              <div class="col-12">
+              <div class="video-overlay col-12 position-relative">
+                <div
+                  class="video-txt-overlay text-center d-none d-md-flex justify-content-center align-items-center"
+                >
+                  <h2 class="innovations-text text-uppercase p-5">
+                    Innovations that&mldr;
+                    <div class="cf-med callout-text">Unleash worklife potential</div>
+                  </h2>
+                </div>
                 <img class="playimg" src="img/play-btn.svg" />
                 <!-- Modal -->
                 <div
@@ -1215,7 +1285,7 @@
                 >
                   <h5 class="position-relative">
                     <i class="fa-solid fa-square"></i>
-                    <span class="homepage-patent-slide-item-text">Over 1000 Patents</span>
+                    <span class="homepage-patent-slide-item-text text-start">Over 250 Patents</span>
                   </h5>
                 </div>
                 <img
@@ -1232,8 +1302,8 @@
                 >
                   <h5 class="position-relative">
                     <i class="fa-solid fa-square"></i>
-                    <span class="homepage-patent-slide-item-text"
-                      >XX New Products to Market Each Year</span
+                    <span class="homepage-patent-slide-item-text text-start"
+                      >50+ New Products Brought to Market Each Year</span
                     >
                   </h5>
                 </div>
@@ -1251,7 +1321,9 @@
                 >
                   <h5 class="position-relative">
                     <i class="fa-solid fa-square"></i>
-                    <span class="homepage-patent-slide-item-text">XX Design Awards</span>
+                    <span class="homepage-patent-slide-item-text text-start"
+                      >200+ Design Awards</span
+                    >
                   </h5>
                 </div>
                 <img
@@ -1268,7 +1340,9 @@
                 >
                   <h5 class="position-relative">
                     <i class="fa-solid fa-square"></i>
-                    <span class="homepage-patent-slide-item-text">XX Global Team Members</span>
+                    <span class="homepage-patent-slide-item-text text-start"
+                      >24 Facilities with Over 2000 Employees</span
+                    >
                   </h5>
                 </div>
                 <img
@@ -1282,302 +1356,439 @@
         </div>
       </section>
 
-      <!-- Process grid Section Begins -->
-
-      <section
-        class="mh-600 text-white position-relative py-6"
-        style="background-color: var(--fds-medium-brown); padding-inline: 2.25rem"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div id="homepage-process-grid" class="multi-carousel" data-mdb-items="3">
-                <div class="multi-carousel-inner d-lg-flex">
-                  <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
-                      <div class="mb-4">
-                        <img
-                          src="/img/homepage-imgs/process.jpg"
-                          data-mdb-img="/img/homepage-imgs/process.jpg"
-                          alt="ALT TEXT GOES HERE"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <h5 class="grid-title">Process</h5>
-                      <p style="white-space: initial">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco
-                      </p>
-                    </a>
-                  </div>
-                  <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
-                      <div class="mb-4">
-                        <img
-                          src="/img/homepage-imgs/customer-obsessive.jpg"
-                          data-mdb-img="/img/homepage-imgs/customer-obsessive.jpg"
-                          alt="ALT TEXT GOES HERE"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <h5 class="grid-title">Customer Obsessive</h5>
-                      <p style="white-space: initial">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco
-                      </p>
-                    </a>
-                  </div>
-                  <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
-                      <div class="mb-4">
-                        <img
-                          src="/img/homepage-imgs/visit-showroom.jpg"
-                          data-mdb-img="/img/homepage-imgs/visit-showroom.jpg"
-                          alt="ALT TEXT GOES HERE"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <h5 class="grid-title">Visit Our Showrooms</h5>
-                      <p style="white-space: initial">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco
-                      </p>
-                    </a>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control carousel-control-prev ms-md-n5 d-lg-none d-flex"
-                  type="button"
-                  tabindex="0"
-                  data-mdb-slide="prev"
-                >
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">View Previous</span>
-                </button>
-                <button
-                  class="carousel-control carousel-control-next me-md-n5 d-lg-none d-flex"
-                  type="button"
-                  tabindex="0"
-                  data-mdb-slide="next"
-                >
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">View Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ideate grid Section Begins -->
-
-      <section
-        class="ideate-section mh-600 position-relative"
-        style="background-color: var(--fds-tan); padding-inline: 1.75rem"
-      >
-        <div class="container">
-          <div class="row position-relative">
-            <div class="col-12 text-center">
-              <h2 class="ideate-title">Ideate. Concept. Create.</h2>
-              <p class="ideate-subtitle mw-1000">
-                When you partner with Fellowes, you are supported by fully-integrated design,
-                planning, production, and installation teams – all working together to deliver
-                extraordinary final results for EVERY indoor environment.
+      <!-- Used by more businesses section begins -->
+      <section id="home-story-tabs">
+        <div class="container-fluid p-0 safeairstoriestabbox">
+          <div class="row gx-0">
+            <div class="col-xl-3 light-blue-box tab-box text-black py-5">
+              <h2 class="font-weight-300 mb-3 text-center text-xl-start">
+                Used by More Businesses Worldwide
+              </h2>
+              <p class="bigptext">
+                From paper shredders to air purifiers to modular walls, see how we’re improving
+                WorkLife across spaces everywhere.
               </p>
-              <a href="#" class="link-underlined text-black position-relative">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <img
-          src="/img/homepage-imgs/idea-section-image.png"
-          alt="Collage image of paint swatches, different fabrics and materials, and a pencil"
-          class="ideate-image d-block w-100"
-        />
-      </section>
+              <!-- Tab navs -->
+              <div class="position-relative">
+                <div class="tab-dropdown d-xl-none text-center">Arenas and Stadiums</div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
 
-      <!-- Homepage Logo Section Begins -->
-
-      <section
-        class="py-4 px-5 px-lg-4 min-vh-50 text-black py-5 my-4 my-lg-0 logoslider overflow-hidden"
-        aria-label="section"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-lg-start text-center">
               <div
-                class="homepage-logo-carousel multi-carousel"
-                id="carousel"
-                data-mdb-items="4"
-                data-mdb-wrap="false"
+                class="nav flex-column nav-pills text-center"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
               >
-                <div class="homepage-logo-multi multi-carousel-withfade multi-carousel-inner">
-                  <div class="multi-carousel-item text-center mb-lg-0 mb-3 active">
-                    <div class="position-relative black-gradient">
-                      <img
-                        src="img/homepagelogosection/higher-ed.jpg"
-                        data-mdb-img="img/homepagelogosection/higher-ed.jpg"
-                        alt="Higher Education"
-                        class="img-fluid slideimageclick"
-                      />
-                      <h5 class="mb-0 text-white"><strong>Higher Education</strong></h5>
-                    </div>
-                  </div>
-                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
-                    <div class="position-relative black-gradient">
-                      <img
-                        src="img/homepagelogosection/fortune-200.jpg"
-                        data-mdb-img="img/homepagelogosection/fortune-200.jpg"
-                        alt="Higher Education"
-                        class="img-fluid slideimageclick"
-                      />
-                      <h5 class="mb-0 text-white"><strong>Fortune 200</strong></h5>
-                    </div>
-                  </div>
-                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
-                    <div class="position-relative black-gradient">
-                      <img
-                        src="img/homepagelogosection/hospitality.jpg"
-                        data-mdb-img="img/homepagelogosection/hospitality.jpg"
-                        alt="Higher Education"
-                        class="img-fluid slideimageclick"
-                      />
-                      <h5 class="mb-0 text-white"><strong>Hospitality</strong></h5>
-                    </div>
-                  </div>
-                  <div class="multi-carousel-item text-center mb-lg-0 mb-3">
-                    <div class="position-relative black-gradient">
-                      <img
-                        src="img/homepagelogosection/assisted-living.jpg"
-                        data-mdb-img="img/homepagelogosection/assisted-living.jpg"
-                        alt="Higher Education"
-                        class="img-fluid slideimageclick"
-                      />
-                      <h5 class="mb-0 text-white"><strong>Assisted Living</strong></h5>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control carousel-control-prev ms-md-n5"
-                  type="button"
-                  tabindex="0"
-                  data-mdb-slide="prev"
+                <a
+                  class="nav-link active tabboxlink"
+                  id="v-pills-home-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-home"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                  >Arenas and Stadiums</a
                 >
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button
-                  class="carousel-control carousel-control-next me-md-n5"
-                  type="button"
-                  tabindex="0"
-                  data-mdb-slide="next"
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-profile-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-profile"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                  >Assisted Living</a
                 >
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-messages-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-messages"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                  >Fortune 500</a
+                >
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-dental-labs-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-dental-labs"
+                  role="tab"
+                  aria-controls="v-pills-dental-labs"
+                  aria-selected="false"
+                  >Dental Labs</a
+                >
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-higher-education-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-higher-education"
+                  role="tab"
+                  aria-controls="v-pills-higher-education"
+                  aria-selected="false"
+                  >Higher Education</a
+                >
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-healthcare-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-healthcare"
+                  role="tab"
+                  aria-controls="v-pills-healthcare"
+                  aria-selected="false"
+                  >Healthcare</a
+                >
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-hospitality-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-hospitality"
+                  role="tab"
+                  aria-controls="v-pills-hospitality"
+                  aria-selected="false"
+                  >Hospitality</a
+                >
+                <a
+                  class="nav-link tabboxlink"
+                  id="v-pills-retail-tab"
+                  data-mdb-toggle="pill"
+                  href="#v-pills-retail"
+                  role="tab"
+                  aria-controls="v-pills-retail"
+                  aria-selected="false"
+                  >Retail</a
+                >
               </div>
+              <!-- Tab navs -->
             </div>
-          </div>
-        </div>
-        <div class="logo-content-main container">
-          <div class="logo-slide" style="display: block">
-            <div class="logo-sontent-section mt-5 pt-lg-4">
-              <div class="d-flex logos-gray justify-content-between flex-wrap">
-                <div>
-                  <img src="img/homepagelogosection/logos/Village-Color.jpg" class="img-fluid" />
+
+            <div class="col-xl-9" style="background: var(--fds-white)">
+              <!-- Tab content -->
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                >
+                  <div class="tab-img">
+                    <img
+                      src="img/megacat-aqm/sas-arenas-stadiums.jpg"
+                      class="img-fluid w-100"
+                      alt="Arenas and Stadiums"
+                      style="object-position: left"
+                    />
+                  </div>
+                  <div class="tab-logo-box">
+                    <div class="logo-sontent-section">
+                      <div class="tab-content-title d-none d-md-block">ARENAS AND STADIUMS</div>
+                      <div class="tab-content-items">
+                        <ul>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                          <li>Doncaster Rovers Football Club</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Cummins_Color.jpg" class="img-fluid" />
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-assisted-living.jpg"
+                        class="img-fluid w-100"
+                        alt="Assisted Living"
+                        style="object-position: right"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Assisted Living</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Drake_Color.jpg" class="img-fluid" />
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-messages"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-fortune-500.jpg"
+                        class="img-fluid w-100"
+                        alt="Fortune 500"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Fortune 500</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/RBI_Color.jpg" class="img-fluid" />
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-dental-labs"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-dental-labs-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-dental-labs.jpg"
+                        class="img-fluid w-100"
+                        alt="Dental Labs"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Dental Labs</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Centennial_Color.jpg" class="img-fluid" />
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-higher-education"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-higher-education-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-higher-education.jpg"
+                        class="img-fluid w-100"
+                        alt="Higher Education"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Higher Education</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-healthcare"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-healthcare-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-healthcare.jpg"
+                        class="img-fluid w-100"
+                        alt="Healthcare"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Healthcare</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-hospitality"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-hospitality-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-hospitality.jpg"
+                        class="img-fluid w-100"
+                        alt="Hospitality"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Hospitality</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-retail"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-retail-tab"
+                >
+                  <div>
+                    <div class="tab-img">
+                      <img
+                        src="img/megacat-aqm/sas-retail.jpg"
+                        class="img-fluid w-100"
+                        alt="Retail"
+                      />
+                    </div>
+                    <div class="tab-logo-box">
+                      <div class="logo-sontent-section">
+                        <div class="tab-content-title d-none d-md-block">Retail</div>
+                        <div class="tab-content-items">
+                          <ul>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                            <li>Doncaster Rovers Football Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="mt-5 pt-lg-3">
-                <div class="sub-title text-center mb-2">Explore Higher Education</div>
-                <div class="tile-devider"></div>
-              </div>
-            </div>
-          </div>
-          <div class="logo-slide">
-            <div class="logo-sontent-section mt-5 pt-lg-4">
-              <div class="d-flex logos-gray justify-content-between flex-wrap">
-                <div>
-                  <img src="img/homepagelogosection/logos/Village-Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Cummins_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Drake_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/RBI_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Centennial_Color.jpg" class="img-fluid" />
-                </div>
-              </div>
-              <div class="mt-5 pt-lg-3">
-                <div class="sub-title text-center mb-2">Explore Fortune 200</div>
-                <div class="tile-devider"></div>
-              </div>
-            </div>
-          </div>
-          <div class="logo-slide">
-            <div class="logo-sontent-section mt-5 pt-lg-4">
-              <div class="d-flex logos-gray justify-content-between flex-wrap">
-                <div>
-                  <img src="img/homepagelogosection/logos/Village-Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Cummins_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Drake_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/RBI_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Centennial_Color.jpg" class="img-fluid" />
-                </div>
-              </div>
-              <div class="mt-5 pt-lg-3">
-                <div class="sub-title text-center mb-2">Explore Hospitality</div>
-                <div class="tile-devider"></div>
-              </div>
-            </div>
-          </div>
-          <div class="logo-slide">
-            <div class="logo-sontent-section mt-5 pt-lg-4">
-              <div class="d-flex logos-gray justify-content-between flex-wrap">
-                <div>
-                  <img src="img/homepagelogosection/logos/Village-Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Cummins_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Drake_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/RBI_Color.jpg" class="img-fluid" />
-                </div>
-                <div>
-                  <img src="img/homepagelogosection/logos/Centennial_Color.jpg" class="img-fluid" />
-                </div>
-              </div>
-              <div class="mt-5 pt-lg-3">
-                <div class="sub-title text-center mb-2">Explore Assisted Living</div>
-                <div class="tile-devider"></div>
-              </div>
+              <!-- Tab content -->
             </div>
           </div>
         </div>
@@ -1600,7 +1811,7 @@
 
       <!-- Recent stories Section Begins -->
       <section
-        class="homepage-recent-stories mh-600 text-white position-relative"
+        class="homepage-recent-stories mh-600 position-relative"
         style="background-color: var(--fds-medium-brown); padding-inline: 2.25rem"
       >
         <div class="container">
@@ -1610,7 +1821,7 @@
               <div id="homepage-recent-stories" class="multi-carousel" data-mdb-items="4">
                 <div class="multi-carousel-inner d-lg-flex">
                   <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
+                    <a href="#" class="text-black">
                       <div class="mb-4 text-center">
                         <img
                           src="/img/homepage-imgs/process.jpg"
@@ -1623,7 +1834,7 @@
                     </a>
                   </div>
                   <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
+                    <a href="#" class="text-black">
                       <div class="mb-4 text-center">
                         <img
                           src="/img/homepage-imgs/360plus.jpg"
@@ -1636,7 +1847,7 @@
                     </a>
                   </div>
                   <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
+                    <a href="#" class="text-black">
                       <div class="mb-4 text-center">
                         <img
                           src="/img/homepage-imgs/visit-showroom.jpg"
@@ -1649,7 +1860,7 @@
                     </a>
                   </div>
                   <div class="multi-carousel-item">
-                    <a href="#" class="text-white">
+                    <a href="#" class="text-black">
                       <div class="mb-4 text-center">
                         <img
                           src="/img/homepage-imgs/Manufacturing.jpg"
@@ -1683,7 +1894,7 @@
               </div>
               <a
                 href="#"
-                class="link-underlined text-center text-white d-block mt-3 mt-lg-4 position-relative"
+                class="link-underlined text-center text-black d-block mt-3 mt-lg-4 position-relative"
                 >Explore Newsroom</a
               >
             </div>
@@ -1693,26 +1904,25 @@
 
       <!-- Last Section Begins -->
       <section
-        class="homepage-last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
+        class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
         style="padding-inline: 2.25rem"
       >
-        <div class="homepage-last-section-grid col-12 d-flex">
+        <div class="last-section-grid col-12 d-flex">
           <div
             class="last-section-item bg-image"
             style="background-image: url(/img/homepage-imgs/family.jpg)"
           >
-            <div
-              class="last-section-item-text text-center text-white d-flex flex-column justify-content-center py-5 px-4"
-            >
+            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
               <h2>Family</h2>
               <p class="last-section-item-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Over 105 years ago, Harry Fellowes began presenting his original Bankers Box to
+                Chicago area bankers which addressed a growing problem: disorganized paper records.
+                Today Fellowes Brands is a global leader in a broad range of innovative solutions
+                which help professionals be their best and feel their best.
               </p>
               <a
                 href="#"
-                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase"
+                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
                 >Learn About Our Initiatives</a
               >
             </div>
@@ -1721,9 +1931,7 @@
             class="last-section-item bg-image"
             style="background-image: url(/img/homepage-imgs/give.jpg)"
           >
-            <div
-              class="last-section-item-text text-center text-white d-flex flex-column justify-content-center py-5 px-4"
-            >
+            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
               <div>
                 <h2>
                   <span class="give-icon"><img src="/img/homepage-imgs/give.svg" alt="" /></span>
@@ -1736,7 +1944,7 @@
               </p>
               <a
                 href="#"
-                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase"
+                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
                 >Learn About Our Initiatives</a
               >
             </div>
@@ -1745,18 +1953,16 @@
             class="last-section-item bg-image"
             style="background-image: url(/img/homepage-imgs/earth.jpg)"
           >
-            <div
-              class="last-section-item-text text-center text-white d-flex flex-column justify-content-center py-5 px-4"
-            >
+            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
               <h2>Earth</h2>
               <p class="last-section-item-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                How we shape the world of work today has a profound impact on the world of tomorrow.
+                By building sustainability and stewardship into every level of our organization, we
+                can protect the work life potential of our children and grandchildren.
               </p>
               <a
                 href="#"
-                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase"
+                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
                 >Learn About Our Initiatives</a
               >
             </div>
