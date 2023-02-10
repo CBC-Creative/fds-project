@@ -1,0 +1,12 @@
+.Page-404 p {
+    font-size: var(--fds-fs-600);
+}
+
+.search-text {
+    color: var(--fds-grey-700);
+    font-size: var(--fds-fs-300);
+}
+
+.popular-term {
+    font-size: var(--fds-fs-325);
+}

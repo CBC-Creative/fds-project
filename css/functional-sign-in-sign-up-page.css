@@ -1,0 +1,13 @@
+.show-password {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    width: 25px;
+}
+
+.hide-password {
+    position: absolute;
+    top: 22px;
+    width: 25px;
+    right: 15px;
+}
