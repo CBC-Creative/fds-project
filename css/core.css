@@ -49,6 +49,8 @@
   --fds-fs-750: 1.75rem;
   /* 25.6px = 1.6rem */
   --fds-fs-725: 1.6rem;
+  /* 24px = 1.5rem */
+  --fds-fs-710: 1.5rem;
   /* 22px = 1.375rem */
   --fds-fs-700: 1.375rem;
   /* 20px = 1.25rem */
@@ -163,7 +165,6 @@ a.hero-link {
 }
 
 @media (min-width: 768px) {
-
   h1,
   h2,
   .fullwidth-text-block {
@@ -957,7 +958,7 @@ a.two-col-section__link::after {
 .btn-primary:focus-visible,
 .btn-primary:hover,
 .btn-primary:focus,
-:not(.btn-check)+.btn-primary:hover {
+:not(.btn-check) + .btn-primary:hover {
   background: #e3e3e3;
   color: #58595b;
   box-shadow: none;
@@ -1118,7 +1119,6 @@ a.two-col-section__link::after {
 }
 
 @media (min-width: 1200px) {
-
   .nav-link,
   .menu-link {
     color: var(--fds-grey-700);
@@ -1169,7 +1169,7 @@ a.two-col-section__link::after {
     padding-left: 0;
   }
 
-  .dropdown-menu>li {
+  .dropdown-menu > li {
     display: inline-block;
   }
 
@@ -1336,7 +1336,7 @@ a.two-col-section__link::after {
     padding: 1rem 0;
   }
 
-  .dropdown-menu.show>li {
+  .dropdown-menu.show > li {
     border-bottom: 1px solid var(--fds-grey-200);
   }
 
