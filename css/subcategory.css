@@ -267,6 +267,11 @@
   height: var(--fds-fs-325);
 }
 
+.filters .color-text {
+  font-size: var(--fds-fs-200);
+  height: var(--fds-fs-325);
+}
+
 .filters .form-check-input {
   width: var(--fds-fs-325);
   height: var(--fds-fs-325);
