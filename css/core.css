@@ -375,6 +375,11 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.mw-1140 {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
 .mw-1000 {
   max-width: 62.5rem;
   margin-inline: auto;
@@ -392,6 +397,12 @@ a.two-col-section__link::after {
 
 .mh-600 {
   min-height: 600px;
+}
+
+@media (min-width: 992px) {
+  .width-90percent {
+    width: 90%;
+  }
 }
 
 @media (min-width: 768px) {
