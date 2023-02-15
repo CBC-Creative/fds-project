@@ -51,9 +51,15 @@
 }
 
 .banner-text__ws-subtitle {
-  font-size: var(--fds-fs-710);
+  font-size: var(--fds-fs-450);
   line-height: 1.3;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .banner-text__ws-subtitle {
+    font-size: var(--fds-fs-710);
+  }
 }
 
 .megacaraqmbg img.playimg {

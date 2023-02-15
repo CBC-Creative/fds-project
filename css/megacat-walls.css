@@ -352,11 +352,11 @@
   }
 }
 @media (max-width: 991px) {
-  @media screen and (orientation: landscape) {
+  /* @media screen and (orientation: landscape) {
     .megacaraqmbg img {
       height: 360px;
     }
-  }
+  } */
   .category-content .listtoshowonmobile {
     display: none;
   }
