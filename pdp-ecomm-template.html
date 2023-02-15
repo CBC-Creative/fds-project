@@ -54,49 +54,68 @@
 				<section>
 					<div class="row gx-lg-5 ">
 						<div class=" col-md-6 ">
-							<div class="product-banner-image text-center">
-								<img src="././img/pdp-imgs/main-shredder-img.png" class="img-fluid w-75 mx-auto" alt="">
-							</div>
-							<div class="product-changable-images bg-grey py-3 d-block d-md-none">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-3 col-3">
-											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-1.png"
-													alt="">
+							<!-- Gallery -->
+							<div class="ecommerce-gallery vertical pdp-noecomm-image" data-mdb-zoom-effect="true"
+								data-mdb-auto-height="true">
+								<div class="row gx-2 gx-lg-3">
+									<div class="col-2 col-lg-3">
+										<div class="multi-carousel vertical" data-mdb-breakpoint="false"
+											data-mdb-items="4" style="height: 500px">
+											<div class="multi-carousel-inner">
+												<div class="multi-carousel-item active mb-2">
+													<img src="https://cbc.developstaging.com/img/pdp-imgs/main-shredder-img.png"
+														data-mdb-img="https://cbc.developstaging.com/img/pdp-imgs/main-shredder-img.png"
+														alt="Gallery image 1" class="active w-100 rounded" />
+												</div>
+												<div class="multi-carousel-item mb-2">
+													<img src="https://cbc.developstaging.com/img/pdp-imgs/shredder-turned-1.png"
+														data-mdb-img="https://cbc.developstaging.com/img/pdp-imgs/shredder-turned-1.png"
+														alt="Gallery image 2" class="w-100 rounded" />
+												</div>
+												<div class="multi-carousel-item mb-2">
+													<img src="https://cbc.developstaging.com/img/pdp-imgs/shredder-turned-2.png"
+														data-mdb-img="https://cbc.developstaging.com/img/pdp-imgs/shredder-turned-2.png"
+														alt="Gallery image 3" class="w-100 rounded" />
+												</div>
+												<div class="multi-carousel-item mb-2">
+													<img src="https://cbc.developstaging.com/img/pdp-imgs/shredder-turned-3.png"
+														data-mdb-img="https://cbc.developstaging.com/img/pdp-imgs/shredder-turned-3.png"
+														alt="Gallery image 4" class="w-100 rounded" />
+												</div>
 											</div>
+											<button class="carousel-control-prev" tabindex="0" type="button"
+												data-mdb-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											</button>
+											<button class="carousel-control-next" tabindex="0" type="button"
+												data-mdb-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											</button>
 										</div>
-										<div class="col-md-3 col-3">
-											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-2.png"
-													alt="">
-											</div>
-										</div>
-										<div class="col-md-3 col-3">
-											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-3.png"
-													alt="">
-											</div>
-										</div>
-										<div class="col-md-3 col-3">
-											<div class="product-image-list text-center">
-												<img class="img-fluid" src="././img/pdp-imgs/shredder-top.png" alt="">
-											</div>
+									</div>
+									<div class="col-10 col-lg-9">
+										<div class="lightbox">
+											<img src="https://cbc.developstaging.com/img/pdp-imgs/main-shredder-img.png"
+												alt="Gallery image 1" class="
+										  ecommerce-gallery-main-img
+										  active
+										  w-100
+										  rounded-4
+										  " />
 										</div>
 									</div>
 								</div>
-
-
 							</div>
+							<!-- Gallery -->
 						</div>
 
 						<div class="col-md-6 mb-4 mb-md-0">
 							<!-- Details -->
 							<div>
-								<h1 class="fw-bold mb-2 h5 text-black f-30 mt-3 mt-md-0">Powershred® LX200</h1>
-								<div class="text-muted mb-3">
-									<p class="mb-2 text-capitalize f-26 text-black"> Micro-Cut Shredder</p>
-								</div>
+								<h1 class="fw-bold mb-2 h5 text-black f-30 mt-3 mt-md-0 fw-300">High Pressure Laminate
+									Desktop
+									Mahogany - 60”x30”</h1>
+
 
 								<div class="d-flex text-primary mb-3 flex-wrap">
 									<ul class="rating mb-3" data-mdb-toggle="rating" data-mdb-readonly="true"
@@ -123,9 +142,9 @@
 									</div>
 
 									<div class="d-flex">
-										<a class="px-2 text-black fw-600" href="">Read Reviews <i
+										<a class="px-2 text-black fw-600 arrow-animation-hover" href="">Read Reviews <i
 												class="fas fa-angle-right text-yellow mx-1"></i></a>
-										<a class="px-2 text-black fw-600" href="">Write Reviews <i
+										<a class="px-2 text-black fw-600 arrow-animation-hover" href="">Write Reviews <i
 												class="fas fa-angle-right text-yellow mx-1"></i></a>
 									</div>
 								</div>
@@ -137,46 +156,56 @@
 									<div
 										class="d-flex flex-wrap flex-lg-nowrap justify-content-evenly justify-content-md-between	 align-items-center">
 										<!-- Colors -->
-										<div class="colors">
+										<div class="colors colors-selected">
 											<div class="d-flex">
 
 
 												<input type="radio" class="btn-check" name="options" id="color-danger"
 													autocomplete="off" />
-												<label class="btn btn-danger btn-floating me-2 mb-2 shadow-0"
+												<label style="background: #CED9DF;"
+													class="btn btn-floating selected-color me-2 mb-2 shadow-0"
 													for="color-danger"></label>
 
 												<input type="radio" class="btn-check" name="options" id="color-success"
 													autocomplete="off" />
-												<label class="btn btn-success btn-floating me-2 mb-2 shadow-0"
+												<label style="background:#64605D;"
+													class="btn btn-floating me-2 mb-2 shadow-0"
 													for="color-success"></label>
 
+												<input type="radio" class="btn-check" name="options" id="color-danger"
+													autocomplete="off" />
+												<label style="background:#4B281E;"
+													class="btn btn-floating me-2 mb-2 shadow-0"
+													for="color-danger"></label>
+
+												<input type="radio" class="btn-check" name="options" id="color-danger"
+													autocomplete="off" />
+												<label style="background:#E1C9A6;"
+													class="btn btn-floating me-2 mb-2 shadow-0"
+													for="color-danger"></label>
+
+												<input type="radio" class="btn-check" name="options" id="color-danger"
+													autocomplete="off" />
+												<label style="background:#FFFFFF;"
+													class="btn btn-floating me-2 mb-2 shadow-0"
+													for="color-danger"></label>
+
+												<p class="px-2">Mahogany</p>
 
 
 											</div>
 										</div>
-										<!-- Price -->
-										<div class="price ">
-											<h5 class="mb-3">
-												<span class="align-middle text-black f-26">$304.99</span>
-											</h5>
+									</div>
+									<div class="product-size d-flex mt-3">
+										<div class="product-size-btn">
+											48” x 24"
 										</div>
-										<!-- Quantity -->
-										<div class="quantity">
-											<div class="form-outline">
-												<input type="number" id="typeNumber" class="" value="1" min="1" />
-												<label class="sr-only" for="typeNumber">Quantity</label>
-											</div>
+										<div class="product-size-btn active">
+											60” x 30”
 										</div>
-										<div class="add-to-card-btn">
-											<button type="button"
-												class="fw-600 text-black btn btn-primary btn-rounded me-2">
-												</i>Add to cart
-											</button>
+										<div class="product-size-btn">
+											72” x 30"
 										</div>
-
-
-
 									</div>
 
 
@@ -207,49 +236,62 @@
 
 
 							<div class="d-flex flex-wrap align-items-center mt-3">
-								<a href="" class=" px-2 text-black align-middle">
+								<a href="" class=" px-2 text-black align-middle product-discription-bottom-btn">
 									<img class="img-fluid px-1" src="./img/pdp-imgs/video-icon.svg" alt="video-icon">
-									<span class="px-1 text-underline">Product Video</span>
+									<span class="px-1 text-line-after">Product Video</span>
 								</a>
-								<a href="" class=" px-2 text-black">
-									<img class="img-fluid px-1" src="./img/pdp-imgs/landmark-icon.svg" alt="retailer-icon">
-									<span class="px-1 text-underline ">Find a Retailer</span> </a>
-								<a href="" class=" px-2 text-black" data-mdb-toggle="modal"
-								data-mdb-target="#configTool">
+								<a href="" class=" px-2 text-black product-discription-bottom-btn">
+									<img class="img-fluid px-1" src="./img/pdp-imgs/landmark-icon.svg"
+										alt="retailer-icon">
+									<span class="px-1 text-line-after">Find a Retailer</span> </a>
+								<a href="" class=" px-2 text-black product-discription-bottom-btn"
+									data-mdb-toggle="modal" data-mdb-target="#configTool">
 									<img class="img-fluid px-1" src="./img/pdp-imgs/gear-icon.svg" alt="retailer-icon">
-									<span class="px-1 text-underline ">Configurator</span> </a>
+									<span class="px-1 text-line-after">Configurator</span> </a>
+
+
+
+
+
 								<!-- Modal -->
-								<div
-									class="modal fade"
-									id="configTool"
-									tabindex="-1"
-									aria-labelledby="configToolLabel"
-									aria-hidden="true"
-								>
+								<div class="modal fade" id="configTool" tabindex="-1" aria-labelledby="configToolLabel"
+									aria-hidden="true">
 									<div class="modal-dialog modal-xl modal-dialog-centered">
 										<div class="modal-content rounded-0 position-relative">
 											<div
-												class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-											>
-												<button
-													type="button"
-													class="btn-close m-0 p-0"
-													data-mdb-dismiss="modal"
-													aria-label="Close"
-												></button>
+												class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0">
+												<button type="button" class="btn-close m-0 p-0" data-mdb-dismiss="modal"
+													aria-label="Close"></button>
 											</div>
 											<div class="modal-body p-4 m-0">
 												<iframe
 													src="https://stage.configura.com/embed/6282/en-US/ESI%20Ergonomic%20Solutions/ESI%20(old)/-/ESI%20Ergonomic%20Solutions/P1/product/KATAEX2-GM-MS-V2?stageiframewidth=100&amp;stageiframeheight=50&amp;stageiframewidthunit=%25&amp;stageiframeheightunit=vh&amp;stageexactprdcatversion=0&amp;stageaccesstokenid=ATEUCE1SQVI4ZOOHVY4YKQIFIA35LCIS&amp;stagefontsize=10&amp;stagetheme=light&amp;stageyaw=110&amp;stagepitch=70&amp;stageshowdescription=1&amp;stageshowstylenr=0&amp;stageshowprice=0&amp;stageshowconfiguration=1&amp;stageenablezoom=1&amp;stageenableautosizing=1&amp;stageenableautorotation=0&amp;stageautorotationspeed=0.1&amp;stageenableexport=0&amp;stageenablehistory=1"
-													style="width: 100%; height: 50vh"
-													frameborder="0"
-												></iframe>
+													style="width: 100%; height: 50vh" frameborder="0"></iframe>
 											</div>
 										</div>
 									</div>
-								</div>  
+								</div>
 							</div>
-
+							<div class="d-flex flex-wrap mt-4 pt-2">
+								<!-- Price -->
+								<div class="price px-3">
+									<h5 class="mb-3">
+										<span class="align-middle text-black f-26">$304.99</span>
+									</h5>
+								</div>
+								<!-- Quantity -->
+								<div class="quantity  px-4">
+									<div class="form-outline">
+										<input type="number" id="typeNumber" class="" value="1" min="1" />
+										<label class="sr-only" for="typeNumber">Quantity</label>
+									</div>
+								</div>
+								<div class="add-to-card-btn px-4 mx-4">
+									<button type="button" class="fw-600 text-black btn btn-primary btn-rounded me-2">
+										</i>Add to cart
+									</button>
+								</div>
+							</div>
 
 
 						</div>
@@ -263,37 +305,7 @@
 		</div>
 		<!-- Container for demo purpose -->
 		</div>
-		<div class="product-changable-images bg-grey py-3 d-none d-md-block">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-3 col-3">
-						<div class="product-image-list text-center">
-							<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-1.png" alt="">
-						</div>
-					</div>
-					<div class="col-md-3 col-3">
-						<div class="product-image-list text-center">
-							<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-2.png" alt="">
-						</div>
-					</div>
-					<div class="col-md-3 col-3">
-						<div class="product-image-list text-center">
-							<img class="img-fluid" src="././img/pdp-imgs/shredder-turned-3.png" alt="">
-						</div>
-					</div>
-					<div class="col-md-3 col-3">
-						<div class="product-image-list text-center">
-							<img class="img-fluid" src="././img/pdp-imgs/shredder-top.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
 
-
-		</div>
-		<!-- Start Shredding Image full width section -->
-		<section class="shredding-image-full-width mb-4"></section>
-		<!-- End Shredding Image full width section -->
 
 		<!-- Start product detail section -->
 		<section class="product-details py-5">
@@ -302,8 +314,7 @@
 				<div class="row">
 
 					<!-- Tabs navs -->
-					<ul class="nav nav-tabs mb-3 d-flex justify-content-md-between product-details-tabination" id="ex1"
-						role="tablist">
+					<ul class="nav nav-tabs mb-3 d-flex product-details-tabination" id="ex1" role="tablist">
 						<li class="nav-item" role="presentation">
 							<a class="nav-link active" id="product-overview" data-mdb-toggle="tab"
 								href="#product-overviews" role="tab" aria-controls="product-overviews"
