@@ -72,6 +72,13 @@
 .product-price {
   font-size: var(--fds-fs-725);
   font-weight: 500;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.list-aftertext {
+  font-size: var(--fds-fs-450);
 }
 
 .product-buy-btn {

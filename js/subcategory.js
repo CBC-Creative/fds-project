@@ -1,3 +1,13 @@
+$(document).ready(function () {
+  const colorFilters = document.querySelectorAll('.color-filter');
+
+  $(colorFilters).each(function () {
+    let currentFilter = $(this);
+    let hiddenText = currentFilter.find('.sr-only').text();
+    $(currentFilter).find('.color-text').html(hiddenText);
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const filterSection = document.querySelector('.filter-section');
   if (mediaQueryMax992.matches && filterSection) {
