@@ -25,6 +25,8 @@
   /* Custom Font Sizes based on 16px = 1rem */
   /* 55px = 3.438rem */
   --fds-fs-950: 3.438rem;
+  /* 53px = 3.3125rem */
+  --fds-fs-925: 3.3125rem;
   /* 50px = 3.125rem */
   --fds-fs-910: 3.125rem;
   /* 46px = 2.875rem */
@@ -131,6 +133,16 @@ h3 {
 
 .fw-700 {
   font-weight: 700;
+}
+
+.fs-17 {
+  font-size: var(--fds-fs-350);
+}
+
+@media (min-width: 768px) {
+  .fs-17 {
+    font-size: var(--fds-fs-400);
+  }
 }
 
 a,
