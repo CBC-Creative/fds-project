@@ -295,7 +295,7 @@
   font-size: var(--fds-fs-800);
 }
 
-.search-icon {
+.search-icon-page {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -303,7 +303,7 @@
   height: 35px;
 }
 
-.search-icon {
+.search-icon-page {
   width: 22px;
 }
 

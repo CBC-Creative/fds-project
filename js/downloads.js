@@ -11,3 +11,9 @@ $('.list-view-unselected').click(function () {
         $(this).addClass('active');
     }
 });
+
+var searchfilter = $('.desktop-search-filter-to-get-html').html();
+$('.mobile-search-filters').append(searchfilter);
+
+var filterleft = $('.desktop-filters-to-get-html').html();
+$('.mobile-filters').append(filterleft);
