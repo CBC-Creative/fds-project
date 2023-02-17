@@ -239,7 +239,41 @@
 .icon-item__img {
   max-height: 50px;
 }
+.sub-title{
+  font-size: var(--fds-fs-600);
+  line-height: var(--fds-fs-710);
+}
+.swatch-img{
+  gap: 10px;
+}
 
+.btn-green {
+  background: var(--fds-green);
+  color: var(--fds-white);
+  font-size: var(--fds-fs-500);
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+.btn-green:first-child:hover,
+.btn-green:focus-visible,
+.btn-green:hover,
+.btn-green:focus,
+:not(.btn-check) + .btn-green:hover {
+  background: var(--fds-green);
+  color: var(--fds-white);
+  box-shadow: none;
+}
+.column-titan-btn .btn{
+  width:200px;
+}
+.multi-carousel .multi-carousel-inner .multi-carousel-item img {
+  max-height: initial;
+  width: 100%;
+}
+#titan-services .multi-carousel-inner {
+  gap: 2rem;
+}
 @media (min-width: 768px) {
   .banner-title {
     font-size: var(--fds-fs-900);
@@ -330,6 +364,19 @@
   .icon-row {
     max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .detail-main-image{
+    height: 100%;
+    object-fit: cover;
+  }
+  .big-text-section-green .section__heading{
+    font-size: var(--fds-fs-907);
+    line-height: var(--fds-fs-925);
+  }
+  .big-text-section-green .section__text{
+    font-size: var(--fds-fs-710);
+    line-height: var(--fds-fs-775);
   }
 }
 @media (min-width: 1200px) {
