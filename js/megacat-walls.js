@@ -1,4 +1,6 @@
 const mediamax991 = window.matchMedia('(max-width: 991.99px)');
+var imagedivtocopy = $('.desktop-html-to-copy').html();
+$('.mobile-image-append').append(imagedivtocopy);
 document.addEventListener('DOMContentLoaded', function () {
   if (mediamax991.matches) {
     const titanCatBlock = document.querySelector('.titanvategorybg');
