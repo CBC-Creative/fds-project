@@ -202,6 +202,19 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.detail-main-image {
+  min-height: 325px;
+  object-fit: cover;
+  object-position: right;
+}
+
+@media (min-width: 991px) {
+  .detail-main-image {
+    object-position: center;
+  }
+}
+
 .green-bg {
   background: var(--fds-green);
   min-height: 300px;
@@ -239,20 +252,49 @@
 .icon-item__img {
   max-height: 50px;
 }
-.sub-title{
+.sub-title {
   font-size: var(--fds-fs-600);
   line-height: var(--fds-fs-710);
 }
-.swatch-img{
+.swatch-img {
   gap: 10px;
 }
 
 .btn-green {
   background: var(--fds-green);
   color: var(--fds-white);
-  font-size: var(--fds-fs-500);
+  font-size: var(--fds-fs-300);
   border-radius: 50px;
   box-shadow: none;
+}
+
+.swatch {
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .btn-green {
+    font-size: var(--fds-fs-350);
+  }
+  .swatch {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.swatch-black {
+  background-color: #2a2a2a;
+}
+
+.swatch-glass {
+  background-color: #edf7fe;
+}
+
+.swatch img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .btn-green:first-child:hover,
@@ -264,8 +306,15 @@
   color: var(--fds-white);
   box-shadow: none;
 }
-.column-titan-btn .btn{
-  width:200px;
+.column-titan-btn .btn {
+  max-width: 180px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .column-titan-btn .btn {
+    max-width: 200px;
+  }
 }
 .multi-carousel .multi-carousel-inner .multi-carousel-item img {
   max-height: initial;
@@ -365,16 +414,16 @@
     max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  
-  .detail-main-image{
+
+  .detail-main-image {
     height: 100%;
     object-fit: cover;
   }
-  .big-text-section-green .section__heading{
+  .big-text-section-green .section__heading {
     font-size: var(--fds-fs-907);
     line-height: var(--fds-fs-925);
   }
-  .big-text-section-green .section__text{
+  .big-text-section-green .section__text {
     font-size: var(--fds-fs-710);
     line-height: var(--fds-fs-775);
   }
@@ -413,4 +462,19 @@
   .categorytextsizes {
     margin-bottom: 5px;
   }
+}
+
+.mobile-image-append {
+  margin-block-start: 0.5rem;
+}
+
+#titan-services .multi-carousel-inner {
+  max-width: calc(100% - 3rem);
+  margin-inline: auto;
+}
+
+#titan-services .carousel-control-next,
+#titan-services .carousel-control-prev {
+  width: 1rem;
+  color: #333;
 }
