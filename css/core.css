@@ -118,7 +118,9 @@ h2 {
 h3 {
   font-size: 1rem;
 }
-
+.fw-200{
+  font-weight: 200;
+}
 .fw-300 {
   font-weight: 300;
 }
