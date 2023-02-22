@@ -367,3 +367,21 @@
     overflow-x: hidden;
   }
 }
+@media (max-width: 767px) and (min-width: 520px) {
+  #download-icon-slider.multi-carousel .multi-carousel-inner .multi-carousel-item{
+    margin: 0 !important;
+    width: 25% !important;
+  }
+}
+@media (max-width: 519.99px) and (min-width: 460px){
+  #download-icon-slider.multi-carousel .multi-carousel-inner .multi-carousel-item{
+    margin: 0 !important;
+    width: 33% !important;
+  }
+}
+@media (max-width: 459.99px){
+  #download-icon-slider.multi-carousel .multi-carousel-inner .multi-carousel-item{
+    margin: 0 !important;
+    width: 50% !important;
+  }
+}
