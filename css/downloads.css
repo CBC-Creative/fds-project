@@ -343,7 +343,16 @@
 .download-list-table .download-image img {
   width: 13px;
 }
-
+#download-icon-slider .carousel-control-next, #download-icon-slider .carousel-control-prev{
+  width: 5%;
+}
+#download-icon-slider .multi-carousel-inner{
+  width: 90%;
+  margin-inline: auto;
+}
+#download-icon-slider .multi-carousel-inner img{
+  height: 45px;
+}
 @media (min-width: 768px) {
   .no-result-gray {
     font-size: var(--fds-fs-800);
@@ -365,6 +374,13 @@
   .quick-icon-row {
     flex-wrap: wrap;
     overflow-x: hidden;
+  }
+ 
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  #download-icon-slider.multi-carousel .multi-carousel-inner .multi-carousel-item{
+    margin: 0 !important;
+    width: 25% !important;
   }
 }
 @media (max-width: 767px) and (min-width: 520px) {
