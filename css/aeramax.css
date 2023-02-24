@@ -321,6 +321,7 @@ opacity: 1;
   padding: 42px 20px;
   text-align: center;
 }
+
 .fellowes_space_content.fellowes_space_content-landing h3{
   font-size: var(--fds-fs-775);
   line-height: var(--fds-fs-860);
@@ -330,6 +331,7 @@ opacity: 1;
   line-height: var(--fds-fs-710);
   color: var(--fds-white);
 }
+
 @media (min-width:768px){
   .section-spacing{
     padding: 70px 0px;
@@ -398,6 +400,7 @@ opacity: 1;
   top: 12%;
     right: 10%;
 }
+
 .fellowes_space_content.fellowes_space_content-landing h3{
   font-size: var(--fds-fs-900);
   line-height: 3rem;
@@ -410,6 +413,7 @@ opacity: 1;
   right: 10%;
   top: 25%;
 }
+
 }
 
 @media (min-width:992px){
@@ -448,5 +452,9 @@ opacity: 1;
     max-width: 1500px;
     margin: 0 auto;
   }
-  
+}
+@media (max-width:575px){
+  .fellowes-banner-image-zoom .fellowes_space_image img {
+    height: 400px;
+}
 }
