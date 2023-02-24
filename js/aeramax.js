@@ -45,13 +45,6 @@ $(window).scroll(function () {
     banner.removeClass('fellowes-slide-scroll-effect');
   }
 });
-menu = $('.aeramax_technologies');
-menu1 = $('.ready-where-needed');
-menu2 = $('.protects-the-air');
-
-origOffsetY = menu.offset().top;
-origOffsetY1 = menu1.offset().top;
-origOffsetY2 = menu2.offset().top;
 
 $(window).scroll(function () {
   if ($(window).scrollTop() >= origOffsetY) {
