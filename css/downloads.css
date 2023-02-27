@@ -273,7 +273,8 @@
 #download-icon-slider.multi-carousel .multi-carousel-inner .multi-carousel-item {
   vertical-align: top;
 }
-#download-icon-slider .multi-carousel-item::after {
+#download-icon-slider .multi-carousel-item::after,
+.slider-icons::after {
   content: '';
   width: 29px;
   height: 2px;
@@ -285,7 +286,8 @@
   transition: all 0.4s;
 }
 #download-icon-slider .multi-carousel-item:hover::after,
-#download-icon-slider .multi-carousel-item.active::after {
+#download-icon-slider .multi-carousel-item.active::after,
+.slider-icons:hover::after {
   opacity: 1;
 }
 
@@ -358,6 +360,14 @@
 
 #download-icon-slider {
   padding: 2rem 0 1rem;
+}
+
+.slider-icons {
+  cursor: pointer;
+}
+
+.slider-icons-list {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
