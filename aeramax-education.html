@@ -26,23 +26,3359 @@
     <!-- Global Styles -->
     <link rel="stylesheet" href="css/core.css" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/aeramax-css" />
+    <link rel="stylesheet" href="css/aeramax.css" />
   </head>
 
-  <body style="min-height: 200vh; position: relative">
+  <body class="position-relative">
     <a href="#primary-content" class="skip-to-main-content-link">Skip to main content</a>
 
-    <!-- Header usually goes here -->
+    <header role="banner">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-xl navbar-light shadow-0" id="main-navbar" role="navigation">
+        <!-- Container wrapper -->
+        <div class="container-fluid py-0 px-4">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="./homepage.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="112.579"
+              height="25.657"
+              viewBox="0 0 112.579 25.657"
+            >
+              <g
+                id="Fellowes_Logo_White"
+                data-name="Fellowes Logo White"
+                transform="translate(1810 136.126)"
+              >
+                <g id="FellowesLogo" transform="translate(-1810 -136.126)">
+                  <path
+                    id="Path_1"
+                    data-name="Path 1"
+                    d="M947,288.7a1.079,1.079,0,1,1,.315-.764A1.03,1.03,0,0,1,947,288.7Zm-1.368-1.378a.881.881,0,0,0,.006,1.243.87.87,0,0,0,1.238,0,.861.861,0,0,0,.257-.627.874.874,0,0,0-1.5-.614Zm.157,1.207v-1.181c.074,0,.183,0,.328,0h.24a.5.5,0,0,1,.238.057.3.3,0,0,1,.154.282.255.255,0,0,1-.084.216.4.4,0,0,1-.206.077.439.439,0,0,1,.174.07.318.318,0,0,1,.106.266v.1c0,.011,0,.025,0,.03a.072.072,0,0,0,.007.042l.006.033h-.3a.724.724,0,0,1-.016-.162.99.99,0,0,0-.019-.145.161.161,0,0,0-.09-.089.455.455,0,0,0-.1-.019l-.075,0h-.06v.42Zm.559-.956a.6.6,0,0,0-.18-.02h-.073v.344h.119a.275.275,0,0,0,.171-.045.154.154,0,0,0,.06-.14A.142.142,0,0,0,946.348,287.571Z"
+                    transform="translate(-834.736 -265.784)"
+                    fill="#000"
+                  />
+                  <path
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M741.532,250.891l3.141-7.951h4.22l1.041,7.961,3.51-7.961h5.539l-7.541,14.553h-4.685l-.98-7.981H745.7l-3.135,7.981h-4.759l-3.267-14.553H740.1Zm42.3-4.207a5.69,5.69,0,0,0-2.665-.709c-.6,0-1.655.254-1.771.991-.158.992,1.434,1.134,2.121,1.276,2.331.484,3.965,1.617,3.54,4.311-.609,3.835-4.343,5.423-7.714,5.423a9.213,9.213,0,0,1-5.4-1.564l1.7-3.192c.934.739,3.108.949,4.383.949.654,0,1.671-.312,1.792-1.107.177-1.137-1.428-1.192-2.977-1.617s-3.035-1.22-2.625-3.828c.567-3.572,4.047-5.158,7.221-5.158a10.571,10.571,0,0,1,4.646.937Zm-60.816,3.542c-.408,2.144.48,3.644,2.536,3.644s3.5-1.221,3.955-3.644c.379-2.026-.456-3.675-2.511-3.675s-3.537,1.358-3.98,3.675m11.827,0c-.769,4.939-5.2,7.75-9.778,7.75-4.551,0-8.146-2.784-7.374-7.75s5.2-7.766,9.776-7.766,8.139,2.806,7.376,7.766m-24.556,10.51,3.549-22.421h4.913L715.2,260.737Zm-6.19-3.24,3.547-22.417h4.916L709.01,257.5Zm64.508-9.2a2.475,2.475,0,0,0-2.644-2.5,3.789,3.789,0,0,0-3.657,2.5Zm-6.761,2.774c-.343,2.1.615,3.239,2.81,3.239a3.628,3.628,0,0,0,2.941-1.337h4.952a9.536,9.536,0,0,1-8.461,5c-4.975,0-8.253-2.726-7.433-7.75.792-4.847,4.7-7.766,9.59-7.766,5.213,0,7.821,3.118,7.009,8.083l-.091.532ZM699.738,248.3a2.477,2.477,0,0,0-2.648-2.5,3.791,3.791,0,0,0-3.656,2.5Zm-6.761,2.774c-.341,2.1.615,3.239,2.812,3.239a3.629,3.629,0,0,0,2.937-1.337h4.954a9.529,9.529,0,0,1-8.462,5c-4.979,0-8.253-2.726-7.431-7.75.793-4.847,4.7-7.766,9.588-7.766,5.216,0,7.825,3.118,7.012,8.083l-.087.532Zm-9.818-10.892-.692,4.01h5.853l-.778,4.447h-5.856l-1.565,8.858h-6.257l3.811-21.895h13.819l-.772,4.581Z"
+                    transform="translate(-673.865 -235.08)"
+                    fill-rule="evenodd"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <!-- Toggle button -->
+          <div class="d-flex">
+            <a class="d-block d-xl-none search-dropdown position-relative" href="javascript:;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="search-icon svg-icons-serach"
+                width="16.884"
+                height="16.884"
+                viewBox="0 0 16.884 16.884"
+              >
+                <g id="Group_2749" data-name="Group 2749" transform="translate(2180 24666)">
+                  <g
+                    id="Ellipse_27"
+                    data-name="Ellipse 27"
+                    transform="translate(-2180 -24666)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="1.25"
+                  >
+                    <circle cx="7" cy="7" r="7" stroke="none" />
+                    <circle cx="7" cy="7" r="6.375" fill="none" />
+                  </g>
+                  <line
+                    id="FrontLine2"
+                    x2="4"
+                    y2="4"
+                    transform="translate(-2168 -24654)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="round"
+                    stroke-width="1.25"
+                  />
+                  <line
+                    id="FrontLine1"
+                    x1="1"
+                    y2="1"
+                    transform="translate(-2169 -24655)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="round"
+                    stroke-width="1.25"
+                    opacity="0"
+                  />
+                </g>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="close-icon svg-icons-serach"
+                width="16.884"
+                height="16.884"
+                viewBox="0 0 17.768 17.768"
+              >
+                <g id="Group_2246" data-name="Group 2246" transform="translate(2180.884 24666.884)">
+                  <g
+                    id="Ellipse_27"
+                    data-name="Ellipse 27"
+                    transform="translate(-2173 -24659)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="1.25"
+                    opacity="0"
+                  >
+                    <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                    <circle cx="0.5" cy="0.5" r="0.125" fill="none" />
+                  </g>
+                  <line
+                    id="FrontLine2"
+                    x2="16"
+                    y2="16"
+                    transform="translate(-2180 -24666)"
+                    fill="none"
+                    stroke="#fdb913"
+                    stroke-linecap="round"
+                    stroke-width="1.25"
+                  />
+                  <line
+                    id="FrontLine1"
+                    x1="16"
+                    y2="16"
+                    transform="translate(-2180 -24666)"
+                    fill="none"
+                    stroke="#fdb913"
+                    stroke-linecap="round"
+                    stroke-width="1.25"
+                  />
+                </g>
+              </svg>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-walls.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modular Walls <i class="fas fa-angle-right d-xl-none d-block"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Modular Walls
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Products</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Titan</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Volo</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Trendwall</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Process</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Inspiration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-furniture.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Furniture <i class="fas fa-angle-right d-xl-none d-block"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Furniture
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Workstations</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Panel Systems</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Desking</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Benching</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Seating</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Elea</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Tables</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Height Adjustable Tables</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="#">Height Adjustable Table Bases</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">Training Tables</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Conference Room Tables</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="#">Collaborative and Side Tables</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Table Enhancements</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Organization</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Privacy & Modesty Screens</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Wire Management</a></li>
+                      <li><a class="sub-dropdown-item" href="#">CPU Holders & Carts</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="#">Supply & Technology Storage</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Storage</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Lateral & Pedestals</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Bookcases & Credenzas</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Lockers & Towers</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Collections</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Intrinsic</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Trig</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Capture</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Choices</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Rising</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Process</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Inspiriation</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-aqm.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Air Quality Management <i class="fas fa-angle-right d-xl-none d-block"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Air Quality Management
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#"
+                      >Array Networked Air Purifiers & Monitoring</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <div class="d-lg-inline-flex flex-xl-nowrap w-100">
+                        <li class="sub-dropdown-menu-title pe-xl-4 mb-3 mb-xl-4">
+                          Networked Air Purifiers
+                          <ul class="inner-list">
+                            <li><a class="sub-dropdown-item" href="#">Ceiling Mounted</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Recessed</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Wall Mounted</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Floor Stand</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub-dropdown-menu-title mb-3 mb-xl-4">
+                          Monitoring
+                          <ul class="inner-list">
+                            <li><a class="sub-dropdown-item" href="#">Display</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Sensors</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Software</a></li>
+                          </ul>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">AeraMax Air Purifiers</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Filters & Accessories</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Networked/Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Industries</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-workspace.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Workspace <i class="fas fa-angle-right d-xl-none d-block"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Workspace
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Monitor Arms</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Rising</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Evolve</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Edge</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Sena</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Eppa</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Kata</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Organization</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Power Solutions</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Railway</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Flexcharge Power Hub</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Flexcharge Desktop Power</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Lighting</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Amble</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Lustre</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Lily</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Lucera</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Ergonomic Accessories</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Sit to Stand</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="#">Height Adjustable Table Bases</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">Laptop Holders & Risers </a></li>
+                      <li><a class="sub-dropdown-item" href="#">Foot Support</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Anti-fatigue Mats</a></li>
+                      <li><a class="sub-dropdown-item" href="#">CPU Holders</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Work From Home</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Monitor Arms</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Monitor & Laptop Stands</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Foot & Back Supports</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Wrist Supports</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Document Holders</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Process</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Inspiration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./megacat-bm.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Business Machines <i class="fas fa-angle-right d-xl-none d-block"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Business Machines
+                  </div>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Paper Shredders</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Personal</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Government</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Laminating</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Office</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Personal</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Binding</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Office</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Stapling</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">Staplers</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Collections</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item" href="#">LX Series</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown company-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Company <i class="fas fa-angle-right d-xl-none d-block"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Our Company
+                  </div>
+                  <li>
+                    <a class="dropdown-item" href="#">Worklife</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Inspiration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Innovations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Why Fellowes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Locations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sustainability</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">GIVE</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item d-xl-none d-block">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button">
+                  Contract Partners
+                </a>
+              </li>
+            </ul>
+            <!-- Left links -->
+            <!-- Right elements -->
+            <div class="right-nav d-flex align-items-center">
+              <!-- Icon -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle stroke-svg"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17.359"
+                    height="15.711"
+                    viewBox="0 0 17.359 15.711"
+                  >
+                    <path
+                      id="Path_1724"
+                      data-name="Path 1724"
+                      d="M3.014,6.627h15a.879.879,0,0,1,.822.923v9.482a.881.881,0,0,1-.823.925H9.874a.319.319,0,0,0-.241.112h0L7,21.027a.432.432,0,0,1-.745-.346V18.831a.831.831,0,0,0-.779-.875H3.451a.881.881,0,0,1-.823-.925V7.061a.415.415,0,0,1,.387-.434Z"
+                      transform="translate(-2.053 -6.052)"
+                      fill="none"
+                      stroke-miterlimit="10"
+                      stroke-width="1.15"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Contact
+                  </div>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Service Support</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find a Dealer</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find a Retailer</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Get a Quote</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Schedule a Visit</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Subscribe</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg
+                    id="Group_2747"
+                    data-name="Group 2747"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="15.752"
+                    height="16.861"
+                    viewBox="0 0 15.752 16.861"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect
+                          id="Rectangle_3"
+                          data-name="Rectangle 3"
+                          width="15.752"
+                          height="16.861"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      id="Group_262"
+                      data-name="Group 262"
+                      transform="translate(0 0)"
+                      clip-path="url(#clip-path)"
+                    >
+                      <path
+                        id="Path_6"
+                        data-name="Path 6"
+                        d="M17.1,10.007a5,5,0,1,1,5-5,5.01,5.01,0,0,1-5,5m0-8.82A3.817,3.817,0,1,0,20.92,5,3.821,3.821,0,0,0,17.1,1.187"
+                        transform="translate(-9.227 0)"
+                      />
+                      <path
+                        id="Path_7"
+                        data-name="Path 7"
+                        d="M15.191,50.888H.561a.561.561,0,0,1-.515-.783,8.7,8.7,0,0,1,7.83-5.486,8.7,8.7,0,0,1,7.83,5.486.561.561,0,0,1-.515.783M1.46,49.766H14.292a7.46,7.46,0,0,0-6.416-4.024A7.461,7.461,0,0,0,1.46,49.766"
+                        transform="translate(0 -34.027)"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none">
+                    <i class="fas fa-angle-left"></i> Account
+                  </div>
+                  <li>
+                    <a class="dropdown-item" href="#">My Account</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Array Viewpoint</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">My Cart</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item search-dropdown d-xl-block d-none">
+                <a
+                  class="nav-link stroke-svg"
+                  href="javascript:;"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="search-icon svg-icons-serach"
+                    width="16.884"
+                    height="16.884"
+                    viewBox="0 0 16.884 16.884"
+                  >
+                    <g id="Group_2749" data-name="Group 2749" transform="translate(2180 24666)">
+                      <g
+                        id="Ellipse_27"
+                        data-name="Ellipse 27"
+                        transform="translate(-2180 -24666)"
+                        fill="none"
+                        stroke-width="1.25"
+                      >
+                        <circle cx="7" cy="7" r="7" stroke="none" />
+                        <circle cx="7" cy="7" r="6.375" fill="none" />
+                      </g>
+                      <line
+                        id="FrontLine2"
+                        x2="4"
+                        y2="4"
+                        transform="translate(-2168 -24654)"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-width="1.25"
+                      />
+                      <line
+                        id="FrontLine1"
+                        x1="1"
+                        y2="1"
+                        transform="translate(-2169 -24655)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-width="1.25"
+                        opacity="0"
+                      />
+                    </g>
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="close-icon svg-icons-serach"
+                    width="16.884"
+                    height="16.884"
+                    viewBox="0 0 17.768 17.768"
+                  >
+                    <g
+                      id="Group_2246"
+                      data-name="Group 2246"
+                      transform="translate(2180.884 24666.884)"
+                    >
+                      <g
+                        id="Ellipse_27"
+                        data-name="Ellipse 27"
+                        transform="translate(-2173 -24659)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="1.25"
+                        opacity="0"
+                      >
+                        <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                        <circle cx="0.5" cy="0.5" r="0.125" fill="none" />
+                      </g>
+                      <line
+                        id="FrontLine2"
+                        x2="16"
+                        y2="16"
+                        transform="translate(-2180 -24666)"
+                        fill="none"
+                        stroke="#fdb913"
+                        stroke-linecap="round"
+                        stroke-width="1.25"
+                      />
+                      <line
+                        id="FrontLine1"
+                        x1="16"
+                        y2="16"
+                        transform="translate(-2180 -24666)"
+                        fill="none"
+                        stroke="#fdb913"
+                        stroke-linecap="round"
+                        stroke-width="1.25"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link flag-nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-mdb-toggle="modal"
+                  data-mdb-target="#countrySelectorModal"
+                >
+                  <img
+                    src="/img/flags/United States.svg"
+                    alt="An image of the United States Flag"
+                    class="flag-svg"
+                  />
+                </button>
+              </li>
+              <li class="d-xl-block d-none">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                  >Contract Partners</a
+                >
+              </li>
+            </div>
+            <!-- Right elements -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    </header>
+
+    <div class="bodynavfixedtop" role="presentation"></div>
+
+    <!-- Search Dropdown -->
+
+    <div class="search-div">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 col-12 mb-md-0 mb-3">
+            <div>
+              <form action="" method="">
+                <div class="form-outline rounded-0">
+                  <input
+                    type="search"
+                    class="form-control form-control-lg"
+                    aria-label="Search"
+                    id="nav-search-field-2"
+                  />
+                  <label class="form-label" for="nav-search-field-2">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">search</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1 col-12">
+            <div class="search-title">Popular Search Terms:</div>
+            <ul class="search-list">
+              <li>Fellowes Shredder</li>
+              <li>Volo Wall System</li>
+              <li>Bulldog Shredder</li>
+              <li>LX Series</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Country Modal -->
+    <div
+      class="country-selector-modal modal fade"
+      id="countrySelectorModal"
+      tabindex="-1"
+      aria-labelledby="countrySelectorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="country-grid">
+              <div class="country-grid__title">Choose Your Country</div>
+              <div class="country-grid__wrapper">
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Australia.svg"
+                      alt="Flag of Australia"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Australia</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Belgium.svg"
+                      alt="Flag of Belgium"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Belgium</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Canada.svg"
+                      alt="Flag of Canada"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Canada</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/France.svg"
+                      alt="Flag of France"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">France</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Germany.svg"
+                      alt="Flag of Germany"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Germany</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Italy.svg"
+                      alt="Flag of Italy"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Italy</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Mexico.svg"
+                      alt="Flag of Mexico"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Mexico</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Netherlands.svg"
+                      alt="Flag of Netherlands"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Netherlands</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Poland.svg"
+                      alt="Flag of Poland"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Poland</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Spain.svg"
+                      alt="Flag of Spain"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Spain</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Switzerland.svg"
+                      alt="Flag of Switzerland"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Switzerland</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/United Kingdom.svg"
+                      alt="Flag of United Kingdom"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">United Kingdom</div>
+                  </a>
+                </div>
+                <div class="country-grid__item country-selected">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/United States.svg"
+                      alt="Flag of United States"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">United States</div>
+                  </a>
+                </div>
+                <div class="country-grid__item">
+                  <a href="#" class="d-flex align-items-center" role="button">
+                    <img
+                      src="/img/flags/Other.svg"
+                      alt="Other Countries Icon"
+                      class="country-grid__flag"
+                    />
+                    <div class="country-grid__link">Other</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
-      CODE GOES HERE
+      <section class="fellowes-banner-sections overflow-hidden">
+        <div class="fellowes-banner-image-zoom">
+          <div class="fellowes_space_image overflow-hidden">
+            <img
+              src="img/aeramax/yourspaceeducationhero.jpg"
+              class="img-fluid"
+              alt="Space banner"
+            />
+          </div>
+          <!-- /.fellowes_space_image -->
+          <div class="fellowes_space_content">
+            <h3 class="mb-0">Provide Maximum Protection from Classrooms to Cafeterias</h3>
+          </div>
+          <!-- /.fellowes_space_content -->
+        </div>
+        <!-- /.fellowes-banner-image-zoom -->
+      </section>
+      <section class="section-spacing text-center overflow-hidden">
+        <div class="container">
+          <h1 class="text-uppercase text-aetamax-blue aeramax-page-title">
+            AIR CONCERNS FOR YOUR SCHOOL
+          </h1>
+          <div class="text-aetamax-blue fw-500 aeramax-sub-title">
+            Experts agree: airborne transmission of the virus poses a significant threat.
+          </div>
+          <div class="row pt-5 gx-md-5">
+            <div class="col-md-4 col-12 mb-md-0 mb-5">
+              <div class="mb-4">
+                <img src="img/aeramax/expert01.png" />
+              </div>
+              <div class="text-aetamax-blue fw-500 aeramax-sub-title mb-4">
+                “CDC says airborne transmission plays a role in coronavirus spread.”
+              </div>
+              <div class="text-aetamax-blue aeramax-small-font">
+                Washington Post, October 5, 2020
+              </div>
+            </div>
+            <div class="col-md-4 col-12 mb-md-0 mb-5">
+              <div class="mb-4">
+                <img src="img/aeramax/expert02.png" />
+              </div>
+              <div class="text-aetamax-blue fw-500 aeramax-sub-title mb-4">
+                “The virus can remain suspended in the air for up to 3 hours.”
+              </div>
+              <div class="text-aetamax-blue aeramax-small-font">
+                New England Journal of Medicine, May 14, 2020
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="mb-4">
+                <img src="img/aeramax/expert03.png" />
+              </div>
+              <div class="text-aetamax-blue fw-500 aeramax-sub-title mb-4">
+                “It is time to address airborne transmission of COVID-19.”
+              </div>
+              <div class="text-aetamax-blue aeramax-small-font">
+                An open letter to the WHO from 239 Scientists, July 6, 2020
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing text-center light-bg tabbing-section-aeramax overflow-hidden">
+        <div class="container">
+          <h1 class="text-uppercase text-aetamax-blue aeramax-page-title">
+            Healthy Air in Schools
+          </h1>
+        </div>
+        <div class="container-fluid">
+          <div class="row pt-5 gx-md-5">
+            <div class="col-12">
+              <div class="position-relative mobile-dropdown-tab d-lg-none">
+                <div class="tab-dropdown text-center">Classrooms</div>
+                <i class="fa-solid d-lg-none fa-chevron-down"></i>
+              </div>
+              <!-- Tabs navs -->
+              <ul
+                class="nav nav-tabs mb-lg-3 aeramax-tabs justify-content-center d-lg-flex"
+                id="ex1"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active tabboxlink"
+                    id="ex1-tab-1"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-1"
+                    role="tab"
+                    aria-controls="ex1-tabs-1"
+                    aria-selected="true"
+                  >
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="77.224"
+                        height="66.874"
+                        viewBox="0 0 77.224 66.874"
+                      >
+                        <g id="Classrooms" transform="translate(-7.6 -12.689)">
+                          <g id="Group_617" data-name="Group 617" transform="translate(7.6 14.1)">
+                            <g id="Group_616" data-name="Group 616">
+                              <g id="Group_615" data-name="Group 615">
+                                <path
+                                  id="Path_1785"
+                                  data-name="Path 1785"
+                                  d="M18.6,47.743H74.489V14.1H18.6Z"
+                                  transform="translate(-8.571 -14.1)"
+                                  fill="none"
+                                  stroke="#3a5680"
+                                  stroke-miterlimit="10"
+                                  stroke-width="2.822"
+                                ></path>
+                                <path
+                                  id="Path_1786"
+                                  data-name="Path 1786"
+                                  d="M38.876,25.888A5.288,5.288,0,1,1,33.588,20.6a5.234,5.234,0,0,1,5.288,5.288"
+                                  transform="translate(-9.427 -14.674)"
+                                  class="school_svg"
+                                ></path>
+                                <path
+                                  id="Path_1787"
+                                  data-name="Path 1787"
+                                  d="M41.829,34.7l9.756-10.394-2.1-2.006-8.206,8.57s-2.188,1.915-4.1,1.915H29.156A6.693,6.693,0,0,0,22.5,39.441v13.4h2.918V41.72a.547.547,0,0,1,1.094,0V67.8h5.562V54.028a1.094,1.094,0,0,1,2.188,0V67.887h5.744V41.811C39.914,38.347,40.826,35.794,41.829,34.7Z"
+                                  transform="translate(-8.915 -14.824)"
+                                  class="school_svg"
+                                ></path>
+                                <circle
+                                  id="Ellipse_825"
+                                  data-name="Ellipse 825"
+                                  cx="5.197"
+                                  cy="5.197"
+                                  r="5.197"
+                                  transform="translate(4.467 47.684)"
+                                  class="school_svg"
+                                ></circle>
+                                <path
+                                  id="Path_1788"
+                                  data-name="Path 1788"
+                                  d="M21.641,79.4H12.979A5.144,5.144,0,0,0,7.6,84.415v.912H26.838v-.912A4.987,4.987,0,0,0,21.641,79.4Z"
+                                  transform="translate(-7.6 -19.864)"
+                                  class="school_svg"
+                                ></path>
+                                <circle
+                                  id="Ellipse_826"
+                                  data-name="Ellipse 826"
+                                  cx="5.197"
+                                  cy="5.197"
+                                  r="5.197"
+                                  transform="translate(62.454 47.684)"
+                                  class="school_svg"
+                                ></circle>
+                                <path
+                                  id="Path_1789"
+                                  data-name="Path 1789"
+                                  d="M85.241,79.4H76.579A5.144,5.144,0,0,0,71.2,84.415v.912H90.438v-.912A4.987,4.987,0,0,0,85.241,79.4Z"
+                                  transform="translate(-13.214 -19.864)"
+                                  class="school_svg"
+                                ></path>
+                                <circle
+                                  id="Ellipse_827"
+                                  data-name="Ellipse 827"
+                                  cx="5.197"
+                                  cy="5.197"
+                                  r="5.197"
+                                  transform="translate(33.461 47.684)"
+                                  class="school_svg"
+                                ></circle>
+                                <path
+                                  id="Path_1790"
+                                  data-name="Path 1790"
+                                  d="M53.441,79.4H44.779A5.144,5.144,0,0,0,39.4,84.415v.912H58.638v-.912A4.987,4.987,0,0,0,53.441,79.4Z"
+                                  transform="translate(-10.407 -19.864)"
+                                  class="school_svg"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g></svg
+                    ></span>
+                    Classrooms</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link tabboxlink"
+                    id="ex1-tab-2"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-2"
+                    role="tab"
+                    aria-controls="ex1-tabs-2"
+                    aria-selected="false"
+                    ><span
+                      ><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="45.583px"
+                        height="71.438px"
+                        viewBox="0 0 45.583 71.438"
+                        enable-background="new 0 0 45.583 71.438"
+                        xml:space="preserve"
+                      >
+                        <path
+                          class="school_svg"
+                          d="M40.276,66.248c-11.205,2.256-23.763,2.256-34.967,0c-1.128-0.225-1.88-1.354-1.805-2.557l1.354-10.979
+      c0.752-6.467,6.316-11.354,12.783-11.354h10.227c6.543,0,12.031,4.888,12.783,11.354l1.354,10.979
+      C42.231,64.895,41.479,66.023,40.276,66.248z M10.798,25.792c0-1.955,0.526-3.76,1.354-5.414c6.316-2.782,15.04-2.782,21.356,0
+      c0.826,1.654,1.354,3.459,1.354,5.339c0,6.618-5.414,12.032-12.032,12.032C16.212,37.824,10.798,32.41,10.798,25.792z M22.83,3.534
+      c4.888,0,9.399,1.278,12.634,3.609l-1.881,9.475c-6.541-2.482-14.964-2.482-21.506,0l-1.88-9.475
+      C13.43,4.813,17.942,3.534,22.83,3.534z M45.54,63.24L44.26,52.262c-0.826-6.843-5.865-12.257-12.332-13.911
+      c3.91-2.857,6.467-7.445,6.467-12.558c0-2.481-0.602-4.888-1.654-6.993l2.406-12.107c0.15-0.602-0.074-1.278-0.602-1.729
+      C34.635,1.805,28.92,0,22.83,0S11.024,1.805,7.114,5.038C6.587,5.414,6.362,6.091,6.512,6.768l2.406,12.107
+      c-1.053,2.105-1.654,4.437-1.654,6.918c0,5.188,2.557,9.776,6.467,12.558C7.264,39.93,2.226,45.344,1.398,52.262L0.045,63.24
+      c-0.376,3.008,1.654,5.791,4.587,6.393c5.865,1.203,11.956,1.805,18.197,1.805s12.333-0.602,18.198-1.805
+      C43.885,69.105,45.915,66.248,45.54,63.24z"
+                        ></path></svg
+                    ></span>
+                    Nurses Offices</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link tabboxlink"
+                    id="ex1-tab-3"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-3"
+                    role="tab"
+                    aria-controls="ex1-tabs-3"
+                    aria-selected="false"
+                    ><span>
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="27.654px"
+                        height="56.509px"
+                        viewBox="0 0 27.654 56.509"
+                        enable-background="new 0 0 27.654 56.509"
+                        xml:space="preserve"
+                      >
+                        <path
+                          class="school_svg"
+                          d="M8.13,12.36H6.914V0H6.098v12.361H4.882V0H4.065v12.361H2.849V0H2.032v12.361H0.815V0H0v12.361
+        c0,1.959,1.175,3.634,2.834,4.312c0.211,1.484,0.104,3.32,0.104,3.32L0.65,52.304c-0.147,4.354,2.287,4.204,2.287,4.204l1.529,0.001
+        h0.006h0.006l1.531-0.001c0,0,2.434,0.149,2.286-4.204L6.01,19.992c0,0-0.108-1.836,0.104-3.32c1.659-0.677,2.833-2.352,2.833-4.311
+        V0H8.13V12.36z"
+                        ></path>
+                        <path
+                          class="school_svg"
+                          d="M23.873,19.992c0,0-0.063-1.065,0.001-2.229c2.188-1.125,3.78-4.59,3.78-8.689
+        C27.654,4.062,25.273,0,22.336,0c-2.937,0-5.317,4.062-5.317,9.074c0,4.099,1.593,7.563,3.78,8.689
+        c0.064,1.164,0.001,2.229,0.001,2.229l-2.287,32.313c-0.147,4.354,2.287,4.204,2.287,4.204l1.529,0.001h0.007h0.007l1.53-0.001
+        c0,0,2.434,0.149,2.286-4.204L23.873,19.992z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Teachers Lounges</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link tabboxlink"
+                    id="ex1-tab-4"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-4"
+                    role="tab"
+                    aria-controls="ex1-tabs-4"
+                    aria-selected="false"
+                    ><span>
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="57.699px"
+                        height="53.87px"
+                        viewBox="0 0 57.699 53.87"
+                        enable-background="new 0 0 57.699 53.87"
+                        xml:space="preserve"
+                      >
+                        <path
+                          class="school_svg"
+                          d="M5.361,51.317h32.552V29.488H5.361V51.317z M40.466,53.87H2.808V26.935h37.658V53.87z"
+                        ></path>
+                        <rect y="26.935" class="school_svg" width="43.274" height="2.553"></rect>
+                        <rect
+                          x="45.189"
+                          y="41.36"
+                          class="school_svg"
+                          width="2.553"
+                          height="11.233"
+                        ></rect>
+                        <rect
+                          x="51.955"
+                          y="41.36"
+                          class="school_svg"
+                          width="2.553"
+                          height="11.233"
+                        ></rect>
+                        <polygon
+                          class="school_svg"
+                          points="57.699,42.637 43.274,42.637 43.274,40.083 55.146,40.083 55.146,24.382 57.699,24.382 "
+                        ></polygon>
+                        <path
+                          class="school_svg"
+                          d="M21.701,2.553c-1.532,0-2.682,1.276-2.682,2.681c0,2.042,1.66,4.979,2.682,4.979
+        c1.021,0,2.681-3.063,2.681-4.979C24.382,3.83,23.105,2.553,21.701,2.553z M21.701,12.765c-3.191,0-5.234-4.978-5.234-7.531
+        C16.467,2.298,18.893,0,21.701,0c2.936,0,5.233,2.425,5.233,5.234C26.935,7.915,24.893,12.765,21.701,12.765z"
+                        ></path>
+                        <path
+                          class="school_svg"
+                          d="M12.254,26.935H31.02v-2.553c0-2.426-1.66-4.724-4.213-6L21.7,23.744l-5.105-5.361
+        c-2.681,1.276-4.341,3.574-4.341,6V26.935z M33.572,29.489H9.701v-5.106c0-3.702,2.553-7.149,6.638-8.809l0.767-0.383l4.595,4.724
+        l4.596-4.724l0.767,0.383c4.085,1.66,6.638,4.979,6.638,8.809v5.106H33.572z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Administrative Offices</a
+                  >
+                </li>
+              </ul>
+              <!-- Tabs navs -->
+
+              <!-- Tabs content -->
+              <div class="tab-content" id="ex1-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="ex1-tabs-1"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-1"
+                >
+                  <div class="row gx-md-5 pt-5">
+                    <div class="col-md-6 col-12 mb-md-0 mb-3">
+                      <img src="img/aeramax/classrooms.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-md-6 col-12 text-md-start">
+                      <p class="tab-content-p-tag">
+                        Classrooms and lecture halls are essential areas for virus protection where
+                        students might not be able to properly social distance, and conversation is
+                        key to learning. Air purification helps remove these concerns around student
+                        and staff safety, while also benefiting lungs by eliminating allergens and
+                        odors.
+                      </p>
+                      <div class="tab-sub-title fw-600 pt-2 text-aetamax-blue mb-3 mb-md-4">
+                        Key Concerns:
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.714 38.96">
+                                <g
+                                  id="Group_635"
+                                  data-name="Group 635"
+                                  transform="translate(-715.37 -387.849)"
+                                >
+                                  <g
+                                    id="Group_626"
+                                    data-name="Group 626"
+                                    transform="translate(734.566 387.849)"
+                                  >
+                                    <g
+                                      id="Group_619"
+                                      data-name="Group 619"
+                                      transform="translate(2.951)"
+                                    >
+                                      <path
+                                        id="Path_1793"
+                                        data-name="Path 1793"
+                                        d="M736.571,411.675a4.912,4.912,0,0,1-3.067,6.243h0a4.916,4.916,0,0,1-6.239-3.081l-6.975-20.489a4.911,4.911,0,0,1,3.067-6.234h0a4.908,4.908,0,0,1,6.243,3.067Z"
+                                        transform="translate(-720.028 -387.849)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_620"
+                                      data-name="Group 620"
+                                      transform="translate(0 5.89)"
+                                    >
+                                      <path
+                                        id="Path_1794"
+                                        data-name="Path 1794"
+                                        d="M720.444,402.392l-1.036-5.366,4.1-7.937,1.518.783-3.83,7.412.926,4.783Z"
+                                        transform="translate(-719.408 -389.088)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_621"
+                                      data-name="Group 621"
+                                      transform="translate(10.286 3.364)"
+                                    >
+                                      <path
+                                        id="Path_1795"
+                                        data-name="Path 1795"
+                                        d="M730.716,398.334l-.9-4.632-8.247-3.578.68-1.567,9.075,3.937,1.064,5.514Z"
+                                        transform="translate(-721.571 -388.557)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_622"
+                                      data-name="Group 622"
+                                      transform="translate(13.488 13.615)"
+                                    >
+                                      <path
+                                        id="Path_1796"
+                                        data-name="Path 1796"
+                                        d="M731.39,400.491l-.9-4.631-8.247-3.584.676-1.564L732,394.651l1.068,5.518Z"
+                                        transform="translate(-722.244 -390.713)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_623"
+                                      data-name="Group 623"
+                                      transform="translate(16.692 23.009)"
+                                    >
+                                      <path
+                                        id="Path_1797"
+                                        data-name="Path 1797"
+                                        d="M732.064,402.467l-.9-4.632-8.25-3.582.679-1.565,9.077,3.938,1.07,5.515Z"
+                                        transform="translate(-722.918 -392.688)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_624"
+                                      data-name="Group 624"
+                                      transform="translate(7.262 25.108)"
+                                    >
+                                      <path
+                                        id="Path_1798"
+                                        data-name="Path 1798"
+                                        d="M721.974,406.43l-1.039-5.365,4.1-7.936,1.516.783-3.826,7.411.921,4.782Z"
+                                        transform="translate(-720.935 -393.13)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_625"
+                                      data-name="Group 625"
+                                      transform="translate(3.42 16.142)"
+                                    >
+                                      <path
+                                        id="Path_1799"
+                                        data-name="Path 1799"
+                                        d="M721.166,404.543l-1.039-5.363,4.1-7.936,1.518.781-3.826,7.412.926,4.781Z"
+                                        transform="translate(-720.126 -391.244)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                  <g
+                                    id="Group_634"
+                                    data-name="Group 634"
+                                    transform="translate(715.37 401.355)"
+                                  >
+                                    <g
+                                      id="Group_627"
+                                      data-name="Group 627"
+                                      transform="translate(4.854)"
+                                    >
+                                      <path
+                                        id="Path_1800"
+                                        data-name="Path 1800"
+                                        d="M722.795,408.546a3.236,3.236,0,0,1-3.847,2.5h0a3.227,3.227,0,0,1-2.482-3.847l2.972-13.942a3.241,3.241,0,0,1,3.842-2.492h0a3.247,3.247,0,0,1,2.5,3.847Z"
+                                        transform="translate(-716.391 -390.69)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_628"
+                                      data-name="Group 628"
+                                      transform="translate(2.391 2.521)"
+                                    >
+                                      <path
+                                        id="Path_1801"
+                                        data-name="Path 1801"
+                                        d="M716.934,398.089l-1.061-.381,1.225-3.385,5-3.1.6.956-4.669,2.9Z"
+                                        transform="translate(-715.873 -391.22)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_629"
+                                      data-name="Group 629"
+                                      transform="translate(12.433 3.41)"
+                                    >
+                                      <path
+                                        id="Path_1802"
+                                        data-name="Path 1802"
+                                        d="M721.435,400.18l-1.058-.383,1.06-2.924-3.452-4.806.912-.66,3.8,5.289Z"
+                                        transform="translate(-717.985 -391.407)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_630"
+                                      data-name="Group 630"
+                                      transform="translate(10.781 10.286)"
+                                    >
+                                      <path
+                                        id="Path_1803"
+                                        data-name="Path 1803"
+                                        d="M721.083,401.631l-1.052-.382,1.061-2.928-3.454-4.814.91-.654,3.8,5.3Z"
+                                        transform="translate(-717.638 -392.853)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_631"
+                                      data-name="Group 631"
+                                      transform="translate(9.421 16.681)"
+                                    >
+                                      <path
+                                        id="Path_1804"
+                                        data-name="Path 1804"
+                                        d="M720.8,402.97l-1.058-.384,1.058-2.921-3.452-4.81.91-.658,3.8,5.289Z"
+                                        transform="translate(-717.352 -394.198)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_632"
+                                      data-name="Group 632"
+                                      transform="translate(0 15.837)"
+                                    >
+                                      <path
+                                        id="Path_1805"
+                                        data-name="Path 1805"
+                                        d="M716.428,400.886l-1.057-.386,1.23-3.384,5-3.1.594.952-4.665,2.9Z"
+                                        transform="translate(-715.371 -394.02)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_633"
+                                      data-name="Group 633"
+                                      transform="translate(0.859 9.473)"
+                                    >
+                                      <path
+                                        id="Path_1806"
+                                        data-name="Path 1806"
+                                        d="M716.613,399.543l-1.062-.383,1.225-3.382,5-3.1.592.958-4.665,2.885Z"
+                                        transform="translate(-715.551 -392.682)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Viruses</div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.286 33.528">
+                                <g
+                                  id="Group_612"
+                                  data-name="Group 612"
+                                  transform="translate(-716.18 -345.135)"
+                                >
+                                  <path
+                                    id="Path_1767"
+                                    data-name="Path 1767"
+                                    d="M731.435,361.93c.752-1.4,1.942-3.655,2.843-5.644,2.149-4.584-1.716-6.018-4.008-6.161-5.291.1-4.075,6.548-2.932,10.274-1.063-1.076-2.486-2.49-3.8-3.717-3.676-3.487-6.255-.267-7.113,1.861-1.722,5.535,6.209,5.952,9.82,5.866-1.607.906-3.9,2.2-5.638,3.235-4.387,2.526-2.039,5.917-.24,7.347,4.356,2.92,7.363-3.247,8.761-7.154.222,1.556.5,3.563.756,5.3.665,5.02,4.693,4.136,6.7,3.022,4.429-2.961-.348-7.825-3.434-10.358a51.577,51.577,0,0,0,5.485,1.134c5.01.746,5.273-3.372,4.75-5.608C741.551,355.626,734.239,359.993,731.435,361.93Zm-.092,2.489-.686.2-.355.1,4.125,8.64-4.891-6.76L729.1,366l-.207.182-6.822,5.907,5.87-7.667-.164-.086-.718-.383-7.589-4.012,8.709,2.836.348.114.2-1.067,1.5-8.112-.113,9.327.265-.031.508-.055,8.585-.945Z"
+                                    transform="translate(0 1.642)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1768"
+                                    data-name="Path 1768"
+                                    d="M726.84,360.56l-.093-.438-.173-.81-.335.749-.18.416-.532-.056-.036,0-.3-.033-.406-.042.184.166.363.326.4.36-.519,1.164,1.1-.637.208.188.536.485.205.184-.113-.53-.039-.184-.045-.219-.068-.314.706-.406.4-.231-.454-.045Z"
+                                    transform="translate(2.832 4.664)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1769"
+                                    data-name="Path 1769"
+                                    d="M746.97,352.782c.872-.525,2.267-1.383,3.418-2.187,2.686-1.83,1.021-3.887-.2-4.717-2.956-1.676-4.392,2.283-4.98,4.718-.234-.944-.555-2.189-.888-3.3-.889-3.128-3.366-2.193-4.537-1.3-2.764,2.495,1.489,5.323,3.507,6.455-1.183-.027-2.875-.059-4.17-.059-3.256-.039-3.065,2.6-2.542,3.982,1.451,3.039,5.133.613,7.183-1.088-.387.933-.886,2.136-1.317,3.179-1.273,2.992,1.236,3.821,2.712,3.861,3.424-.186,2.366-4.447,1.489-6.854a33.734,33.734,0,0,0,2.664,2.429c2.522,2.051,4.018-.14,4.457-1.548C754.622,352.606,749.151,352.629,746.97,352.782Zm-.867,1.346-.444-.11-.231-.06-.548,6.125-.493-5.336-.043-.484-.173.032-5.7,1.037,5.756-2.319-.061-.1-.276-.447-2.881-4.7,3.886,4.42.157.177.461-.528,3.479-3.992-3.112,5.117.156.072.3.134,5.053,2.29Z"
+                                    transform="translate(6.612)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1770"
+                                    data-name="Path 1770"
+                                    d="M743.551,351.338l.093-.273.167-.5-.429.3-.239.17-.272-.2-.022-.015-.154-.113-.211-.157.054.152.093.3.1.331-.663.474.817.009.054.17.136.44.051.17.114-.328.038-.117.046-.135.064-.2.527.006.295,0-.234-.172Z"
+                                    transform="translate(8.516 1.781)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1771"
+                                    data-name="Path 1771"
+                                    d="M745.087,365.9c.585-.346,1.512-.918,2.278-1.451,1.785-1.221.674-2.589-.136-3.142-1.971-1.114-2.924,1.526-3.312,3.144-.157-.629-.368-1.458-.59-2.2-.591-2.081-2.238-1.461-3.018-.864-1.847,1.661.993,3.546,2.336,4.294-.789-.017-1.914-.038-2.782-.038-2.164-.027-2.036,1.73-1.686,2.649.966,2.027,3.418.407,4.782-.727-.263.622-.594,1.421-.881,2.116-.848,1.991.825,2.544,1.8,2.57,2.275-.124,1.573-2.96.991-4.558a22.478,22.478,0,0,0,1.772,1.615c1.678,1.365,2.667-.093,2.965-1.029C750.182,365.792,746.541,365.805,745.087,365.9Zm-.576.9-.295-.076-.151-.036-.364,4.073-.328-3.551-.029-.32-.113.021-3.794.69,3.829-1.544-.044-.066-.179-.3-1.916-3.126,2.582,2.938.1.117.3-.351,2.316-2.655-2.072,3.4.1.047.2.09,3.362,1.523Z"
+                                    transform="translate(7.171 5.16)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1772"
+                                    data-name="Path 1772"
+                                    d="M742.817,364.944l.061-.181.112-.334-.283.2-.163.113-.183-.136-.011-.011-.1-.075-.137-.1.026.1.062.2.069.22-.442.314.545.006.036.116.091.293.031.113.076-.22.027-.076.029-.089.047-.131.344.005h.2l-.154-.116Z"
+                                    transform="translate(8.437 6.345)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Allergens</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-0">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.5 54.756">
+                                <g
+                                  id="Group_737"
+                                  data-name="Group 737"
+                                  transform="translate(-45.604 -31.141)"
+                                >
+                                  <path
+                                    id="Path_1773"
+                                    data-name="Path 1773"
+                                    d="M69.9,33.521a4.007,4.007,0,0,1,.061.485,3.435,3.435,0,0,1,.061.485c6.194.764,10.139,2.52,10.139,4.14a1.325,1.325,0,0,1-.3.775,6.9,6.9,0,0,1-3.032,1.825,35.08,35.08,0,0,1-9.5,1.791l-.057,0c-1.245.084-2.536.141-3.907.141s-2.666-.053-3.91-.137c-7.752-.527-12.892-2.547-12.892-4.4,0-1.524,3.525-3.154,9.093-3.979a4.364,4.364,0,0,1,.191-.512,3.312,3.312,0,0,1,.195-.5c-5.774.771-10.425,2.455-10.425,4.991,0,.344,5.163,32.246,5.549,36.118,2.513,4.231,9.612,4.346,11.773,4.407,9.318.477,12.186-4.38,12.186-4.38S81.1,39.211,81.1,38.631C81.1,35.98,76.036,34.239,69.9,33.521ZM55.117,74.985,52.363,44.279l1.157.535L56,75.344Zm4.7,1.417L58.756,45.168H60l.8,31.326Zm6.565-.088-.978.179.8-31.238h1.153Zm4.88-1.329-1.241.443L72.6,44.9l1.149-.447Z"
+                                    transform="translate(0 6.709)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1774"
+                                    data-name="Path 1774"
+                                    d="M52.4,34.438c-.011-.027,0-.053-.011-.084a1.5,1.5,0,0,0-.348-.4c-.1-.084-.195-.168-.3-.256-.076-.061-.149-.168-.229-.237-.229-.011-.458-.011-.687-.019a3.443,3.443,0,0,1,.057.481h0a3.191,3.191,0,0,1-.145.47C51.287,34.407,51.863,34.407,52.4,34.438Z"
+                                    transform="translate(14.458 6.472)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1775"
+                                    data-name="Path 1775"
+                                    d="M51.027,34.245a2.673,2.673,0,0,0,.363-.328.955.955,0,0,0,.248-.485c-.6.011-1.191.019-1.783.05a3.984,3.984,0,0,1-.153.485,3.073,3.073,0,0,1-.37.485c.5-.027,1.039-.027,1.554-.046C50.943,34.36,50.965,34.291,51.027,34.245Z"
+                                    transform="translate(10.506 6.458)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1776"
+                                    data-name="Path 1776"
+                                    d="M50.267,38.022a1.667,1.667,0,0,1-.81,2.074c-.034.027-.05.069-.084.1a1.964,1.964,0,0,0-.462.527,2.721,2.721,0,0,0-.195.5,6.91,6.91,0,0,0-.275,2.123l1.764-.057a3.219,3.219,0,0,1,.748-2.276c.023-.023.027-.05.05-.076a2.046,2.046,0,0,0,.39-.439,2.33,2.33,0,0,0,.4-.5,3.13,3.13,0,0,0-.684-3.5c-1.283-1.23-1.172-1.654.325-3.1a2.515,2.515,0,0,0,.481-2.249L50.1,31.2a2.055,2.055,0,0,1-.745,1.921,2.713,2.713,0,0,0-.745,3.162C49.018,36.972,49.9,37.3,50.267,38.022Z"
+                                    transform="translate(7.79 0)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1777"
+                                    data-name="Path 1777"
+                                    d="M51.509,38.338a1.234,1.234,0,0,1,.137.619,1.262,1.262,0,0,1-.122.481,1.878,1.878,0,0,1-.306.485,2.781,2.781,0,0,1-.523.493c-.962.687-1.016,2.181-1.016,3.246l1.764-.053a3.168,3.168,0,0,1,.806-2.352,2.278,2.278,0,0,0,.882-1.329,2.764,2.764,0,0,0,.115-.474,3.253,3.253,0,0,0,.027-.474,3.14,3.14,0,0,0-.917-2.165c-1.283-1.233-1.176-1.661.321-3.1a2.507,2.507,0,0,0,.481-2.245l-1.818.053a2.061,2.061,0,0,1-.756,1.925,2.727,2.727,0,0,0-.745,3.162C50.253,37.291,51.143,37.624,51.509,38.338Z"
+                                    transform="translate(11.283 0.91)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1778"
+                                    data-name="Path 1778"
+                                    d="M52.286,38.167a2,2,0,0,1,.458.493l0,.015a1.153,1.153,0,0,1,.115.485,1.9,1.9,0,0,1-.924,1.577c-.97.687-1.02,2.177-1.02,3.242l1.764-.05a3.158,3.158,0,0,1,.8-2.356,2.5,2.5,0,0,0,1.027-2.261,3.132,3.132,0,0,0-.08-.485,2.49,2.49,0,0,0-.836-1.692c-1.283-1.23-1.176-1.657.321-3.1a2.516,2.516,0,0,0,.481-2.249l-1.818.057a2.062,2.062,0,0,1-.748,1.921,2.713,2.713,0,0,0-.745,3.158A6.506,6.506,0,0,0,52.286,38.167Z"
+                                    transform="translate(14.779 1.818)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Odors</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="ex1-tabs-2"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-2"
+                >
+                  <div class="row gx-md-5 pt-5">
+                    <div class="col-md-6 col-12 mb-md-0 mb-3">
+                      <img src="img/aeramax/nurses.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-md-6 col-12 text-md-start">
+                      <p class="tab-content-p-tag">
+                        In nurses offices where students gather when sick, the threat of airborne
+                        particles lingering in the air for up to 3 hours poses a further risk
+                        between student visits. Increased air changes helps to remove these airborne
+                        particles, and Volatile Organic Compounds (VOCs) that may be emitted due to
+                        increased cleaning measures.
+                      </p>
+                      <div class="tab-sub-title fw-600 pt-2 text-aetamax-blue mb-3 mb-md-4">
+                        Key Concerns:
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.286 33.528">
+                                <g
+                                  id="Group_612"
+                                  data-name="Group 612"
+                                  transform="translate(-716.18 -345.135)"
+                                >
+                                  <path
+                                    id="Path_1767"
+                                    data-name="Path 1767"
+                                    d="M731.435,361.93c.752-1.4,1.942-3.655,2.843-5.644,2.149-4.584-1.716-6.018-4.008-6.161-5.291.1-4.075,6.548-2.932,10.274-1.063-1.076-2.486-2.49-3.8-3.717-3.676-3.487-6.255-.267-7.113,1.861-1.722,5.535,6.209,5.952,9.82,5.866-1.607.906-3.9,2.2-5.638,3.235-4.387,2.526-2.039,5.917-.24,7.347,4.356,2.92,7.363-3.247,8.761-7.154.222,1.556.5,3.563.756,5.3.665,5.02,4.693,4.136,6.7,3.022,4.429-2.961-.348-7.825-3.434-10.358a51.577,51.577,0,0,0,5.485,1.134c5.01.746,5.273-3.372,4.75-5.608C741.551,355.626,734.239,359.993,731.435,361.93Zm-.092,2.489-.686.2-.355.1,4.125,8.64-4.891-6.76L729.1,366l-.207.182-6.822,5.907,5.87-7.667-.164-.086-.718-.383-7.589-4.012,8.709,2.836.348.114.2-1.067,1.5-8.112-.113,9.327.265-.031.508-.055,8.585-.945Z"
+                                    transform="translate(0 1.642)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1768"
+                                    data-name="Path 1768"
+                                    d="M726.84,360.56l-.093-.438-.173-.81-.335.749-.18.416-.532-.056-.036,0-.3-.033-.406-.042.184.166.363.326.4.36-.519,1.164,1.1-.637.208.188.536.485.205.184-.113-.53-.039-.184-.045-.219-.068-.314.706-.406.4-.231-.454-.045Z"
+                                    transform="translate(2.832 4.664)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1769"
+                                    data-name="Path 1769"
+                                    d="M746.97,352.782c.872-.525,2.267-1.383,3.418-2.187,2.686-1.83,1.021-3.887-.2-4.717-2.956-1.676-4.392,2.283-4.98,4.718-.234-.944-.555-2.189-.888-3.3-.889-3.128-3.366-2.193-4.537-1.3-2.764,2.495,1.489,5.323,3.507,6.455-1.183-.027-2.875-.059-4.17-.059-3.256-.039-3.065,2.6-2.542,3.982,1.451,3.039,5.133.613,7.183-1.088-.387.933-.886,2.136-1.317,3.179-1.273,2.992,1.236,3.821,2.712,3.861,3.424-.186,2.366-4.447,1.489-6.854a33.734,33.734,0,0,0,2.664,2.429c2.522,2.051,4.018-.14,4.457-1.548C754.622,352.606,749.151,352.629,746.97,352.782Zm-.867,1.346-.444-.11-.231-.06-.548,6.125-.493-5.336-.043-.484-.173.032-5.7,1.037,5.756-2.319-.061-.1-.276-.447-2.881-4.7,3.886,4.42.157.177.461-.528,3.479-3.992-3.112,5.117.156.072.3.134,5.053,2.29Z"
+                                    transform="translate(6.612)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1770"
+                                    data-name="Path 1770"
+                                    d="M743.551,351.338l.093-.273.167-.5-.429.3-.239.17-.272-.2-.022-.015-.154-.113-.211-.157.054.152.093.3.1.331-.663.474.817.009.054.17.136.44.051.17.114-.328.038-.117.046-.135.064-.2.527.006.295,0-.234-.172Z"
+                                    transform="translate(8.516 1.781)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1771"
+                                    data-name="Path 1771"
+                                    d="M745.087,365.9c.585-.346,1.512-.918,2.278-1.451,1.785-1.221.674-2.589-.136-3.142-1.971-1.114-2.924,1.526-3.312,3.144-.157-.629-.368-1.458-.59-2.2-.591-2.081-2.238-1.461-3.018-.864-1.847,1.661.993,3.546,2.336,4.294-.789-.017-1.914-.038-2.782-.038-2.164-.027-2.036,1.73-1.686,2.649.966,2.027,3.418.407,4.782-.727-.263.622-.594,1.421-.881,2.116-.848,1.991.825,2.544,1.8,2.57,2.275-.124,1.573-2.96.991-4.558a22.478,22.478,0,0,0,1.772,1.615c1.678,1.365,2.667-.093,2.965-1.029C750.182,365.792,746.541,365.805,745.087,365.9Zm-.576.9-.295-.076-.151-.036-.364,4.073-.328-3.551-.029-.32-.113.021-3.794.69,3.829-1.544-.044-.066-.179-.3-1.916-3.126,2.582,2.938.1.117.3-.351,2.316-2.655-2.072,3.4.1.047.2.09,3.362,1.523Z"
+                                    transform="translate(7.171 5.16)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1772"
+                                    data-name="Path 1772"
+                                    d="M742.817,364.944l.061-.181.112-.334-.283.2-.163.113-.183-.136-.011-.011-.1-.075-.137-.1.026.1.062.2.069.22-.442.314.545.006.036.116.091.293.031.113.076-.22.027-.076.029-.089.047-.131.344.005h.2l-.154-.116Z"
+                                    transform="translate(8.437 6.345)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Allergens</div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.714 38.96">
+                                <g
+                                  id="Group_635"
+                                  data-name="Group 635"
+                                  transform="translate(-715.37 -387.849)"
+                                >
+                                  <g
+                                    id="Group_626"
+                                    data-name="Group 626"
+                                    transform="translate(734.566 387.849)"
+                                  >
+                                    <g
+                                      id="Group_619"
+                                      data-name="Group 619"
+                                      transform="translate(2.951)"
+                                    >
+                                      <path
+                                        id="Path_1793"
+                                        data-name="Path 1793"
+                                        d="M736.571,411.675a4.912,4.912,0,0,1-3.067,6.243h0a4.916,4.916,0,0,1-6.239-3.081l-6.975-20.489a4.911,4.911,0,0,1,3.067-6.234h0a4.908,4.908,0,0,1,6.243,3.067Z"
+                                        transform="translate(-720.028 -387.849)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_620"
+                                      data-name="Group 620"
+                                      transform="translate(0 5.89)"
+                                    >
+                                      <path
+                                        id="Path_1794"
+                                        data-name="Path 1794"
+                                        d="M720.444,402.392l-1.036-5.366,4.1-7.937,1.518.783-3.83,7.412.926,4.783Z"
+                                        transform="translate(-719.408 -389.088)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_621"
+                                      data-name="Group 621"
+                                      transform="translate(10.286 3.364)"
+                                    >
+                                      <path
+                                        id="Path_1795"
+                                        data-name="Path 1795"
+                                        d="M730.716,398.334l-.9-4.632-8.247-3.578.68-1.567,9.075,3.937,1.064,5.514Z"
+                                        transform="translate(-721.571 -388.557)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_622"
+                                      data-name="Group 622"
+                                      transform="translate(13.488 13.615)"
+                                    >
+                                      <path
+                                        id="Path_1796"
+                                        data-name="Path 1796"
+                                        d="M731.39,400.491l-.9-4.631-8.247-3.584.676-1.564L732,394.651l1.068,5.518Z"
+                                        transform="translate(-722.244 -390.713)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_623"
+                                      data-name="Group 623"
+                                      transform="translate(16.692 23.009)"
+                                    >
+                                      <path
+                                        id="Path_1797"
+                                        data-name="Path 1797"
+                                        d="M732.064,402.467l-.9-4.632-8.25-3.582.679-1.565,9.077,3.938,1.07,5.515Z"
+                                        transform="translate(-722.918 -392.688)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_624"
+                                      data-name="Group 624"
+                                      transform="translate(7.262 25.108)"
+                                    >
+                                      <path
+                                        id="Path_1798"
+                                        data-name="Path 1798"
+                                        d="M721.974,406.43l-1.039-5.365,4.1-7.936,1.516.783-3.826,7.411.921,4.782Z"
+                                        transform="translate(-720.935 -393.13)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_625"
+                                      data-name="Group 625"
+                                      transform="translate(3.42 16.142)"
+                                    >
+                                      <path
+                                        id="Path_1799"
+                                        data-name="Path 1799"
+                                        d="M721.166,404.543l-1.039-5.363,4.1-7.936,1.518.781-3.826,7.412.926,4.781Z"
+                                        transform="translate(-720.126 -391.244)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                  <g
+                                    id="Group_634"
+                                    data-name="Group 634"
+                                    transform="translate(715.37 401.355)"
+                                  >
+                                    <g
+                                      id="Group_627"
+                                      data-name="Group 627"
+                                      transform="translate(4.854)"
+                                    >
+                                      <path
+                                        id="Path_1800"
+                                        data-name="Path 1800"
+                                        d="M722.795,408.546a3.236,3.236,0,0,1-3.847,2.5h0a3.227,3.227,0,0,1-2.482-3.847l2.972-13.942a3.241,3.241,0,0,1,3.842-2.492h0a3.247,3.247,0,0,1,2.5,3.847Z"
+                                        transform="translate(-716.391 -390.69)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_628"
+                                      data-name="Group 628"
+                                      transform="translate(2.391 2.521)"
+                                    >
+                                      <path
+                                        id="Path_1801"
+                                        data-name="Path 1801"
+                                        d="M716.934,398.089l-1.061-.381,1.225-3.385,5-3.1.6.956-4.669,2.9Z"
+                                        transform="translate(-715.873 -391.22)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_629"
+                                      data-name="Group 629"
+                                      transform="translate(12.433 3.41)"
+                                    >
+                                      <path
+                                        id="Path_1802"
+                                        data-name="Path 1802"
+                                        d="M721.435,400.18l-1.058-.383,1.06-2.924-3.452-4.806.912-.66,3.8,5.289Z"
+                                        transform="translate(-717.985 -391.407)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_630"
+                                      data-name="Group 630"
+                                      transform="translate(10.781 10.286)"
+                                    >
+                                      <path
+                                        id="Path_1803"
+                                        data-name="Path 1803"
+                                        d="M721.083,401.631l-1.052-.382,1.061-2.928-3.454-4.814.91-.654,3.8,5.3Z"
+                                        transform="translate(-717.638 -392.853)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_631"
+                                      data-name="Group 631"
+                                      transform="translate(9.421 16.681)"
+                                    >
+                                      <path
+                                        id="Path_1804"
+                                        data-name="Path 1804"
+                                        d="M720.8,402.97l-1.058-.384,1.058-2.921-3.452-4.81.91-.658,3.8,5.289Z"
+                                        transform="translate(-717.352 -394.198)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_632"
+                                      data-name="Group 632"
+                                      transform="translate(0 15.837)"
+                                    >
+                                      <path
+                                        id="Path_1805"
+                                        data-name="Path 1805"
+                                        d="M716.428,400.886l-1.057-.386,1.23-3.384,5-3.1.594.952-4.665,2.9Z"
+                                        transform="translate(-715.371 -394.02)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_633"
+                                      data-name="Group 633"
+                                      transform="translate(0.859 9.473)"
+                                    >
+                                      <path
+                                        id="Path_1806"
+                                        data-name="Path 1806"
+                                        d="M716.613,399.543l-1.062-.383,1.225-3.382,5-3.1.592.958-4.665,2.885Z"
+                                        transform="translate(-715.551 -392.682)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Viruses</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4 mb-md-0">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.192 42.337">
+                                <g
+                                  id="Group_636"
+                                  data-name="Group 636"
+                                  transform="translate(-25 -4.166)"
+                                >
+                                  <path
+                                    id="Path_1807"
+                                    data-name="Path 1807"
+                                    d="M35.08,16.263H38.1a1.009,1.009,0,0,1,.9.557l1.737,3.475h1.393A1.008,1.008,0,0,1,43.144,21.3V45.495A1.008,1.008,0,0,1,42.136,46.5H26.008A1.008,1.008,0,0,1,25,45.495V21.3a1.008,1.008,0,0,1,1.008-1.008H27.4l1.737-3.475a1.009,1.009,0,0,1,.9-.557h3.024V14.247H32.056a1.008,1.008,0,0,1-1.008-1.008V9.206A1.008,1.008,0,0,1,32.056,8.2h4.032A1.008,1.008,0,0,1,37.1,9.206v4.032a1.008,1.008,0,0,1-1.008,1.008H35.08Zm-5.425,4.032h8.834l-1.008-2.016H30.663l-1.008,2.016Zm11.473,2.016H27.016V44.487H41.128ZM33.064,12.23H35.08V10.215H33.064ZM42.587,9.1a1.008,1.008,0,1,1-.9-1.8l6.048-3.024a1.008,1.008,0,1,1,.9,1.8Zm6.048,7.269a1.008,1.008,0,1,1-.9,1.8l-6.048-3.024a1.008,1.008,0,1,1,.9-1.8Zm-.45-6.154a1.008,1.008,0,0,1,0,2.016H42.136a1.008,1.008,0,1,1,0-2.016Z"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">VOCs</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="ex1-tabs-3"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-3"
+                >
+                  <div class="row gx-md-5 pt-5">
+                    <div class="col-md-6 col-12 mb-md-0 mb-3">
+                      <img src="img/aeramax/teachers.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-md-6 col-12 text-md-start">
+                      <p class="tab-content-p-tag">
+                        Where teachers and staff gather between classes and for lunch, virus
+                        protection remains steadily important. In these spaces, unpleasant odors
+                        from lunches, snacks, garbage and more may linger in the air. Eliminate
+                        these unpleasant odors by increased air exchanges.
+                      </p>
+                      <div class="tab-sub-title fw-600 pt-2 text-aetamax-blue mb-3 mb-md-4">
+                        Key Concerns:
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.286 33.528">
+                                <g
+                                  id="Group_612"
+                                  data-name="Group 612"
+                                  transform="translate(-716.18 -345.135)"
+                                >
+                                  <path
+                                    id="Path_1767"
+                                    data-name="Path 1767"
+                                    d="M731.435,361.93c.752-1.4,1.942-3.655,2.843-5.644,2.149-4.584-1.716-6.018-4.008-6.161-5.291.1-4.075,6.548-2.932,10.274-1.063-1.076-2.486-2.49-3.8-3.717-3.676-3.487-6.255-.267-7.113,1.861-1.722,5.535,6.209,5.952,9.82,5.866-1.607.906-3.9,2.2-5.638,3.235-4.387,2.526-2.039,5.917-.24,7.347,4.356,2.92,7.363-3.247,8.761-7.154.222,1.556.5,3.563.756,5.3.665,5.02,4.693,4.136,6.7,3.022,4.429-2.961-.348-7.825-3.434-10.358a51.577,51.577,0,0,0,5.485,1.134c5.01.746,5.273-3.372,4.75-5.608C741.551,355.626,734.239,359.993,731.435,361.93Zm-.092,2.489-.686.2-.355.1,4.125,8.64-4.891-6.76L729.1,366l-.207.182-6.822,5.907,5.87-7.667-.164-.086-.718-.383-7.589-4.012,8.709,2.836.348.114.2-1.067,1.5-8.112-.113,9.327.265-.031.508-.055,8.585-.945Z"
+                                    transform="translate(0 1.642)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1768"
+                                    data-name="Path 1768"
+                                    d="M726.84,360.56l-.093-.438-.173-.81-.335.749-.18.416-.532-.056-.036,0-.3-.033-.406-.042.184.166.363.326.4.36-.519,1.164,1.1-.637.208.188.536.485.205.184-.113-.53-.039-.184-.045-.219-.068-.314.706-.406.4-.231-.454-.045Z"
+                                    transform="translate(2.832 4.664)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1769"
+                                    data-name="Path 1769"
+                                    d="M746.97,352.782c.872-.525,2.267-1.383,3.418-2.187,2.686-1.83,1.021-3.887-.2-4.717-2.956-1.676-4.392,2.283-4.98,4.718-.234-.944-.555-2.189-.888-3.3-.889-3.128-3.366-2.193-4.537-1.3-2.764,2.495,1.489,5.323,3.507,6.455-1.183-.027-2.875-.059-4.17-.059-3.256-.039-3.065,2.6-2.542,3.982,1.451,3.039,5.133.613,7.183-1.088-.387.933-.886,2.136-1.317,3.179-1.273,2.992,1.236,3.821,2.712,3.861,3.424-.186,2.366-4.447,1.489-6.854a33.734,33.734,0,0,0,2.664,2.429c2.522,2.051,4.018-.14,4.457-1.548C754.622,352.606,749.151,352.629,746.97,352.782Zm-.867,1.346-.444-.11-.231-.06-.548,6.125-.493-5.336-.043-.484-.173.032-5.7,1.037,5.756-2.319-.061-.1-.276-.447-2.881-4.7,3.886,4.42.157.177.461-.528,3.479-3.992-3.112,5.117.156.072.3.134,5.053,2.29Z"
+                                    transform="translate(6.612)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1770"
+                                    data-name="Path 1770"
+                                    d="M743.551,351.338l.093-.273.167-.5-.429.3-.239.17-.272-.2-.022-.015-.154-.113-.211-.157.054.152.093.3.1.331-.663.474.817.009.054.17.136.44.051.17.114-.328.038-.117.046-.135.064-.2.527.006.295,0-.234-.172Z"
+                                    transform="translate(8.516 1.781)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1771"
+                                    data-name="Path 1771"
+                                    d="M745.087,365.9c.585-.346,1.512-.918,2.278-1.451,1.785-1.221.674-2.589-.136-3.142-1.971-1.114-2.924,1.526-3.312,3.144-.157-.629-.368-1.458-.59-2.2-.591-2.081-2.238-1.461-3.018-.864-1.847,1.661.993,3.546,2.336,4.294-.789-.017-1.914-.038-2.782-.038-2.164-.027-2.036,1.73-1.686,2.649.966,2.027,3.418.407,4.782-.727-.263.622-.594,1.421-.881,2.116-.848,1.991.825,2.544,1.8,2.57,2.275-.124,1.573-2.96.991-4.558a22.478,22.478,0,0,0,1.772,1.615c1.678,1.365,2.667-.093,2.965-1.029C750.182,365.792,746.541,365.805,745.087,365.9Zm-.576.9-.295-.076-.151-.036-.364,4.073-.328-3.551-.029-.32-.113.021-3.794.69,3.829-1.544-.044-.066-.179-.3-1.916-3.126,2.582,2.938.1.117.3-.351,2.316-2.655-2.072,3.4.1.047.2.09,3.362,1.523Z"
+                                    transform="translate(7.171 5.16)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1772"
+                                    data-name="Path 1772"
+                                    d="M742.817,364.944l.061-.181.112-.334-.283.2-.163.113-.183-.136-.011-.011-.1-.075-.137-.1.026.1.062.2.069.22-.442.314.545.006.036.116.091.293.031.113.076-.22.027-.076.029-.089.047-.131.344.005h.2l-.154-.116Z"
+                                    transform="translate(8.437 6.345)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Allergens</div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.714 38.96">
+                                <g
+                                  id="Group_635"
+                                  data-name="Group 635"
+                                  transform="translate(-715.37 -387.849)"
+                                >
+                                  <g
+                                    id="Group_626"
+                                    data-name="Group 626"
+                                    transform="translate(734.566 387.849)"
+                                  >
+                                    <g
+                                      id="Group_619"
+                                      data-name="Group 619"
+                                      transform="translate(2.951)"
+                                    >
+                                      <path
+                                        id="Path_1793"
+                                        data-name="Path 1793"
+                                        d="M736.571,411.675a4.912,4.912,0,0,1-3.067,6.243h0a4.916,4.916,0,0,1-6.239-3.081l-6.975-20.489a4.911,4.911,0,0,1,3.067-6.234h0a4.908,4.908,0,0,1,6.243,3.067Z"
+                                        transform="translate(-720.028 -387.849)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_620"
+                                      data-name="Group 620"
+                                      transform="translate(0 5.89)"
+                                    >
+                                      <path
+                                        id="Path_1794"
+                                        data-name="Path 1794"
+                                        d="M720.444,402.392l-1.036-5.366,4.1-7.937,1.518.783-3.83,7.412.926,4.783Z"
+                                        transform="translate(-719.408 -389.088)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_621"
+                                      data-name="Group 621"
+                                      transform="translate(10.286 3.364)"
+                                    >
+                                      <path
+                                        id="Path_1795"
+                                        data-name="Path 1795"
+                                        d="M730.716,398.334l-.9-4.632-8.247-3.578.68-1.567,9.075,3.937,1.064,5.514Z"
+                                        transform="translate(-721.571 -388.557)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_622"
+                                      data-name="Group 622"
+                                      transform="translate(13.488 13.615)"
+                                    >
+                                      <path
+                                        id="Path_1796"
+                                        data-name="Path 1796"
+                                        d="M731.39,400.491l-.9-4.631-8.247-3.584.676-1.564L732,394.651l1.068,5.518Z"
+                                        transform="translate(-722.244 -390.713)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_623"
+                                      data-name="Group 623"
+                                      transform="translate(16.692 23.009)"
+                                    >
+                                      <path
+                                        id="Path_1797"
+                                        data-name="Path 1797"
+                                        d="M732.064,402.467l-.9-4.632-8.25-3.582.679-1.565,9.077,3.938,1.07,5.515Z"
+                                        transform="translate(-722.918 -392.688)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_624"
+                                      data-name="Group 624"
+                                      transform="translate(7.262 25.108)"
+                                    >
+                                      <path
+                                        id="Path_1798"
+                                        data-name="Path 1798"
+                                        d="M721.974,406.43l-1.039-5.365,4.1-7.936,1.516.783-3.826,7.411.921,4.782Z"
+                                        transform="translate(-720.935 -393.13)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_625"
+                                      data-name="Group 625"
+                                      transform="translate(3.42 16.142)"
+                                    >
+                                      <path
+                                        id="Path_1799"
+                                        data-name="Path 1799"
+                                        d="M721.166,404.543l-1.039-5.363,4.1-7.936,1.518.781-3.826,7.412.926,4.781Z"
+                                        transform="translate(-720.126 -391.244)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                  <g
+                                    id="Group_634"
+                                    data-name="Group 634"
+                                    transform="translate(715.37 401.355)"
+                                  >
+                                    <g
+                                      id="Group_627"
+                                      data-name="Group 627"
+                                      transform="translate(4.854)"
+                                    >
+                                      <path
+                                        id="Path_1800"
+                                        data-name="Path 1800"
+                                        d="M722.795,408.546a3.236,3.236,0,0,1-3.847,2.5h0a3.227,3.227,0,0,1-2.482-3.847l2.972-13.942a3.241,3.241,0,0,1,3.842-2.492h0a3.247,3.247,0,0,1,2.5,3.847Z"
+                                        transform="translate(-716.391 -390.69)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_628"
+                                      data-name="Group 628"
+                                      transform="translate(2.391 2.521)"
+                                    >
+                                      <path
+                                        id="Path_1801"
+                                        data-name="Path 1801"
+                                        d="M716.934,398.089l-1.061-.381,1.225-3.385,5-3.1.6.956-4.669,2.9Z"
+                                        transform="translate(-715.873 -391.22)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_629"
+                                      data-name="Group 629"
+                                      transform="translate(12.433 3.41)"
+                                    >
+                                      <path
+                                        id="Path_1802"
+                                        data-name="Path 1802"
+                                        d="M721.435,400.18l-1.058-.383,1.06-2.924-3.452-4.806.912-.66,3.8,5.289Z"
+                                        transform="translate(-717.985 -391.407)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_630"
+                                      data-name="Group 630"
+                                      transform="translate(10.781 10.286)"
+                                    >
+                                      <path
+                                        id="Path_1803"
+                                        data-name="Path 1803"
+                                        d="M721.083,401.631l-1.052-.382,1.061-2.928-3.454-4.814.91-.654,3.8,5.3Z"
+                                        transform="translate(-717.638 -392.853)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_631"
+                                      data-name="Group 631"
+                                      transform="translate(9.421 16.681)"
+                                    >
+                                      <path
+                                        id="Path_1804"
+                                        data-name="Path 1804"
+                                        d="M720.8,402.97l-1.058-.384,1.058-2.921-3.452-4.81.91-.658,3.8,5.289Z"
+                                        transform="translate(-717.352 -394.198)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_632"
+                                      data-name="Group 632"
+                                      transform="translate(0 15.837)"
+                                    >
+                                      <path
+                                        id="Path_1805"
+                                        data-name="Path 1805"
+                                        d="M716.428,400.886l-1.057-.386,1.23-3.384,5-3.1.594.952-4.665,2.9Z"
+                                        transform="translate(-715.371 -394.02)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_633"
+                                      data-name="Group 633"
+                                      transform="translate(0.859 9.473)"
+                                    >
+                                      <path
+                                        id="Path_1806"
+                                        data-name="Path 1806"
+                                        d="M716.613,399.543l-1.062-.383,1.225-3.382,5-3.1.592.958-4.665,2.885Z"
+                                        transform="translate(-715.551 -392.682)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Viruses</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.5 54.756">
+                                <g
+                                  id="Group_737"
+                                  data-name="Group 737"
+                                  transform="translate(-45.604 -31.141)"
+                                >
+                                  <path
+                                    id="Path_1773"
+                                    data-name="Path 1773"
+                                    d="M69.9,33.521a4.007,4.007,0,0,1,.061.485,3.435,3.435,0,0,1,.061.485c6.194.764,10.139,2.52,10.139,4.14a1.325,1.325,0,0,1-.3.775,6.9,6.9,0,0,1-3.032,1.825,35.08,35.08,0,0,1-9.5,1.791l-.057,0c-1.245.084-2.536.141-3.907.141s-2.666-.053-3.91-.137c-7.752-.527-12.892-2.547-12.892-4.4,0-1.524,3.525-3.154,9.093-3.979a4.364,4.364,0,0,1,.191-.512,3.312,3.312,0,0,1,.195-.5c-5.774.771-10.425,2.455-10.425,4.991,0,.344,5.163,32.246,5.549,36.118,2.513,4.231,9.612,4.346,11.773,4.407,9.318.477,12.186-4.38,12.186-4.38S81.1,39.211,81.1,38.631C81.1,35.98,76.036,34.239,69.9,33.521ZM55.117,74.985,52.363,44.279l1.157.535L56,75.344Zm4.7,1.417L58.756,45.168H60l.8,31.326Zm6.565-.088-.978.179.8-31.238h1.153Zm4.88-1.329-1.241.443L72.6,44.9l1.149-.447Z"
+                                    transform="translate(0 6.709)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1774"
+                                    data-name="Path 1774"
+                                    d="M52.4,34.438c-.011-.027,0-.053-.011-.084a1.5,1.5,0,0,0-.348-.4c-.1-.084-.195-.168-.3-.256-.076-.061-.149-.168-.229-.237-.229-.011-.458-.011-.687-.019a3.443,3.443,0,0,1,.057.481h0a3.191,3.191,0,0,1-.145.47C51.287,34.407,51.863,34.407,52.4,34.438Z"
+                                    transform="translate(14.458 6.472)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1775"
+                                    data-name="Path 1775"
+                                    d="M51.027,34.245a2.673,2.673,0,0,0,.363-.328.955.955,0,0,0,.248-.485c-.6.011-1.191.019-1.783.05a3.984,3.984,0,0,1-.153.485,3.073,3.073,0,0,1-.37.485c.5-.027,1.039-.027,1.554-.046C50.943,34.36,50.965,34.291,51.027,34.245Z"
+                                    transform="translate(10.506 6.458)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1776"
+                                    data-name="Path 1776"
+                                    d="M50.267,38.022a1.667,1.667,0,0,1-.81,2.074c-.034.027-.05.069-.084.1a1.964,1.964,0,0,0-.462.527,2.721,2.721,0,0,0-.195.5,6.91,6.91,0,0,0-.275,2.123l1.764-.057a3.219,3.219,0,0,1,.748-2.276c.023-.023.027-.05.05-.076a2.046,2.046,0,0,0,.39-.439,2.33,2.33,0,0,0,.4-.5,3.13,3.13,0,0,0-.684-3.5c-1.283-1.23-1.172-1.654.325-3.1a2.515,2.515,0,0,0,.481-2.249L50.1,31.2a2.055,2.055,0,0,1-.745,1.921,2.713,2.713,0,0,0-.745,3.162C49.018,36.972,49.9,37.3,50.267,38.022Z"
+                                    transform="translate(7.79 0)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1777"
+                                    data-name="Path 1777"
+                                    d="M51.509,38.338a1.234,1.234,0,0,1,.137.619,1.262,1.262,0,0,1-.122.481,1.878,1.878,0,0,1-.306.485,2.781,2.781,0,0,1-.523.493c-.962.687-1.016,2.181-1.016,3.246l1.764-.053a3.168,3.168,0,0,1,.806-2.352,2.278,2.278,0,0,0,.882-1.329,2.764,2.764,0,0,0,.115-.474,3.253,3.253,0,0,0,.027-.474,3.14,3.14,0,0,0-.917-2.165c-1.283-1.233-1.176-1.661.321-3.1a2.507,2.507,0,0,0,.481-2.245l-1.818.053a2.061,2.061,0,0,1-.756,1.925,2.727,2.727,0,0,0-.745,3.162C50.253,37.291,51.143,37.624,51.509,38.338Z"
+                                    transform="translate(11.283 0.91)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1778"
+                                    data-name="Path 1778"
+                                    d="M52.286,38.167a2,2,0,0,1,.458.493l0,.015a1.153,1.153,0,0,1,.115.485,1.9,1.9,0,0,1-.924,1.577c-.97.687-1.02,2.177-1.02,3.242l1.764-.05a3.158,3.158,0,0,1,.8-2.356,2.5,2.5,0,0,0,1.027-2.261,3.132,3.132,0,0,0-.08-.485,2.49,2.49,0,0,0-.836-1.692c-1.283-1.23-1.176-1.657.321-3.1a2.516,2.516,0,0,0,.481-2.249l-1.818.057a2.062,2.062,0,0,1-.748,1.921,2.713,2.713,0,0,0-.745,3.158A6.506,6.506,0,0,0,52.286,38.167Z"
+                                    transform="translate(14.779 1.818)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Odors</div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12 mb-0">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.192 42.337">
+                                <g
+                                  id="Group_636"
+                                  data-name="Group 636"
+                                  transform="translate(-25 -4.166)"
+                                >
+                                  <path
+                                    id="Path_1807"
+                                    data-name="Path 1807"
+                                    d="M35.08,16.263H38.1a1.009,1.009,0,0,1,.9.557l1.737,3.475h1.393A1.008,1.008,0,0,1,43.144,21.3V45.495A1.008,1.008,0,0,1,42.136,46.5H26.008A1.008,1.008,0,0,1,25,45.495V21.3a1.008,1.008,0,0,1,1.008-1.008H27.4l1.737-3.475a1.009,1.009,0,0,1,.9-.557h3.024V14.247H32.056a1.008,1.008,0,0,1-1.008-1.008V9.206A1.008,1.008,0,0,1,32.056,8.2h4.032A1.008,1.008,0,0,1,37.1,9.206v4.032a1.008,1.008,0,0,1-1.008,1.008H35.08Zm-5.425,4.032h8.834l-1.008-2.016H30.663l-1.008,2.016Zm11.473,2.016H27.016V44.487H41.128ZM33.064,12.23H35.08V10.215H33.064ZM42.587,9.1a1.008,1.008,0,1,1-.9-1.8l6.048-3.024a1.008,1.008,0,1,1,.9,1.8Zm6.048,7.269a1.008,1.008,0,1,1-.9,1.8l-6.048-3.024a1.008,1.008,0,1,1,.9-1.8Zm-.45-6.154a1.008,1.008,0,0,1,0,2.016H42.136a1.008,1.008,0,1,1,0-2.016Z"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">VOCs</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="ex1-tabs-4"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-4"
+                >
+                  <div class="row gx-md-5 pt-5">
+                    <div class="col-md-6 col-12 mb-md-0 mb-3">
+                      <img src="img/aeramax/adminoffice.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-md-6 col-12 text-md-start">
+                      <p class="tab-content-p-tag">
+                        In administrative offices, where staff spend a majority of their time, it’s
+                        important to continue to protect them against the airborne transmission of
+                        viruses. Volatile Organic Compounds (VOCs) are also an area of concern, as
+                        harmful chemicals are emitted from office equipment to cleaning supplies.
+                      </p>
+                      <div class="tab-sub-title fw-600 pt-2 text-aetamax-blue mb-3 mb-md-4">
+                        Key Concerns:
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.286 33.528">
+                                <g
+                                  id="Group_612"
+                                  data-name="Group 612"
+                                  transform="translate(-716.18 -345.135)"
+                                >
+                                  <path
+                                    id="Path_1767"
+                                    data-name="Path 1767"
+                                    d="M731.435,361.93c.752-1.4,1.942-3.655,2.843-5.644,2.149-4.584-1.716-6.018-4.008-6.161-5.291.1-4.075,6.548-2.932,10.274-1.063-1.076-2.486-2.49-3.8-3.717-3.676-3.487-6.255-.267-7.113,1.861-1.722,5.535,6.209,5.952,9.82,5.866-1.607.906-3.9,2.2-5.638,3.235-4.387,2.526-2.039,5.917-.24,7.347,4.356,2.92,7.363-3.247,8.761-7.154.222,1.556.5,3.563.756,5.3.665,5.02,4.693,4.136,6.7,3.022,4.429-2.961-.348-7.825-3.434-10.358a51.577,51.577,0,0,0,5.485,1.134c5.01.746,5.273-3.372,4.75-5.608C741.551,355.626,734.239,359.993,731.435,361.93Zm-.092,2.489-.686.2-.355.1,4.125,8.64-4.891-6.76L729.1,366l-.207.182-6.822,5.907,5.87-7.667-.164-.086-.718-.383-7.589-4.012,8.709,2.836.348.114.2-1.067,1.5-8.112-.113,9.327.265-.031.508-.055,8.585-.945Z"
+                                    transform="translate(0 1.642)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1768"
+                                    data-name="Path 1768"
+                                    d="M726.84,360.56l-.093-.438-.173-.81-.335.749-.18.416-.532-.056-.036,0-.3-.033-.406-.042.184.166.363.326.4.36-.519,1.164,1.1-.637.208.188.536.485.205.184-.113-.53-.039-.184-.045-.219-.068-.314.706-.406.4-.231-.454-.045Z"
+                                    transform="translate(2.832 4.664)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1769"
+                                    data-name="Path 1769"
+                                    d="M746.97,352.782c.872-.525,2.267-1.383,3.418-2.187,2.686-1.83,1.021-3.887-.2-4.717-2.956-1.676-4.392,2.283-4.98,4.718-.234-.944-.555-2.189-.888-3.3-.889-3.128-3.366-2.193-4.537-1.3-2.764,2.495,1.489,5.323,3.507,6.455-1.183-.027-2.875-.059-4.17-.059-3.256-.039-3.065,2.6-2.542,3.982,1.451,3.039,5.133.613,7.183-1.088-.387.933-.886,2.136-1.317,3.179-1.273,2.992,1.236,3.821,2.712,3.861,3.424-.186,2.366-4.447,1.489-6.854a33.734,33.734,0,0,0,2.664,2.429c2.522,2.051,4.018-.14,4.457-1.548C754.622,352.606,749.151,352.629,746.97,352.782Zm-.867,1.346-.444-.11-.231-.06-.548,6.125-.493-5.336-.043-.484-.173.032-5.7,1.037,5.756-2.319-.061-.1-.276-.447-2.881-4.7,3.886,4.42.157.177.461-.528,3.479-3.992-3.112,5.117.156.072.3.134,5.053,2.29Z"
+                                    transform="translate(6.612)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1770"
+                                    data-name="Path 1770"
+                                    d="M743.551,351.338l.093-.273.167-.5-.429.3-.239.17-.272-.2-.022-.015-.154-.113-.211-.157.054.152.093.3.1.331-.663.474.817.009.054.17.136.44.051.17.114-.328.038-.117.046-.135.064-.2.527.006.295,0-.234-.172Z"
+                                    transform="translate(8.516 1.781)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1771"
+                                    data-name="Path 1771"
+                                    d="M745.087,365.9c.585-.346,1.512-.918,2.278-1.451,1.785-1.221.674-2.589-.136-3.142-1.971-1.114-2.924,1.526-3.312,3.144-.157-.629-.368-1.458-.59-2.2-.591-2.081-2.238-1.461-3.018-.864-1.847,1.661.993,3.546,2.336,4.294-.789-.017-1.914-.038-2.782-.038-2.164-.027-2.036,1.73-1.686,2.649.966,2.027,3.418.407,4.782-.727-.263.622-.594,1.421-.881,2.116-.848,1.991.825,2.544,1.8,2.57,2.275-.124,1.573-2.96.991-4.558a22.478,22.478,0,0,0,1.772,1.615c1.678,1.365,2.667-.093,2.965-1.029C750.182,365.792,746.541,365.805,745.087,365.9Zm-.576.9-.295-.076-.151-.036-.364,4.073-.328-3.551-.029-.32-.113.021-3.794.69,3.829-1.544-.044-.066-.179-.3-1.916-3.126,2.582,2.938.1.117.3-.351,2.316-2.655-2.072,3.4.1.047.2.09,3.362,1.523Z"
+                                    transform="translate(7.171 5.16)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1772"
+                                    data-name="Path 1772"
+                                    d="M742.817,364.944l.061-.181.112-.334-.283.2-.163.113-.183-.136-.011-.011-.1-.075-.137-.1.026.1.062.2.069.22-.442.314.545.006.036.116.091.293.031.113.076-.22.027-.076.029-.089.047-.131.344.005h.2l-.154-.116Z"
+                                    transform="translate(8.437 6.345)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Allergens</div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.714 38.96">
+                                <g
+                                  id="Group_635"
+                                  data-name="Group 635"
+                                  transform="translate(-715.37 -387.849)"
+                                >
+                                  <g
+                                    id="Group_626"
+                                    data-name="Group 626"
+                                    transform="translate(734.566 387.849)"
+                                  >
+                                    <g
+                                      id="Group_619"
+                                      data-name="Group 619"
+                                      transform="translate(2.951)"
+                                    >
+                                      <path
+                                        id="Path_1793"
+                                        data-name="Path 1793"
+                                        d="M736.571,411.675a4.912,4.912,0,0,1-3.067,6.243h0a4.916,4.916,0,0,1-6.239-3.081l-6.975-20.489a4.911,4.911,0,0,1,3.067-6.234h0a4.908,4.908,0,0,1,6.243,3.067Z"
+                                        transform="translate(-720.028 -387.849)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_620"
+                                      data-name="Group 620"
+                                      transform="translate(0 5.89)"
+                                    >
+                                      <path
+                                        id="Path_1794"
+                                        data-name="Path 1794"
+                                        d="M720.444,402.392l-1.036-5.366,4.1-7.937,1.518.783-3.83,7.412.926,4.783Z"
+                                        transform="translate(-719.408 -389.088)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_621"
+                                      data-name="Group 621"
+                                      transform="translate(10.286 3.364)"
+                                    >
+                                      <path
+                                        id="Path_1795"
+                                        data-name="Path 1795"
+                                        d="M730.716,398.334l-.9-4.632-8.247-3.578.68-1.567,9.075,3.937,1.064,5.514Z"
+                                        transform="translate(-721.571 -388.557)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_622"
+                                      data-name="Group 622"
+                                      transform="translate(13.488 13.615)"
+                                    >
+                                      <path
+                                        id="Path_1796"
+                                        data-name="Path 1796"
+                                        d="M731.39,400.491l-.9-4.631-8.247-3.584.676-1.564L732,394.651l1.068,5.518Z"
+                                        transform="translate(-722.244 -390.713)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_623"
+                                      data-name="Group 623"
+                                      transform="translate(16.692 23.009)"
+                                    >
+                                      <path
+                                        id="Path_1797"
+                                        data-name="Path 1797"
+                                        d="M732.064,402.467l-.9-4.632-8.25-3.582.679-1.565,9.077,3.938,1.07,5.515Z"
+                                        transform="translate(-722.918 -392.688)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_624"
+                                      data-name="Group 624"
+                                      transform="translate(7.262 25.108)"
+                                    >
+                                      <path
+                                        id="Path_1798"
+                                        data-name="Path 1798"
+                                        d="M721.974,406.43l-1.039-5.365,4.1-7.936,1.516.783-3.826,7.411.921,4.782Z"
+                                        transform="translate(-720.935 -393.13)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_625"
+                                      data-name="Group 625"
+                                      transform="translate(3.42 16.142)"
+                                    >
+                                      <path
+                                        id="Path_1799"
+                                        data-name="Path 1799"
+                                        d="M721.166,404.543l-1.039-5.363,4.1-7.936,1.518.781-3.826,7.412.926,4.781Z"
+                                        transform="translate(-720.126 -391.244)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                  <g
+                                    id="Group_634"
+                                    data-name="Group 634"
+                                    transform="translate(715.37 401.355)"
+                                  >
+                                    <g
+                                      id="Group_627"
+                                      data-name="Group 627"
+                                      transform="translate(4.854)"
+                                    >
+                                      <path
+                                        id="Path_1800"
+                                        data-name="Path 1800"
+                                        d="M722.795,408.546a3.236,3.236,0,0,1-3.847,2.5h0a3.227,3.227,0,0,1-2.482-3.847l2.972-13.942a3.241,3.241,0,0,1,3.842-2.492h0a3.247,3.247,0,0,1,2.5,3.847Z"
+                                        transform="translate(-716.391 -390.69)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_628"
+                                      data-name="Group 628"
+                                      transform="translate(2.391 2.521)"
+                                    >
+                                      <path
+                                        id="Path_1801"
+                                        data-name="Path 1801"
+                                        d="M716.934,398.089l-1.061-.381,1.225-3.385,5-3.1.6.956-4.669,2.9Z"
+                                        transform="translate(-715.873 -391.22)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_629"
+                                      data-name="Group 629"
+                                      transform="translate(12.433 3.41)"
+                                    >
+                                      <path
+                                        id="Path_1802"
+                                        data-name="Path 1802"
+                                        d="M721.435,400.18l-1.058-.383,1.06-2.924-3.452-4.806.912-.66,3.8,5.289Z"
+                                        transform="translate(-717.985 -391.407)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_630"
+                                      data-name="Group 630"
+                                      transform="translate(10.781 10.286)"
+                                    >
+                                      <path
+                                        id="Path_1803"
+                                        data-name="Path 1803"
+                                        d="M721.083,401.631l-1.052-.382,1.061-2.928-3.454-4.814.91-.654,3.8,5.3Z"
+                                        transform="translate(-717.638 -392.853)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_631"
+                                      data-name="Group 631"
+                                      transform="translate(9.421 16.681)"
+                                    >
+                                      <path
+                                        id="Path_1804"
+                                        data-name="Path 1804"
+                                        d="M720.8,402.97l-1.058-.384,1.058-2.921-3.452-4.81.91-.658,3.8,5.289Z"
+                                        transform="translate(-717.352 -394.198)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_632"
+                                      data-name="Group 632"
+                                      transform="translate(0 15.837)"
+                                    >
+                                      <path
+                                        id="Path_1805"
+                                        data-name="Path 1805"
+                                        d="M716.428,400.886l-1.057-.386,1.23-3.384,5-3.1.594.952-4.665,2.9Z"
+                                        transform="translate(-715.371 -394.02)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                    <g
+                                      id="Group_633"
+                                      data-name="Group 633"
+                                      transform="translate(0.859 9.473)"
+                                    >
+                                      <path
+                                        id="Path_1806"
+                                        data-name="Path 1806"
+                                        d="M716.613,399.543l-1.062-.383,1.225-3.382,5-3.1.592.958-4.665,2.885Z"
+                                        transform="translate(-715.551 -392.682)"
+                                        class="virus_svgss"
+                                      ></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Viruses</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 col-12 mb-4">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.5 54.756">
+                                <g
+                                  id="Group_737"
+                                  data-name="Group 737"
+                                  transform="translate(-45.604 -31.141)"
+                                >
+                                  <path
+                                    id="Path_1773"
+                                    data-name="Path 1773"
+                                    d="M69.9,33.521a4.007,4.007,0,0,1,.061.485,3.435,3.435,0,0,1,.061.485c6.194.764,10.139,2.52,10.139,4.14a1.325,1.325,0,0,1-.3.775,6.9,6.9,0,0,1-3.032,1.825,35.08,35.08,0,0,1-9.5,1.791l-.057,0c-1.245.084-2.536.141-3.907.141s-2.666-.053-3.91-.137c-7.752-.527-12.892-2.547-12.892-4.4,0-1.524,3.525-3.154,9.093-3.979a4.364,4.364,0,0,1,.191-.512,3.312,3.312,0,0,1,.195-.5c-5.774.771-10.425,2.455-10.425,4.991,0,.344,5.163,32.246,5.549,36.118,2.513,4.231,9.612,4.346,11.773,4.407,9.318.477,12.186-4.38,12.186-4.38S81.1,39.211,81.1,38.631C81.1,35.98,76.036,34.239,69.9,33.521ZM55.117,74.985,52.363,44.279l1.157.535L56,75.344Zm4.7,1.417L58.756,45.168H60l.8,31.326Zm6.565-.088-.978.179.8-31.238h1.153Zm4.88-1.329-1.241.443L72.6,44.9l1.149-.447Z"
+                                    transform="translate(0 6.709)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1774"
+                                    data-name="Path 1774"
+                                    d="M52.4,34.438c-.011-.027,0-.053-.011-.084a1.5,1.5,0,0,0-.348-.4c-.1-.084-.195-.168-.3-.256-.076-.061-.149-.168-.229-.237-.229-.011-.458-.011-.687-.019a3.443,3.443,0,0,1,.057.481h0a3.191,3.191,0,0,1-.145.47C51.287,34.407,51.863,34.407,52.4,34.438Z"
+                                    transform="translate(14.458 6.472)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1775"
+                                    data-name="Path 1775"
+                                    d="M51.027,34.245a2.673,2.673,0,0,0,.363-.328.955.955,0,0,0,.248-.485c-.6.011-1.191.019-1.783.05a3.984,3.984,0,0,1-.153.485,3.073,3.073,0,0,1-.37.485c.5-.027,1.039-.027,1.554-.046C50.943,34.36,50.965,34.291,51.027,34.245Z"
+                                    transform="translate(10.506 6.458)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1776"
+                                    data-name="Path 1776"
+                                    d="M50.267,38.022a1.667,1.667,0,0,1-.81,2.074c-.034.027-.05.069-.084.1a1.964,1.964,0,0,0-.462.527,2.721,2.721,0,0,0-.195.5,6.91,6.91,0,0,0-.275,2.123l1.764-.057a3.219,3.219,0,0,1,.748-2.276c.023-.023.027-.05.05-.076a2.046,2.046,0,0,0,.39-.439,2.33,2.33,0,0,0,.4-.5,3.13,3.13,0,0,0-.684-3.5c-1.283-1.23-1.172-1.654.325-3.1a2.515,2.515,0,0,0,.481-2.249L50.1,31.2a2.055,2.055,0,0,1-.745,1.921,2.713,2.713,0,0,0-.745,3.162C49.018,36.972,49.9,37.3,50.267,38.022Z"
+                                    transform="translate(7.79 0)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1777"
+                                    data-name="Path 1777"
+                                    d="M51.509,38.338a1.234,1.234,0,0,1,.137.619,1.262,1.262,0,0,1-.122.481,1.878,1.878,0,0,1-.306.485,2.781,2.781,0,0,1-.523.493c-.962.687-1.016,2.181-1.016,3.246l1.764-.053a3.168,3.168,0,0,1,.806-2.352,2.278,2.278,0,0,0,.882-1.329,2.764,2.764,0,0,0,.115-.474,3.253,3.253,0,0,0,.027-.474,3.14,3.14,0,0,0-.917-2.165c-1.283-1.233-1.176-1.661.321-3.1a2.507,2.507,0,0,0,.481-2.245l-1.818.053a2.061,2.061,0,0,1-.756,1.925,2.727,2.727,0,0,0-.745,3.162C50.253,37.291,51.143,37.624,51.509,38.338Z"
+                                    transform="translate(11.283 0.91)"
+                                    class="virus_svgss"
+                                  ></path>
+                                  <path
+                                    id="Path_1778"
+                                    data-name="Path 1778"
+                                    d="M52.286,38.167a2,2,0,0,1,.458.493l0,.015a1.153,1.153,0,0,1,.115.485,1.9,1.9,0,0,1-.924,1.577c-.97.687-1.02,2.177-1.02,3.242l1.764-.05a3.158,3.158,0,0,1,.8-2.356,2.5,2.5,0,0,0,1.027-2.261,3.132,3.132,0,0,0-.08-.485,2.49,2.49,0,0,0-.836-1.692c-1.283-1.23-1.176-1.657.321-3.1a2.516,2.516,0,0,0,.481-2.249l-1.818.057a2.062,2.062,0,0,1-.748,1.921,2.713,2.713,0,0,0-.745,3.158A6.506,6.506,0,0,0,52.286,38.167Z"
+                                    transform="translate(14.779 1.818)"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">Odors</div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12 mb-0">
+                          <div class="d-flex align-items-center conserns-main">
+                            <div class="conserns-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.192 42.337">
+                                <g
+                                  id="Group_636"
+                                  data-name="Group 636"
+                                  transform="translate(-25 -4.166)"
+                                >
+                                  <path
+                                    id="Path_1807"
+                                    data-name="Path 1807"
+                                    d="M35.08,16.263H38.1a1.009,1.009,0,0,1,.9.557l1.737,3.475h1.393A1.008,1.008,0,0,1,43.144,21.3V45.495A1.008,1.008,0,0,1,42.136,46.5H26.008A1.008,1.008,0,0,1,25,45.495V21.3a1.008,1.008,0,0,1,1.008-1.008H27.4l1.737-3.475a1.009,1.009,0,0,1,.9-.557h3.024V14.247H32.056a1.008,1.008,0,0,1-1.008-1.008V9.206A1.008,1.008,0,0,1,32.056,8.2h4.032A1.008,1.008,0,0,1,37.1,9.206v4.032a1.008,1.008,0,0,1-1.008,1.008H35.08Zm-5.425,4.032h8.834l-1.008-2.016H30.663l-1.008,2.016Zm11.473,2.016H27.016V44.487H41.128ZM33.064,12.23H35.08V10.215H33.064ZM42.587,9.1a1.008,1.008,0,1,1-.9-1.8l6.048-3.024a1.008,1.008,0,1,1,.9,1.8Zm6.048,7.269a1.008,1.008,0,1,1-.9,1.8l-6.048-3.024a1.008,1.008,0,1,1,.9-1.8Zm-.45-6.154a1.008,1.008,0,0,1,0,2.016H42.136a1.008,1.008,0,1,1,0-2.016Z"
+                                    class="virus_svgss"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="conserns-text">VOCs</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tabs content -->
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <a href="#" class="btn btn-primary btn-aeramax"
+            >Learn More About the Importance of Healthy Air</a
+          >
+        </div>
+      </section>
+
+      <section class="band section-spacing aeramax-blue-bg py-md-5 mb-lg-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1 text-center text-white">
+              <div class="mb-0 text-white py-5 aeramax-page-title text-uppercase">
+                AeraMax Technology Makes the Grade.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aeramax_technologies mb-lg-2">
+        <div class="container-fluid p-0">
+          <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 order-lg-2 images_fliped position-relative">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img
+                      src="img/aeramax/cleanair-one.png"
+                      class="img-fluid w-100 without_hover"
+                      alt="Filters"
+                    />
+                  </div>
+                  <div class="flip-box-back">
+                    <img
+                      src="img/aeramax/cleanair-two.png"
+                      class="img-fluid w-100 on_hover"
+                      alt="Filters"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="aermax_technologies_content text-md-start text-center">
+                <h3 class="aeramax-two-column-title text-aetamax-blue fw-600 mb-3">
+                  CLEAN AIR AUTOMATICALLY
+                </h3>
+                <p class="tab-content-p-tag">
+                  AeraMax Pro eliminates the need for Dental lab staff to manually change fan speeds
+                  with EnviroSmart™ and PureView™ technologies.
+                </p>
+                <p class="tab-content-p-tag">
+                  Bring peace of mind to staff with a proactive solution that only AeraMax Pro can
+                  provide.
+                </p>
+                <div class="mt-md-5 mt-3">
+                  <p class="mb-4"><img src="img/aeramax/envirosmart-space.png" /></p>
+                  <p class="mb-0"><img src="img/aeramax/pureview-space.png" /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-lg-2">
+        <div class="container-fluid p-0">
+          <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 images_fliped position-relative">
+              <img src="img/aeramax/effective-efficient-hero.jpg" class="img-fluid w-100" />
+            </div>
+
+            <div class="col-lg-6">
+              <div class="aermax_technologies_content text-md-start text-center">
+                <h3 class="aeramax-two-column-title text-aetamax-blue fw-600 mb-3">
+                  EFFECTIVE & EFFICIENT
+                </h3>
+                <p class="tab-content-p-tag">
+                  4-stage True HEPA filtration provides maximum protection and removes over 99.99%
+                  of Covid-19<a href="#" style="color: blue"><sup>ߙ</sup></a
+                  >.
+                </p>
+                <p class="tab-content-p-tag">
+                  Our smart technologies work hard when contaminants are detected then shifts to
+                  standby when the room is empty or when the air is clean. This provides maximum
+                  protection while allowing for fewer filter changes and energy savings.
+                </p>
+                <ul class="list-unstyled content_number fw-700 text-start">
+                  <li><span>1</span>Pre-Filter</li>
+                  <li><span>2</span>Active Carbon Filter</li>
+                  <li><span>3</span>True HEPA Filter</li>
+                  <li><span>4</span>PlasmaTrue™ Bipolar Ionizer</li>
+                </ul>
+                <p class="mt-5 small-font-paragraph">
+                  <sup>ߙ</sup>Fellowes AeraMax Pro AM3 &amp; AM4 air purifiers demonstrated, through
+                  independent laboratory testing, to be effective in eliminating aerosolized
+                  concentration of SARS-CoV-2 by 99.9999% through a single air pass test of the
+                  purifier. In addition, AeraMax Pro air purifiers reached 99.99% airborne reduction
+                  of a surrogate Human Coronavirus 229E in a 20m3 test chamber within 1 hour of
+                  operation in a separate test.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ready-where-needed mb-lg-2">
+        <div class="container-fluid p-0">
+          <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 order-lg-2 images_fliped position-relative">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img
+                      src="img/aeramax/readyforclass-one.png"
+                      class="img-fluid w-100 without_hover"
+                      alt="Filters"
+                    />
+                  </div>
+                  <div class="flip-box-back">
+                    <img
+                      src="img/aeramax/readyforclass-two.png"
+                      class="img-fluid w-100 on_hover"
+                      alt="Filters"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="aermax_technologies_content text-md-start text-center">
+                <h3 class="aeramax-two-column-title text-aetamax-blue fw-600 mb-3">
+                  READY FOR CLASS OR A FIELD TRIP
+                </h3>
+                <p class="tab-content-p-tag">
+                  Stand models provide the flexibility you need, where you need it most. Simply move
+                  to the desired location in your school and plug the unit in. Wall-mounting allows
+                  for maximized circulation in trouble areas.
+                </p>
+                <div class="d-sm-flex d-block align-items-center mt-5">
+                  <div class="mb-sm-0 mb-3">
+                    <img src="img/aeramax/ready-for-class-thumb.png" />
+                  </div>
+                  <div class="fs-14">
+                    Available with stand for.<br />
+                    on-demand air purification
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="protects-the-air mb-lg-2">
+        <div class="container-fluid p-0">
+          <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 images_fliped position-relative">
+              <img src="img/aeramax/lock.jpg" class="img-fluid without_zoom" alt="Filters" />
+              <img src="img/aeramax/lock-icon.png" class="img-fluid with_zoom" alt="Filters" />
+            </div>
+
+            <div class="col-lg-6">
+              <div class="aermax_technologies_content text-md-start text-center">
+                <h3 class="aeramax-two-column-title text-aetamax-blue fw-600 mb-3">
+                  PROTECTS THE AIR (AND ITSELF)
+                </h3>
+                <p class="tab-content-p-tag">
+                  Commercial grade durability withstands wear and tear in high traffic areas. Tamper
+                  proof lock keeps settings in place and prevents filters from accidentally being
+                  displaced.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center section-spacing">
+        <div class="container">
+          <a href="#" class="btn btn-primary btn-aeramax"
+            >Learn More About the AeraMax Pro Difference</a
+          >
+        </div>
+      </section>
+
+      <section class="light-bg section-spacing testimonial-section mb-2">
+        <div class="container">
+          <div class="text-uppercase text-aetamax-blue text-center aeramax-page-title">
+            Fellowes is the preferred choice
+          </div>
+        </div>
+        <div class="container-fluid text-md-start text-center">
+          <div class="row mt-5">
+            <div class="col-lg-6 mb-lg-0 mb-5">
+              <div class="d-md-flex d-block testimonial-main">
+                <div class="testi-image-box col-md-6">
+                  <img src="img/aeramax/culver-casestudies.png" class="img-fluid w-100" />
+                </div>
+                <div class="testi-content-box col-md-6">
+                  <div class="mb-5 pt-mb-5">
+                    <img src="img/aeramax/culver-logo-1.jpg" />
+                  </div>
+                  <div class="testimonial_content mb-5">
+                    <p>
+                      "Our teachers, students and administrators can see the air being cleaned with
+                      the Fellowes PureView™ Technology, which provides a feeling of safety."
+                    </p>
+                  </div>
+                  <div class="testimonial_by text-aetamax-blue fw-500">
+                    <p class="mb-0">Michael Squires</p>
+                    <p class="mb-0">Commandant of Cadets</p>
+                    <p class="mb-0">Culver Military Academy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-md-flex d-block testimonial-main">
+                <div class="testi-image-box col-md-6">
+                  <img src="img/aeramax/clarkecountythumbnail.png" class="img-fluid w-100" />
+                </div>
+                <div class="testi-content-box col-md-6">
+                  <div class="mb-5 pt-mb-5">
+                    <img src="img/aeramax/clarkecountythumbnaillogo.png" />
+                  </div>
+                  <div class="testimonial_content mb-5">
+                    <p>"We were able to see a significant decrease in airborne pollutants."</p>
+                  </div>
+                  <div class="testimonial_by text-aetamax-blue fw-500">
+                    <p class="mb-0">Kimberly Thomas</p>
+                    <p class="mb-0">Executive Director</p>
+                    <p class="mb-0">Clarke County School District</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center mt-5">
+          <a href="#" class="btn btn-primary btn-aeramax">View More</a>
+        </div>
+      </section>
+
+      <section class="light-bg section-spacing testimonial-section">
+        <div class="container">
+          <div class="text-uppercase text-aetamax-blue text-center aeramax-page-title">
+            SEE WHY AERAMAX IS TOP OF ITS CLASS
+          </div>
+        </div>
+        <div class="container-fluid text-md-start text-center">
+          <div class="row mt-5">
+            <div class="col-12">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/u1nq4hsGeKw?controls=0&rel=0&enablejsapi=1&origin=https%3A%2F%2Fwww.fellowes.com"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing form-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1 col-12">
+              <div class="text-uppercase text-aetamax-blue text-center aeramax-page-title mb-3">
+                READY FOR AERAMAX?
+              </div>
+              <div class="form-sub-title fw-700 text-aetamax-blue">
+                Fill out the form below to speak with one of our experts about developing a tailored
+                solution for your facility.
+              </div>
+
+              <form class="mt-5">
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="FirstName" class="form-control form-control-lg" />
+                        <label class="form-label" for="FirstName">First Name*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="LastName" class="form-control form-control-lg" />
+                        <label class="form-label" for="LastName">Last Name*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="email"
+                          id="EmailAddress"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="EmailAddress">Email Address*</label>
+                      </div>
+                      <div class="small-font-paragraph text-start">
+                        Please use your business email.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="tel" id="PhoneNumber" class="form-control form-control-lg" />
+                        <label class="form-label" for="PhoneNumber">Phone Number*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="Organization" class="form-control form-control-lg" />
+                        <label class="form-label" for="Organization">Organization*</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <button type="button" class="btn btn-primary btn-aeramax">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- End your project here-->
     </main>
 
-    <!-- Footer usually goes here -->
+    <!-- Global Footer Start -->
+
+    <footer id="main-footer" class="px-4" role="contentinfo">
+      <section class="container-xl mb-4 my-lg-4">
+        <div class="row">
+          <div class="col col-12 col-lg-3 order-5 order-lg-1 text-center text-md-start">
+            <a class="footer-logo" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 112.579 25.657">
+                <g
+                  id="Fellowes_Logo_White"
+                  data-name="Fellowes Logo White"
+                  transform="translate(1810 136.126)"
+                >
+                  <g id="FellowesLogo" transform="translate(-1810 -136.126)">
+                    <path
+                      id="Path_1"
+                      data-name="Path 1"
+                      d="M947,288.7a1.079,1.079,0,1,1,.315-.764A1.03,1.03,0,0,1,947,288.7Zm-1.368-1.378a.881.881,0,0,0,.006,1.243.87.87,0,0,0,1.238,0,.861.861,0,0,0,.257-.627.874.874,0,0,0-1.5-.614Zm.157,1.207v-1.181c.074,0,.183,0,.328,0h.24a.5.5,0,0,1,.238.057.3.3,0,0,1,.154.282.255.255,0,0,1-.084.216.4.4,0,0,1-.206.077.439.439,0,0,1,.174.07.318.318,0,0,1,.106.266v.1c0,.011,0,.025,0,.03a.072.072,0,0,0,.007.042l.006.033h-.3a.724.724,0,0,1-.016-.162.99.99,0,0,0-.019-.145.161.161,0,0,0-.09-.089.455.455,0,0,0-.1-.019l-.075,0h-.06v.42Zm.559-.956a.6.6,0,0,0-.18-.02h-.073v.344h.119a.275.275,0,0,0,.171-.045.154.154,0,0,0,.06-.14A.142.142,0,0,0,946.348,287.571Z"
+                      transform="translate(-834.736 -265.784)"
+                      fill="#000"
+                    />
+                    <path
+                      id="Path_2"
+                      data-name="Path 2"
+                      d="M741.532,250.891l3.141-7.951h4.22l1.041,7.961,3.51-7.961h5.539l-7.541,14.553h-4.685l-.98-7.981H745.7l-3.135,7.981h-4.759l-3.267-14.553H740.1Zm42.3-4.207a5.69,5.69,0,0,0-2.665-.709c-.6,0-1.655.254-1.771.991-.158.992,1.434,1.134,2.121,1.276,2.331.484,3.965,1.617,3.54,4.311-.609,3.835-4.343,5.423-7.714,5.423a9.213,9.213,0,0,1-5.4-1.564l1.7-3.192c.934.739,3.108.949,4.383.949.654,0,1.671-.312,1.792-1.107.177-1.137-1.428-1.192-2.977-1.617s-3.035-1.22-2.625-3.828c.567-3.572,4.047-5.158,7.221-5.158a10.571,10.571,0,0,1,4.646.937Zm-60.816,3.542c-.408,2.144.48,3.644,2.536,3.644s3.5-1.221,3.955-3.644c.379-2.026-.456-3.675-2.511-3.675s-3.537,1.358-3.98,3.675m11.827,0c-.769,4.939-5.2,7.75-9.778,7.75-4.551,0-8.146-2.784-7.374-7.75s5.2-7.766,9.776-7.766,8.139,2.806,7.376,7.766m-24.556,10.51,3.549-22.421h4.913L715.2,260.737Zm-6.19-3.24,3.547-22.417h4.916L709.01,257.5Zm64.508-9.2a2.475,2.475,0,0,0-2.644-2.5,3.789,3.789,0,0,0-3.657,2.5Zm-6.761,2.774c-.343,2.1.615,3.239,2.81,3.239a3.628,3.628,0,0,0,2.941-1.337h4.952a9.536,9.536,0,0,1-8.461,5c-4.975,0-8.253-2.726-7.433-7.75.792-4.847,4.7-7.766,9.59-7.766,5.213,0,7.821,3.118,7.009,8.083l-.091.532ZM699.738,248.3a2.477,2.477,0,0,0-2.648-2.5,3.791,3.791,0,0,0-3.656,2.5Zm-6.761,2.774c-.341,2.1.615,3.239,2.812,3.239a3.629,3.629,0,0,0,2.937-1.337h4.954a9.529,9.529,0,0,1-8.462,5c-4.979,0-8.253-2.726-7.431-7.75.793-4.847,4.7-7.766,9.588-7.766,5.216,0,7.825,3.118,7.012,8.083l-.087.532Zm-9.818-10.892-.692,4.01h5.853l-.778,4.447h-5.856l-1.565,8.858h-6.257l3.811-21.895h13.819l-.772,4.581Z"
+                      transform="translate(-673.865 -235.08)"
+                      fill="#000"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+
+            <div class="pt-4">
+              <!-- Section: Social media -->
+              <section class="footer-social-row mb-4">
+                <!-- Facebook -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+
+                <!-- YouTube -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+
+                <!-- Pintrest -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+          </div>
+          <div class="footer-menus col col-12 col-lg-9 order-1 order-lg-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading bt-none text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-prod-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-prod-list"
+                >
+                  Products
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-prod-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Modular Walls</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Furniture</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Air Quality Management
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Workspace</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Business Machines</li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-wtb-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-wtb-list"
+                >
+                  Where to Buy
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-wtb-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Find a Dealer</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Find a Retailer</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Request a Quote</li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-resources-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-resources-list"
+                >
+                  Resources
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-resources-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Warranty</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">GSA</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      State/Local Contracts
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Typicals</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Projects</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Finishes & Materials
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Spec Sheets</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">3D Models/CAD</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Certifications</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Product Configurator
+                    </li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-support-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-support-list"
+                >
+                  Support
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-support-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Product Registration
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Product Reviews</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Manuals & Downloads
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Authorized Repair Technician
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">FAQs</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Orders & Shipping</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Return Policy</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Legal & Privacy Policies
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Contact Us</li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-company-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-company-list"
+                >
+                  Our Company
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-company-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Worklife</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Inspiration</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Innovations</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Locations</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Sustainability</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">GIVE</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Careers</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Contact Us</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-fine-print row text-center text-md-start mt-3">
+          <div class="copyright col col-12 col-md-auto mb-2 pe-md-0">
+            Copyright &copy; 2022 Fellowes Brands, All Rights Reserved.
+          </div>
+          <div class="footer-nav col col-12 col-md-auto ps-md-0">
+            <span class="d-none d-md-inline-block ps-md-1">|</span>
+            <a class="text-dark px-1" href="#!" role="button">Terms of Use</a> |
+            <a class="text-dark px-1" href="#!" role="button">Privacy Policy</a> |
+            <a class="text-dark px-1" href="#!" role="button">Cookies Policy</a> |
+            <a class="text-dark px-1" href="#!" role="button">Legal</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Global Footer End -->
 
     <!-- MDB ESSENTIAL -->
     <script type="text/javascript" src="js/mdb-js/mdb.min.js"></script>
