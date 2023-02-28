@@ -32,7 +32,7 @@
 
     <main id="primary-content" class="position-relative">
         <!-- Start your project here-->
-        <section class="band section-spacing text-black">
+        <section class="band section-spacing text-black sign-in-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 offset-md-3 text-center">
@@ -72,7 +72,7 @@
                                 <button type="submit" class="btn btn-primary form-btn">SUBMIT</button>
                             </div>
                             <div class="form-group">
-                                <a href="#" class="cheout-options-link">Sign-Up</a>
+                                <a href="#" class="cheout-options-link signup-show">Sign-Up</a>
                             </div>
                         </div>
                     </div>
@@ -84,6 +84,80 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band section-spacing text-black sign-up-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-3 text-center">
+                        <h1 class="mb-3">Sign Up for a Fellowes Account</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 offset-md-3  mt-5">
+                    <div class="form-group text-center">
+                        <div class="form-outline text-center">
+                            <input type="text" id="First" class="form-control form-control-lg" />
+                            <label class="form-label" for="First">First</label>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="form-outline text-center">
+                            <input type="text" id="Last" class="form-control form-control-lg" />
+                            <label class="form-label" for="Last">Last</label>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="form-outline text-center">
+                            <input type="email" id="eMail" class="form-control form-control-lg" />
+                            <label class="form-label" for="eMail">eMail</label>
+                        </div>
+                    </div>
+                    <div class="form-group position-relative">
+                        <div class="password-div">
+                            <div class="password-title mb-3">
+                                Password Rules
+                            </div>
+                            <ul>
+                                <li>Requires at least one digit ex. 0-9</li>
+                                <li>Requires at least one lowercase letter ex. a-z</li>
+                                <li>Requires at least one uppercase letter ex. A-Z</li>
+                                <li>Require at least one of these special character ex. *!@$%^&?~</li>
+                                <li>Must be at least 8 characters long, but no more than 16</li>
+                            </ul>
+                        </div>
+                        <div class="form-outline text-center">
+                            <input type="password" id="Password" class="form-control form-control-lg sign-in-pwd" />
+                            <label class="form-label" for="Password">Password</label>
+                            <img src="./img/HidePassword1.svg" class="img-fluid show-password ">
+                            <img src="./img/02hidden.svg" class="img-fluid hide-password ">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="form-outline text-center">
+                            <input type="password" id="ConfirmPassword" class="form-control form-control-lg sign-in-pwd" />
+                            <label class="form-label" for="ConfirmPassword">Confirm Password</label>
+                            <img src="./img/HidePassword1.svg" class="img-fluid show-password ">
+                            <img src="./img/02hidden.svg" class="img-fluid hide-password ">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <select class="select form-control-lg">
+                            <option value="Select A Country">Select A Country</option>
+                            <option value="Country 1">Country 1</option>
+                            <option value="Country 2">Country 2</option>
+                            <option value="Country 3">Country 3</option>
+                          </select>
+                    </div>                    
+                    
+                    <div class="form-resposive justify-content-md-end justify-content-center d-flex">
+                        <div class="text-center">
+                            <div class="form-group mt-4">
+                                <button type="submit" class="btn btn-primary form-btn">SUBMIT</button>
+                            </div>                           
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>
