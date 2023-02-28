@@ -13,6 +13,7 @@ $('.hide-password').click(function () {
 })
 $('.signup-show').click( function () {
     $('.sign-in-section').hide();
-    $('.sign-up-section').show();
+    $('.sign-in-section').fadeOut();
+    $('.sign-up-section').fadeIn(500);
 })
 
