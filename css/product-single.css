@@ -1,0 +1,71 @@
+.fw-product-img img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+@media (min-width: 992px) {
+    .fw-product-img {
+        height:915px;
+    }
+}
+
+.laminates-section .img-holder {
+    height:78px
+}
+
+.laminates-section .img-holder img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.interior-tabbed-content .nav-pills .nav-link {
+    background: none;
+    display: block;
+    border-radius: 0;
+    font-size: var(--fds-fs-400);
+    line-height: var(--fds-fs-725);
+    color: var(--fds-green);
+    text-transform: none;
+    padding: 0.625rem 1.5rem;
+    margin-block: 1rem;
+}
+
+.interior-tabbed-content .nav-pills .nav-link::after {
+    display: none;
+}
+.interior-tabbed-content .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background: #fff;
+    border-radius: 50px;
+}
+
+.interior-tabbed-content .nav-pills .nav-link:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+}
+
+.megacaraqmbg img {
+    height: 500px;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.megacaraqmbg.centercenter img {
+    object-position: center center;
+}
+
+@media (min-width: 768px) {
+    .megacaraqmbg img {
+        height: 700px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-banner-text {
+        max-width: none; 
+    }
+}
