@@ -126,8 +126,14 @@
 
 .plp-vertical .plp-inner-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fill, min(100%, 328px));
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .plp-vertical .plp-inner-wrapper {
+    justify-content: center;
+  }
 }
 
 .plp-vertical .plp-item__options .form-check {
