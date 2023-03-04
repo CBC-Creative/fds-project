@@ -434,6 +434,10 @@ a.two-col-section__link::after {
   min-height: 600px;
 }
 
+.mh-175 {
+  min-height: 175px;
+}
+
 @media (min-width: 992px) {
   .width-90percent {
     width: 90%;
