@@ -1,14 +1,14 @@
 var swatchimgtopreview = ''; 
-var x = '';
-var y = '';
+var datacategorytitle = '';
+var datacategoryname = '';
 $(document).on('click','.swatch-right-boxes-main-row .swatch-right-boxes', function (e) {
     e.preventDefault();
-    x = $(this).parent().find(".swatch-small-title-right").attr("data-category");
-    y = $(this).parent().find(".swatch-small-title-right").attr("data-name");
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').attr('data-name', y)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').text(y)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').attr('data-category', x)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').text(x)
+    datacategorytitle = $(this).parent().find(".swatch-small-title-right").attr("data-category");
+    datacategoryname = $(this).parent().find(".swatch-small-title-right").attr("data-name");
+    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').attr('data-name', datacategoryname)
+    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').text(datacategoryname)
+    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').attr('data-category', datacategorytitle)
+    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').text(datacategorytitle)
     swatchimgtopreview = $(this).parent().find('.swatch-img img').attr('src');
     $(this).parents(".accordion-body").find('.swatch-preview-img img').attr('src', swatchimgtopreview);
 });
