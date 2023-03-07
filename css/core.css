@@ -700,7 +700,6 @@ a.two-col-section__link::after {
   right: 2em;
   bottom: 2em;
   color: #fff;
-  text-shadow: 3px 3px 5px #00000050;
 }
 
 .banner-text__header {
