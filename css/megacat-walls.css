@@ -507,7 +507,7 @@ color: var(--fds-dark-tan);;
 .spacification-content{
   margin-left: 1rem;
   padding-left: 1rem;
-  border-left: 1px solid #000000;
+  border-left: 1px solid var(--fds-dark-tan);
 }
 .fds-dark-bg{
   background: #262424;
@@ -598,6 +598,21 @@ margin-bottom: 0.5rem;
  .swatch-right-boxes-main-row{
   overflow-x: scroll;
   flex-wrap: nowrap;
+  position: relative;
+ }
+ .swatch-right-boxes-main{
+  position: relative;
+ }
+ .swatch-right-boxes-main:after{
+  content: '';
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/megacat-walls/landing-trendwall/mobile-swatch-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
  }
  .swatch-right-boxes-main-row .col-lg-2{
   margin-bottom: 1rem;
@@ -658,9 +673,9 @@ margin-bottom: 0.5rem;
 }
 .idea-right-content{display: none;}
 .idea-right-content.show-item{display: block;}
-.left-right-arrow{gap: 10px;}
+.left-right-arrow{gap: 30px;}
 .multi-carousel .multi-carousel-inner .multi-carousel-item.selected img{border: 2px solid #ffffff;}
-.custom-control-arrows img{width:50px;cursor: pointer;}
+.custom-control-arrows img{width:42px;cursor: pointer;}
 .custom-control-arrows .upload-icon img{width:30px}
 .custom-control-arrows .disabled{
   opacity: 0.5;
@@ -673,6 +688,9 @@ margin-bottom: 0.5rem;
 }
 .swatch-left-preview-box{padding: 26px !important;}
 .download-btn-idea img{width:16px;}
+.design-details-img{height: 145px; object-fit: cover;}
+.trendwall-banner-img img{height: 600px;}
+.volo-banner-img img{height: 600px;}
 @media (min-width:768px){
  .padding-left-5{
   padding-left: 5rem;
@@ -707,6 +725,12 @@ margin-bottom: 0.5rem;
   flex-direction: column;
 }
 .idea-starter .carousel-control-prev{order: 2;}
+.simple-volo-kit-img{height: 600px;object-fit: cover;}
+.custom-control-arrows img{width:50px;cursor: pointer;}
+.trendwall-banner-img img{height: 1000px;}
+.volo-banner-img img{
+  height: 830px;
+}
 }
 @media (min-width:992px){
   .accordion-variation .accordion-body .col-lg{
@@ -731,6 +755,9 @@ margin-bottom: 0.5rem;
     overflow: hidden;
     flex-wrap: wrap;
    }
+   .swatch-right-boxes-main:after{
+    display: none;
+   }
 }
 
 
@@ -752,7 +779,7 @@ margin-bottom: 0.5rem;
     right: 20px;
   }
   .custom-control-arrows .upload-icon img{
-    height: 45px;
+    height: 33px;
   }
   .custom-control-arrows{
     display: flex;
@@ -763,7 +790,9 @@ margin-bottom: 0.5rem;
   .swatch-left-preview-box {
     padding: 15px !important;
 }
-
+.mobile-padding-0{
+  padding: 0;
+}
 
 }
 /* trendwall css end */
