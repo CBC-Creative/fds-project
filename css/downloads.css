@@ -370,6 +370,20 @@
   cursor: pointer;
 }
 
+.download-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
+@media (min-width: 576px) {
+  .download-icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   .no-result-gray {
     font-size: var(--fds-fs-800);
@@ -389,11 +403,17 @@
   #download-icon-slider {
     padding: 3rem 0 1.5rem;
   }
+  .download-icon-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 @media (min-width: 992px) {
   .quick-icon-row {
     flex-wrap: wrap;
     overflow-x: hidden;
+  }
+  .download-icon-grid {
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
