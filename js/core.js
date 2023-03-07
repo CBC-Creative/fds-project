@@ -6,6 +6,31 @@ const mediaQueryMax992 = window.matchMedia('(max-width: 992px)');
 
 // Custom Global Navication JS
 const el_autohide = document.querySelector('#main-navbar');
+const searchInput = document.querySelector('#nav-search-field-2');
+const intelSearchResults = document.querySelector('.intel-search-results');
+
+function delay(callback, ms) {
+  var timer = 0;
+  return function () {
+    var context = this,
+      args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      callback.apply(context, args);
+    }, ms || 0);
+  };
+}
+
+$(searchInput).on(
+  'input',
+  delay(function (e) {
+    if ($(searchInput).val().length > 2) {
+      $(intelSearchResults).addClass('show');
+    } else {
+      $(intelSearchResults).removeClass('show');
+    }
+  }, 300)
+);
 
 document.addEventListener('DOMContentLoaded', function () {
   if (el_autohide) {

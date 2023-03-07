@@ -434,6 +434,10 @@ a.two-col-section__link::after {
   min-height: 600px;
 }
 
+.mh-175 {
+  min-height: 175px;
+}
+
 @media (min-width: 992px) {
   .width-90percent {
     width: 90%;
@@ -696,7 +700,6 @@ a.two-col-section__link::after {
   right: 2em;
   bottom: 2em;
   color: #fff;
-  text-shadow: 3px 3px 5px #00000050;
 }
 
 .banner-text__header {
@@ -965,7 +968,7 @@ a.two-col-section__link::after {
 }
 
 .search-div {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0px;
   padding: 30px 50px;
@@ -990,6 +993,32 @@ a.two-col-section__link::after {
   background: var(--fds-white);
 }
 
+.form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-color: var(--fds-grey-700);
+  box-shadow: -1px 0 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700),
+    0 -1px 0 0 var(--fds-grey-700);
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-color: var(--fds-grey-700);
+  box-shadow: 0 1px 0 0 var(--fds-grey-700);
+  border-top: 1px solid transparent;
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-color: var(--fds-grey-700);
+  box-shadow: 1px 0 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700),
+    0 1px 0 0 var(--fds-grey-700);
+}
+
+.form-outline .form-control ~ .form-notch .form-notch-trailing {
+  border-radius: 0;
+}
+
+.form-outline .form-control ~ .form-notch .form-notch-leading {
+  border-radius: 0;
+}
+
 .form-control input::placeholder {
   color: #a0a0a0;
 }
@@ -997,6 +1026,43 @@ a.two-col-section__link::after {
 .form-control:focus {
   border-color: var(--fds-grey-700);
   box-shadow: inset 0 0 0 1px var(--fds-grey-700);
+}
+
+.intel-search-results {
+  border: 1px solid var(--fds-grey-400);
+  border-top: none;
+  padding: 0 1rem 1rem;
+  max-height: 0px;
+  opacity: 0;
+  transition-property: max-height, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  overflow-y: auto;
+}
+
+.intel-search-results.show {
+  max-height: 282px;
+  opacity: 1;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .intel-search-results.show {
+    max-height: 170px;
+  }
+}
+
+.search-item:hover,
+.search-item:focus,
+.search-item:active {
+  background-color: var(--fds-tan);
 }
 
 .btn-primary {
@@ -1073,10 +1139,7 @@ a.two-col-section__link::after {
 .search-div .btn-primary {
   width: 164px;
   padding: 0.5rem 1rem;
-}
-
-.search-div input {
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .sub-dropdown-menu-title {
