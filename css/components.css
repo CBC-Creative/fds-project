@@ -1,0 +1,85 @@
+.text-banner-component.text-banner-light {
+  background-color: white;
+}
+
+.product-hero-component {
+  min-height: 500px;
+}
+
+.product-hero-component img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+@media (min-width: 768px) {
+  .product-hero-component img {
+    height: 700px;
+  }
+  .product-hero-component .header-banner-text {
+    max-width: none;
+  }
+}
+
+.design-slider-component {
+  background-color: #262424;
+}
+@media (min-width: 768px) {
+  .design-slider-component .carousel-inner {
+    display: flex;
+    overflow-x: hidden;
+  }
+  .design-slider-component .carousel-item {
+    margin-right: 2rem;
+    flex: 0 0 75%;
+    display: block;
+  }
+}
+
+.accordion-component .accordion-button:after {
+  margin-left: 5px;
+}
+.accordion-component .accordion-button {
+  color: black;
+}
+.accordion-component .accordion-button:not(.collapsed) {
+  color: black !important;
+}
+.accordion-component .accordion-button:not(.collapsed):after {
+  background-image: var(--mdb-accordion-btn-icon);
+}
+
+.accordion-component .accordion-header {
+  background-color: #f6f5f3;
+  color: #383838;
+}
+.accordion-component .accordion-button {
+  background: none;
+  border: unset;
+}
+.accordion-component .accordion-button:not(.collapsed) {
+  box-shadow: unset;
+}
+.accordion-component .accordion-item {
+  border: var(--mdb-accordion-border-width) solid white;
+}
+
+.accordion-component .accordion-body {
+  background-color: #f6f5f3;
+}
+.accordion-component .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+}
+.accordion-component .accordion-item:first-of-type {
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+}
+.accordion-component .accordion-item:last-of-type .accordion-button {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+}
+.accordion-component .accordion-item:last-of-type {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+}
