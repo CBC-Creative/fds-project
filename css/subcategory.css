@@ -126,7 +126,7 @@
 
 .plp-vertical .plp-inner-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, min(100%, 328px));
+  grid-template-columns: repeat(auto-fill, min(100%, 310px));
   gap: 1rem;
 }
 
@@ -388,22 +388,27 @@
   transform-origin: top center;
 }
 
-body[data-loading='true'] .results-section {
+#primary-content[data-loading='true'] .results-section {
   max-height: 0px;
   opacity: 0;
 }
 
-body[data-loading='false'] .results-section {
-  max-height: 10000px;
+#primary-content[data-loading='false'] .results-section {
+  max-height: 50000px;
   opacity: 1;
 }
 
-body[data-loading='true'] .loading-section {
-  max-height: 10000px;
+#primary-content[data-loading='true'] .loading-section {
+  max-height: 50000px;
   opacity: 1;
 }
 
-body[data-loading='false'] .loading-section {
+#primary-content[data-loading='false'] .loading-section {
   max-height: 0px;
   opacity: 0;
+  display: none;
+}
+
+.desc-list ul {
+  padding-left: 0;
 }

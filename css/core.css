@@ -657,6 +657,14 @@ a.two-col-section__link::after {
   height: 100%;
 }
 
+.fge-logo {
+  min-height: 62.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 .ideate-section {
   display: flex;
   flex-direction: column;

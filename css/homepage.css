@@ -152,10 +152,9 @@
   justify-content: space-between;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  gap: 0;
-  background-color: #97989c;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  gap: 2px;
 }
 #homepagebannerslider .carousel-indicators [data-mdb-target] {
   width: 20%;
@@ -171,9 +170,9 @@
 }
 #homepagebannerslider .carousel-caption {
   text-align: left;
-  left: 1em;
-  right: 0;
-  bottom: 1em;
+  left: 1.5em;
+  right: auto;
+  bottom: 2em;
 }
 .banner-cta {
   font-size: var(--fds-fs-450);
@@ -218,16 +217,24 @@
   z-index: 20;
   text-shadow: 3px 3px 5px #00000050;
 }
-.banner-title span {
-  font-size: var(--fds-fs-600);
-  line-height: 2.563rem;
+
+#homepagebannerslider .carousel-caption {
+  width: 90%;
+  max-width: 470px;
 }
+
 .banner-title {
   font-size: 2.188rem;
   line-height: 2.563rem;
-  text-shadow: 3px 3px 5px #00000050;
-  max-width: 425px;
 }
+
+.banner-subtitle {
+  font-size: var(--fds-fs-725);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 1rem;
+}
+
 #homepagebannerslider .carousel-item img {
   height: 100%;
   object-fit: cover;
@@ -253,9 +260,13 @@
     font-size: 3.438rem;
     line-height: 3.75rem;
   }
+  .banner-subtitle {
+    font-size: var(--fds-fs-850);
+  }
   #homepagebannerslider .carousel-indicators {
-    gap: 0px;
-    margin-top: 0;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   .thumb-caption {
     font-size: var(--fds-fs-200);
@@ -272,6 +283,7 @@
     object-fit: cover;
   }
   #homepagebannerslider .carousel-caption {
+    left: 4em;
     bottom: 2em;
   }
 }
@@ -498,15 +510,15 @@ h5.grid-title {
 .safeairstoriestabbox .nav-pills .nav-link {
   background: none;
   display: block;
-  text-align: center;
   border-radius: 0;
   font-size: var(--fds-fs-400);
   line-height: var(--fds-fs-725);
   color: var(--fds-black);
   text-transform: none;
   margin: 0;
-  padding: 0.5rem 1.5rem;
-  margin-block: 1rem;
+  padding: 0.25rem 1.5rem;
+  margin-block: 0.25rem;
+  text-align: Left;
 }
 .safeairstoriestabbox .nav-pills .nav-link::after {
   display: none;
@@ -571,8 +583,7 @@ h5.grid-title {
 
 .tab-content-items ul {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 1000px;
   margin-inline: auto;
   margin-top: 2rem;
@@ -583,7 +594,6 @@ h5.grid-title {
 }
 
 .tab-content-items ul li {
-  max-width: 150px;
   margin-bottom: 1rem;
 }
 
@@ -731,7 +741,7 @@ h5.grid-title {
   .tab-content-items ul {
     list-style-type: initial;
     font-size: 16px;
-    column-gap: 5rem;
+    column-gap: 3rem;
     padding-inline-start: 40px;
   }
 }
