@@ -162,11 +162,11 @@
   margin-top: 0;
   display: block;
   height: 100%;
-  opacity: 0.4;
+  opacity: 1;
   border: none;
 }
 #homepagebannerslider .carousel-indicators .active {
-  opacity: 0.9;
+  opacity: 0.4;
 }
 #homepagebannerslider .carousel-caption {
   text-align: left;
@@ -337,7 +337,7 @@
 
 .homepage-patent-slide-item i:before {
   position: absolute;
-  top: 6px;
+  top: 7px;
   font-size: 10px;
 }
 
@@ -578,7 +578,7 @@ h5.grid-title {
 .tab-content-title {
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .tab-content-items ul {
@@ -674,7 +674,9 @@ h5.grid-title {
     transform: translatex(-50%);
   }
   .homepage-patent-slide-item h5 {
-    padding-bottom: 6.25rem;
+    font-size: var(--fds-fs-600);
+    padding-bottom: 0rem;
+    height: auto;
   }
   .homepage-patent-slide-inner {
     grid-template-columns: 1fr 600px;
@@ -723,11 +725,12 @@ h5.grid-title {
 @media (min-width: 768px) {
   .agency-section {
     padding-top: 6.25rem;
+    min-height: 700px;
   }
   .homepage-agency-title {
     font-size: var(--fds-fs-910);
     font-weight: 300;
-    margin-bottom: 4.688rem;
+    margin-bottom: 2rem;
   }
   .tab-box {
     padding: 3rem 2rem;
