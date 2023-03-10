@@ -238,7 +238,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .monitor-cat-section {
@@ -257,9 +257,14 @@
 .monitor-cat-section__text h2 {
   text-transform: uppercase;
 }
-
+.monitor-cat-section__text a{
+  font-size: var(--fds-fs-450);
+}
 .monitor-cat-section__image {
   align-self: end;
+}
+.vertical-mibble-img{
+  align-self: center;
 }
 
 @media (min-width: 992px) {
@@ -272,5 +277,8 @@
     min-height: 600px;
     display: grid;
     align-content: center;
+  }
+  .small-image-organisation img{
+    width: 75%;
   }
 }
