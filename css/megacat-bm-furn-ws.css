@@ -16,9 +16,9 @@
 }
 
 .prod-cat-carousel .carousel-control {
-  color: var(--fds-grey-700);
+  color: var(--fds-grey-600);
   width: 5%;
-  opacity: 0.7 !important;
+  opacity: 1 !important;
   z-index: 20;
 }
 
@@ -53,19 +53,31 @@
   white-space: nowrap;
   font-size: 0;
 }
+.prod-cat-carousel.multi-carousel .multi-carousel-item a, .cat-prod-carousel .multi-carousel .multi-carousel-item a{
+  background: var(--fds-tan);
+    text-align: center;
+    padding: 1rem;
+    display: block;
+}
+.prod-cat-carousel button.carousel-control.carousel-control-prev, .cat-prod-carousel button.carousel-control.carousel-control-prev {
+  left:10px;
+}
 
-@media (min-width: 992px) {
-  .prod-cat-carousel.multi-carousel .multi-carousel-inner {
-    width: 110%;
-  }
-
-  .prod-cat-carousel button.carousel-control.carousel-control-prev {
-    left: 0;
-  }
-
-  .prod-cat-carousel button.carousel-control.carousel-control-next {
-    right: 0;
-  }
+.prod-cat-carousel button.carousel-control.carousel-control-next, .cat-prod-carousel button.carousel-control.carousel-control-next {
+  right: 10px;
+}
+.prod-cat-carousel button.carousel-control, .cat-prod-carousel button.carousel-control{
+  height: 50px;
+    width: 50px;
+    background: var(--fds-white);
+    border-radius: 6px;
+    top: 50%;
+    margin-top: -25px;
+    opacity: 1 !important;
+}
+.prod-cat-carousel button.carousel-control span, .cat-prod-carousel button.carousel-control span{
+  width: auto;
+  height: auto;
 }
 
 .prod-cat-carousel.multi-carousel .multi-carousel-inner .multi-carousel-item img {
@@ -73,24 +85,24 @@
 }
 
 .prod-cat-carousel-title {
-  font-size: var(--fds-fs-500);
-  color: #000;
-  font-weight: 300;
+  font-size: var(--fds-fs-450);
+  color: var(--fds-black);
+  font-weight: 500;
   margin-top: 1rem;
+}
+.prod-cat-carousel-title strong{
+  font-weight: 500;
 }
 
 .cat-prod-carousel {
   isolation: isolate;
 }
 
-.cat-prod-carousel .multi-carousel {
-  min-height: 600px;
-}
+
 
 .cat-prod-carousel .multi-carousel-inner {
-  width: calc(100% - 80px);
+  /* width: calc(100% - 80px);  */
   margin-inline: auto;
-  margin-block-end: 3rem;
 }
 
 .cat-prod-carousel-title {
@@ -110,7 +122,7 @@
 .cat-prod-carousel .carousel-control-prev {
   width: 40px;
   height: 125px;
-  color: #e2e2e2;
+  color: var(--fds-grey-600);
   opacity: 1;
   top: 50%;
   transform: translateY(-50%);
@@ -118,27 +130,16 @@
   background-color: #fff;
 }
 
-.cat-prod-carousel .carousel-control-next {
-  border-left: 1px solid;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
 
-.cat-prod-carousel .carousel-control-prev {
-  border-right: 1px solid;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
 
 .cat-prod-carousel .carousel-control-next:hover,
 .cat-prod-carousel .carousel-control-prev:hover {
-  color: #a1a1a1;
+  color: var(--fds-grey-600);
   opacity: 1;
 }
 
 .cat-prod-carousel .multi-carousel-item {
   white-space: normal;
-  padding: 1rem !important;
 }
 
 .prod-cat-carousel-desc {
@@ -148,8 +149,38 @@
 .cat-prod-carousel .multi-carousel {
   display: flex;
   align-items: flex-end;
+  margin: 0px 1rem;
 }
-
+#carouselMultiItemExample .carousel-item a{
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  background: var(--fds-tan);
+}
+#carouselMultiItemExample .carousel-control-prev, #carouselMultiItemExample .carousel-control-next{
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  background: var(--fds-white);
+  border-radius: 6px;
+  opacity: 1 !important;
+}
+#carouselMultiItemExample .carousel-control-prev{
+  left: 20px;
+}
+#carouselMultiItemExample .carousel-control-next{
+  right: 20px;
+}
+#carouselMultiItemExample .carousel-control-prev span, #carouselMultiItemExample .carousel-control-next span{
+ width: auto;
+ height: auto;
+}
+.carousel-indicators [data-mdb-target]{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
 @media (min-width: 992px) {
   .cat-prod-carousel .carousel-control-next,
   .cat-prod-carousel .carousel-control-prev {
@@ -169,11 +200,8 @@
   }
   .cat-prod-carousel .multi-carousel-inner {
     width: 100%;
-    margin-left: 100px;
   }
-  .cat-prod-carousel .multi-carousel-item {
-    width: 27% !important;
-  }
+  
 }
 
 .section__title {
