@@ -67,6 +67,7 @@
 .accordion-component .accordion-body {
   background-color: #f6f5f3;
 }
+
 .accordion-component .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: unset;
   border-top-right-radius: unset;
@@ -82,4 +83,46 @@
 .accordion-component .accordion-item:last-of-type {
   border-bottom-left-radius: unset;
   border-bottom-right-radius: unset;
+}
+
+@media (min-width: 768px) {
+
+  .accordion-component .accordion-item .accordion-button {
+    font-size: var(--fds-fs-750);
+    line-height: var(--fds-fs-825);
+  }
+}
+
+.text-img-columns .text-details dl {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--fds-dark-tan);
+}
+.specs dl {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 1px solid var(--fds-dark-tan);
+}
+.text-img-columns .text-details dt, .specs dt {
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-450);
+  font-weight: 500 !important;
+  margin-bottom: 0.25rem !important;
+}
+.text-img-columns .text-details dd, .specs dd {
+  font-size: var(--fds-fs-250);
+  line-height: var(--fds-fs-450);
+  font-weight: 400 !important;
+}
+.text-img-columns .text-subtitle {
+  font-size: 1.313rem;
+  line-height: 1.688rem;
+  background: var(--fds-dark-tan);
+  padding: 0.5rem 1rem;
+  color: var(--fds-white);
+}
+.list-border-left {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--fds-dark-tan);
 }
