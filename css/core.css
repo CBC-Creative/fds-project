@@ -123,7 +123,7 @@ h3 {
   font-weight: 200;
 }
 .fw-300 {
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 
 .fw-600 {
@@ -244,6 +244,11 @@ a.hero-link {
 .rad-gradient-blacktogrey {
   background: rgb(85, 85, 85);
   background: radial-gradient(circle, rgba(85, 85, 85, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.rad-gradient-greys {
+  background: #e2e2e2;
+  background: radial-gradient(circle, #f2f2f2 0%, #e2e2e2 100%);
 }
 
 .rad-gradient-darktolighttan {
@@ -425,8 +430,18 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.mw-670 {
+  max-width: 670px;
+  margin-inline: auto;
+}
+
 .mw-600 {
   max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.mw-565 {
+  max-width: 565px;
   margin-inline: auto;
 }
 
@@ -809,6 +824,13 @@ a.two-col-section__link::after {
 .link-left.link-underlined::after {
   left: 0;
   transform: none;
+}
+
+@media (max-width: 992px) {
+  .link-underlined-center-mobile::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
 }
 
 .text-column__desc {
