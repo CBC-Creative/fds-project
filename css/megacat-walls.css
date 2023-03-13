@@ -380,11 +380,11 @@
     min-height: 225px;
   }
   .categorytextsizes {
-    min-height: 450px;
+    min-height: 600px;
   }
   .category-content {
     position: absolute;
-    bottom: -60%;
+    bottom: -66%;
   }
   .categorytextsizes:hover .category-content {
     bottom: 0%;
@@ -437,11 +437,14 @@
   .categorytextsizes {
     min-height: 600px;
   }
-  .category-content {
-    bottom: -71%;
-  }
   .sideboxcontent {
     width: 80%;
+  }
+}
+
+@media (min-width: 1255px) {
+  .category-content {
+    bottom: -70%;
   }
 }
 @media (min-width: 1600px) {
