@@ -27,19 +27,19 @@
   margin: 0 auto;
 }
 .titanvategorybg {
-  background: url(../img/megacat-walls/product-category-titan.png) no-repeat;
+  background: url(../img/megacat-walls/product-category-titan.jpg) no-repeat;
   background-size: cover;
   background-position: center left;
   position: relative;
 }
 .volovategorybg {
-  background: url(../img/megacat-walls/product-category-volo.png) no-repeat;
+  background: url(../img/megacat-walls/product-category-volo.jpg) no-repeat;
   background-size: cover;
   background-position: center left;
   position: relative;
 }
 .trendwallvategorybg {
-  background: url(../img/megacat-walls/product-category-trendwall.png) no-repeat;
+  background: url(../img/megacat-walls/product-category-trendwall.jpg) no-repeat;
   background-size: cover;
   background-position: center left;
   position: relative;
@@ -310,7 +310,7 @@
   max-width: 180px;
   width: 100%;
 }
-.ideate-link::after{
+.ideate-link::after {
   z-index: 1000;
 }
 @media (min-width: 768px) {
@@ -735,7 +735,7 @@
 .volo-banner-img img {
   height: 600px;
 }
-.ideate-section{
+.ideate-section {
   overflow-y: hidden;
 }
 @media (min-width: 768px) {
@@ -799,7 +799,7 @@
   .volo-banner-img img {
     height: 830px;
   }
-  .ideate-concept-create-section{
+  .ideate-concept-create-section {
     min-height: 700px;
   }
 }
@@ -863,9 +863,9 @@
     padding: 0;
   }
 }
-@media (max-width:500px){
-  .ideate-image{
-    transform-origin: center 97px;
+@media (max-width: 500px) {
+  .ideate-image {
+    transform-origin: center 80px;
   }
 }
 /* trendwall css end */
