@@ -251,6 +251,7 @@
 
 .icon-item__img {
   max-height: 50px;
+  justify-self: center;
 }
 .sub-title {
   font-size: var(--fds-fs-600);
