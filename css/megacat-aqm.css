@@ -125,7 +125,10 @@
     transition: all 0.4s;
   }
   #aqmslider .active .thumb-before::before {
-    opacity: 0.3;
+    opacity: 0.2;
+  }
+  #aqmslider .active .thumb-before.thumb-before-transparent::before {
+    opacity: 0;
   }
   #aqmslider .carousel-item img {
     height: 700px;
