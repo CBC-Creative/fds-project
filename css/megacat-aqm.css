@@ -561,7 +561,7 @@
     line-height: var(--fds-fs-725);
   }
 
-  .banner-text-bottom-aqm .container {
+  .banner-text-bottom-aqm .container.top30 {
     top: 30%;
   }
 }

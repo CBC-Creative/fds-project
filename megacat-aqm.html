@@ -1030,7 +1030,7 @@
       <section class="band position-relative aqm-small-banner-img mb-1">
         <img src="img/megacat-aqm/aqm-small-banner-img-1.jpg" class="img-fluid w-100" />
         <div class="banner-text-bottom-aqm">
-          <div class="container">
+          <div class="container top30">
             <div class="row">
               <div class="col-8 col-md-12">
                 <div class="aqm-small-banner-text">Every Day…<br />We Take 20,000 Breaths</div>
@@ -1042,7 +1042,7 @@
       <section class="band position-relative aqm-small-banner-img mb-1 object-img-position">
         <img src="img/megacat-aqm/aqm-small-banner-img-2.jpg" class="img-fluid w-100" />
         <div class="banner-text-bottom-aqm">
-          <div class="container">
+          <div class="container top30">
             <div class="row">
               <div class="col-7 offset-5 col-md-5 offset-md-7">
                 <div class="aqm-small-banner-text">90% of Our Breathing Occurs Indoors</div>
@@ -1101,12 +1101,43 @@
                 microns including viruses, allergens and germs
               </div>
             </div>
-            <div class="col-12 col-lg-6 offset-lg-1 image-column">
-              <img
-                src="/img/megacat-aqm/smoke-chamber.jpg"
-                alt="Digital Rendering of an air purifier"
-                class="d-block w-100"
-              />
+            <div class="col-12 col-lg-6 offset-lg-1 image-column position-relative">
+              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#aqmVideo">
+                <img
+                  src="/img/megacat-aqm/smoke-chamber.jpg"
+                  alt="Digital Rendering of an air purifier"
+                  class="d-block w-100"
+                />
+                <img class="playimg" src="img/play-btn.svg" />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="aqmVideo"
+                  tabindex="-1"
+                  aria-labelledby="aqmVideoLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content rounded-0 position-relative">
+                      <div
+                        class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+                      >
+                        <button
+                          type="button"
+                          class="btn-close m-0 p-0"
+                          data-mdb-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-0 m-0 bg-black">
+                        <video width="100%" controls autoplay muted>
+                          <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
             <div class="col-12 text-center mt-md-5">
               <div class="position-relative mt-5">
@@ -1345,7 +1376,6 @@
         </div>
       </section>
 
-      <!-- Carousel wrapper -->
       <section class="band position-relative healthyair-section text-black px-md-4">
         <div class="container">
           <div class="row">
@@ -1961,7 +1991,7 @@
       <section class="py-5 text-center overflow-hidden global-leader-section">
         <div class="container py-md-5">
           <div class="row">
-            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 col-12">
+            <div class="col-md-10 col-lg-8 col-xl-7 col-12 mx-auto">
               <div class="global-leader-section-title text-black mb-4">
                 Our Air Quality Experts Can Help- Let’s Start A Plan For Your Space.
               </div>
