@@ -11,6 +11,7 @@
   margin-top: 0;
   height: auto;
   border: none;
+  opacity: 1;
 }
 #aqmslider .carousel-indicators [data-mdb-target]:last-child {
   border-bottom: 0;
@@ -79,7 +80,17 @@
   line-height: 1.313rem;
   margin-bottom: 0.625rem;
 }
+.megacat-aqm-banner-content .container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+}
+
 @media (min-width: 992px) {
+  .w-lg-50{
+    width: 50%;
+  }
   #aqmslider .carousel-indicators [data-mdb-target] {
     border-bottom: 8px solid transparent;
   }
@@ -108,10 +119,14 @@
     height: 100%;
     position: absolute;
     background: #272725;
-    opacity: 0.49;
+    opacity: 0.3;
     top: 0;
     left: 0;
     z-index: 10;
+    transition: all 0.4s;
+  }
+  #aqmslider .active .thumb-before::before{
+opacity: 0.5;
   }
   #aqmslider .carousel-item img {
     height: 700px;
@@ -125,6 +140,9 @@
     font-size: var(--fds-fs-500);
     line-height: 1.5rem;
     text-shadow: 3px 3px 5px #00000050;
+  }
+  .banner-text__header{
+    line-height: var(--fds-fs-950);
   }
 }
 
@@ -191,7 +209,7 @@
   margin: 0 auto;
 }
 .room-phases {
-  gap: 20px;
+  gap: 10px;
 }
 .yellowboxwithdiscription {
   background: var(--fds-tan);
@@ -260,7 +278,249 @@
   min-height: 300px;
   object-fit: cover;
 }
+.aqm-small-banner-text{
+  font-size: 1.688rem;
+  line-height: 1.938rem;
+  color: var(--fds-black);
+}
+.banner-text-bottom-aqm .container{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.aqm-small-banner-img img{
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.left-underline:after{
+  left: 0;
+  transform: none;
+}
+.center-underline::after{
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: -9px;
+    top: inherit;
+}
+.column-discription-title{
+  font-size: var(--fds-fs-775);
+  line-height: var(--fds-fs-900);
+}
+.big-link{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-600);
+}
+.object-top-left img{object-position: top left;}
+.global-leader-section-title{
+  font-size: var(--fds-fs-710);
+  line-height: var(--fds-fs-800);
+}
+.global-leader-sub-title{
+  font-size: var(--fds-fs-600);
+  line-height: var(--fds-fs-710);
+}
+.global-leader-section img{
+  height: 85px;
+}
+.zone-font{
+  font-size: var(--fds-fs-400);
+  line-height: var(--fds-fs-710);
+  font-weight: 500;
+  position: relative;
+  padding-left: 30px;
+}
+.zone-1{
+  color: #EEC07E;
+}
+.zone-1::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #EEC07E;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.zone-2{
+  color: #95C1D1;
+}
+.zone-2::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #95C1D1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.zone-3{
+  color: #95C7BF;
+}
+.zone-3::before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #95C7BF;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.aqm-small-img-banner:before{
+  background: transparent linear-gradient(314deg, #00000000 0%, #00000099 47%, #000000 100%) 0% 0% no-repeat padding-box;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.select-input.focused ~ .select-arrow {
+  color: var(--fds-black);
+}
+
+.form-outline .form-control {
+  padding: 0.75rem 1.75rem;
+  color: var(--fds-grey-800);
+  font-size: var(--fds-fs-400);
+}
+
+.form-outline .form-control.form-control-lg ~ .form-label {
+  padding-top: 1rem;
+}
+
+.form-outline .form-control.form-control-lg.active ~ .form-label,
+.form-outline .form-control.form-control-lg:focus ~ .form-label {
+  transform: translateY(-1.5rem) translateY(0.1rem) scale(0.8);
+}
+
+.form-outline .form-control:focus ~ .form-label {
+  color: var(--fds-black);
+}
+
+.form-outline .form-control ~ .form-notch div {
+  border-radius: 0 !important;
+}
+
+.form-outline .form-control.select-input:focus ~ .form-notch .form-notch-trailing,
+.select-input.focused ~ .form-notch .form-notch-trailing,
+.form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-color: var(--fds-black);
+  box-shadow: 1px 0 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black);
+}
+
+.form-outline .form-control.select-input:focus ~ .form-notch .form-notch-leading,
+.select-input.focused ~ .form-notch .form-notch-leading,
+.form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-color: var(--fds-black);
+  box-shadow: -1px 0 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black);
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-color: var(--fds-black);
+  box-shadow: 0 1px 0 0 var(--fds-black);
+  border-top: 1px solid transparent;
+}
+
+.form-check-label {
+  color: var(--fds-black);
+}
+
+.form-check-input[type='checkbox'] {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+}
+
+.form-check-input[type='checkbox']:checked,
+.form-check-input[type='checkbox']:checked:focus {
+  background-color: var(--fds-black);
+  border-color: var(--fds-black);
+}
+
+.form-check-input[type='checkbox']:checked:after {
+  margin-left: 0rem;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-color: var(--fds-grey-700);
+  transform: unset;
+  border: none;
+  margin-top: 0;
+}
+
+.form-check-input[type='checkbox']:checked,
+.form-check-input[type='checkbox']:checked:focus {
+  background: transparent;
+  border-color: var(--fds-grey-700);
+}
+.form-group {
+  margin-bottom: 0.938rem;
+}
+.select-arrow {
+  color: var(--fds-grey-400);
+  left: var(--mdb-form-outline-select-arrow-right);
+  right: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-outline .form-control ~ .form-notch div,
+.form-outline .form-control ~ .form-notch div,
+.form-outline .form-control ~ .form-notch div {
+  border-color: var(--fds-grey-700);
+}
+.form-check-input[type='checkbox']:checked,
+.form-check-input[type='checkbox']:checked:focus {
+  width: 18px;
+  height: 18px;
+}
+.form-outline .form-control.form-control-lg,
+.form-outline .form-control.form-control-lg ~ .form-label {
+  font-size: var(--fds-fs-400);
+}
+.small-note{
+  font-size: var(--fds-fs-150);
+  line-height: var(--fds-fs-450);
+  color: var(--fds-black);
+}
 @media (min-width: 768px) {
+  .form-text-bottom{
+    font-size: var(--fds-fs-450);
+    line-height: var(--fds-fs-850);
+  }
+  .room-phases{
+    gap: 20px;
+  }
+  .zone-font{
+    font-size: var(--fds-fs-700);
+    line-height: var(--fds-fs-725);
+    padding-left: 35px;
+  }
+  .global-leader-section-title{
+    font-size: var(--fds-fs-860);
+    line-height: 2.625rem;
+  }
+  .global-leader-sub-title{
+    font-size: var(--fds-fs-700);
+    line-height: var(--fds-fs-725);
+  }
+  .big-link{
+    font-size: var(--fds-fs-450);
+    line-height: var(--fds-fs-905);
+  }
+  .aqm-small-banner-img img{
+    height: 600px;
+  }
+  .column-discription-title{
+    font-size: var(--fds-fs-900);
+    line-height: var(--fds-fs-907);
+  }
   .banner-title {
     font-size: var(--fds-fs-900);
     line-height: var(--fds-fs-900);
@@ -302,8 +562,16 @@
     font-size: var(--fds-fs-850);
     line-height: var(--fds-fs-725);
   }
+  
+  .banner-text-bottom-aqm .container{
+    top: 30%;
+  }
 }
 @media (min-width: 992px) {
+  .aqm-small-banner-text{
+    font-size: 2.313rem;
+    line-height: var(--fds-fs-905);
+  }
   .safeairstoriestabbox i.fa-chevron-down {
     display: none;
   }
@@ -367,11 +635,15 @@
   border-radius: 0;
   font-size: var(--fds-fs-400);
   line-height: var(--fds-fs-725);
+  font-weight: 600;
+  text-align: left;
   color: var(--fds-black);
   text-transform: none;
   margin: 0;
   padding: 0.5rem 1.5rem;
-  margin-block: 1rem;
+  margin-block:0.25rem;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 .safeairstoriestabbox .nav-pills .nav-link::after {
   display: none;
@@ -388,9 +660,9 @@
 }
 
 .tab-logo-box {
-  background: var(--fds-white);
+  background: var(--fds-tan);
   height: 100%;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 .tab-logo-box img {
   filter: grayscale(1);
@@ -406,6 +678,8 @@
   cursor: pointer;
   position: relative;
   border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .safeairstoriestabbox i.fa-chevron-down {
@@ -420,7 +694,8 @@
 }
 
 .tab-logo-box .logos-gray div {
-  width: 33%;
+  width: 50%;
+  padding: 0.5rem;
 }
 
 .safeairstoriestabbox .tab-img img {
@@ -476,6 +751,9 @@
 }
 
 @media (min-width: 768px) {
+  .tab-logo-box {
+    padding: 2rem;
+  }
   .tab-box {
     padding: 3rem 2rem;
   }
@@ -523,5 +801,15 @@
 @media (max-width: 767px) {
   .logoslider .multi-carousel:before {
     background: transparent;
+  }
+  .object-img-position img{
+    object-position: -190px;
+  }
+}
+@media (max-width:575px){
+ 
+  .effective-section .text-column__desc{
+    font-size: var(--fds-fs-325);
+    line-height: var(--fds-fs-710);
   }
 }
