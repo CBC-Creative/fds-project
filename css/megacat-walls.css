@@ -310,7 +310,9 @@
   max-width: 180px;
   width: 100%;
 }
-
+.ideate-link::after{
+  z-index: 1000;
+}
 @media (min-width: 768px) {
   .column-titan-btn .btn {
     max-width: 200px;
@@ -433,10 +435,10 @@
     min-height: 175px;
   }
   .categorytextsizes {
-    min-height: 500px;
+    min-height: 600px;
   }
   .category-content {
-    bottom: -66%;
+    bottom: -71%;
   }
   .sideboxcontent {
     width: 80%;
@@ -733,6 +735,9 @@
 .volo-banner-img img {
   height: 600px;
 }
+.ideate-section{
+  overflow-y: hidden;
+}
 @media (min-width: 768px) {
   .padding-left-5 {
     padding-left: 5rem;
@@ -794,6 +799,9 @@
   .volo-banner-img img {
     height: 830px;
   }
+  .ideate-concept-create-section{
+    min-height: 700px;
+  }
 }
 @media (min-width: 992px) {
   .accordion-variation .accordion-body .col-lg {
@@ -853,6 +861,11 @@
   }
   .mobile-padding-0 {
     padding: 0;
+  }
+}
+@media (max-width:500px){
+  .ideate-image{
+    transform-origin: center 97px;
   }
 }
 /* trendwall css end */
