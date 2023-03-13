@@ -268,7 +268,7 @@
 
 .work-from-home-text {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 100%;
   transform: translateY(-50%);
   text-shadow: 0px 3px 5px #00000050;
@@ -365,7 +365,14 @@
 .your-best-banner .container{
   top: 5%;
 }
+
 @media (min-width: 768px) {
+  .work-from-home-text{
+    top: 50%;
+  }
+  .work-space-banner img{
+    object-position: bottom center !important;
+  }
  .shine-on-banner .left-underline:after{
     left: 0;
     transform: none;
@@ -374,11 +381,11 @@
   }
   .your-best-banner::before{
     background: transparent linear-gradient(270deg, #00000000 0%, #1C1C1A 100%) 0% 0% no-repeat padding-box;
-    opacity: 0.44;
+    opacity: 0.54;
   }
   .charge-ahead-section::before{
     background: transparent linear-gradient(270deg, #F7F7F700 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
-    opacity: 0.41;
+    opacity: 0.81;
   }
   .shine-on-banner::before{
     display: none;
