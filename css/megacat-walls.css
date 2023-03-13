@@ -27,19 +27,19 @@
   margin: 0 auto;
 }
 .titanvategorybg {
-  background: url(../img/megacat-walls/product-category-titan.jpg) no-repeat;
+  background: url(../img/megacat-walls/product-category-titan.png) no-repeat;
   background-size: cover;
   background-position: center left;
   position: relative;
 }
 .volovategorybg {
-  background: url(../img/megacat-walls/product-category-volo.jpg) no-repeat;
+  background: url(../img/megacat-walls/product-category-volo.png) no-repeat;
   background-size: cover;
   background-position: center left;
   position: relative;
 }
 .trendwallvategorybg {
-  background: url(../img/megacat-walls/product-category-trendwall.jpg) no-repeat;
+  background: url(../img/megacat-walls/product-category-trendwall.png) no-repeat;
   background-size: cover;
   background-position: center left;
   position: relative;
