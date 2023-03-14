@@ -98,12 +98,13 @@
   background: var(--fds-white);
   border-radius: 6px;
   bottom: 1rem;
-  top: unset;
+  top: 50%;
   margin-top: -25px;
   opacity: 1 !important;
 }
 
 @media (min-width: 992px) {
+
   .prod-cat-carousel button.carousel-control,
   .cat-prod-carousel button.carousel-control {
     top: 50%;
@@ -365,8 +366,52 @@
 .your-best-banner .container{
   top: 5%;
 }
-
+.ergonomic-banner-text .banner-text__header span{
+  font-size: var(--fds-fs-600);
+  line-height: var(--fds-fs-700);
+  text-transform: capitalize;
+}
+.ergonomic-banner-div img{
+  height: 350px;
+  object-fit: cover;
+  object-position: top center;
+}
+.category-box-hover{
+  transition: all 0.4s;
+}
+.category-box-hover:hover{
+  background: #EBEAE8;
+}
+.category-title-box{
+  font-size: var(--fds-fs-710);
+  line-height: var(--fds-fs-850);
+}
+.category-box-link{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-905);
+}
+.category-box-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media (min-width: 768px) {
+  .category-title-box{
+    font-size: var(--fds-fs-775);
+    line-height: 3rem;
+  }
+  
+  .ergonomic-banner-div img{
+    height: 500px;
+  }
+  .ergonomic-banner-text .banner-text__header{
+    font-size: var(--fds-fs-950);
+    line-height: 2.75rem;
+  }
+  .ergonomic-banner-text .banner-text__header span{
+    font-size: var(--fds-fs-775);
+    line-height: var(--fds-fs-710);
+  }
   .work-from-home-text{
     top: 50%;
   }
@@ -455,6 +500,7 @@
 }
 
 @media (min-width: 992px) {
+  .category-box-hover{height: 100%;}
   .monitor-cat-section {
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
