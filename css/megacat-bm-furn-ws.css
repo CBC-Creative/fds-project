@@ -98,13 +98,12 @@
   background: var(--fds-white);
   border-radius: 6px;
   bottom: 1rem;
-  top: 50%;
+  top: unset;
   margin-top: -25px;
   opacity: 1 !important;
 }
 
 @media (min-width: 992px) {
-
   .prod-cat-carousel button.carousel-control,
   .cat-prod-carousel button.carousel-control {
     top: 50%;
@@ -274,17 +273,17 @@
   transform: translateY(-50%);
   text-shadow: 0px 3px 5px #00000050;
 }
-.banner-text-bottom-aqm .container{
+.banner-text-bottom-aqm .container {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
-.charge-ahead-section .container{
+.charge-ahead-section .container {
   top: inherit;
   bottom: 5%;
 }
-.left-underline:after{
+.left-underline:after {
   left: 0;
   transform: none;
   bottom: 0px;
@@ -295,98 +294,102 @@
   object-fit: cover;
   object-position: top;
 }
-.your-best-banner img{
+.your-best-banner img {
   object-position: center;
 }
-.your-best-banner::before{
+.your-best-banner::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(347deg, #00000000 0%, #151514CE 80%, #1C1C1A 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(347deg, #00000000 0%, #151514ce 80%, #1c1c1a 100%) 0% 0%
+    no-repeat padding-box;
   opacity: 0.6;
 }
-.monitor-arms-banner::before{
+.monitor-arms-banner::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(270deg, #00000000 0%, #1C1C1A 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #00000000 0%, #1c1c1a 100%) 0% 0% no-repeat
+    padding-box;
   opacity: 0.44;
 }
-.charge-ahead-section::before{
+.charge-ahead-section::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(183deg, #F7F7F700 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(183deg, #f7f7f700 0%, #f7f7f7 100%) 0% 0% no-repeat
+    padding-box;
   opacity: 0.96;
 }
-.shine-on-banner::before{
+.shine-on-banner::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(125deg, #F7F7F700 0%, #F7F7F73E 52%, #F7F7F7DD 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(125deg, #f7f7f700 0%, #f7f7f73e 52%, #f7f7f7dd 100%) 0% 0%
+    no-repeat padding-box;
   opacity: 1;
 }
-.megacat-work-space-banner .section__heading{
+.megacat-work-space-banner .section__heading {
   font-size: var(--fds-fs-775);
   line-height: var(--fds-fs-850);
 }
-.megacat-work-space-banner a{
+.megacat-work-space-banner a {
   font-size: var(--fds-fs-450);
   line-height: var(--fds-fs-905);
 }
-.megacat-work-space-banner .section__text{
+.megacat-work-space-banner .section__text {
   font-size: var(--fds-fs-325);
   line-height: var(--fds-fs-710);
 }
-.monitor-arms-banner .container{
+.monitor-arms-banner .container {
   top: 30%;
 }
-.shine-on-banner .left-underline:after{
+.shine-on-banner .left-underline:after {
   left: inherit;
   transform: none;
   bottom: 0px;
   top: inherit;
   right: 0;
 }
-.shine-on-banner .container{
+.shine-on-banner .container {
   top: 26%;
 }
-.your-best-banner .container{
+.your-best-banner .container {
   top: 5%;
 }
-.ergonomic-banner-text .banner-text__header span{
+.ergonomic-banner-text .banner-text__header span {
   font-size: var(--fds-fs-600);
   line-height: var(--fds-fs-700);
   text-transform: capitalize;
 }
-.ergonomic-banner-div img{
+.ergonomic-banner-div img {
   height: 350px;
   object-fit: cover;
   object-position: top center;
 }
-.category-box-hover{
+.category-box-hover {
   transition: all 0.4s;
 }
-.category-box-hover:hover{
-  background: #EBEAE8;
+.category-box-hover:hover {
+  background: #ebeae8;
 }
-.category-title-box{
+.category-title-box {
   font-size: var(--fds-fs-710);
   line-height: var(--fds-fs-850);
 }
-.category-box-link{
+.category-box-link {
   font-size: var(--fds-fs-450);
   line-height: var(--fds-fs-905);
 }
@@ -396,46 +399,48 @@
   justify-content: space-between;
 }
 @media (min-width: 768px) {
-  .category-title-box{
+  .category-title-box {
     font-size: var(--fds-fs-775);
     line-height: 3rem;
   }
-  
-  .ergonomic-banner-div img{
+
+  .ergonomic-banner-div img {
     height: 500px;
   }
-  .ergonomic-banner-text .banner-text__header{
+  .ergonomic-banner-text .banner-text__header {
     font-size: var(--fds-fs-950);
     line-height: 2.75rem;
   }
-  .ergonomic-banner-text .banner-text__header span{
+  .ergonomic-banner-text .banner-text__header span {
     font-size: var(--fds-fs-775);
     line-height: var(--fds-fs-710);
   }
-  .work-from-home-text{
+  .work-from-home-text {
     top: 50%;
   }
-  .work-space-banner img{
+  .work-space-banner img {
     object-position: bottom center !important;
   }
- .shine-on-banner .left-underline:after{
+  .shine-on-banner .left-underline:after {
     left: 0;
     transform: none;
     bottom: 0px;
     top: inherit;
   }
-  .your-best-banner::before{
-    background: transparent linear-gradient(270deg, #00000000 0%, #1C1C1A 100%) 0% 0% no-repeat padding-box;
+  .your-best-banner::before {
+    background: transparent linear-gradient(270deg, #00000000 0%, #1c1c1a 100%) 0% 0% no-repeat
+      padding-box;
     opacity: 0.54;
   }
-  .charge-ahead-section::before{
-    background: transparent linear-gradient(270deg, #F7F7F700 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
+  .charge-ahead-section::before {
+    background: transparent linear-gradient(270deg, #f7f7f700 0%, #f7f7f7 100%) 0% 0% no-repeat
+      padding-box;
     opacity: 0.81;
   }
-  .shine-on-banner::before{
+  .shine-on-banner::before {
     display: none;
   }
-  .megacat-work-space-banner .section__text{
+  .megacat-work-space-banner .section__text {
     font-size: 1.188rem;
     line-height: var(--fds-fs-710);
   }
@@ -458,10 +463,10 @@
   .section__link {
     margin-bottom: 3.75rem;
   }
-  .aqm-small-banner-img img{
+  .aqm-small-banner-img img {
     height: 600px;
   }
-  .banner-text-bottom-aqm .container{
+  .banner-text-bottom-aqm .container {
     top: 30%;
   }
 }
@@ -500,7 +505,9 @@
 }
 
 @media (min-width: 992px) {
-  .category-box-hover{height: 100%;}
+  .category-box-hover {
+    height: 100%;
+  }
   .monitor-cat-section {
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
