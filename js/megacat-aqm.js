@@ -26,6 +26,7 @@ if (mediaQuerymax1200.matches) {
 }
 });
 
+
    $(function () { // wait for document ready
      // init
      var controller = new ScrollMagic.Controller();
@@ -46,8 +47,8 @@ if (mediaQuerymax1200.matches) {
        .to(".covid-banner", 0.5, {autoAlpha: 1, display:'none'})
        // animate to fifth panel
        .to(".last-lady-section", 0.5, {autoAlpha: 1, display:'block'})
-       .to(".last-lady-section", 1,   {autoAlpha: 0.5, display:'none'})
-       .to(".last-lady-section", 0.5, {autoAlpha: 1, display:'none'})
+       .to(".last-lady-section", 1,   {autoAlpha: 0.5, display:'block'})
+       .to(".last-lady-section", 0.5, {autoAlpha: 1, display:'block'})
        
 
      // create scene to pin and link animation

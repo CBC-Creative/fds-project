@@ -286,7 +286,7 @@
   z-index: 10;
 }
 .aqm-small-banner-img img {
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   object-position: top;
 }
@@ -515,7 +515,7 @@
     line-height: var(--fds-fs-905);
   }
   .aqm-small-banner-img img {
-    height: 100%;
+    height: 100vh;
   }
   .column-discription-title {
     font-size: var(--fds-fs-900);
@@ -821,13 +821,13 @@
   -webkit-perspective: 1000;
           perspective: 1000;
           z-index: 1000;
+          background: #ffffff;
 }
 #slideContainer {
-  width: 400%; /* to contain 4 panels, each with 100% of window width */
+  width: 100%; /* to contain 4 panels, each with 100% of window width */
   height: 100%;
 }
 .panel {
   height: 100%;
-  width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
-  float: left;
+  width: 100%;
 }
