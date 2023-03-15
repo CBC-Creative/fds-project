@@ -283,9 +283,10 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 .aqm-small-banner-img img {
-  height: 500px;
+  height: 100%;
   object-fit: cover;
   object-position: top;
 }
@@ -377,6 +378,7 @@
   top: 0;
   left: 0;
   opacity: 0.5;
+  z-index: 1;
 }
 
 .select-input.focused ~ .select-arrow {
@@ -513,7 +515,7 @@
     line-height: var(--fds-fs-905);
   }
   .aqm-small-banner-img img {
-    height: 600px;
+    height: 100%;
   }
   .column-discription-title {
     font-size: var(--fds-fs-900);
@@ -809,4 +811,23 @@
     font-size: var(--fds-fs-325);
     line-height: var(--fds-fs-710);
   }
+}
+
+
+#pinContainer {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+          z-index: 1000;
+}
+#slideContainer {
+  width: 400%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+}
+.panel {
+  height: 100%;
+  width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+  float: left;
 }
