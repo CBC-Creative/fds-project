@@ -25,3 +25,39 @@ if (mediaQuerymax1200.matches) {
   }
 }
 });
+
+
+   $(function () { // wait for document ready
+     // init
+     var controller = new ScrollMagic.Controller();
+
+     // define movement of panels
+     var wipeAnimation = new TimelineMax()
+       // animate to second panel
+       .to(".every-day-section", 0.5, {autoAlpha: 1, display:'block'})		// move back in 3D space
+       .to(".every-day-section", 1,   {autoAlpha: 0.5, display:'none'})	// move in to first panel
+       .to(".every-day-section", 0.5, {autoAlpha: 1, display:'none'})		// move back to origin in 3D space          
+       // animate to third panel
+       .to(".breathing-section", 0.5, {autoAlpha: 1, display:'block'})
+       .to(".breathing-section", 1,   {autoAlpha: 0.5, display:'none'})
+       .to(".breathing-section", 0.5, {autoAlpha: 1, display:'none'})
+       // animate to forth panel
+       .to(".covid-banner", 0.5, {autoAlpha: 1, display:'block'})
+       .to(".covid-banner", 1,   {autoAlpha: 0.5, display:'none'})
+       .to(".covid-banner", 0.5, {autoAlpha: 1, display:'none'})
+       // animate to fifth panel
+       .to(".last-lady-section", 0.5, {autoAlpha: 1, display:'block'})
+       .to(".last-lady-section", 1,   {autoAlpha: 0.5, display:'block'})
+       .to(".last-lady-section", 0.5, {autoAlpha: 1, display:'block'})
+       
+
+     // create scene to pin and link animation
+     new ScrollMagic.Scene({
+         triggerElement: "#pinContainer",
+         triggerHook: "onLeave",
+         duration: "500%"
+       })
+       .setPin("#pinContainer")
+       .setTween(wipeAnimation)
+       .addTo(controller);            
+   });
