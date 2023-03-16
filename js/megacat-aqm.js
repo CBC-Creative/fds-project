@@ -38,15 +38,15 @@ if (mediaQuerymax1200.matches) {
        .to(".every-day-section", 1,   {autoAlpha: 0.5, zIndex:'1', position:'relative'})	// move in to first panel
        .to(".every-day-section", 0.5, {autoAlpha: 0, zIndex:'-1', position:'absolute'})		// move back to origin in 3D space          
        // animate to third panel
-       .to(".breathing-section", 0.5, {autoAlpha: 1, zIndex:'-1', position:'relative'})
-       .to(".breathing-section", 1,   {autoAlpha: 0.5, zIndex:'1', position:'relative'})
+       .to(".breathing-section", 0.5, {autoAlpha: 0.5, zIndex:'-1', position:'relative'})
+       .to(".breathing-section", 1,   {autoAlpha: 1, zIndex:'1', position:'relative'})
        .to(".breathing-section", 0.5, {autoAlpha: 0, zIndex:'-1', position:'absolute'})
        // animate to forth panel
-       .to(".covid-banner", 0.5, {autoAlpha: 1, zIndex:'-1', position:'relative'})
-       .to(".covid-banner", 1,   {autoAlpha: 0.5, zIndex:'1', position:'relative'})
+       .to(".covid-banner", 0.5, {autoAlpha: 0.5, zIndex:'-1', position:'relative'})
+       .to(".covid-banner", 1,   {autoAlpha: 1, zIndex:'1', position:'relative'})
        .to(".covid-banner", 0.5, {autoAlpha: 0, zIndex:'-1', position:'absolute'})
        // animate to fifth panel
-       .to(".last-lady-section", 0.5, {autoAlpha: 1, zIndex:'-1', position:'relative'})
+       .to(".last-lady-section", 0.5, {autoAlpha: 0.5, zIndex:'-1', position:'relative'})
        .to(".last-lady-section", 1,   {autoAlpha: 1, zIndex:'1', position:'relative'})
        .to(".last-lady-section", 0.5, {autoAlpha: 1, zIndex:'1', position:'relative'})
        
@@ -55,7 +55,7 @@ if (mediaQuerymax1200.matches) {
      new ScrollMagic.Scene({
          triggerElement: "#pinContainer",
          triggerHook: "onLeave",
-         duration: "500%"
+         duration: "800%"
        })
        .setPin("#pinContainer")
        .setTween(wipeAnimation)

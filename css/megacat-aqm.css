@@ -831,6 +831,10 @@
   height: 100%;
   width: 100%;
   position: relative;
+  opacity: 0.5;
+}
+.every-day-section.panel{
+  opacity: 1;
 }
 /* .every-day-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .every-day-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
 display: none;
