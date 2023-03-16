@@ -830,4 +830,23 @@
 .panel {
   height: 100%;
   width: 100%;
+  position: relative;
 }
+/* .every-day-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .every-day-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
+display: none;
+}
+.every-day-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] img, .every-day-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] img{
+  display: none;
+}
+.breathing-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .breathing-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
+  display: none;
+}
+.breathing-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] img, .breathing-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] img{
+    display: none;
+}
+.covid-banner[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .covid-banner[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
+  display: none;
+}
+.covid-banner[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] img, .covid-banner[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] img{
+    display: none;
+} */
