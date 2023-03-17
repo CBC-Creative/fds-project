@@ -445,12 +445,22 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.mh-330 {
+  min-height: 330px;
+  object-fit: cover;
+}
+
 .mh-600 {
   min-height: 600px;
 }
 
 .mh-175 {
   min-height: 175px;
+}
+
+.mwidth-90percent {
+  width: 90%;
+  margin-inline: auto;
 }
 
 @media (min-width: 992px) {
@@ -1010,6 +1020,18 @@ a.two-col-section__link::after {
 
 .right-nav li:last-child .nav-link:hover {
   color: var(--fds-black);
+}
+
+.account-badge {
+  font-weight: 400;
+  font-size: 12px;
+  border: 1px solid #fff;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  border-radius: 50px;
 }
 
 .stroke-svg svg {

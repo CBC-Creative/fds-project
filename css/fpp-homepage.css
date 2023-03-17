@@ -1,0 +1,126 @@
+.header-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  line-height: 1;
+}
+
+.intro-text {
+  font-size: var(--fds-fs-350);
+  max-width: 60%;
+}
+
+h1.partner-name {
+  font-size: var(--fds-fs-725);
+}
+
+.action-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-block-start: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  margin-block-end: 4rem;
+}
+
+.action-grid__item {
+  background-color: var(--fds-tan);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.action-grid__title {
+  font-size: var(--fds-fs-700);
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--fds-black);
+  line-height: 1.1;
+}
+
+.action-grid__btn {
+  background-color: var(--fds-white);
+  font-size: var(--fds-fs-250) !important;
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.coming-soon-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--fds-fs-725);
+  line-height: 1.2;
+}
+
+.chart-section {
+  min-height: 350px;
+}
+
+.homepage-recent-stories {
+  padding-block: 3rem;
+  overflow: hidden;
+}
+
+.lets-work-section-title {
+  margin-bottom: 2rem;
+}
+
+#homepage-recent-stories {
+  max-width: 425px;
+  margin-inline: auto;
+}
+
+#homepage-recent-stories .multi-carousel-inner {
+  gap: 2rem;
+}
+
+#homepage-recent-stories .carousel-control {
+  margin-inline: -10% !important;
+  color: #000;
+  text-shadow: none;
+}
+
+@media (min-width: 768px) {
+  .header-text {
+    left: 4rem;
+    top: 50%;
+    bottom: unset;
+    transform: translateY(-50%);
+    max-width: 620px;
+  }
+
+  .intro-text {
+    font-size: var(--fds-fs-725);
+    max-width: 100%;
+  }
+
+  h1.partner-name {
+    font-size: var(--fds-fs-900);
+  }
+}
+
+@media (min-width: 992px) {
+  .homepage-recent-stories {
+    padding-block: 6.25rem;
+  }
+  .lets-work-section-title {
+    margin-bottom: 3rem;
+  }
+  #homepage-recent-stories {
+    max-width: 100%;
+    margin-inline: initial;
+  }
+}

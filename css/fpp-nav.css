@@ -1,0 +1,103 @@
+#main-navbar {
+  background-color: var(--fds-black);
+  border-bottom-color: var(--fds-black);
+}
+
+.navbar .navbar-brand svg {
+  fill: var(--fds-white);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar .stroke-svg svg {
+  stroke: var(--fds-white);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1199px) {
+  .navbar-toggler {
+    color: var(--fds-white);
+  }
+  .nav-link,
+  .menu-link {
+    color: var(--fds-white);
+  }
+  .navbar-nav .nav-link i {
+    color: var(--fds-white);
+  }
+  .navbar-nav .dropdown-menu {
+    color: var(--fds-white);
+    background-color: #000;
+  }
+  .dropdown-item {
+    color: var(--fds-white);
+  }
+  .navbar-nav .nav-item.active {
+    left: -110%;
+  }
+  .dropdown-menu > li:last-child,
+  .dropdown-menu > li:last-child .dropdown-item {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: transparent;
+    color: var(--fds-white);
+  }
+  .sub-dropdown-menu .sub-dropdown-item {
+    color: var(--fds-white);
+  }
+  .mobile-back-btn {
+    color: var(--fds-white);
+  }
+  .right-nav .dropdown-menu {
+    background-color: var(--fds-black);
+  }
+
+  .right-nav li:last-child .nav-link::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-link,
+  .menu-link {
+    color: var(--fds-white);
+  }
+
+  .navbar .nav-link:focus,
+  .navbar .nav-link:hover,
+  .scrolled-up .nav-link:focus,
+  .scrolled-up .nav-link:hover,
+  .navbar .dropdown:hover .nav-link,
+  .scrolled-up .dropdown:hover .nav-link {
+    color: var(--fds-white);
+  }
+
+  .dropdown-menu {
+    border-top: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .dropdown-item {
+    color: var(--fds-white);
+  }
+
+  .dropdown-item.active,
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: transparent;
+    color: var(--fds-white);
+  }
+
+  .sub-dropdown-menu .sub-dropdown-item {
+    color: var(--fds-white);
+  }
+
+  .sub-dropdown-menu-title {
+    color: var(--fds-white);
+  }
+}

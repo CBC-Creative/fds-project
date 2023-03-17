@@ -1,0 +1,49 @@
+.section-spacing {
+  padding: 30px 0px;
+}
+
+section h1 {
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 0.938rem;
+}
+
+.form-outline .form-control {
+  padding: 0.75rem 1.75rem;
+  color: var(--fds-grey-800);
+  font-size: var(--fds-fs-400);
+}
+
+.form-outline .form-control.form-control-lg ~ .form-label {
+  padding-top: 1rem;
+  font-size: var(--fds-fs-400);
+}
+
+.form-check-input[type='checkbox'] {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+}
+
+.form-check-label {
+  color: var(--fds-black);
+  font-size: var(--fds-fs-325);
+}
+
+.cheout-options-link,
+.cheout-options-link:hover,
+.cheout-options-link:focus {
+  font-size: var(--fds-fs-325);
+  color: var(--fds-black);
+  line-height: var(--fds-fs-350);
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.checkoutsubmit {
+  color: var(--fds-black);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
