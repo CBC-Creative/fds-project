@@ -367,6 +367,7 @@ ul#ex1 {
 .ecommerce-gallery .carousel-control-next,
 .ecommerce-gallery .carousel-control-prev {
   color: grey;
+  margin-block: -1rem;
 }
 
 @media (max-width: 768px) {
@@ -378,28 +379,14 @@ ul#ex1 {
     width: 80%;
     margin-inline: auto;
   }
-
-  .ecommerce-gallery .ecommerce-gallery-main-img.active {
-    max-width: 200px;
-    margin-inline: auto;
+  .ecommerce-gallery.vertical .lightbox img {
+    height: 350px;
   }
 }
 
 @media (min-width: 768px) {
-  .ecommerce-gallery .vertical {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-  }
-
-  .ecommerce-gallery .vertical .multi-carousel-item {
-    width: 100% !important;
-    display: block;
-  }
-
-  .ecommerce-gallery .carousel-control-next,
-  .ecommerce-gallery .carousel-control-prev {
-    margin-block: -3rem;
+  .multi-carousel.vertical {
+    height: 100px;
   }
 
   .response-box {
@@ -444,6 +431,15 @@ ul#ex1 {
 }
 
 @media (min-width: 992px) {
+  .ecommerce-gallery .carousel-control-next,
+  .ecommerce-gallery .carousel-control-prev {
+    margin-block: -3rem;
+  }
+
+  .multi-carousel.vertical {
+    height: 350px;
+  }
+
   .given-review-details {
     margin-bottom: unset;
   }

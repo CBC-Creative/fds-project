@@ -1,18 +1,6 @@
 // Setup Media Queries
 const mq768 = window.matchMedia('(min-width: 768px)');
 
-$(document).ready(function () {
-  if (mq768.matches) {
-    const ecommGallery = document.querySelector('.ecommerce-gallery .multi-carousel');
-    $(ecommGallery).addClass('vertical');
-  }
-});
-
-$('.product-image-list img').click(function () {
-  var selectedPath = $(this).attr('src');
-
-  $('.product-banner-image  img').attr('src', selectedPath);
-});
 $('.product-size-btn').click(function () {
   //alert(this)
   $('.product-size-btn').removeClass('active');
