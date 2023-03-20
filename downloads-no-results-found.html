@@ -999,7 +999,15 @@
 
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
-
+      <section class="band fds-tan-bg pt-4 download-icon-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="downloads-title downloads-new-title mb-0">Workspace Downloads</h1>
+                </div>
+            </div>
+        </div>
+  </section>
       <section class="band fds-tan-bg text-center text-black">
         <div class="container">
           <div class="row">
@@ -1114,166 +1122,190 @@
               class="col-md-4 col-lg-3 d-none d-md-block mb-md-0 mb-4 desktop-filters-to-get-html"
             >
               <div class="download-filter-div">
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom-light mb-0 pb-3"
-                >
-                  <div class="headline text-black">
-                    <h3 class="fs-14 mb-0 fw-600">Asset Type</h3>
-                  </div>
-                  <div>
-                    <button class="btn btn-primary clear-btn fw-600 text-black">Clear All</button>
-                  </div>
-                </div>
-                <div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Literature" />
-                      <label class="form-check-label text-black fs-14" for="Literature"
-                        >Literature</label
-                      >
+                <div class="mb-3"><button class="btn btn-primary clear-btn fw-600 text-black">Clear All</button></div>
+
+                <div class="accordion accordion-borderless download-accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOneX">
+                      <button class="accordion-button fs-14 mb-0 fw-600" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
+                        Asset Type
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOneX" class="accordion-collapse collapse show"
+                      aria-labelledby="flush-headingOneX" data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body p-0">
+                        <div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Literature" />
+                              <label class="form-check-label text-black fs-14" for="Literature"
+                                >Literature</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Videos" />
+                              <label class="form-check-label text-black fs-14" for="Videos">Videos</label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Images" />
+                              <label class="form-check-label text-black fs-14" for="Images">Images</label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="Digital Assets"
+                              />
+                              <label class="form-check-label text-black fs-14" for="Digital Assets"
+                                >Digital Assets</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="Ordering Center"
+                              />
+                              <label class="form-check-label text-black fs-14" for="Ordering Center"
+                                >Ordering Center</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Videos" />
-                      <label class="form-check-label text-black fs-14" for="Videos">Videos</label>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwoX">
+                      <button class="accordion-button fs-14 mb-0 fw-600 collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseTwoX" aria-expanded="false" aria-controls="flush-collapseTwoX">
+                        Mega Category
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwoX" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoX"
+                      data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body p-0">
+                        <div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="ModularWalls" />
+                              <label class="form-check-label text-black fs-14" for="ModularWalls"
+                                >Modular Walls</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Furniture" />
+                              <label class="form-check-label text-black fs-14" for="Furniture"
+                                >Furniture</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="AirQualityManagement"
+                              />
+                              <label class="form-check-label text-black fs-14" for="AirQualityManagement"
+                                >Air Quality Management</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Workspace" />
+                              <label class="form-check-label text-black fs-14" for="Workspace"
+                                >Workspace</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="BusinessMachines"
+                              />
+                              <label class="form-check-label text-black fs-14" for="BusinessMachines"
+                                >Business Machines</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Images" />
-                      <label class="form-check-label text-black fs-14" for="Images">Images</label>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="Digital Assets"
-                      />
-                      <label class="form-check-label text-black fs-14" for="Digital Assets"
-                        >Digital Assets</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="Ordering Center"
-                      />
-                      <label class="form-check-label text-black fs-14" for="Ordering Center"
-                        >Ordering Center</label
-                      >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThreeX">
+                      <button class="accordion-button fs-14 mb-0 fw-600 collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseThreeX" aria-expanded="false" aria-controls="flush-collapseThreeX">
+                        Product Type
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThreeX" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeX"
+                      data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body p-0">
+                        <div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Shredders" />
+                              <label class="form-check-label text-black fs-14" for="Shredders"
+                                >Shredders</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="Laminators" />
+                              <label class="form-check-label text-black fs-14" for="Laminators"
+                                >Laminators</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="AirPurifiers" />
+                              <label class="form-check-label text-black fs-14" for="AirPurifiers"
+                                >Air Purifiers</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check position-relative">
+                              <input class="form-check-input" type="checkbox" value="" id="MonitorArms" />
+                              <label class="form-check-label text-black fs-14" for="MonitorArms"
+                                >Monitor Arms</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom-light mb-0 pt-5 pb-3"
-                >
-                  <div class="headline text-black">
-                    <h3 class="fs-14 mb-0 fw-600">Mega Category</h3>
-                  </div>
-                </div>
-                <div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="ModularWalls" />
-                      <label class="form-check-label text-black fs-14" for="ModularWalls"
-                        >Modular Walls</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Furniture" />
-                      <label class="form-check-label text-black fs-14" for="Furniture"
-                        >Furniture</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="AirQualityManagement"
-                      />
-                      <label class="form-check-label text-black fs-14" for="AirQualityManagement"
-                        >Air Quality Management</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Workspace" />
-                      <label class="form-check-label text-black fs-14" for="Workspace"
-                        >Workspace</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="BusinessMachines"
-                      />
-                      <label class="form-check-label text-black fs-14" for="BusinessMachines"
-                        >Business Machines</label
-                      >
-                    </div>
-                  </div>
-                </div>
+                
 
-                <div
-                  class="d-flex align-items-center justify-content-between border-bottom-light mb-0 pt-5 pb-3"
-                >
-                  <div class="headline text-black">
-                    <h3 class="fs-14 mb-0 fw-600">Product Type</h3>
-                  </div>
-                </div>
-                <div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Shredders" />
-                      <label class="form-check-label text-black fs-14" for="Shredders"
-                        >Shredders</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="Laminators" />
-                      <label class="form-check-label text-black fs-14" for="Laminators"
-                        >Laminators</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="AirPurifiers" />
-                      <label class="form-check-label text-black fs-14" for="AirPurifiers"
-                        >Air Purifiers</label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check position-relative">
-                      <input class="form-check-input" type="checkbox" value="" id="MonitorArms" />
-                      <label class="form-check-label text-black fs-14" for="MonitorArms"
-                        >Monitor Arms</label
-                      >
-                    </div>
-                  </div>
-                </div>
+                
+                
+
+                
               </div>
             </div>
             <div class="col-md-8 col-lg-9">
