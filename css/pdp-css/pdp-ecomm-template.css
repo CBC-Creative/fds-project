@@ -370,6 +370,59 @@ ul#ex1 {
   margin-block: -1rem;
 }
 
+.li-lightgrey {
+  --mdb-btn-bg: #ced9df;
+  --mdb-btn-active-bg: var(--mdb-btn-bg);
+  background-color: var(--mdb-btn-bg);
+}
+
+.li-darkgrey {
+  --mdb-btn-bg: #64605d;
+  --mdb-btn-active-bg: var(--mdb-btn-bg);
+  background-color: var(--mdb-btn-bg);
+}
+
+.li-mahogany {
+  background-image: url('/img/pdp-imgs/Swatch_Mahogany.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.li-tan {
+  --mdb-btn-bg: #e1c9a6;
+  --mdb-btn-active-bg: var(--mdb-btn-bg);
+  background-color: var(--mdb-btn-bg);
+}
+
+.li-white {
+  --mdb-btn-bg: #fff;
+  --mdb-btn-active-bg: var(--mdb-btn-bg);
+  background-color: var(--mdb-btn-bg);
+}
+
+.colors-selected .btn-check + .btn:hover {
+  border-width: 2px;
+}
+
+.product-specification-table {
+  font-size: 0.9rem;
+}
+
+.spec-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.spec-table-row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.spec-table-row div {
+  padding: 0.313rem;
+}
+
 @media (max-width: 768px) {
   .ecommerce-gallery .multi-carousel:not(.vertical) .multi-carousel-inner .multi-carousel-item img {
     max-height: initial;
@@ -385,6 +438,9 @@ ul#ex1 {
 }
 
 @media (min-width: 768px) {
+  .spec-table-row {
+    gap: unset;
+  }
   .multi-carousel.vertical {
     height: 100px;
   }

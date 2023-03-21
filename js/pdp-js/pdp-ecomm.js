@@ -1,6 +1,20 @@
 // Setup Media Queries
 const mq768 = window.matchMedia('(min-width: 768px)');
 
+$('a.review-link-to').on('click', function (e) {
+  $('.product-details-tabination .active').removeClass('active');
+  $('.tab-content .active').removeClass('active');
+  $('#product-reviews-tab').addClass('active');
+  $('#product-reviews').addClass('active show');
+
+  $('html, body').animate(
+    {
+      scrollTop: $('#product-reviews-tab').offset().top,
+    },
+    500
+  );
+});
+
 $('.product-size-btn').click(function () {
   //alert(this)
   $('.product-size-btn').removeClass('active');
