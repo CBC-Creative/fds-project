@@ -293,6 +293,9 @@
   bottom: 0px;
   top: inherit;
 }
+.rows-structure .left-md-underline:after{
+  bottom: -8px;
+}
 .aqm-small-banner-img img {
   height: 600px;
   object-fit: cover;
@@ -541,4 +544,40 @@
   .small-image-organisation img {
     width: 75%;
   }
+}
+.bigptext-cat-furn{
+  font-size: var(--fds-fs-350);
+  line-height: var(--fds-fs-700);
+}
+.bigptext{
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-700);
+}
+.sub-title-workstation {
+  font-size: var(--fds-fs-775);
+  line-height: normal;
+}
+.border-rows-bottom{
+  border-bottom: 1px solid #E8E3DE;
+}
+.object-position-top img{
+  object-position: top;
+}
+@media (min-width:768px){
+  .bigptext-cat-furn{
+    font-size: 1.563rem;
+    line-height: var(--fds-fs-775);
+  }
+  .bigptext{
+    font-size: var(--fds-fs-500);
+    line-height: var(--fds-fs-725);
+  }
+ 
+  .left-md-underline:after{
+    left: 0;
+    transform: none;
+  }  
+}
+@media (min-width:992px){
+  .padding-left-custom{padding-left: 2rem;}
 }
