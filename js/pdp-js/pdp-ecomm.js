@@ -33,3 +33,10 @@ $('.colors-selected .btn-floating').click(function () {
     $(this).addClass('selected-color');
   }
 });
+
+$(window).on('load', function () {
+  $('.ecommerce-gallery .multi-carousel').carousel({
+    interval: 2500,
+  });
+  console.log('window is loaded');
+});
