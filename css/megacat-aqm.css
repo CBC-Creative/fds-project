@@ -91,7 +91,7 @@
   object-fit: cover;
   object-position: top center;
 }
-.fds-light-gray{
+.fds-light-gray {
   background: var(--fds-grey-200);
 }
 .sub-title-workstation {
@@ -99,7 +99,7 @@
   line-height: normal;
 }
 @media (min-width: 992px) {
-  .megacat-banner img{
+  .megacat-banner img {
     height: 700px;
   }
   .w-lg-50 {
@@ -186,6 +186,8 @@
 .bigptext {
   font-size: var(--fds-fs-500);
   line-height: 1.5rem;
+  max-width: 750px;
+  margin-inline: auto;
 }
 .healthyiconbox .bigptext {
   font-size: var(--fds-fs-250);
@@ -507,13 +509,13 @@
   bottom: -8px;
 }
 .border-rows-bottom {
-  border-bottom: 1px solid #E8E3DE;
+  border-bottom: 1px solid #e8e3de;
 }
 @media (min-width: 768px) {
   .left-md-underline:after {
     left: 0;
     transform: none;
-}
+  }
   .form-text-bottom {
     font-size: var(--fds-fs-450);
     line-height: var(--fds-fs-850);
@@ -594,7 +596,7 @@
 @media (min-width: 992px) {
   .padding-left-custom {
     padding-left: 2rem;
-}
+  }
   .aqm-small-banner-text {
     font-size: 2.313rem;
     line-height: var(--fds-fs-905);
@@ -840,15 +842,14 @@
   }
 }
 
-
 #pinContainer {
   width: 100%;
   height: 100% !important;
   overflow: hidden;
   -webkit-perspective: 1000;
-          perspective: 1000;
-          z-index: 1000;
-          background: #ffffff;
+  perspective: 1000;
+  z-index: 1000;
+  background: #ffffff;
 }
 #slideContainer {
   width: 100%; /* to contain 4 panels, each with 100% of window width */
@@ -860,7 +861,7 @@
   position: relative;
   opacity: 0.5;
 }
-.every-day-section.panel{
+.every-day-section.panel {
   opacity: 1;
 }
 /* .every-day-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .every-day-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{

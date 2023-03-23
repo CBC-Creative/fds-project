@@ -745,6 +745,7 @@ a.two-col-section__link::after {
 .banner-text__subtitle {
   font-size: var(--fds-fs-500);
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .header-banner-text a.link-underlined::after {
