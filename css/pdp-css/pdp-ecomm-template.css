@@ -362,12 +362,12 @@ ul#ex1 {
 .ecommerce-gallery .multi-carousel .multi-carousel-inner .multi-carousel-item img {
   -o-object-fit: contain;
   object-fit: contain;
-  max-height: 100%;
+  max-height: 100% !important;
 }
 
 .ecommerce-gallery .multi-carousel.vertical .multi-carousel-inner .multi-carousel-item {
-  display: block;
-  height: 33%;
+  display: block !important;
+  height: 33% !important;
 }
 
 .ecommerce-gallery .carousel-control-next,
