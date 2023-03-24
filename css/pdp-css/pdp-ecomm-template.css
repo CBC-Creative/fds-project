@@ -362,12 +362,18 @@ ul#ex1 {
 .ecommerce-gallery .multi-carousel .multi-carousel-inner .multi-carousel-item img {
   -o-object-fit: contain;
   object-fit: contain;
+  max-height: 100%;
+}
+
+.ecommerce-gallery .multi-carousel.vertical .multi-carousel-inner .multi-carousel-item {
+  display: block;
+  height: 33%;
 }
 
 .ecommerce-gallery .carousel-control-next,
 .ecommerce-gallery .carousel-control-prev {
   color: grey;
-  margin-block: -1rem;
+  margin-block: -3rem;
 }
 
 .li-lightgrey {
@@ -435,6 +441,9 @@ ul#ex1 {
   .ecommerce-gallery.vertical .lightbox img {
     height: 350px;
   }
+  .multi-carousel.vertical {
+    height: 350px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -442,7 +451,7 @@ ul#ex1 {
     gap: unset;
   }
   .multi-carousel.vertical {
-    height: 100px;
+    height: 350px;
   }
 
   .response-box {
