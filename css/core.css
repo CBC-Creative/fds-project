@@ -207,6 +207,10 @@ a.hero-link {
 
 /* Colors */
 
+.background-transprent {
+  background-color: transparent !important;
+}
+
 .fds-light-blue-bg {
   background-color: #dae5f2;
 }
