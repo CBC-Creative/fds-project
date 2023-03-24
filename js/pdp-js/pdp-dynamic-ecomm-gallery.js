@@ -94,4 +94,5 @@ $(window).on('load', function () {
   $('#pdp-multi-carousel').carousel();
   const newLightbox = mdb.Lightbox.getOrCreateInstance(myLightBox);
   console.log(newLightbox);
+  $('.carousel-control-next').click();
 });

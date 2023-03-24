@@ -996,15 +996,16 @@
 	</div>
 
 	<main id="primary-content" class="position-relative">
+
 		<div class="product-details">
 
 			<!-- Container for demo purpose -->
-			<div class="container  my-lg-5 py-4 py-lg-5">
+			<div class="container  my-5 py-4 py-lg-5">
 
 				<!-- Section: Product details -->
 				<section>
 					<div class="row gx-lg-5 ">
-						<div class=" col-md-6 ">
+						<div class=" col-md-6 mb-4">
 							<!-- Gallery -->
 							<div class="pdp-noecomm-image" data-mdb-zoom-effect="true"
 								data-mdb-auto-height="true">
@@ -1012,54 +1013,14 @@
 									<div class="ecommerce-gallery vertical">
 										<div class="row align-items-center">
 											<div class="col-3">
-												<div class="multi-carousel vertical" data-mdb-items="3">
-													<div class="multi-carousel-inner">
+												<div id="pdp-multi-carousel" class="multi-carousel vertical" data-mdb-items="3">
+													<div id="pdp-multi-carousel-inner" class="multi-carousel-inner">
 														<div class="multi-carousel-item active">
 															<img
 																src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-thumb-main.png"
 																data-mdb-img="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-main.png"
 																alt="Image of a Shredder"
 																class="active w-100"
-															/>
-														</div>
-														<div class="multi-carousel-item">
-															<img
-																src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-thumb-turned.png"
-																data-mdb-img="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-turned.png"
-																alt="Image of a Shredder"
-																class="w-100"
-															/>
-														</div>
-														<div class="multi-carousel-item">
-															<img
-																src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-thumb-demo.png"
-																data-mdb-img="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-demo.png"
-																alt="Image of a Shredder"
-																class="w-100"
-															/>
-														</div>
-														<div class="multi-carousel-item">
-															<img
-																src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-thumb-shredder-top.png"
-																data-mdb-img="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-shredder-top.png"
-																alt="Image of a Shredder"
-																class="w-100"
-															/>
-														</div>
-														<div class="multi-carousel-item">
-															<img
-																src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-thumb-lx-cutting.png"
-																data-mdb-img="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-lx-cutting.png"
-																alt="Image of a Shredder"
-																class="w-100"
-															/>
-														</div>
-														<div class="multi-carousel-item">
-															<img
-																src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-thumb-hand.png"
-																data-mdb-img="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-hand.png"
-																alt="Image of a Shredder"
-																class="w-100"
 															/>
 														</div>
 													</div>
@@ -1088,7 +1049,7 @@
 												</div>
 											</div>
 											<div class="col-9">
-												<div class="lightbox">
+												<div id="pdp-lightbox" class="lightbox">
 													<img
 														src="https://fellowes.cbcwebhosting.com/img/pdp-imgs/gallery-slide-main.png"
 														alt="Image of a Shredder"
@@ -1284,15 +1245,11 @@
 						</div>
 						<!-- Details -->
 					</div>
+				</section>
+
 			</div>
 
-			</section>
-			<!-- Section: Product details -->
-
 		</div>
-		<!-- Container for demo purpose -->
-		</div>
-
 
 		<!-- Start product detail section -->
 		<section class="product-details py-5">
@@ -3015,6 +2972,7 @@
 	<!-- Custom scripts -->
 	<script type="text/javascript" src="js/core.js"></script>
 	<script src="js/pdp-js/pdp-ecomm.js"></script>
+	<script src="js/pdp-js/pdp-dynamic-ecomm-gallery.js"></script>
 </body>
 
 </html>
