@@ -203,12 +203,69 @@
 .right-product-list li {
   margin-bottom: 0.5rem;
 }
+.pro-image-title{
+  font-size: 0.938rem;
+  line-height: var(--fds-fs-710);
+  font-weight: 500;
+  position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+.array-btn-gray {
+  background: #9D9D9D;
+  color: #ffffff;
+  font-size: var(--fds-fs-500);
+  border-radius: 50px;
+  box-shadow: none;
+  text-transform: capitalize;
+}
+
+.array-btn-gray:first-child:hover,
+.array-btn-gray:focus-visible,
+.array-btn-gray:hover,
+.array-btn-gray:focus,
+:not(.btn-check) + .array-btn-gray:hover {
+  background: #9D9D9D;
+  color: #ffffff;
+  box-shadow: none;
+}
+.array-btn-blue {
+  background: #748597;
+  color: #ffffff;
+  font-size: var(--fds-fs-500);
+  border-radius: 50px;
+  box-shadow: none;
+  text-transform: capitalize;
+}
+
+.array-btn-blue:first-child:hover,
+.array-btn-blue:focus-visible,
+.array-btn-blue:hover,
+.array-btn-blue:focus,
+:not(.btn-check) + .array-btn-blue:hover {
+  background: #748597;
+  color: #ffffff;
+  box-shadow: none;
+}
+.padding-left-1{
+  padding-left: 1rem;
+}
+.designed-right-content-list{
+  font-size: 0.938rem;
+  line-height: var(--fds-fs-710);
+}
+.designed-right-content-list li{
+  margin-bottom: 1rem;
+}
 @media (min-width: 992px) {
   .envirosmart-content {
     padding: 2rem;
   }
   .cat-wall-list {
     width: 65%;
+  }
+  .cat-wall-list-recess{
+    width: 49%;
   }
   .right-align-img .section-2-img {
     position: absolute;
@@ -217,10 +274,28 @@
     right: 0;
     width: 350px;
   }
+  .right-align-img .section-2-img-recess{
+    width: 460px;
+  }
+  .big-imag-text-absolute .section-2-img {
+    width: 420px;
+  }
+  .big-imag-text-absolute .cat-wall-list-main{
+    padding: 4rem;
+  }
 }
 @media (min-width: 1200px) {
   .right-align-img .section-2-img {
     width: 420px;
+  }
+  .big-imag-text-absolute .section-2-img {
+    width: 500px;
+  }
+  .big-imag-text-absolute .cat-wall-list-main{
+    padding: 4rem;
+  }
+  .right-align-img .section-2-img-recess{
+    width: auto;
   }
   .envirosmart-content {
     padding: 5rem;

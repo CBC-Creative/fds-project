@@ -511,6 +511,91 @@
 .border-rows-bottom {
   border-bottom: 1px solid #e8e3de;
 }
+.air-quality-title{
+  text-transform: capitalize;
+}
+.time-line-title{
+  font-size: var(--fds-fs-700);
+  line-height: var(--fds-fs-860);
+  letter-spacing: 2.2px;
+  font-weight: 500;
+}
+.timeline-content{
+  font-size: 0.938rem;
+  line-height: var(--fds-fs-700);
+  font-weight: 500;
+  padding: 0;
+  padding-left: 1.5rem;
+}
+.year-title{
+  font-size: 1.563rem;
+  color: #778495;
+  line-height: var(--fds-fs-775);
+  margin-bottom: 0.5rem;
+}
+.timeline {
+  border-left: none;
+  position: relative;
+  list-style: none;
+  overflow: visible;
+}
+
+.timeline .timeline-item {
+  position: relative;
+  border-left: 2px solid #778495;
+}
+.timeline .timeline-item:last-child{
+  border-left: 2px solid transparent;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: #778495;
+  left: -5.5px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+.custom-text .timeline-content{width: 100%;position: relative; top: -9px;}
+.timeline-image{position: absolute; width: 50px;top: -12px;left: -68px;}
+.timeline{margin-left: 60px; width: auto;}
+.time-line-left-text{
+  font-size: 0.938rem;
+  line-height: 1.813rem;
+}
+.technology-boxes{
+  border: 1px solid #778495;
+  border-radius: 15px;
+}
+.btn-blue {
+  background: #748597;
+  color: #ffffff;
+  font-size: var(--fds-fs-350);
+  border-radius: 50px;
+  box-shadow: none;
+  text-transform: capitalize;
+}
+
+.btn-blue:first-child:hover,
+.btn-blue:focus-visible,
+.btn-blue:hover,
+.btn-blue:focus,
+:not(.btn-check) + .btn-blue:hover {
+  background: #748597;
+  color: #ffffff;
+  box-shadow: none;
+}
+@media (min-width:576px){
+  .custom-text .timeline-content{width: 70%;position: relative; top: -9px;}
+  .timeline-image{position: relative;width: 30%; top: 0; left: 0px;text-align: center;}
+  .timeline{margin-left: 0px; width: 100%;}
+}
 @media (min-width: 768px) {
   .left-md-underline:after {
     left: 0;
@@ -592,8 +677,13 @@
   .banner-text-bottom-aqm .container.top30 {
     top: 30%;
   }
+  .air-quality-title{
+    font-size: 3.813rem;
+    line-height: 4.438rem;
+  }
 }
 @media (min-width: 992px) {
+  .technology-boxes .btn-blue{min-width: 300px;}
   .padding-left-custom {
     padding-left: 2rem;
   }
