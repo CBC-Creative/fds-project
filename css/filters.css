@@ -266,6 +266,7 @@
 .designed-right-content-list li {
   margin-bottom: 1rem;
 }
+.background-transprent{background: transparent;}
 @media (min-width: 992px) {
   .envirosmart-content {
     padding: 2rem;
@@ -292,8 +293,16 @@
   .big-imag-text-absolute .cat-wall-list-main {
     padding: 4rem;
   }
+  .arra-ceiling-list{
+    position: absolute;
+    right: -2rem;
+    bottom: 2rem;
+  }
 }
 @media (min-width: 1200px) {
+  .custom-padding-top{
+    padding-top: 8rem;
+  }
   .right-align-img .section-2-img {
     width: 420px;
   }
@@ -306,6 +315,10 @@
   .right-align-img .section-2-img-recess {
     width: auto;
   }
+  .array-ceiling-bog-image-right.right-align-img  img{
+    width: auto;
+  }
+  .array-ceiling-bog-image-right.right-align-img .cat-wall-list{width: 48%;}
   .envirosmart-content {
     padding: 5rem;
   }

@@ -454,7 +454,9 @@
 .design-move-section img{
   object-position: -650px 0px;
 }
+.cat-shredder-banner img{height: 500px;object-fit: cover;object-position: top center;}
 @media (min-width: 768px) {
+  .cat-shredder-banner img{height: 700px;}
   .design-move-section img{
     object-position: top center;
   }
@@ -606,6 +608,12 @@
 .object-position-top img{
   object-position: top;
 }
+.cat-laminator-banner img{
+  object-position: 0;
+}
+.binding-banner img{
+  object-position: right;
+}
 @media (min-width:768px){
   .bigptext-cat-furn{
     font-size: 1.563rem;
@@ -620,6 +628,10 @@
     left: 0;
     transform: none;
   }  
+  .cat-shredders-title{
+    font-size: var(--fds-fs-950);
+    line-height: 3.75rem;
+  }
 }
 @media (min-width:992px){
   .padding-left-custom{padding-left: 2rem;}

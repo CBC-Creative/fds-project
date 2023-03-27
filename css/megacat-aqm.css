@@ -98,6 +98,10 @@
   font-size: var(--fds-fs-775);
   line-height: normal;
 }
+.effective-pro-row img{
+  height: 140px;
+  object-fit: cover;
+}
 @media (min-width: 992px) {
   .megacat-banner img {
     height: 700px;
@@ -954,21 +958,32 @@
 .every-day-section.panel {
   opacity: 1;
 }
-/* .every-day-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .every-day-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
-display: none;
+
+.aremax-icon-text{
+  line-height: var(--fds-fs-400);
+  font-size: 0.938rem;
 }
-.every-day-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] img, .every-day-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] img{
-  display: none;
+.aremax-icon-text img{
+  height: 80px;
 }
-.breathing-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .breathing-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
-  display: none;
+.how-it-work-content-title{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-725);
+  font-weight: 600;
 }
-.breathing-section[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] img, .breathing-section[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] img{
-    display: none;
+.how-it-work-content-box ul, .how-it-work-content-box{
+  font-size: var(--fds-fs-300);
+  line-height: var(--fds-fs-600);
+  padding-left: 1rem;
 }
-.covid-banner[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] .banner-text-bottom-aqm, .covid-banner[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] .banner-text-bottom-aqm{
-  display: none;
+.how-it-work-small-p-tag{
+  font-size: var(--fds-fs-200);
+  line-height: var(--fds-fs-350);
 }
-.covid-banner[style="position: absolute; z-index: -1; opacity: 0.3; visibility: inherit;"] img, .covid-banner[style="position: absolute; opacity: 0.3; visibility: inherit; z-index: -1;"] img{
-    display: none;
-} */
+.how-it-work-content-box ul li{
+  margin-bottom: 0.5rem;
+}
+.preg13 p{
+  font-size: var(--fds-fs-300);
+  line-height: var(--fds-fs-700);
+}
