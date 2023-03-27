@@ -78,6 +78,10 @@
   .cat-prod-carousel.multi-carousel-three .multi-carousel-item {
     min-width: calc(33% - 1rem);
   }
+  .prod-cat-carousel.multi-carousel-two .multi-carousel-item,
+  .cat-prod-carousel.multi-carousel-two .multi-carousel-item {
+    min-width: calc(50% - 1rem);
+  }
 }
 
 .prod-cat-carousel.multi-carousel .multi-carousel-item a,
@@ -293,7 +297,7 @@
   bottom: 0px;
   top: inherit;
 }
-.rows-structure .left-md-underline:after{
+.rows-structure .left-md-underline:after {
   bottom: -8px;
 }
 .aqm-small-banner-img img {
@@ -417,9 +421,10 @@
   left: 0;
   background: rgba(255, 255, 255, 0.4);
 }
-.design-move-section::before{
+.design-move-section::before {
   content: '';
-  background: transparent linear-gradient(270deg, #F7F7F700 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #f7f7f700 0%, #f7f7f7 100%) 0% 0% no-repeat
+    padding-box;
   opacity: 0.41;
   width: 100%;
   height: 100%;
@@ -427,9 +432,10 @@
   top: 0;
   left: 0;
 }
-.place-everithng-section::before{
+.place-everithng-section::before {
   content: '';
-  background: transparent linear-gradient(270deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #ffffff00 0%, #ffffff 100%) 0% 0% no-repeat
+    padding-box;
   opacity: 0.69;
   width: 100%;
   height: 100%;
@@ -437,13 +443,16 @@
   top: 0;
   left: 0;
 }
-.place-everithng-section .link-underlined::after{    top: 39px;}
-.place-everithng-section  .banner-text-bottom-aqm .container{
+.place-everithng-section .link-underlined::after {
+  top: 39px;
+}
+.place-everithng-section .banner-text-bottom-aqm .container {
   top: 4%;
 }
-.lorem-section-1::before{
+.lorem-section-1::before {
   content: '';
-  background: transparent linear-gradient(270deg, #F7F7F700 0%, #F7F7F7 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #f7f7f700 0%, #f7f7f7 100%) 0% 0% no-repeat
+    padding-box;
   opacity: 0.69;
   width: 100%;
   height: 100%;
@@ -451,16 +460,19 @@
   top: 0;
   left: 0;
 }
-.design-move-section img{
+.design-move-section img {
   object-position: -650px 0px;
 }
-.cat-shredder-banner img{height: 500px;object-fit: cover;object-position: top center;}
+.cat-shredder-banner img {
+  height: 500px;
+  object-fit: cover;
+  object-position: top center;
+}
 @media (min-width: 768px) {
-  .cat-shredder-banner img{height: 700px;}
-  .design-move-section img{
+  .design-move-section img {
     object-position: top center;
   }
-  .place-everithng-section  .banner-text-bottom-aqm .container{
+  .place-everithng-section .banner-text-bottom-aqm .container {
     top: 9%;
   }
   .category-title-box {
@@ -590,11 +602,11 @@
     width: 75%;
   }
 }
-.bigptext-cat-furn{
+.bigptext-cat-furn {
   font-size: var(--fds-fs-350);
   line-height: var(--fds-fs-700);
 }
-.bigptext{
+.bigptext {
   font-size: var(--fds-fs-325);
   line-height: var(--fds-fs-700);
 }
@@ -602,42 +614,44 @@
   font-size: var(--fds-fs-775);
   line-height: normal;
 }
-.border-rows-bottom{
-  border-bottom: 1px solid #E8E3DE;
+.border-rows-bottom {
+  border-bottom: 1px solid #e8e3de;
 }
-.object-position-top img{
+.object-position-top img {
   object-position: top;
 }
-.cat-laminator-banner img{
+.cat-laminator-banner img {
   object-position: 0;
 }
-.binding-banner img{
+.binding-banner img {
   object-position: right;
 }
-@media (min-width:768px){
-  .bigptext-cat-furn{
+@media (min-width: 768px) {
+  .bigptext-cat-furn {
     font-size: 1.563rem;
     line-height: var(--fds-fs-775);
   }
-  .bigptext{
+  .bigptext {
     font-size: var(--fds-fs-500);
     line-height: var(--fds-fs-725);
   }
- 
-  .left-md-underline:after{
+
+  .left-md-underline:after {
     left: 0;
     transform: none;
-  }  
-  .cat-shredders-title{
+  }
+  .cat-shredders-title {
     font-size: var(--fds-fs-950);
     line-height: 3.75rem;
   }
 }
-@media (min-width:992px){
-  .padding-left-custom{padding-left: 2rem;}
+@media (min-width: 992px) {
+  .padding-left-custom {
+    padding-left: 2rem;
+  }
 }
-@media (max-width:500px){
+@media (max-width: 500px) {
   .ideate-content-wrapper {
     padding-bottom: 12rem;
-}
+  }
 }
