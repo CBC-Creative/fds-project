@@ -142,6 +142,18 @@ h3 {
   font-size: var(--fds-fs-350);
 }
 
+.fs-19 {
+  font-size: var(--fds-fs-500) !important;
+}
+
+.fs-25 {
+  font-size: var(--fds-fs-725) !important;
+}
+
+.fs-33 {
+  font-size: var(--fds-fs-825) !important;
+}
+
 @media (min-width: 768px) {
   .fs-17 {
     font-size: var(--fds-fs-400);
@@ -233,6 +245,10 @@ a.hero-link {
 
 .fds-green-bg {
   background-color: var(--fds-green);
+}
+
+.fds-light-grey-bg {
+  background-color: var(--fds-grey-200);
 }
 
 .tan-gradient-top:before {
@@ -429,6 +445,11 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.mw-900 {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
 .mw-840 {
   max-width: 52.5rem;
   margin-inline: auto;
@@ -449,6 +470,10 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.mw-425NoAuto {
+  max-width: 425px;
+}
+
 .mh-330 {
   min-height: 330px;
   object-fit: cover;
@@ -465,6 +490,12 @@ a.two-col-section__link::after {
 .mwidth-90percent {
   width: 90%;
   margin-inline: auto;
+}
+
+@media (max-width: 991px) {
+  .maxwidth-90percent {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
