@@ -1043,7 +1043,7 @@
 
 @media (max-width: 576px) {
   .air-matter-text-block h2 {
-    font-size: var(--fds-fs-750);
+    font-size: var(--fds-fs-725);
   }
   .air-matter-text-block a {
     font-size: var(--fds-fs-350);
@@ -1074,6 +1074,11 @@
     left: 3rem;
     max-width: 565px;
   }
+}
+
+.array-landing-leader-title {
+  max-width: 630px;
+  margin-inline: auto;
 }
 
 .how-it-work-content-title {
