@@ -288,10 +288,10 @@
   }
 }
 
-.innovations-text {
-  font-size: var(--fds-fs-600);
-  line-height: 1.5;
-  font-weight: 400;
+.unleash-txt {
+  color: var(--fds-green);
+  font-weight: 700;
+  font-style: italic;
 }
 
 .callout-text {
@@ -537,7 +537,7 @@ h5.grid-title {
 .tab-logo-box {
   background: var(--fds-white);
   height: 100%;
-  padding: 2rem 2rem;
+  padding: 1rem 0;
 }
 .tab-logo-box img {
   filter: grayscale(1);

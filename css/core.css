@@ -146,6 +146,10 @@ h3 {
   font-size: var(--fds-fs-500) !important;
 }
 
+.fs-19-m16 {
+  font-size: var(--fds-fs-350) !important;
+}
+
 .fs-25 {
   font-size: var(--fds-fs-725) !important;
 }
@@ -157,6 +161,9 @@ h3 {
 @media (min-width: 768px) {
   .fs-17 {
     font-size: var(--fds-fs-400);
+  }
+  .fs-19-m16 {
+    font-size: var(--fds-fs-500) !important;
   }
 }
 
