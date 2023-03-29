@@ -331,6 +331,7 @@ ul#ex1 {
 
 .product-discription-bottom-btn span {
   display: inline-block;
+  line-height: 1;
 }
 
 .text-line-after::after {
@@ -569,4 +570,22 @@ ul#ex1 {
 
 .ecommerce-gallery .lightbox img {
   transform: none !important;
+}
+
+.pdp-icon-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.pdp-icon-wrapper img {
+  max-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .pdp-icon-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25rem;
+    flex: 1;
+  }
 }
