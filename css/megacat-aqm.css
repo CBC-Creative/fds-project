@@ -877,6 +877,17 @@
   margin-bottom: 1rem;
 }
 
+#page-video {
+  min-height: 180px;
+  object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  #page-video {
+    min-height: 363px;
+  }
+}
+
 @media (min-width: 992px) {
   .homepage-logo-carousel .carousel-control-next,
   .homepage-logo-carousel .carousel-control-prev {
@@ -955,7 +966,7 @@
   .object-img-position img {
     object-position: -190px;
   }
-  .small-on-mobile{
+  .small-on-mobile {
     font-size: 1.625rem;
     line-height: var(--fds-fs-775);
   }
