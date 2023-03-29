@@ -976,7 +976,7 @@
 }
 
 .cat-section__image img {
-  max-width: 300px;
+  max-width: 280px;
 }
 
 @media (min-width: 992px) {
@@ -991,7 +991,7 @@
     align-content: center;
   }
   .cat-section__image img {
-    max-width: 380px;
+    max-width: 354px;
   }
 }
 
