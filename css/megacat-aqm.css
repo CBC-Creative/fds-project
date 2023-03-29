@@ -924,6 +924,10 @@
   .object-img-position img {
     object-position: -190px;
   }
+  .small-on-mobile{
+    font-size: 1.625rem;
+    line-height: var(--fds-fs-775);
+  }
 }
 @media (max-width: 575px) {
   .effective-section .text-column__desc {
