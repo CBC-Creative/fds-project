@@ -951,3 +951,51 @@
     margin-top: 1rem;
   }
 }
+
+.cat-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-content: end;
+}
+
+.cat-section__text {
+  margin-block-start: 3rem;
+}
+
+.cat-section__text h2 {
+  text-transform: uppercase;
+}
+.cat-section__text a {
+  font-size: var(--fds-fs-450);
+}
+.cat-section__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-section__image img {
+  max-width: 300px;
+}
+
+@media (min-width: 992px) {
+  .cat-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .cat-section__text {
+    margin-block-start: initial;
+    min-height: 600px;
+    display: grid;
+    align-content: center;
+  }
+  .cat-section__image img {
+    max-width: 380px;
+  }
+}
+
+.cat-filters-banner img {
+  height: 500px;
+  object-fit: cover;
+}
