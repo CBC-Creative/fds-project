@@ -623,6 +623,9 @@ opacity: 1;
     transform: translateY(-50%);    
   }
 }
+
+.background-transprent{background: transparent;}
+
 @media (min-width: 992px) {
 
   .envirosmart-content {
@@ -777,9 +780,18 @@ opacity: 1;
     left: 0;
     bottom: -20px;
     width: 100%;
+    
+  .arra-ceiling-list{
+    position: absolute;
+    right: -2rem;
+    bottom: 2rem;
+
   }
 }
 @media (min-width: 1200px) {
+  .custom-padding-top{
+    padding-top: 8rem;
+  }
   .right-align-img .section-2-img {
     width: 420px;
   }
@@ -792,6 +804,10 @@ opacity: 1;
   .right-align-img .section-2-img-recess {
     width: auto;
   }
+  .array-ceiling-bog-image-right.right-align-img  img{
+    width: auto;
+  }
+  .array-ceiling-bog-image-right.right-align-img .cat-wall-list{width: 48%;}
   .envirosmart-content {
     padding: 5rem;
   }
