@@ -1036,7 +1036,7 @@
       </div>
     </div>
 
-    <main id="primary-content" class="position-relative">
+    <main id="primary-content" class="position-relative" data-loading="true">
       <!-- Start your project here-->
       <section class="band fds-tan-bg pt-4 download-icon-title">
         <div class="container">
@@ -1479,7 +1479,8 @@
                 </div>
               </div>
 
-              <div class="pdp-products-list icon-view-listing">
+              <!-- Product List -->
+              <div class="pdp-loaded-section pdp-products-list icon-view-listing">
                 <div class="card border-grey-no-radius download-box">
                   <div class="form-group addtocart-main-input">
                     <div class="form-check position-relative">
@@ -1946,11 +1947,461 @@
                 </div>
               </div>
 
-              <div class="text-center mt-4">
+              <!-- Loading Placeholder Animation -->
+              <div
+                class="pdp-loading-section pdp-products-list icon-view-listing placeholder-glow position-relative"
+              >
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-grey-no-radius download-box">
+                  <div class="form-group addtocart-main-input">
+                    <div class="form-check position-relative">
+                      <input
+                        class="form-check-input cd-add-to-cart js-cd-add-to-cart"
+                        type="checkbox"
+                        value=""
+                        id="addtocart1"
+                      />
+                      <label
+                        class="form-check-label text-black fs-14 d-none"
+                        for="addtocart1"
+                      ></label>
+                    </div>
+                  </div>
+                  <img
+                    src="img/placeholder-image.png"
+                    class="card-img-top placeholder"
+                    alt="placeholder"
+                  />
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-column text-black w-100"
+                      >
+                        <span
+                          class="product-name placeholder col-8 placeholder-lg align-self-start"
+                        ></span>
+
+                        <div class="download-bottom-box w-100">
+                          <div class="fs-10 mb-2 placeholder placeholder-sm col-10"></div>
+                          <div class="w-100 d-flex align-items-center justify-content-between">
+                            <div class="colors">
+                              <div style="width: 30px">
+                                <div
+                                  class="subtext text-gray mb-0 product-file placeholder placeholder-sm col-12"
+                                ></div>
+                                <div class="price placeholder placeholder-sm col-12"></div>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center justify-content-end download-icon"
+                            >
+                              <div
+                                class="download-image placeholder placeholder-lg"
+                                style="width: 20px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="loading-spinner">
+                  <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- More/Loading Button with data attribute switch -->
+              <div data-btn-loading="true" class="button-wrapper text-center mt-4">
                 <button
-                  class="btn btn-primary clear-btn fw-600 text-black d-flex mx-auto align-items-center"
+                  class="content-loaded-btn btn btn-primary clear-btn fw-600 text-black mx-auto align-items-center"
                 >
                   <img src="img/show-more-download.svg" class="mx-2" /> SHOW MORE
+                </button>
+                <button
+                  class="content-loading-btn btn btn-primary clear-btn fw-600 text-black mx-auto align-items-center"
+                >
+                  <div class="btn-spinner-border spinner-border d-inline-block" role="status"></div>
+                  LOADING
                 </button>
               </div>
 
