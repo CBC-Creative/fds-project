@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Document</title>
+
+
+  <script type="module" crossorigin src="./js/db-awards.js"></script>
+  <link rel="modulepreload" crossorigin href="./js/db-modulepreload-polyfill.js">
+  <link rel="modulepreload" crossorigin href="./js/db-bootstrap.esm.js">
+	<link rel="stylesheet" href="./css/db-core.css">
+	<link rel="stylesheet" href="./css/db-awards.css">
+</head>
+<body class="awards-page">
+<main>
+  <section class="section hero awards-page__hero">
+    <div class="container container-md">
+      <h1 class="h1 awards-page__hero-h1">Awards <span class="awards-page__hero-span">& Recognition</span></h1>
+      <p class="lead fw-semibold awards-page__hero-lead">
+        Putting our core principles of world-class innovation, exceptional product quality, and attentive customer service into action
+        has brought Fellowes recognition from many Global Organizations.
+      </p>
+    </div>
+  </section>
+  <section class="section awards-page__awards">
+    <div class="container container-lg d-flex flex-column align-items-center">
+      <div class="display-2 text-outline awards-page__awards-text-decoration overflow-hidden">RECOGNITION</div>
+      <header class="mb-4">
+        <h2 class="h2 mb-2">Design Awards</h2>
+      </header>
+      <!-- Tabs start -->
+      <div class="container d-flex flex-column" id="awards-tabs">
+        <!-- Tabs navs start -->
+        <div class="d-none d-xl-block d-lg-block mb-4">
+          <ul class="nav nav-pills mb-3 flex justify-content-center gap-2" id="awards-tabs-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="awards-products-tab"
+                href="#awards-products"
+                data-bs-toggle="tab"
+                data-bs-target="#awards-products"
+                role="tab"
+                aria-controls="awards-products"
+                aria-selected="true">
+                Product
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="awards-industry-tab"
+                href="#awards-industry"
+                data-bs-toggle="tab"
+                data-bs-target="#awards-industry"
+                role="tab"
+                aria-controls="awards-industry"
+                aria-selected="false">
+                Industry
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="awards-corporate-tab"
+                href="#awards-corporate"
+                data-bs-toggle="tab"
+                data-bs-target="#awards-corporate"
+                role="tab"
+                aria-controls="awards-corporate"
+                aria-selected="false">
+                Corporate
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tabs navs end -->
+
+        <!-- Tabs dropdown start -->
+        <div class="dropdown-tabs d-block d-xl-none d-lg-none
+            position-fixed z-3 start-50 bottom-0
+            translate-middle-x pb-3">
+          <div class="dropdown dropup">
+            <button class="dropdown-toggle py-2 px-4 text-uppercase lead lead-sm"
+                    type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </button>
+            <ul class="dropdown-menu w-100 my-3 py-0 overflow-hidden" data-name="awards" aria-labelledby="dropdownAwardsButton">
+              <li>
+                <button class="dropdown-item py-2 text-center text-uppercase active" data-value="#awards-products">Product</button>
+              </li>
+              <li>
+                <button class="dropdown-item py-2 text-center text-uppercase" data-value="#awards-industry">Industry</button>
+              </li>
+              <li>
+                <button class="dropdown-item py-2 text-center text-uppercase" data-value="#awards-corporate">Corporate</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Tabs dropdown end -->
+
+        <!-- Tabs content start -->
+        <div class="tab-content" id="awards-tabs-tabContent">
+          <div class="tab-pane fade show active" id="awards-products" role="tabpanel" aria-labelledby="awards-products-tab" tabindex="0">
+            <h3 class="visually-hidden">Product awards</h3>
+            <div class="awards-page__awards-group">
+              <h4 class="display-0 fw-bold text-outline awards-page__awards-group-heading">2022</h4>
+              <ul class="grid awards-page__awards-grid px-0">
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="awards-page__awards-group">
+              <h4 class="display-0 fw-bold text-outline awards-page__awards-group-heading">2021</h4>
+              <ul class="grid awards-page__awards-grid px-0">
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="awards-industry" role="tabpanel" aria-labelledby="awards-industry-tab" tabindex="0">
+            <h3 class="visually-hidden">Industry awards</h3>
+            <div class="awards-page__awards-group">
+              <h4 class="display-0 fw-bold text-outline awards-page__awards-group-heading">2022</h4>
+              <ul class="grid awards-page__awards-grid px-0">
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor.
+                    </h5>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="awards-corporate" role="tabpanel" aria-labelledby="awards-corporate-tab" tabindex="0">
+            <h3 class="visually-hidden">Corporate awards</h3>
+            <div class="awards-page__awards-group">
+              <h4 class="display-0 fw-bold text-outline awards-page__awards-group-heading">2022</h4>
+              <ul class="grid awards-page__awards-grid px-0">
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                    <div class="awards-page__awards-footer">
+                      2021, 2015, 2014, 2013, 2012, 2011, 2010
+                    </div>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                    <div class="awards-page__awards-footer">
+                      2021
+                    </div>
+                  </div>
+                </li>
+                <li class="g-col-6 g-col-sm-4 g-col-md-3 card awards-page__awards-card shadow-lg rounded-0">
+                  <img src="./img/db/award-example-1.webp" class="card-img-top awards-page__awards-image" alt="Award name"/>
+                  <div class="card-body awards-page__awards-body">
+                    <h5 class="lead lead-xl fw-medium">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ex quia recusandae.
+                    </h5>
+                    <div class="lead lead-lg awards-page__awards-footer">
+                      2021, 2015, 2014, 2013, 2010
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Tabs content end -->
+      </div>
+      <!-- Tabs end -->
+    </div>
+  </section>
+  <section class="pre-footer">
+    <div class="pre-footer__container">
+      <h2 class="pre-footer__heading">Giving Back to the Places and Communities We Call Home</h2>
+      <p class="pre-footer__paragraph">
+        At Fellowes, we think carefully about our responsibility to build a healthier, more equitable world for everyone.
+      </p>
+      <ul class="pre-footer__list">
+        <li class="pre-footer__item">
+          <img src="./img/db/family-card.webp" alt="Family card image"/>
+        </li>
+        <li class="pre-footer__item">
+          <img src="./img/db/give-card.webp" alt="Give card image"/>
+        </li>
+        <li class="pre-footer__item">
+          <img src="./img/db/earth-card.webp" alt="Earth card image"/>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="page-decoration vertical-lines container-xxl">
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+  </div>
+</main>
+
+
+</body>
+</html>
