@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Latest News & Articles</title>
+
+
+  <script type="module" crossorigin src="./js/db-latest-news.js"></script>
+  <link rel="modulepreload" crossorigin href="./js/db-modulepreload-polyfill.js">
+  <link rel="modulepreload" crossorigin href="./js/db-bootstrap.esm.js">
+	<link rel="stylesheet" href="./css/db-core.css">
+	<link rel="stylesheet" href="./css/db-latest-news.css">
+</head>
+<body>
+<main class="news">
+  <!-- HERO START -->
+  <section class="news-hero text-white min-vh-100 bg-image d-flex align-items-xl-center align-items-lg-end align-items-end">
+    <div class="container pt-5 px-lg-5 pb-5 pb-lg-0 pb-0">
+      <div class="row
+                d-flex flex-xl-row flex-lg-column flex-column
+                justify-content-xl-between
+                justify-content-lg-center
+                justify-content-center
+                align-items-xl-center align-items-lg-start align-items-start">
+        <div class="col-xl-8 col-lg-12 mb-4">
+          <h1 class="h1">
+            Latest News <span class="d-block text-nowrap ms-xl-5 ms-lg-0">& Articles</span>
+          </h1>
+        </div>
+        <div class="col-xl-3 col-lg-5 col-lg-5 col-md-12 mb-5">
+          <div class="mt-xl-0 mt-lg-3">
+            <p>
+              Stay up to date with the latest news, articles, and stories about Fellowes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HERO END -->
+  <!-- TABS NEWS START -->
+  <section class="news-tabs-section pb-5 ">
+    <div class="position-relative container-xxl py-xl-5 py-lg-5 py-5">
+      <!-- Tabs start -->
+      <div class="mt-5 pt-1 pt-xl-5 pt-lg-5">
+        <div class="pb-lg-5">
+          <div class="container col-12 col-xl-9 col-lg-11 d-flex flex-column" id="news-tabs">
+            <div class="d-none d-xl-block d-lg-block mb-4">
+              <!-- Tabs navs -->
+              <ul class="nav nav-tabs d-flex justify-content-start gap-3 row-gap-1" id="v-tabs-tab" role="tablist">
+                <li class="nav-item lead lead-lg text-center">
+                  <a
+                    class="nav-link active text-dark text-uppercase py-2 px-3"
+                    id="news-tabs-room-tab"
+                    data-bs-toggle="tab"
+                    href="#news-tabs-room"
+                    role="tab"
+                    aria-controls="news-tabs-room"
+                    aria-selected="true">PRESS ROOM</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link text-dark text-uppercase py-2 px-3"
+                    id="news-tabs-in-news-tab"
+                    data-bs-toggle="tab"
+                    href="#news-tabs-in-news"
+                    role="tab"
+                    aria-controls="news-tabs-in-news"
+                    aria-selected="false">IN THE NEWS</a>
+                </li>
+              </ul>
+              <!-- Tab navs -->
+            </div>
+
+            <!-- Tab dropdown start -->
+            <div class="dropdown-tabs d-block d-xl-none d-lg-none
+            position-fixed z-3 start-50 bottom-0
+            translate-middle-x pb-3">
+              <div class="dropdown dropup">
+                <button class="dropdown-toggle py-2 px-4 text-uppercase lead lead-sm"
+                        type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                  PRESS ROOM
+                </button>
+                <ul class="dropdown-menu w-100 my-3 py-0 overflow-hidden" data-name="news" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <button class="dropdown-item py-2 text-center text-uppercase active" data-value="#news-tabs-room">PRESS ROOM</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item py-2 text-center text-uppercase" data-value="#news-tabs-in-news">IN THE NEWS</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- Tab dropdown end-->
+            </div>
+            <!-- Tab dropdown end -->
+
+            <div class="d-block pt-1 pt-xl-5 pt-lg-5">
+              <!-- Tabs content start -->
+              <div class="tab-content gap-1" id="news-tabs-tabContent">
+                <div class="tab-pane fade show active" id="news-tabs-room" role="tabpanel" aria-labelledby="news-tabs-room">
+                  <div class="d-block">
+                    <!-- News items start -->
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                            <div class="d-block">
+                              <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                                <div class="d-flex align-items-center gap-4 mb-3">
+                                  <div class="btn btn-dark">Product Updates</div>
+                                  <p>Nov 11, 2021</p>
+                                </div>
+                                <div class="mb-2">
+                                  <h5 class="h5">Fellowes Featured in "Conversation at ISSA 2021: Live in Vegas" Podcast</h5>
+                                </div>
+                                <p>Jason Jones, Fellowes Director of Strategic Channel Development - Air Treatment discusses air purification</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-01.jpg" alt="news-01-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Product Updates</div>
+                                <p>Jun 6, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Announces New Design and Experience Center at Chicago's Energetic Fulton Market District in 2023</h5>
+                              </div>
+                              <p>ITASCA, ILL. – JUNE 6, 2022 — Fellowes Brands, a family-owned company providing trusted workplace solutions for 105 years, today announced it will open a new Design and </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-02.jpg" alt="news-02-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Event Updates</div>
+                                <p>Nov 11, 2021</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Named on Forbes 2022 List of America's Best Employers for a Second Consecutive Year</h5>
+                              </div>
+                              <p>For a second consecutive year, Fellowes Brands has been recognized amongst the country’s top 40 midsized employers. This prestigious award is presented by Forbes and Statista Inc.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-03.jpg" alt="news-03-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Event Updates</div>
+                                <p>Jan 19, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Over 250k Fellowes AeraMax Air Purifiers are Improving Indoor Air Quality in U.S. Schools</h5>
+                              </div>
+                              <p>Fellowes air purifiers have become a distinct feature in classrooms across 45 states as educators and facilities managers create safer indoor environments for their school populations.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-04.jpg" alt="news-04-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Product Updates</div>
+                                <p>Jun 6, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Announces New Design and Experience Center at Chicago's Energetic Fulton Market District in 2023</h5>
+                              </div>
+                              <p>ITASCA, ILL. – JUNE 6, 2022 — Fellowes Brands, a family-owned company providing trusted workplace solutions for 105 years, today announced it will open a new Design and </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-02.jpg" alt="news-02-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Event Updates</div>
+                                <p>Nov 11, 2021</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Named on Forbes 2022 List of America's Best Employers for a Second Consecutive Year</h5>
+                              </div>
+                              <p>For a second consecutive year, Fellowes Brands has been recognized amongst the country’s top 40 midsized employers. This prestigious award is presented by Forbes and Statista Inc.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-03.jpg" alt="news-03-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- News items end -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="news-tabs-in-news" role="tabpanel" aria-labelledby="news-tabs-in-news-tab">
+                  <div class="d-block">
+                    <!-- News items start -->
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Event Updates</div>
+                                <p>Jan 19, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Over 250k Fellowes AeraMax Air Purifiers are Improving Indoor Air Quality in U.S. Schools</h5>
+                              </div>
+                              <p>Fellowes air purifiers have become a distinct feature in classrooms across 45 states as educators and facilities managers create safer indoor environments for their school populations.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-04.jpg" alt="news-04-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Product Updates</div>
+                                <p>Jun 6, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Announces New Design and Experience Center at Chicago's Energetic Fulton Market District in 2023</h5>
+                              </div>
+                              <p>ITASCA, ILL. – JUNE 6, 2022 — Fellowes Brands, a family-owned company providing trusted workplace solutions for 105 years, today announced it will open a new Design and </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-02.jpg" alt="news-02-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Event Updates</div>
+                                <p>Nov 11, 2021</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Named on Forbes 2022 List of America's Best Employers for a Second Consecutive Year</h5>
+                              </div>
+                              <p>For a second consecutive year, Fellowes Brands has been recognized amongst the country’s top 40 midsized employers. This prestigious award is presented by Forbes and Statista Inc.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-03.jpg" alt="news-03-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Product Updates</div>
+                                <p>Nov 11, 2021</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Featured in "Conversation at ISSA 2021: Live in Vegas" Podcast</h5>
+                              </div>
+                              <p>Jason Jones, Fellowes Director of Strategic Channel Development - Air Treatment discusses air purification</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-01.jpg" alt="news-01-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Product Updates</div>
+                                <p>Jun 6, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Announces New Design and Experience Center at Chicago's Energetic Fulton Market District in 2023</h5>
+                              </div>
+                              <p>ITASCA, ILL. – JUNE 6, 2022 — Fellowes Brands, a family-owned company providing trusted workplace solutions for 105 years, today announced it will open a new Design and </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-02.jpg" alt="news-02-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Event Updates</div>
+                                <p>Jan 19, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Over 250k Fellowes AeraMax Air Purifiers are Improving Indoor Air Quality in U.S. Schools</h5>
+                              </div>
+                              <p>Fellowes air purifiers have become a distinct feature in classrooms across 45 states as educators and facilities managers create safer indoor environments for their school populations.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-04.jpg" alt="news-04-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="news-item w-100 p-0 pb-4 pt-4">
+                      <div class="row p-0">
+                        <div class="col-xl-9 order-xl-0 col-lg-9 order-lg-0 col-12 order-1 d-block">
+                          <div class="d-block">
+                            <div class="w-100 d-flex flex-xl-column flex-lg-column flex-column pt-xl-3 pt-lg-3 pt-4 pe-xl-5 pe-lg-5 pe-0">
+                              <div class="d-flex align-items-center gap-4 mb-3">
+                                <div class="btn btn-dark">Product Updates</div>
+                                <p>Jun 6, 2022</p>
+                              </div>
+                              <div class="mb-2">
+                                <h5 class="h5">Fellowes Brands Announces New Design and Experience Center at Chicago's Energetic Fulton Market District in 2023</h5>
+                              </div>
+                              <p>ITASCA, ILL. – JUNE 6, 2022 — Fellowes Brands, a family-owned company providing trusted workplace solutions for 105 years, today announced it will open a new Design and </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 order-xl-1 col-lg-3 order-lg-1 col-12 order-0 d-xl-block d-lg-block d-block">
+                          <div class="d-flex justify-content-end h-100">
+                            <img class="news-preview" src="./img/db/news-02.jpg" alt="news-02-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- News items end -->
+                  </div>
+                </div>
+              </div>
+              <!-- Tabs content start -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs end -->
+    </div>
+  </section>
+  <!-- TABS NEWS END -->
+  <!-- PRE FOOTER START -->
+  <section class="pre-footer">
+    <div class="pre-footer__container">
+      <h2 class="pre-footer__heading">Giving Back to the Places and Communities We Call Home</h2>
+      <p class="pre-footer__paragraph">
+        At Fellowes, we think carefully about our responsibility to build a healthier, more equitable world for everyone.
+      </p>
+      <ul class="pre-footer__list">
+        <li class="pre-footer__item">
+          <img src="./img/db/family-card.webp" alt="Family card image"/>
+        </li>
+        <li class="pre-footer__item">
+          <img src="./img/db/give-card.webp" alt="Give card image"/>
+        </li>
+        <li class="pre-footer__item">
+          <img src="./img/db/earth-card.webp" alt="Earth card image"/>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- PRE FOOTER END -->
+  <div class="page-decoration vertical-lines container-xxl">
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+  </div>
+</main>
+
+
+</body>
+</html>

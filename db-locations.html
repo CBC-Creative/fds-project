@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>A Global Footprint</title>
+
+
+  <script type="module" crossorigin src="./js/db-locations.js"></script>
+  <link rel="modulepreload" crossorigin href="./js/db-modulepreload-polyfill.js">
+  <link rel="modulepreload" crossorigin href="./js/db-bootstrap.esm.js">
+	<link rel="stylesheet" href="./css/db-core.css">
+	<link rel="stylesheet" href="./css/db-locations.css">
+</head>
+<body>
+<main class="locations">
+  <!-- HERO START -->
+  <section class="locations-hero text-white min-vh-100 bg-image d-flex align-items-xl-center align-items-lg-end align-items-end">
+    <div class="container pt-5 px-lg-5 pb-5 pb-lg-0 pb-0">
+      <div class="row
+                d-flex flex-xl-row flex-lg-column flex-column
+                justify-content-xl-between
+                justify-content-lg-center
+                justify-content-center
+                align-items-xl-center align-items-lg-start align-items-start">
+        <div class="col-xl-7 col-lg-12 mb-4">
+          <h1 class="h1">
+            A Global <span class="d-block text-nowrap ms-xl-5 ms-lg-0">Footprint</span>
+          </h1>
+        </div>
+        <div class="col-xl-3 col-lg-5 col-lg-5 col-md-12 mb-5">
+          <div class="mt-xl-0 mt-lg-3">
+            <p>
+              With 23 locations in the US and around the world, Fellowes Brands provides innovative solutions to a global community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HERO END -->
+  <!-- TABS LOCATIONS START -->
+  <section class="locations-tabs-section pb-5 ">
+    <div class="position-relative container-xxl py-xl-5 py-lg-5 py-5">
+      <div class="position-absolute top-0 start-0 w-100">
+        <h2 class="locations-decorate-heading text-uppercase text-center d-block">Locations</h2>
+      </div>
+      <div class="position-relative d-block pt-5">
+        <div class="pt-0">
+          <h3 class="text-center pt-5 mb-4">Supported Countries</h3>
+          <p class="text-center">Fellowes currently has 23 locations in the US and around the world</p>
+        </div>
+      </div>
+
+      <!-- Tabs start -->
+      <div class="mt-5 pt-1 pt-xl-5 pt-lg-5">
+        <div class="pb-lg-5">
+          <div class="container d-flex flex-column" id="countries-tabs">
+            <div class="d-none d-xl-block d-lg-block mb-4">
+              <!-- Tabs navs -->
+              <ul class="nav nav-tabs d-flex justify-content-center gap-3 row-gap-1" id="v-tabs-tab" role="tablist">
+                <li class="nav-item lead lead-lg text-center">
+                  <a
+                    class="nav-link active text-dark py-2 px-3 fs-6"
+                    id="v-tabs-north-tab"
+                    data-bs-toggle="tab"
+                    href="#v-tabs-north"
+                    role="tab"
+                    aria-controls="v-tabs-north"
+                    aria-selected="true">North America</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link text-dark py-2 px-3 fs-6"
+                    id="v-tabs-south-tab"
+                    data-bs-toggle="tab"
+                    href="#v-tabs-south"
+                    role="tab"
+                    aria-controls="v-tabs-south"
+                    aria-selected="false">South America</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link text-dark py-2 px-3 fs-6"
+                    id="v-tabs-asia-tab"
+                    data-bs-toggle="tab"
+                    href="#v-tabs-asia"
+                    role="tab"
+                    aria-controls="v-tabs-asia"
+                    aria-selected="false">Asia</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link text-dark py-2 px-3 fs-6"
+                    id="v-tabs-europe-tab"
+                    data-bs-toggle="tab"
+                    href="#v-tabs-europe"
+                    role="tab"
+                    aria-controls="v-tabs-europe"
+                    aria-selected="false">Europe</a>
+                </li>
+              </ul>
+              <!-- Tab navs -->
+            </div>
+
+            <!-- Tab dropdown start -->
+            <div class="dropdown-tabs d-block d-xl-none d-lg-none
+            position-fixed z-3 start-50 bottom-0
+            translate-middle-x pb-3">
+              <div class="dropdown dropup">
+                <button class="dropdown-toggle py-2 px-4 text-uppercase lead lead-sm"
+                        type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        North America
+                </button>
+                <ul class="dropdown-menu w-100 my-3 py-0 overflow-hidden" data-name="countries" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <button class="dropdown-item py-2 text-center text-uppercase active" data-value="#v-tabs-north">North America</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item py-2 text-center text-uppercase" data-value="#v-tabs-south">South America</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item py-2 text-center text-uppercase" data-value="#v-tabs-asia">Asia</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item py-2 text-center text-uppercase" data-value="#v-tabs-europe">Europe</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- Tab dropdown end-->
+            </div>
+            <!-- Tab dropdown end -->
+
+            <div class="d-block pt-1 pt-xl-5 pt-lg-5">
+              <!-- Tabs content start -->
+              <div class="tab-content gap-1" id="v-tabs-tabContent">
+                <div class="tab-pane fade show active" id="v-tabs-north" role="tabpanel" aria-labelledby="v-tabs-north-tab">
+                  <div class="d-block">
+                    <div class="row position-relative">
+                      <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
+                        <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
+                          <img class="w-100 h-auto object-cover" src="./img/db/north.jpg" alt="north-img">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-12 d-block bg-white">
+                        <!-- Card list Start -->
+                        <div class="d-block">
+                          <!-- Card items start -->
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/north.svg" alt="north">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Japan K.K.</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          7F Tokyo Nissan Nishi-Gotanda
+                                          Shinagawa-ku Tokyo
+                                          141-0031, Japan
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +81.3.5496.2401
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/illinois.svg" alt="illinois">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Distribution Center - Illinois1</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          Fellowes, Inc.
+                                          2850 Duke Parkway
+                                          Aurora, IL 60502
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          (630) 893-1600
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-china.svg" alt="china">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Singapore pte Ltd.</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          Blk 1. Tanjong Pagar Distripark
+                                          4 - 10 Keppel Road
+                                          Singapore 089064
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-singapore.svg" alt="singapore">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +6-03-5122-1231
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-tokio.svg" alt="tokio">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">China - DongguanRepresentative Office </h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          4F, Lianhe Commercial Building,
+                                          Dongcheng Nan Road, Dongcheng Street
+                                          Dongguan City, Guangdong P.R.C.
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/illinois.svg" alt="illinois">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card items end -->
+                        </div>
+                        <!-- Card list End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-tabs-south" role="tabpanel" aria-labelledby="v-tabs-south-tab">
+                  <div class="d-block">
+                    <div class="row position-relative">
+                      <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
+                        <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
+                          <img class="w-100 h-auto object-cover" src="./img/db/europe.jpg" alt="north-img">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-12 d-block">
+                        <!-- Card list Start -->
+                        <div class="d-block">
+                          <!-- Card items start -->
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/north.svg" alt="north">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Japan K.K.</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          7F Tokyo Nissan Nishi-Gotanda
+                                          Shinagawa-ku Tokyo
+                                          141-0031, Japan
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +81.3.5496.2401
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-china.svg" alt="china">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Singapore pte Ltd.</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          Blk 1. Tanjong Pagar Distripark
+                                          4 - 10 Keppel Road
+                                          Singapore 089064
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-singapore.svg" alt="singapore">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +6-03-5122-1231
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-tokio.svg" alt="tokio">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">China - DongguanRepresentative Office </h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          4F, Lianhe Commercial Building,
+                                          Dongcheng Nan Road, Dongcheng Street
+                                          Dongguan City, Guangdong P.R.C.
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/illinois.svg" alt="illinois">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card items end -->
+                        </div>
+                        <!-- Card list End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-tabs-asia" role="tabpanel" aria-labelledby="v-tabs-asia-tab">
+                  <div class="d-block">
+                    <div class="row position-relative">
+                      <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
+                        <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
+                          <img class="w-100 h-auto object-cover" src="./img/db/north.jpg" alt="north-img">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-12 d-block">
+                        <!-- Card list Start -->
+                        <div class="d-block">
+                          <!-- Card items start -->
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/north.svg" alt="north">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Japan K.K.</h6>
+                                    <div class="mt-2">
+                                      <a href="#" class="d-flex align-items-start text-reset text-decoration-none">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          7F Tokyo Nissan Nishi-Gotanda
+                                          Shinagawa-ku Tokyo
+                                          141-0031, Japan
+                                        </p>
+                                      </a>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +81.3.5496.2401
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-singapore.svg" alt="singapore">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +6-03-5122-1231
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-tokio.svg" alt="tokio">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">China - DongguanRepresentative Office </h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          4F, Lianhe Commercial Building,
+                                          Dongcheng Nan Road, Dongcheng Street
+                                          Dongguan City, Guangdong P.R.C.
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/illinois.svg" alt="illinois">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card items end -->
+                        </div>
+                        <!-- Card list End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-tabs-europe" role="tabpanel" aria-labelledby="v-tabs-europe-tab">
+                  <div class="d-block">
+                    <div class="row position-relative">
+                      <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
+                        <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
+                          <img class="w-100 h-auto object-cover" src="./img/db/north.jpg" alt="north-img">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-12 d-block">
+                        <!-- Card list Start -->
+                        <div class="d-block">
+                          <!-- Card items start -->
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-singapore.svg" alt="singapore">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +6-03-5122-1231
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/asia-tokio.svg" alt="tokio">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">China - DongguanRepresentative Office </h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          4F, Lianhe Commercial Building,
+                                          Dongcheng Nan Road, Dongcheng Street
+                                          Dongguan City, Guangdong P.R.C.
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="countries-item w-100 p-4 p-lg-4 p-xl-4 ps-0 ps-xl-0 ps-lg-0">
+                            <div class="d-block">
+                              <div class="gap-xl-2 gap-lg-2 gap-2
+                                d-xl-flex d-lg-flex d-flex
+                                flex-xl-row flex-lg-row flex-row
+                                align-items-xl-start align-items-lg-start align-items-start">
+                                <div class="d-block me-xl-4 me-lg-4 me-4">
+                                  <img class="h-auto object-cover" src="./img/db/illinois.svg" alt="illinois">
+                                </div>
+                                <div class="gap-xl-5 gap-lg-5 w-100 gap-3 d-xl-flex d-lg-flex d-flex justify-content-lg-between justify-content-start
+                                      flex-xl-row flex-lg-row flex-column
+                                       align-items-xl-center align-items-lg-center align-items-start">
+                                  <div class="d-block">
+                                    <h6 class="h6 mb-0 py-1">Fellowes Hi-Q Malaysia Sdn Bhd</h6>
+                                    <div class="mt-2">
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/location.svg" alt="location">
+                                        <p class="col-xl-9 col-lg-10 col-12 ms-2 mb-0">
+                                          27 Jalan Salun 33/26 Seksyen
+                                          33 Shah Alam Technology Park
+                                          40400 Shah Alam Selangor Malaysia
+                                        </p>
+                                      </div>
+                                      <div class="d-flex align-items-start">
+                                        <img class="h-auto object-cover py-1" src="./img/db/phone.svg" alt="phone">
+                                        <p class="w-xl-75 w-lg-75 w-100 ms-2 mb-0">
+                                          +65.6221.3811
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="fw-semibold">Website</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card items end -->
+                        </div>
+                        <!-- Card list End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tabs content start -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs end -->
+    </div>
+  </section>
+  <!-- TABS LOCATIONS END -->
+
+  <!-- PRE FOOTER START -->
+  <section class="pre-footer">
+    <div class="pre-footer__container">
+      <h2 class="pre-footer__heading">Giving Back to the Places and Communities We Call Home</h2>
+      <p class="pre-footer__paragraph">
+        At Fellowes, we think carefully about our responsibility to build a healthier, more equitable world for everyone.
+      </p>
+      <ul class="pre-footer__list">
+        <li class="pre-footer__item">
+          <img src="./img/db/family-card.webp" alt="Family card image"/>
+        </li>
+        <li class="pre-footer__item">
+          <img src="./img/db/give-card.webp" alt="Give card image"/>
+        </li>
+        <li class="pre-footer__item">
+          <img src="./img/db/earth-card.webp" alt="Earth card image"/>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- PRE FOOTER END -->
+
+  <div class="page-decoration vertical-lines container-xxl">
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+    <span class="vertical-line"></span>
+  </div>
+</main>
+
+
+</body>
+</html>
