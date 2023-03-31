@@ -163,3 +163,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 });
+
+const videoPlayBtn = document.querySelector('#custom-play-icon');
+const customHomeVid = document.querySelector('#homepage-video');
+
+$(videoPlayBtn).click(function () {
+  $(videoPlayBtn).addClass('hide');
+  $(customHomeVid).addClass('show');
+  $(customHomeVid).trigger('play');
+});
+
+$(customHomeVid).on('ended', function () {
+  $(videoPlayBtn).removeClass('hide');
+  $(customHomeVid).removeClass('show');
+});

@@ -1245,50 +1245,20 @@
       </section>
 
       <!-- Video Popup Section Begins -->
-      <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#homepageVideo">
         <section
-          class="d-flex align-items-center text-center text-white bg-image position-relative mh-700"
+          class="d-flex align-items-center text-center text-white bg-image position-relative"
           aria-label="section"
           style="
             background-color: #000;
             background-image: url('img/homepage-imgs/homepage-video-banner.jpg');
           "
         >
-          <div class="container">
-            <div class="row">
-              <div class="video-overlay col-12 position-relative">
-                <img class="playimg" src="img/play-btn.svg" />
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="homepageVideo"
-                  tabindex="-1"
-                  aria-labelledby="homepageVideoLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content rounded-0 position-relative">
-                      <div
-                        class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-                      >
-                        <button
-                          type="button"
-                          class="btn-close m-0 p-0"
-                          data-mdb-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body p-0 m-0 bg-black">
-                        <video width="100%" controls autoplay muted>
-                          <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="video-overlay position-relative">
+                <img id="custom-play-icon" class="playimg" src="img/play-btn.svg" />
+                <video id="homepage-video" class="homepage-video" width="100%" controls>
+                  <source src="img/homepage-imgs/homepage-video.mp4" type="video/mp4" />
+                </video>
               </div>
-            </div>
-          </div>
         </section>
       </a>
 
@@ -1315,7 +1285,7 @@
                   class="homepage-patent-slide-item text-uppercase text-white d-flex align-items-center justify-content-center justify-content-lg-start"
                 >
                   <h5 class="position-relative">
-                    <i class="fa-solid fa-square"></i>
+            
                     <span class="homepage-patent-slide-item-text">Over 250 Patents</span>
                   </h5>
                 </div>
@@ -1332,7 +1302,7 @@
                   class="homepage-patent-slide-item text-uppercase text-white d-flex align-items-center justify-content-center justify-content-lg-start"
                 >
                   <h5 class="position-relative">
-                    <i class="fa-solid fa-square"></i>
+            
                     <span class="homepage-patent-slide-item-text"
                       >50+ New Products Brought to Market Each Year</span
                     >
@@ -1351,7 +1321,7 @@
                   class="homepage-patent-slide-item text-uppercase text-white d-flex align-items-center justify-content-center justify-content-lg-start"
                 >
                   <h5 class="position-relative">
-                    <i class="fa-solid fa-square"></i>
+            
                     <span class="homepage-patent-slide-item-text">200+ Design Awards</span>
                   </h5>
                 </div>
@@ -1368,7 +1338,7 @@
                   class="homepage-patent-slide-item text-uppercase text-white d-flex align-items-center justify-content-center justify-content-lg-start"
                 >
                   <h5 class="position-relative">
-                    <i class="fa-solid fa-square"></i>
+            
                     <span class="homepage-patent-slide-item-text"
                       >24 Facilities with Over 2000 Employees</span
                     >

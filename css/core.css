@@ -725,7 +725,7 @@ a.two-col-section__link::after {
 }
 
 .fge-logo {
-  min-height: 62.5px;
+  height: 62.5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -853,13 +853,6 @@ a.two-col-section__link::after {
 
   .last-section {
     padding-block: 0;
-  }
-
-  .last-section-desc-centered {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 1;
   }
 }
 
