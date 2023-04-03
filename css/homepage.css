@@ -658,35 +658,8 @@ h5.grid-title {
   font-weight: 500;
 }
 
-.playimg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  transition: all 0.3s ease-out;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .playimg {
-    width: 100px;
-  }
-}
-
-.playimg.hide {
-  opacity: 0;
-  z-index: -10;
-}
-
 .homepage-video {
   display: block;
-  z-index: -10;
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.homepage-video.show {
-  opacity: 1;
   z-index: 10;
 }
 
