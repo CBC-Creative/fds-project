@@ -1,0 +1,293 @@
+.aqm-services-banner h3{
+  font-size: 1.313rem;
+  line-height: var(--fds-fs-725);
+}
+.aqm-services-banner p{
+  font-size: var(--fds-fs-350);
+  line-height: var(--fds-fs-500);
+  font-weight: 600;
+}
+.aqm-services-banner-image img {
+  height: 700px !important;
+  object-position: top center;
+}
+.aqm-service-title{
+  font-size: var(--fds-fs-775);
+line-height: var(--fds-fs-860);
+text-transform: uppercase;
+font-weight: 900;
+}
+.aqm-servcie-p-tag{
+  font-size: 1.438rem;
+  line-height: var(--fds-fs-850);
+  color: #666666;
+}
+.custom-gap-aramax{
+  gap: 20px;
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-600);
+  color: #666666;
+}
+.benefit-img svg{
+  max-width: 80px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  fill: #04AFDE;
+}
+.text-custom-gray{color: #666666;}
+.service_descriptions_lists{
+  font-size: var(--fds-fs-350);
+  line-height: var(--fds-fs-710);
+  color: #666666;
+  padding-left: 1.3rem;
+}
+.service_descriptions_lists li{
+  margin-bottom: 0.3rem;
+}
+.btn-service-landing{
+  border: 2px solid #2F466A;
+    display: inline-block;
+    text-align: center;
+    background: #2F466A;
+    color: #fff;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    padding: 3px 32px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.btn-service-landing:hover {
+  background: transparent !important;
+  color: #2F466A !important;
+}
+.text-light-blue{
+  color: #04afde;
+}
+.author-bio{
+  font-size: 0.938rem;
+  line-height: var(--fds-fs-710);
+  color: #666666;
+}
+.border-radius-webinar{
+  border-radius: 30px;
+}
+a.back-btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2f466a;
+  position: relative;
+  padding-left: 14px;
+  font-weight: 600;
+}
+.back-btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  top: 1.5px;
+  border-style: solid;
+  border-width: 5px 8.7px 5px 0;
+  border-color: transparent #2f466a transparent transparent;
+}
+.fellowes_webinars_video{
+  position: relative;
+}
+.fellowes_webinars_video .videoWrapper169 {
+  padding-top: 56%;
+}
+.fellowes_webinars_video .videoWrapper {
+  position: relative;
+  width: 74%;
+  height: 0;
+  margin: 0 auto;
+}
+.fellowes_webinars_video .videoIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.fellowes_webinars_video .videoPoster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  text-indent: -999em;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: opacity 800ms, height 0s;
+  -moz-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+  background-size: cover;
+  box-shadow: -1px 6px 32px #ccc;
+}
+.fellowes_webinars_video .videoWrapperActive .videoPoster {
+  opacity: 0;
+  height: 0;
+  -webkit-transition-delay: 0s, 800ms;
+  -moz-transition-delay: 0s, 800ms;
+  transition-delay: 0s, 800ms;
+}
+.fellowes_webinars_video .stop_video {
+  position: absolute;
+  top: 7px;
+  border: 0;
+  background-color: #2d91a5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  left: 15px;
+}
+
+.aqm-support-faq.safeairstoriestabbox .nav-pills .nav-link{
+  position: relative;
+  font-size: 0.938rem;
+  color: #2f466a;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 0;
+    padding-left: 15px;
+}
+.aqm-support-faq.safeairstoriestabbox .nav-pills .nav-link::before{
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #000;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -2.5px;
+}
+.aqm-support-faq .tab-box{
+  background: transparent;
+  padding: 0;
+  padding-right: calc(var(--mdb-gutter-x)*0.5);
+    padding-left: calc(var(--mdb-gutter-x)*0.5);
+}
+.aqm-support-faq .tab-dropdown{
+  border: 1px solid #2f466a;
+}
+.tab-title-faq{
+  font-size: var(--fds-fs-600);
+  color: #2f466a;
+  font-weight: 700;
+}
+.tab-pane{
+  font-size: 0.938rem;
+  color: #666666;
+}
+.tab-pane ul{
+  padding-left: 15px;
+}
+.tab-pane ul li{
+  margin-bottom: 10px;
+}
+.tab-pane ul li::marker{
+  color: #000;
+}
+.tab-pane a, .tab-pane a:hover, .tab-pane a:focus{
+  color: #04afde;
+}
+.pl-0{
+  padding-left: 0 !important;
+}
+.try_contacting_us h4 {
+  font-size: 26px;
+  color: #2f466a;
+  font-weight: 700;
+}
+.try_contacting_us p {
+  font-size: 16px;
+}
+.try_contacting_us {
+  background-color: #f7f7f7;
+  padding: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (min-width:768px){
+  .service_descriptions_lists{
+    font-size: var(--fds-fs-600);
+      line-height: var(--fds-fs-775);
+  }
+  .benefit-img svg{
+    max-width: 150px;
+  }
+  .aqm-services-banner h3{
+    font-size: var(--fds-fs-900);
+    line-height: 3rem;
+  }
+  .aqm-services-banner p{
+    font-size: var(--fds-fs-725);
+    line-height: var(--fds-fs-775);
+    width: 80%;
+  }
+  .fellowes_space_content.aqm-services-banner{
+    top: 28%;
+  }
+  .aqm-service-title{
+    font-size: 2.813rem;
+  line-height: var(--fds-fs-925);
+  }
+  .aqm-servcie-p-tag{
+    font-size: 1.625rem;
+    line-height: 2.438rem;
+  }
+}
+@media (min-width:1200px){
+  .aqm-support-faq .tab-box{
+    border-right: 2px solid rgba(47, 70, 106, 0.6);
+  }
+}
+@media (max-width:1199.98px){
+  .tab-box .nav-pills.showpills{
+    padding: 1rem;
+  }
+}
+@media (max-width:767px){
+  .aqm-services-banner{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    left: 50%;
+  }
+  .form-sub-title{
+    font-size: var(--fds-fs-500);
+    line-height: normal;
+  }
+}
+
+@media (max-width:575px){
+  .aqm-services-banner-image img {
+    height: 500px !important;
+    width: auto;
+    max-width: none;
+    object-position: -232px 0px;
+}
+}

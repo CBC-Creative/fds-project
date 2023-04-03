@@ -122,7 +122,38 @@
     no-repeat padding-box;
   opacity: 1;
 }
+.air-quality-sub-title{
+  font-size: var(--fds-fs-700);
+  line-height: var(--fds-fs-750);
+  font-weight: 300;
+}
+.text-blue{
+  color: #778495;
+}
+.fds-light-gray{
+  background: var(--fds-grey-200);
+}
+.dash-board-title{
+  font-size: var(--fds-fs-700);
+  line-height: var(--fds-fs-775);
+}
+.dashboard-list li{
+  margin-bottom: 1rem;
+}
 @media (min-width: 768px) {
+  .dash-board-title{
+    font-size: var(--fds-fs-800);
+    line-height: 2.625rem;
+  }
+  .dashboard-list{
+    font-size: var(--fds-fs-500);
+    line-height: 1.313rem;
+    padding-left: 1.5rem;
+  }
+  .air-quality-sub-title{
+    font-size: var(--fds-fs-825);
+    line-height: var(--fds-fs-880);
+  }
   .left-md-underline:after {
     left: 0;
     transform: none;
@@ -220,7 +251,13 @@
   width: 100%;
   text-align: center;
 }
-
+.view-point-list{
+  font-size: var(--fds-fs-250);
+  line-height: var(--fds-fs-500);
+}
+.view-point-list li{
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 768px) {
   .pro-image-title {
     left: 0.5rem;
@@ -633,6 +670,10 @@
 }
 
 @media (min-width: 992px) {
+  .viewpoint-content-box{
+    width: 80%;
+    margin: 0 auto;
+  }
   .envirosmart-content {
     padding: 2rem;
   }
@@ -793,6 +834,10 @@
 }
 
 @media (min-width: 1200px) {
+  .viewpoint-content-box{
+    width: 50%;
+    margin: 0 auto;
+  }
   .custom-padding-top {
     padding-top: 8rem;
   }
