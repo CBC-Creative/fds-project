@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/mdb-css/plugins/css/all.min.css" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/aeramax.css" />
+    <link rel="stylesheet" href="css/protects-register.css" />
   </head>
 
   <body style="min-height: 200vh; position: relative">
@@ -35,7 +37,268 @@
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
-      CODE GOES HERE
+      <section class="section-spacing text-center overflow-hidden">
+        <div class="container">
+          <h1 class="text-aetamax-blue aeramax-page-title">
+            Get the most out of your Fellowes air purifier.
+          </h1>
+          <div class="fw-500 tab-content-p-tag">
+            The Fellowes Protects Program lets you enjoy even more benefits:
+          </div>
+          <div class="row pt-5 gx-md-5">
+            <div class="col-md-4 col-12 mb-md-0 mb-5">
+              <div class="mb-4">
+                <img src="img/protects-register/protects-register-icon-1.svg" class="img-fluid" />
+              </div>
+              <div class="text-aetamax-blue fw-500 tab-content-p-tag">
+                Extend your warranty an extra year on all Fellowes models
+              </div>              
+            </div>
+            <div class="col-md-4 col-12 mb-md-0 mb-5">
+              <div class="mb-4">
+                <img src="img/protects-register/protects-register-icon-2.svg" class="img-fluid" />
+              </div>
+              <div class="text-aetamax-blue fw-500 tab-content-p-tag">
+                Receive filter reminder emails that help your air purifiers provide maximum protection
+              </div>              
+            </div>
+            <div class="col-md-4 col-12 mb-md-0 mb-5">
+              <div class="mb-4">
+                <img src="img/protects-register/protects-register-icon-3.svg" class="img-fluid" />
+              </div>
+              <div class="text-aetamax-blue fw-500 tab-content-p-tag">
+                Access to exclusive assets that give your staff, customers, or visitors peace of mind that they are breathing clean air
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing form-section text-center pt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1 col-12">              
+              <div class="fw-500 tab-content-p-tag">
+                United States Residents Only. Register Now to Activate Your Extended Warranty:
+              </div>
+
+
+
+              
+              <form method="post"  action="protects-register-additional-info.html" class="mt-5 needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-md-12 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="FirstName" class="form-control form-control-lg" required />
+                        <label class="form-label" for="FirstName">First Name*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="LastName" class="form-control form-control-lg" required/>
+                        <label class="form-label" for="LastName">Last Name*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="email"
+                          id="EmailAddress"
+                          class="form-control form-control-lg"
+                          required />
+                        <label class="form-label" for="EmailAddress">Email Address*</label>
+                        <div class="invalid-feedback">Please provide a valid Email Address</div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="Company" class="form-control form-control-lg" />
+                        <label class="form-label" for="Company">Company</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="tel" id="PhoneNumber" class="form-control form-control-lg" required />
+                        <label class="form-label" for="PhoneNumber">999-999-9999</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="OnlineSellerRetailer" class="form-control form-control-lg" required/>
+                        <label class="form-label" for="OnlineSellerRetailer">Online Seller/Retailer where you purchased Fellowes unit(s)*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-12 fw-400 tab-content-p-tag">
+                    <p>Select your products from the selector below to register and qualify for the extended warranty.
+Adjust the quantity field to register multiple of the same products, if necessary.</p>
+                    <p>*We will use this information to remind you where to purchase filter replacements in the future.</p>
+
+                    <!-- Button trigger modal -->
+<div class="select-prodct-btn mt-5">
+  <button type="button" class="btn btn-primary btn-select-product" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+    <i class="fa fa-plus-circle me-2"></i> Select Products
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade product-selector" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Products Selector</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-md-4 col-12 mb-3">
+                <div class="card text-black">
+                  <img src="img/protects-register/product-1.png"
+                    class="card-img-top img-fluid" alt="AeraMax Pro AM2 Air Purifier" />
+                  <div class="card-body">
+                    <div class="text-start">
+                      <h5 class="card-title">AeraMax Pro AM2 Air Purifier</h5>
+                      <p class="text-muted mb-0">CRC: 94161</p>
+                    </div>                   
+                    
+                  </div>
+                  <div class="card-footer text-muted text-start">
+                    <input
+                      class="form-check-input ms-auto"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault" 
+                      data-bind="attr: { 'id': 'chk_' + id }, checked: selected"
+                      />
+                    <label class="form-check-label" for="flexCheckDefault">Select Item</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 mb-3">
+                <div class="card text-black">
+                  <img src="img/protects-register/product-1.png"
+                    class="card-img-top img-fluid" alt="AeraMax Pro AM2 Air Purifier" />
+                  <div class="card-body">
+                    <div class="text-start">
+                      <h5 class="card-title">AeraMax Pro AM2 Air Purifier</h5>
+                      <p class="text-muted mb-0">CRC: 94161</p>
+                    </div>                   
+                    
+                  </div>
+                  <div class="card-footer text-muted text-start">
+                    <input
+                      class="form-check-input ms-auto"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault1" 
+                      data-bind="attr: { 'id': 'chk_' + id }, checked: selected"
+                      />
+                    <label class="form-check-label" for="flexCheckDefault1">Select Item</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 mb-3">
+                <div class="card text-black">
+                  <img src="img/protects-register/product-1.png"
+                    class="card-img-top img-fluid" alt="AeraMax Pro AM2 Air Purifier" />
+                  <div class="card-body">
+                    <div class="text-start">
+                      <h5 class="card-title">AeraMax Pro AM2 Air Purifier</h5>
+                      <p class="text-muted mb-0">CRC: 94161</p>
+                    </div>                   
+                    
+                  </div>
+                  <div class="card-footer text-muted text-start">
+                    <input
+                      class="form-check-input ms-auto"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault2" 
+                      data-bind="attr: { 'id': 'chk_' + id }, checked: selected"
+                      />
+                    <label class="form-check-label" for="flexCheckDefault2">Select Item</label>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" data-mdb-dismiss="modal" class="btn btn-primary btn-select-product proceed-button">Proceed <i class="fa fa-angle-double-right ms-2"></i><span class="badge bg-dark ms-2" data-bind="text: selections().length">1</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card mb-3 mt-3 selected-product-card">
+                      <div class="card-header bg-blue text-start ">
+                        <h5 class="modal-title text-white mb-0" data-bind="text: 'CRC: ' + crc">CRC: 94162</h5>
+                        <!-- <button type="button" class="btn-close btn-close-white" aria-label="Close" style="position: absolute;right: 15px;top: 15px;"></button> -->
+                        <button type="button" class="btn btn-danger btn-floating remove-product" aria-label="Close" data-mdb-toggle="tooltip" data-bind="click: deselect, attr: { 'title': 'Remove CRC: ' + crc }" data-mdb-original-title="" title="Remove CRC: 94162">
+                        <i class="fas fa-trash"></i>
+                        </button>
+                      </div>
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img data-bind="src: heroshot, attr: { 'alt': name, title: name }" class="img-fluid" src="//assets.fellowes.com/images/products/zoom/AM3-Wall-F-081221.png" alt="AeraMax Pro AM3 Hardwired Air Purifier" title="AeraMax Pro AM3 Hardwired Air Purifier">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body text-start">
+                            <span>Product to be Registered</span>
+                            <h5 class="card-title" data-bind="text: name">AeraMax Pro AM3 Hardwired Air Purifier</h5>
+                            <h5 class="card-title" data-bind="text: 'CRC: ' + crc">CRC: 94162</h5>
+                            <!-- Quantity Picker -->
+                            <!-- Note: overflow:visible added to buttons to avoid ripple issue -->
+                            <div class="input-group plush-minus-btn mt-3">
+                              <span class="input-group-btn">
+                                  <button type="button" class="btn btn-outline-primary btn-floating btn-sm ripple-surface btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <i class="fas fa-minus"></i>
+                                  </button>
+                              </span>
+                              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                              <span class="input-group-btn">
+                                  <button type="button" class="btn btn-outline-primary btn-floating btn-sm ripple-surface btn-number" data-type="plus" data-field="quant[1]">
+                                    <i class="fas fa-plus"></i>
+                                  </button>
+                              </span>
+                          </div>
+                            <!-- Date Picker -->
+                            <!-- Require Custom Binding -->
+                            <!-- Or use Event Handler -->
+                            <div class="form-outline datepicker mt-4 product-date-filed">
+                              <input type="text" class="form-control" id="exampleDatepicker11" />
+                              <label for="exampleDatepicker11" class="form-label">Purchase Date</label>
+                            </div>
+                            <div class="small-font-paragraph text-start">
+                              Optional
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary btn-aeramax">Let's Register</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- End your project here-->
     </main>
@@ -54,5 +317,6 @@
     ></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/protects-register.js"></script>
   </body>
 </html>
