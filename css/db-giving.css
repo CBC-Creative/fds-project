@@ -32,7 +32,7 @@
 }
 
 .hero-active-link::before {
-  content: url("../../images/svg/Polygon\ 2.svg");
+  content: url("../img/db/Polygon\ 2.svg");
   position: absolute;
   bottom: -.8rem;
   left: 50%;
