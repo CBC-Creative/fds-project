@@ -6,11 +6,14 @@
 .h5 { font-size: 1.5rem; }
 .h6 { font-size: 1.25rem; }
 .text-outline { color: #fff; -webkit-text-stroke: max(1px, 0.00625em) #cccccc; }
-.display-2 { font-size: clamp(3.25rem, 14vw, 9.375rem); font-weight: 300; line-height: 1.1em; }
+.display-2 { font-size: clamp(3.25rem, 14vw, 9.375rem); font-weight: 800; line-height: 1.1em; }
 .page-decoration { display: flex; justify-content: space-between;margin: 0 auto; position: absolute; top: 0; left: 0;right: 0;bottom: 0; z-index: -1;}
 .vertical-line { width: 1px; height: 100%; background-color: #F4F4F4;}
 .last-section { padding: 7.5rem 0 10rem;}
 @media screen and (max-width: 992px) { .last-section { padding: 3.125rem 0 2.5rem; }}
+.text-black { color: #2E343D; }
+.lead-lg { font-size: 1.063rem; }
+.lead-sm { font-size: 0.813rem; }
 
 .hero {
   height: 100vh;
@@ -52,6 +55,9 @@
   max-width: 17rem;
   border-radius: 1.25rem;
   width: 100%;
+}
+.giving-dropdown-menu li {
+  border: none !important;
 }
 .btn-group.dropup button {
   letter-spacing: 0.3em;
