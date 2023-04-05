@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/mdb-css/plugins/css/all.min.css" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/aeramax.css" />
+    <link rel="stylesheet" href="css/protects-register.css" />
   </head>
 
   <body style="min-height: 200vh; position: relative">
@@ -35,7 +37,134 @@
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
-      CODE GOES HERE
+      <section class="section-spacing form-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1 col-12"> 
+              <div class="text-aetamax-blue text-center aeramax-page-title mb-3">
+                Great, you're registered!
+              </div>    
+              <div class="form-sub-title fw-700 text-aetamax-blue">
+                Now help us customize Aeramax Protects for you
+              </div>         
+              <div class="fw-400 tab-content-p-tag">
+                With the additional information below we can tailor AeraMax Protects to your needs
+              </div>
+
+              <form method="post" action="protects-register-thankyou.html" class="mt-5">
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="email"
+                          id="EmailAddress"
+                          class="form-control form-control-lg"
+                          disabled />
+                        <label class="form-label" for="EmailAddress">Email Address*</label>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="YourPositionRole" class="form-control form-control-lg"/>
+                        <label class="form-label" for="YourPositionRole">Your Position/Role</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <select class="select form-control-lg">
+                        <option value="Type of Facility">Type of Facility</option>
+                     <option value="Arena/Stadium">Arena/Stadium </option>
+                     <option value="Assisted Living">Assisted Living </option>
+                     <option value="Corporate Office">Corporate Office </option>
+                     <option value="Dental Labs">Dental Labs </option>
+                     <option value="Education">Education </option>
+                     <option value="Healthcare">Healthcare </option>
+                     <option value="Home">Home </option>
+                     <option value="Hospitality (restaurants, hotels, leisure)">Hospitality (restaurants, hotels, leisure) </option>
+                     <option value="Retail">Retail </option>
+                     <option value="Other Facility">Other Facility </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="OtherFacility" class="form-control form-control-lg" disabled/>
+                        <label class="form-label" for="OtherFacility">Other Facility</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4 text-start">
+                      <div class="mb-2">Will you be maintaining the machines?</div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="maintainingthemachines" id="Yes" value="option1" />
+                        <label class="form-check-label" for="Yes">Yes</label>
+                      </div>
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="maintainingthemachines" id="No" value="option2" />
+                        <label class="form-check-label" for="No">No</label>
+                      </div>                      
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4 text-start">
+                      <div class="mb-2">Will you be responsible for purchasing filters?</div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="purchasingfilters" id="Yes1" value="option1" />
+                        <label class="form-check-label" for="Yes1">Yes</label>
+                      </div>
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="purchasingfilters" id="No1" value="option2" />
+                        <label class="form-check-label" for="No1">No</label>
+                      </div>                      
+                      
+                    </div>
+                  </div>
+                  <div class="col-12 fw-400 tab-content-p-tag mb-4">
+                    Please enter the email addresses of others in your organization who would like to receive tips, filter change reminders and other AeraMax Information.
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="email"
+                          id="EmailAddress1"
+                          class="form-control form-control-lg"
+                          />
+                        <label class="form-label" for="EmailAddress1">Email Address*</label>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group mb-4">
+                      <div class="form-outline">
+                        <input
+                          type="email"
+                          id="EmailAddress2"
+                          class="form-control form-control-lg"
+                          />
+                        <label class="form-label" for="EmailAddress2">Email Address*</label>
+                      </div>                      
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary btn-aeramax">SUBMIT</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- End your project here-->
     </main>
@@ -54,5 +183,6 @@
     ></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/protects-register.js"></script>
   </body>
 </html>
