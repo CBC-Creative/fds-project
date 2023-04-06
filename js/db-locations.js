@@ -1,1 +1,11 @@
-import"./db-modulepreload-polyfill.js";/* empty css    */import{D as r,T as s}from"./db-bootstrap.esm.js";const o=document.getElementById("countries-tabs"),a=o.querySelectorAll(".nav-link"),i=document.querySelector('.dropdown-menu[data-name="countries"]'),e=document.querySelector('.dropdown-toggle[data-bs-toggle="dropdown"]'),d=()=>{new r(e),i.addEventListener("click",function(t){const n=t.target.dataset.value;e.textContent=t.target.textContent,document.querySelector(".dropdown-item.active").classList.remove("active"),t.target.classList.add("active"),Array.from(a).find(c=>c.href.includes(n)).click()})};d();const l=()=>{new s(o)};l();
+const countriesTabs = document.getElementById('countries-tabs');
+const countriesNavLinks = countriesTabs.querySelectorAll('.dropdown-item[data-mdb-toggle="tab"]');
+const dropdownButton = countriesTabs.querySelector('.dropdown-toggle[data-mdb-toggle="dropdown"');
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    countriesNavLinks.forEach(link => link.addEventListener('click', function (event) {
+        dropdownButton.textContent = this.textContent;
+        dropdownButton.click();
+    }))
+})

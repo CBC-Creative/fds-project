@@ -81,6 +81,60 @@
   .global-nav-tabs .nav-link:after, .menu-link:after {
     height: 0;
   }
+
+  /******* tabs start *******/
+
+  .global-dropdown-menu-tabs-section {
+    z-index: 12;
+  }
+  
+  .global-dropdown-menu .countries-item {
+    border-bottom: 1px solid var(--gray-200) !important;
+    background-color: var(--mdb-white) !important;
+  }
+  
+  .global-dropdown-menu .dropdown-tabs {
+    z-index: 100;
+  }
+  
+  .global-dropdown-menu .dropdown-toggle {
+    color: var(--mdb-white) !important;
+    background-color: #5c95cd !important;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 1.25rem;
+    letter-spacing: 0.3em;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    border: none;
+    min-width: 15rem;
+  }
+  
+  .global-dropdown-menu .dropdown-menu {
+    border: none;
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+  }
+  
+  .global-dropdown-menu .dropdown-menu .dropdown-item {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    font-weight: 500;
+    background-color: var(--mdb-white);
+    color: rgba(92, 149, 205, 1);
+  }
+  
+  .global-dropdown-menu .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(92, 149, 205, 0.1);
+    color: rgba(92, 149, 205, 1);
+  }
+  
+  .global-dropdown-menu .dropdown-menu .dropdown-item.active {
+    font-weight: 700;
+    background-color: rgba(92, 149, 205, 0.1);
+    color: rgba(92, 149, 205, 1);
+  }
+  
+  /******* tabs end *******/
   
   @media (max-width: 1199px) {
     .global-nav-tabs .tabs-list-item {
