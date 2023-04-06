@@ -523,6 +523,10 @@ a.two-col-section__link::after {
   }
 }
 
+.mh-1rem {
+  min-height: 1rem;
+}
+
 .mh-700 {
   min-height: 600px;
 }
