@@ -1,3 +1,21 @@
+#main-navbar svg,#main-navbar .search-dropdown .search-icon { transition: all 0.15s ease-in-out }
+#main-navbar.top-scrolled-up { background-color: rgba(255, 255, 255, 0);}
+#main-navbar.top-scrolled-up svg,
+#main-navbar.top-scrolled-up .search-dropdown .search-icon {  fill: var(--fds-white); color: var(--fds-white);}
+#main-navbar.top-scrolled-up:hover { background-color: var(--fds-white);}
+#main-navbar.top-scrolled-up:hover svg,
+#main-navbar.top-scrolled-up:hover .search-dropdown .search-icon { fill: var(--fds-black); color: var(--fds-black);}
+.top-scrolled-up .nav-link,.top-scrolled-up .menu-link,
+.top-scrolled-up .nav-link,.top-scrolled-up .menu-link { color: var(--fds-white);}
+.navbar:hover .nav-link,.navbar:hover .menu-link, 
+.navbar:hover.top-scrolled-up .right-nav li:last-child .nav-link { color: #97989c;}
+.navbar:hover.top-scrolled-up .right-nav li:last-child .nav-link:hover { color: var(--fds-black);}
+.top-scrolled-up .right-nav li:last-child .nav-link { color: var(--fds-white);}
+.navbar .nav-link:focus, .navbar .nav-link:hover,
+.scrolled-up .nav-link:focus,
+.scrolled-up .nav-link:hover,
+.navbar .dropdown:hover .nav-link,
+.scrolled-up .dropdown:hover .nav-link {color: var(--fds-black);}
 .container-sm { max-width: 63rem; }
 .h1 { font-size: clamp(2.5rem, 12vw, 8rem); }
 .h2 { font-size: clamp(2rem, 6vw, 4rem); }
@@ -10,10 +28,15 @@
 .page-decoration { display: flex; justify-content: space-between;margin: 0 auto; position: absolute; top: 0; left: 0;right: 0;bottom: 0; z-index: -1;}
 .vertical-line { width: 1px; height: 100%; background-color: #F4F4F4;}
 .last-section { padding: 7.5rem 0 10rem;}
-@media screen and (max-width: 992px) { .last-section { padding: 3.125rem 0 2.5rem; }}
-.text-black { color: #2E343D; }
+@media screen and (max-width: 992px) { .last-section { padding: 3.125rem 0 2.5rem; } .mobile-text-capitalize { text-transform: capitalize !important; }}
+.text-black { color: #2E343D !important; }
+.text-dark {color: #16191E !important; }
+.text-secondary { color: #777777 !important;}
 .lead-lg { font-size: 1.063rem; }
 .lead-sm { font-size: 0.813rem; }
+.top-scrolled-up .nav-link, .top-scrolled-up .menu-link {
+  color: var(--fds-white);
+}
 
 .hero {
   height: 100vh;
