@@ -34,9 +34,7 @@
 .text-secondary { color: #777777 !important;}
 .lead-lg { font-size: 1.063rem; }
 .lead-sm { font-size: 0.813rem; }
-.top-scrolled-up .nav-link, .top-scrolled-up .menu-link {
-  color: var(--fds-white);
-}
+.top-scrolled-up .nav-link, .top-scrolled-up .menu-link { color: var(--fds-white); }
 
 .hero {
   height: 100vh;
@@ -60,7 +58,7 @@
 .hero-active-link::before {
   content: url("../img/db/Polygon\ 2.svg");
   position: absolute;
-  bottom: -.8rem;
+  bottom: -.85rem;
   left: 50%;
   transform: translateX(-50%);
 }
