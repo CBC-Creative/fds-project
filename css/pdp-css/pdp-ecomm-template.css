@@ -589,3 +589,39 @@ ul#ex1 {
     flex: 1;
   }
 }
+
+.pdp-loaded-section,
+.pdp-loading-section {
+  transition-property: max-height, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform-origin: top center;
+  overflow-y: hidden;
+}
+
+[data-loading='true'] .pdp-loaded-section {
+  max-height: 0px;
+  opacity: 0;
+}
+
+[data-loading='true'] .pdp-loading-section {
+  max-height: 50000px;
+  opacity: 1;
+}
+
+[data-loading='false'] .pdp-loaded-section {
+  max-height: 50000px;
+  opacity: 1;
+}
+
+[data-loading='false'] .pdp-loading-section {
+  max-height: 0px;
+  opacity: 0;
+  display: none;
+}
+
+.btn-spinner-border {
+  --mdb-spinner-width: 0.6rem;
+  --mdb-spinner-height: 0.6rem;
+  margin-right: 0.5rem;
+}
