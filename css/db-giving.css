@@ -35,6 +35,7 @@
 .lead-lg { font-size: 1.063rem; }
 .lead-sm { font-size: 0.813rem; }
 .top-scrolled-up .nav-link, .top-scrolled-up .menu-link { color: var(--fds-white); }
+@media screen and (max-width: 480px) { .lead-lg { font-size: 0.938rem; } }
 
 .hero {
   height: 100vh;
