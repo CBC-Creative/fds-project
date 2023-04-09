@@ -87,11 +87,11 @@
   
   /******* story content start *******/
   .story {
-    height: 100vh;
+    height: calc(100vh + 30rem);
     display: flex;
     flex-direction: column;
     z-index: 1001;
-    position: sticky;
+    position: relative;
     top: 0;
     background-color: var(--mdb-white);
   }
@@ -99,10 +99,13 @@
   .story__container {
     flex: 1;
     height: 100%;
+    max-height: calc(100% - 30rem);
     width: 100%;
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
     display: flex;
     flex-direction: column;
+    top: 0;
   }
   
   .story__skip {
@@ -154,6 +157,7 @@
   .story__box-inner {
     display: flex;
     height: 100%;
+    align-items: center;
     /*border: 5px solid green;*/
   }
   
@@ -453,7 +457,6 @@
   .story__part-name-3-1 {
     top: 0;
     transform: translate(5rem, 0);
-    font-size: 9.375rem;
     line-height: 1em;
     max-width: 4ch;
   }
@@ -580,8 +583,8 @@
   }
   
   .story__part-image-4-2-3 {
-    left: 55%;
-    top: 0;
+    left: 110%;
+    top: -25.5rem;
   }
   /******* story part 4-2 1967 end *******/
   
@@ -607,7 +610,6 @@
   .story__part-name-5-1 {
     top: 10%;
     transform: translate(10rem, 0);
-    font-size: 9.375rem;
     line-height: 1em;
     max-width: 4ch;
   }
@@ -780,7 +782,25 @@
     .story__part-body-inner-1-1,
     .story__part-image-1-1-3,
     .story__part-body-2-1,
-    .story__part-body-2-2 {
+    .story__part-body-2-2,
+    .story__part-body-3-1,
+    .story__part-body-3-2,
+    .story__part-body-3-2 figure,
+    .story__part-header-4-2,
+    .story__part-body-4-2,
+    .story__part-image-4-2-3,
+    .story__part-header-4-1,
+    .story__part-body-4-1,
+    .story__part-image-4-1-1,
+    .story__part-image-wrp-4-2,
+    .story__part-image-wrp-4-3,
+    .story__part-body-5-1,
+    .story__part-body-5-2,
+    .story__part-image-5-2-1,
+    .story__part-image-5-2-2,
+    .story__part-image-5-2-3,
+    .story__part-body-6-1,
+    .story__part-body-6-2  {
         position: static !important;
     }
 
@@ -815,7 +835,10 @@
     }
 
     .story__part-header-2-1,
-    .story__part-header-2-2 {
+    .story__part-header-2-2,
+    .story__part-header-3-1,
+    .story__part-header-5-2,
+    .story__part-header-6-1 {
         max-width: 100%;
         width: 100%;
         padding-bottom: 0;
@@ -839,9 +862,169 @@
         column-gap: 1.5rem;
     }
 
-    .story__part-text-2-2 {
+    .story__part-text-2-2,
+    .story__part-text-3-2,
+    .story__part-text-4-2,
+    .story__part-text-5-2 {
         flex-direction: row;
+        flex-wrap: wrap;
         max-width: 100%;
+    }
+
+
+    .story__part-text-3-2 .h3,
+    .story__part-text-4-2 .h3,
+    .story__part-text-5-2 .h3 {
+        width: 100%;
+    }
+
+    .story__part-text-3-2 .lead,
+    .story__part-text-4-2 .lead,
+    .story__part-text-5-2 .lead {
+        width: calc(50% - .75rem);
+    }
+
+    .story__part-header-3-2,
+    .story__part-header-6-2 {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .story__part-name-3-1 {
+        left: auto;
+        right: 3.5rem;
+        top: .5rem;
+        transform: none;
+    }
+
+    .story__part-body-3-2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: flex-end;
+    }
+
+    .story__part-body-3-2 figure {
+        width: calc(50% - .75rem);
+    }
+
+    .story__part-body-3-2 figure:first-child {
+        width: 50%;
+        padding-left: .75rem;
+    }
+
+    .story__part-header-3-2 .story__part-title {
+        position: absolute;
+        bottom: -28vw
+    }
+
+    .story__part-header-4-1 {
+        width: 100%;
+    }
+
+    .story__part-header-4-1 {
+        transform: none;
+    }
+
+    .story__part-name-4-1,
+    .story__part-name-5-1 {
+        top: 4rem;
+        left: auto;
+        right: 3rem;
+        transform: none;
+    }
+
+    .story__part-image-4-1-2 {
+        display: none;
+    }
+
+    .story__part-image-4-1-1 {
+        width: 100%;
+        order: 1;
+    }
+
+    .story__part-header-4-2 {
+        max-width: 100%;
+        margin-top: 1.25rem;
+        text-align: center;
+        order: 1;
+    }
+
+    .story__content-block {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .story__part-image-wrp-4-2,
+    .story__part-body-4-2,
+    .story__part-body-6-1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .story__part-image-4-2-1,
+    .story__part-body-6-2 {
+        width: 100%;
+    }
+
+    .story__part-image-4-2-2,
+    .story__part-image-4-2-3,
+    .story__part-image-6-1-1,
+    .story__part-image-6-1-2 {
+        width: calc(50% - .75rem);
+    }
+    
+    .story__part-body-5-1 {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .story__part-text-5-2 {
+        max-width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .story__part-body-5-2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .story__part-body-5-2 figure {
+        min-width: calc(50% - .75rem);
+        width: calc(50% - .75rem);
+    }
+
+    .story__part-body-5-2 figure:first-child {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .story__part-header-6-1 {
+        gap: 1.688rem;
+    }
+
+    .story__part-body-6-1 {
+        margin-top: 1.75rem;
+    }
+
+    .story__part-header-6-2 {
+        gap: 1.25rem;
+    }
+
+    .story__part-text-6-2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .story__part-name-6-1 {
+        bottom: 14rem;
     }
     
     @media screen and (max-width: 767px) {
@@ -875,7 +1058,19 @@
 
         .story__part-text-2-2 {
             flex-direction: column;
-        } 
+        }
+
+        .story__part-body-3-1,
+        .story__part-header-3-2 .lead,
+        .story__part-text-4-2 .lead,
+        .story__part-text-5-2 .lead {
+            width: 100%;
+        }
+
+        .story__part-header-3-2 .story__part-title {
+            position: absolute;
+            bottom: -35vw
+        }
     }
 
   }
