@@ -1342,7 +1342,7 @@ a.two-col-section__link::after {
   .menu-link {
     color: var(--fds-grey-700);
     padding-block: 1.5rem;
-    padding-inline: 0.65rem !important;
+    padding-inline: 0.6rem !important;
   }
 
   .dropdown,
@@ -1456,6 +1456,27 @@ a.two-col-section__link::after {
 
   .dropdown:hover .dropdown-toggle:after {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1220px) {
+  .nav-link,
+  .menu-link {
+    padding-inline: 0.75rem !important;
+  }
+}
+
+@media (min-width: 1301px) {
+  .nav-link,
+  .menu-link {
+    padding-inline: 1rem !important;
+  }
+}
+
+@media (min-width: 1381px) {
+  .nav-link,
+  .menu-link {
+    padding-inline: 1.25rem !important;
   }
 }
 
