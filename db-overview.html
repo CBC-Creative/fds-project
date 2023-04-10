@@ -991,7 +991,7 @@
     </div>
     <main id="primary-content" class="position-relative">
       <!-- HERO START -->
-      <section class="hero bg-image d-flex align-items-stretch text-white pt-lg-5">
+      <section class="hero bg-image d-flex align-items-stretch text-white pt-lg-5 overflow-hidden">
         <div class="container pt-5 d-flex flex-column justify-content-lg-center justify-content-end px-4 px-lg-5 pb-5 pb-lg-0 ">
           <div class="row mb-4 pt-lg-5">
             <div class="col-12 ">
@@ -1014,7 +1014,7 @@
       </section>
       <!-- HERO END -->
       <!-- TABS START -->
-      <div class="container-xxl d-flex pt-lg-5 px-4 px-lg-0" id="overview-tabs">
+      <div class="container-xxl d-flex pt-md-5 px-4 px-xxl-0" id="overview-tabs">
         <div class="position-absolute">
           <!-- Tab navs -->
           <div class="nav flex-column nav-tabs text-center" id="v-tabs-tab" role="tablist" aria-orientation="vertical">
@@ -1064,7 +1064,7 @@
 
         <div class="overview-tab-content">
           <!-- TAB CONTENT START -->
-          <div class="tab-content" id="v-tabs-tabContent">
+          <div class="tab-content overflow-hidden" id="v-tabs-tabContent">
             <div class="tab-pane fade show active" id="v-tabs-family" role="tabpanel" aria-labelledby="v-tabs-family-tab">
               <!-- FAMILY START -->
               <div class="d-flex flex-column justify-content-center">
@@ -1166,7 +1166,32 @@
             </div>
             <div class="tab-pane fade" id="v-tabs-quality" role="tabpanel" aria-labelledby="v-tabs-quality-tab">
               <!-- QUALITY START -->
-
+              <div class="overview__quality-container d-flex flex-column">
+                <h2 class="display-2 text-outline text-uppercase">quality</h2>
+                <div class="row mb-5 mb-lg-4">
+                  <div class="col-lg-8">
+                    <h3 class="h3 text-dark fw-bold mb-4">Building things that last, and not just products.</h3>
+                    <p class="lead-lg text-black lh-base">
+                      Quality isn’t simply how well a capability is manufactured or implemented. It’s an essence, a sense of depth, that assures
+                      what a company is offering the world was designed and created with thoughtfulness and skill. By strategically investing in
+                      quality at every corner of our organization, we are laying a firm foundation of quality that continues to pay back lasting
+                      dividends.
+                    </p>
+                  </div>
+                </div>
+                <ul class="overview__quality-list mb-lg-5 mb-3 pb-lg-5 pb-2">
+                  <li class="overview__quality-item">500,000sqft of company-owned, company-operated manufacturing facilities.</li>
+                  <li class="overview__quality-item">An average 100-day testing period before a product is released.</li>
+                  <li class="overview__quality-item">Corporate training to up-skill every employee to new roles and responsibilities.</li>
+                  <li class="overview__quality-item">100+ product design awards, averaging 3 per year.</li>
+                  <li class="overview__quality-item">Vertically-integrated supply chain to maintain consistent quality.</li>
+                </ul>
+                <div class="overview__quality-figures-wrapper">
+                  <img class="overview__quality-figure--left" src="./img/db/Office.webp" alt="Bright office" />
+                  <img class="overview__quality-figure--center" src="./img/db/Teamwork.webp" alt="Teamwork" />
+                  <img class="overview__quality-figure--right" src="./img/db/Bright office.webp" alt="Bright office" />
+                </div>
+              </div>
               <!-- QUALITY END -->
             </div>
             <div class="tab-pane fade" id="v-tabs-care" role="tabpanel" aria-labelledby="v-tabs-care-tab">
