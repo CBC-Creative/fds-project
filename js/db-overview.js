@@ -1,1 +1,33 @@
-import"./db-modulepreload-polyfill.js";/* empty css    */import"./db-mdb.min.js";const o=()=>{const e=document.getElementById("overview-tabs").querySelectorAll(".nav-link");function n(){e.forEach(t=>{t.removeAttribute("data-mdb-toggle")})}function i(){e.forEach(t=>{t.setAttribute("data-mdb-toggle","tab")})}window.addEventListener("load",()=>{window.innerWidth<480&&n()}),window.addEventListener("resize",()=>{window.innerWidth<480?n():i()})};o();
+/** ***** Tabs ***** **/
+const initTabs = () => {
+  const tabs = document.getElementById('overview-tabs');
+  const navLinks = tabs.querySelectorAll('.nav-link');
+
+  function disableTabs() {
+    navLinks.forEach((link) => {
+      link.removeAttribute('data-mdb-toggle');
+    });
+  }
+
+  function enableTabs() {
+    navLinks.forEach((link) => {
+      link.setAttribute('data-mdb-toggle', 'tab');
+    });
+  }
+
+  window.addEventListener('load', () => {
+    if (window.innerWidth < 480) {
+      disableTabs();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 480) {
+      disableTabs();
+    } else {
+      enableTabs();
+    }
+  });
+};
+
+initTabs();
