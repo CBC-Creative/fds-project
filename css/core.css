@@ -957,18 +957,6 @@ a.two-col-section__link::after {
   padding-inline: 0rem;
 }
 
-@media (min-width: 1200px) {
-  /* .navbar-expand-xl .navbar-nav {
-    gap: 2rem;
-  } */
-}
-
-@media (min-width: 1350px) {
-  .navbar-expand-xl .navbar-nav {
-    gap: 2.5rem;
-  }
-}
-
 .subnav-link {
   padding-inline: 1rem !important;
 }
