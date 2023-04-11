@@ -7,8 +7,3 @@ $('.country-list-div ul li').click(function () {
   $('.choose-country-dropdown-select').html(selectedcountry);
   $('.country-list-div').removeClass('d-block');
 });
-
-var date = new Date();
-var year = date.getFullYear();
-
-document.getElementById('copyright-year').innerHTML = year;
