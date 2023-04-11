@@ -954,7 +954,8 @@ a.two-col-section__link::after {
 }
 
 .navbar-expand-xl .navbar-nav .nav-link {
-  padding-inline: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 .subnav-link {
@@ -1338,11 +1339,20 @@ a.two-col-section__link::after {
 }
 
 @media (min-width: 1200px) {
-  .nav-link,
+  .navbar-expand-xl .navbar-nav .nav-link,
   .menu-link {
     color: var(--fds-grey-700);
     padding-block: 1.5rem;
-    padding-inline: 0.6rem !important;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  .navbar-expand-xl .navbar-nav .nav-link.first-nav-link {
+    padding-left: 0 !important;
+  }
+
+  .navbar-expand-xl .navbar-nav .nav-link.last-nav-link {
+    padding-right: 0 !important;
   }
 
   .dropdown,
@@ -1460,23 +1470,26 @@ a.two-col-section__link::after {
 }
 
 @media (min-width: 1220px) {
-  .nav-link,
+  .navbar-expand-xl .navbar-nav .nav-link,
   .menu-link {
-    padding-inline: 0.75rem !important;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
 @media (min-width: 1301px) {
-  .nav-link,
+  .navbar-expand-xl .navbar-nav .nav-link,
   .menu-link {
-    padding-inline: 1rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @media (min-width: 1381px) {
-  .nav-link,
+  .navbar-expand-xl .navbar-nav .nav-link,
   .menu-link {
-    padding-inline: 1.25rem !important;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
