@@ -1,4 +1,3 @@
-
 $('.chair-modal-details').hover(function(){
     $(this).parent().find('p').toggleClass("show");    
     $('.product-image-before-video').toggleClass("hide");
