@@ -503,6 +503,12 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.header-500 {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (max-width: 991px) {
   .maxwidth-90percent {
     width: 90%;
@@ -520,6 +526,9 @@ a.two-col-section__link::after {
     min-height: 700px;
     object-fit: cover;
     object-position: right;
+  }
+  .header-500 {
+    height: 500px;
   }
 }
 
