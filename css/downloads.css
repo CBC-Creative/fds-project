@@ -477,9 +477,7 @@
 .download-bottom-box .colors img {
   width: 21px;
 }
-.product-file ul{
-  display: none;
-}
+
 .pdp-products-list h3,
 .download-list-table h3 {
   font-size: 14px;
@@ -978,7 +976,7 @@
 .cd-cart--open .cd-cart__body {
   transition: opacity 0s;
 }
-.cd-cart--open .cd-cart__body li.cd-cart__product {
+.cd-cart--open .cd-cart__body li {
   transition: opacity 0.3s 0.2s, -webkit-transform 0.3s 0.2s;
   transition: transform 0.3s 0.2s, opacity 0.3s 0.2s;
   transition: transform 0.3s 0.2s, opacity 0.3s 0.2s, -webkit-transform 0.3s 0.2s;
@@ -987,16 +985,15 @@
   -ms-transform: translateX(0);
   transform: translateX(0);
   align-items: center;
-  margin-bottom: 50px;
 }
-.cd-cart--open .cd-cart__body li.cd-cart__product:nth-of-type(2) {
+.cd-cart--open .cd-cart__body li:nth-of-type(2) {
   transition-duration: 0.4s;
 }
-.cd-cart--open .cd-cart__body li.cd-cart__product:nth-of-type(3) {
+.cd-cart--open .cd-cart__body li:nth-of-type(3) {
   transition-duration: 0.5s;
 }
-.cd-cart--open .cd-cart__body li.cd-cart__product:nth-of-type(4),
-.cd-cart--open .cd-cart__body li.cd-cart__product:nth-of-type(5) {
+.cd-cart--open .cd-cart__body li:nth-of-type(4),
+.cd-cart--open .cd-cart__body li:nth-of-type(5) {
   transition-duration: 0.55s;
 }
 .cd-cart__product {
@@ -1084,7 +1081,7 @@
 }
 .cd-cart__details h3 {
   font-weight: bold;
-  width: 89%;
+  width: 70%;
   font-size: 0.95833em;
   font-size: calc(var(--text-sm) * 1.15);
   margin-bottom: 0;
@@ -1098,39 +1095,11 @@
   color: var(--cd-color-2);
 }
 .cd-cart__price {
-  width:auto;
+  width: 100%;
   text-align: left;
   font-size: 0.91666em;
   font-size: calc(var(--text-sm) * 1.1);
   font-weight: bold;
-  color: var(--fds-black);
-}
-.cd-cart__filetype{
-  width:auto;
-  text-align: left;
-  font-size: 0.91666em;
-  font-size: calc(var(--text-sm) * 1.1);
-  font-weight: bold;
-  color: var(--fds-black);
-  margin-left: auto;
-  position: relative;
-  margin-right: 50px;
-}
-.cd-cart__filetype{cursor: pointer;}
-.cd-cart__filetype ul{
-  padding-bottom: 0;
-  list-style: none;
-  display: none;
-  position: absolute;
-  background: #ffffff;
-  padding: 5px;
-  font-size: var(--fds-fs-200);
-  box-shadow: 0px 0px 6px #cccccc;
-  min-width: 77px;
-  right: 0px;
-  z-index: 10;
-}
-.cd-cart__filetype ul a{
   color: var(--fds-black);
 }
 .cd-cart__actions {
