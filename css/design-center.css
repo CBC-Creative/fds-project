@@ -1,125 +1,122 @@
-.text-gray-company{
-  color: #4D555B;
+.text-gray-company {
+  color: #4d555b;
 }
-.company-design-banner-image img{
+.company-design-banner-image img {
   height: 500px;
   object-fit: cover;
   object-position: top center;
 }
-.company-title{
+.company-title {
   font-size: 2.563rem;
-  line-height: var(--fds-fs-905);  
+  line-height: var(--fds-fs-905);
 }
-.company-title span{
+.company-title span {
   font-weight: 700;
 }
-.preg17{
+.preg17 {
   font-size: var(--fds-fs-325);
   line-height: var(--fds-fs-710);
   font-weight: 500;
 }
-.company-sub-title{
+.company-sub-title {
   font-size: var(--fds-fs-700);
   line-height: var(--fds-fs-800);
 }
-.pink-bg{
-  background: #DD0AB2;
+.pink-bg {
+  background: #dd0ab2;
 }
-.company-design-sub-title{
+.company-design-sub-title {
   font-size: var(--fds-fs-400);
   line-height: var(--fds-fs-250);
   padding-left: 0.3rem;
 }
-.company-design-title{
+.company-design-title {
   font-size: 5rem;
-  line-height: 4.5rem; 
-  font-weight: 800;   
+  line-height: 4.5rem;
+  font-weight: 800;
 }
-.company-design-p-tag{
+.company-design-p-tag {
   font-size: 0.938rem;
   line-height: var(--fds-fs-710);
 }
-.agenda-title{
+.agenda-title {
   font-size: 2.313rem;
   line-height: 1.563rem;
   font-weight: 300;
 }
-.preg19{
+.preg19 {
   font-size: var(--fds-fs-325);
   line-height: var(--fds-fs-710);
   font-weight: 500;
 }
-.agenda-sub-title{
+.agenda-sub-title {
   font-size: var(--fds-fs-600);
   line-height: var(--fds-fs-800);
 }
-@media (min-width:768px){
-  .company-design-sub-title{
+@media (min-width: 768px) {
+  .company-design-sub-title {
     font-size: 1.938rem;
-    line-height: 1.313rem; 
-    padding-left: 0.5rem;   
+    line-height: 1.313rem;
+    padding-left: 0.5rem;
   }
-  .company-design-title{
+  .company-design-title {
     font-size: 8.875rem;
-    line-height: 8.438rem;    
+    line-height: 8.438rem;
   }
-  .agenda-sub-title{
+  .agenda-sub-title {
     font-size: 1.688rem;
     line-height: var(--fds-fs-800);
   }
-  .preg19{
+  .preg19 {
     font-size: var(--fds-fs-500);
     line-height: var(--fds-fs-800);
   }
-  .company-design-p-tag{
+  .company-design-p-tag {
     font-size: 1.313rem;
     line-height: var(--fds-fs-825);
   }
-  .company-design-banner-image img{
-    height: 700px;
+  .company-design-banner-image img {
+    height: 600px;
   }
-  .company-title{
+  .company-title {
     font-size: var(--fds-fs-910);
     line-height: var(--fds-fs-950);
   }
-  .preg17{
+  .preg17 {
     font-size: var(--fds-fs-400);
     line-height: var(--fds-fs-750);
   }
-  .company-sub-title{
+  .company-sub-title {
     font-size: var(--fds-fs-710);
     line-height: var(--fds-fs-800);
   }
-  .agenda-title{
+  .agenda-title {
     font-size: 4.563rem;
     line-height: 2.75rem;
   }
 }
-@media (min-width:992px){
-  .agenda-title{
+@media (min-width: 992px) {
+  .agenda-title {
     font-size: 5.563rem;
     line-height: 3.75rem;
   }
-  .w-lg-80{
-    width: 80%;
+  .w-lg-80 {
+    max-width: 520px;
   }
-  .company-design-title{
+  .company-design-title {
     font-size: 5.875rem;
-    line-height: 5.438rem;   
+    line-height: 5.438rem;
   }
 }
-@media (min-width:1200px){
-  .w-lg-80{
-    width: 60%;
-  }
-  .company-design-title{
+@media (min-width: 1200px) {
+  .company-design-title {
     font-size: 7.875rem;
-    line-height: 7.438rem;    
+    line-height: 7.438rem;
   }
 }
-@media (min-width:1400px){
-  .company-design-title{
+@media (min-width: 1400px) {
+  .company-design-title {
     font-size: 8.875rem;
-    line-height: 8.438rem;    
+    line-height: 8.438rem;
   }
 }

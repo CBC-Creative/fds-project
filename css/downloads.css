@@ -188,7 +188,37 @@
 
 .card.download-box {
   background-color: var(--fds-tan);
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.single-item-download-selector {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  display: none;
+}
+
+.single-item-download-selector ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.single-item-download-selector li {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.single-item-download-selector li:hover,
+.single-item-download-selector li:focus-visible,
+.single-item-download-selector li:active {
+  background-color: var(--fds-tan);
 }
 
 .download-box:hover {
@@ -211,6 +241,7 @@
   position: relative;
   background-color: var(--fds-white);
   padding: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .download-box-list-view,
 .download-box-list-view:hover {
@@ -1469,6 +1500,11 @@
 .icon-view-listing {
   display: grid;
   gap: 1rem;
+}
+
+button.download-image {
+  border: none;
+  background-color: transparent;
 }
 
 .btn-spinner-border {

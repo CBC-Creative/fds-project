@@ -89,50 +89,51 @@ $(function () {
 });
 
 $('.clear-btn').click(function () {
-  $('.download-accordion').find('.form-check-input').each(function( index ) {
-    if($(this).is(':checked')) {
-      $(this).prop('checked', false); 
-  }
+  $('.download-accordion')
+    .find('.form-check-input')
+    .each(function (index) {
+      if ($(this).is(':checked')) {
+        $(this).prop('checked', false);
+      }
     });
 });
 
-
 /* util.js */
 // Utility function
-function Util () {};
+function Util() {}
 
 /* 
 	class manipulation functions
 */
-Util.hasClass = function(el, className) {
-	if (el.classList) return el.classList.contains(className);
-	else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+Util.hasClass = function (el, className) {
+  if (el.classList) return el.classList.contains(className);
+  else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
 };
 
-Util.addClass = function(el, className) {
-	var classList = className.split(' ');
- 	if (el.classList) el.classList.add(classList[0]);
- 	else if (!Util.hasClass(el, classList[0])) el.className += " " + classList[0];
- 	if (classList.length > 1) Util.addClass(el, classList.slice(1).join(' '));
+Util.addClass = function (el, className) {
+  var classList = className.split(' ');
+  if (el.classList) el.classList.add(classList[0]);
+  else if (!Util.hasClass(el, classList[0])) el.className += ' ' + classList[0];
+  if (classList.length > 1) Util.addClass(el, classList.slice(1).join(' '));
 };
 
-Util.removeClass = function(el, className) {
-	var classList = className.split(' ');
-	if (el.classList) el.classList.remove(classList[0]);	
-	else if(Util.hasClass(el, classList[0])) {
-		var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
-		el.className=el.className.replace(reg, ' ');
-	}
-	if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(' '));
+Util.removeClass = function (el, className) {
+  var classList = className.split(' ');
+  if (el.classList) el.classList.remove(classList[0]);
+  else if (Util.hasClass(el, classList[0])) {
+    var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
+    el.className = el.className.replace(reg, ' ');
+  }
+  if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(' '));
 };
 
-Util.toggleClass = function(el, className, bool) {
-	if(bool) Util.addClass(el, className);
-	else Util.removeClass(el, className);
+Util.toggleClass = function (el, className, bool) {
+  if (bool) Util.addClass(el, className);
+  else Util.removeClass(el, className);
 };
 
-Util.setAttributes = function(el, attrs) {
-  for(var key in attrs) {
+Util.setAttributes = function (el, attrs) {
+  for (var key in attrs) {
     el.setAttribute(key, attrs[key]);
   }
 };
@@ -140,7 +141,7 @@ Util.setAttributes = function(el, attrs) {
 /* 
   DOM manipulation
 */
-Util.getChildrenByClassName = function(el, className) {
+Util.getChildrenByClassName = function (el, className) {
   var children = el.children,
     childrenByClass = [];
   for (var i = 0; i < el.children.length; i++) {
@@ -152,25 +153,25 @@ Util.getChildrenByClassName = function(el, className) {
 /* 
 	Animate height of an element
 */
-Util.setHeight = function(start, to, element, duration, cb) {
-	var change = to - start,
-	    currentTime = null;
+Util.setHeight = function (start, to, element, duration, cb) {
+  var change = to - start,
+    currentTime = null;
 
-  var animateHeight = function(timestamp){  
-    if (!currentTime) currentTime = timestamp;         
+  var animateHeight = function (timestamp) {
+    if (!currentTime) currentTime = timestamp;
     var progress = timestamp - currentTime;
-    var val = parseInt((progress/duration)*change + start);
+    var val = parseInt((progress / duration) * change + start);
     // console.log(val);
-    element.setAttribute("style", "height:"+val+"px;");
-    if(progress < duration) {
-        window.requestAnimationFrame(animateHeight);
+    element.setAttribute('style', 'height:' + val + 'px;');
+    if (progress < duration) {
+      window.requestAnimationFrame(animateHeight);
     } else {
-    	cb();
+      cb();
     }
   };
-  
+
   //set the height of the element before starting animation -> fix bug on Safari
-  element.setAttribute("style", "height:"+start+"px;");
+  element.setAttribute('style', 'height:' + start + 'px;');
   window.requestAnimationFrame(animateHeight);
 };
 
@@ -178,18 +179,18 @@ Util.setHeight = function(start, to, element, duration, cb) {
 	Smooth Scroll
 */
 
-Util.scrollTo = function(final, duration, cb) {
+Util.scrollTo = function (final, duration, cb) {
   var start = window.scrollY || document.documentElement.scrollTop,
-      currentTime = null;
-      
-  var animateScroll = function(timestamp){
-  	if (!currentTime) currentTime = timestamp;        
+    currentTime = null;
+
+  var animateScroll = function (timestamp) {
+    if (!currentTime) currentTime = timestamp;
     var progress = timestamp - currentTime;
-    if(progress > duration) progress = duration;
-    var val = Math.easeInOutQuad(progress, start, final-start, duration);
+    if (progress > duration) progress = duration;
+    var val = Math.easeInOutQuad(progress, start, final - start, duration);
     window.scrollTo(0, val);
-    if(progress < duration) {
-        window.requestAnimationFrame(animateScroll);
+    if (progress < duration) {
+      window.requestAnimationFrame(animateScroll);
     } else {
       cb && cb();
     }
@@ -204,10 +205,10 @@ Util.scrollTo = function(final, duration, cb) {
 
 //Move focus to an element
 Util.moveFocus = function (element) {
-  if( !element ) element = document.getElementsByTagName("body")[0];
+  if (!element) element = document.getElementsByTagName('body')[0];
   element.focus();
   if (document.activeElement !== element) {
-    element.setAttribute('tabindex','-1');
+    element.setAttribute('tabindex', '-1');
     element.focus();
   }
 };
@@ -216,15 +217,17 @@ Util.moveFocus = function (element) {
   Misc
 */
 
-Util.getIndexInArray = function(array, el) {
+Util.getIndexInArray = function (array, el) {
   return Array.prototype.indexOf.call(array, el);
 };
 
-Util.cssSupports = function(property, value) {
-  if('CSS' in window) {
+Util.cssSupports = function (property, value) {
+  if ('CSS' in window) {
     return CSS.supports(property, value);
   } else {
-    var jsProperty = property.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase();});
+    var jsProperty = property.replace(/-([a-z])/g, function (g) {
+      return g[1].toUpperCase();
+    });
     return jsProperty in document.body.style;
   }
 };
@@ -234,30 +237,30 @@ Util.cssSupports = function(property, value) {
 */
 //Closest() method
 if (!Element.prototype.matches) {
-	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+  Element.prototype.matches =
+    Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }
 
 if (!Element.prototype.closest) {
-	Element.prototype.closest = function(s) {
-		var el = this;
-		if (!document.documentElement.contains(el)) return null;
-		do {
-			if (el.matches(s)) return el;
-			el = el.parentElement || el.parentNode;
-		} while (el !== null && el.nodeType === 1); 
-		return null;
-	};
+  Element.prototype.closest = function (s) {
+    var el = this;
+    if (!document.documentElement.contains(el)) return null;
+    do {
+      if (el.matches(s)) return el;
+      el = el.parentElement || el.parentNode;
+    } while (el !== null && el.nodeType === 1);
+    return null;
+  };
 }
 
 //Custom Event() constructor
-if ( typeof window.CustomEvent !== "function" ) {
-
-  function CustomEvent ( event, params ) {
+if (typeof window.CustomEvent !== 'function') {
+  function CustomEvent(event, params) {
     params = params || { bubbles: false, cancelable: false, detail: undefined };
-    var evt = document.createEvent( 'CustomEvent' );
-    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+    var evt = document.createEvent('CustomEvent');
+    evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
     return evt;
-   }
+  }
 
   CustomEvent.prototype = window.Event.prototype;
 
@@ -268,27 +271,31 @@ if ( typeof window.CustomEvent !== "function" ) {
 	Animation curves
 */
 Math.easeInOutQuad = function (t, b, c, d) {
-	t /= d/2;
-	if (t < 1) return c/2*t*t + b;
-	t--;
-	return -c/2 * (t*(t-2) - 1) + b;
+  t /= d / 2;
+  if (t < 1) return (c / 2) * t * t + b;
+  t--;
+  return (-c / 2) * (t * (t - 2) - 1) + b;
 };
 
 /* Download Main.js */
-(function(){
+(function () {
   // Add to Cart Interaction - by CodyHouse.co
   var cart = document.getElementsByClassName('js-cd-cart');
-  if(cart.length > 0) {
-  	var cartAddBtns = document.getElementsByClassName('js-cd-add-to-cart'),
-  		cartBody = cart[0].getElementsByClassName('cd-cart__body')[0],
-  		cartList = cartBody.getElementsByTagName('ul')[0],
-  		cartListItems = cartList.getElementsByClassName('cd-cart__product'),
-  		cartTotal = cart[0].getElementsByClassName('cd-cart__checkout')[0].getElementsByTagName('span')[0],
-      cartTotalitem = cart[0].getElementsByClassName('cd-cart__checkout')[0].getElementsByTagName('i')[0],
-  		cartCount = cart[0].getElementsByClassName('cd-cart__count')[0],
-  		cartCountItems = cartCount.getElementsByTagName('li'),
-  		cartUndo = cart[0].getElementsByClassName('cd-cart__undo')[0],
-  		productId = 0, //this is a placeholder -> use your real product ids instead
+  if (cart.length > 0) {
+    var cartAddBtns = document.getElementsByClassName('js-cd-add-to-cart'),
+      cartBody = cart[0].getElementsByClassName('cd-cart__body')[0],
+      cartList = cartBody.getElementsByTagName('ul')[0],
+      cartListItems = cartList.getElementsByClassName('cd-cart__product'),
+      cartTotal = cart[0]
+        .getElementsByClassName('cd-cart__checkout')[0]
+        .getElementsByTagName('span')[0],
+      cartTotalitem = cart[0]
+        .getElementsByClassName('cd-cart__checkout')[0]
+        .getElementsByTagName('i')[0],
+      cartCount = cart[0].getElementsByClassName('cd-cart__count')[0],
+      cartCountItems = cartCount.getElementsByTagName('li'),
+      cartUndo = cart[0].getElementsByClassName('cd-cart__undo')[0],
+      productId = 0, //this is a placeholder -> use your real product ids instead
       productName = '',
       productSize = '',
 			productType = '',
@@ -305,20 +312,14 @@ Math.easeInOutQuad = function (t, b, c, d) {
           $(this).parents(".download-box").addClass('itemselected');
           $(this).addClass('selected');
         });
-			})(i);}
 
-			// open/close cart
-			cart[0].getElementsByClassName('cd-cart__trigger')[0].addEventListener('click', function(event){
-				event.preventDefault();
-				toggleCart();
-			});
-			
-			cart[0].addEventListener('click', function(event) {
-				if(event.target == cart[0]) { // close cart when clicking on bg layer
-					toggleCart(true);
-          
-				} else if (event.target.closest('.cd-cart__delete-item')) { // remove product from cart
-					event.preventDefault();
+      cart[0].addEventListener('click', function (event) {
+        if (event.target == cart[0]) {
+          // close cart when clicking on bg layer
+          toggleCart(true);
+        } else if (event.target.closest('.cd-cart__delete-item')) {
+          // remove product from cart
+          event.preventDefault();
           var removeselectedmain = event.target.closest('.cd-cart__details').firstChild;
           var removeselected = $(removeselectedmain).text();
           var itemstoremoveclass = $("body").find(".download-box").find(".product-name");
@@ -467,80 +468,99 @@ Math.easeInOutQuad = function (t, b, c, d) {
 				var next = actual + 1;
 
         cartTotalitem.innerText = actual;
-        
-				
-				if( emptyCart ) {
-					cartCountItems[0].innerText = actual;
-					cartCountItems[1].innerText = next;
-					animatingQuantity = false;
-				} else {
-					Util.addClass(cartCount, 'cd-cart__count--update');
 
-					setTimeout(function() {
-						cartCountItems[0].innerText = actual;
-					}, 150);
+        if (emptyCart) {
+          cartCountItems[0].innerText = actual;
+          cartCountItems[1].innerText = next;
+          animatingQuantity = false;
+        } else {
+          Util.addClass(cartCount, 'cd-cart__count--update');
 
-					setTimeout(function() {
-						Util.removeClass(cartCount, 'cd-cart__count--update');
-					}, 200);
+          setTimeout(function () {
+            cartCountItems[0].innerText = actual;
+          }, 150);
 
-					setTimeout(function() {
-						cartCountItems[1].innerText = next;
-						animatingQuantity = false;
-					}, 230);
-				}
-			} else {
-				var actual = Number(cartCountItems[0].innerText) + quantity;
-				var next = actual + 1;
-				
-				cartCountItems[0].innerText = actual;
-				cartCountItems[1].innerText = next;
-				animatingQuantity = false;
-			}
-		};
+          setTimeout(function () {
+            Util.removeClass(cartCount, 'cd-cart__count--update');
+          }, 200);
 
-		function updateCartTotal(price, bool) {
-			cartTotal.innerText = bool ? (Number(cartTotal.innerText) + Number(price)).toFixed(2) : (Number(cartTotal.innerText) - Number(price)).toFixed(2);
-		};
+          setTimeout(function () {
+            cartCountItems[1].innerText = next;
+            animatingQuantity = false;
+          }, 230);
+        }
+      } else {
+        var actual = Number(cartCountItems[0].innerText) + quantity;
+        var next = actual + 1;
 
-		function quickUpdateCart() {
-			var quantity = 0;
-			var price = 0;
+        cartCountItems[0].innerText = actual;
+        cartCountItems[1].innerText = next;
+        animatingQuantity = false;
+      }
+    }
 
-			for(var i = 0; i < cartListItems.length; i++) {
-				if( !Util.hasClass(cartListItems[i], 'cd-cart__product--deleted') ) {
-					var singleQuantity = Number(cartListItems[i].getElementsByTagName('select')[0].value);
-					quantity = quantity + singleQuantity;
+    function updateCartTotal(price, bool) {
+      cartTotal.innerText = bool
+        ? (Number(cartTotal.innerText) + Number(price)).toFixed(2)
+        : (Number(cartTotal.innerText) - Number(price)).toFixed(2);
+    }
+
+    function quickUpdateCart() {
+      var quantity = 0;
+      var price = 0;
+
+      for (var i = 0; i < cartListItems.length; i++) {
+        if (!Util.hasClass(cartListItems[i], 'cd-cart__product--deleted')) {
+          var singleQuantity = Number(cartListItems[i].getElementsByTagName('select')[0].value);
+          quantity = quantity + singleQuantity;
           cartTotalitem.innerText = quantity;
-					price = price + singleQuantity*Number((cartListItems[i].getElementsByClassName('cd-cart__price')[0].innerText).replace(' MB', ''));          
-				}
-			}
+          price =
+            price +
+            singleQuantity *
+              Number(
+                cartListItems[i]
+                  .getElementsByClassName('cd-cart__price')[0]
+                  .innerText.replace(' MB', '')
+              );
+        }
+      }
 
-			cartTotal.innerText = price.toFixed(2);
-			cartCountItems[0].innerText = quantity;
-			cartCountItems[1].innerText = quantity+1;
-		};
+      cartTotal.innerText = price.toFixed(2);
+      cartCountItems[0].innerText = quantity;
+      cartCountItems[1].innerText = quantity + 1;
+    }
   }
 })();
 
 if (jQuery(window).width() >= 768) {
   function setHeightsunscribeform() {
-      var maxHeight = -1;
-      jQuery('.product-name').each(function() {
-          maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
-      });
-      jQuery('.product-name').each(function() {
-          jQuery(this).height(maxHeight);
-      });
-  };
+    var maxHeight = -1;
+    jQuery('.product-name').each(function () {
+      maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
+    });
+    jQuery('.product-name').each(function () {
+      jQuery(this).height(maxHeight);
+    });
+  }
 
- 
-  jQuery(document).ready(function() {
-      setHeightsunscribeform();
+  jQuery(document).ready(function () {
+    setHeightsunscribeform();
   });
-  jQuery(window).resize(function() {
-      setHeightsunscribeform();
+  jQuery(window).resize(function () {
+    setHeightsunscribeform();
   });
 }
 
+
+var downloadItem = document.querySelectorAll('.download-box');
+
+$(downloadItem).each(function () {
+  var downloadBtn = $(this).find('button.download-image');
+  var downloadList = $(this).find('.single-item-download-selector');
+
+  $(downloadBtn).click(function () {
+    $('.single-item-download-selector').not(downloadList).hide();
+    $(downloadList).toggle();
+  });
+});
 

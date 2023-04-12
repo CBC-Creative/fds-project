@@ -24,12 +24,7 @@
     <link rel="stylesheet" href="./css/mdb-css/mdb.min.css" />
     <!-- MDB PLUGINS -->
     <link rel="stylesheet" href="./css/mdb-css/plugins/css/all.min.css" />
-    <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
+
     <!-- Global Styles -->
     <link rel="stylesheet" href="./css/core.css" />
 
@@ -43,7 +38,7 @@
 
     <header role="banner">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-xl navbar-light shadow-0" id="main-navbar" role="navigation">
+      <nav class="navbar navbar-expand-xl navbar-light shadow-0 top-scrolled-up" id="main-navbar" role="navigation">
         <!-- Container wrapper -->
         <div class="container-fluid py-0 px-4">
           <!-- Navbar brand -->
@@ -585,7 +580,7 @@
                       d="M3.014,6.627h15a.879.879,0,0,1,.822.923v9.482a.881.881,0,0,1-.823.925H9.874a.319.319,0,0,0-.241.112h0L7,21.027a.432.432,0,0,1-.745-.346V18.831a.831.831,0,0,0-.779-.875H3.451a.881.881,0,0,1-.823-.925V7.061a.415.415,0,0,1,.387-.434Z"
                       transform="translate(-2.053 -6.052)"
                       fill="none"
-                      stroke-miterlimit="10"
+                      stroke="currentColor"
                       stroke-width="1.15"
                     />
                   </svg>
@@ -698,6 +693,7 @@
                         data-name="Ellipse 27"
                         transform="translate(-2180 -24666)"
                         fill="none"
+                        stroke="currentColor"
                         stroke-width="1.25"
                       >
                         <circle cx="7" cy="7" r="7" stroke="none" />
@@ -708,20 +704,10 @@
                         x2="4"
                         y2="4"
                         transform="translate(-2168 -24654)"
-                        fill="none"
+                        fill="currentColor"
+                        stroke="currentColor"
                         stroke-linecap="round"
                         stroke-width="1.25"
-                      />
-                      <line
-                        id="FrontLine1"
-                        x1="1"
-                        y2="1"
-                        transform="translate(-2169 -24655)"
-                        fill="none"
-                        stroke="#000"
-                        stroke-linecap="round"
-                        stroke-width="1.25"
-                        opacity="0"
                       />
                     </g>
                   </svg>
@@ -803,9 +789,6 @@
       </nav>
       <!-- Navbar -->
     </header>
-
-    <div class="bodynavfixedtop" role="presentation"></div>
-
     <!-- Search Dropdown -->
 
     <div class="search-div">
@@ -1009,20 +992,20 @@
 
     <main id="primary-content" class="position-relative">
       <!-- HERO START -->
-      <section class="hero bg-image d-flex flex-column justify-content-lg-around justify-content-end text-white">
-        <div class="container-sm hero-nav d-sm-flex d-none justify-content-between align-items-center mt-5 px-4 mb-auto mb-xl-0">
+      <section class="hero bg-image d-flex flex-column justify-content-end justify-content-lg-start text-white py-4 py-sm-5">
+        <div class="container-sm hero-nav d-sm-flex d-none justify-content-between align-items-center mb-auto mt-5 px-4 px-xl-0">
           <h5 class="h5 fw-normal">
             Purpose
           </h5>
           <div class="d-flex gap-4 lead-xl">
-            <a href="sustainable.html" class="text-white text-decoration-none">Sustainability</a>
+            <a href="db-sustainable.html" class="text-white text-decoration-none">Sustainability</a>
             <a href="#" class="ml-2 fw-bold text-white text-decoration-none hero-active-link">Give</a>
           </div>
         </div>
-        <div class="container-sm pt-5 d-flex flex-column pb-lg-5 px-4">
+        <div class="container-sm pt-5 d-flex flex-column pb-lg-5 px-4 px-lg-0">
           <div class="row mb-4">
             <div class="col-12 px-lg-0">
-              <h1 class="h1 fw-bolder d-flex flex-column">
+              <h1 class="h1 fw-bolder d-flex flex-column px-0">
                 Giving <span class="text-nowrap">with Intention</span>
               </h1>
             </div>
@@ -1065,8 +1048,8 @@
             <div class="row justify-content-evenly">
               <div class="display-2 text-outline text-uppercase difference-decoration">difference</div>
               <div class="col-xl-5 col-lg-12 mb-5 mb-xl-0 p-xxl-0">
-                <h3 class="h3 fw-bold text-uppercase text-dark mb-4">
-                  <span class="text-nowrap">FELLOWES GIVE</span> PROGRAM
+                <h3 class="h3 fw-bold text-uppercase text-dark mb-4 mobile-text-capitalize">
+                  <span class="text-nowrap">Fellowes Give</span> Program
                 </h3>
                 <p class="lead-lg mt-lg-2 mb-3 lh-base text-black">
                   In the effort to expand our support of community and culture through philanthropy, Fellowes has established the GIVE program. GIVE is dedicated to building local and global partnerships which address humanity’s greatest needs. The programs’ guiding principles align with our strong values as a company and are the hearts of our people. GIVE is committed to supporting initiatives in four key areas: Social Services, World Aid and Development, Education and Medical Research. We are honored to work as a team in building strong communities, improving lives, and providing a better tomorrow for our world today.
@@ -1518,7 +1501,7 @@
     ></script>
     <!-- Global scripts -->
     <script type="text/javascript" src="./js/core.js"></script>
-
+    <script type="text/javascript" src="js/homepage.js"></script>
     <!-- Custom scripts (formercolleagues.com) - Start -->
 
     <!-- Custom scripts (formercolleagues.com) - End -->

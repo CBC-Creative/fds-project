@@ -813,9 +813,12 @@
 }
 .tab-logo-box img {
   filter: grayscale(1);
+  opacity: 0.6;
+  transition: all 0.3s ease-out;
 }
 .tab-logo-box img:hover {
   filter: grayscale(0);
+  opacity: 1;
 }
 .tab-dropdown {
   margin: 0;
@@ -1115,18 +1118,18 @@
   font-size: var(--fds-fs-300);
   line-height: var(--fds-fs-700);
 }
-.title-section-aqm-healthy-air{
+.title-section-aqm-healthy-air {
   gap: 15px;
 }
-.aqm-small-title{
+.aqm-small-title {
   font-size: var(--fds-fs-450);
   line-height: var(--fds-fs-725);
 }
-.chart-text{
+.chart-text {
   font-size: var(--fds-fs-200);
   line-height: var(--fds-fs-400);
 }
-.source-text{
+.source-text {
   font-size: 8px;
   line-height: 7px;
   color: #707070;
@@ -1134,8 +1137,13 @@
 }
 
 @keyframes growProgressBar {
-  0%, 33% { --pgPercentage: 0; }
-  100% { --pgPercentage: var(--value); }
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
 }
 
 @property --pgPercentage {
@@ -1144,7 +1152,7 @@
   initial-value: 0;
 }
 
-div[role="progressbar"] {
+div[role='progressbar'] {
   --size: 190px;
   --fg: #778495;
   --bg: transparent;
@@ -1155,21 +1163,19 @@ div[role="progressbar"] {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: 
-    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
-    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
-    ;
+  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
   font-size: calc(var(--size) / 5);
   color: var(--fg);
   position: relative;
   margin: 0 auto;
 }
 
-div[role="progressbar"]::before {
+div[role='progressbar']::before {
   counter-reset: percentage var(--value);
   content: counter(percentage) '%';
 }
-div[role="progressbar"]::after{
+div[role='progressbar']::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1181,148 +1187,151 @@ div[role="progressbar"]::after{
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-.preg-12{
+.preg-12 {
   font-size: var(--fds-fs-250);
   line-height: var(--fds-fs-450);
 }
-.custom-padding-table th, .custom-padding-table td{
+.custom-padding-table th,
+.custom-padding-table td {
   padding: 0;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
-.underline-light-text{
+.underline-light-text {
   color: #778495;
   text-decoration: underline;
 }
-.aqm-air-list{
+.aqm-air-list {
   font-size: var(--fds-fs-200);
   line-height: var(--fds-fs-325);
   padding-left: 1.2rem;
 }
-.aqm-air-list li{
+.aqm-air-list li {
   margin-bottom: 0.5rem;
 }
-.whats-in-air-list{
+.whats-in-air-list {
   padding-left: 1.2rem;
   font-size: var(--fds-fs-150);
   line-height: var(--fds-fs-200);
 }
-.whats-in-air-list li{
+.whats-in-air-list li {
   margin-bottom: 0.5rem;
 }
-.preg-13{
+.preg-13 {
   font-size: var(--fds-fs-200);
   line-height: 0.938rem;
 }
-.human-circle{
+.human-circle {
   width: 130px;
-  height: 130px; 
+  height: 130px;
 }
-.pollen-circle{
-  width:75px;
+.pollen-circle {
+  width: 75px;
   height: 75px;
 }
-.smoke-circle{
+.smoke-circle {
   width: 19px;
   height: 19px;
 }
-.bacteria-circle{
+.bacteria-circle {
   width: 10px;
   height: 10px;
 }
-.blue-circle{
+.blue-circle {
   margin: 0 auto;
   background: #778495;
   border-radius: 50%;
 }
-.implact-title{
+.implact-title {
   color: #778495;
   font-size: var(--fds-fs-325);
-  line-height:normal;
+  line-height: normal;
   font-weight: 600;
   width: 40%;
   flex: 0 0 auto;
 }
-.implact-title span{
+.implact-title span {
   font-size: 1.625rem;
 }
-.preg-11{
+.preg-11 {
   font-size: var(--fds-fs-200);
   line-height: var(--fds-fs-325);
 }
-.custom-right-border{
+.custom-right-border {
   border-bottom: 1px solid #778495;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.custom-gap-implact{
+.custom-gap-implact {
   gap: 15px;
 }
-.good-ach-img{
+.good-ach-img {
   width: 100px;
   float: right;
   padding: 0px 0px 20px 20px;
 }
-@media (min-width:768px){
-  .good-ach-img{
+@media (min-width: 768px) {
+  .good-ach-img {
     width: auto;
   }
-  .implact-title{
+  .implact-title {
     color: #778495;
     font-size: 1.625rem;
-    line-height:normal;
+    line-height: normal;
     font-weight: 600;
     width: auto;
   }
-  .implact-title span{
+  .implact-title span {
     font-size: var(--fds-fs-850);
   }
-  .human-circle{
+  .human-circle {
     width: 150px;
-    height: 150px; 
+    height: 150px;
   }
-  .preg-13{
+  .preg-13 {
     font-size: var(--fds-fs-300);
     line-height: 0.938rem;
   }
-  .custom-right-border{
+  .custom-right-border {
     border-right: 1px solid #778495;
     border-bottom: none;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
 }
-@media (min-width:992px){
-  .aqm-air-list{width: 50%;}
-  .whats-in-air-list{
+@media (min-width: 992px) {
+  .aqm-air-list {
+    width: 50%;
+  }
+  .whats-in-air-list {
     columns: 2;
   }
-  .human-circle{
+  .human-circle {
     width: 150px;
-    height: 150px; 
+    height: 150px;
   }
 }
-@media (min-width:1200px){
-  .human-circle{
+@media (min-width: 1200px) {
+  .human-circle {
     width: 200px;
-    height: 200px; 
+    height: 200px;
   }
 }
-@media (max-width:767px){
-  .title-section-aqm-healthy-air .sub-title-workstation{
+@media (max-width: 767px) {
+  .title-section-aqm-healthy-air .sub-title-workstation {
     font-size: var(--fds-fs-710);
     line-height: var(--fds-fs-775);
   }
-  .mobile-preg-13{
+  .mobile-preg-13 {
     font-size: var(--fds-fs-300);
     line-height: var(--fds-fs-700);
   }
   .aqm-small-title {
     font-size: 0.938rem;
     line-height: var(--fds-fs-710);
-}
-.aqm-air-quality-sub-title-mobile .sub-title-workstation{
- font-size: var(--fds-fs-700);
- line-height: var(--fds-fs-775);
-}
+  }
+  .aqm-air-quality-sub-title-mobile .sub-title-workstation {
+    font-size: var(--fds-fs-700);
+    line-height: var(--fds-fs-775);
+  }
 }

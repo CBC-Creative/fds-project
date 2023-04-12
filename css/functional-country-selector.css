@@ -1,18 +1,19 @@
-.contry-section-bg{
-  background: url('../img/contry-page-bg.jpg');
+.contry-section-bg {
+  background: url('../img/Main-Banner-Image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.country-title{
+.country-title {
   font-size: var(--fds-fs-775);
   line-height: var(--fds-fs-850);
 }
-.choose-country-dropdown-select{
+.choose-country-dropdown-select {
   padding: 15px;
   background: #ffffff;
   font-size: var(--fds-fs-450);
@@ -21,58 +22,63 @@
   position: relative;
   cursor: pointer;
 }
-.choose-country-dropdown-select::after{
+.choose-country-dropdown-select::after {
   content: '';
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 7px solid transparent;
-  border-right: 7px solid transparent;  
+  border-right: 7px solid transparent;
   border-top: 10px solid #000000;
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
-.country-list-div{
+.country-list-div {
   padding: 15px;
   background: #ffffff;
   border-top: 1px solid #ededed;
   position: absolute;
   width: 100%;
-  height: 250px;
-    overflow-y: scroll; 
+  height: 180px;
+  overflow-y: scroll;
 }
-.country-list-div li{
+.country-list-div li {
   cursor: pointer;
   margin-bottom: 15px;
 }
-.country-list-div li:last-child{
+.country-list-div li:last-child {
   margin-bottom: 0px;
 }
 .country-list-div li div {
   display: flex;
   align-items: center;
 }
-.choose-country-dropdown-select img{
+.choose-country-dropdown-select img {
   width: 30px;
 }
-.country-list-div li div span{margin-right: 10px;}
-.country-list-div li div span img{
+.country-list-div li div span {
+  margin-right: 10px;
+}
+.country-list-div li div span img {
   width: 30px;
 }
-.country-list-div{
+.country-list-div {
   display: none;
 }
-.choose-country-dropdown{
+.choose-country-dropdown {
   position: relative;
 }
-@media (min-width:768px){
-  .country-title{
+@media (min-width: 768px) {
+  .country-title {
     font-size: var(--fds-fs-900);
     line-height: var(--fds-fs-907);
   }
-  .country-p-tag{
+  .country-p-tag {
     font-size: var(--fds-fs-600);
     line-height: var(--fds-fs-775);
+  }
+  .country-list-div {
+    height: 250px;
   }
 }

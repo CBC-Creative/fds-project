@@ -163,3 +163,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 }); // DOMContentLoaded  end
 // Custom Footer JS end
+
+var footerCopyRight = document.getElementById('copyright-year');
+
+if (footerCopyRight) {
+  var date = new Date();
+  var year = date.getFullYear();
+
+  footerCopyRight.innerHTML = year;
+}
