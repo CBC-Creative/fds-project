@@ -164,7 +164,11 @@ document.addEventListener('DOMContentLoaded', function () {
 }); // DOMContentLoaded  end
 // Custom Footer JS end
 
-var date = new Date();
-var year = date.getFullYear();
+var footerCopyRight = document.getElementById('copyright-year');
 
-document.getElementById('copyright-year').innerHTML = year;
+if (footerCopyRight) {
+  var date = new Date();
+  var year = date.getFullYear();
+
+  footerCopyRight.innerHTML = year;
+}
