@@ -25,6 +25,16 @@ $('.slider-icons').click(function () {
 });
 
 $(function () {
+
+	if($(".orignal-file-type").length > 0){
+		$(document).on('click',".orignal-file-type",function (e) {
+			e.preventDefault();
+			
+			$(this).parent().find('.list-of-file-type').toggleClass('d-block');
+		})
+	}
+
+	
   window.myvar = '';
   var getName = sessionStorage.getItem('data-name');
   var checkcheck;
@@ -281,6 +291,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
   		productId = 0, //this is a placeholder -> use your real product ids instead
       productName = '',
       productSize = '',
+			productType = '',
   		cartTimeoutId = false,
   		animatingQuantity = false;
 		initCartEvents();
@@ -355,6 +366,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
 			//reinsert product deleted from the cart
 			cartUndo.addEventListener('click', function(event) {
+				$('.list-of-file-type').removeClass('d-block');
 				if(event.target.tagName.toLowerCase() == 'a') {
 					event.preventDefault();
 					if(cartTimeoutId) clearInterval(cartTimeoutId);
@@ -378,6 +390,8 @@ Math.easeInOutQuad = function (t, b, c, d) {
 			var cartIsEmpty = Util.hasClass(cart[0], 'cd-cart--empty');
       productName = $(this).parents(".download-box").find('.product-name').text();
       productSize = $(this).parents(".download-box").find('.product-size').text();
+			productType = $(this).parents(".download-box").find('.product-file').html();
+			console.log(productType);
 			//update cart product list
 			addProduct(this);
 			//update number of items 
@@ -414,7 +428,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 			// replace productId, productName, price and url with your real product info
 			// you should also check if the product was already in the cart -> if it is, just update the quantity
 			productId = productId + 1; 
-			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="img/product-preview.png" class="img-fluid" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate">'+ productName +'</h3><span class="cd-cart__price">'+ productSize +'</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item"><img src="/img/cd-icons-close.svg" /></a><div class="cd-cart__quantity"><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>';
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="img/product-preview.png" class="img-fluid" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate">'+ productName +'</h3><span class="cd-cart__price">'+ productSize +'</span><span class="cd-cart__filetype">'+ productType +'</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item"><img src="/img/cd-icons-close.svg" /></a><div class="cd-cart__quantity"><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>';
 			cartList.insertAdjacentHTML('beforeend', productAdded);
 		};
 
@@ -528,4 +542,5 @@ if (jQuery(window).width() >= 768) {
       setHeightsunscribeform();
   });
 }
+
 
