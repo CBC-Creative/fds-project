@@ -1035,32 +1035,32 @@ a.two-col-section__link::after {
   padding-block: 1.5rem;
 }
 
-.right-nav li {
+.navbar .right-nav li {
   list-style: none;
   position: relative;
 }
 
-.right-nav .nav-link {
+.navbar .right-nav .nav-link {
   font-size: var(--fds-fs-500);
   color: var(--fds-black);
 }
 
-.right-nav .nav-link:after {
+.navbar .right-nav .nav-link:after {
   display: none;
 }
 
-.right-nav li:last-child .nav-link {
+.navbar .right-nav li:last-child .nav-link {
   font-size: var(--fds-fs-325);
   color: var(--fds-grey-700);
   padding: 1.5rem 0.5rem !important;
   line-height: 1.6;
 }
 
-.right-nav li:last-child .nav-link::after {
+.navbar .right-nav li:last-child .nav-link::after {
   display: inherit;
 }
 
-.right-nav li:last-child .nav-link:hover {
+.navbar .right-nav li:last-child .nav-link:hover {
   color: var(--fds-black);
 }
 
