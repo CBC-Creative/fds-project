@@ -48,21 +48,23 @@
   .opensearch .navbar-brand svg {
     fill: var(--fds-black);
   }
-  .nav-link,
+
+  .navbar-expand-xl .navbar-nav .nav-link,
   .menu-link {
     color: var(--fds-white);
   }
-  .navbar:hover .nav-link,
-  .navbar:hover .menu-link {
+  .scrolled-up.navbar-expand-xl .navbar-nav .nav-link,
+  .scrolled-up.navbar-expand-xl .navbar-nav .menu-link {
     color: #97989c;
   }
-  .scrolled-up .nav-link,
-  .scrolled-up .menu-link {
-    color: #97989c;
-  }
-  .top-scrolled-up .nav-link,
-  .top-scrolled-up .menu-link {
+  .top-scrolled-up.navbar-expand-xl .navbar-nav .nav-link,
+  .top-scrolled-up.navbar-expand-xl .navbar-nav .menu-link {
     color: var(--fds-white);
+  }
+
+  .navbar:hover .navbar-nav .nav-link,
+  .navbar:hover .navbar-nav .menu-link {
+    color: #97989c;
   }
   .opensearch .menu-link,
   .opensearch .nav-link {
