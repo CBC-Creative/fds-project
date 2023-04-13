@@ -64,7 +64,6 @@ $(function () {
     }
   } else if ($(window).width() >= 461 && $(window).width() <= 520) {
     if (checkcheck == 1) {
-      console.log('test521');
       $('.' + window.myvar).insertAfter('.slider-icons-list:nth-child(2)');
     } else {
       $('.' + window.myvar).insertAfter('.slider-icons-list:nth-child(3)');
@@ -151,7 +150,6 @@ Util.setHeight = function (start, to, element, duration, cb) {
     if (!currentTime) currentTime = timestamp;
     var progress = timestamp - currentTime;
     var val = parseInt((progress / duration) * change + start);
-    // console.log(val);
     element.setAttribute('style', 'height:' + val + 'px;');
     if (progress < duration) {
       window.requestAnimationFrame(animateHeight);
@@ -329,7 +327,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
                 var filtereditems = $(
                   itemstoremoveclass[w].parentNode.parentNode.parentNode.parentNode.offsetParent
                 );
-                console.log(filtereditems);
                 for (let fi = 0; fi < filtereditems.length; fi++) {
                   if (filtereditems[fi].classList.contains('itemselected')) {
                     filtereditems[fi].classList.remove('itemselected');
@@ -344,7 +341,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
                 var filtereditems = $(
                   itemstoremoveclass[w].parentNode.parentNode.parentNode.offsetParent
                 );
-                console.log(filtereditems);
                 for (let fi = 0; fi < filtereditems.length; fi++) {
                   if (filtereditems[fi].classList.contains('itemselected')) {
                     filtereditems[fi].classList.remove('itemselected');
@@ -557,14 +553,57 @@ if (jQuery(window).width() >= 768) {
   });
 }
 
-var downloadItem = document.querySelectorAll('.download-box');
-
-$(downloadItem).each(function () {
-  var downloadBtn = $(this).find('button.download-image');
-  var downloadList = $(this).find('.single-item-download-selector');
-
-  $(downloadBtn).click(function () {
-    $('.single-item-download-selector').not(downloadList).hide();
-    $(downloadList).toggle();
+$(function () {
+  $(document).on('click', function (e) {
+    var downloadList = $(e.target).parent().siblings('.single-item-download-selector');
+    if ($(e.target).hasClass('dl-icon')) {
+      $('.single-item-download-selector').not(downloadList).hide();
+      $(downloadList).toggle();
+    } else if (
+      $(e.target).hasClass('single-item-download-selector') ||
+      $(e.target).parents().hasClass('single-item-download-selector')
+    ) {
+      return;
+    } else {
+      $('.single-item-download-selector').hide();
+    }
   });
 });
+
+$(function () {
+  $(document).on('click', function (e) {
+    var fileTypeList = $(e.target).siblings('.list-of-file-type');
+
+    if ($(e.target).hasClass('current-file-type')) {
+      $('.list-of-file-type').not(fileTypeList).hide();
+      $(fileTypeList).toggle();
+    } else if (
+      $(e.target).hasClass('list-of-file-type') ||
+      $(e.target).parents().hasClass('list-of-file-type')
+    ) {
+      return;
+    } else {
+      $('.list-of-file-type').hide();
+    }
+  });
+});
+
+var cartFileSection = document.querySelectorAll('.cd-cart__filetype');
+
+if (cartFileSection) {
+  $(cartFileSection).each(function () {
+    var currentFileType = $(this).children('.current-file-type');
+    var availableFiletypes = $(this)
+      .children('.list-of-file-type')
+      .children('ul')
+      .children('li')
+      .children('a');
+    $(availableFiletypes).each(function () {
+      $(this).on('click', function () {
+        var clickedType = $(this).text();
+        $(currentFileType).text(clickedType);
+        $('.list-of-file-type').hide();
+      });
+    });
+  });
+}
