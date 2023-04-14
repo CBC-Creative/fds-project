@@ -26,3 +26,9 @@
 .panel-list li {
   word-break: break-word;
 }
+
+.vm-download {
+  color: #000;
+  display: block;
+  margin-block-end: 0.8rem;
+}
