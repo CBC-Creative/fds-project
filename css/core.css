@@ -1651,7 +1651,7 @@ a.two-col-section__link::after {
     transform-origin: top left;
   }
 
-  .showsub.sub-dropdown-menu {
+  .sub-dropdown-menu.showsub {
     max-height: 500px;
     opacity: 1;
   }
