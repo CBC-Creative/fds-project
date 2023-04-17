@@ -1,3 +1,217 @@
-h2 {
+.bigptext {
+  font-size: var(--fds-fs-500);
+  line-height: 1.5rem;
+}
+.shredders-banner img{
+  height: 500px;
+  object-fit: cover;
+  object-position: top center;
+}
+.bluesection {
+  background: var(--fds-blue);
+}
+.font-weight-300{
+  font-weight: 300;
+}
+.fds-light-gray {
+  background: var(--fds-grey-200);
+}
+.dash-board-title {
   font-size: var(--fds-fs-700);
+  line-height: var(--fds-fs-775);
+}
+.shreddeer-logo-slider .carousel-control-next{
+  height: 50px;
+  width: 50px;
+  background: var(--fds-white);
+  border-radius: 5px;
+  color: var(--fds-black);
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+.shreddeer-logo-slider .carousel-control-prev{
+  height: 50px;
+  width: 50px;
+  background: var(--fds-white);
+  border-radius: 5px;
+  color: var(--fds-black);
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+.shreddeer-logo-slider .carousel-control-next span, .shreddeer-logo-slider .carousel-control-prev span{
+  width: auto;
+  height: auto;
+}
+.bg-shreder-slider-img{
+  background: #e6e9ed;
+}
+.features-lamination{
+  gap: 15px;
+}
+.laminating-box{
+  border: 1px solid var(--fds-blue);
+  border-radius: 10px;
+  padding: 3rem;
+  text-align: center;
+}
+.laminating-title{
+  font-size: var(--fds-fs-600);
+}
+.laminating-box ul{
+  padding-left: 1rem;
+  text-align: left;
+  display: table;
+  margin: 0 auto;
+  font-size: var(--fds-fs-325);
+}
+.laminating-box ul li{
+  margin-bottom: 0.5rem;
+}
+.text-blue{
+  color: var(--fds-blue);
+}
+.clock-img{
+  width: 100px;
+  margin: 0 auto;
+}
+.laminating-note{
+  font-size: var(--fds-fs-150);
+  line-height: var(--fds-fs-325);
+}
+.tg th {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 10px;
+  border-style: none;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.tg td:nth-child(1) {
+  border-right: solid 8px #c9c9c9;
+}
+.tg td {
+  font-size: 14px;
+  padding: 10px 10px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: #c9c9c9;
+  text-align: center;
+}
+.tg .tg-bsv2 {
+  background-color: #efefef;
+}
+.tg td:first-child {
+  text-align: right;
+  min-width: 150px;
+}
+.choosing-sub-title{
+  font-size: var(--fds-fs-700);
+  line-height: var(--fds-fs-800);
+  font-weight: 500;
+}
+.how-much-do-you-shared span{
+  display: block;
+  font-size: var(--fds-fs-600);
+  font-weight: 600;
+}
+a.text-yellow, a.text-yellow:hover{
+  color: var(--fds-yellow);
+  font-weight: 500;
+}
+.text-yellow-only{
+  color: var(--fds-yellow);
+}
+.boder-right-shred{
+  border-bottom: 1px solid var(--fds-yellow);
+  padding-bottom: 1rem;
+}
+.boder-right-feature{
+  border-right: none;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 1rem;
+}
+.custom-image-right-border{
+  border-bottom: 1px solid #999999;
+  border-right: none;
+}
+.custom-image-bottom-border{
+  border-bottom: 1px solid #999999;
+}
+.tob-bottom-border-shred{
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+}
+.order-list-supplement-page{
+  padding-left: 1rem;
+}
+.order-list-supplement-page li{
+  margin-bottom: 1rem;
+}
+.unorder-list-supplement-page{
+  padding-left: 1rem;
+}
+.unorder-list-supplement-page li{
+  margin-bottom: 1rem;
+}
+.paper-jam-img img{
+  width: auto;
+  height: 150px;
+}
+@media (min-width:576px){
+  .features-lamination .image-div{
+    width: 30%;
+    flex: 0 0 auto;
+  }
+  .features-lamination .content-div{
+    width: 70%;
+    flex: 0 0 auto;
+  }
+}
+@media (min-width:768px){
+  .shredders-banner img{
+    height: 700px;
+  }
+  .bigptext {
+    font-size: var(--fds-fs-500);
+    line-height: 1.5rem;
+  }
+  .dash-board-title {
+    font-size: var(--fds-fs-800);
+    line-height: 2.625rem;
+}
+.w-md-80{
+  width: 80%;
+}
+.laminating-title{
+  font-size: var(--fds-fs-710);
+}
+.boder-right-shred{
+  border-right: 1px solid var(--fds-yellow);
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.boder-right-feature{
+  border-right: 1px solid #999999;
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.custom-image-right-border{
+  border-bottom: 1px solid #999999;
+  border-right: 1px solid #999999;
+}
+.right-side-supplemental-image{
+  float: right;
+  margin: 0px 0px 15px 15px;
+}
 }
