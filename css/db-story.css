@@ -117,6 +117,7 @@
     color: #b2b2b2;;
     border: 1px dashed transparent;
     transition: border 0.2s ease-in-out;
+    z-index: 100;
   }
   
   .story__skip:hover {
