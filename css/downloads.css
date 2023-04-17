@@ -1506,6 +1506,45 @@ button.download-image {
   background-color: transparent;
 }
 
+.download-image.dropdown-toggle:after {
+  display: none;
+}
+
+.details-link {
+  font-size: 13px;
+  line-height: 0;
+}
+
+.browsable .details-link {
+  display: block;
+}
+
+.browsable .downloadIconDropdown,
+.browsable .addtocart-main-input,
+.downloadable .details-link {
+  display: none;
+}
+
+.cartDropdown {
+  padding-bottom: 0 !important;
+}
+
+.cartDropdown [data-type-selected='true'] {
+  position: relative;
+}
+
+.cartDropdown [data-type-selected='true']::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: var(--fds-yellow);
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px;
+}
+
 .btn-spinner-border {
   --mdb-spinner-width: 0.6rem;
   --mdb-spinner-height: 0.6rem;
@@ -1573,4 +1612,38 @@ button.download-image {
   .icon-view-listing {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.details-info-section h2 {
+  font-size: var(--fds-fs-725);
+  margin-top: 2rem;
+}
+
+ul.details-downloads-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.details-downloads-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dd-link-text {
+  text-decoration: underline;
+}
+
+.download-zip {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.download-zip img {
+  max-height: 30px;
 }

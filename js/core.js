@@ -91,19 +91,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   if (mediaQuery1200.matches) {
-    var dropdown = document.getElementsByClassName('dropdown-toggle');
+    var dropdown = document.querySelectorAll('.navbar .dropdown-toggle');
     for (let v = 0; v < dropdown.length; v++) {
       dropdown[v].removeAttribute('data-mdb-toggle');
     }
   }
   if (mediaQuerymax1200.matches) {
-    var navContainers = document.getElementsByClassName('dropdown-toggle');
-    var removenavactive = document.getElementsByClassName('mobile-back-btn');
-    var navlink = document.getElementsByClassName('nav-item');
-    var closenav = document.getElementsByClassName('navbar-toggler');
-    var subnav = document.getElementsByClassName('sub-dropdown');
-    var subnavmenu = document.getElementsByClassName('sub-dropdown-menu');
-    var dropdownitem = document.getElementsByClassName('dropdown-item');
+    var navContainers = document.querySelectorAll('.navbar .dropdown-toggle');
+    var removenavactive = document.querySelectorAll('.navbar .mobile-back-btn');
+    var navlink = document.querySelectorAll('.navbar-nav .nav-item');
+    var closenav = document.querySelectorAll('.navbar .navbar-toggler');
+    var subnav = document.querySelectorAll('.navbar .sub-dropdown');
+    var subnavmenu = document.querySelectorAll('.navbar .sub-dropdown-menu');
+    var dropdownitem = document.querySelectorAll('.navbar .dropdown-item');
 
     for (var i = 0; i < navContainers.length; i++) {
       navContainers[i].addEventListener('click', function () {
@@ -114,15 +114,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     for (var n = 0; n < removenavactive.length; n++) {
       removenavactive[n].addEventListener('click', function () {
-        for (var ij = 0; ij < navlink.length; ij++) {
-          navlink[ij].classList.remove('active');
+        for (var ik = 0; ik < navlink.length; ik++) {
+          navlink[ik].classList.remove('active');
         }
       });
     }
     for (var k = 0; k < closenav.length; k++) {
       closenav[k].addEventListener('click', function () {
-        for (var ij = 0; ij < navlink.length; ij++) {
-          navlink[ij].classList.remove('active');
+        for (var im = 0; im < navlink.length; im++) {
+          navlink[im].classList.remove('active');
         }
       });
     }
@@ -132,10 +132,12 @@ document.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
       });
     }
+
+    console.log(subnav);
+    console.log(subnavmenu);
     /* please remove this after adding link on page */
     for (let l = 0; l < subnav.length; l++) {
       subnav[l].addEventListener('click', function (e) {
-        e.stopPropagation();
         subnavmenu[l].classList.toggle('showsub');
         subnav[l].classList.toggle('open');
       });

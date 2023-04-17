@@ -992,10 +992,10 @@
     <main id="primary-content" class="position-relative">
       <!-- HERO START -->
       <section class="hero bg-image d-flex align-items-stretch text-white pt-lg-5 overflow-hidden">
-        <div class="container pt-5 d-flex flex-column justify-content-lg-center justify-content-end px-4 px-lg-5 pb-5 pb-lg-0 ">
+        <div class="container pt-5 d-flex flex-column justify-content-lg-center justify-content-end px-4 px-lg-5 pb-lg-5 ">
           <div class="row mb-4 pt-lg-5">
             <div class="col-12 ">
-              <h1 class="h1 pt-lg-5 fw-semibold">
+              <h1 class="h1 pt-lg-5 fw-semibold mb-0">
                 What Drives Us </span><span class="text-nowrap ms-lg-5"><span class="ms-lg-5"></span>& Inspires Us</span>
               </h1>
             </div>
@@ -1015,59 +1015,46 @@
       </section>
       <!-- HERO END -->
       <!-- TABS START -->
-      <div class="container-xxl d-flex pt-md-5 px-4 px-xxl-0" id="overview-tabs">
-        <div class="position-absolute">
-          <!-- Tab navs -->
-          <div class="nav flex-column nav-tabs text-center" id="v-tabs-tab" role="tablist" aria-orientation="vertical">
+      <div class="container-xxl d-flex pt-md-5 px-4 px-xxl-0 position-relative" id="overview-tabs">
+        <div id="scrollspy-collapsible" class="position-absolute">
+          <div class="nav flex-column nav-tabs text-center">
             <a
               class="nav-link active text-uppercase fw-bold lead-sm p-0 px-3 mb-2 rounded-0"
-              id="v-tabs-family-tab"
-              data-mdb-toggle="tab"
-              href="#v-tabs-family"
-              role="tab"
-              aria-controls="v-tabs-family"
-              aria-selected="true">
-              Family</a
+              href="#v-family"
             >
+              Family
+            </a>
             <a
               class="nav-link text-uppercase fw-bold lead-sm p-0 px-3 mb-2 rounded-0"
-              id="v-tabs-innovation-tab"
-              data-mdb-toggle="tab"
-              href="#v-tabs-innovation"
-              role="tab"
-              aria-controls="v-tabs-innovation"
-              aria-selected="false"
-              >Innovation</a
+              href="#v-innovation"
             >
+              Innovation
+            </a>
             <a
               class="nav-link text-uppercase fw-bold lead-sm p-0 px-3 mb-2 rounded-0"
-              id="v-tabs-quality-tab"
-              data-mdb-toggle="tab"
-              href="#v-tabs-quality"
-              role="tab"
-              aria-controls="v-tabs-quality"
-              aria-selected="false"
-              >Quality</a
+              href="#v-quality"
+
             >
+             Quality
+            </a>
             <a
               class="nav-link text-uppercase fw-bold lead-sm p-0 px-3 mb-2 rounded-0"
-              id="v-tabs-care-tab"
-              data-mdb-toggle="tab"
-              href="#v-tabs-care"
-              role="tab"
-              aria-controls="v-tabs-care"
-              aria-selected="false"
-              >Care</a
+              href="#v-care"
             >
+              Care
+            </a>
+            <a href="#v-last-anchor"></a>
           </div>
-          <!-- Tab navs -->
         </div>
 
-        <div class="overview-tab-content">
-          <!-- TAB CONTENT START -->
-          <div class="tab-content overflow-hidden" id="v-tabs-tabContent">
-            <div class="tab-pane fade show active" id="v-tabs-family" role="tabpanel" aria-labelledby="v-tabs-family-tab">
-              <!-- FAMILY START -->
+        <div class="overview-tab-content py-lg-5 mb-lg-5">
+          <div
+            data-mdb-spy="scroll"
+            data-mdb-target="#scrollspy-collapsible"
+            data-mdb-offset="0"
+            class="scrollspy-example"
+          >
+            <section id="v-family" class="py-5">
               <div class="d-flex flex-column justify-content-center">
                 <div class="overview__family-content-wrapper mb-5 pb-3 d-flex flex-column justify-content-center">
                   <h3 class="h3 text-dark fw-bold mb-4 pb-lg-3">
@@ -1103,7 +1090,7 @@
                   <li class="d-flex overview__family-item flex-column">
                     <i class="icon-1"></i>
                     <h5 class="overview__family-item-heading text-dark fw-bold mb-4">Ambitious work.</h5>
-                    <p class="lead-sm text-black lh-base">
+                    <p class="lead-sm text-black lh-base mb-0">
                       Big dreams have a home at Fellowes. We empower one-another to chase our potential with wide-eyed ambition, and the
                       full support of our leadership teams.
                     </p>
@@ -1111,31 +1098,29 @@
                   <li class="d-flex overview__family-item flex-column">
                     <i class="icon-2"></i>
                     <h5 class="overview__family-item-heading text-dark fw-bold mb-4">Authentic connection.</h5>
-                    <p class="lead-sm text-black lh-base">
+                    <p class="lead-sm text-black lh-base mb-0">
                       We believe that only when you bring all of yourself to your work, can you do the work no one else can do.
                     </p>
                   </li>
                   <li class="d-flex overview__family-item flex-column">
                     <i class="icon-3"></i>
                     <h5 class="overview__family-item-heading text-dark fw-bold mb-4">Uncommon challenges.</h5>
-                    <p class="lead-sm text-black lh-base">
+                    <p class="lead-sm text-black lh-base mb-0">
                       Unleashing the worklife potential of everyone is no small task. When we band together as a global team working towards
                       this common goal, there’s no limit to what we can accomplish.
                     </p>
                   </li>
                 </ul>
               </div>
-              <!-- FAMILY END -->
-            </div>
-            <div class="tab-pane fade" id="v-tabs-innovation" role="tabpanel" aria-labelledby="v-tabs-innovation-tab">
-              <!-- INNOVATION START -->
+            </section>
+            <section id="v-innovation" class="py-5">
               <div class="d-flex flex-column">
                 <div class="overview__innovation-content-wrapper">
                   <div class="overview__innovation-header position-relative">
                     <h2 class="display-2 text-outline overview__innovation-heading--xxl text-uppercase"><span class="nowrap">Inno</span> vation</h2>
                     <img class="overview__innovation-figure" src="./img/db/Innovation office.webp" alt="Innovation office" />
                   </div>
-                  <div class="row mb-lg-4 pb-lg-3">
+                  <div class="row">
                     <div class="col-lg-8">
                       <h3 class="h3 text-dark fw-bold mb-4 pb-lg-2">Imagining the “not yet”, then creating it.</h3>
                       <p class="lead-lg text-black lh-base">
@@ -1163,10 +1148,8 @@
                   <img class="overview__innovation-bottom-figure--right" src="./img/db/Office.webp" alt="Bright office" />
                 </div>
               </div>
-              <!-- INNOVATION END -->
-            </div>
-            <div class="tab-pane fade" id="v-tabs-quality" role="tabpanel" aria-labelledby="v-tabs-quality-tab">
-              <!-- QUALITY START -->
+            </section>
+            <section id="v-quality" class="py-5">
               <div class="overview__quality-container d-flex flex-column">
                 <h2 class="display-2 text-outline text-uppercase">quality</h2>
                 <div class="row mb-5 mb-lg-4">
@@ -1193,16 +1176,14 @@
                   <img class="overview__quality-figure--right" src="./img/db/Bright office.webp" alt="Bright office" />
                 </div>
               </div>
-              <!-- QUALITY END -->
-            </div>
-            <div class="tab-pane fade" id="v-tabs-care" role="tabpanel" aria-labelledby="v-tabs-care-tab">
-              <!-- CARE START -->
+            </section>
+            <section id="v-care" class="py-5 mb-lg-5">
               <div class="overview__care-container text-center">
                 <div class="row d-flex justify-content-center mb-5 pb-lg-5">
                   <div class="col-lg-8">
                     <h2 class="display-2 text-outline text-uppercase overview__care-heading--xxl">Care</h2>
                     <h3 class="h3 text-dark fw-bold mb-4">Putting belief into practice.</h3>
-                    <p class="lead-sm text-black lh-base">
+                    <p class="lead-sm text-black lh-base mb-0">
                       For our legacy is to matter at all, it must first matter to us. We strive to approach each day with a posture of care for
                       our work, our community, and our world.
                     </p>
@@ -1240,13 +1221,11 @@
                   </div>
                 </div>
               </div>
-              <!-- CARE END -->
-            </div>
+            </section>
+            <section id="v-last-anchor"></section>
           </div>
-          <!-- TAB CONTENT END -->
         </div>
       </div>
-      <!-- TABS END -->
       <!-- PRE FOOTER START -->
       <section class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap" style="padding-inline: 2.25rem">
         <div class="d-flex flex-column">
