@@ -1,3 +1,7 @@
+.bodynavfixedtop {
+  background-color: black;
+}
+
 .header-text {
   position: absolute;
   bottom: 1rem;
@@ -11,6 +15,23 @@
   max-width: 60%;
 }
 
+.fpp-title {
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
+
+.fpp-title h1 {
+  font-weight: 200;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  .fpp-title h1 {
+    font-size: 53px;
+  }
+}
+
 h1.partner-name {
   font-size: var(--fds-fs-725);
 }
@@ -21,10 +42,16 @@ h1.partner-name {
   margin-inline: auto;
   margin-block-start: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 288px));
   grid-auto-rows: 1fr;
   gap: 1rem;
   margin-block-end: 4rem;
+  justify-content: center;
+}
+
+.non-home-action-grid {
+  margin-block-start: 3rem;
+  margin-block-end: 3rem;
 }
 
 .action-grid__item {
