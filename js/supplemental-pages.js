@@ -1,5 +1,5 @@
 if (jQuery(window).width() >= 992) {
-  $( document ).ready(function() {
+ 
     function setHeightsunscribeform() {
       var maxHeight = -1;
       jQuery('.laminating-box').each(function() {
@@ -10,8 +10,10 @@ if (jQuery(window).width() >= 992) {
       });
     };
     setHeightsunscribeform();
-});
-	
+
+    $( document ).ready(function() {
+      setHeightsunscribeform();
+    });
 	jQuery(window).resize(function() {
 		setHeightsunscribeform();
 	});

@@ -168,6 +168,34 @@ a.text-yellow, a.text-yellow:hover{
   width: auto;
   height: 150px;
 }
+.idea-hot-buttons{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-600);
+  color: rgba(102, 102, 102, 0.85);
+  font-weight: 600;
+  padding: 10px;
+  border: 1px solid rgba(77, 85, 91, 0.15);
+  background-color: rgba(77, 85, 91, 0.05);
+  box-shadow: 0 0 2px rgba(77, 85, 91, 0.2);
+}
+.idea-hot-buttons.laminating-box1, .aremax-icon-text{
+  height: 100%;
+}
+.idea-center-home, .idea-center-school, .idea-center-business{
+  background: #e5eaee;
+}
+.sup-landing-creativity-banner{
+  background: url(../img/sup-landing-images/banner-resources-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+.active-block{
+  background: #cccccc !important;
+}
+.aremax-icon-text img{
+  height: 80px;
+}
 @media (min-width:576px){
   .features-lamination .image-div{
     width: 30%;
