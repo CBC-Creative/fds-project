@@ -59,6 +59,15 @@
   }
   
   /******* nav tabs start *******/
+  .locations .fixed {
+    position: fixed;
+    padding-top: 1rem;
+    background-color: var(--mdb-white);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
   .locations .nav-tabs {
     border: none !important;
   }
