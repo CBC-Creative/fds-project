@@ -10,6 +10,7 @@
   padding: 0.5rem 1rem;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 #purifiers-tabs.nav-tabs .nav-link::after {
@@ -24,22 +25,22 @@
   max-width: 1246px;
   margin-inline: auto;
 }
-.fds-light-gray{
+.fds-light-gray {
   background: var(--fds-grey-200);
 }
-.landing-icon img{
+.landing-icon img {
   width: 55px;
   margin: 0 auto;
 }
-.landing-array-list{
+.landing-array-list {
   font-size: 0.938rem;
   line-height: 1.313rem;
   padding-left: 1rem;
 }
-.landing-array-list li{
+.landing-array-list li {
   margin-bottom: 0.5rem;
 }
-.note-array{
+.note-array {
   font-size: var(--fds-fs-150);
   line-height: var(--fds-fs-600);
 }
@@ -132,6 +133,7 @@
 
 .purifiers-tab-item {
   border-bottom: 1px solid #e8e8e8;
+  flex-grow: 1;
 }
 
 .purifier-img {
@@ -255,7 +257,7 @@
 .tabContent__btn {
   font-size: 11px;
   width: 100%;
-  max-width: 170px;
+  max-width: 175px;
   display: block;
   text-align: center;
   margin-left: auto;
