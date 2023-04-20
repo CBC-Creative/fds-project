@@ -6,8 +6,8 @@
   color: #000;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 2fr;
-  padding: 0.5rem 2rem;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.5rem 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -24,13 +24,31 @@
   max-width: 1246px;
   margin-inline: auto;
 }
-
+.fds-light-gray{
+  background: var(--fds-grey-200);
+}
+.landing-icon img{
+  width: 55px;
+  margin: 0 auto;
+}
+.landing-array-list{
+  font-size: 0.938rem;
+  line-height: 1.313rem;
+  padding-left: 1rem;
+}
+.landing-array-list li{
+  margin-bottom: 0.5rem;
+}
+.note-array{
+  font-size: var(--fds-fs-150);
+  line-height: var(--fds-fs-600);
+}
 @media (min-width: 768px) {
   .purifier-grid-wrapper {
     grid-template-columns: 250px 1fr;
   }
   #purifiers-tabs.nav-tabs .nav-link {
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     text-align: center;
     padding-block: 1rem;
     opacity: 0.25;
@@ -109,6 +127,7 @@
 
 .tab-title {
   font-weight: 400;
+  text-align: left;
 }
 
 .purifiers-tab-item {
@@ -117,6 +136,7 @@
 
 .purifier-img {
   justify-self: center;
+  width: 80px;
 }
 
 .tab-pane {
