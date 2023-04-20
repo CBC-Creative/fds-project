@@ -432,6 +432,14 @@ a.two-col-section__link::after {
   max-height: 470px;
 }
 
+.img-minh-300 {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+}
+
 .mw-1400 {
   max-width: 87.5rem;
   margin-inline: auto;
