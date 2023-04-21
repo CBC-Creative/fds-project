@@ -242,6 +242,10 @@
   margin-top: 1rem;
 }
 
+.banner-available {
+  font-size: var(--fds-fs-450);
+}
+
 #homepagebannerslider .carousel-item img {
   height: 100%;
   object-fit: cover;
@@ -269,6 +273,9 @@
   }
   .banner-subtitle {
     font-size: var(--fds-fs-850);
+  }
+  .banner-available {
+    font-size: var(--fds-fs-725);
   }
   #homepagebannerslider .carousel-indicators {
     gap: 8px;
@@ -779,6 +786,63 @@ h5.grid-title {
   .nav-pills .show > .nav-link {
     background: transparent;
     display: none;
+  }
+}
+
+#pinContainer {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  z-index: 1000;
+  background-color: #000000;
+}
+#slideContainer {
+  width: 100%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0.15;
+}
+.every-day-section.panel {
+  opacity: 1;
+}
+
+.aqm-small-banner-text {
+  font-size: 1.688rem;
+  line-height: 1.938rem;
+  color: var(--fds-black);
+}
+.banner-text-bottom-aqm .container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.aqm-small-banner-img img {
+  height: 100vh;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .aqm-small-banner-img img {
+    height: 100vh;
+  }
+  .banner-text-bottom-aqm .container.top30 {
+    top: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .aqm-small-banner-text {
+    font-size: 2.313rem;
+    line-height: var(--fds-fs-905);
   }
 }
 
