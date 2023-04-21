@@ -68,6 +68,11 @@
     right: 0;
     z-index: 999;
   }
+  .locations .tab-content {
+    padding-top: 7.25rem;
+    margin-top: -7.25rem;
+  }
+
   .locations .nav-tabs {
     border: none !important;
   }

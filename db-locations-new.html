@@ -1039,27 +1039,31 @@
               <div class="container d-flex flex-column" id="countries-tabs">
                 <div id="locations-menu" class="d-none d-xl-block d-lg-block mb-4">
                   <!-- Tabs navs -->
-                  <ul id="scrollspy-collapsible" class="nav nav-tabs d-flex justify-content-center gap-3 row-gap-1">
+                  <ul class="nav nav-tabs d-flex justify-content-center gap-3 row-gap-1">
                     <li class="nav-item lead lead-lg text-center">
                       <a class="nav-link active text-dark py-2 px-3 fs-6 fw-bold lead-sm p-0 px-3 mb-2"
+                         data-target="fellowes.com/locations/designexperiencecenters"
                          href="#fellowes.com/locations/designexperiencecenters">
                         Design & Experience Center
                       </a>
                     </li>
                     <li class="nav-item text-center">
                       <a class="nav-link text-dark py-2 px-3 fs-6 fw-bold lead-sm p-0 px-3 mb-2"
+                         data-target="fellowes.com/locations/showrooms"
                          href="#fellowes.com/locations/showrooms">
                         Showrooms
                       </a>
                     </li>
                     <li class="nav-item text-center">
                       <a class="nav-link text-dark py-2 px-3 fs-6 fw-bold lead-sm p-0 px-3 mb-2"
+                         data-target="fellowes.com/locations/corporateoffices"
                          href="#fellowes.com/locations/corporateoffices">
                         Corporate Offices
                       </a>
                     </li>
                     <li class="nav-item text-center">
                       <a class="nav-link text-dark py-2 px-3 fs-6 fw-bold lead-sm p-0 px-3 mb-2"
+                         data-target="fellowes.com/locations/distrubution"
                          href="#fellowes.com/locations/distrubution">
                         Manufacturing & Distribution
                       </a>
@@ -1076,27 +1080,31 @@
                     <button class="btn dropdown-toggle py-2 px-4 text-uppercase lead lead-sm" type="button" id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false"> 
                       Design & Experience Center
                     </button>
-                    <ul id="scrollspy-collapsible" class="dropdown-menu w-100 my-3 py-0 overflow-hidden nav-tabs">
+                    <ul class="dropdown-menu w-100 my-3 py-0 overflow-hidden nav-tabs">
                       <li>
                         <a class="nav-link dropdown-item text-center text-uppercase py-2 active"
+                           data-target="fellowes.com/locations/designexperiencecenters"
                           href="#fellowes.com/locations/designexperiencecenters" data-mdb-toggle="tab-link">
                           Design & Experience Center
                         </a>
                       </li>
                       <li>
                         <a class="nav-link dropdown-item text-center text-uppercase py-2 active"
+                           data-target="fellowes.com/locations/showrooms"
                           href="#fellowes.com/locations/showrooms" data-mdb-toggle="tab-link">
                           Showrooms
                         </a>
                       </li>
                       <li>
                         <a class="nav-link dropdown-item text-center text-uppercase py-2 active"
+                           data-target="fellowes.com/locations/corporateoffices"
                           href="#fellowes.com/locations/corporateoffices" data-mdb-toggle="tab-link">
                           Corporate Offices
                         </a>
                       </li>
                       <li>
                         <a class="nav-link dropdown-item text-center text-uppercase py-2 active"
+                           data-target="fellowes.com/locations/distrubution"
                           href="#fellowes.com/locations/distrubution" data-mdb-toggle="tab-link">
                           Manufacturing & Distribution
                         </a>
@@ -1109,14 +1117,11 @@
 
                 <div class="d-block pt-1 pt-xl-5 pt-lg-5">
                   <!-- Tabs content start -->
-
-                  <div class="gap-1 scrollspy-example"
-                       data-mdb-spy="scroll"
-                       data-mdb-target="#scrollspy-collapsible"
-                       data-mdb-offset="0">
-                    <div class="active" id="fellowes.com/locations/designexperiencecenters">
-                      <div class="d-block">
-                        <div class="row position-relative">
+                  <div class="gap-1">
+                    <div class="tab-content" id="fellowes.com/locations/designexperiencecenters">
+                      <h3 class="h3 text-center pb-3 mb-4 text-dark fw-bold">Design & Experience Center</h3>
+                      <div class="d-block pb-5">
+                        <div class="row position-relative pb-5">
                           <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
                             <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
                               <img class="w-100 h-auto object-cover" src="./img/db/north.jpg" alt="north-img">
@@ -1349,9 +1354,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="active" id="fellowes.com/locations/showrooms">
-                      <div class="d-block">
-                        <div class="row position-relative">
+                    <div class="tab-content" id="fellowes.com/locations/showrooms">
+                      <h3 class="h3 text-center pb-3 mb-4 text-dark fw-bold">Showrooms</h3>
+                      <div class="d-block pb-5">
+                        <div class="row position-relative pb-5">
                           <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
                             <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
                               <img class="w-100 h-auto object-cover" src="./img/db/europe.jpg" alt="north-img">
@@ -1548,9 +1554,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="active" id="fellowes.com/locations/corporateoffices">
-                      <div class="d-block">
-                        <div class="row position-relative">
+                    <div class="tab-content" id="fellowes.com/locations/corporateoffices">
+                      <h3 class="h3 text-center pb-3 mb-4 text-dark fw-bold">Corporate Offices</h3>
+                      <div class="d-block pb-5">
+                        <div class="row position-relative pb-5">
                           <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
                             <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
                               <img class="w-100 h-auto object-cover" src="./img/db/north.jpg" alt="north-img">
@@ -1711,9 +1718,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="active" id="fellowes.com/locations/distrubution">
-                      <div class="d-block">
-                        <div class="row position-relative">
+                    <div class="tab-content" id="fellowes.com/locations/distrubution">
+                      <h3 class="h3 text-center pb-3 mb-4 text-dark fw-bold">Manufacturing & Distribution</h3>
+                      <div class="d-block pb-5">
+                        <div class="row position-relative pb-5">
                           <div class="col-xl-6 col-lg-6 col-12 d-xl-block d-lg-block d-none">
                             <div class="d-block me-5 position-sticky top-0 mt-n5 pt-5">
                               <img class="w-100 h-auto object-cover" src="./img/db/north.jpg" alt="north-img">
