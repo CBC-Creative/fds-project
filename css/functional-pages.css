@@ -676,3 +676,29 @@ section h1 {
 .active-menu-mobile {
   pointer-events: none;
 }
+
+.addverify-title {
+  font-size: var(--fds-fs-710);
+  font-weight: 700;
+}
+
+.addverify-subtitle {
+  text-align: start;
+  font-size: var(--fds-fs-400);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .addverify-border {
+    border-block-end: 1px solid #97989c;
+  }
+  .addverify-modal {
+    margin-top: 130px;
+  }
+}
+
+@media (min-width: 768px) {
+  .addverify-border {
+    border-inline-end: 1px solid #97989c;
+  }
+}

@@ -470,6 +470,11 @@ a.two-col-section__link::after {
   margin-inline: auto;
 }
 
+.maxW-760 {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
 .mw-670 {
   max-width: 670px;
   margin-inline: auto;
