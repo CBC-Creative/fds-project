@@ -111,7 +111,13 @@
     border-bottom: 1px solid var(--gray-200) !important;
     background-color: var(--mdb-white) !important;
   }
-  
+
+  .locations .flag {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+  }
+
   .locations .dropdown-tabs {
     z-index: 100;
   }

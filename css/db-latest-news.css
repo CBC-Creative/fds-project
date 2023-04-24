@@ -37,8 +37,8 @@
 .top-scrolled-up .nav-link, .top-scrolled-up .menu-link { color: var(--fds-white); }
 @media screen and (max-width: 480px) { .lead-lg { font-size: 0.938rem; } }
 
-/******* lines *******/
-.page-decoration {
+  /******* lines *******/
+  .page-decoration {
     position: fixed;
   }
   
@@ -51,6 +51,12 @@
   }
   
   /******* hero end *******/
+  .with-hover:hover{
+    text-decoration: underline !important;
+  }
+  .radius-625{
+    border-radius: 0.625rem;
+  }
   /******* tabs start *******/
   .news .btn-dark {
     background: #000000;
@@ -89,20 +95,15 @@
   }
   .news .news-preview {
     width: 100%;
-    height: 15.875rem;
     object-fit: cover;
   }
-  @media screen and (min-width: 62em) {
-    .news .news-preview {
-      width: 13.75rem;
-      height: 12.875rem;
-    }
-  }
+
   @media screen and (min-width: 48em) {
     .news .news-preview {
-      width: 100%;
+      width: auto;
+      max-width: 100%;
       height: auto;
-      max-height: 20rem;
+      margin: 0 auto;
     }
   }
   .news .dropdown-tabs {
