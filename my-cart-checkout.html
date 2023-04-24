@@ -1112,8 +1112,105 @@
                             </div>
                           </div>
                         </fieldset>
-                        <div class="form-group text-end mb-0 continue-btn">
-                          <a href="#" class="btn btn-primary">CONTINUE</a>
+                        <div class="form-group text-end mb-0">
+                          <a
+                            href="javascript:;"
+                            data-mdb-toggle="modal"
+                            data-mdb-target="#address-verification"
+                            class="btn btn-primary"
+                          >
+                            CONTINUE
+                          </a>
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="address-verification"
+                            tabindex="-1"
+                            aria-labelledby="address-verificationLabel"
+                            aria-hidden="true"
+                          >
+                            <div
+                              class="modal-dialog modal-xl modal-dialog-centered maxW-760 maxwidth-90percent addverify-modal"
+                            >
+                              <div class="modal-content rounded-0 position-relative">
+                                <div
+                                  class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn-close m-0 p-0"
+                                    data-mdb-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body p-4 m-0 bg-white">
+                                  <h2 class="addverify-title text-center">
+                                    Please Verify Your Address
+                                  </h2>
+                                  <div class="addverify-cols row pt-4 text-start">
+                                    <div
+                                      class="col-12 col-md-5 addverify-border d-flex flex-column justify-content-start px-5 pb-5 pb-md-0"
+                                    >
+                                      <h3 class="addverify-subtitle mb-4">You Entered</h3>
+                                      <div class="entered-address">
+                                        123 Main St.<br />Chicago, IL 60601
+                                      </div>
+                                      <a
+                                        href="javascript:;"
+                                        class="btn btn-primary continue-btn mt-4 d-block w-100 mt-md-auto"
+                                      >
+                                        USE AS ENTERED
+                                      </a>
+                                    </div>
+                                    <div class="col-12 col-md-7 px-5 pt-5 pt-md-0">
+                                      <h3 class="addverify-subtitle mb-4">
+                                        We Found the Following Address
+                                      </h3>
+                                      <div class="form-check mb-3">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="address-selector"
+                                          id="address-selector-1"
+                                        />
+                                        <label class="form-check-label" for="address-selector-1"
+                                          >168 Henderson Drive<br />Wentzville, MO 63385</label
+                                        >
+                                      </div>
+                                      <div class="form-check mb-3">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="address-selector"
+                                          id="address-selector-2"
+                                        />
+                                        <label class="form-check-label" for="address-selector-2"
+                                          >168 Henderson Drive<br />Wentzville, MO 63385</label
+                                        >
+                                      </div>
+                                      <div class="form-check mb-3">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="address-selector"
+                                          id="address-selector-3"
+                                        />
+                                        <label class="form-check-label" for="address-selector-3"
+                                          >168 Henderson Drive<br />Wentzville, MO 63385</label
+                                        >
+                                      </div>
+                                      <a
+                                        href="javascript:;"
+                                        class="btn btn-primary continue-btn mt-4 d-block w-100"
+                                      >
+                                        USE SELECTED ADDRESS
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
