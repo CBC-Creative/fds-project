@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let con = 0; con < continuebtn.length; con++) {
       continuebtn[con].addEventListener('click', function () {
         var nextiembutton =
-          continuebtn[con].parentNode.nextSibling.parentNode.parentNode.nextElementSibling;
+          continuebtn[con].parentNode.nextSibling.parentNode.parentNode.nextElementSibling;          
         var fieldvalues =
           continuebtn[con].parentNode.nextSibling.parentNode.parentNode.firstElementChild;
         var triggerclick = nextiembutton.firstElementChild.firstElementChild;
@@ -38,4 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
         this.parentNode.className = 'accordionItem open';
       }
     }
+  });
+
+  $(document).on("click", ".continue-btn-popup", function(){
+    var getparent = $(this).parents().find('.accordion-item').next();
+    var nextitem = getparent[0];    
+    var nextaccordianbtn = $(nextitem).children().find('.accordion-button');
+    $(nextaccordianbtn).trigger('click');
   });
