@@ -123,3 +123,21 @@ function equalHeight() {
   }  
 }
 equalHeight();
+
+
+  menu = $('.custom-section-nav-section');
+  menu1 = $('#evolve');
+  menu2 = $('#explore');
+  origOffsetY = menu2.offset().top;
+  origOffsetY1 = menu1.offset().top - 400;
+  console.log(origOffsetY1);
+  $(window).scroll(function() { if ($(window).scrollTop() > origOffsetY && $(window).scrollTop() < origOffsetY1) {menu.addClass('fixed-bottom');} else { menu.removeClass('fixed-bottom');}});
+	
+$('.custom-section-nav a').click(function () {
+  $('.custom-section-nav a').removeClass('active');
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+  } else{
+    $(this).addClass('active');
+  }
+})
