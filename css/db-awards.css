@@ -116,12 +116,26 @@
     border: none;
     border-radius: 0;
 }
+.awards-page__awards-box {
+    height: 8.25rem;
+    max-width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 .awards-page__awards-image {
-    max-width: calc(100% - min(4rem, 4vw));
-    margin: 2rem auto;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
 }
 .awards-page__awards-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-top: 1px solid #e9ecef;
     padding-bottom: clamp(1.5rem, 2.75vw, 2.75rem);
 }
