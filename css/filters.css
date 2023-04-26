@@ -32,8 +32,14 @@
 .wall-stand-box {
   width: 260px;
 }
-
+.cat-viewpoint-icon{
+  font-size: var(--fds-fs-250);
+  line-height: var(--fds-fs-325);
+  font-weight: 600;
+  color: #4498D8;
+}
 @media (max-width: 768px) {
+
   .wall-stand-box {
     margin-inline: auto;
   }
@@ -140,7 +146,18 @@
 .dashboard-list li {
   margin-bottom: 1rem;
 }
+.icon-row img{
+  height: 60px;
+}
 @media (min-width: 768px) {
+  .icon-row .col-md{
+    width: 20%;
+    flex: 0 0 auto;
+  }
+  .cat-viewpoint-icon{
+    font-size: 0.938rem;
+    line-height: var(--fds-fs-450);
+  }
   .dash-board-title {
     font-size: var(--fds-fs-800);
     line-height: 2.625rem;
@@ -983,6 +1000,11 @@
 }
 
 @media (max-width: 768px) {
+  .icon-row .bigptext{
+    font-size: 0.938rem;
+    line-height: var(--fds-fs-600);
+  }
+
   .array-circle-img {
     max-width: 223px;
     margin-inline: auto;
