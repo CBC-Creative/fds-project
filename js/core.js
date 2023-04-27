@@ -199,3 +199,12 @@ function videoScroll() {
     }
   }
 }
+
+if (document.querySelectorAll('video[autoplay]').length > 0) {
+  videoAutoP = document.querySelectorAll('video[autoplay]');
+
+  for (var vidAP = 0; vidAP < videoAutoP.length; vidAP++) {
+    var thisVidAP = videoAutoP[vidAP];
+    thisVidAP.setAttribute('playsinline', '');
+  }
+}
