@@ -274,8 +274,193 @@ height: 100%;
 .innovation-img{
   position: relative;
 }
+.company-heritage-banner{
+  background: url(../img/company-heritage/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.company-heritage-banner{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.company-heritage-banner .banner-text__header {
+  font-size: var(--fds-fs-800);
+  line-height: var(--fds-fs-860);
+}
+.company-heritage-banner .banner-text__header span{
+  font-size: var(--fds-fs-725);
+  line-height: var(--fds-fs-775);
+  color: #555555;
+  text-transform: capitalize;
+}
+.heritage-nav{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.heritage-nav::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.heritage-nav::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+  background-color: #F5F5F5;
+}
+
+.heritage-nav::-webkit-scrollbar-thumb
+{
+  background-color: #919191;
+}
+.heritage-nav a{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-700);
+  color: var(--fds-white);
+  opacity: 0.6;
+  padding-top:  0.3rem;
+  padding-bottom:  0.5rem;
+  transition: all 0.3s;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: 1px solid var(--fds-black);
+  border-bottom: 1px solid var(--fds-black);
+}
+.heritage-nav a:hover{
+  opacity: 1;
+  border-top: 1px solid var(--fds-yellow);
+  border-bottom: 1px solid var(--fds-yellow);
+}
+.heritage-nav a.active{
+  opacity: 1;
+  border-top: 1px solid var(--fds-yellow);
+  border-bottom: 1px solid var(--fds-yellow);
+}
+.heritage-nav-section{
+  background: var(--fds-black);
+  padding: 1rem 0rem;
+}
+.sub-title-heritage{
+  font-size: var(--fds-fs-800);
+  line-height: var(--fds-fs-860);
+  font-weight: 600;
+}
+.absolute-content-vertical-center{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+.year-text{
+  font-size: 4rem;
+  line-height: 4rem;
+  position: absolute;
+  left:1rem;
+  bottom: 2rem;
+  font-weight: 100;
+  color: #E8E6E2;
+  opacity: 0.26;
+}
+.height800{
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.height800 .bg-image-heritage{
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.absolute-img-right{
+  width: 290px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.heritage-sub-title{
+  font-size: var(--fds-fs-600);
+  line-height: var(--fds-fs-710);
+  font-weight: 500;
+}
+.bg-image-heritage1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.section-content{
+  border-top: 2px solid var(--fds-white);
+  opacity: 0;
+transition: all 1s;
+}
+.section-content.fadeIn{
+  opacity: 1; 
+}
+
 @media (min-width:768px)
 {
+  .heritage-nav-section{
+    background: var(--fds-black);
+    padding: 1rem 2rem;
+  }
+  .harry-fellowes-section{
+    min-height: 800px;
+  }
+  .heritage-sub-title{
+    font-size: 1.563rem;
+    line-height: var(--fds-fs-775);
+  }
+  .year-text{
+    font-size: 10.188rem;
+    line-height: 10.438rem;
+    left: 2rem;
+    bottom: 2rem;
+  }
+  .company-heritage-banner{
+    height: 700px;
+  }
+  .height800{
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .absolute-content-vertical-center{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .absolute-img-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 540px;
+  }
+  .company-heritage-sectionheight{
+    min-height: 800px;
+  }
+  .sub-title-heritage{
+    font-size: 2.625rem;
+    line-height: 3.063rem;
+  }
+  .company-heritage-banner .banner-text__header {
+    font-size: 3.75rem;
+    line-height: 3.375rem;
+  }
+  .company-heritage-banner .banner-text__header span{
+    font-size: 2.688rem;
+    line-height: var(--fds-fs-910);
+  }
   
   .care-section img{
     height: auto;
@@ -406,6 +591,12 @@ height: 100%;
   }
 }
 @media (min-width:992px){
+  .heritage-nav{
+    overflow-x: hidden;
+  }
+  .absolute-img-right{
+    width: auto;
+  }
   .border-right-design-intention{
     border-right: 1px solid var(--fds-grey-600);
   }

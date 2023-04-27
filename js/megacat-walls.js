@@ -127,11 +127,15 @@ equalHeight();
 
   menu = $('.custom-section-nav-section');
   menu1 = $('#evolve');
+  thatheight = $('#evolve').height();
   menu2 = $('#explore');
   origOffsetY = menu2.offset().top;
-  origOffsetY1 = menu1.offset().top - 400;
+  origOffsetY1 = menu1.offset().top;
   console.log(origOffsetY1);
   $(window).scroll(function() { if ($(window).scrollTop() > origOffsetY && $(window).scrollTop() < origOffsetY1) {menu.addClass('fixed-bottom');} else { menu.removeClass('fixed-bottom');}});
+
+  var htmltomove = $('.htmltomove').html();
+  $(".movedhtml").html(htmltomove);
 	
 $('.custom-section-nav a').click(function () {
   $('.custom-section-nav a').removeClass('active');
