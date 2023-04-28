@@ -134,14 +134,17 @@ equalHeight();
   console.log(origOffsetY1);
   $(window).scroll(function() { if ($(window).scrollTop() > origOffsetY && $(window).scrollTop() < origOffsetY1) {menu.addClass('fixed-bottom');} else { menu.removeClass('fixed-bottom');}});
 
-  var htmltomove = $('.htmltomove').html();
-  $(".movedhtml").html(htmltomove);
-	
-$('.custom-section-nav a').click(function () {
-  $('.custom-section-nav a').removeClass('active');
-  if ($(this).hasClass('active')) {
-    $(this).removeClass('active');
-  } else{
-    $(this).addClass('active');
-  }
-})
+ 
+
+  $(window).on('scroll', function() {
+    section5 = $('#evolve');
+    section5offsetY = section5.offset().top;
+    if ($(window).scrollTop() > section5offsetY){
+      var htmltomove = $('.htmltomove').html();
+      $(".movedhtml").html(htmltomove);
+    } else{
+      $(".movedhtml").html('');
+    }
+
+    
+  });
