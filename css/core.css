@@ -20,7 +20,6 @@
   --fds-tan: #f6f5f3;
   --fds-dark-tan: #948d8a;
   --fds-darkgray: #52555e;
-  
 
   --mdb-nav-link-color: --fds-grey-600;
   --mdb-nav-link-hover-color: --fds-black;
@@ -81,21 +80,18 @@
   --fds-fs-100: 0.5625rem;
 }
 
-::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 6px;
   height: 6px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
 /* Skip Link Styles */
@@ -1432,6 +1428,7 @@ a.two-col-section__link::after {
     box-shadow: none;
     z-index: -1;
     gap: 2rem;
+    transition-delay: 0.3s;
   }
 
   .navbar .dropdown:hover .dropdown-menu {
