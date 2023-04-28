@@ -133,7 +133,11 @@
         </div>
       </section>
 
-      <div class="wrapper-step-div position-relative">
+      <div
+      data-mdb-spy="scroll"
+      data-mdb-target="#scrollspy-collapsible"
+      data-mdb-offset="0"
+      class="wrapper-step-div position-relative scrollspy-example">
 
         <section class="band py-5 pb-md-5 pb-0 fds-tan-bg position-relative step-1section step-sections" id="explore">
           <div class="container py-md-5 position-relative zindex-10 mb-md-0 mb-4">
@@ -154,13 +158,28 @@
       </section>
 
       <section class="band custom-section-nav-section htmltomove">
-          <nav class="custom-section-nav">
-              <a href="#explore" class="active"><span>1</span>EXPLORE</a>
-              <a href="#define"><span>2</span>DEFINE</a>
-              <a href="#construct"><span>3</span>CONSTRUCT</a>
-              <a href="#install"><span>4</span>INSTALL</a>
-              <a href="#evolve"><span>5</span>EVOLVE</a>
-          </nav>
+
+        <!-- Scrollspy -->
+    <div id="scrollspy-collapsible">
+      <ul class="nav flex-row  menu-sidebar custom-section-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#explore"><span>1</span>EXPLORE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#define"><span>2</span>DEFINE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#construct"><span>3</span>CONSTRUCT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#install"><span>4</span>INSTALL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#evolve"><span>5</span>EVOLVE</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Scrollspy -->
       </section>
       <section class="band pt-5 position-relative step-1section step-sections" id="define">
         <div class="container  position-relative zindex-10 mb-md-0 mb-4">
@@ -254,7 +273,7 @@
         </div>
 
 <section class="band section-spacing fds-green-bg py-5 text-white text-center remove-sticy">
-  <div class="container">
+  <div class="container py-md-5">
     <div class="row">
       <div class="col-md-10 offset-md-1 col-12">
         <h2 class="section__heading">Design Your Space Now</h2>

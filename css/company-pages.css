@@ -318,7 +318,7 @@ height: 100%;
 {
   background-color: #919191;
 }
-.heritage-nav a{
+.heritage-nav a, .heritage-nav a:hover, .heritage-nav a:active, .heritage-nav a:focus{
   font-size: var(--fds-fs-450);
   line-height: var(--fds-fs-700);
   color: var(--fds-white);
@@ -330,6 +330,10 @@ height: 100%;
   margin-right: 1rem;
   border-top: 1px solid var(--fds-black);
   border-bottom: 1px solid var(--fds-black);
+  font-weight: 300;
+}
+.heritage-nav .nav-link::after{
+  display: none;
 }
 .heritage-nav a:hover{
   opacity: 1;
