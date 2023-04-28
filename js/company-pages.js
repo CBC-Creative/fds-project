@@ -1,16 +1,16 @@
 menu = $('.heritage-nav-section');
 headerheightnav = $('.heritage-nav-section').innerHeight();
-menu1 = $('.removesticy');
-menu2 = $('#explore');
 origOffsetY = menu.offset().top;
-origOffsetY1 = menu1.offset().top;
-console.log(origOffsetY1);
-$(window).scroll(function() { if ($(window).scrollTop() > origOffsetY) {
-  menu.addClass('fixed-top');
-  $('body').css('marginTop', headerheightnav);
-} else { menu.removeClass('fixed-top');
-$('body').css('marginTop', '0px');
-}});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > origOffsetY) {
+    menu.addClass('fixed-top');
+    $('body').css('marginTop', headerheightnav);
+  } else {
+    menu.removeClass('fixed-top');
+    $('body').css('marginTop', '0px');
+  }
+});
 
 
 // $('.heritage-nav-section a').click(function () {
@@ -26,7 +26,7 @@ function checkElementLocation() {
   var $window = $(window);
   var bottom_of_window = $window.scrollTop();
 
-  $('.section-content').each(function(i) {
+  $('.section-content').each(function (i) {
     var $that = $(this);
     var bottom_of_object = $that.position().top + ($that.outerHeight() / 6);
     var bottom_of_object1 = $that.position().top + ($that.outerHeight() * 1.4);
@@ -42,16 +42,12 @@ function checkElementLocation() {
      
     } else{
       $(this).removeClass('fadeIn');
-      
     }
   });
 }
 // if in viewport, show the animation
 checkElementLocation();
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   checkElementLocation();
- 
 });
-
-
