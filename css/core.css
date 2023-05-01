@@ -216,6 +216,10 @@ a.hero-link {
   top: 30px;
 }
 
+.last-section-item .link-underlined::after {
+  top: auto;
+}
+
 .fullwidth-text-block {
   font-size: var(--fds-fs-800);
 }
