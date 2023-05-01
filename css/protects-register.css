@@ -1,4 +1,4 @@
-.text-aetamax-blue{
+.text-aetamax-blue {
   color: #2f466a !important;
 }
 .btn-select-product {
@@ -6,6 +6,7 @@
   color: #ffffff;
   font-size: var(--fds-fs-500);
   border-radius: 50px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 2px solid #2f466a;
 }
@@ -17,54 +18,61 @@
 :not(.btn-check) + .btn-select-product:hover {
   background: #ffffff;
   color: #2f466a;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
-.product-selector .modal-header{
+.product-selector .modal-header {
   background-color: #2f466a;
   color: #ffffff;
 }
-.product-selector .modal-header .btn-close{
+.product-selector .modal-header .btn-close {
   -webkit-filter: invert(1) grayscale(100%) brightness(200%);
   filter: invert(1) grayscale(100%) brightness(200%);
 }
-.bg-blue{
-  background-color: #2f466a!important;
+.bg-blue {
+  background-color: #2f466a !important;
 }
-.remove-product{
+.remove-product {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 15px;
 }
-.selected-product-card .card-header{
+.selected-product-card .card-header {
   position: relative;
 }
-.plush-minus-btn{
+.plush-minus-btn {
   gap: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 150px;
 }
-.product-date-filed label{
+.product-date-filed label {
   top: 4px !important;
 }
-.thank-you-box{
+.thank-you-box {
   padding: 40px 20px;
-  border: 1px solid #2F466A;
+  border: 1px solid #2f466a;
 }
-.thank-you-box img{
+.thank-you-box img {
   border: 1px solid #ffffff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.thank-you-box:hover img{
-  border: 1px solid #2F466A;
+.thank-you-box:hover img {
+  border: 1px solid #2f466a;
 }
-.selected-product-card{
+.selected-product-card {
   display: none;
 }
-.selected-product-card.show-selected-product{
+.selected-product-card.show-selected-product {
   display: block;
 }
-.invalid-feedback{
+.invalid-feedback {
   margin-top: -17px;
   font-size: 11px;
   font-weight: 600;

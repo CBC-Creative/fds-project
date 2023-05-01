@@ -1,41 +1,43 @@
 .show-password {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 25px;
-    height: 20px;
-    margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 25px;
+  height: 20px;
+  margin-top: -10px;
 }
 
 .hide-password {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  right: 15px;
+  height: 20px;
+  margin-top: -10px;
+}
+.sign-up-section {
+  display: none;
+}
+.password-title {
+  font-size: var(--fds-fs-400);
+  line-height: var(--fds-fs-325);
+}
+.password-div ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: var(--fds-fs-250);
+  line-height: var(--fds-fs-325);
+  color: var(--fds-grey-700);
+}
+.password-div ul li {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .password-div {
     position: absolute;
-    top: 50%;
-    width: 25px;
-    right: 15px;
-    height: 20px;
-    margin-top: -10px;
-}
-.sign-up-section{display: none;}
-.password-title{
-    font-size: var(--fds-fs-400);
-    line-height: var(--fds-fs-325);
-}
-.password-div ul{
-    list-style: none;
-    padding-left: 0;
-    font-size: var(--fds-fs-250);
-    line-height: var(--fds-fs-325);
-    color: var(--fds-grey-700);
-}
-.password-div ul li{
-    margin-bottom: 0.5rem;
-}
-@media (min-width:768px){
-    .password-div{
-        position: absolute;
-        right: -210px;
-        width: 190px;
-        text-align: left;
-        top: 0;
-    }
+    right: -210px;
+    width: 190px;
+    text-align: left;
+    top: 0;
+  }
 }

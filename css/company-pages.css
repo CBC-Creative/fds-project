@@ -2,11 +2,17 @@
 .back-btn-company:hover,
 .back-btn-company:focus,
 .back-btn-company:active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
   color: #999691;
-  justify-content: start;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
 }
 .work-space-discription .sub-title {
   font-size: var(--fds-fs-350);
@@ -45,6 +51,8 @@
   padding: 1rem;
 }
 .product-thumbnail-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -65,6 +73,7 @@
   color: var(--fds-white);
   font-size: var(--fds-fs-500);
   border-radius: 50px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -77,6 +86,7 @@
 :not(.btn-check) + .btn-black:hover {
   background: var(--fds-black);
   color: var(--fds-white);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -85,6 +95,7 @@
   color: var(--fds-white);
   font-size: var(--fds-fs-500);
   border-radius: 50px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -97,6 +108,7 @@
 :not(.btn-check) + .btn-gray:hover {
   background: #999691;
   color: var(--fds-white);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -106,6 +118,7 @@
   font-size: var(--fds-fs-200);
   line-height: var(--fds-fs-300);
   border-radius: 30px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   text-transform: capitalize;
 }
@@ -117,6 +130,7 @@
 :not(.btn-check) + .btn-tan:hover {
   background: var(--fds-tan);
   color: var(--fds-black);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .bigptext {
@@ -182,6 +196,8 @@ a.inspiration-landing-link:hover {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
 }
@@ -199,15 +215,23 @@ a.inspiration-landing-link:hover {
   left: 50%;
   margin-top: -17.5px;
   margin-left: -17.5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
 }
 .inspiration-landing-link:hover .image-box-inpiration-landing::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
 .company-values-banner img {
   height: 600px;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top center;
   object-position: top center;
 }
 .family-bg {
@@ -236,7 +260,9 @@ a.inspiration-landing-link:hover {
 }
 .family-banner img {
   height: 800px;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top center;
   object-position: top center;
 }
 .innovation-banner {
@@ -244,6 +270,20 @@ a.inspiration-landing-link:hover {
 }
 section#innovation:before {
   content: '';
+  background: transparent -o-radial-gradient(
+      37% 8%,
+      closest-side,
+      #555555 0%,
+      #434343 0%,
+      #000000 100%
+    ) 0% 0% no-repeat padding-box;
+  background: transparent -o-radial-gradient(
+      37% 8%,
+      closest-side,
+      #555555 0%,
+      #434343 0%,
+      #000000 100%
+    ) 0% 0% no-repeat padding-box;
   background: transparent
     radial-gradient(closest-side at 37% 8%, #555555 0%, #434343 0%, #000000 100%) 0% 0% no-repeat
     padding-box;
@@ -268,10 +308,26 @@ section#innovation:before {
 }
 .care-section .absolute-content-family {
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .care-section::before {
   content: '';
+  background: transparent -o-radial-gradient(
+      50% 50%,
+      closest-side,
+      #041436 0%,
+      #041436 44%,
+      #ffffff 100%
+    ) 0% 0% no-repeat padding-box;
+  background: transparent -o-radial-gradient(
+      50% 50%,
+      closest-side,
+      #041436 0%,
+      #041436 44%,
+      #ffffff 100%
+    ) 0% 0% no-repeat padding-box;
   background: transparent
     radial-gradient(closest-side at 50% 50%, #041436 0%, #041436 44%, #ffffff 100%) 0% 0% no-repeat
     padding-box;
@@ -290,7 +346,11 @@ section#innovation:before {
 }
 .company-heritage-banner {
   height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -317,8 +377,13 @@ section#innovation:before {
   text-transform: capitalize;
 }
 .heritage-nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
@@ -343,13 +408,18 @@ section#innovation:before {
 .heritage-nav::-webkit-scrollbar-thumb {
   background-color: #919191;
 }
-.heritage-nav a, .heritage-nav a:hover, .heritage-nav a:active, .heritage-nav a:focus{
+.heritage-nav a,
+.heritage-nav a:hover,
+.heritage-nav a:active,
+.heritage-nav a:focus {
   font-size: var(--fds-fs-450);
   line-height: var(--fds-fs-700);
   color: var(--fds-white);
   opacity: 0.6;
   padding-top: 0.3rem;
   padding-bottom: 0.5rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -357,7 +427,7 @@ section#innovation:before {
   border-bottom: 1px solid var(--fds-black);
   font-weight: 300;
 }
-.heritage-nav .nav-link::after{
+.heritage-nav .nav-link::after {
   display: none;
 }
 .heritage-nav a:hover {
@@ -398,7 +468,11 @@ section#innovation:before {
 
 .height800 {
   min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -410,12 +484,15 @@ section#innovation:before {
 
 .height800 .bg-image-heritage {
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top center;
   object-position: top center;
 }
 .absolute-img-right {
   width: 290px;
   z-index: 10;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -438,11 +515,14 @@ section#innovation:before {
   z-index: 0;
   top: 0;
   left: 0;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .section-content {
   border-top: 2px solid var(--fds-white);
   opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -461,6 +541,9 @@ section#innovation:before {
     margin-top: 2rem;
   }
   .harry-fellowes-section.section-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
   }
@@ -490,7 +573,11 @@ section#innovation:before {
   }
   .height800 {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .absolute-content-vertical-center {
@@ -498,6 +585,8 @@ section#innovation:before {
     top: 50%;
     left: 0;
     right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .absolute-img-right {
@@ -528,6 +617,8 @@ section#innovation:before {
 
   section#innovation:before {
     content: '';
+    background: transparent -o-radial-gradient(64% 29%, closest-side, #555555 0%, #000000 100%) 0% 0%
+      no-repeat padding-box;
     background: transparent radial-gradient(closest-side at 64% 29%, #555555 0%, #000000 100%) 0% 0%
       no-repeat padding-box;
     position: absolute;
@@ -536,9 +627,37 @@ section#innovation:before {
   }
   .care-section::before {
     content: '';
+    background: transparent -o-radial-gradient(
+        50% 50%,
+        closest-side,
+        #041436 0%,
+        #041436 47%,
+        var(--white) 100%
+      ) 0% 0% no-repeat padding-box;
+    background: transparent -o-radial-gradient(
+        50% 50%,
+        closest-side,
+        #041436 0%,
+        #041436 47%,
+        var(--white) 100%
+      ) 0% 0% no-repeat padding-box;
     background: transparent
       radial-gradient(closest-side at 50% 50%, #041436 0%, #041436 47%, var(--white) 100%) 0% 0%
       no-repeat padding-box;
+    background: transparent -o-radial-gradient(
+        50% 50%,
+        closest-side,
+        #041436 0%,
+        #041436 47%,
+        #ffffff 100%
+      ) 0% 0% no-repeat padding-box;
+    background: transparent -o-radial-gradient(
+        50% 50%,
+        closest-side,
+        #041436 0%,
+        #041436 47%,
+        #ffffff 100%
+      ) 0% 0% no-repeat padding-box;
     background: transparent
       radial-gradient(closest-side at 50% 50%, #041436 0%, #041436 47%, #ffffff 100%) 0% 0%
       no-repeat padding-box;
@@ -555,13 +674,19 @@ section#innovation:before {
   }
   .innovation-banner {
     min-height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .innovation-img {
     position: absolute;
     left: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .family-bg {
@@ -590,8 +715,14 @@ section#innovation:before {
 
   .featured-imge-box {
     min-height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .product-spotlight-paragraph {
@@ -622,6 +753,8 @@ section#innovation:before {
   .back-btn-company:hover,
   .back-btn-company:focus,
   .back-btn-company:active {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: start;
   }
   .bigptext {
@@ -652,6 +785,7 @@ section#innovation:before {
   }
   .family-banner img {
     height: 800px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .innovation-img img {
@@ -675,6 +809,7 @@ section#innovation:before {
   }
   .family-banner img {
     height: 800px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .innovation-img img {
@@ -684,6 +819,7 @@ section#innovation:before {
 @media (min-width: 1200px) {
   .family-banner img {
     height: 800px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }

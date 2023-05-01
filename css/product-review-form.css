@@ -89,6 +89,8 @@
   font-size: var(--fds-fs-325);
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -101,13 +103,19 @@
 }
 
 .visible {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hidden {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .photoupload-div {
   border-top: 1px solid var(--fds-grey-400);
@@ -123,9 +131,15 @@
 .image-guidline-text:hover {
   color: var(--fds-grey-800);
   font-size: var(--fds-fs-200);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: end;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
 }
 .Guideline-image {
   padding-right: 5px;

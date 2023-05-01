@@ -8,6 +8,7 @@
   font-weight: 600;
 }
 .aqm-services-banner-image img {
+  -o-object-position: top center;
   object-position: top center;
 }
 .aqm-service-title {
@@ -53,6 +54,8 @@
   background: #2f466a;
   color: #fff;
   border-radius: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 3px 32px;
   margin-top: 20px;
@@ -135,19 +138,20 @@ a.back-btn {
   overflow: hidden;
   opacity: 1;
   -webkit-transition: opacity 800ms, height 0s;
-  -moz-transition: opacity 800ms, height 0s;
+  -o-transition: opacity 800ms, height 0s;
   transition: opacity 800ms, height 0s;
   -webkit-transition-delay: 0s, 0s;
-  -moz-transition-delay: 0s, 0s;
+  -o-transition-delay: 0s, 0s;
   transition-delay: 0s, 0s;
   background-size: cover;
+  -webkit-box-shadow: -1px 6px 32px #ccc;
   box-shadow: -1px 6px 32px #ccc;
 }
 .fellowes_webinars_video .videoWrapperActive .videoPoster {
   opacity: 0;
   height: 0;
   -webkit-transition-delay: 0s, 800ms;
-  -moz-transition-delay: 0s, 800ms;
+  -o-transition-delay: 0s, 800ms;
   transition-delay: 0s, 800ms;
 }
 .fellowes_webinars_video .stop_video {
@@ -233,34 +237,40 @@ a.back-btn {
   text-align: center;
   margin-top: 40px;
 }
-.case-study-icons svg{
-  width:80px;
+.case-study-icons svg {
+  width: 80px;
   height: 80px;
 }
-.case-study-icons svg path{
+.case-study-icons svg path {
   fill: #2f466a;
 }
 .case-study-icons {
   gap: 10px;
 }
-.case-title-header{
+.case-title-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #2f466a;
   padding: 7px 15px;
 }
-.case-title-header svg{
+.case-title-header svg {
   width: 70px;
   height: 70px;
   margin-right: 15px;
   fill: var(--fds-white);
 }
-a.casestudy-link:hover, a.casestudy-link{
+a.casestudy-link:hover,
+a.casestudy-link {
   color: #2f466a;
 }
 @media (min-width: 768px) {
-  .preg20{
+  .preg20 {
     font-size: var(--fds-fs-600);
     line-height: var(--fds-fs-775);
   }
@@ -296,11 +306,11 @@ a.casestudy-link:hover, a.casestudy-link{
   .aqm-support-faq .tab-box {
     border-right: 2px solid rgba(47, 70, 106, 0.6);
   }
-  .case-study-logos-imgs img:first-child{
+  .case-study-logos-imgs img:first-child {
     width: 20%;
     border-right: 5px solid transparent;
   }
-  .case-study-logos-imgs img:last-child{
+  .case-study-logos-imgs img:last-child {
     width: 80%;
   }
 }
@@ -313,6 +323,8 @@ a.casestudy-link:hover, a.casestudy-link{
   .aqm-services-banner {
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 280px;
     left: 50%;
@@ -328,6 +340,7 @@ a.casestudy-link:hover, a.casestudy-link{
     height: 500px !important;
     width: auto;
     max-width: none;
+    -o-object-position: -232px 0px;
     object-position: -232px 0px;
   }
 }

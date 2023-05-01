@@ -7,15 +7,15 @@
   line-height: 3.75rem;
 }
 
-
-
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .section-spacing {
     padding: 60px 0px;
   }
 
   .rows-structure-under-line:after {
     left: 0;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
     transform: translateX(0%);
   }
 

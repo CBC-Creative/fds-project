@@ -1,64 +1,72 @@
-.elea-card{
-    width: 26.875rem;
+.elea-card {
+  width: 26.875rem;
 }
-.elea-card p{
-    font-weight: 500;
+.elea-card p {
+  font-weight: 500;
 }
-p.gray{
-    color: #ADADAD;
+p.gray {
+  color: #adadad;
 }
-.fw-600{
-    font-weight: 600 !important;
+.fw-600 {
+  font-weight: 600 !important;
 }
-.barrier-img p span{
-    font-weight: 300;
+.barrier-img p span {
+  font-weight: 300;
 }
-.natural-sec p{
-    font-size: 0.833rem;
-    font-weight: 500;
+.natural-sec p {
+  font-size: 0.833rem;
+  font-weight: 500;
 }
-.natural-sec p span{
-    font-weight: 300;
+.natural-sec p span {
+  font-weight: 300;
 }
-.bgcolore6e6e6{
-    background: #e6e6e6;
+.bgcolore6e6e6 {
+  background: #e6e6e6;
 }
-.zoom-hover-image img{
-    transform: scale(1);
-    transition: all 0.3s;
+.zoom-hover-image img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.zoom-hover-image img:hover{
-    transform: scale(1.1);
+.zoom-hover-image img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.zoom-hover-image.fadeIn img{
-    transform: scale(1.1);
+.zoom-hover-image.fadeIn img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-@media (min-width:992px){
-    #ideas-list{
-        grid-template-areas:
-        ". a ."
-        ". a .";
-    }
-    #ideas-list li{
-        grid-area: a;
-        align-self: center;
-  justify-self: center;
-    }
+@media (min-width: 992px) {
+  #ideas-list {
+    grid-template-areas:
+      '. a .'
+      '. a .';
+  }
+  #ideas-list li {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
 }
-@media (max-width:767px){
-    .elea-content p {
-        font-size: var(--fds-fs-450);
-        text-transform: capitalize;
-        font-weight: 500;
-    }
-    .stapler-title-p-tag {
-        font-size: inherit;
-        line-height: inherit;
-    }
-    .natural-sec h2{
-        font-size: var(--fds-fs-450);
-        text-transform: capitalize;
-        color: #616161;
-    }
+@media (max-width: 767px) {
+  .elea-content p {
+    font-size: var(--fds-fs-450);
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  .stapler-title-p-tag {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .natural-sec h2 {
+    font-size: var(--fds-fs-450);
+    text-transform: capitalize;
+    color: #616161;
+  }
 }
