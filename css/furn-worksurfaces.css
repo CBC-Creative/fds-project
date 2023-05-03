@@ -649,6 +649,7 @@
 }
 .swatch-right-boxes-main-row .col-lg-2 {
   margin-bottom: 1rem;
+  flex-basis: 20%;
 }
 .toolkit-download-title {
   font-size: var(--fds-fs-400);
