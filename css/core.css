@@ -1875,6 +1875,11 @@ a.two-col-section__link::after {
     top: 30px;
   }
 
+  .left-nav .nav-link:after,
+  .left-nav .menu-link:after {
+    display: none;
+  }
+
   .sub-dropdown-menu {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;

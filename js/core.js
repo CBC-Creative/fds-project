@@ -126,18 +126,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     }
-    /* please remove this after adding link on page */
+
     for (var a = 0; a < dropdownitem.length; a++) {
       dropdownitem[a].addEventListener('click', function (e) {
         e.stopPropagation();
       });
     }
 
-    console.log(subnav);
-    console.log(subnavmenu);
-    /* please remove this after adding link on page */
     for (let l = 0; l < subnav.length; l++) {
       subnav[l].addEventListener('click', function (e) {
+        e.preventDefault();
         subnavmenu[l].classList.toggle('showsub');
         subnav[l].classList.toggle('open');
       });
