@@ -73,7 +73,9 @@
   -o-object-fit: contain;
   object-fit: contain;
 }
-
+.every-day-section{
+  opacity: 0;
+}
 @media (min-width: 567px) {
   .ceo-text {
     left: 2rem;
@@ -81,6 +83,15 @@
 }
 
 @media (min-width: 768px) {
+  
+  .aqm-small-banner-img .right-ward img{
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+  .aqm-small-banner-img.active .right-ward img{
+    transform: translateX(0px);
+    transition: all 1s;
+  }
   .main-product-image {
     height: 600px;
   }
@@ -123,6 +134,23 @@
   }
 }
 @media (min-width: 992px) {
+  .section-excellence.active{
+    width: 100%;
+    z-index: 100;
+    top: 25%;
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+  }
+  .section-excellence{
+    width: 100%;
+    z-index: 100;
+    top: 25%;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
   .ceo-text {
     width: 425px;
     left: 3rem;
