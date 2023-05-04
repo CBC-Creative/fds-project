@@ -112,6 +112,28 @@
   box-shadow: none;
 }
 
+.btn-gray-new {
+  background: #DDDCDB;
+  color: var(--fds-black);
+  font-size: var(--fds-fs-300);
+  border-radius: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.btn-gray-new:first-child:hover,
+.btn-gray-new:focus-visible,
+.btn-gray-new:hover,
+.btn-gray-new:focus,
+:not(.btn-check) + .btn-gray-new:hover {
+  background: #999691;
+  color: var(--fds-white);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .btn-tan {
   background: var(--fds-tan);
   color: var(--fds-black);
@@ -371,6 +393,7 @@ section#innovation:before {
   .company-heritage-banner {
     height: 800px;
   }
+
 }
 
 .company-heritage-banner .banner-text__header {
@@ -559,8 +582,82 @@ section#innovation:before {
 .section-content.fadeIn {
   opacity: 1;
 }
-
+.sub-title{
+  font-size: var(--fds-fs-300);
+  line-height: var(--fds-fs-725);
+}
+.page-title{
+  font-size: var(--fds-fs-710);
+  line-height: var(--fds-fs-750);
+}
+.aqm-small-banner-img img {
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.monitor-arms-banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(270deg, #00000000 0%, #1C1C1A 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 0.74;
+}
+.banner-text-bottom-aqm .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.left-underline:after {
+  left: 0;
+  transform: none;
+  bottom: -10px;
+  top: inherit;
+}
+.megacat-work-space-banner .section__heading {
+  font-size: var(--fds-fs-775);
+  line-height: var(--fds-fs-850);
+}
+.megacat-work-space-banner .section__text {
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-710);
+}
+.overview-text{
+  font-size:0.938rem;
+  line-height: var(--fds-fs-710);
+}
+.sub-title-overview{
+  font-size: var(--fds-fs-750);
+  line-height: var(--fds-fs-950);
+}
 @media (min-width: 768px) {
+  .overview-text{
+    font-size: var(--fds-fs-725);
+    line-height: var(--fds-fs-905);
+  }
+  .sub-title-overview{
+    font-size: var(--fds-fs-750);
+    line-height: var(--fds-fs-950);
+  }
+  .sub-title{
+    font-size: var(--fds-fs-750);
+    line-height: var(--fds-fs-950);
+  }
+  .page-title{
+    font-size: 3.438rem;
+    line-height: 3.75rem;
+  }
+  .aqm-small-banner-img img {
+    height: 500px;
+}
+.megacat-work-space-banner .section__text {
+  font-size: 1.188rem;
+  line-height: var(--fds-fs-710);
+}
   .heritage-nav-section {
     background: var(--fds-black);
     padding: 1rem 2rem;
