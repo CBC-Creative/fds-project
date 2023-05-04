@@ -234,6 +234,13 @@ a.inspiration-landing-link:hover {
   -o-object-position: top center;
   object-position: top center;
 }
+.company-banner img {
+  height: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top center;
+  object-position: top center;
+}
 .family-bg {
   background: url(../img/company-values/section-3-bg-img-mobile.jpg);
   background-size: cover;
@@ -708,6 +715,9 @@ section#innovation:before {
   .company-values-banner img {
     height: 700px;
   }
+  .company-banner img {
+    height: 700px;
+  }
   .product-discription-featured-products p {
     font-size: var(--fds-fs-325);
     line-height: 1.688rem;
@@ -835,5 +845,15 @@ section#innovation:before {
   .back-btn-company {
     font-size: var(--fds-fs-250);
     line-height: var(--fds-fs-325);
+  }
+}
+
+.company-banner .banner-text__header {
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .company-banner .banner-text__header {
+    font-size: 60px;
   }
 }
