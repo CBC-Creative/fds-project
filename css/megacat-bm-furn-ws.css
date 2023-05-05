@@ -304,7 +304,6 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  text-shadow: 0px 3px 5px #00000050;
 }
 .banner-text-bottom-aqm .container {
   position: absolute;
