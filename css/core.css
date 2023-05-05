@@ -1230,7 +1230,7 @@ a.two-col-section__link::after {
 }
 
 .search-div {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0px;
   padding: 30px 50px;
@@ -1940,6 +1940,13 @@ a.two-col-section__link::after {
     position: relative;
     border-top: 1px solid var(--fds-grey-200);
     margin-inline: -1rem;
+    transition: all 300ms ease-in-out;
+    max-height: 10000px;
+  }
+
+  .mobile-navbar-collapse-onscroll {
+    max-height: 0;
+    opacity: 0;
   }
 
   .search-div.searchdivshow {

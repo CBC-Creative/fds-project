@@ -84,6 +84,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (mediaQuerymax1200.matches) {
         closemobilenav[s].classList.remove('show');
         closemobilenavtoggle[s].classList.add('collapsed');
+        $(window).scroll(function () {
+          if ($(searchtab[s]).hasClass('searchshow')) {
+            $(searchtab[s]).removeClass('searchshow');
+            $(searchtabdiv[0]).removeClass('searchdivshow');
+          }
+        });
       }
       if (mediaQuery1200.matches) {
         opennavbar[0].classList.toggle('opensearch');
@@ -104,6 +110,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var subnav = document.querySelectorAll('.navbar .sub-dropdown');
     var subnavmenu = document.querySelectorAll('.navbar .sub-dropdown-menu');
     var dropdownitem = document.querySelectorAll('.navbar .dropdown-item');
+    var navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+    $(window).scroll(function () {
+      if ($(navbarCollapse).hasClass('show')) {
+        $(navbarCollapse).addClass('mobile-navbar-collapse-onscroll');
+        setTimeout(function () {
+          $(navbarCollapse).removeClass('show');
+          $(navbarCollapse).removeClass('mobile-navbar-collapse-onscroll');
+        }, 300);
+      }
+    });
 
     for (var i = 0; i < navContainers.length; i++) {
       navContainers[i].addEventListener('click', function () {
