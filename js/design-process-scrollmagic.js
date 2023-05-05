@@ -24,7 +24,7 @@ $(function () {
     // animate to fifth panel
     .to('.last-lady-section', 0.15, { autoAlpha: 0.15, zIndex: '-1', position: 'relative' })
     .to('.last-lady-section', 1, { autoAlpha: 1, zIndex: '1', position: 'relative' })
-    .to('.last-lady-section', 0.15, { autoAlpha: 0, zIndex: '1', position: 'relative' });
+    .to('.last-lady-section', 0.15, { autoAlpha: 1, zIndex: '1', position: 'relative' });
 
     var wipeAnimation1 = new TimelineMax()
     // animate to second panel
