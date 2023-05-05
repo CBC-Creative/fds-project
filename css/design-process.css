@@ -73,16 +73,17 @@
   -o-object-fit: contain;
   object-fit: contain;
 }
-.every-day-section, .breathing-section{
+.every-day-section,
+.breathing-section {
   opacity: 0;
 }
-.breathing-section[style="position: static; z-index: auto; opacity: 1; visibility: inherit;"]{
+.breathing-section[style='position: static; z-index: auto; opacity: 1; visibility: inherit;'] {
   opacity: 0 !important;
 }
-.covid-banner[style="position: static; opacity: 1; visibility: inherit; z-index: auto;"]{
+.covid-banner[style='position: static; opacity: 1; visibility: inherit; z-index: auto;'] {
   opacity: 0 !important;
 }
-.last-lady-section[style="position: static; opacity: 1; visibility: inherit; z-index: auto;"]{
+.last-lady-section[style='position: static; opacity: 1; visibility: inherit; z-index: auto;'] {
   opacity: 0 !important;
 }
 @media (min-width: 567px) {
@@ -92,14 +93,21 @@
 }
 
 @media (min-width: 768px) {
-  
-  .aqm-small-banner-img .right-ward img{
+  .aqm-small-banner-img .right-ward img {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
+    -webkit-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms;
   }
-  .aqm-small-banner-img.active .right-ward img{
+  .aqm-small-banner-img.active .right-ward img {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
     transform: translateX(0px);
-    transition: all 1s;
   }
   .main-product-image {
     height: 600px;
@@ -143,7 +151,7 @@
   }
 }
 @media (min-width: 992px) {
-  .section-excellence.active{
+  .section-excellence.active {
     width: 100%;
     z-index: 100;
     top: 25%;
@@ -151,13 +159,15 @@
     opacity: 1;
     visibility: visible;
   }
-  .section-excellence{
+  .section-excellence {
     width: 100%;
     z-index: 100;
     top: 25%;
     position: fixed;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
   }
   .ceo-text {
