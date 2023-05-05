@@ -272,6 +272,10 @@ a.hero-link {
   background-color: var(--fds-tan);
 }
 
+.fds-blue-bg {
+  background-color: var(--fds-blue);
+}
+
 .fds-dark-tan-bg {
   background-color: var(--fds-dark-tan);
 }
