@@ -73,8 +73,17 @@
   -o-object-fit: contain;
   object-fit: contain;
 }
-.every-day-section{
+.every-day-section, .breathing-section{
   opacity: 0;
+}
+.breathing-section[style="position: static; z-index: auto; opacity: 1; visibility: inherit;"]{
+  opacity: 0 !important;
+}
+.covid-banner[style="position: static; opacity: 1; visibility: inherit; z-index: auto;"]{
+  opacity: 0 !important;
+}
+.last-lady-section[style="position: static; opacity: 1; visibility: inherit; z-index: auto;"]{
+  opacity: 0 !important;
 }
 @media (min-width: 567px) {
   .ceo-text {

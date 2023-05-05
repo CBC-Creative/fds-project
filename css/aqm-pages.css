@@ -1,0 +1,96 @@
+.aqm-banner img {
+    height: 500px;
+    object-fit: cover;
+    object-position: top center;
+}
+.custom-gap-aramax {
+    gap: 20px;
+    font-size: var(--fds-fs-325);
+    line-height: var(--fds-fs-600);
+    color: #666666;
+}
+.text-column h2 {
+    font-size: var(--fds-fs-775);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.text-column__desc {
+    font-size: var(--fds-fs-500);
+}
+.form-outline .form-control {
+    padding: 0.75rem 1.75rem;
+    color: var(--fds-grey-800);
+    font-size: var(--fds-fs-400);
+  }
+  
+  .form-outline .form-control.form-control-lg ~ .form-label {
+    padding-top: 1rem;
+  }
+  
+  .form-outline .form-control.form-control-lg.active ~ .form-label,
+  .form-outline .form-control.form-control-lg:focus ~ .form-label {
+    -webkit-transform: translateY(-1.5rem) translateY(0.1rem) scale(0.8);
+    -ms-transform: translateY(-1.5rem) translateY(0.1rem) scale(0.8);
+    transform: translateY(-1.5rem) translateY(0.1rem) scale(0.8);
+  }
+  
+  .form-outline .form-control:focus ~ .form-label {
+    color: var(--fds-black);
+  }
+  
+  .form-outline .form-control ~ .form-notch div {
+    border-radius: 0 !important;
+  }
+  
+  .form-outline .form-control.select-input:focus ~ .form-notch .form-notch-trailing,
+  .select-input.focused ~ .form-notch .form-notch-trailing,
+  .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+    border-color: var(--fds-black);
+    -webkit-box-shadow: 1px 0 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black),
+      0 1px 0 0 var(--fds-black);
+    box-shadow: 1px 0 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black);
+  }
+  
+  .form-outline .form-control.select-input:focus ~ .form-notch .form-notch-leading,
+  .select-input.focused ~ .form-notch .form-notch-leading,
+  .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+    border-color: var(--fds-black);
+    -webkit-box-shadow: -1px 0 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black),
+      0 -1px 0 0 var(--fds-black);
+    box-shadow: -1px 0 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black);
+  }
+  
+  .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+    border-color: var(--fds-black);
+    -webkit-box-shadow: 0 1px 0 0 var(--fds-black);
+    box-shadow: 0 1px 0 0 var(--fds-black);
+    border-top: 1px solid transparent;
+  }
+  
+  .form-check-label {
+    color: var(--fds-black);
+  }
+  
+  .form-check-input[type='checkbox'] {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+  }
+  .small-font-paragraph {
+    font-size: var(--fds-fs-250);
+    line-height: var(--fds-fs-450);
+}
+.benefit-img svg {
+    max-width: 80px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    fill: #04afde;
+}
+@media (min-width:768px){
+    .aqm-banner img {
+        height: 500px;
+    }
+    .benefit-img svg {
+        max-width: 150px;
+    }
+}

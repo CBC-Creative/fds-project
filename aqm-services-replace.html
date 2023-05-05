@@ -26,8 +26,9 @@
     <!-- Global Styles -->
     <link rel="stylesheet" href="css/core.css" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/aeramax.css" />
-    <link rel="stylesheet" href="css/aqm-services.css" />
+    <link rel="stylesheet" href="css/categorypage.css" />
+    <link rel="stylesheet" href="css/megacat-bm-furn-ws.css" />
+    <link rel="stylesheet" href="css/aqm-pages.css" />
   </head>
 
   <body style="min-height: 200vh; position: relative">
@@ -1043,30 +1044,40 @@
 
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
+      <section class="band position-relative dark-img-overlay aqm-banner">
+        <img
+          src="img/aqm-services-replace/services-filterhero.jpg"
+          class="img-fluid w-100"
+        />
+        <div class="header-banner-text">
+          <h1 class="banner-text__header">Filter Replacement Service</h1>
+        </div>
+      </section>
 
-      <section class="band section-spacing pb-0">
-        <div class="container">
+      <section class="band section-spacing fds-green-bg py-5 text-white text-center">
+        <div class="container py-3 py-md-5">
           <div class="row">
-            <div class="col-12">
-              <h1 class="text-aetamax-blue aeramax-page-title mb-4 mb-md-5">
-                Filter Replacement Service
-              </h1>
-              <div class="mb-4 mb-md-5">
-                <img src="img/aqm-services-replace/services-filterhero.jpg" class="img-fluid" />
-              </div>
-              <h3 class="aeramax-two-column-title text-aetamax-blue fw-600 mb-3">
-                We'll Change Filters For Your Facility
-              </h3>
-              <p class="tab-content-p-tag">
+            <div class="col">
+              <h2 class="section__heading">We'll Change Filters For Your Facility</h2>
+              <div class="section__text mt-4 mb-0">
                 We understand managing a facility is not easy. Changing air filters on a regular
                 schedule is one of the easiest and most cost-effective ways to keep utility costs
                 low. Let our team of qualified professionals help by managing your filter needs
                 giving you one less thing to worry about.
-              </p>
-              <h3 class="aeramax-two-column-title text-aetamax-blue fw-600 mb-3 mt-md-5 mt-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band py-5">
+        <div class="container py-md-5">
+          <div class="row">
+            <div class="col-12"> 
+              <h2 class="mb-3 text-center text-black">
                 What’s the Benefit?
-              </h3>
-              <div class="row pt-md-5 gx-md-5 text-center">
+              </h2>
+              <div class="row gx-md-5 text-center">
                 <div class="col-md-4 col-12 mb-md-0 mb-5">
                   <div class="mb-4 benefit-img">
                     <svg
@@ -1125,8 +1136,8 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="text-aetamax-blue fw-600 aeramax-sub-title mb-3">Save Space</div>
-                  <div class="tab-content-p-tag">
+                  <h4 class="text-black fw-600 mb-3">Save Space</h4>
+                  <div class="text-column__desc text-black">
                     Free up valuable and limited on-site storage space by not having to stock large
                     volumes of replacement filters.
                   </div>
@@ -1156,11 +1167,11 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="text-aetamax-blue fw-600 aeramax-sub-title mb-3">Save Labor Time</div>
-                  <div class="tab-content-p-tag">
+                  <h4 class="text-black fw-600 mb-3">Save Labor Time</h4>
+                  <div class="text-column__desc text-black">
                     Free up facility and janitorial staff, leaving them to focus on their core
                     priorities.
-                  </div>
+                  </div>                  
                 </div>
                 <div class="col-md-4 col-12">
                   <div class="mb-4 benefit-img">
@@ -1194,24 +1205,24 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="text-aetamax-blue fw-600 aeramax-sub-title mb-3">Save Money</div>
-                  <div class="tab-content-p-tag">
+                  <h4 class="text-black fw-600 mb-3">Save Money</h4>
+                  <div class="text-column__desc text-black">
                     Receive replacement discounts and convenient monthly billing.
-                  </div>
+                  </div>                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-spacing form-section text-center">
-        <div class="container">
+      <section class="py-5 form-section text-center text-black">
+        <div class="container py-md-5">
           <div class="row">
             <div class="col-md-10 offset-md-1 col-12">
-              <div class="text-aetamax-blue text-center aeramax-page-title mb-3">
+              <h2 class="text-center mb-3">
                 Where Do I Start?
-              </div>
-              <div class="form-sub-title fw-400 text-custom-gray">
+              </h2>
+              <div class="bigptext fw-400 text-custom-gray">
                 If you have air filters that need regular maintenance, fill out the form to speak
                 with one of our experts to design a program to fit your specific needs.
               </div>
@@ -1221,30 +1232,24 @@
                   <div class="col-md-6 col-12">
                     <div class="form-group mb-4">
                       <div class="form-outline">
-                        <input type="text" id="FirstName" class="form-control form-control-lg" />
-                        <label class="form-label" for="FirstName" style="margin-left: 0px"
-                          >First Name*</label
-                        >
-                        <div class="form-notch">
-                          <div class="form-notch-leading" style="width: 9px"></div>
-                          <div class="form-notch-middle" style="width: 76.8px"></div>
-                          <div class="form-notch-trailing"></div>
-                        </div>
+                        <input
+                          type="text"
+                          id="FirstName"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="FirstName">First Name *</label>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="form-group mb-4">
                       <div class="form-outline">
-                        <input type="text" id="LastName" class="form-control form-control-lg" />
-                        <label class="form-label" for="LastName" style="margin-left: 0px"
-                          >Last Name*</label
-                        >
-                        <div class="form-notch">
-                          <div class="form-notch-leading" style="width: 9px"></div>
-                          <div class="form-notch-middle" style="width: 76px"></div>
-                          <div class="form-notch-trailing"></div>
-                        </div>
+                        <input
+                          type="text"
+                          id="LastName"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="LastName">Last Name *</label>
                       </div>
                     </div>
                   </div>
@@ -1253,17 +1258,10 @@
                       <div class="form-outline">
                         <input
                           type="email"
-                          id="EmailAddress"
+                          id="Email"
                           class="form-control form-control-lg"
                         />
-                        <label class="form-label" for="EmailAddress" style="margin-left: 0px"
-                          >Email Address*</label
-                        >
-                        <div class="form-notch">
-                          <div class="form-notch-leading" style="width: 9px"></div>
-                          <div class="form-notch-middle" style="width: 96px"></div>
-                          <div class="form-notch-trailing"></div>
-                        </div>
+                        <label class="form-label" for="Email">Email *</label>
                       </div>
                       <div class="small-font-paragraph text-start">
                         Please use your business email.
@@ -1273,36 +1271,30 @@
                   <div class="col-md-6 col-12">
                     <div class="form-group mb-4">
                       <div class="form-outline">
-                        <input type="tel" id="PhoneNumber" class="form-control form-control-lg" />
-                        <label class="form-label" for="PhoneNumber" style="margin-left: 0px"
-                          >Phone Number*</label
-                        >
-                        <div class="form-notch">
-                          <div class="form-notch-leading" style="width: 9px"></div>
-                          <div class="form-notch-middle" style="width: 102.4px"></div>
-                          <div class="form-notch-trailing"></div>
-                        </div>
+                        <input
+                          type="tel"
+                          id="PhoneNumber"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="PhoneNumber">Phone Number*</label>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="form-group mb-4">
                       <div class="form-outline">
-                        <input type="text" id="Organization" class="form-control form-control-lg" />
-                        <label class="form-label" for="Organization" style="margin-left: 0px"
-                          >Organization*</label
-                        >
-                        <div class="form-notch">
-                          <div class="form-notch-leading" style="width: 9px"></div>
-                          <div class="form-notch-middle" style="width: 86.4px"></div>
-                          <div class="form-notch-trailing"></div>
-                        </div>
+                        <input
+                          type="tel"
+                          id="Organization"
+                          class="form-control form-control-lg"
+                        />
+                        <label class="form-label" for="Organization">Organization*</label>
                       </div>
-                    </div>
+                    </div>                    
                   </div>
 
                   <div class="col-12 mt-3">
-                    <button type="button" class="btn btn-primary btn-aeramax">Submit</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
                   </div>
                 </div>
               </form>
