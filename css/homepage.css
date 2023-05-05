@@ -618,6 +618,12 @@ h5.grid-title {
   pointer-events: none;
 }
 
+.sas-tab-navs {
+  position: relative;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
 .tab-logo-box .logos-gray div {
   width: 33%;
 }
@@ -788,9 +794,6 @@ h5.grid-title {
   #homepage-recent-stories .multi-carousel-item {
     max-width: 25%;
   }
-  .safeairstoriestabbox i.fa-chevron-down {
-    display: none;
-  }
 }
 
 @media (min-width: 768px) {
@@ -824,6 +827,9 @@ h5.grid-title {
 }
 
 @media (min-width: 1200px) {
+  .safeairstoriestabbox i.fa-chevron-down {
+    display: none;
+  }
   .tab-img {
     padding: 0;
   }
@@ -840,6 +846,8 @@ h5.grid-title {
 @media (max-width: 1199.98px) {
   .tab-box .nav-pills {
     display: none;
+    max-width: 400px;
+    margin-inline: auto;
   }
   .tab-box .nav-pills.showpills {
     display: block;
