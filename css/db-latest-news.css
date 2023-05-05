@@ -18,6 +18,7 @@
 .scrolled-up .dropdown:hover .nav-link {color: var(--fds-black);}
 .container-sm { max-width: 63rem; }
 .h1 { font-size: clamp(2.5rem, 12vw, 8rem); }
+.h1-head { font-size: clamp(1.5rem, 7.5vw, 2.875rem); }
 .h2 { font-size: clamp(2rem, 6vw, 4rem); }
 .h3 { font-size: clamp(2rem, 6vw, 3rem); z-index: 2; position: relative; }
 .h4 { font-size: 1.75rem; }
