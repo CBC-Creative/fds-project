@@ -725,6 +725,14 @@ h5.grid-title {
 }
 #homepage-recent-stories .carousel-control {
   margin-inline: -10% !important;
+  align-items: flex-end;
+  bottom: 2.75rem;
+}
+
+@media (min-width: 497px) {
+  #homepage-recent-stories .carousel-control {
+    bottom: 1rem;
+  }
 }
 
 #homepage-recent-stories .text-wrap {
