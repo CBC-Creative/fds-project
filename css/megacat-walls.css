@@ -785,10 +785,27 @@
   font-size: var(--fds-fs-600);
   line-height: var(--fds-fs-710);
 }
+
+.mobile-arrow-indicator {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* @media (min-width: 576px) {
+  .mobile-arrow-indicator {
+    left: -2rem;
+  }
+} */
+
 .mobile-horizontal-scroll {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  z-index: 10;
+  position: relative;
 }
 .design-process-title {
   font-size: var(--fds-fs-900);

@@ -20,6 +20,7 @@
   --fds-tan: #f6f5f3;
   --fds-dark-tan: #948d8a;
   --fds-darkgray: #52555e;
+  --fds-cta-gray: #6c6c6c;
 
   --mdb-nav-link-color: --fds-grey-600;
   --mdb-nav-link-hover-color: --fds-black;
@@ -178,6 +179,12 @@ h3 {
   font-size: var(--fds-fs-825) !important;
 }
 
+.unleash-txt {
+  color: var(--fds-green);
+  font-weight: 700;
+  font-style: italic;
+}
+
 @media (min-width: 768px) {
   .fs-17 {
     font-size: var(--fds-fs-400);
@@ -198,6 +205,13 @@ a.hero-link {
 
 .banner-sub-title1 {
   font-size: var(--fds-fs-500);
+}
+
+.cta-header {
+  font-size: var(--fds-fs-600);
+  font-weight: 400;
+  max-width: 785px;
+  margin-inline: auto;
 }
 
 .link-underlined::after {
@@ -238,6 +252,9 @@ a.hero-link {
   .banner-sub-title1 {
     font-size: var(--fds-fs-700);
   }
+  .cta-header {
+    font-size: var(--fds-fs-800);
+  }
 }
 
 /* Custom Icons */
@@ -266,6 +283,10 @@ a.hero-link {
 
 .fds-med-brown-bg {
   background-color: var(--fds-medium-brown);
+}
+
+.fds-cta-grey {
+  background-color: var(--fds-cta-gray);
 }
 
 .fds-tan-bg {

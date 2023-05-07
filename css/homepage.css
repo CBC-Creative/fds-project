@@ -322,12 +322,6 @@
   }
 }
 
-.unleash-txt {
-  color: var(--fds-green);
-  font-weight: 700;
-  font-style: italic;
-}
-
 .callout-text {
   font-weight: 500;
   color: var(--fds-green);

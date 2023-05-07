@@ -1,3 +1,7 @@
+.contact-cta-text {
+  font-size: var(--fds-fs-725);
+}
+
 .product-details-tabination .nav-link {
   background-color: var(--fds-grey-200);
   font-size: var(--fds-fs-600);
