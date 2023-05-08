@@ -39,11 +39,24 @@
 @media screen and (max-width: 480px) { .lead-lg { font-size: 0.938rem; } }
 
 .hero {
-    height: 100vh;
-    background: linear-gradient(51.52deg, #000000 -19.2%, rgba(0, 0, 0, 0) 79.51%), url('../img/db/sustainable-\ nnovation\ hero.webp');
-    background-size: cover;
+  height: 48.25rem;
+  min-height: 48.25rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5) 100%), url('../img/db/sustainable-\ nnovation\ hero.webp');
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 48.25rem;
+    min-height: 48.25rem;
   }
-  
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 41.875rem;
+    min-height: 41.875rem;
+  }
+}
   .hero .h1 .text-nowrap {
     margin-left: auto;
   }
