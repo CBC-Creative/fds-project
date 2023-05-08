@@ -210,8 +210,9 @@ a.hero-link {
 .cta-header {
   font-size: var(--fds-fs-600);
   font-weight: 400;
-  max-width: 785px;
+  max-width: 1000px;
   margin-inline: auto;
+  text-transform: capitalize;
 }
 
 .link-underlined::after {
