@@ -634,7 +634,31 @@ section#innovation:before {
   font-size: var(--fds-fs-750);
   line-height: var(--fds-fs-950);
 }
+.small-company-careers{
+  font-size: var(--fds-fs-200);
+}
+.min-width-btn{
+  min-width: 200px;
+  padding-top:0.688rem;
+    padding-bottom: 0.688rem;
+}
+.company-careers-title{
+  font-size: var(--fds-fs-880);
+  line-height: var(--fds-fs-905);
+}
+.career-list{
+  font-size: var(--fds-fs-300);
+  line-height: var(--fds-fs-450);
+  padding-left: 1rem;
+}
+.career-list li{
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 768px) {
+  .company-careers-title{
+    font-size: var(--fds-fs-900);
+    line-height: var(--fds-fs-907);
+  }
   .overview-text{
     font-size: var(--fds-fs-725);
     line-height: var(--fds-fs-905);
