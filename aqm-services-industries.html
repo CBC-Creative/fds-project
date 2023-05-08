@@ -56,7 +56,7 @@
                     data-name="Path 1"
                     d="M947,288.7a1.079,1.079,0,1,1,.315-.764A1.03,1.03,0,0,1,947,288.7Zm-1.368-1.378a.881.881,0,0,0,.006,1.243.87.87,0,0,0,1.238,0,.861.861,0,0,0,.257-.627.874.874,0,0,0-1.5-.614Zm.157,1.207v-1.181c.074,0,.183,0,.328,0h.24a.5.5,0,0,1,.238.057.3.3,0,0,1,.154.282.255.255,0,0,1-.084.216.4.4,0,0,1-.206.077.439.439,0,0,1,.174.07.318.318,0,0,1,.106.266v.1c0,.011,0,.025,0,.03a.072.072,0,0,0,.007.042l.006.033h-.3a.724.724,0,0,1-.016-.162.99.99,0,0,0-.019-.145.161.161,0,0,0-.09-.089.455.455,0,0,0-.1-.019l-.075,0h-.06v.42Zm.559-.956a.6.6,0,0,0-.18-.02h-.073v.344h.119a.275.275,0,0,0,.171-.045.154.154,0,0,0,.06-.14A.142.142,0,0,0,946.348,287.571Z"
                     transform="translate(-834.736 -265.784)"
-                    fill="#000"
+                    fill=""
                   />
                   <path
                     id="Path_2"
@@ -174,11 +174,11 @@
           <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left links -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="left-nav navbar-nav mx-auto mb-2 mb-lg-0">
               <!-- Dropdown -->
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link first-nav-link dropdown-toggle"
                   href="./megacat-walls.html"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -189,18 +189,23 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Modular Walls
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
+                  <li>
+                    <a class="dropdown-item d-xl-none" href="./megacat-walls.html"
+                      >Explore Modular Walls</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Products</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Titan</a></li>
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Products</a></li>
+                      <!-- <li><a class="sub-dropdown-item" href="#">Titan</a></li> -->
                       <li><a class="sub-dropdown-item" href="#">Volo</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Trendwall</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="#">Trendwall</a>
+                      </li>
                     </ul>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Portfolio</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Process</a>
@@ -226,11 +231,19 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Furniture
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
+                  <li>
+                    <a class="dropdown-item d-xl-none" href="./megacat-furniture.html"
+                      >Explore Furniture</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Workstations</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Workstations</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Panel Systems</a></li>
                       <li><a class="sub-dropdown-item" href="#">Desking</a></li>
                       <li><a class="sub-dropdown-item" href="#">Benching</a></li>
@@ -239,16 +252,14 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Seating</a>
                     <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Seating</a></li>
                       <li><a class="sub-dropdown-item" href="#">Elea</a></li>
                     </ul>
                   </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Tables</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Height Adjustable Tables</a></li>
-                      <li>
-                        <a class="sub-dropdown-item" href="#">Height Adjustable Table Bases</a>
-                      </li>
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Tables</a></li>
                       <li><a class="sub-dropdown-item" href="#">Training Tables</a></li>
                       <li><a class="sub-dropdown-item" href="#">Conference Room Tables</a></li>
                       <li>
@@ -257,8 +268,28 @@
                     </ul>
                   </li>
                   <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Height Adjustable Tables</a>
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#"
+                          >Explore Height Adjustable Tables</a
+                        >
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">Complete Tables</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="#">Bases Only</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">Worksurfaces Only</a></li>
+                    </ul>
+                  </li>
+                  <li>
                     <a class="dropdown-item sub-dropdown" href="#">Table Enhancements</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#"
+                          >Explore Table Enhancements</a
+                        >
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Organization</a></li>
                       <li><a class="sub-dropdown-item" href="#">Privacy & Modesty Screens</a></li>
                       <li><a class="sub-dropdown-item" href="#">Wire Management</a></li>
@@ -271,6 +302,7 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Storage</a>
                     <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Storage</a></li>
                       <li><a class="sub-dropdown-item" href="#">Lateral & Pedestals</a></li>
                       <li><a class="sub-dropdown-item" href="#">Bookcases & Credenzas</a></li>
                       <li><a class="sub-dropdown-item" href="#">Lockers & Towers</a></li>
@@ -279,19 +311,19 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Collections</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Collections</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Intrinsic</a></li>
                       <li><a class="sub-dropdown-item" href="#">Trig</a></li>
                       <li><a class="sub-dropdown-item" href="#">Capture</a></li>
                       <li><a class="sub-dropdown-item" href="#">Choices</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Rising</a></li>
+                      <!-- <li><a class="sub-dropdown-item" href="#">Rising</a></li> -->
                     </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Process</a>
-                  </li>
-                  <li>
+                  <!-- <li>
                     <a class="dropdown-item" href="#">Inspiriation</a>
-                  </li>
+                  </li> -->
                   <li>
                     <a class="dropdown-item" href="#">Resources</a>
                   </li>
@@ -310,8 +342,13 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Air Quality Management
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
+                  <li>
+                    <a class="dropdown-item d-xl-none" href="./megacat-aqm.html"
+                      >Explore Air Quality Management</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#"
                       >Array Networked Air Purifiers & Monitoring</a
@@ -321,15 +358,22 @@
                         <li class="sub-dropdown-menu-title pe-xl-4 mb-3 mb-xl-4">
                           Networked Air Purifiers
                           <ul class="inner-list">
+                            <li>
+                              <a class="sub-dropdown-item d-xl-none" href="#"
+                                >Explore Networked Air Purifiers</a
+                              >
+                            </li>
                             <li><a class="sub-dropdown-item" href="#">Ceiling Mounted</a></li>
                             <li><a class="sub-dropdown-item" href="#">Recessed</a></li>
-                            <li><a class="sub-dropdown-item" href="#">Wall Mounted</a></li>
-                            <li><a class="sub-dropdown-item" href="#">Floor Stand</a></li>
+                            <li><a class="sub-dropdown-item" href="#">Wall & Stand </a></li>
                           </ul>
                         </li>
                         <li class="sub-dropdown-menu-title mb-3 mb-xl-4">
                           Monitoring
                           <ul class="inner-list">
+                            <li>
+                              <a class="sub-dropdown-item d-xl-none" href="#">Explore Monitoring</a>
+                            </li>
                             <li><a class="sub-dropdown-item" href="#">Display</a></li>
                             <li><a class="sub-dropdown-item" href="#">Sensors</a></li>
                             <li><a class="sub-dropdown-item" href="#">Software</a></li>
@@ -341,6 +385,11 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">AeraMax Air Purifiers</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#"
+                          >Explore AeraMax Air Purifiers</a
+                        >
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
                       <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
                     </ul>
@@ -348,12 +397,28 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Filters & Accessories</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Networked/Commercial</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#"
+                          >Explore Filters & Accessories</a
+                        >
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">Networked</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
                       <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
                     </ul>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="#">Technology</a>
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Technology</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">How ARRAY Works</a></li>
+                      <li><a class="sub-dropdown-item" href="#">How AeraMax Pro Works</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Industries</a>
@@ -376,11 +441,19 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Workspace
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
+                  <li>
+                    <a class="dropdown-item d-xl-none" href="./megacat-workspace.html"
+                      >Explore Workspace</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Monitor Arms</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Monitor Arms</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Rising</a></li>
                       <li><a class="sub-dropdown-item" href="#">Evolve</a></li>
                       <li><a class="sub-dropdown-item" href="#">Edge</a></li>
@@ -394,6 +467,9 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Power Solutions</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Power Solutions</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Railway</a></li>
                       <li><a class="sub-dropdown-item" href="#">Flexcharge Power Hub</a></li>
                       <li><a class="sub-dropdown-item" href="#">Flexcharge Desktop Power</a></li>
@@ -402,6 +478,7 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Lighting</a>
                     <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Lighting</a></li>
                       <li><a class="sub-dropdown-item" href="#">Amble</a></li>
                       <li><a class="sub-dropdown-item" href="#">Lustre</a></li>
                       <li><a class="sub-dropdown-item" href="#">Lily</a></li>
@@ -411,20 +488,27 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Ergonomic Accessories</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#"
+                          >Explore Ergonomic Accessories</a
+                        >
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Sit to Stand</a></li>
                       <li>
-                        <a class="sub-dropdown-item" href="#">Height Adjustable Table Bases</a>
+                        <a class="sub-dropdown-item" href="#">Height Adjustable Tables</a>
                       </li>
                       <li><a class="sub-dropdown-item" href="#">Laptop Holders & Risers </a></li>
                       <li><a class="sub-dropdown-item" href="#">Foot Support</a></li>
                       <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
                       <li><a class="sub-dropdown-item" href="#">Anti-fatigue Mats</a></li>
-                      <li><a class="sub-dropdown-item" href="#">CPU Holders</a></li>
                     </ul>
                   </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Work From Home</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Work From Home</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Monitor Arms</a></li>
                       <li><a class="sub-dropdown-item" href="#">Monitor & Laptop Stands</a></li>
                       <li><a class="sub-dropdown-item" href="#">Foot & Back Supports</a></li>
@@ -433,12 +517,9 @@
                       <li><a class="sub-dropdown-item" href="#">Document Holders</a></li>
                     </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Process</a>
-                  </li>
-                  <li>
+                  <!-- <li>
                     <a class="dropdown-item" href="#">Inspiration</a>
-                  </li>
+                  </li> -->
                   <li>
                     <a class="dropdown-item" href="#">Resources</a>
                   </li>
@@ -457,11 +538,19 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Business Machines
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
+                  <li>
+                    <a class="dropdown-item d-xl-none" href="./megacat-bm.html"
+                      >Explore Business Machines</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Paper Shredders</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Paper Shredders</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
                       <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
                       <li><a class="sub-dropdown-item" href="#">Personal</a></li>
@@ -472,6 +561,9 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Laminating</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Laminating</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">Office</a></li>
                       <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
                       <li><a class="sub-dropdown-item" href="#">Personal</a></li>
@@ -481,6 +573,7 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Binding</a>
                     <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Binding</a></li>
                       <li><a class="sub-dropdown-item" href="#">Office</a></li>
                       <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
                       <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
@@ -489,13 +582,19 @@
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Stapling</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Staplers</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Stapling</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Classic</a></li>
+                      <li><a class="sub-dropdown-item" href="#">EasyPress</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Handheld Plier</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Removers & Supplies</a></li>
                     </ul>
                   </li>
                   <li>
                     <a class="dropdown-item sub-dropdown" href="#">Collections</a>
                     <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Collections</a>
+                      </li>
                       <li><a class="sub-dropdown-item" href="#">LX Series</a></li>
                     </ul>
                   </li>
@@ -506,7 +605,7 @@
               </li>
               <li class="nav-item dropdown company-dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link last-nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -517,28 +616,52 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Our Company
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item" href="#">Worklife</a>
+                    <a class="dropdown-item d-xl-none" href="#">Explore Our Company</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Inspiration</a>
+                    <a class="dropdown-item sub-dropdown" href="#">Overview</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Overview</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Global Leadership</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Family Heritage</a></li>
+                      <li><a class="sub-dropdown-item" href="#">People</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Awards & Recognition</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Newsroom</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Contact Us</a></li>
+                    </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Innovations</a>
+                    <a class="dropdown-item sub-dropdown" href="#">Product & Design</a>
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="#">Explore Product & Design</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="#">Team & Process</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Innovations</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Inspirations</a></li>
+                    </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Why Fellowes</a>
+                    <a class="dropdown-item sub-dropdown" href="#">Purpose</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Purpose</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Culture & Values</a></li>
+                      <li><a class="sub-dropdown-item" href="#">GIVE™</a></li>
+                      <li><a class="sub-dropdown-item" href="#">EARTH™</a></li>
+                    </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Locations</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Sustainability</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">GIVE</a>
+                    <a class="dropdown-item sub-dropdown" href="#">Locations</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a class="sub-dropdown-item d-xl-none" href="#">Explore Locations</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Design & Experience Center</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Showrooms</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Corporate Offices</a></li>
+                      <li><a class="sub-dropdown-item" href="#">Manufacturing</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Careers</a>
@@ -547,7 +670,7 @@
               </li>
               <li class="nav-item d-xl-none d-block">
                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button">
-                  Contract Partners
+                  Partner Portal
                 </a>
               </li>
             </ul>
@@ -782,7 +905,7 @@
               </li>
               <li class="d-xl-block d-none">
                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
-                  >Contract Partners</a
+                  >Partner Portal</a
                 >
               </li>
             </div>
@@ -801,7 +924,7 @@
 
     <div class="search-div">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-md-8 col-12 mb-md-0 mb-3">
             <div>
               <form action="" method="">
@@ -813,6 +936,28 @@
                     id="nav-search-field-2"
                   />
                   <label class="form-label" for="nav-search-field-2">Search</label>
+                </div>
+                <div class="intel-search-results">
+                  <a href="#!" class="search-item text-black">
+                    <img src="/img/intelegent-search-img.png" alt="Array Ceiling AC2" />
+                    <div class="search-item-title">Fellowes Array&#8482; Ceiling AC2 - White</div>
+                  </a>
+                  <a href="#!" class="search-item text-black">
+                    <img src="/img/intelegent-search-img.png" alt="Array Ceiling AC2" />
+                    <div class="search-item-title">Fellowes Array&#8482; Ceiling AC2 - White</div>
+                  </a>
+                  <a href="#!" class="search-item text-black">
+                    <img src="/img/intelegent-search-img.png" alt="Array Ceiling AC2" />
+                    <div class="search-item-title">Fellowes Array&#8482; Ceiling AC2 - White</div>
+                  </a>
+                  <a href="#!" class="search-item text-black">
+                    <img src="/img/intelegent-search-img.png" alt="Array Ceiling AC2" />
+                    <div class="search-item-title">Fellowes Array&#8482; Ceiling AC2 - White</div>
+                  </a>
+                  <a href="#!" class="search-item text-black">
+                    <img src="/img/intelegent-search-img.png" alt="Array Ceiling AC2" />
+                    <div class="search-item-title">Fellowes Array&#8482; Ceiling AC2 - White</div>
+                  </a>
                 </div>
                 <button type="button" class="btn btn-primary btn-lg">search</button>
               </form>
@@ -1000,18 +1145,18 @@
 
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
-<section class="band position-relative dark-img-overlay aqm-banner-converted-to-fds mb-1">
-        <img src="img/aeramax/yourspaceeducationhero.jpg" class="img-fluid w-100">
+      <section class="band position-relative dark-img-overlay aqm-banner-converted-to-fds mb-1">
+        <img src="img/aeramax/yourspaceeducationhero.jpg" class="img-fluid w-100" />
         <div class="header-banner-text mw-100">
-          <h1 class="banner-text__header">Provide Maximum Protection from <br/>Classrooms to Cafeterias</h1>         
+          <h1 class="banner-text__header">
+            Provide Maximum Protection from <br />Classrooms to Cafeterias
+          </h1>
         </div>
       </section>
-      
+
       <section class="section-spacing text-center overflow-hidden">
         <div class="container">
-          <h2 class="text-uppercase text-black h1-title">
-            AIR CONCERNS FOR YOUR SCHOOL
-          </h2>
+          <h2 class="text-uppercase text-black h1-title">AIR CONCERNS FOR YOUR SCHOOL</h2>
           <div class="text-black fw-500 aeramax-sub-title">
             Experts agree: airborne transmission of the virus poses a significant threat.
           </div>
@@ -1023,9 +1168,7 @@
               <div class="text-black fw-500 aeramax-sub-title mb-4">
                 “CDC says airborne transmission plays a role in coronavirus spread.”
               </div>
-              <div class="text-black aeramax-small-font">
-                Washington Post, October 5, 2020
-              </div>
+              <div class="text-black aeramax-small-font">Washington Post, October 5, 2020</div>
             </div>
             <div class="col-md-4 col-12 mb-md-0 mb-5">
               <div class="mb-4">
@@ -1053,11 +1196,11 @@
         </div>
       </section>
 
-      <section class="section-spacing text-center fds-tan-bg tabbing-section-aeramax overflow-hidden">
+      <section
+        class="section-spacing text-center fds-tan-bg tabbing-section-aeramax overflow-hidden"
+      >
         <div class="container">
-          <div class="text-uppercase text-black h1-title">
-            Healthy Air in Schools
-          </div>
+          <div class="text-uppercase text-black h1-title">Healthy Air in Schools</div>
         </div>
         <div class="container-fluid">
           <div class="row pt-5 gx-md-5">
@@ -1168,7 +1311,8 @@
                               </g>
                             </g>
                           </g>
-                        </g></svg></span>
+                        </g></svg
+                    ></span>
                     Classrooms</a
                   >
                 </li>
@@ -1208,7 +1352,8 @@
       c-1.053,2.105-1.654,4.437-1.654,6.918c0,5.188,2.557,9.776,6.467,12.558C7.264,39.93,2.226,45.344,1.398,52.262L0.045,63.24
       c-0.376,3.008,1.654,5.791,4.587,6.393c5.865,1.203,11.956,1.805,18.197,1.805s12.333-0.602,18.198-1.805
       C43.885,69.105,45.915,66.248,45.54,63.24z"
-                        ></path></svg></span>
+                        ></path></svg
+                    ></span>
                     Nurses Offices</a
                   >
                 </li>
@@ -2735,7 +2880,7 @@
             </div>
           </div>
         </div>
-        <div class="container mt-5">         
+        <div class="container mt-5">
           <a href="#" class="btn btn-primary btn-fds-converted"
             >Learn More About the Importance of Healthy Air</a
           >
@@ -3078,6 +3223,96 @@
 
     <!-- Global Footer Start -->
 
+    <!-- Universal CTA Begins -->
+
+    <section
+      class="d-flex flex-column justify-content-center align-items-center px-4 py-5 text-white text-center fds-cta-grey"
+    >
+      <div class="py-md-4">
+        <h2 class="cta-header">
+          To Learn More About Fellowes Products, Contact a Representative or Dealer in Your Area
+        </h2>
+        <a
+          href="#"
+          class="link-underlined text-center text-white d-block mt-3 mt-lg-4 position-relative"
+          >Let's Get to Work</a
+        >
+      </div>
+    </section>
+
+    <!-- Last Section Begins -->
+    <section
+      class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
+      style="padding-inline: 2.25rem"
+    >
+      <div class="last-section-grid col-12 d-flex">
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/family.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/family.svg" alt="Give Icon" />
+            </div>
+            <p class="last-section-item-description">
+              In 1917, Harry Fellowes set in motion a way of doing business that has become our
+              cultural foundation at Fellowes to this very day. We are here to serve, through a
+              humble and helpful spirit. We strive each day to pursue our values of family,
+              innovation, quality and care. Into our fourth generation, our work is driven by a
+              purpose to add value to those we serve.
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/give.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/give.svg" alt="Give Icon" />
+            </div>
+            <p class="last-section-item-description last-section-desc-centered">
+              Established in 2014, GIVE is a purpose-led program dedicated to supporting local and
+              global partners who are addressing humanitarian's greatest social, education and
+              health-based needs..
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/earth.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/earth.svg" alt="Earth Icon" />
+            </div>
+            <p class="last-section-item-description">
+              Formed in 2021, Earth is a renewed commitment to preserve, protect and renew our
+              planet. Grounded in a conviction that we have great responsibility in caretaking our
+              generation's imprint on this world, the Earth framework is integrated into our product
+              development process, packaging design, organizational facilities and policies as well
+              as our daily decision-making.
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer id="main-footer" class="px-4" role="contentinfo">
       <section class="container-xl mb-4 my-lg-4">
         <div class="row">
@@ -3352,7 +3587,7 @@
         </div>
         <div class="footer-fine-print row text-center text-md-start mt-3">
           <div class="copyright col col-12 col-md-auto mb-2 pe-md-0">
-            Copyright &copy; 2022 Fellowes Brands, All Rights Reserved.
+            Copyright &copy; <span id="copyright-year"></span> Fellowes Brands, All Rights Reserved.
           </div>
           <div class="footer-nav col col-12 col-md-auto ps-md-0">
             <span class="d-none d-md-inline-block ps-md-1">|</span>
