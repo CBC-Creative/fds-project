@@ -165,16 +165,6 @@
   opacity: 0;
   transition: all 1.2s ease-in-out;
 }
-
-.fellowes-slide-scroll-effect .flip-box-back {
-  opacity: 1;
-  transition: all 1.2s ease-in-out;
-}
-
-.fellowes-slide-scroll-effect .flip-box-front {
-  opacity: 0;
-  transition: all 1.2s ease-in-out;
-}
 .aeramax-two-column-title {
   font-size: 1.625rem;
   line-height: 1.938rem;
