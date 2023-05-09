@@ -844,15 +844,21 @@
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   gap: 0px;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  position: absolute;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
   bottom: 0;
   width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.movedhtml .custom-section-nav {
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  position: absolute;
 }
 .custom-section-nav a {
   padding: 10px 5px;
@@ -887,11 +893,11 @@
   background: #657471;
   color: #ffffff;
 }
-.custom-section-nav-section.fixed-bottom {
+.custom-section-nav-section.fixed-top {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 100000;
 }
 #scrollspy-collapsible .nav-link::after {
   display: none;

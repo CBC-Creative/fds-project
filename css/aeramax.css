@@ -371,12 +371,25 @@ opacity: 1;
 }
 .h1-title{
   font-size: var(--fds-fs-800);
-  font-weight: 600;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.learn-more-line-btn:after{
+  top: inherit;
+}
+.learn-more-line-btn{
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-775);
 }
 @media (min-width:768px){
   .h1-title{
-    font-size: var(--fds-fs-900);
+    font-size: 3rem;
   }
+  .learn-more-line-btn{
+    font-size: var(--fds-fs-600);
+    line-height: var(--fds-fs-775);
+  }
+  
   .aqm-banner-converted-to-fds img{
     height: 500px;
   }
@@ -390,6 +403,10 @@ opacity: 1;
   }
   .aeramax-sub-title{
     font-size: 1.563rem;
+    line-height: var(--fds-fs-775);
+  }
+  .fds-converted-sub-title{
+    font-size: var(--fds-fs-500);
     line-height: var(--fds-fs-775);
   }
   .tab-content-p-tag{

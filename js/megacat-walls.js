@@ -127,19 +127,25 @@ equalHeight();
 
   menu = $('.custom-section-nav-section');
   menu1 = $('#evolve');
-  thatheight = $('#evolve').height();
-  menu2 = $('#explore');
+  thatheight = $('#evolve').height() / 4;
+  menu2 = $('.sticky-start');
   origOffsetY = menu2.offset().top;
-  origOffsetY1 = menu1.offset().top;
+  origOffsetY1 = menu1.offset().top + thatheight;
   console.log(origOffsetY1);
-  $(window).scroll(function() { if ($(window).scrollTop() > origOffsetY && $(window).scrollTop() < origOffsetY1) {menu.addClass('fixed-bottom');} else { menu.removeClass('fixed-bottom');}});
+  $(window).scroll(function() { if ($(window).scrollTop() > origOffsetY && $(window).scrollTop() < origOffsetY1) {
+    menu.addClass('fixed-top');
+    $('.navbar').addClass('d-none');
+  } else { 
+      menu.removeClass('fixed-top');
+      $('.navbar').removeClass('d-none');
+    }});
 
  
 
   $(window).on('scroll', function() {
     section5 = $('#evolve');
     section5offsetY = section5.offset().top;
-    if ($(window).scrollTop() > section5offsetY){
+    if ($(window).scrollTop() > origOffsetY1){
       var htmltomove = $('.htmltomove').html();
       $(".movedhtml").html(htmltomove);
     } else{
