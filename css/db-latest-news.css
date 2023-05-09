@@ -170,7 +170,7 @@
 .news-hero {
     height: 48.25rem;
     min-height: 48.25rem;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5) 100%), url("../img/db/hero-global-footprint.webp");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5) 100%), url("../img/db/hero_newsroom.jpg");
     background-size: cover;
     background-position: center;
 }
