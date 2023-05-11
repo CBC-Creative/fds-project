@@ -1,6 +1,6 @@
 // Custom Global Navication JS
 const el_autohide1 = document.querySelector('#main-navbar');
-
+const mediaQuerymax1200 = window.matchMedia('(max-width: 1199.98px)');
 // Homepage Logo Section JS
 
 document.addEventListener('DOMContentLoaded', function () {
