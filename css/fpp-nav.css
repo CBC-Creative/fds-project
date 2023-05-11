@@ -17,6 +17,18 @@
   transition: all 0.5s ease-in-out;
 }
 
+.navbar .right-nav li:last-child .nav-link {
+  color: var(--fds-white);
+}
+
+.navbar .right-nav li:last-child .nav-link:hover {
+  color: var(--fds-white);
+}
+
+.navbar .right-nav .nav-link {
+  color: var(--fds-white);
+}
+
 @media (max-width: 1199px) {
   .navbar-toggler {
     color: var(--fds-white);

@@ -112,7 +112,9 @@ $(window).on('load', function () {
 
       if (scrolled > navHeight) {
         $(el_autohide).addClass('scrolled-down');
+        $(el_autohide).removeClass('top-scrolled-up');
       } else {
+        $(el_autohide).addClass('top-scrolled-up');
         $(el_autohide).removeClass('scrolled-down scrolled-up');
       }
 
