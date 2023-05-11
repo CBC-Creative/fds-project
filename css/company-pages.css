@@ -460,11 +460,10 @@ section#innovation:before {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  margin-left: 1rem;
-  margin-right: 1rem;
   border-top: 1px solid var(--fds-black);
   border-bottom: 1px solid var(--fds-black);
   font-weight: 300;
+  white-space: nowrap;
 }
 .heritage-nav .nav-link::after {
   display: none;
@@ -682,7 +681,7 @@ section#innovation:before {
   }
   .heritage-nav-section {
     background: var(--fds-black);
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
   .harry-fellowes-section {
     min-height: 800px;
