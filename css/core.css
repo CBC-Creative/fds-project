@@ -1059,7 +1059,7 @@ a.two-col-section__link::after {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1010;
   border-bottom: 1px solid var(--fds-grey-200);
   min-height: 70px;
   background-color: #fff;
