@@ -92,7 +92,7 @@
   .scrolled-up .stroke-svg svg {
     stroke: var(--fds-black);
   }
-  .top-scrolled-up .stroke-svg svg {
+  #main-navbar.top-scrolled-up .stroke-svg svg {
     stroke: var(--fds-white);
   }
   .opensearch .stroke-svg svg {
@@ -113,6 +113,9 @@
   }
   #main-navbar.top-scrolled-up:hover .right-nav svg {
     fill: var(--fds-black);
+  }
+  #main-navbar.top-scrolled-up:hover .stroke-svg svg {
+    stroke: var(--fds-black);
   }
   .opensearch .right-nav svg {
     fill: var(--fds-black);
