@@ -131,16 +131,16 @@ $(window).on('load', function () {
       if (mediaQuerymax1200.matches) {
         closemobilenav[s].classList.remove('show');
         closemobilenavtoggle[s].classList.add('collapsed');
-        $(window).scroll(function () {
-          if ($(searchtab[s]).hasClass('searchshow')) {
-            $(searchtab[s]).removeClass('searchshow');
-            $(searchtabdiv[0]).removeClass('searchdivshow');
-          }
-        });
       }
       if (mediaQuery1200.matches) {
         opennavbar[0].classList.toggle('opensearch');
       }
+      $(window).scroll(function () {
+        if ($(searchtab[s]).hasClass('searchshow')) {
+          $(searchtab[s]).removeClass('searchshow');
+          $(searchtabdiv[0]).removeClass('searchdivshow');
+        }
+      });
     });
   }
 

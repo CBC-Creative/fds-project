@@ -1263,7 +1263,7 @@ a.two-col-section__link::after {
   background: #ffffff;
   left: 0;
   border-top: 1px solid #efefef;
-  z-index: 1000;
+  z-index: 1009;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
