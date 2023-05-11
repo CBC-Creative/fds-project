@@ -129,11 +129,11 @@
   .scrolled-up .right-nav li:last-child .nav-link {
     color: #97989c;
   }
-  .top-scrolled-up .right-nav li:last-child .nav-link {
-    color: var(--fds-white);
-  }
   .opensearch .right-nav li:last-child .nav-link {
     color: #97989c;
+  }
+  .top-scrolled-up .right-nav li:last-child .nav-link {
+    color: var(--fds-white);
   }
   .right-nav li:last-child .nav-link:hover {
     color: var(--fds-black) !important;
