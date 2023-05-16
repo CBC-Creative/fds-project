@@ -5,12 +5,28 @@
 
 .navbar .navbar-brand svg {
   fill: var(--fds-white);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .navbar .stroke-svg svg {
   stroke: var(--fds-white);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.navbar .right-nav li:last-child .nav-link {
+  color: var(--fds-white);
+}
+
+.navbar .right-nav li:last-child .nav-link:hover {
+  color: var(--fds-white);
+}
+
+.navbar .right-nav .nav-link {
+  color: var(--fds-white);
 }
 
 @media (max-width: 1199px) {

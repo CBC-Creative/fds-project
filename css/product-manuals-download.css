@@ -1,50 +1,46 @@
 .product-registration-box {
-    border-top: 1px solid var(--fds-grey-400);
+  border-top: 1px solid var(--fds-grey-400);
 }
 
 .gray-link,
 .gray-link:hover,
 .gray-link:focus,
 .gray-link:active {
-    color: var(--fds-grey-700);
-    text-decoration: underline;
-    font-size: 0.875rem;
+  color: var(--fds-grey-700);
+  text-decoration: underline;
+  font-size: 0.875rem;
 }
 
 .product-line {
-    border-top: 0.063rem solid var(--fds-grey-400);
+  border-top: 0.063rem solid var(--fds-grey-400);
 }
 
 .manuals-box {
-    border: 0.063rem solid var(--fds-grey-400);
-    padding: 1.125rem;
+  border: 0.063rem solid var(--fds-grey-400);
+  padding: 1.125rem;
 }
 
 .manuals-line {
-    border-bottom: 0.063rem solid var(--fds-grey-400);
-    color: var(--fds-black);
-    font-size: var(--fds-fs-250);
-    font-weight: 600;
-    margin-bottom: 0rem;
+  border-bottom: 0.063rem solid var(--fds-grey-400);
+  color: var(--fds-black);
+  font-size: var(--fds-fs-250);
+  font-weight: 600;
+  margin-bottom: 0rem;
 }
 
 .product-text p {
-    font-size: var(--fds-fs-250);
-    margin-bottom: 0rem;
+  font-size: var(--fds-fs-250);
+  margin-bottom: 0rem;
 }
 
 .manuals-img {
-    width: 0.563rem;
-    margin-right: 6px;
-    color: #7C7C80;
+  width: 0.563rem;
+  margin-right: 6px;
+  color: #7c7c80;
 }
 
-
-
-
-
-@media (min-width:768px) {
-    .manuals-line {
-        width: 40%;
-    }
+@media (min-width: 768px) {
+  .manuals-line {
+    width: 40%;
+  }
 }

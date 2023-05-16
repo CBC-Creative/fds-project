@@ -5,8 +5,15 @@
   background-position: center;
   height: 100vh;
   min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .country-title {
@@ -32,6 +39,8 @@
   position: absolute;
   right: 15px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .country-list-div {
@@ -51,7 +60,11 @@
   margin-bottom: 0px;
 }
 .country-list-div li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .choose-country-dropdown-select img {

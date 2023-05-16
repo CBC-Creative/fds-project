@@ -3,7 +3,9 @@
 }
 .company-design-banner-image img {
   height: 500px;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top center;
   object-position: top center;
 }
 .company-title {

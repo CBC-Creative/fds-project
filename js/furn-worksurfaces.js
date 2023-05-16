@@ -1,76 +1,160 @@
-var swatchimgtopreview = ''; 
-var solidcolortopreview = ''; 
+var swatchimgtopreview = '';
+var solidcolortopreview = '';
 var datacategorytitle = '';
 var datacategoryname = '';
 var datacolorcode = '';
 var datafinish = '';
 var datamanufacturer = '';
 var datamanupartnum = '';
-$(document).on('click','.swatch-right-boxes-main-row .swatch-right-boxes', function (e) {
-    e.preventDefault();
-    datacategorytitle = $(this).parent().find(".swatch-small-title-right").attr("data-category");
-    datacategoryname = $(this).parent().find(".swatch-small-title-right").attr("data-name");
-    datacolorcode = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-colorcode");
-    datafinish = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-finish");
-    datamanufacturer = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-manufacturer");
-    datamanupartnum = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-partnum");
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').attr('data-name', datacategoryname)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').text(datacategoryname)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').attr('data-category', datacategorytitle)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').text(datacategorytitle)
+$(document).on('click', '.swatch-right-boxes-main-row .swatch-right-boxes', function (e) {
+  e.preventDefault();
+  datacategorytitle = $(this).parent().find('.swatch-small-title-right').attr('data-category');
+  datacategoryname = $(this).parent().find('.swatch-small-title-right').attr('data-name');
+  datacolorcode = $(this).parent().find('.swatch-small-title-right').attr('data-swatch-colorcode');
+  datafinish = $(this).parent().find('.swatch-small-title-right').attr('data-swatch-finish');
+  datamanufacturer = $(this)
+    .parent()
+    .find('.swatch-small-title-right')
+    .attr('data-swatch-manufacturer');
+  datamanupartnum = $(this).parent().find('.swatch-small-title-right').attr('data-swatch-partnum');
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-name]')
+    .attr('data-name', datacategoryname);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-name]')
+    .text(datacategoryname);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-category]')
+    .attr('data-category', datacategorytitle);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-category]')
+    .text(datacategorytitle);
 
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]').attr('data-swatch-colorcode', datacolorcode)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]').text(datacolorcode)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]')
+    .attr('data-swatch-colorcode', datacolorcode);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]')
+    .text(datacolorcode);
 
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datafinish span[data-swatch-finish]').attr('data-swatch-finish', datafinish)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datafinish span[data-swatch-finish]').text(datafinish)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datafinish span[data-swatch-finish]')
+    .attr('data-swatch-finish', datafinish);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datafinish span[data-swatch-finish]')
+    .text(datafinish);
 
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]').attr('data-swatch-manufacturer', datamanufacturer)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]').text(datamanufacturer)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]')
+    .attr('data-swatch-manufacturer', datamanufacturer);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]')
+    .text(datamanufacturer);
 
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datapart span[data-swatch-partnum]').attr('data-swatch-manufacturer', datamanupartnum)
-    $(this).parents(".accordion-body").find('.swatch-left-preview-box .datapart span[data-swatch-partnum]').text(datamanupartnum)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datapart span[data-swatch-partnum]')
+    .attr('data-swatch-manufacturer', datamanupartnum);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datapart span[data-swatch-partnum]')
+    .text(datamanupartnum);
 
-    $(this).parents(".accordion-body").find('.swatch-preview-img').removeClass('solidimagecolorprview');
-    swatchimgtopreview = $(this).parent().find('.swatch-img img').attr('src');
-    $(this).parents(".accordion-body").find('.swatch-preview-img img').attr('src', swatchimgtopreview);
-
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-preview-img')
+    .removeClass('solidimagecolorprview');
+  swatchimgtopreview = $(this).parent().find('.swatch-img img').attr('src');
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-preview-img img')
+    .attr('src', swatchimgtopreview);
 });
 
-$(document).on('click','.swatch-right-boxes-main-row .swatch-right-boxes-solids', function (e) {
+$(document).on('click', '.swatch-right-boxes-main-row .swatch-right-boxes-solids', function (e) {
   e.preventDefault();
-  datacategorytitle = $(this).parent().find(".swatch-small-title-right").attr("data-category");
-  datacategoryname = $(this).parent().find(".swatch-small-title-right").attr("data-name");
-  datacolorcode = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-colorcode");
-  datafinish = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-finish");
-  datamanufacturer = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-manufacturer");
-  datamanupartnum = $(this).parent().find(".swatch-small-title-right").attr("data-swatch-partnum");
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').attr('data-name', datacategoryname)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-name]').text(datacategoryname)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').attr('data-category', datacategorytitle)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .swatch-title span[data-category]').text(datacategorytitle)
+  datacategorytitle = $(this).parent().find('.swatch-small-title-right').attr('data-category');
+  datacategoryname = $(this).parent().find('.swatch-small-title-right').attr('data-name');
+  datacolorcode = $(this).parent().find('.swatch-small-title-right').attr('data-swatch-colorcode');
+  datafinish = $(this).parent().find('.swatch-small-title-right').attr('data-swatch-finish');
+  datamanufacturer = $(this)
+    .parent()
+    .find('.swatch-small-title-right')
+    .attr('data-swatch-manufacturer');
+  datamanupartnum = $(this).parent().find('.swatch-small-title-right').attr('data-swatch-partnum');
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-name]')
+    .attr('data-name', datacategoryname);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-name]')
+    .text(datacategoryname);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-category]')
+    .attr('data-category', datacategorytitle);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .swatch-title span[data-category]')
+    .text(datacategorytitle);
 
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]').attr('data-swatch-colorcode', datacolorcode)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]').text(datacolorcode)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]')
+    .attr('data-swatch-colorcode', datacolorcode);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datacolorcode span[data-swatch-colorcode]')
+    .text(datacolorcode);
 
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datafinish span[data-swatch-finish]').attr('data-swatch-finish', datafinish)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datafinish span[data-swatch-finish]').text(datafinish)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datafinish span[data-swatch-finish]')
+    .attr('data-swatch-finish', datafinish);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datafinish span[data-swatch-finish]')
+    .text(datafinish);
 
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]').attr('data-swatch-manufacturer', datamanufacturer)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]').text(datamanufacturer)
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]')
+    .attr('data-swatch-manufacturer', datamanufacturer);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datamanufacturer span[data-swatch-manufacturer]')
+    .text(datamanufacturer);
 
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datapart span[data-swatch-partnum]').attr('data-swatch-manufacturer', datamanupartnum)
-  $(this).parents(".accordion-body").find('.swatch-left-preview-box .datapart span[data-swatch-partnum]').text(datamanupartnum)
-
- 
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datapart span[data-swatch-partnum]')
+    .attr('data-swatch-manufacturer', datamanupartnum);
+  $(this)
+    .parents('.accordion-body')
+    .find('.swatch-left-preview-box .datapart span[data-swatch-partnum]')
+    .text(datamanupartnum);
 
   solidcolortopreview = $(this).parent().find('.solid-color-div').attr('data-swatch-colorcode');
-  $(this).parents(".accordion-body").find('.swatch-preview-img').addClass('solidimagecolorprview');
-  $(this).parents(".accordion-body").find('.solidimagecolorprview').css("background-color", solidcolortopreview)
+  $(this).parents('.accordion-body').find('.swatch-preview-img').addClass('solidimagecolorprview');
+  $(this)
+    .parents('.accordion-body')
+    .find('.solidimagecolorprview')
+    .css('background-color', solidcolortopreview);
 });
 
-$( document ).ready(function() {
-  $('.swatch-right-boxes-main-row .col-lg-2:first-child .swatch-right-boxes').trigger( "click" );
+$(document).ready(function () {
+  $('.swatch-right-boxes-main-row .col-lg-2:first-child .swatch-right-boxes').trigger('click');
 });
 
 $(document).ready(function () {
@@ -165,17 +249,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 function equalHeight() {
-  if ($("body").find("#primary-content").hasClass("wall-slider-caption")) {
+  if ($('body').find('#primary-content').hasClass('wall-slider-caption')) {
     var wallcaption = Array.from(document.getElementsByClassName('wall-slider-caption'));
     for (let w = 0; w < wallcaption.length; w++) {
       var setheightcaption = Math.max(wallcaption[0].scrollHeight);
       wallcaption[w].style.height = setheightcaption + 'px';
     }
   }
-  
-  if ($("body").find("#primary-content").hasClass("wallsliderindicators")) {
+
+  if ($('body').find('#primary-content').hasClass('wallsliderindicators')) {
     var wallindicators = document.getElementsByClassName('wallsliderindicators');
     wallindicators[0].style.bottom = setheightcaption - 58 + 'px';
-  }  
+  }
 }
 equalHeight();
