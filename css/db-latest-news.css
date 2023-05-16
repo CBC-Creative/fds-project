@@ -1,33 +1,3 @@
-#main-navbar svg, #main-navbar .search-dropdown .search-icon {
-    transition: all 0.15s ease-in-out
-}
-
-.top-scrolled-up .nav-link, .top-scrolled-up .menu-link,
-.top-scrolled-up .nav-link, .top-scrolled-up .menu-link {
-    color: var(--fds-white);
-}
-
-.navbar:hover .nav-link, .navbar:hover .menu-link,
-.navbar:hover.top-scrolled-up .right-nav li:last-child .nav-link {
-    color: #97989c;
-}
-
-.navbar:hover.top-scrolled-up .right-nav li:last-child .nav-link:hover {
-    color: var(--fds-black);
-}
-
-.top-scrolled-up .right-nav li:last-child .nav-link {
-    color: var(--fds-white);
-}
-
-.navbar .nav-link:focus, .navbar .nav-link:hover,
-.scrolled-up .nav-link:focus,
-.scrolled-up .nav-link:hover,
-.navbar .dropdown:hover .nav-link,
-.scrolled-up .dropdown:hover .nav-link {
-    color: var(--fds-black);
-}
-
 .container-sm {
     max-width: 63rem;
 }
