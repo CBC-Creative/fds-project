@@ -1,10 +1,3 @@
-#main-navbar svg,#main-navbar .search-dropdown .search-icon { transition: all 0.15s ease-in-out }
-#main-navbar.top-scrolled-up { background-color: rgba(255, 255, 255, 0);}
-#main-navbar.top-scrolled-up svg,
-#main-navbar.top-scrolled-up .search-dropdown .search-icon {  fill: var(--fds-white); color: var(--fds-white);}
-#main-navbar.top-scrolled-up:hover { background-color: var(--fds-white);}
-#main-navbar.top-scrolled-up:hover svg,
-#main-navbar.top-scrolled-up:hover .search-dropdown .search-icon { fill: var(--fds-black); color: var(--fds-black);}
 .top-scrolled-up .nav-link,.top-scrolled-up .menu-link,
 .top-scrolled-up .nav-link,.top-scrolled-up .menu-link { color: var(--fds-white);}
 .navbar:hover .nav-link,.navbar:hover .menu-link, 
