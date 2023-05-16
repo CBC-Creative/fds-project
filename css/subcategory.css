@@ -350,7 +350,7 @@
 
 .filters .form-check-label {
   font-size: var(--fds-fs-200);
-  height: var(--fds-fs-325);
+  line-height: var(--fds-fs-200);
 }
 
 .filters .color-text {
@@ -362,6 +362,7 @@
   width: var(--fds-fs-325);
   height: var(--fds-fs-325);
   border: 1px solid var(--fds-grey-700);
+  aspect-ratio: 1 /1;
 }
 
 .filter-clr-picker-label {
