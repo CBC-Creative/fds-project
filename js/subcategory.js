@@ -11,6 +11,7 @@ $(window).on('load', function () {
   }
 
   const filterSection = document.querySelector('.filter-section');
+  const mediaQueryMax992 = window.matchMedia('(max-width: 992px)');
   if (mediaQueryMax992.matches && filterSection) {
     const clickHeader = document.querySelector('.filter-section__title');
     const clickIcon = document.querySelectorAll('.filter-icon');
