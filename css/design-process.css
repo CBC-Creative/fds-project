@@ -7,6 +7,7 @@
   font-size: var(--fds-fs-250);
   line-height: var(--fds-fs-450);
   max-width: 400px;
+  width: 50%;
 }
 .ceo-text span {
   font-size: var(--fds-fs-600);
