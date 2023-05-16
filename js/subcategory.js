@@ -36,7 +36,9 @@ $(window).on('load', function () {
 
     $(filterHeader).each(function () {
       $(this).click(function () {
-        $(this).next().toggleClass('show');
+        const filterSection = $(this).siblings('.filters');
+        console.log(filterSection);
+        $(filterSection).toggleClass('show');
         $(this).find('.filter-subhead__open').toggleClass('hide');
         $(this).find('.filter-subhead__close').toggleClass('show');
       });
