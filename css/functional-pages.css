@@ -883,10 +883,163 @@ section h1 {
     margin-top: 130px;
   }
 }
-
+.p-reg22{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-800);
+}
+.title-30{
+  font-size: var(--fds-fs-710);
+  line-height: var(--fds-fs-725);
+}
+.toc-select .form-control{
+  line-height: 2.15;
+}
+.text-gray{
+  color: var(--fds-grey-800);
+}
+.toc-check-box{
+  border-radius: 4px !important;
+}
+.toc-page-form .form-group{
+  margin-bottom: 1.5rem;
+}
+.title24{
+  font-size: var(--fds-fs-710);
+  line-height: var(--fds-fs-800);
+}
+.line-height-normal{
+  line-height: 1.4 !important;
+}
+.preg14{
+  font-size: var(--fds-fs-325);
+  line-height: var(--fds-fs-700);
+}
+.play-btn-toc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  width: 150px;
+}
+.toc-video-bg .main-video-img{
+  min-height:400px;
+  object-fit: cover;
+}
+.toc-microban-banner-title{
+  font-size: var(--fds-fs-710);
+  font-weight: 500;
+  line-height: normal;
+}
+.toc-microban-banner-caption{
+  top: 5%;
+  width: 100%;
+  padding: 0 1rem;
+}
+.toc-microban-banner .main-img-toc{
+  min-height: 430px;
+  object-fit: cover;
+}
+.toc-microban-banner .p-reg22{
+  font-size: var(--fds-fs-350);
+  line-height: var(--fds-fs-500);
+}
+.preg18{
+  font-size: var(--fds-fs-450);
+  line-height: var(--fds-fs-600);
+}
+.toc-table tr:nth-child(odd){
+  background: var(--fds-tan);
+}
+.toc-table tr td{
+  border-right-width: 1px;
+}
+.border-left-toc{
+  border-left-width: 1px;
+}
+.qualifying-form .stepper-head{
+  display: none;
+}
+.stepper-mobile-progress, .custom-progress-bar{
+  background: #D9D9D8;
+  border-radius: 50px;
+  border: 1px solid #D9D9D8;
+  height: 30px;
+  width: 250px;
+  margin: 0 auto;
+}
+.stepper-mobile-progress .stepper-mobile-progress-bar, .custom-progress-bar .progress-bar{
+  background: var(--fds-tan) !important;
+  color: var(--fds-black);
+  font-weight: 600;
+  font-size: var(--fds-fs-450);
+  height: 28px;
+  border-radius: 50px;
+}
+.stepper-mobile-head{
+  font-size: var(--fds-fs-450);
+  font-weight: 700;
+}
+.qualifying-form .stepper-mobile-footer{
+  gap: 15px;
+}
+.stepper-form-btn{
+  background: #fde5b5;
+  color: var(--fds-black);
+}
 @media (min-width: 768px) {
   .addverify-border {
     -webkit-border-end: 1px solid #97989c;
     border-inline-end: 1px solid #97989c;
+  }
+  .stepper-mobile-progress, .custom-progress-bar{
+    width: 320px;
+  }
+  .func-toc-page-header-image-section .banner-text__header{
+    line-height: 3.75rem;
+  }
+  .p-reg22{
+    font-size: var(--fds-fs-700);
+    line-height: var(--fds-fs-900);
+  }
+  .toc-microban-banner .p-reg22{
+    font-size: var(--fds-fs-700);
+    line-height: var(--fds-fs-900);
+  }
+  .title-30{
+    font-size: var(--fds-fs-775);
+    line-height: var(--fds-fs-800);
+  }
+  .title24{
+    font-size: var(--fds-fs-710);
+    line-height: var(--fds-fs-800);
+  }
+  .toc-microban-banner-title{
+    font-size: var(--fds-fs-910);
+  }
+}
+@media (min-width:768px){
+  .toc-microban-banner-title{
+    font-size: var(--fds-fs-860);
+  }
+  .toc-microban-banner-caption{
+    top: 40px;
+  }
+  .toc-microban-banner .main-img-toc{
+    height: 700px;
+    object-fit: cover;
+  }
+}
+@media (min-width:992px){
+  .toc-microban-banner-title{
+    font-size: var(--fds-fs-900);
+  }
+  .toc-microban-banner-caption{
+    top: 5%;
+  }
+}
+@media (min-width:1200px){
+  .toc-microban-banner-title{
+    font-size: var(--fds-fs-910);
   }
 }
