@@ -1,24 +1,36 @@
-.sub-title-rising{
+.mw-1366 {
+  max-width: 1366px;
+  margin-inline: auto;
+}
+
+.animated-gif {
+  object-fit: cover;
+  object-position: bottom center;
+  width: 100%;
+  max-height: 580px;
+}
+
+.sub-title-rising {
   font-size: var(--fds-fs-710);
   line-height: var(--fds-fs-800);
 }
-.banner-video-icon{
+.banner-video-icon {
   position: absolute;
   width: 100px;
   height: 100px;
   left: 50%;
-  top:40%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
-.banner-video-icon a{
+.banner-video-icon a {
   display: block;
 }
-.banner-video-icon a img{
+.banner-video-icon a img {
   height: auto;
 }
 .btn-gray {
-  background: #ACA8A8;
-  color: #FCF9F9;
+  background: #aca8a8;
+  color: #fcf9f9;
   font-size: var(--fds-fs-500);
   border-radius: 50px;
   -webkit-box-shadow: none;
@@ -35,62 +47,62 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.rising-sub-title{
+.rising-sub-title {
   font-size: var(--fds-fs-710);
   line-height: var(--fds-fs-800);
 }
-.rising-quality-bg{
+.rising-quality-bg {
   background: url(../img/cat-rising-loft/quality-section-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.rising-list li{
+.rising-list li {
   margin-bottom: 0.5rem;
 }
-.quality-img{
+.quality-img {
   position: relative;
   margin-left: auto;
   width: 90%;
 }
-@media (min-width:768px){
-  .megacat-aqm-banner-content .container{
+@media (min-width: 768px) {
+  .megacat-aqm-banner-content .container {
     bottom: 4rem;
   }
-  .sub-title-rising{
+  .sub-title-rising {
     font-size: var(--fds-fs-880);
     line-height: var(--fds-fs-775);
   }
-  .banner-video-icon{
+  .banner-video-icon {
     width: 150px;
-  height: 150px;
+    height: 150px;
   }
-  .quality-img{
+  .quality-img {
     width: auto;
   }
 }
-@media (min-width:992px){
-  .quality-img{
+@media (min-width: 992px) {
+  .quality-img {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 500px;
   }
 }
-@media (min-width:1200px){
-  .w-xl-80{
+@media (min-width: 1200px) {
+  .w-xl-80 {
     width: 80%;
   }
-  .quality-img{
+  .quality-img {
     width: 600px;
   }
-  .configration-img{
+  .configration-img {
     height: 500px;
     object-fit: cover;
   }
 }
 
-@media (min-width:1400px){
-  .quality-img{
+@media (min-width: 1400px) {
+  .quality-img {
     width: auto;
   }
 }
