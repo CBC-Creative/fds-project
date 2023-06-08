@@ -1,38 +1,90 @@
-.dashboard-list{
+.maxH-500 {
+  max-height: 500px;
+}
+
+.form-outline.custom-view-point-input .form-control {
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 0 !important;
+  background: #ffffff;
+}
+
+.sub-price-container[data-over200='false'] .under200 {
+  display: block;
+}
+
+.sub-price-container[data-over200='false'] .over200 {
+  display: none;
+}
+
+.sub-price-container[data-over200='true'] .under200 {
+  display: none;
+}
+
+.sub-price-container[data-over200='true'] .over200 {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .vp-title img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .vp-title {
+    font-size: var(--fds-fs-925);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.btn.subscribe-submit.disabled,
+.btn.subscribe-submit:disabled,
+fieldset:disabled .btn.subscribe-submit {
+  color: var(--mdb-btn-disabled-color);
+  pointer-events: none;
+  background-color: var(--fds-light-blue);
+  border-color: var(--fds-light-blue);
+  opacity: var(--mdb-btn-disabled-opacity);
+  box-shadow: none;
+}
+
+.dashboard-list {
   padding-left: 1rem;
 }
-.preg22{
+.preg22 {
   font-size: var(--fds-fs-400);
   line-height: var(--fds-fs-700);
 }
-#selsectplan .form-check-input{
-  display: none;
+#selsectplan .form-check-input {
+  opacity: 0;
 }
-#selsectplan .form-check-label{
+#selsectplan .form-check-label {
   padding-left: 0;
   background: var(--fds-white);
   border: 4px solid #ffffff;
   padding: 3rem;
   position: relative;
 }
-#selsectplan .form-check-label.active-sub{
+#selsectplan .form-check-label.active-sub {
   border: 4px solid #778495;
 }
-#selsectplan .form-check-label .lable-title{
-  color: #9D9D9D;
+#selsectplan .form-check-label .lable-title {
+  color: #9d9d9d;
   font-size: var(--fds-fs-600);
   line-height: var(--fds-fs-775);
   font-weight: 700;
   margin-bottom: 1rem;
 }
-#selsectplan .form-check-label.active-sub .lable-title{
+#selsectplan .form-check-label.active-sub .lable-title {
   color: #778495;
 }
-#selsectplan .form-check-label .lable-text{
+#selsectplan .form-check-label .lable-text {
   font-size: var(--fds-fs-325);
   line-height: var(--fds-fs-600);
 }
-#selsectplan .form-check-label .lable-button{
+#selsectplan .form-check-label .lable-button {
   background: #9d9d9d;
   padding: 0.5rem 2rem;
   width: auto;
@@ -41,38 +93,41 @@
   line-height: var(--fds-fs-775);
   font-weight: 700;
   bottom: -23px;
-    left: 50%;
-    height: 46px;
-    width: 150px;
-    margin-left: -75px;
-    position: absolute;
+  left: 50%;
+  height: 46px;
+  width: 150px;
+  margin-left: -75px;
+  position: absolute;
 }
-#selsectplan .form-check-label.active-sub .lable-button{
+#selsectplan .form-check-label.active-sub .lable-button {
   background: #778495;
 }
-.preg15{
+.preg15 {
   font-size: 0.938rem;
   line-height: var(--fds-fs-700);
   font-weight: 500;
 }
-.custom-view-point-input{
+.custom-view-point-input {
   background: var(--fds-white);
   text-align: center;
   border-radius: 50px;
 }
-.custom-view-point-input .form-notch div{border: none !important;    box-shadow: none !important;}
+.custom-view-point-input .form-notch div {
+  border: none !important;
+  box-shadow: none !important;
+}
 
-.custom-view-point-input input{
+.custom-view-point-input input {
   text-align: center;
   appearance: none;
 }
 
-@media (min-width:768px){
-  .bigptext{
-  line-height: var(--fds-fs-775);
-  font-weight: 500;
+@media (min-width: 768px) {
+  .bigptext {
+    line-height: var(--fds-fs-775);
+    font-weight: 500;
   }
-  .preg22{
+  .preg22 {
     font-size: var(--fds-fs-700);
     line-height: var(--fds-fs-775);
   }
