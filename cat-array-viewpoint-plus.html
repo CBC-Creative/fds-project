@@ -28,6 +28,8 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/categorypage.css" />
     <link rel="stylesheet" href="css/megacat-aqm.css" />
+    <link rel="stylesheet" href="css/filters.css" />
+    <link rel="stylesheet" href="css/viewpoint-plus.css" />
   </head>
 
   <body class="position-relative">
@@ -38,8 +40,151 @@
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
-      Your Code Goes Here
-
+      <section class="band position-relative dark-img-overlay object-top-position megacat-banner">
+        <img
+          src="img/viewpoint-plus-imgs/banner-img.jpg"
+          class="mh-700-at768 maxh-700 d-none d-md-block img-fluid w-100"
+        />
+        <img
+          src="img/viewpoint-plus-imgs/banner-img-mobile.jpg"
+          class="d-md-none img-fluid w-100"
+        />
+        <div class="megacat-aqm-banner-content">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-12">
+                <h1 class="banner-text__header text-white array-wall-title">
+                  <span><img src="img/viewpoint-plus-imgs/header-logo.png" class="h-auto" /></span>
+                  Viewpoint Plus
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="band section-spacing bluesection px-4 py-5">
+        <div class="container py-md-5">
+          <div class="row">
+            <div class="col-12 text-center text-white">
+              <h2 class="mb-md-4 mb-3 font-weight-300">
+                Viewpoint Plus
+              </h2>
+            </div>
+            <div class="col-12 col-lg-10 offset-lg-1 text-center text-white">
+              <p class="mb-0 preg22 mw-100">
+                Complete Controls for Delivering a Healthier Space for Your Occupants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="band py-5">
+        <div class="container py-md-5">
+          <div class="row gx-lg-5 align-items-center">
+            <div class="order-lg-2 col-12 col-lg-6 mb-5 mb-lg-0">
+              <img src="img/viewpoint-plus-imgs/laptop-img.png" class="img-fluid" />
+            </div>
+            <div class="order-lg-1 col-12 col-lg-6 text-black">
+              <p class="bigptext mb-4">ViewPoint Plus’ intuitive, cloud-based dashboard gives building managers comprehensive visibility into their building’s air quality management.</p>
+              <ul class="dashboard-list text-black text-start mb-0">
+                <li>Timers and scheduling for any unit in your system</li>
+                <li>Enhanced unit controls</li>
+                <li>Data export capabilities</li>
+                <li>Current and historical data to analyze trends and identify IAQ concerns</li>
+                <li>Unit maintenance notifications and advanced troubleshooting</li>
+                <li>Real-time filter life measurement and replacement history</li>
+                <li>Community dashboard</li>
+                <li>Future BMS integration</li>
+              </ul>
+              <div class="position-relative mt-4">
+                <a href="#" class="link-left link-underlined text-black">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="band py-5 fds-light-gray text-center text-black">
+        <div class="container py-md-5">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mb-md-4 mb-3 font-weight-300">
+                Select the Plan That Works for You
+              </h2>
+              <p class="preg22">The longer you enroll, the more you save.*</p>              
+            </div>
+          </div>
+          <form id="selsectplan" name="selectplan" method="post">
+            <div class="row mt-md-5 mt-4">
+              <div class="col-lg-4 col-12 mb-lg-0 mb-5">
+                <div class="form-check px-0">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                  <label class="form-check-label active-sub d-block" for="inlineRadio1">
+                    <div class="lable-title">36 Month Subscription</div>
+                    <div class="lable-text">Includes access to all <br/>Array Viewpoint Plus <br/>features for 3 Years</div>
+                    <div class="lable-button">SAVE 25%</div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 mb-lg-0 mb-5">
+                <div class="form-check px-0">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                  <label class="form-check-label d-block" for="inlineRadio2">
+                    <div class="lable-title">24 Month Subscription</div>
+                    <div class="lable-text">Includes access to all <br/>Array Viewpoint Plus <br/>features for 2 Years</div>
+                    <div class="lable-button">SAVE 10%</div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="form-check px-0">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                  <label class="form-check-label d-block" for="inlineRadio3">
+                    <div class="lable-title">12 Month Subscription</div>
+                    <div class="lable-text">Includes access to all <br/>Array Viewpoint Plus <br/>features for 1 Year</div>
+                  </label>
+                </div>
+              </div>
+          </div>
+          <div class="row mt-5">
+              <div class="col-12 mt-lg-5">
+                  <p class="preg15">Enter the total number of Array™ Devices in your space <br/>(Include all Purifiers, Signals & Lookout Displays)</p>
+              </div>              
+          </div>
+          <div class="row mt-4">
+              <div class="col-12 col-lg-4 offset-lg-4">
+                  <div class="form-group form-outline custom-view-point-input">
+                    <input type="number" id="typeNumber" class="form-control" placeholder="Number of Devices" required />
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="preg22 fw-700">Your Price: $XXX.XX for 36 Month Subscription</div>
+            </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+              <div class="row">
+                  <div class="col-md-6 col-12 md-md-0 mb-3">
+                    <div class="form-group form-outline custom-view-point-input">
+                      <input type="number" id="typeNumber" class="form-control" placeholder="Customer ID #" required />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                      <button type="submit" form="selectplan" class="btn btn-blue w-100">Add to Cart</button>
+                  </div>  
+              </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+              <p class="mb-0 preg-12">*Subscription prices are calculated based on subscription length and number of units.</p>
+        </div>
+    </div>
+          </form>
+        </div>
+      </section>
       <!-- End your project here-->
     </main>
 
@@ -57,5 +202,6 @@
     ></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/viewpoint-plus.js"></script>
   </body>
 </html>
