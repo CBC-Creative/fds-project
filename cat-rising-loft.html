@@ -1503,59 +1503,79 @@
 
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
-      <section class="band position-relative dark-img-overlay object-top-position megacat-banner">
-        <div class="banner-video-icon">
-          <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#risingbannerVideo">
-            <img src="img/cat-rising-loft/banner-playbtn.svg" class="img-fluid" />
-          </a>
-        </div>
-        <img
-          src="img/cat-rising-loft/banner-img.jpg"
-          class="mh-700-at768 maxh-700 d-none d-md-block img-fluid w-100"
-        />
-        <img src="img/cat-rising-loft/banner-img-mobile.jpg" class="d-md-none img-fluid w-100" />
-        <div class="megacat-aqm-banner-content">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-12">
-                <h1 class="banner-text__header text-white array-wall-title mb-md-4">
-                  INTRODUCING RISING LOFT™
-                </h1>
-                <div class="text-white sub-title-rising sub-title-workstation">
-                  Enhanced Workspace Productivity
+
+      <!-- Desktop Header Section -->
+      <section
+        class="desktop-header-section bg-tan text-white d-none d-md-block overflow-hidden position-relative"
+      >
+        <video
+          class="video-intro object-cover"
+          poster="./img/cat-rising-loft/banner-img.jpg"
+          playsinline
+          autoplay
+          muted
+          loop
+          controls
+        >
+          <source src="./img/cat-rising-loft/banner-video.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!-- Mobile Header Section -->
+      <a 
+        href="javascript:;" 
+        class="d-block d-md-none"
+        data-mdb-toggle="modal" 
+        data-mdb-target="#mobileVideoPopup">
+          <section class="mobile-header-section bg-dark text-white position-relative overflow-hidden">
+            <div class="header-text-block position-absolute absolute-center text-center">
+              <div class="intro-txt">INTRODUCING</div>
+              <div class="Header-text">RISING LOFT™</span></div>
+              <div class="text-white sub-title-rising sub-title-workstation">
+                Enhanced Workspace Productivity
+              </div>
+            </div>
+            <img
+              src="./img/cat-rising-loft/banner-playbtn.svg"
+              alt="A play button icon"
+              class="position-absolute absolute-center"
+            />
+            <img
+              src="./img/cat-rising-loft/banner-img-mobile.jpg"
+              alt="Still shot of a Rising Monitor Arm"
+              class="w-100 object-cover minH-600"
+            />
+          </section>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="mobileVideoPopup"
+            tabindex="-1"
+            aria-labelledby="mobileVideoPopupLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content rounded-0 position-relative">
+                <div
+                  class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+                >
+                  <button
+                    type="button"
+                    class="btn-close m-0 p-0"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-0 m-0 bg-black">
+                  <video width="100%" controls>
+                    <source src="./img/cat-rising-loft/banner-video.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="modal fade"
-          id="risingbannerVideo"
-          tabindex="-1"
-          aria-labelledby="risingbannerVideoLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content rounded-0 position-relative">
-              <div
-                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-              >
-                <button
-                  type="button"
-                  class="btn-close m-0 p-0"
-                  data-mdb-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body p-0 m-0 bg-black">
-                <video width="100%" controls autoplay muted>
-                  <source src="img/cat-rising-loft/banner-video.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </a>
 
       <section class="band py-5 pb-0">
         <div class="container py-md-5 pb-md-0">
@@ -1644,21 +1664,21 @@
           </div>
           <div class="row gx-md-5">
             <div class="col-md-4 col-12 mb-md-0 mb-3">
-              <img src="img/cat-rising-loft/3in1-section-img-1.png" class="img-fluid mb-4" />
+              <img src="img/cat-rising-loft/3in1-section-img-1.jpg" class="img-fluid mb-4" />
               <div class="rising-sub-title mb-3 fw-500">Glassboard</div>
               <p class="mw-100 bigptext">
                 Sleek glass façade with magnetic back painted marker board
               </p>
             </div>
             <div class="col-md-4 col-12 mb-md-0 mb-3">
-              <img src="img/cat-rising-loft/3in1-section-img-2.png" class="img-fluid mb-4" />
+              <img src="img/cat-rising-loft/3in1-section-img-2.jpg" class="img-fluid mb-4" />
               <div class="rising-sub-title mb-3 fw-500">Power</div>
               <p class="mw-100 bigptext">
                 Integrated desktop power outlets and USB ports for ease of charging electronics
               </p>
             </div>
             <div class="col-md-4 col-12">
-              <img src="img/cat-rising-loft/3in1-section-img-3.png" class="img-fluid mb-4" />
+              <img src="img/cat-rising-loft/3in1-section-img-3.jpg" class="img-fluid mb-4" />
               <div class="rising-sub-title mb-3 fw-500">Cord Management</div>
               <p class="mw-100 bigptext">
                 Organizes and conceals cables and cords above the worksurface for easy accessibility
@@ -1683,11 +1703,17 @@
             </div>
           </div>
           <img src="img/cat-rising-loft/Loft-GIF.gif" class="img-fluid animated-gif" />
+          <a
+            href="#"
+            class="link-underlined text-center text-black d-block mt-3 mt-lg-4 mb-5 position-relative"
+            >View All Individual Accessory Options</a
+          >
         </div>
       </section>
-      <section class="band fds-tan-bg text-md-start text-center">
+
+      <section class="band fds-tan-bg text-md-start text-center mb-1">
         <div class="container-fluid p-0">
-          <div class="row gx-0 align-items-center">
+          <div class="row gx-0 align-items-center maxH-700 minH-700-desktop">
             <div class="col-12 col-lg-6 col-xxl-5 text-black px-4 py-5">
               <div class="w-xl-80 mx-auto">
                 <div class="column-discription-title mb-3 mb-md-4">Pre-Configured Options</div>
@@ -1696,18 +1722,24 @@
                   Fellowes drew on that knowledge to create a variety of pre-configured kits to make
                   specifying easier.
                 </p>
+                <a
+                  href="#"
+                  class="link-underlined left-aligned-link text-black d-block mt-3 mt-lg-4 mb-5 position-relative"
+                  >Learn More</a
+                >
               </div>
             </div>
             <div class="col-12 col-lg-6 col-xxl-7">
               <img
                 src="img/cat-rising-loft/configuration-section-img.jpg"
-                class="img-fluid w-100 configration-img"
+                class="img-fluid w-100 configration-img minH-700-desktop"
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="band text-end py-5 pb-0 rising-quality-bg position-relative">
+
+      <section class="band text-end py-5 pb-0 rising-quality-bg position-relative mb-1">
         <div class="container py-md-5 pb-md-0 px-4">
           <div class="row">
             <div class="col-12 col-lg-6 text-white text-start mb-4">
