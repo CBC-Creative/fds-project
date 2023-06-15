@@ -136,6 +136,9 @@ table{
 .aeramax-logo{
     width: 194px;
 }
+.faq-section{
+    padding-top: 90px !important;
+}
 @media (min-width:768px){
     .sub-title{
         font-size: var(--fds-fs-750);
@@ -174,6 +177,9 @@ table{
     padding: 1rem;
     position: sticky;
     top: 2rem;
+    }
+    .faq-section{
+        padding-top: 40px !important;
     }
 
 }
