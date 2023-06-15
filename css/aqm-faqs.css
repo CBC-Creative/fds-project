@@ -1,0 +1,185 @@
+.sub-title{
+    color: var(--fds-black);
+    font-size: var(--fds-fs-710);
+    line-height: var(--fds-fs-750);
+    font-weight: 500;
+}
+.faq-title{
+    font-weight: 700;
+    font-size: var(--fds-fs-750);
+    line-height: var(--fds-fs-860);
+    color: var(--fds-black);
+}
+.preg22{
+    font-size: var(--fds-fs-450);
+    line-height: var(--fds-fs-600);
+}
+.faq-landing-box{
+    border: 1px solid var(--fds-grey-600);
+    padding: 1rem;
+    height: 100%;
+}
+.faq-landing-box li a:hover{
+    text-decoration: underline;
+}
+.faq-box-title{
+    color: var(--fds-grey-800);
+    padding: 0.5rem 0rem;
+    border-top: 1px solid var(--fds-grey-800);
+    border-bottom: 1px solid var(--fds-grey-800);
+    font-weight: 500;
+}
+.list-none{
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.938rem;
+    line-height: var(--fds-fs-400);
+    margin-bottom: 0;
+}
+.list-none li{
+    margin-bottom: 0.8rem;
+}
+.list-none li:last-child{
+    margin-bottom: 0;
+}
+.faq-landing-box-details{
+    padding: 1rem;
+}
+.link-otherfaq{
+    color: #354769;
+}
+.aqm-detail-sub-title{
+    color: #4498D8;
+    font-size: var(--fds-fs-450);
+    line-height: var(--fds-fs-710);
+    font-weight: 700;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--fds-grey-600);
+}
+.faq-table th{
+    font-weight: 700;
+    color: var(--fds-black);
+}
+.faq-table th, .faq-table td{
+    padding: 0.3rem 1rem;
+}
+.sticy-box-aqm-detail-page{
+  
+   width: 100%;
+    border: 0;
+    padding: 0;
+}
+.fixed-top.sticy-box-aqm-detail-page{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    padding: 1rem 1rem 0rem 1rem;
+    box-shadow: 0px 0px 5px #cccccc;
+}
+.mobile-aqm-faq-dropdown{
+    padding: 1rem;
+    border: 1px solid var(--fds-grey-600);
+    position: relative;   
+    z-index: 100;
+    background: var(--fds-white);
+    font-size: var(--fds-fs-300);
+}
+.mobile-aqm-faq-dropdown i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: var(--fds-fs-500);
+    transform: translateY(-50%);
+}
+.mobile-none{
+    display: none;
+}
+.mobile-none.d-block{
+ padding: 1rem;
+ overflow-y: auto;
+ height: 250px;
+}
+.fw-700.mb-3{
+    margin-bottom: 0.5rem !important;
+}
+.preg14{
+    font-size: 0.938rem;
+    line-height: var(--fds-fs-710);
+}
+table{
+    font-size: var(--fds-fs-200) !important;
+}
+.preg12{
+    font-size: var(--fds-fs-250);
+    line-height: var(--fds-fs-450);
+}
+.border-inner-top{
+    border-top: 1px solid var(--fds-grey-600);
+}
+.inner-aqm-faq{
+    border-bottom: 1px solid var(--fds-grey-600);
+    padding: 1rem 0rem;
+}
+.inner-aqm-faq p:last-child{
+    margin-bottom: 0;
+}
+.inner-aqm-faq p, .inner-aqm-faq ul{
+    font-size: var(--fds-fs-250);
+    line-height: var(--fds-fs-450);
+}
+.inner-aqm-faq a{
+    word-wrap: break-word;
+}
+#primary-content a{
+    word-wrap: break-word;
+}
+.aeramax-logo{
+    width: 194px;
+}
+.faq-section{
+    padding-top: 90px !important;
+}
+@media (min-width:768px){
+    .sub-title{
+        font-size: var(--fds-fs-750);
+        line-height: var(--fds-fs-775);
+        
+    }
+    .faq-title{
+        font-size: var(--fds-fs-860);
+        line-height: var(--fds-fs-907);
+    }
+    .preg22{
+        font-size: var(--fds-fs-700);
+        line-height: var(--fds-fs-725);
+    }
+    .faq-landing-box{
+        padding: 3rem;
+    }
+    .faq-landing-box-details{
+        padding: 2rem;
+    }
+    .aqm-detail-sub-title{
+        font-size: var(--fds-fs-600);
+    line-height: var(--fds-fs-710);
+    }
+    .sticy-box-aqm-detail-page{
+        border: none;
+    padding: 0;
+    }
+}
+@media (min-width:992px){
+    .mobile-none{
+        display: block;
+    }
+    .sticy-box-aqm-detail-page{
+        border: 1px solid var(--fds-grey-600);
+    padding: 1rem;
+    position: sticky;
+    top: 2rem;
+    }
+    .faq-section{
+        padding-top: 40px !important;
+    }
+
+}
