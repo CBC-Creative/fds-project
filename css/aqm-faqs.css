@@ -183,4 +183,11 @@ table {
     position: sticky;
     top: 2rem;
   }
+
+  .last-arrayfaq-section {
+    padding-bottom: 300px;
+  }
+  .last-aeramaxfaq-section {
+    padding-bottom: 275px;
+  }
 }
