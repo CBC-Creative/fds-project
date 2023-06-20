@@ -248,4 +248,14 @@ $(window).on('load', function () {
       thisVidAP.setAttribute('playsinline', '');
     }
   }
+
+  $('.modal').on('show.bs.modal', function (e) {
+    var $vPlay = $(e.delegateTarget).find('video');
+    $vPlay[0].play(); // use [0] because jQuery returns a list
+  });
+
+  $('.modal').on('hide.bs.modal', function (e) {
+    var $vPause = $(e.delegateTarget).find('video');
+    $vPause[0].pause(); // use [0] because jQuery returns a list
+  });
 });
