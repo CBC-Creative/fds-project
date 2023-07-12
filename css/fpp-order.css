@@ -1,0 +1,253 @@
+.fpp-order-page .order-history-footer-table tr {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0px 0.75rem;
+  display: block;
+}
+
+.fpp-order-page .order-history-footer-table th,
+.fpp-order-page .order-history-footer-table td {
+  padding: 5px 3px;
+  font-size: var(--fds-fs-150);
+}
+
+.icon-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: var(--fds-fs-150);
+  font-weight: 700;
+}
+
+.icon-legend-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 300px) {
+  .icon-legend-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pagination a.page-link {
+  border-right: none;
+  padding: 5px 10px;
+}
+
+.pagination a.active {
+  background: var(--fds-tan);
+  border-radius: 6px !important;
+  font-weight: initial;
+}
+
+span.sub-table-header {
+  font-weight: 400;
+  font-size: var(--fds-fs-150);
+  padding-top: 3px;
+  margin-top: 3px;
+}
+
+.order-history-table td {
+  vertical-align: middle;
+}
+
+.tr-border-top {
+  border-top: 1px solid #e2e2e2;
+}
+
+.tr-border-bottom {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.order-history-table tr.hoverable:hover,
+.order-history-table tr.hoverable:focus-visible,
+.order-history-table tr.hoverable:active {
+  background-color: var(--fds-tan);
+}
+
+.order-table-link:hover,
+.order-table-link:focus-visible,
+.order-table-link:active {
+  text-decoration: underline;
+}
+
+.invoice-dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.invoice-dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.order-history-table tr .dropdown-menu {
+  max-height: unset;
+}
+
+.dropdown-menu-header {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.download-item-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+
+.download-item-wrapper:hover,
+.download-item-wrapper:focus-visible,
+.download-item-wrapper:active {
+  background-color: var(--fds-tan);
+}
+
+.dropdown-menu-footer {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #000;
+  padding: 0.5rem 0 1rem;
+}
+
+@media (min-width: 1081px) {
+  .ot-mobile-title {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .ot-table-header {
+    display: none;
+  }
+
+  .ot-mobile-title {
+    font-weight: 700;
+  }
+
+  .ot-mobile-row {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+  }
+
+  .ot-mobile-row:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .ot-mobile-row:nth-child(odd) {
+    background-color: var(--fds-grey-200);
+  }
+
+  .ot-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2 !important;
+    padding: 0.75rem 1.4rem !important;
+  }
+  .ot-cell:last-child {
+    border-bottom: none !important;
+  }
+}
+
+.no-orders-title {
+  font-size: var(--fds-fs-725);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.no-orders-text {
+  font-size: var(--fds-fs-450);
+}
+
+.table-data-notloaded ul {
+  max-width: 420px;
+  margin-inline: auto;
+  font-size: var(--fds-fs-300);
+}
+
+@media (min-width: 768px) {
+  .no-orders-title {
+    font-size: var(--fds-fs-775);
+  }
+  .no-orders-text {
+    font-size: var(--fds-fs-725);
+  }
+  .table-data-notloaded ul {
+    font-size: var(--fds-fs-600);
+  }
+}
+
+main[data-content-found='true'] .table-data-notloaded {
+  display: none;
+}
+
+main[data-content-found='false'] .table-data-loaded {
+  display: none !important;
+}
+
+main[data-content-found='false'] .table-data-notloaded {
+  display: block;
+}
+
+main[data-filters-applied='false'] .results-section {
+  display: none;
+}
+
+main[data-results-loading='true'] .table-data-loaded {
+  display: none;
+}
+
+main[data-results-loading='true'] .table-data-loading {
+  display: block;
+}
+
+main[data-results-loading='false'] .table-data-loaded {
+  display: block;
+}
+
+main[data-results-loading='false'] .table-data-loading {
+  display: none;
+}
+
+.form-outline .form-control {
+  padding: 0.32rem 0.75rem;
+}
+
+.select-arrow {
+  left: unset;
+  right: var(--mdb-form-outline-select-arrow-right);
+}
+
+.order-filter-section input::placeholder,
+.order-filter-section select,
+.order-filter-section label {
+  font-size: var(--fds-fs-325);
+}
+
+.main-label {
+  line-height: 1.1;
+}
+
+.form-btn {
+  font-size: var(--fds-fs-325);
+}
+
+.reset-filters-btn {
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
