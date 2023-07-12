@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/functional-pages.css" />
     <!-- FPP Styles -->
     <link rel="stylesheet" href="css/fpp-nav.css" />
-    <link rel="stylesheet" href="css/fpp-order.css" />
+    <link rel="stylesheet" href="css/fpp-details.css" />
   </head>
 
   <body class="position-relative">
@@ -1071,189 +1071,239 @@
       </div>
     </div>
 
-    <main id="primary-content" class="position-relative">
+    <main id="primary-content" class="position-relative overflow-x-hidden">
       <section class="band section-spacing text-black">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-              <h1 class="mb-3">Order Details</h1>
-            </div>
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+            <h1 class="mb-3">Order Details</h1>
           </div>
+        </div>
+        <div id="print-container" class="container">
           <div class="row pt-md-3 text-black">
-            <div class="col-12 col-lg-11 mx-auto">
-              <div class="row gx-md-0">
-                <div class="col-md-6 col-12">
-                  <table class="table order-table my-cart-table text-black">
-                    <thead>
-                      <tr>
-                        <th colspan="2" scope="col" class="border-top-0 px-0">
-                          Customer No: 23811
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr valign="top">
-                        <td scope="row" class="pt-2 p-0 border-bottom-0">
-                          <strong>Customer PO:</strong>
-                        </td>
-                        <td class="pt-2 p-0 border-bottom-0">518-74-444710</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Order Date:</strong>
-                        </td>
-                        <td class="p-0 border-0">02/15/2023</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Order No:</strong>
-                        </td>
-                        <td class="p-0 border-0">763566</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Duns:</strong>
-                        </td>
-                        <td class="p-0 border-0">-</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Terms:</strong>
-                        </td>
-                        <td class="p-0 border-0">NET 30 DAYS</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>FOB:</strong>
-                        </td>
-                        <td class="p-0 border-0">Destination</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Freight:</strong>
-                        </td>
-                        <td class="p-0 border-0">COMMERCIAL DESIGN SERVICE</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Sold To:</strong>
-                        </td>
-                        <td class="p-0 border-0">5805 BARRY ROAD, TAMPLA FL, 33634 USA</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="col-12">
+              <div class="row p-2 p-md-4 pt-4 mt-4 fds-tan-bg">
+                <div class="col-12 tr-border-bottom pb-3">
+                  <div class="row align-items-center gap-4 gap-md-0">
+                    <div class="col-12 col-md-8">
+                      <div class="details-header-text cust-num">
+                        Customer No: <span id="customer-number">23811</span>
+                      </div>
+                      <div class="details-header-text contracts">
+                        Contract Type: <span id="contracts">FL# 56120000-19-ACS</span>
+                      </div>
+                    </div>
+                    <div
+                      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+                    >
+                      <button
+                        type="button"
+                        onclick="window.print()"
+                        class="btn btn-primary form-btn print-btn"
+                      >
+                        Print Page
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6 col-12">
-                  <table class="table order-table my-cart-table text-black">
-                    <thead>
-                      <tr>
-                        <th colspan="2" scope="col" class="border-top-0 px-0">
-                          Contract(s): FL# 56120000-19-ACS
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr valign="top">
-                        <td scope="row" class="pt-2 p-0 border-bottom-0">
-                          <strong>Scheduled Ship Date:</strong>
-                        </td>
-                        <td class="pt-2 p-0 border-bottom-0">03/22/2023</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>SIN:</strong>
-                        </td>
-                        <td class="p-0 border-0">-</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>SPA:</strong>
-                        </td>
-                        <td class="p-0 border-0">29219-0</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Ship Via:</strong>
-                        </td>
-                        <td class="p-0 border-0">TRENDWAY TRUCK</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Pro Number:</strong>
-                        </td>
-                        <td class="p-0 border-0">USD US Dollars 1</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Ship To:</strong>
-                        </td>
-                        <td class="p-0 border-0">
+
+                <div class="col-12 col-md-10 mx-auto py-4 tr-border-bottom">
+                  <div class="row">
+                    <div class="col-md-6 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Customer PO:</div>
+                        <div class="col-7 col-md-8 order-detail-content">518-74-444710</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Date:</div>
+                        <div class="col-7 col-md-8 order-detail-content">02/15/2023</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order No:</div>
+                        <div class="col-7 col-md-8 order-detail-content">763566</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Terms:</div>
+                        <div class="col-7 col-md-8 order-detail-content">NET 30 DAYS</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Bill To:</div>
+                        <div class="col-7 col-md-8 order-detail-content">
+                          5805 BARRY ROAD,<br />TAMPA FL, 33634
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Contact:</div>
+                        <div class="col-7 col-md-8 order-detail-content">John Williams</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Sub Type:</div>
+                        <div class="col-7 col-md-8 order-detail-content">Commercial</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Status:</div>
+                        <div class="col-7 col-md-8 order-detail-content">Partially Shipped</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Multi Shipments:</div>
+                        <div class="col-7 col-md-8 order-detail-content">Y</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Currency:</div>
+                        <div class="col-7 col-md-8 order-detail-content">USD</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Ship To:</div>
+                        <div class="col-7 col-md-8 order-detail-content">
                           David Lowe<br />
                           COMMERCIAL DESIGN SERVICE<br />
-                          2452 LAKE EMMA RD SUITE 1020 LAKE MARY, FL 32746 USA
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          2452 LAKE EMMA RD SUITE 1020<br />
+                          LAKE MARY, FL 32746 USA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-10 mx-auto py-4 tr-border-bottom">
+                  <div class="row">
+                    <h2 class="details-heading">Commission Breakdown</h2>
+                    <div class="col-md-6 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Rep Group:</div>
+                        <div class="col-7 col-md-8 order-detail-content">
+                          1H / OED MARKETING / 100.00
+                        </div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Rep Group Employee:</div>
+                        <div class="col-7 col-md-8 order-detail-content">23772</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Sales Credit:</div>
+                        <div class="col-7 col-md-8 order-detail-content">
+                          STATE OF FL 56120000-19-ACS
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Contact:</div>
+                        <div class="col-7 col-md-8 order-detail-content">John Williams</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Sub Type:</div>
+                        <div class="col-7 col-md-8 order-detail-content">Commercial</div>
+                      </div>
+                      <div class="row order-detail-item">
+                        <div class="col-5 col-md-4 order-detail-label">Order Status:</div>
+                        <div class="col-7 col-md-8 order-detail-content">Partially Shipped</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-10 mx-auto py-4 tr-border-bottom">
+                  <div class="row">
+                    <h2 class="details-heading">Notes/Comments</h2>
+                    <div class="col-md-6 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-12 order-detail-label">Order Comments</div>
+                        <div class="col-12 order-detail-content">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                          commodo consequat.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-12 order-detail-label">Invoice Comments</div>
+                        <div class="col-12 order-detail-content">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                          commodo consequat.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-10 mx-auto py-4">
+                  <div class="row">
+                    <h2 class="details-heading">Order Review</h2>
+                    <div class="col-md-2 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-4 col-md-12 order-detail-label">List Amount</div>
+                        <div class="col-8 col-md-12 order-detail-content">$304,282.00</div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-4 col-md-12 order-detail-label">Discount</div>
+                        <div class="col-8 col-md-12 order-detail-content">$0.00</div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-4 col-md-12 order-detail-label">Net Amount</div>
+                        <div class="col-8 col-md-12 order-detail-content">$0.00</div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-4 col-md-12 order-detail-label">Total Shipping</div>
+                        <div class="col-8 col-md-12 order-detail-content">$0.00</div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-4 col-md-12 order-detail-label">Total Tax</div>
+                        <div class="col-8 col-md-12 order-detail-content">$0.00</div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-12">
+                      <div class="row order-detail-item">
+                        <div class="col-4 col-md-12 order-detail-label">Pay Now</div>
+                        <div class="col-8 col-md-12 order-detail-content">$94,022.72</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-md-12 col-12">
-                  <table class="table order-table my-cart-table text-black">
-                    <thead>
-                      <tr>
-                        <th colspan="2" scope="col" class="border-top-0 px-0">
-                          Commission Breakdown
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr valign="top">
-                        <td scope="row" class="pt-2 p-0 border-bottom-0 first-column-width">
-                          <strong>Rep 1:</strong>
-                        </td>
-                        <td class="pt-2 p-0 border-bottom-0">1H / OED MARKETING / 100.00</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Dealer:</strong>
-                        </td>
-                        <td class="p-0 border-0">23772</td>
-                      </tr>
-                      <tr valign="top">
-                        <td scope="row" class="p-0 border-0">
-                          <strong>Special Instructions:</strong>
-                        </td>
-                        <td class="p-0 border-0">STATE OF FL 56120000-19-ACS</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="row">
+              <div class="row pb-5">
                 <div class="col-md-12 col-12">
                   <div class="table-responsive">
                     <table class="table order-table my-cart-table text-black lint-item-table-main">
                       <thead>
                         <tr>
-                          <th colspan="8" scope="col" class="border-top-0 px-0">Line Items</th>
+                          <th colspan="13" scope="col" class="border-top-0 px-0 text-start">
+                            Line Items
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="lint-item-table">
-                          <th>Line #</th>
-                          <th>QTY</th>
-                          <th>Description</th>
-                          <th>U/M</th>
-                          <th>Discount</th>
-                          <th>Unit</th>
-                          <th>Ext. List</th>
-                          <th>Ext. Net</th>
+                        <tr class="lint-item-table-header d-none d-lg-table-row">
+                          <th>Line<br />#</th>
+                          <th>Ordered<br />Qty</th>
+                          <th>Shipped<br />Qty</th>
+                          <th class="text-start">Description</th>
+                          <th>UOM</th>
+                          <th>List<br />Amount</th>
+                          <th>Unit<br />Net</th>
+                          <th>Discount<br />(%)</th>
+                          <th>Net<br />Amount</th>
+                          <th>Unit<br />List</th>
+                          <th>Status</th>
+                          <th>Requested<br />Date</th>
+                          <th>Scheduled<br />Ship Date</th>
                         </tr>
                         <tr>
-                          <td colspan="8" class="p-0">
+                          <td colspan="13" class="p-0">
                             <div class="accordion accordion-borderless" id="accordionFlushExampleX">
                               <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOneX">
@@ -1272,57 +1322,344 @@
                                   id="flush-collapseOneX"
                                   class="accordion-collapse collapse show"
                                   aria-labelledby="flush-headingOneX"
-                                  data-mdb-parent="#accordionFlushExampleX"
                                 >
                                   <div class="accordion-body">
                                     <table
-                                      class="table border-0 line-table-sub text-black lint-item-table-main"
+                                      class="table line-table-sub text-black lint-item-table-main tr-border-bottom"
                                     >
                                       <tbody>
                                         <tr class="lint-item-table">
-                                          <td>1</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr class="lint-item-table">
-                                          <td>2</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr class="lint-item-table">
-                                          <td>3</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -1346,57 +1683,344 @@
                                   id="flush-collapseTwoX"
                                   class="accordion-collapse collapse"
                                   aria-labelledby="flush-headingTwoX"
-                                  data-mdb-parent="#accordionFlushExampleX"
                                 >
                                   <div class="accordion-body">
                                     <table
-                                      class="table border-0 line-table-sub text-black lint-item-table-main"
+                                      class="table line-table-sub text-black lint-item-table-main tr-border-bottom"
                                     >
                                       <tbody>
                                         <tr class="lint-item-table">
-                                          <td>1</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr class="lint-item-table">
-                                          <td>2</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr class="lint-item-table">
-                                          <td>3</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -1413,212 +2037,351 @@
                                     aria-expanded="false"
                                     aria-controls="flush-collapseThreeX"
                                   >
-                                    TAG 3: KEYS (SUBTOTAL: $1,250.87)
+                                    TAG 3: Keys (SUBTOTAL: $1,250.87)
                                   </button>
                                 </h2>
                                 <div
                                   id="flush-collapseThreeX"
                                   class="accordion-collapse collapse"
                                   aria-labelledby="flush-headingThreeX"
-                                  data-mdb-parent="#accordionFlushExampleX"
                                 >
                                   <div class="accordion-body">
                                     <table
-                                      class="table border-0 line-table-sub text-black lint-item-table-main"
+                                      class="table line-table-sub text-black lint-item-table-main tr-border-bottom"
                                     >
                                       <tbody>
                                         <tr class="lint-item-table">
-                                          <td>1</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr class="lint-item-table">
-                                          <td>2</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
+                                          </td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr class="lint-item-table">
-                                          <td>3</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Line #</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingFourX">
-                                  <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-mdb-toggle="collapse"
-                                    data-mdb-target="#flush-collapseFourX"
-                                    aria-expanded="false"
-                                    aria-controls="flush-collapseFourX"
-                                  >
-                                    TAG 4: OFC 140 (SUBTOTAL: $1,250.87)
-                                  </button>
-                                </h2>
-                                <div
-                                  id="flush-collapseFourX"
-                                  class="accordion-collapse collapse"
-                                  aria-labelledby="flush-headingFourX"
-                                  data-mdb-parent="#accordionFlushExampleX"
-                                >
-                                  <div class="accordion-body">
-                                    <table
-                                      class="table border-0 line-table-sub text-black lint-item-table-main"
-                                    >
-                                      <tbody>
-                                        <tr class="lint-item-table">
-                                          <td>1</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Order Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
-                                        </tr>
-                                        <tr class="lint-item-table">
-                                          <td>2</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Shipped Qty</div>
+                                              <div class="line-item-content">1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
-                                        </tr>
-                                        <tr class="lint-item-table">
-                                          <td>3</td>
-                                          <td>1</td>
+                                          <td class="text-start order-last">
+                                            <div class="line-item-mobile-header">Description</div>
+                                            <div class="line-item-content ps-2 ps-lg-0">
+                                              <div class="desc-code">TA2442B</div>
+                                              <div class="line-desc">
+                                                TACKABLE ACOUSTICAL 2442B ENHANCEDS-Standard, No
+                                                Power Power/AH6-CRYSTALS Grd 1 Side 1 Fabric
+                                                Color/AH6-CRYSTALS Grd 1 Side 2 Fabric Color/L-LIGHT
+                                                GRAY Grd 1 Trim Color
+                                              </div>
+                                              <div class="desc-spa">
+                                                <strong>SPA: </strong>4982304329872
+                                              </div>
+                                              <div class="desc-city">
+                                                <strong>City: </strong>Las Vegas
+                                              </div>
+                                              <div class="desc-terms">
+                                                <strong>Freight Terms: </strong>UA8304348
+                                              </div>
+                                              <div class="desc-comm">
+                                                <strong>Shipping Comments: </strong>Drop at Front
+                                                Door
+                                              </div>
+                                              <div class="desc-track">
+                                                <strong>Tracking Number: </strong
+                                                >1Z43982098249824627
+                                              </div>
+                                            </div>
+                                          </td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">UOM</div>
+                                              <div class="line-item-content">EA</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingFiveX">
-                                  <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-mdb-toggle="collapse"
-                                    data-mdb-target="#flush-collapseFiveX"
-                                    aria-expanded="false"
-                                    aria-controls="flush-collapseFiveX"
-                                  >
-                                    TAG 5: OFC 145 (SUBTOTAL: $1,250.87)
-                                  </button>
-                                </h2>
-                                <div
-                                  id="flush-collapseFiveX"
-                                  class="accordion-collapse collapse"
-                                  aria-labelledby="flush-headingFiveX"
-                                  data-mdb-parent="#accordionFlushExampleX"
-                                >
-                                  <div class="accordion-body">
-                                    <table
-                                      class="table border-0 line-table-sub text-black lint-item-table-main"
-                                    >
-                                      <tbody>
-                                        <tr class="lint-item-table">
-                                          <td>1</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">List Amount</div>
+                                              <div class="line-item-content">69.1</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
-                                        </tr>
-                                        <tr class="lint-item-table">
-                                          <td>2</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit Net</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
-                                        </tr>
-                                        <tr class="lint-item-table">
-                                          <td>3</td>
-                                          <td>1</td>
                                           <td>
-                                            TA2442B<br />TACKABLE ACOUSTICAL 2442B
-                                            ENHANCEDS-Standard, No Power Power/AH6-CRYSTALS Grd 1
-                                            Side 1 Fabric Color/AH6-CRYSTALS Grd 1 Side 2 Fabric
-                                            Color/L-LIGHT GRAY Grd 1 Trim Color
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Discount (%)
+                                              </div>
+                                              <div class="line-item-content">
+                                                <span class="break-word">$526.00 </span>(10%)
+                                              </div>
+                                            </div>
                                           </td>
-                                          <td>EA</td>
-                                          <td>69.1</td>
-                                          <td>$162.53</td>
-                                          <td>$526.00</td>
-                                          <td>$162.53</td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Net Amount</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Unit List</div>
+                                              <div class="line-item-content">$162.53</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">Status</div>
+                                              <div class="line-item-content">Ready</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Requested Date
+                                              </div>
+                                              <div class="line-item-content">06/10/2023</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="line-item-wrapper">
+                                              <div class="line-item-mobile-header">
+                                                Scheduled Ship Date
+                                              </div>
+                                              <div class="line-item-content">07/11/2023</div>
+                                            </div>
+                                          </td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -1634,33 +2397,31 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row pb-5">
                 <div class="col-md-12 col-12">
                   <div class="table-responsive">
                     <table class="table order-overview-table my-cart-table text-black">
                       <thead>
                         <tr>
-                          <th colspan="7" scope="col" class="border-top-0 px-0">Order Review</th>
+                          <th colspan="7" scope="col" class="border-top-0 px-0">Item Totals</th>
                         </tr>
                       </thead>
                       <tbody class="order-overview-table-heading">
                         <tr>
-                          <th>Gross</th>
-                          <th>Less<br />Discount</th>
-                          <th>Plus<br />TAX</th>
-                          <th>Plus<br />Freight</th>
-                          <th>Plus<br />Misc. Chgs.</th>
-                          <th>Minus<br />Payment</th>
-                          <th>Pay This<br />Amount</th>
+                          <th>List Amount</th>
+                          <th>Discount</th>
+                          <th>Unit Next Price</th>
+                          <th class="d-none d-md-block"></th>
+                          <th class="d-none d-md-block"></th>
+                          <th class="d-none d-md-block"></th>
                         </tr>
                         <tr>
                           <td>$304,282.00</td>
                           <td>$0.00</td>
-                          <td>$0.00</td>
-                          <td>$0.00</td>
-                          <td>$0.00</td>
-                          <td>$0.00</td>
                           <td>$94,022.72</td>
+                          <td class="d-none d-md-block"></td>
+                          <td class="d-none d-md-block"></td>
+                          <td class="d-none d-md-block"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -1668,30 +2429,33 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row pb-2">
                 <div class="col-md-12 col-12">
-                  <table class="table order-table my-cart-table text-black">
-                    <thead>
-                      <tr>
-                        <th colspan="2" scope="col" class="border-top-0 px-0">Order Notes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr valign="top">
-                        <td
-                          colspan="2"
-                          scope="row"
-                          class="pt-2 p-0 border-bottom-0 first-column-width"
-                        >
-                          David Lowe<br />
-                          813-927-0082<br />
-                          Call Before Delivery<br />
-                          Rcv: Mon-Thurs 8-3, Fri 8-2<br /><br />
-                          Fuel Surcharge: $0.00
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="downloadables-heading">Downloadables</div>
+                  <div class="downloadable-items">
+                    <a class="dl-item text-black" href="#">
+                      <img
+                        src="./img/fpp-order-imgs/icon-ack.svg"
+                        alt="Order Acknowledgement Icon"
+                      />
+                      <div class="dl-text">Order Acknowledgement</div>
+                    </a>
+                    <a class="dl-item text-black" href="#">
+                      <img src="./img/fpp-order-imgs/icon-inv.svg" alt="Order Invoice Icon" />
+                      <div class="dl-text">Invoice</div>
+                    </a>
+                    <a class="dl-item text-black" href="#">
+                      <img src="./img/fpp-order-imgs/icon-pl.svg" alt="Order Packing List Icon" />
+                      <div class="dl-text">Packing List</div>
+                    </a>
+                    <a class="dl-item text-black" href="#">
+                      <img
+                        src="./img/fpp-order-imgs/icon-bol.svg"
+                        alt="Order Bill of Lading Icon"
+                      />
+                      <div class="dl-text">Bill of Lading</div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

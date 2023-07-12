@@ -241,6 +241,7 @@ main[data-results-loading='false'] .table-data-loading {
 
 .form-btn {
   font-size: var(--fds-fs-325);
+  width: fit-content;
 }
 
 .reset-filters-btn {
