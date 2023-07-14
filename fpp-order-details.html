@@ -1083,8 +1083,8 @@
             <div class="col-12">
               <div class="row p-2 p-md-4 pt-4 mt-4 fds-tan-bg">
                 <div class="col-12 tr-border-bottom pb-3">
-                  <div class="row align-items-center gap-4 gap-md-0">
-                    <div class="col-12 col-md-8">
+                  <div class="row align-items-center gap-4 gap-lg-0">
+                    <div class="col-12 col-lg-6">
                       <div class="details-header-text cust-num">
                         Customer No: <span id="customer-number">23811</span>
                       </div>
@@ -1092,8 +1092,22 @@
                         Contract Type: <span id="contracts">FL# 56120000-19-ACS</span>
                       </div>
                     </div>
+                    <div class="col-12 col-lg-4 row align-items-center">
+                      <div class="input-group rounded">
+                        <input
+                          type="search"
+                          class="form-control rounded"
+                          placeholder="Search Deatils"
+                          aria-label="Search"
+                          aria-describedby="search-addon"
+                        />
+                        <span class="input-group-text border-0" id="search-addon">
+                          <i class="fas fa-search"></i>
+                        </span>
+                      </div>
+                    </div>
                     <div
-                      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+                      class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     >
                       <button
                         type="button"
@@ -1283,6 +1297,19 @@
                         <tr>
                           <th colspan="13" scope="col" class="border-top-0 px-0 text-start">
                             Line Items
+                            <span
+                              id="expandTrigger"
+                              onclick="expand()"
+                              class="ectrigger ps-3 text-underline"
+                              >Expand All</span
+                            >
+                            <span class="ectrigger">/</span>
+                            <span
+                              id="collapseTrigger"
+                              onclick="collapse()"
+                              class="ectrigger text-underline"
+                              >Collapse All</span
+                            >
                           </th>
                         </tr>
                       </thead>
@@ -2642,5 +2669,6 @@
     ></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/fpp-details.js"></script>
   </body>
 </html>

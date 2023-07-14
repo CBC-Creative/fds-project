@@ -212,6 +212,27 @@
   font-size: 10px;
 }
 
+.form-control {
+  border-radius: 500px !important;
+  border: none !important;
+  background: var(--fds-white);
+  padding-inline: 2.5rem !important;
+}
+#search-addon {
+  position: absolute;
+  z-index: 9999;
+}
+
+.ectrigger {
+  font-size: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 @media print {
   header,
   .bodynavfixedtop,
