@@ -1002,45 +1002,76 @@
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
-      <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#titanvideo">
-        <section class="band megacaraqmbg position-relative dark-img-overlay">
-          <img class="playimg d-none d-lg-block" src="img/play-btn.svg" />
-          <img src="img/titan/titan-hero-desktop.jpg" class="img-fluid w-100 d-none d-md-block" />
-          <img src="img/titan/titan-hero-mobile.jpg" class="img-fluid w-100 d-md-none" />
+      <!-- Desktop Header Section -->
+      <section
+        class="desktop-header-section bg-tan text-white d-none d-md-block overflow-hidden position-relative"
+      >
+        <video
+          class="video-intro object-cover d-block"
+          poster="./img/titan/heading-poster.jpg"
+          playsinline
+          autoplay
+          muted
+          loop
+        >
+          <source src="./img/titan/Video Banner Placeholder.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!-- Mobile Header Section -->
+      <a
+        href="javascript:;"
+        class="d-block d-md-none"
+        data-mdb-toggle="modal"
+        data-mdb-target="#mobileVideoPopup"
+      >
+        <section
+          class="mobile-header-section bg-dark text-white position-relative overflow-hidden dark-img-overlay"
+        >
           <div class="header-banner-text">
             <h1 class="banner-text__header">Titan&#8482;</h1>
             <div class="banner-text__subtitle">The Most Adaptable Modular Wall</div>
           </div>
+          <img
+            src="./img/rising/svg/play-btn.svg"
+            alt="A play button icon"
+            class="position-absolute absolute-center"
+          />
+          <img
+            src="./img/titan/heading-mobile.jpg"
+            alt="Still shot of a Rising Monitor Arm"
+            class="w-100 object-cover minH-600"
+          />
+        </section>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="titanvideo"
-            tabindex="-1"
-            aria-labelledby="titanVideoLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content rounded-0 position-relative">
-                <div
-                  class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-                >
-                  <button
-                    type="button"
-                    class="btn-close m-0 p-0"
-                    data-mdb-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body p-0 m-0 bg-black">
-                  <video width="100%" controls autoplay muted>
-                    <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
-                  </video>
-                </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="mobileVideoPopup"
+          tabindex="-1"
+          aria-labelledby="mobileVideoPopupLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content rounded-0 position-relative">
+              <div
+                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+              >
+                <button
+                  type="button"
+                  class="btn-close m-0 p-0"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 m-0 bg-black">
+                <video width="100%" controls>
+                  <source src="./img/titan/Video Banner Placeholder.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </a>
 
       <!-- Second Section with Green BG -->
@@ -1049,10 +1080,13 @@
           <div class="row">
             <div class="col">
               <h2 class="section__heading">Limitless Design Options</h2>
-              <div class="section__text mt-4">
+              <div class="section__text lh-sm py-4">
                 Titan offers endless possibilities for aesthetics, trim styles, finishes and
                 materials..
               </div>
+              <a href="#" class="link-underlined text-white position-relative"
+                >View Our Design Story</a
+              >
             </div>
           </div>
         </div>
@@ -1061,58 +1095,65 @@
       <!-- Third Section -->
 
       <section class="band overflow-hidden">
-          <div class="container-fluid p-0 mb-2">
-              <div class="row gx-0">
-                  <div class="col-lg-8 col-12 mb-lg-0 mb-2">
-                      <img src="img/titan/details-of-design-section-image.jpg" class="img-fluid detail-main-image" alt="" />
-                      <div class="mobile-image-append d-lg-none d-block">
-
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-12 py-4 py-md-5 px-md-5 text-center text-column text-black">
-                    <h2 class="text-center mb-3 mb-md-5">Details of This Design</h2>
-                    <div class="mb-4">
-                      <div class="sub-title mb-3">Low-Profile Dual Tone Trim</div>
-                    <div class="d-flex swatch-img justify-content-center">
-                      <div class="swatch"><img src="img/titan/duo-tone-gradient-swatch.jpg" /></div>
-                      <div class="swatch swatch-black"></div>
-                    </div>
-                    </div>
-                    <div class="mb-4">
-                      <div class="sub-title mb-3">Dual Pane Acoustic Glass</div>
-                    <div class="d-flex swatch-img justify-content-center">
-                      <div class="swatch swatch-glass"></div>
-                    </div>
-                    </div>
-                    <div class="mb-4">
-                      <div class="sub-title mb-3">Autumn Wood Grain Door</div>
-                    <div class="d-flex swatch-img justify-content-center">
-                      <div class="swatch"><img src="img/titan/wood-material-swatch.jpg" /></div>
-                    </div>
-                    </div>
-                    <div class="column-titan-btn pt-3">
-                      <a href="#" class="btn btn-green d-flex justify-content-center align-content-center mx-auto mb-3"><img src="./img/titan/upload.svg" alt="Upload Icon" class="me-2"> SHARE DESIGN</a>
-                      <a href="#" class="btn btn-green mx-auto">SEE TYPICALS</a>
-                    </div>
-                  </div>
+        <div class="container-fluid p-0 mb-2">
+          <div class="row gx-0">
+            <div class="col-lg-8 col-12 mb-lg-0 mb-2">
+              <img
+                src="img/titan/details-of-design-section-image.jpg"
+                class="img-fluid detail-main-image"
+                alt=""
+              />
+              <div class="mobile-image-append d-lg-none d-block"></div>
+            </div>
+            <div class="col-lg-4 col-12 py-4 py-md-5 px-md-5 text-center text-column text-black">
+              <h2 class="text-center mb-3 mb-md-5">Details of This Design</h2>
+              <div class="mb-4">
+                <div class="sub-title mb-3">Low-Profile Dual Tone Trim</div>
+                <div class="d-flex swatch-img justify-content-center">
+                  <div class="swatch"><img src="img/titan/duo-tone-gradient-swatch.jpg" /></div>
+                  <div class="swatch swatch-black"></div>
+                </div>
               </div>
-          </div>
-          <div class="container-fluid p-0 mb-2 desktop-html-to-copy d-lg-block d-none">
-              <div class="row gx-2">
-                  <div class="col-3">
-                    <img src="img/titan/titan-wall-carousel-image-1.jpg" class="img-fluid w-100" alt="" />
-                  </div>
-                  <div class="col-3">
-                    <img src="img/titan/titan-wall-carousel-image-2.jpg" class="img-fluid w-100" alt="" />
-                  </div>
-                  <div class="col-3">
-                    <img src="img/titan/titan-wall-carousel-image-3.jpg" class="img-fluid w-100" alt="" />
-                  </div>
-                  <div class="col-3">
-                    <img src="img/titan/titan-wall-carousel-image-4.jpg" class="img-fluid w-100" alt="" />
-                  </div>
+              <div class="mb-4">
+                <div class="sub-title mb-3">Dual Pane Acoustic Glass</div>
+                <div class="d-flex swatch-img justify-content-center">
+                  <div class="swatch swatch-glass"></div>
+                </div>
               </div>
+              <div class="mb-4">
+                <div class="sub-title mb-3">Autumn Wood Grain Door</div>
+                <div class="d-flex swatch-img justify-content-center">
+                  <div class="swatch"><img src="img/titan/wood-material-swatch.jpg" /></div>
+                </div>
+              </div>
+              <div class="column-titan-btn pt-3">
+                <a
+                  href="#"
+                  class="btn btn-green d-flex justify-content-center align-content-center mx-auto mb-3"
+                  ><img src="./img/titan/upload.svg" alt="Upload Icon" class="me-2" /> SHARE
+                  DESIGN</a
+                >
+                <a href="#" class="btn btn-green mx-auto">SEE TYPICALS</a>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="container-fluid p-0 mb-2 desktop-html-to-copy d-lg-block d-none">
+          <div class="row gx-2">
+            <div class="col-3">
+              <img src="img/titan/titan-wall-carousel-image-1.jpg" class="img-fluid w-100" alt="" />
+            </div>
+            <div class="col-3">
+              <img src="img/titan/titan-wall-carousel-image-2.jpg" class="img-fluid w-100" alt="" />
+            </div>
+            <div class="col-3">
+              <img src="img/titan/titan-wall-carousel-image-3.jpg" class="img-fluid w-100" alt="" />
+            </div>
+            <div class="col-3">
+              <img src="img/titan/titan-wall-carousel-image-4.jpg" class="img-fluid w-100" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Fourth Section with Green BG -->
@@ -1129,704 +1170,2832 @@
       <section class="text-img-columns py-0 py-lg-5 fds-tan-bg">
         <div class="mw-1140 width-90percent py-0 py-lg-5">
           <div class="row align-items-center">
-            <div class="col-12 col-lg-5 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black">
-              <h2>Interchangeable Trim Styles</h2>
+            <div
+              class="col-12 col-lg-6 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black mw-435"
+            >
+              <h2>Optional Trim Designs</h2>
               <div class="text-column__desc">
-                Quickly and easily change facade design without disassembly or disturbing structure, including distinctive 2-tone trim combinations.
+                Titan™ offers three trim profiles in a variety of colors and finishes that are
+                easily interchangeable for low-cost, future updates. For a minimalistic design,
+                select the low profile trim.
               </div>
             </div>
-            <div class="col-12 col-lg-7 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative">
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#finistingVideo">
+            <div
+              class="col-12 col-lg-6 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative"
+            >
+              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#OptionalTrimVideo">
                 <img class="playimg" src="img/play-btn.svg" />
-              <img
-                src="/img/titan/finishing-video-img.jpg"
-                alt="Digital Rendering of a design studio"
-                class="d-block w-100"
-              />
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#titanvideo"></a>
+                <img
+                  src="/img/titan/optional-trim-img.jpg"
+                  alt="Digital Rendering of a design studio"
+                  class="d-block w-100"
+                />
+              </a>
             </div>
           </div>
         </div>
         <!-- Modal -->
         <div
-        class="modal fade"
-        id="finistingVideo"
-        tabindex="-1"
-        aria-labelledby="finistingVideoLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content rounded-0 position-relative">
-            <div
-              class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-            >
-              <button
-                type="button"
-                class="btn-close m-0 p-0"
-                data-mdb-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body p-0 m-0 bg-black">
-              <video width="100%" controls autoplay muted>
-                <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
-              </video>
+          class="modal fade"
+          id="OptionalTrimVideo"
+          tabindex="-1"
+          aria-labelledby="OptionalTrimVideoLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content rounded-0 position-relative">
+              <div
+                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+              >
+                <button
+                  type="button"
+                  class="btn-close m-0 p-0"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 m-0 bg-black">
+                <video width="100%" controls autoplay muted>
+                  <source src="img/titan/Optional Trim Designs.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="text-img-columns py-0 py-lg-5 bg-white">
         <div class="mw-1140 width-90percent py-0 py-lg-5">
           <div class="row align-items-center">
-            <div class="col-12 col-lg-5 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black">
-              <h2>Convertible Single to Double Glazed Panes</h2>
+            <div
+              class="col-12 col-lg-6 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black mw-435"
+            >
+              <h2>Common Components Used in Many Places</h2>
               <div class="text-column__desc">
-                Add glass panels without changing Titan’s underlying wall structure or track. Increase the acoustic privacy of your walls from 35 to 45 STC for greater sound insulation in noisy and crowded environments, plus single and double glazed framing options.
+                Titan is constructed around a Universal Track System™ that utilizes the same parts
+                for a more streamlined, faster and easier installation.
               </div>
             </div>
-            <div class="col-12 col-lg-7 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative">
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#panelVideo">
+            <div
+              class="col-12 col-lg-6 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative"
+            >
+              <a
+                href="javascript:;"
+                data-mdb-toggle="modal"
+                data-mdb-target="#commonComponentsVideo"
+              >
                 <img class="playimg" src="img/play-btn.svg" />
-              <img
-                src="/img/titan/panel-video-img.jpg"
-                alt="Digital Rendering of a design studio"
-                class="d-block w-100"
-              />
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#titanvideo"></a>
+                <img
+                  src="/img/titan/Common Parts(1) OPT.jpg"
+                  alt="Digital Rendering of a design studio"
+                  class="d-block w-100"
+                />
+              </a>
             </div>
           </div>
         </div>
         <!-- Modal -->
         <div
-        class="modal fade"
-        id="panelVideo"
-        tabindex="-1"
-        aria-labelledby="finistingVideoLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content rounded-0 position-relative">
-            <div
-              class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-            >
-              <button
-                type="button"
-                class="btn-close m-0 p-0"
-                data-mdb-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body p-0 m-0 bg-black">
-              <video width="100%" controls autoplay muted>
-                <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
-              </video>
+          class="modal fade"
+          id="commonComponentsVideo"
+          tabindex="-1"
+          aria-labelledby="commonComponentsVideoLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content rounded-0 position-relative">
+              <div
+                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+              >
+                <button
+                  type="button"
+                  class="btn-close m-0 p-0"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 m-0 bg-black">
+                <video width="100%" controls autoplay muted>
+                  <source src="img/titan/Common Parts.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </section>      
-      
+      </section>
+
       <section class="text-img-columns py-0 py-lg-5 fds-tan-bg">
         <div class="mw-1140 width-90percent py-0 py-lg-5">
           <div class="row align-items-center">
-            <div class="col-12 col-lg-5 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black">
-              <h2>Common Components Used in Many Places</h2>
+            <div
+              class="col-12 col-lg-6 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black mw-435"
+            >
+              <h2>Convertible Single to Double Glazed Panes</h2>
               <div class="text-column__desc">
-                Titan is built around a Universal Track System™ that utilizes the same parts whether installed on ceilings, floors, or walls. By reducing unique parts and streamlining install procedure, Titan boasts faster and easier installation than traditional framing or other modular wall systems.
+                All of our trim options are designed to add glass panels without changing the
+                underlying wall structure or track. In addition, the Titan™ dual glazing provides a
+                45 STC for greater acoustic privacy.
               </div>
             </div>
-            <div class="col-12 col-lg-7 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative">
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#framingVideo">
+            <div
+              class="col-12 col-lg-6 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative"
+            >
+              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#singleDoubleVideo">
                 <img class="playimg" src="img/play-btn.svg" />
-              <img
-                src="/img/titan/framing-video-img.jpg"
-                alt="Digital Rendering of a design studio"
-                class="d-block w-100"
-              />
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#titanvideo"></a>
+                <img
+                  src="/img/titan/Single to Dual Comp OPT.jpg"
+                  alt="Digital Rendering of a design studio"
+                  class="d-block w-100"
+                />
+              </a>
             </div>
           </div>
         </div>
         <!-- Modal -->
         <div
-        class="modal fade"
-        id="framingVideo"
-        tabindex="-1"
-        aria-labelledby="framingVideoLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content rounded-0 position-relative">
-            <div
-              class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-            >
-              <button
-                type="button"
-                class="btn-close m-0 p-0"
-                data-mdb-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body p-0 m-0 bg-black">
-              <video width="100%" controls autoplay muted>
-                <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
-              </video>
+          class="modal fade"
+          id="singleDoubleVideo"
+          tabindex="-1"
+          aria-labelledby="singleDoubleVideoLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content rounded-0 position-relative">
+              <div
+                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+              >
+                <button
+                  type="button"
+                  class="btn-close m-0 p-0"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 m-0 bg-black">
+                <video width="100%" controls autoplay muted>
+                  <source src="img/titan/Single to Double.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="text-img-columns py-0 py-lg-5 bg-white">
         <div class="mw-1140 width-90percent py-0 py-lg-5">
           <div class="row align-items-center">
-            <div class="col-12 col-lg-5 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black">
-              <h2>Easy Integration of Fellowes Furniture and Air Quality Management Solutions</h2>
+            <div
+              class="col-12 col-lg-6 order-2 order-lg-1 text-column px-5 px-lg-0 mb-5 mb-lg-0 text-black mw-435"
+            >
+              <h2>Easy Integration</h2>
               <div class="text-column__desc">
-                Whatever may come, you can face change with confidence. Titan is designed to integrate with furniture, case goods, air purification systems, and more.
+                Titan™ is designed to integrate with Fellowes furniture, case goods and air quality
+                management solutions.
               </div>
             </div>
-            <div class="col-12 col-lg-7 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative">
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#panelVideo">
+            <div
+              class="col-12 col-lg-6 order-1 order-lg-2 image-column mb-5 m-lg-0 position-relative"
+            >
+              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#integrationVideo">
                 <img class="playimg" src="img/play-btn.svg" />
-              <img
-                src="/img/titan/integration-video-img.jpg"
-                alt="Digital Rendering of a design studio"
-                class="d-block w-100"
-              />
-              <a href="javascript:;" data-mdb-toggle="modal" data-mdb-target="#titanvideo"></a>
+                <img
+                  src="/img/titan/Titan Accessory (Furniture & Air Integration)_BH (1)_OPT.jpg"
+                  alt="Digital Rendering of a design studio"
+                  class="d-block w-100"
+                />
+              </a>
             </div>
           </div>
         </div>
         <!-- Modal -->
         <div
-        class="modal fade"
-        id="panelVideo"
-        tabindex="-1"
-        aria-labelledby="finistingVideoLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content rounded-0 position-relative">
-            <div
-              class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
-            >
-              <button
-                type="button"
-                class="btn-close m-0 p-0"
-                data-mdb-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body p-0 m-0 bg-black">
-              <video width="100%" controls autoplay muted>
-                <source src="img/homepage-imgs/FPO Fellowes Video.mp4" type="video/mp4" />
-              </video>
+          class="modal fade"
+          id="integrationVideo"
+          tabindex="-1"
+          aria-labelledby="integrationVideoLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content rounded-0 position-relative">
+              <div
+                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+              >
+                <button
+                  type="button"
+                  class="btn-close m-0 p-0"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 m-0 bg-black">
+                <video width="100%" controls autoplay muted>
+                  <source src="img/titan/Easy Integration.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </section> 
+      </section>
 
       <!-- Ninth Section with Green BG -->
       <section class="band section-spacing fds-green-bg py-5 text-white text-center">
         <div class="container py-3 py-md-5">
           <div class="row">
             <div class="col">
-              <h2 class="section__heading">Simple And Sustainable</h2>
-              <div class="section__text mt-4">
-                Common components save time and simplify inventory and installation.
+              <h2 class="section__heading">Smartly Built</h2>
+              <div class="section__text mt-4 mw-840 lh-sm">
+                Titan™ walls are constructed with up to 90% less waste than traditionally-framed
+                walls, cost less than traditional construction and are backed by an industry-leading
+                lifetime warranty.
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       <!-- Tenth Section -->
 
       <section class="band">
-          <img src="img/titan/end-to-end-services-section-image.jpg" class="img-fluid w-100 maxh-700 mh-600" />
-          <div class="tanbg py-md-5 py-4">
-            <div class="container py-3 py-md-5">
-                <div class="row mb-3 mb-md-5">
-                    <div class="col-12 col-md-10 offset-md-1 text-center">
-                      <h2 class="section__heading text-black mb-3">End-to-End Services</h2>
-                      <p class="text-column__desc text-black lh-sm px-4 px-md-0">When you partner with Fellowes, you are supported by fully-integrated design, planning, production, and installation teams – all working together to deliver extraordinary final results for EVERY indoor environment.</p>
-                      <a href="#" class="link-underlined text-black position-relative text-column__desc">Learn More</a>
-                    </div>
-                </div>
-                <div class="row pt-3 pt-md-4">
-                    <div class="col-12">
-                      <div id="titan-services" class="multi-carousel" data-mdb-items="4">
-                        <div class="multi-carousel-inner d-lg-flex">
-                          <div class="multi-carousel-item">
-                            <a href="#" class="text-black">
-                              <div class="mb-4 text-center">
-                                <img
-                                  src="/img/titan/e-t-e-fully-integrated-img.jpg"
-                                  data-mdb-img="/img/titan/e-t-e-fully-integrated-img.jpg"
-                                  alt="ALT TEXT GOES HERE"
-                                  class="img-fluid"
-                                />
-                              </div>
-                              <p class="text-center text-wrap text-column__desc">Fully integrated into CET design tools for your project.</p>
-                            </a>
-                          </div>
-                          <div class="multi-carousel-item">
-                            <a href="#" class="text-black">
-                              <div class="mb-4 text-center">
-                                <img
-                                  src="/img/titan/e-t-e-on-time-img.jpg"
-                                  data-mdb-img="/img/titan/e-t-e-on-time-img.jpg"
-                                  alt="ALT TEXT GOES HERE"
-                                  class="img-fluid"
-                                />
-                              </div>
-                              <p class="text-center text-wrap text-column__desc">On-time manufacturing and installation</p>
-                            </a>
-                          </div>
-                          <div class="multi-carousel-item">
-                            <a href="#" class="text-black">
-                              <div class="mb-4 text-center">
-                                <img
-                                  src="/img/titan/e-t-e-lead-time-img.jpg"
-                                  data-mdb-img="/img/titan/e-t-e-lead-time-img.jpg"
-                                  alt="ALT TEXT GOES HERE"
-                                  class="img-fluid"
-                                />
-                              </div>
-                              <p class="text-center text-wrap text-column__desc">2-4 week lead times allow occupancy sooner</p>
-                            </a>
-                          </div>
-                          <div class="multi-carousel-item">
-                            <a href="#" class="text-black">
-                              <div class="mb-4 text-center">
-                                <img
-                                  src="/img/titan/e-t-e-lifetime-warranty-img.jpg"
-                                  data-mdb-img="/img/titan/e-t-e-lifetime-warranty-img.jpg"
-                                  alt="ALT TEXT GOES HERE"
-                                  class="img-fluid"
-                                />
-                              </div>
-                              <p class="text-center text-wrap text-column__desc">Backed by a unique lifetime warranty</p>
-                            </a>
-                          </div>
+        <img
+          src="img/titan/end-to-end-services-section-image.jpg"
+          class="img-fluid w-100 maxh-700 mh-600"
+        />
+
+        <div class="fds-green-bg py-md-5 py-4">
+          <div class="container py-3 py-md-5">
+            <div class="row mb-3 mb-md-5">
+              <div class="col-12 col-md-10 offset-md-1 text-center">
+                <h2 class="section__heading text-white mb-3">The Fellowes Design Process</h2>
+                <p class="text-column__desc text-white lh-sm px-4 px-md-0">
+                  Fellowes makes it possible for your design vision to come to life in just 5 steps.
+                </p>
+                <a href="#" class="link-underlined text-white position-relative text-column__desc"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="row pt-3 pt-md-4 g-1 g-md-2">
+              <div class="col-2 offset-1">
+                <img
+                  src="./img/titan/panel-img-1.jpg"
+                  class="d-block w-100"
+                  alt="one fifth of an overall panel drawing"
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="./img/titan/panel-img-2.jpg"
+                  class="d-block w-100"
+                  alt="one fifth of an overall panel drawing"
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="./img/titan/panel-img-3.jpg"
+                  class="d-block w-100"
+                  alt="one fifth of an overall panel drawing"
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="./img/titan/panel-img-4.jpg"
+                  class="d-block w-100"
+                  alt="one fifth of an overall panel drawing"
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="./img/titan/panel-img-5.jpg"
+                  class="d-block w-100"
+                  alt="one fifth of an overall panel drawing"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tanbg py-md-5 py-4">
+          <div class="container py-3 py-md-5">
+            <div class="row mb-3 mb-md-5">
+              <div class="col-12 col-md-10 offset-md-1 text-center">
+                <h2 class="section__heading text-black mb-3">End-to-End Services</h2>
+                <p class="text-column__desc text-black lh-sm px-4 px-md-0">
+                  When you partner with Fellowes, you are supported by fully-integrated design,
+                  planning, production, and installation teams – all working together to deliver
+                  extraordinary final results for EVERY indoor environment.
+                </p>
+              </div>
+            </div>
+            <div class="row pt-3 pt-md-4">
+              <div class="col-12">
+                <div id="titan-services" class="multi-carousel" data-mdb-items="3">
+                  <div class="multi-carousel-inner d-lg-flex">
+                    <div class="multi-carousel-item">
+                      <a href="#" class="text-black">
+                        <div class="mb-4 text-center">
+                          <img
+                            src="/img/titan/slide-1.jpg"
+                            data-mdb-img="/img/titan/slide-1"
+                            alt="ALT TEXT GOES HERE"
+                            class="img-fluid"
+                          />
                         </div>
-                        <button
-                          class="carousel-control carousel-control-prev ms-md-n5 d-lg-none d-flex"
-                          type="button"
-                          tabindex="0"
-                          data-mdb-slide="prev"
-                        >
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">View Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control carousel-control-next me-md-n5 d-lg-none d-flex"
-                          type="button"
-                          tabindex="0"
-                          data-mdb-slide="next"
-                        >
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">View Next</span>
-                        </button>
+                        <p class="text-center text-wrap text-column__desc">
+                          Fully integrated into CET design tools for your project.
+                        </p>
+                      </a>
+                    </div>
+                    <div class="multi-carousel-item">
+                      <a href="#" class="text-black">
+                        <div class="mb-4 text-center">
+                          <img
+                            src="/img/titan/slide-2.jpg"
+                            data-mdb-img="/img/titan/slide-2.jpg"
+                            alt="ALT TEXT GOES HERE"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <p class="text-center text-wrap text-column__desc">
+                          Customer Obsessive Partner
+                        </p>
+                      </a>
+                    </div>
+                    <div class="multi-carousel-item">
+                      <a href="#" class="text-black">
+                        <div class="mb-4 text-center">
+                          <img
+                            src="/img/titan/slide-3.jpg"
+                            data-mdb-img="/img/titan/slide-3.jpg"
+                            alt="ALT TEXT GOES HERE"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <p class="text-center text-wrap text-column__desc">Guaranteed Lead Times</p>
+                      </a>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control carousel-control-prev ms-md-n5 d-lg-none d-flex"
+                    type="button"
+                    tabindex="0"
+                    data-mdb-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">View Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control carousel-control-next me-md-n5 d-lg-none d-flex"
+                    type="button"
+                    tabindex="0"
+                    data-mdb-slide="next"
+                  >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">View Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Variations and Options -->
+      <section class="band py-5">
+        <div class="container pt-md-5">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto text-center px-0">
+              <h2 class="section__heading text-black mb-4 mb-md-5 px-3">Variations and Options</h2>
+
+              <div
+                class="accordion accordion-variation accordion-borderless"
+                id="accordionPanelsStayOpenExample"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Doors
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <img
+                            src="img/megacat-walls/landing-trendwall/panel-img.jpg"
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start">
+                          <p class="bigptext-panle mb-4 fw-300">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                          </p>
+
+                          <ul class="panel-list">
+                            <li>Full Height Panels</li>
+                            <li>Door Height Panels – Top Glass</li>
+                            <li>Door Height Panels – Top Solid</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mt-3 text-black">
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/fullheightsolid.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Height</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/fullheighthalfglass.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Height 2</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/fullheight3.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Height 3</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/fullheight4.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Height 4</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/fullheight5.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Height 5</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightglass.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Glass Top</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightglass2.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Glass Top 2</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightglass3.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Glass Top 3</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightglass4.jpg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Glass Top 4</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightsolid.jpg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Solid Top</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightsolid2.jpg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Solid Top 2</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightsolid3.jpg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Solid Top 3</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4 equalHeight">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorheightsolid4.jpg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Height Solid Top 4</div>
+                        </div>
                       </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-          </div>
-      </section>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Pulls & Hardware
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <img
+                            src="img/megacat-walls/landing-trendwall/panel-img.jpg"
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start">
+                          <p class="bigptext-panle mb-4 fw-300">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                          </p>
 
-      <!-- Eleventh Section with Green BG -->
-      <section class="band section-spacing fds-green-bg py-5 text-white text-md-start text-center big-text-section-green">
-        <div class="container py-3 py-md-5">
-          <div class="row">
-            <div class="col-md-7 col-12 mb-md-0 mb-3">
-              <h2 class="section__heading">Visit Our Showrooms</h2>
-              
-            </div>
-            <div class="col-xl-4 col-md-5 col-12">
-              <div class="section__text">
-                Track trends, see products in person and bring your vision to life.
+                          <p class="fw-300">
+                            Choose Swing Doors with just the right degree of privacy.
+                          </p>
+                          <ul class="panel-list">
+                            <li>Solid</li>
+                            <li>Window</li>
+                            <li>Vision</li>
+                            <li>Full Lite</li>
+                            <li>Full Lite with Transom</li>
+                            <li>Solid Double</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mt-3 text-black">
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorsolid.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Solid</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorwindow.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Window</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorvision.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Vision</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorfulllite.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Lite</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorlitetransom.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Lite & Transom</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/doorsoliddouble.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Solid Double</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Panels
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <img
+                            src="img/megacat-walls/landing-trendwall/panel-img.jpg"
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start">
+                          <p class="bigptext-panle mb-4 fw-300">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                          </p>
+                          <div class="panel-sub-title mb-1">CHOOSING A PANEL</div>
+                          <p class="fw-300">
+                            Panel selections let you fine-tune<br />how much visibility you want.
+                          </p>
+                          <ul class="panel-list">
+                            <li>Solid</li>
+                            <li>Glazed</li>
+                            <li>Variable</li>
+                            <li>Ceiling</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mt-3 text-black">
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/paneldoorlite.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Solid Panel</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/panelhighlite.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">High Lite</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/panelwindowlite.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Window Lite</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/slidingwindowpanel.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Sliding Window Panel</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/paneldoorlite1.png"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Door Lite</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/panelfulllite.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Lite</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/panelsegmented.png"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Segmented</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      Trim Styles
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <img
+                            src="img/megacat-walls/landing-trendwall/panel-img.jpg"
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start">
+                          <p class="bigptext-panle mb-4 fw-300">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                          </p>
 
+                          <p class="fw-300">
+                            Choose Sliding Doors with just the right degree of privacy.
+                          </p>
+                          <ul class="panel-list">
+                            <li>Solid</li>
+                            <li>Full Lite</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mt-3 text-black">
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/fullliteslidingdoor.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Full Lite Sliding Door</div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6 mb-4">
+                          <div class="mb-2 mb-md-4">
+                            <img
+                              src="img/megacat-walls/landing-trendwall/solidslidingdoor.jpeg"
+                              class="img-fluid w-100"
+                            />
+                          </div>
+                          <div class="fw-300">Solid Sliding Door</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>      
+      </section>
 
-      <!-- Last Section Begins -->
-      <section
-        class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
-        style="padding-inline: 2.25rem"
-      >
-        <div class="last-section-grid col-12 d-flex">
-          <div
-            class="last-section-item bg-image"
-            style="background-image: url(/img/homepage-imgs/family.jpg)"
-          >
-            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
-              <div class="fge-logo">
-                <img src="/img/homepage-imgs/family.svg" alt="Give Icon" />
-              </div>
-              <p class="last-section-item-description">
-                In 1917, Harry Fellowes set in motion a way of doing business that has become our
-                cultural foundation at Fellowes to this very day. We are here to serve, through a
-                humble and helpful spirit. We strive each day to pursue our values of family,
-                innovation, quality and care. Into our fourth generation, our work is driven by a
-                purpose to add value to those we serve.
-              </p>
-              <a
-                href="#"
-                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
-                >Learn About Our Initiatives</a
+      <!-- Standard Surface Materials -->
+      <section class="band py-5 pt-0 pt-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto text-center px-0">
+              <h2 class="section__heading text-black mb-4 mb-md-5 px-3">
+                Standard Surface Materials
+              </h2>
+
+              <div
+                class="accordion accordion-variation accordion-borderless"
+                id="accordionPanelsStayOpenExample"
               >
-            </div>
-          </div>
-          <div
-            class="last-section-item bg-image"
-            style="background-image: url(/img/homepage-imgs/give.jpg)"
-          >
-            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
-              <div class="fge-logo">
-                <img src="/img/homepage-imgs/give.svg" alt="Give Icon" />
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesThree"
+                    >
+                      Trim Finishes
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsThree"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <div
+                            class="swatch-left-preview-box swatch-left-preview-box-paint-trim p-3 bg-white text-start text-black"
+                          >
+                            <div class="mb-4 swatch-preview-img">
+                              <img
+                                src="img/megacat-walls/landing-trendwall/paint-charcoal.jpeg"
+                                class="w-100 img-fluid"
+                              />
+                            </div>
+                            <div class="swatch-title swatch-paint-title text-black mb-4">
+                              <span data-category=""></span>: <span data-name=""></span>
+                            </div>
+                            <div class="swatch-detail-main">
+                              <div class="row align-items-center gx-2">
+                                <div class="col-lg-6 order-lg-1 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/see-specifications.svg"
+                                      />
+                                    </div>
+                                    <div>See Specifications</div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-3 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/download-swatch-pdf.svg"
+                                      />
+                                    </div>
+                                    <div>Download Swatch PDF</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-2 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/shares-this-fabric.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Print Specs</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-4 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/swatch-upload.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Shares this Fabric</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start swatch-right-boxes-main">
+                          <div class="row gx-2 swatch-right-boxes-main-row">
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/paint-charcoal.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="TRANSLUCENT"
+                                  data-name="Charcoal Smooth"
+                                >
+                                  Charcoal Smooth
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/paint-charcoal-k.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 1"
+                                  data-name="Charcoal Textured"
+                                >
+                                  Charcoal Textured
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/paint-designerwhite.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 2"
+                                  data-name="Designer White Smooth"
+                                >
+                                  Designer White Smooth
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/paint-gray-g.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 3"
+                                  data-name="Gray Smooth"
+                                >
+                                  Gray Smooth
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/paint-lightgray-l.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 4"
+                                  data-name="Light Gray Smooth"
+                                >
+                                  Light Gray Smooth
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/paint-sand-y.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 5"
+                                  data-name="Sand Smooth"
+                                >
+                                  Sand Smooth
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-2">
+                        <a href="#" class="text-black fw-500 text-decoration-underline"
+                          >SEE ALL SURFACE MATERIALS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesTwo"
+                    >
+                      Laminate
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsTwo"
+                  >
+                    <div class="accordion-body">Laminate Content</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesFour"
+                    >
+                      Panel Vinyl
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsFour"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <div
+                            class="swatch-left-preview-box swatch-left-preview-box-panel-fabric p-3 bg-white text-start text-black"
+                          >
+                            <div class="mb-4 swatch-preview-img">
+                              <img
+                                src="img/megacat-walls/landing-trendwall/pact-aloe-bm5.jpg"
+                                class="w-100 img-fluid"
+                              />
+                            </div>
+                            <div class="swatch-title swatch-panel-fabric-title text-black mb-4">
+                              <span data-category=""></span>: <span data-name=""></span>
+                            </div>
+                            <div class="swatch-detail-main">
+                              <div class="row align-items-center gx-2">
+                                <div class="col-lg-6 order-lg-1 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/see-specifications.svg"
+                                      />
+                                    </div>
+                                    <div>See Specifications</div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-3 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/download-swatch-pdf.svg"
+                                      />
+                                    </div>
+                                    <div>Download Swatch PDF</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-2 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/shares-this-fabric.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Print Specs</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-4 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/swatch-upload.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Shares this Fabric</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start swatch-right-boxes-main">
+                          <div class="row gx-2 swatch-right-boxes-main-row">
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/pact-aloe-bm5.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="PACT"
+                                  data-name="Red Delicious"
+                                >
+                                  Red Delicious
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/netiquette-analog.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 1"
+                                  data-name="Analog"
+                                >
+                                  Analog
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-angora.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 2"
+                                  data-name="Angora"
+                                >
+                                  Angora
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-asteroid.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 3"
+                                  data-name="Asteroid"
+                                >
+                                  Asteroid
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-aubergine.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 4"
+                                  data-name="Aubergine"
+                                >
+                                  Aubergine
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-birch.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 4"
+                                  data-name="Birch"
+                                >
+                                  Birch
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/pact-aloe-bm5.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 5"
+                                  data-name="Red Delicious"
+                                >
+                                  Red Delicious
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/netiquette-analog.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 6"
+                                  data-name="Analog"
+                                >
+                                  Analog
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-angora.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 7"
+                                  data-name="Angora"
+                                >
+                                  Angora
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-asteroid.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 8"
+                                  data-name="Asteroid"
+                                >
+                                  Asteroid
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-aubergine.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 9"
+                                  data-name="Aubergine"
+                                >
+                                  Aubergine
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/anchorage-birch.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 10"
+                                  data-name="Birch"
+                                >
+                                  Birch
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-2">
+                        <a href="#" class="text-black fw-500 text-decoration-underline"
+                          >SEE ALL SURFACE MATERIALS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesOne"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesOne"
+                    >
+                      Glazing
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsOne"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <div class="swatch-left-preview-box p-3 bg-white text-start text-black">
+                            <div class="mb-4 swatch-preview-img">
+                              <img
+                                src="img/megacat-walls/landing-trendwall/translucent-clear.jpeg"
+                                class="w-100 img-fluid"
+                              />
+                            </div>
+                            <div class="swatch-title swatch-glazing-title text-black mb-4">
+                              <span data-category=""></span>: <span data-name=""></span>
+                            </div>
+                            <div class="swatch-detail-main">
+                              <div class="row align-items-center gx-2">
+                                <div class="col-lg-6 order-lg-1 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/see-specifications.svg"
+                                      />
+                                    </div>
+                                    <div>See Specifications</div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-3 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/download-swatch-pdf.svg"
+                                      />
+                                    </div>
+                                    <div>Download Swatch PDF</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-2 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/shares-this-fabric.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Print Specs</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-4 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/swatch-upload.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Shares this Fabric</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start swatch-right-boxes-main">
+                          <div
+                            class="row gx-2 swatch-right-boxes-main-row swatch-right-boxes-glazing"
+                          >
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/translucent-clear.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="TRANSLUCENT"
+                                  data-name="Clear"
+                                >
+                                  Clear
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/translucent-clear-1.jpg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="category 1"
+                                  data-name="Clear Laminated 1/4”"
+                                >
+                                  Clear Laminated 1/4”
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/translucent-frosted.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="category 2"
+                                  data-name="Frost"
+                                >
+                                  Frost
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/soloaquasupermatte.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="category 3"
+                                  data-name="Solo Aqua Supermatte"
+                                >
+                                  Solo Aqua Supermatte
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/solosupermatteclear.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="category 4"
+                                  data-name="Solo Supermatte"
+                                >
+                                  Solo Supermatte
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/spider.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="category 5"
+                                  data-name="Spider"
+                                >
+                                  Spider
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-2">
+                        <a href="#" class="text-black fw-500 text-decoration-underline"
+                          >SEE ALL SURFACE MATERIALS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesFive"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesFive"
+                    >
+                      3Form Glass
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsFive"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <div
+                            class="swatch-left-preview-box swatch-left-preview-box-panel-door-vinyl p-3 bg-white text-start text-black"
+                          >
+                            <div class="mb-4 swatch-preview-img">
+                              <img
+                                src="img/megacat-walls/landing-trendwall/panelvinyl-charcoal.jpeg"
+                                class="w-100 img-fluid"
+                              />
+                            </div>
+                            <div class="swatch-title swatch-panel-door-title text-black mb-4">
+                              <span data-category=""></span>: <span data-name=""></span>
+                            </div>
+                            <div class="swatch-detail-main">
+                              <div class="row align-items-center gx-2">
+                                <div class="col-lg-6 order-lg-1 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/see-specifications.svg"
+                                      />
+                                    </div>
+                                    <div>See Specifications</div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-3 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/download-swatch-pdf.svg"
+                                      />
+                                    </div>
+                                    <div>Download Swatch PDF</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-2 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/shares-this-fabric.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Print Specs</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-4 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/swatch-upload.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Shares this Fabric</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start swatch-right-boxes-main">
+                          <div class="row gx-2 swatch-right-boxes-main-row">
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-charcoal.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="TRANSLUCENT"
+                                  data-name="Charcoal"
+                                >
+                                  Charcoal
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-designerwhite.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 1"
+                                  data-name="Designer White"
+                                >
+                                  Designer White
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-lightgray.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 2"
+                                  data-name="Light Gray"
+                                >
+                                  Light Gray
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-platinum.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 3"
+                                  data-name="Platinum"
+                                >
+                                  Platinum
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-sorrelpear.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 4"
+                                  data-name="Sorrel Pear"
+                                >
+                                  Sorrel Pear
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-stucco.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 5"
+                                  data-name="Stucco"
+                                >
+                                  Stucco
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-2">
+                        <a href="#" class="text-black fw-500 text-decoration-underline"
+                          >SEE ALL SURFACE MATERIALS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesSix"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesSix"
+                    >
+                      3Form Resin
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsFive"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <div
+                            class="swatch-left-preview-box swatch-left-preview-box-panel-door-vinyl p-3 bg-white text-start text-black"
+                          >
+                            <div class="mb-4 swatch-preview-img">
+                              <img
+                                src="img/megacat-walls/landing-trendwall/panelvinyl-charcoal.jpeg"
+                                class="w-100 img-fluid"
+                              />
+                            </div>
+                            <div class="swatch-title swatch-panel-door-title text-black mb-4">
+                              <span data-category=""></span>: <span data-name=""></span>
+                            </div>
+                            <div class="swatch-detail-main">
+                              <div class="row align-items-center gx-2">
+                                <div class="col-lg-6 order-lg-1 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/see-specifications.svg"
+                                      />
+                                    </div>
+                                    <div>See Specifications</div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-3 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/download-swatch-pdf.svg"
+                                      />
+                                    </div>
+                                    <div>Download Swatch PDF</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-2 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/shares-this-fabric.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Print Specs</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-4 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/swatch-upload.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Shares this Fabric</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start swatch-right-boxes-main">
+                          <div class="row gx-2 swatch-right-boxes-main-row">
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-charcoal.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="TRANSLUCENT"
+                                  data-name="Charcoal"
+                                >
+                                  Charcoal
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-designerwhite.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 1"
+                                  data-name="Designer White"
+                                >
+                                  Designer White
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-lightgray.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 2"
+                                  data-name="Light Gray"
+                                >
+                                  Light Gray
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-platinum.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 3"
+                                  data-name="Platinum"
+                                >
+                                  Platinum
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-sorrelpear.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 4"
+                                  data-name="Sorrel Pear"
+                                >
+                                  Sorrel Pear
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-stucco.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 5"
+                                  data-name="Stucco"
+                                >
+                                  Stucco
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-2">
+                        <a href="#" class="text-black fw-500 text-decoration-underline"
+                          >SEE ALL SURFACE MATERIALS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesSeven"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsesSeven"
+                    >
+                      Skyline Design Glass
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingsFive"
+                  >
+                    <div class="accordion-body">
+                      <div class="row gx-lg-5">
+                        <div class="col-lg-5 col-12 md-lg-0 mb-4">
+                          <div
+                            class="swatch-left-preview-box swatch-left-preview-box-panel-door-vinyl p-3 bg-white text-start text-black"
+                          >
+                            <div class="mb-4 swatch-preview-img">
+                              <img
+                                src="img/megacat-walls/landing-trendwall/panelvinyl-charcoal.jpeg"
+                                class="w-100 img-fluid"
+                              />
+                            </div>
+                            <div class="swatch-title swatch-panel-door-title text-black mb-4">
+                              <span data-category=""></span>: <span data-name=""></span>
+                            </div>
+                            <div class="swatch-detail-main">
+                              <div class="row align-items-center gx-2">
+                                <div class="col-lg-6 order-lg-1 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/see-specifications.svg"
+                                      />
+                                    </div>
+                                    <div>See Specifications</div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 order-lg-3 col-4 mb-3">
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/download-swatch-pdf.svg"
+                                      />
+                                    </div>
+                                    <div>Download Swatch PDF</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-2 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/shares-this-fabric.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Print Specs</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-lg-6 order-lg-4 col-2 mb-3 text-lg-start text-center"
+                                >
+                                  <div
+                                    class="d-flex swatch-detail-flex flex-main-div align-items-center justify-content-center justify-content-lg-start"
+                                  >
+                                    <div class="swatch-img-div">
+                                      <img
+                                        src="img/megacat-walls/landing-trendwall/swatch-upload.svg"
+                                      />
+                                    </div>
+                                    <div class="d-lg-inline-block d-none">Shares this Fabric</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-12 text-black text-start swatch-right-boxes-main">
+                          <div class="row gx-2 swatch-right-boxes-main-row">
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-charcoal.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="TRANSLUCENT"
+                                  data-name="Charcoal"
+                                >
+                                  Charcoal
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-designerwhite.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 1"
+                                  data-name="Designer White"
+                                >
+                                  Designer White
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-lightgray.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 2"
+                                  data-name="Light Gray"
+                                >
+                                  Light Gray
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-platinum.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 3"
+                                  data-name="Platinum"
+                                >
+                                  Platinum
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-sorrelpear.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 4"
+                                  data-name="Sorrel Pear"
+                                >
+                                  Sorrel Pear
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-2 col-4">
+                              <a
+                                href="javascript:;"
+                                class="text-black text-center swatch-right-boxes"
+                              >
+                                <div class="mb-2 swatch-img">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/megacat-walls/landing-trendwall/panelvinyl-stucco.jpeg"
+                                  />
+                                </div>
+                                <div
+                                  class="swatch-small-title-right"
+                                  data-category="Category 5"
+                                  data-name="Stucco"
+                                >
+                                  Stucco
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-2">
+                        <a href="#" class="text-black fw-500 text-decoration-underline"
+                          >SEE ALL SURFACE MATERIALS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="last-section-item-description last-section-desc-centered">
-                Established in 2014, GIVE is a purpose-led program dedicated to supporting local and
-                global partners who are addressing humanitarian's greatest social, education and
-                health-based needs..
-              </p>
-              <a
-                href="#"
-                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
-                >Learn About Our Initiatives</a
-              >
-            </div>
-          </div>
-          <div
-            class="last-section-item bg-image"
-            style="background-image: url(/img/homepage-imgs/earth.jpg)"
-          >
-            <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
-              <div class="fge-logo">
-                <img src="/img/homepage-imgs/earth.svg" alt="Earth Icon" />
-              </div>
-              <p class="last-section-item-description">
-                Formed in 2021, Earth is a renewed commitment to preserve, protect and renew our
-                planet. Grounded in a conviction that we have great responsibility in caretaking our
-                generation's imprint on this world, the Earth framework is integrated into our
-                product development process, packaging design, organizational facilities and
-                policies as well as our daily decision-making.
-              </p>
-              <a
-                href="#"
-                class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
-                >Learn About Our Initiatives</a
-              >
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Global Footer Start -->
-
-      <footer id="main-footer" class="px-4" role="contentinfo">
-        <section class="container-xl mb-4 my-lg-4">
+      <!-- Resources -->
+      <section class="band py-5 pt-md-5 pt-0">
+        <div class="container pb-md-5">
           <div class="row">
-            <div class="col col-12 col-lg-3 order-5 order-lg-1 text-center text-md-start">
-              <a class="footer-logo" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 112.579 25.657">
-                  <g
-                    id="Fellowes_Logo_White"
-                    data-name="Fellowes Logo White"
-                    transform="translate(1810 136.126)"
-                  >
-                    <g id="FellowesLogo" transform="translate(-1810 -136.126)">
-                      <path
-                        id="Path_1"
-                        data-name="Path 1"
-                        d="M947,288.7a1.079,1.079,0,1,1,.315-.764A1.03,1.03,0,0,1,947,288.7Zm-1.368-1.378a.881.881,0,0,0,.006,1.243.87.87,0,0,0,1.238,0,.861.861,0,0,0,.257-.627.874.874,0,0,0-1.5-.614Zm.157,1.207v-1.181c.074,0,.183,0,.328,0h.24a.5.5,0,0,1,.238.057.3.3,0,0,1,.154.282.255.255,0,0,1-.084.216.4.4,0,0,1-.206.077.439.439,0,0,1,.174.07.318.318,0,0,1,.106.266v.1c0,.011,0,.025,0,.03a.072.072,0,0,0,.007.042l.006.033h-.3a.724.724,0,0,1-.016-.162.99.99,0,0,0-.019-.145.161.161,0,0,0-.09-.089.455.455,0,0,0-.1-.019l-.075,0h-.06v.42Zm.559-.956a.6.6,0,0,0-.18-.02h-.073v.344h.119a.275.275,0,0,0,.171-.045.154.154,0,0,0,.06-.14A.142.142,0,0,0,946.348,287.571Z"
-                        transform="translate(-834.736 -265.784)"
-                        fill="#000"
-                      />
-                      <path
-                        id="Path_2"
-                        data-name="Path 2"
-                        d="M741.532,250.891l3.141-7.951h4.22l1.041,7.961,3.51-7.961h5.539l-7.541,14.553h-4.685l-.98-7.981H745.7l-3.135,7.981h-4.759l-3.267-14.553H740.1Zm42.3-4.207a5.69,5.69,0,0,0-2.665-.709c-.6,0-1.655.254-1.771.991-.158.992,1.434,1.134,2.121,1.276,2.331.484,3.965,1.617,3.54,4.311-.609,3.835-4.343,5.423-7.714,5.423a9.213,9.213,0,0,1-5.4-1.564l1.7-3.192c.934.739,3.108.949,4.383.949.654,0,1.671-.312,1.792-1.107.177-1.137-1.428-1.192-2.977-1.617s-3.035-1.22-2.625-3.828c.567-3.572,4.047-5.158,7.221-5.158a10.571,10.571,0,0,1,4.646.937Zm-60.816,3.542c-.408,2.144.48,3.644,2.536,3.644s3.5-1.221,3.955-3.644c.379-2.026-.456-3.675-2.511-3.675s-3.537,1.358-3.98,3.675m11.827,0c-.769,4.939-5.2,7.75-9.778,7.75-4.551,0-8.146-2.784-7.374-7.75s5.2-7.766,9.776-7.766,8.139,2.806,7.376,7.766m-24.556,10.51,3.549-22.421h4.913L715.2,260.737Zm-6.19-3.24,3.547-22.417h4.916L709.01,257.5Zm64.508-9.2a2.475,2.475,0,0,0-2.644-2.5,3.789,3.789,0,0,0-3.657,2.5Zm-6.761,2.774c-.343,2.1.615,3.239,2.81,3.239a3.628,3.628,0,0,0,2.941-1.337h4.952a9.536,9.536,0,0,1-8.461,5c-4.975,0-8.253-2.726-7.433-7.75.792-4.847,4.7-7.766,9.59-7.766,5.213,0,7.821,3.118,7.009,8.083l-.091.532ZM699.738,248.3a2.477,2.477,0,0,0-2.648-2.5,3.791,3.791,0,0,0-3.656,2.5Zm-6.761,2.774c-.341,2.1.615,3.239,2.812,3.239a3.629,3.629,0,0,0,2.937-1.337h4.954a9.529,9.529,0,0,1-8.462,5c-4.979,0-8.253-2.726-7.431-7.75.793-4.847,4.7-7.766,9.588-7.766,5.216,0,7.825,3.118,7.012,8.083l-.087.532Zm-9.818-10.892-.692,4.01h5.853l-.778,4.447h-5.856l-1.565,8.858h-6.257l3.811-21.895h13.819l-.772,4.581Z"
-                        transform="translate(-673.865 -235.08)"
-                        fill="#000"
-                        fill-rule="evenodd"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </a>
+            <div class="col-11 col-md-12 mx-auto text-center px-0">
+              <h2 class="section__heading text-black mb-4 mb-md-5 px-3">Resources</h2>
 
-              <div class="pt-4">
-                <!-- Section: Social media -->
-                <section class="footer-social-row mb-4">
-                  <!-- Facebook -->
-                  <a class="text-dark" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-                  <!-- Twitter -->
-                  <a class="text-dark" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-                  <!-- Instagram -->
-                  <a class="text-dark" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-                  <!-- Linkedin -->
-                  <a class="text-dark" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
-
-                  <!-- YouTube -->
-                  <a class="text-dark" href="#!" role="button"><i class="fab fa-youtube"></i></a>
-
-                  <!-- Pintrest -->
-                  <a class="text-dark" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
-                </section>
-                <!-- Section: Social media -->
-              </div>
-            </div>
-            <div class="footer-menus col col-12 col-lg-9 order-1 order-lg-5">
-              <div class="row d-flex justify-content-center">
-                <div class="col-12 col-lg-2">
-                  <a
-                    class="footer-menu-heading bt-none text-dark"
-                    data-mdb-toggle="collapse"
-                    href="#footer-prod-list"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="footer-prod-list"
+              <div
+                class="accordion accordion-variation accordion-borderless"
+                id="accordionPanelsStayOpenExample"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingsrTwo">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#panelsStayOpen-collapsesrTwo"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapsesrTwo"
+                    >
+                      Resource Library
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsesrTwo"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingsrTwo"
                   >
-                    Products
-                  </a>
-                  <!-- Collapsed content -->
-                  <ul
-                    class="footer-list-menu list-group list-group-light list-group-small collapse"
-                    id="footer-prod-list"
-                  >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Modular Walls</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Furniture</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Air Quality Management
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Workspace</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Business Machines
-                      </li></a
-                    >
-                  </ul>
-                </div>
-                <div class="col-12 col-lg-2">
-                  <a
-                    class="footer-menu-heading text-dark"
-                    data-mdb-toggle="collapse"
-                    href="#footer-wtb-list"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="footer-wtb-list"
-                  >
-                    Where to Buy
-                  </a>
-                  <!-- Collapsed content -->
-                  <ul
-                    class="footer-list-menu list-group list-group-light list-group-small collapse"
-                    id="footer-wtb-list"
-                  >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Find a Dealer</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Find a Retailer</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Request a Quote</li></a
-                    >
-                  </ul>
-                </div>
-                <div class="col-12 col-lg-2">
-                  <a
-                    class="footer-menu-heading text-dark"
-                    data-mdb-toggle="collapse"
-                    href="#footer-resources-list"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="footer-resources-list"
-                  >
-                    Resources
-                  </a>
-                  <!-- Collapsed content -->
-                  <ul
-                    class="footer-list-menu list-group list-group-light list-group-small collapse"
-                    id="footer-resources-list"
-                  >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Warranty</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">GSA</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        State/Local Contracts
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Typicals</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Projects</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Finishes & Materials
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Spec Sheets</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">3D Models/CAD</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Certifications</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Product Configurator
-                      </li></a
-                    >
-                  </ul>
-                </div>
-                <div class="col-12 col-lg-2">
-                  <a
-                    class="footer-menu-heading text-dark"
-                    data-mdb-toggle="collapse"
-                    href="#footer-support-list"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="footer-support-list"
-                  >
-                    Support
-                  </a>
-                  <!-- Collapsed content -->
-                  <ul
-                    class="footer-list-menu list-group list-group-light list-group-small collapse"
-                    id="footer-support-list"
-                  >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Product Registration
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Product Reviews</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Manuals & Downloads
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Authorized Repair Technician
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">FAQs</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Orders & Shipping
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Return Policy</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">
-                        Legal & Privacy Policies
-                      </li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Contact Us</li></a
-                    >
-                  </ul>
-                </div>
-                <div class="col-12 col-lg-2">
-                  <a
-                    class="footer-menu-heading text-dark"
-                    data-mdb-toggle="collapse"
-                    href="#footer-company-list"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="footer-company-list"
-                  >
-                    Our Company
-                  </a>
-                  <!-- Collapsed content -->
-                  <ul
-                    class="footer-list-menu list-group list-group-light list-group-small collapse"
-                    id="footer-company-list"
-                  >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Worklife</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Inspiration</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Innovations</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Locations</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Sustainability</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">GIVE</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Careers</li></a
-                    >
-                    <a class="text-dark" href="#!" role="button"
-                      ><li class="list-group-item border-0 fw-semibold px-0">Contact Us</li></a
-                    >
-                  </ul>
+                    <div class="accordion-body">
+                      <div class="row py-md-5 py-3">
+                        <div class="col-lg-6 offset-lg-3 col-12">
+                          <div class="row">
+                            <div class="col-md-4 col-6 mb-md-0 mb-3">
+                              <a href="#" class="bg-white toolkit-box p-3 p-md-4 resource-link">
+                                <div>
+                                  <img
+                                    src="img/megacat-walls/landing-trendwall/zona-product-page.svg"
+                                    class="mb-2"
+                                  />
+                                </div>
+                                <div class="toolkit-download-title text-black">
+                                  Titan<br />Brochure
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-6 mb-md-0 mb-3">
+                              <a href="#" class="bg-white toolkit-box p-3 p-md-4 resource-link">
+                                <div>
+                                  <img
+                                    src="img/megacat-walls/landing-trendwall/zona-page.svg"
+                                    class="mb-2"
+                                  />
+                                </div>
+                                <div class="toolkit-download-title text-black">
+                                  Titan Cut Sheets
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-6 mb-md-0 mb-3">
+                              <a href="#" class="bg-white toolkit-box p-3 p-md-4 resource-link">
+                                <div>
+                                  <img
+                                    src="img/megacat-walls/landing-trendwall/table-price.svg"
+                                    class="mb-2"
+                                  />
+                                </div>
+                                <div class="toolkit-download-title text-black">
+                                  Titan Price Book
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer-fine-print row text-center text-md-start mt-3">
-            <div class="copyright col col-12 col-md-auto mb-2 pe-md-0">
-              Copyright &copy; 2022 Fellowes Brands, All Rights Reserved.
-            </div>
-            <div class="footer-nav col col-12 col-md-auto ps-md-0">
-              <span class="d-none d-md-inline-block ps-md-1">|</span>
-              <a class="text-dark px-1" href="#!" role="button">Terms of Use</a> |
-              <a class="text-dark px-1" href="#!" role="button">Privacy Policy</a> |
-              <a class="text-dark px-1" href="#!" role="button">Cookies Policy</a> |
-              <a class="text-dark px-1" href="#!" role="button">Legal</a>
-            </div>
-          </div>
-        </section>
-      </footer>
-
-      <!-- Global Footer End -->
+        </div>
+      </section>
 
       <!-- End your project here-->
     </main>
+
+    <!-- Universal CTA Begins -->
+
+    <section
+      class="d-flex flex-column justify-content-center align-items-center px-4 py-5 text-white text-center fds-cta-grey"
+    >
+      <div class="py-md-4">
+        <h2 class="cta-header">
+          To Learn More About Fellowes Products and Services, Contact Us and A Fellowes
+          representative will be in touch with you
+        </h2>
+        <a
+          href="#"
+          class="link-underlined text-center text-white d-block mt-3 mt-lg-4 position-relative"
+          >Let's Get to Work</a
+        >
+      </div>
+    </section>
+
+    <!-- Last Section Begins -->
+    <section
+      class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
+      style="padding-inline: 2.25rem"
+    >
+      <div class="last-section-grid col-12 d-flex">
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/family.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/family.svg" alt="Give Icon" />
+            </div>
+            <p class="last-section-item-description">
+              In 1917, Harry Fellowes set in motion a way of doing business that has become our
+              cultural foundation at Fellowes to this very day. We are here to serve, through a
+              humble and helpful spirit. We strive each day to pursue our values of family,
+              innovation, quality and care. Into our fourth generation, our work is driven by a
+              purpose to add value to those we serve.
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/give.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/give.svg" alt="Give Icon" />
+            </div>
+            <p class="last-section-item-description last-section-desc-centered">
+              Established in 2014, GIVE is a purpose-led program dedicated to supporting local and
+              global partners who are addressing humanitarian's greatest social, education and
+              health-based needs..
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/earth.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/earth.svg" alt="Earth Icon" />
+            </div>
+            <p class="last-section-item-description">
+              Formed in 2021, Earth is a renewed commitment to preserve, protect and renew our
+              planet. Grounded in a conviction that we have great responsibility in caretaking our
+              generation's imprint on this world, the Earth framework is integrated into our product
+              development process, packaging design, organizational facilities and policies as well
+              as our daily decision-making.
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="px-4" role="contentinfo">
+      <section class="container-xl mb-4 my-lg-4">
+        <div class="row">
+          <div class="col col-12 col-lg-3 order-5 order-lg-1 text-center text-md-start">
+            <a class="footer-logo" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 112.579 25.657">
+                <g
+                  id="Fellowes_Logo_White"
+                  data-name="Fellowes Logo White"
+                  transform="translate(1810 136.126)"
+                >
+                  <g id="FellowesLogo" transform="translate(-1810 -136.126)">
+                    <path
+                      id="Path_1"
+                      data-name="Path 1"
+                      d="M947,288.7a1.079,1.079,0,1,1,.315-.764A1.03,1.03,0,0,1,947,288.7Zm-1.368-1.378a.881.881,0,0,0,.006,1.243.87.87,0,0,0,1.238,0,.861.861,0,0,0,.257-.627.874.874,0,0,0-1.5-.614Zm.157,1.207v-1.181c.074,0,.183,0,.328,0h.24a.5.5,0,0,1,.238.057.3.3,0,0,1,.154.282.255.255,0,0,1-.084.216.4.4,0,0,1-.206.077.439.439,0,0,1,.174.07.318.318,0,0,1,.106.266v.1c0,.011,0,.025,0,.03a.072.072,0,0,0,.007.042l.006.033h-.3a.724.724,0,0,1-.016-.162.99.99,0,0,0-.019-.145.161.161,0,0,0-.09-.089.455.455,0,0,0-.1-.019l-.075,0h-.06v.42Zm.559-.956a.6.6,0,0,0-.18-.02h-.073v.344h.119a.275.275,0,0,0,.171-.045.154.154,0,0,0,.06-.14A.142.142,0,0,0,946.348,287.571Z"
+                      transform="translate(-834.736 -265.784)"
+                      fill="#000"
+                    />
+                    <path
+                      id="Path_2"
+                      data-name="Path 2"
+                      d="M741.532,250.891l3.141-7.951h4.22l1.041,7.961,3.51-7.961h5.539l-7.541,14.553h-4.685l-.98-7.981H745.7l-3.135,7.981h-4.759l-3.267-14.553H740.1Zm42.3-4.207a5.69,5.69,0,0,0-2.665-.709c-.6,0-1.655.254-1.771.991-.158.992,1.434,1.134,2.121,1.276,2.331.484,3.965,1.617,3.54,4.311-.609,3.835-4.343,5.423-7.714,5.423a9.213,9.213,0,0,1-5.4-1.564l1.7-3.192c.934.739,3.108.949,4.383.949.654,0,1.671-.312,1.792-1.107.177-1.137-1.428-1.192-2.977-1.617s-3.035-1.22-2.625-3.828c.567-3.572,4.047-5.158,7.221-5.158a10.571,10.571,0,0,1,4.646.937Zm-60.816,3.542c-.408,2.144.48,3.644,2.536,3.644s3.5-1.221,3.955-3.644c.379-2.026-.456-3.675-2.511-3.675s-3.537,1.358-3.98,3.675m11.827,0c-.769,4.939-5.2,7.75-9.778,7.75-4.551,0-8.146-2.784-7.374-7.75s5.2-7.766,9.776-7.766,8.139,2.806,7.376,7.766m-24.556,10.51,3.549-22.421h4.913L715.2,260.737Zm-6.19-3.24,3.547-22.417h4.916L709.01,257.5Zm64.508-9.2a2.475,2.475,0,0,0-2.644-2.5,3.789,3.789,0,0,0-3.657,2.5Zm-6.761,2.774c-.343,2.1.615,3.239,2.81,3.239a3.628,3.628,0,0,0,2.941-1.337h4.952a9.536,9.536,0,0,1-8.461,5c-4.975,0-8.253-2.726-7.433-7.75.792-4.847,4.7-7.766,9.59-7.766,5.213,0,7.821,3.118,7.009,8.083l-.091.532ZM699.738,248.3a2.477,2.477,0,0,0-2.648-2.5,3.791,3.791,0,0,0-3.656,2.5Zm-6.761,2.774c-.341,2.1.615,3.239,2.812,3.239a3.629,3.629,0,0,0,2.937-1.337h4.954a9.529,9.529,0,0,1-8.462,5c-4.979,0-8.253-2.726-7.431-7.75.793-4.847,4.7-7.766,9.588-7.766,5.216,0,7.825,3.118,7.012,8.083l-.087.532Zm-9.818-10.892-.692,4.01h5.853l-.778,4.447h-5.856l-1.565,8.858h-6.257l3.811-21.895h13.819l-.772,4.581Z"
+                      transform="translate(-673.865 -235.08)"
+                      fill="#000"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+
+            <div class="pt-4">
+              <!-- Section: Social media -->
+              <section class="footer-social-row mb-4">
+                <!-- Facebook -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+
+                <!-- YouTube -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+
+                <!-- Pintrest -->
+                <a class="text-dark" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+          </div>
+          <div class="footer-menus col col-12 col-lg-9 order-1 order-lg-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading bt-none text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-prod-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-prod-list"
+                >
+                  Products
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-prod-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Modular Walls</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Furniture</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Air Quality Management
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Workspace</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Business Machines</li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-wtb-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-wtb-list"
+                >
+                  Where to Buy
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-wtb-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Find a Dealer</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Find a Retailer</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Request a Quote</li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-resources-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-resources-list"
+                >
+                  Resources
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-resources-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Warranty</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">GSA</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      State/Local Contracts
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Typicals</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Projects</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Finishes & Materials
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Spec Sheets</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">3D Models/CAD</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Certifications</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Product Configurator
+                    </li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-support-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-support-list"
+                >
+                  Support
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-support-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Product Registration
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Product Reviews</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Manuals & Downloads
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Authorized Repair Technician
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">FAQs</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Orders & Shipping</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Return Policy</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">
+                      Legal & Privacy Policies
+                    </li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Contact Us</li></a
+                  >
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2">
+                <a
+                  class="footer-menu-heading text-dark"
+                  data-mdb-toggle="collapse"
+                  href="#footer-company-list"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="footer-company-list"
+                >
+                  Our Company
+                </a>
+                <!-- Collapsed content -->
+                <ul
+                  class="footer-list-menu list-group list-group-light list-group-small collapse"
+                  id="footer-company-list"
+                >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Worklife</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Inspiration</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Innovations</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Locations</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Sustainability</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">GIVE</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Careers</li></a
+                  >
+                  <a class="text-dark" href="#!" role="button"
+                    ><li class="list-group-item border-0 fw-semibold px-0">Contact Us</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-fine-print row text-center text-md-start mt-3">
+          <div class="copyright col col-12 col-md-auto mb-2 pe-md-0">
+            Copyright &copy; <span id="copyright-year"></span> Fellowes Brands, All Rights Reserved.
+          </div>
+          <div class="footer-nav col col-12 col-md-auto ps-md-0">
+            <span class="d-none d-md-inline-block ps-md-1">|</span>
+            <a class="text-dark px-1" href="#!" role="button">Terms of Use</a> |
+            <a class="text-dark px-1" href="#!" role="button">Privacy Policy</a> |
+            <a class="text-dark px-1" href="#!" role="button">Cookies Policy</a> |
+            <a class="text-dark px-1" href="#!" role="button">Legal</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Global Footer End -->
 
     <!-- MDB ESSENTIAL -->
     <script type="text/javascript" src="js/mdb-js/mdb.min.js"></script>
