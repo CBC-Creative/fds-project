@@ -1147,33 +1147,3 @@
   }
 }
 /* trendwall css end */
-
-.object-cover {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  width: 100%;
-}
-
-.header-text-block {
-  width: 90%;
-}
-.absolute-center {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.minH-600 {
-  min-height: 600px;
-}
-
-.panel-wrapper {
-  display: flex;
-  max-width: 837px;
-  flex-wrap: nowrap;
-  margin-inline: auto;
-  gap: 5px;
-}
