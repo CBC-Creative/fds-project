@@ -1149,15 +1149,46 @@
         <img src="img/contact-us/header-img.jpg" class="img-fluid w-100 d-none d-md-block" />
         <img src="img/contact-us/header-img-mobile.jpg" class="img-fluid w-100 d-block d-md-none" />
         <div class="header-banner-text mw-100">
-          <h1 class="banner-text__header">CONTACT US</h1>
+          <h1 class="banner-text__header">LET'S GET TO WORK</h1>
         </div>
       </section>
 
       <section class="band py-5">
-        <div class="container py-md-5">
-          <div class="row">
-            <div class="col-md-10 col-xl-7 col-11 mx-auto text-center">
-              <div class="contact-section-title text-black fw-700 mb-md-3">Thank You</div>
+        <div class="container">
+          <div class="row pt-4 pt-md-5">
+            <div class="col-12 col-md-11 mx-auto text-center">
+              <div class="contact-section-title text-black fw-700 pb-5">
+                Help Us Get You <span class="break-word">Where You Need to Go</span>
+              </div>
+              <div class="contact-tabbed-section">
+                <div class="contact-tabLink">
+                  <a href="#" target="_blank">
+                    <img
+                      src="./img/contact-us/Tab-1.png"
+                      alt="Image showing a colleciton of Fellowes Products"
+                    />
+                  </a>
+                </div>
+                <div class="contact-tab" onclick="openCity(event, 'user')">
+                  <img
+                    src="./img/contact-us/Tab-2.png"
+                    alt="A cheerful looking woman at a call center on the phone"
+                  />
+                </div>
+                <div class="contact-tab" onclick="openCity(event, 'dealer')">
+                  <img
+                    src="./img/contact-us/Tab-3.png"
+                    alt="A close-up shot of two people shaking hands"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="scroll-to-section"></div>
+          <div id="user" class="row contact-tab-content pb-4 pb-md-5 pt-5">
+            <div class="col-md-10 col-xl-7 col-12 mx-auto text-center">
+              <div class="contact-section-title text-black fw-700 mb-3">Thank You</div>
               <div class="contact-section-sub-title text-black fw-700 mb-4">
                 For Your Interest in Fellowes Products.
               </div>
@@ -1166,34 +1197,6 @@
                 with you shortly.
               </p>
               <form class="row g-3 text-start pt-5 needs-validation contact-form" novalidate>
-                <div class="col-12">
-                  <div class="form-group">
-                    <div class="form-check form-check-inline px-0">I am a:*</div>
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="Dealer"
-                        value="option1"
-                        required
-                      />
-                      <label class="form-check-label" for="Dealer">Dealer</label>
-                    </div>
-
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="Enduser"
-                        value="option2"
-                        required
-                      />
-                      <label class="form-check-label" for="Enduser">End-User</label>
-                    </div>
-                  </div>
-                </div>
                 <div class="col-12">
                   <div class="form-group">
                     <div class="form-outline">
@@ -1257,6 +1260,16 @@
                 <div class="col-12">
                   <div class="form-group">
                     <div class="form-outline">
+                      <input type="text" class="form-control form-control-lg" id="state" required />
+                      <label for="state" class="form-label">State*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter Valid State.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
                       <input
                         type="number"
                         class="form-control form-control-lg"
@@ -1271,8 +1284,36 @@
                 </div>
                 <div class="col-12">
                   <div class="form-group">
+                    <div class="form-outline">
+                      <input type="text" class="form-control form-control-lg" id="Organization" />
+                      <label for="Organization" class="form-label">Organization</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <select class="select form-control-lg">
+                      <option value="Industry" selected hidden>Industry</option>
+                      <option value="Corporate">Corporate</option>
+                      <option value="Education">Education</option>
+                      <option value="Healthcare">Healthcare</option>
+                      <option value="Retail & Hospitality">Retail & Hospitality</option>
+                      <option value="Government">Government</option>
+                      <option value="Commercial Real Estate">Commercial Real Estate</option>
+                      <option value="Architects/Designers">Architects/Designers</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please Select Valid Option.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
                     <select class="select form-control-lg" id="areaofintrest" required>
-                      <option value="Product Area of Interest*">Product Area of Interest*</option>
+                      <option value="Product Area of Interest*" selected hidden>
+                        Product Area of Interest*
+                      </option>
                       <option value="Air Quality Management">Air Quality Management</option>
                       <option value="Modular Walls">Modular Walls</option>
                       <option value="Furniture">Furniture</option>
@@ -1296,36 +1337,13 @@
                     <div class="invalid-feedback">Please Select Valid Option.</div>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group dealerindustry">
-                    <select class="select form-control-lg" required>
-                      <option value="Industry*">Industry*</option>
-                      <option value="Contract Furniture">Contract Furniture</option>
-                      <option value="Office Products">Office Products</option>
-                      <option value="Industrial/HVAC">Industrial/HVAC</option>
-                      <option value="Janitorial/Sanitation">Janitorial/Sanitation</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                  <div class="form-group enduserindustry">
-                    <select class="select form-control-lg">
-                      <option value="Industry">Industry</option>
-                      <option value="Corporate">Corporate</option>
-                      <option value="Education">Education</option>
-                      <option value="Healthcare">Healthcare</option>
-                      <option value="Retail & Hospitality">Retail & Hospitality</option>
-                      <option value="Government">Government</option>
-                      <option value="Commercial Real Estate">Commercial Real Estate</option>
-                      <option value="Architects/Designers">Architects/Designers</option>
-                    </select>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Please Select Valid Option.</div>
-                  </div>
-                </div>
+
                 <div class="col-12">
                   <div class="form-group">
                     <select class="select form-control-lg" id="showmessagefield">
-                      <option value="How Can We Help You?">How Can We Help You?</option>
+                      <option value="How Can We Help You?" selected hidden>
+                        How Can We Help You?
+                      </option>
                       <option value="Interested in Doing Business with Us">
                         Interested in Doing Business with Us
                       </option>
@@ -1341,12 +1359,195 @@
                     <div class="invalid-feedback">Please Select Valid Option.</div>
                   </div>
                 </div>
+                <div class="col-12 message-field">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="YourMessage"
+                        rows="4"
+                      ></textarea>
+                      <label for="YourMessage" class="form-label">Your Message</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 required-text">* Required fields</div>
+                <div class="col-12 text-center">
+                  <button class="btn btn-primary text-black submit-contact" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="dealer" class="row contact-tab-content pb-4 pb-md-5 pt-5">
+            <div class="col-md-10 col-xl-7 col-12 mx-auto text-center">
+              <div class="contact-section-title text-black fw-700 mb-3">Thank You</div>
+              <div class="contact-section-sub-title text-black fw-700 mb-4">
+                For Your Interest in Fellowes Products.
+              </div>
+              <p class="text-black preg19">
+                Please provide your information below and a Fellowes representative will be in touch
+                with you shortly.
+              </p>
+              <form class="row g-3 text-start pt-5 needs-validation contact-form" novalidate>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="FirstName"
+                        required
+                      />
+                      <label for="FirstName" class="form-label">First Name*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter First Name.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="LastName"
+                        required
+                      />
+                      <label for="LastName" class="form-label">Last Name*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter Last Name.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="EmailAddress"
+                        required
+                      />
+                      <label for="EmailAddress" class="form-label">Email Address*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter Valid Email Address.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <input
+                        type="number"
+                        class="form-control form-control-lg"
+                        id="PhoneNumber"
+                        required
+                      />
+                      <label for="PhoneNumber" class="form-label">Phone Number*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter Valid Phone Number.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <input type="text" class="form-control form-control-lg" id="state" required />
+                      <label for="state" class="form-label">State*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter Valid State.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-outline">
+                      <input
+                        type="number"
+                        class="form-control form-control-lg"
+                        id="ZipCode"
+                        required
+                      />
+                      <label for="ZipCode" class="form-label">Zip Code*</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Please Enter Valid Zip Code.</div>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-12">
                   <div class="form-group">
                     <div class="form-outline">
                       <input type="text" class="form-control form-control-lg" id="Organization" />
                       <label for="Organization" class="form-label">Organization</label>
                     </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <select class="select form-control-lg" required>
+                      <option value="Industry*" selected hidden>Focus Area*</option>
+                      <option value="Contract Furniture">Contract Furniture</option>
+                      <option value="Office Products">Office Products</option>
+                      <option value="Industrial/HVAC">Industrial/HVAC</option>
+                      <option value="Janitorial/Sanitation">Janitorial/Sanitation</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <select class="select form-control-lg" id="areaofintrest" required>
+                      <option value="Product Area of Interest*" selected hidden>
+                        Product Area of Interest*
+                      </option>
+                      <option value="Air Quality Management">Air Quality Management</option>
+                      <option value="Modular Walls">Modular Walls</option>
+                      <option value="Furniture">Furniture</option>
+                      <option value="Workspace">Workspace</option>
+                      <option value="Monitor arms">&nbsp;&nbsp;&nbsp;- Monitor arms</option>
+                      <option value="Lighting">&nbsp;&nbsp;&nbsp;- Lighting</option>
+                      <option value="Power Solutions">&nbsp;&nbsp;&nbsp;- Power Solutions</option>
+                      <option value="Ergonomic Accessories">
+                        &nbsp;&nbsp;&nbsp;- Ergonomic Accessories
+                      </option>
+                      <option value="Workspace Management">
+                        &nbsp;&nbsp;&nbsp;- Workspace Management
+                      </option>
+                      <option value="Business Machines">Business Machines</option>
+                      <option value="Paper Shredders">&nbsp;&nbsp;&nbsp;- Paper Shredders</option>
+                      <option value="Laminating">&nbsp;&nbsp;&nbsp;- Laminating</option>
+                      <option value="Binding">&nbsp;&nbsp;&nbsp;- Binding</option>
+                      <option value="Stapling">&nbsp;&nbsp;&nbsp;- Stapling</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please Select Valid Option.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <select class="select form-control-lg" id="showmessagefield">
+                      <option value="How Can We Help You?" selected hidden>
+                        How Can We Help You?
+                      </option>
+                      <option value="Interested in Doing Business with Us">
+                        Interested in Doing Business with Us
+                      </option>
+                      <option value="Schedule a Showroom Visit">Schedule a Showroom Visit</option>
+                      <option value="Looking for a Sales Representative">
+                        Looking for a Sales Representative
+                      </option>
+                      <option value="Request Design Resources">Request Design Resources</option>
+                      <option value="More Product Information">More Product Information</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please Select Valid Option.</div>
                   </div>
                 </div>
                 <div class="col-12 message-field">

@@ -251,11 +251,15 @@ $(window).on('load', function () {
 
   $('.modal').on('show.bs.modal', function (e) {
     var $vPlay = $(e.delegateTarget).find('video');
-    $vPlay[0].play(); // use [0] because jQuery returns a list
+    if ($vPlay.length == 1) {
+      $vPlay[0].play(); // use [0] because jQuery returns a list
+    }
   });
 
   $('.modal').on('hide.bs.modal', function (e) {
     var $vPause = $(e.delegateTarget).find('video');
-    $vPause[0].pause(); // use [0] because jQuery returns a list
+    if ($vPause.length == 1) {
+      $vPause[0].pause(); // use [0] because jQuery returns a list
+    }
   });
 });
