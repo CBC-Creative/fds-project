@@ -40,6 +40,7 @@
   #main-navbar.top-scrolled-up:hover {
     background: var(--fds-white);
   }
+
   .opensearch {
     background: var(--fds-white);
   }
@@ -64,6 +65,26 @@
   .top-scrolled-up.navbar-expand-xl .navbar-nav .nav-link,
   .top-scrolled-up.navbar-expand-xl .navbar-nav .menu-link {
     color: var(--fds-white);
+  }
+
+  .top-scrolled-up .questionBlack,
+  .scrolled-up .questionWhite,
+  .scrolled-down .questionBlack {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0 !important;
+    z-index: 1000;
+  }
+
+  .scrolled-up .questionBlack,
+  .top-scrolled-up .questionWhite,
+  #main-navbar.top-scrolled-up:hover .questionBlack {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 1 !important;
+    z-index: 1000;
   }
 
   .navbar:hover .navbar-nav .nav-link,
@@ -142,6 +163,10 @@
 @media (max-width: 1199.98px) {
   .navbar .stroke-svg svg {
     stroke: var(--fds-black);
+  }
+
+  .questionWhite {
+    display: none;
   }
 }
 /* Homepage Navigation Styles end */

@@ -17,6 +17,21 @@
   transition: all 0.5s ease-in-out;
 }
 
+.navbar .userSVG svg {
+  fill: var(--fds-white);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.questionBlack {
+  opacity: 0 !important;
+}
+
+.questionWhite {
+  opacity: 1 !important;
+}
+
 .navbar .right-nav li:last-child .nav-link {
   color: var(--fds-white);
 }
