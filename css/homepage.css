@@ -69,6 +69,7 @@
 
   .top-scrolled-up .questionBlack,
   .scrolled-up .questionWhite,
+  #main-navbar.top-scrolled-up:hover .questionWhite,
   .scrolled-down .questionBlack {
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
