@@ -252,3 +252,24 @@ main[data-results-loading='false'] .table-data-loading {
   text-align: center;
   font-weight: 600;
 }
+
+.select-dropdown-container .input-group {
+  isolation: isolate;
+}
+
+.select-dropdown-container .input-group::after {
+  font: var(--fa-font-solid);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: '\f00d';
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}

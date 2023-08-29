@@ -233,6 +233,53 @@
   text-decoration: underline;
 }
 
+.kit-icon-wrapper {
+  position: relative;
+  height: 1rem;
+  isolation: isolate;
+}
+
+.kit-plus-icon,
+.kit-minus-icon {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  max-height: 0px !important;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.125rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.parent-kit.kit-expanded .kit-minus-icon {
+  opacity: 1;
+  max-height: 1000px !important;
+  z-index: 1;
+}
+
+.parent-kit.kit-collapsed .kit-plus-icon {
+  opacity: 1;
+  max-height: 1000px !important;
+  z-index: 0;
+}
+
+.lint-item-table.kit-hidden td {
+  padding: 0px !important;
+}
+
+.line-item-wrapper {
+  transition: all 0.5s ease-in-out;
+}
+
+.lint-item-table.kit-hidden {
+  border-bottom: none;
+}
+
+.kit-hidden .line-item-wrapper {
+  opacity: 0;
+  max-height: 0px !important;
+}
+
 @media print {
   header,
   .bodynavfixedtop,
