@@ -676,3 +676,118 @@ ul#ex1 {
   --mdb-spinner-height: 0.6rem;
   margin-right: 0.5rem;
 }
+
+.sg-header {
+  background-color: var(--fds-grey-200);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem;
+}
+
+.sg-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sg-actions {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.sg-download-all {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sg-yellow-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.sg-yellow-link::after {
+  content: '';
+  height: 2px;
+  background-color: var(--fds-yellow);
+  width: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sg-yellow-link:hover::after {
+  width: 40px;
+}
+
+.sg-content {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--fds-grey-400);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sg-content-item {
+  max-width: 180px;
+  flex-grow: 1;
+  flex-basis: 45%;
+}
+
+.sg-content-img {
+  border: 5px solid var(--fds-tan);
+}
+
+.sg-content-img img {
+  width: 100%;
+}
+
+.sg-content-details {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+  padding: 0.25rem;
+}
+
+.sg-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sg-info .dl-icon {
+  cursor: pointer;
+}
+
+.support-grouping {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 344px) {
+  .sg-content {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .sg-title {
+    font-size: 20px;
+  }
+
+  .sg-actions {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sg-content {
+    flex-wrap: nowrap;
+  }
+}
