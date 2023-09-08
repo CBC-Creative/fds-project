@@ -457,6 +457,10 @@ a.two-col-section__link::after {
 
 /* Helper Classes */
 
+.table-responsive {
+  overflow-x: visible;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
