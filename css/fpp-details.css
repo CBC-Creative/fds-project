@@ -293,7 +293,7 @@
   }
 }
 
-.list-view-unselected .list-toggle-icon:before {
+.list-toggle .list-toggle-icon:before {
   border-radius: 50%;
   background: var(--fds-white);
   height: 35px;
@@ -308,6 +308,6 @@
   cursor: pointer;
 }
 
-.list-view-unselected.active .list-toggle-icon:before {
+.list-toggle.active .list-toggle-icon:before {
   background: var(--fds-tan);
 }
