@@ -292,3 +292,22 @@
     display: none !important;
   }
 }
+
+.list-view-unselected .list-toggle-icon:before {
+  border-radius: 50%;
+  background: var(--fds-white);
+  height: 35px;
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list-view-unselected.active .list-toggle-icon:before {
+  background: var(--fds-tan);
+}
