@@ -1,0 +1,533 @@
+.fds-company-dark-grey-bg {
+  background-color: #555555;
+}
+
+.fds-company-green-bg {
+  background-color: #7a861c;
+}
+
+.text-fds-green {
+  color: var(--fds-green);
+}
+
+.h-800 {
+  min-height: 600px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.mw-700 {
+  max-width: 700px;
+}
+
+.mw-635 {
+  max-width: 635px;
+  margin-inline: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.company-banner .banner-text__header {
+  font-size: 20px;
+}
+
+.company-banner img {
+  height: 500px;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.quote-section,
+.quote-citation {
+  max-width: 1000px;
+  margin-inline: auto;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.quote-citation {
+  font-weight: 600;
+}
+
+.john-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  max-height: 540px;
+}
+
+.john-section-text {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  right: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.john-title {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.john-quote-mark {
+  max-width: 20px;
+  position: absolute;
+}
+
+.left-quote-mark {
+  top: 1.5rem;
+  left: 0.5rem;
+}
+
+.right-quote-mark {
+  right: 0.5rem;
+  bottom: 4rem;
+}
+
+h2.section-heading {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 47px;
+  margin-bottom: 1.5rem;
+}
+
+p.section-body {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.where-going-text {
+  position: absolute;
+  inset: 0;
+}
+
+.green-section-btn {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem;
+  border-radius: 500px;
+  margin-top: 2rem;
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.tab-box {
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: var(--fds-tan);
+}
+
+.sas-tab-navs {
+  position: relative;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.tab-dropdown {
+  margin: 0;
+  padding: 10px 24px 10px 24px;
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50px;
+}
+
+.safeairstoriestabbox i.fa-chevron-down {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  right: 20px;
+  pointer-events: none;
+}
+.safeairstoriestabbox .nav-pills .nav-link {
+  background: none;
+  display: block;
+  border-radius: 0;
+  font-size: var(--fds-fs-400);
+  line-height: var(--fds-fs-725);
+  color: var(--fds-black);
+  text-transform: none;
+  margin: 0;
+  padding: 0.25rem 1.5rem;
+  margin-block: 0.25rem;
+  text-align: Left;
+}
+
+.safeairstoriestabbox .nav-pills .nav-link::after {
+  display: none !important;
+}
+
+.safeairstoriestabbox .nav-pills .nav-link:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+}
+
+.safeairstoriestabbox .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #fff;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.safeairstoriestabbox .tab-img img {
+  min-height: 225px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.tab-logo-box {
+  background: var(--fds-white);
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.tabs-side-title {
+  color: #707070;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+}
+
+.tabs-side-desc {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  margin-block: 1.5rem;
+}
+
+.sustain-tab-text {
+  font-weight: 14;
+  line-height: 20px;
+}
+
+#pinContainer {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  z-index: 1100;
+}
+#slideContainer {
+  width: 100%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0.15;
+}
+.measured-progress-section.panel {
+  opacity: 1;
+}
+
+.panel .panel-img {
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.panel-title {
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.panel-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+.panel-icon img {
+  max-width: 50px;
+}
+
+.panel-stat {
+  font-size: 110px;
+  line-height: 115px;
+  font-weight: 800;
+}
+
+.panel-desc {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.panel-content-wrapper {
+  max-width: 715px;
+}
+
+.learn-more-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.built-better-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #707070;
+}
+
+.built-better-desc {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.built-better-logos {
+  max-width: 256px;
+  margin-inline: auto;
+}
+
+.built-better-btn {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .tab-box .nav-pills {
+    display: none;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  .tab-box .nav-pills.showpills {
+    display: block;
+  }
+  .safeairstoriestabbox .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: transparent;
+    display: none;
+  }
+}
+
+@media (min-width: 300px) {
+  .company-banner .banner-text__header {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 576px) {
+  .john-img {
+    max-height: 610px;
+  }
+}
+
+@media (min-width: 768px) {
+  .h-800 {
+    height: 800px;
+  }
+
+  .company-banner img {
+    height: 700px;
+  }
+
+  .company-banner .banner-text__header {
+    font-size: 46px;
+  }
+
+  .quote-section,
+  .quote-citation {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  .john-img {
+    right: 2rem;
+    max-width: 65vw;
+    max-height: 700px;
+  }
+
+  .john-section-text {
+    font-size: 19px;
+    line-height: 32px;
+    max-width: 55vw;
+    padding: 3rem;
+  }
+  .left-quote-mark {
+    top: 2.5rem;
+    left: 1.5rem;
+  }
+
+  .right-quote-mark {
+    right: 2.5rem;
+    bottom: 5.5rem;
+  }
+
+  h2.section-heading {
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  p.section-body {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .green-section-btn {
+    font-size: 13px;
+    padding: 0.75rem 3rem;
+  }
+
+  .tab-box {
+    padding: 3rem 2rem;
+  }
+
+  .safeairstoriestabbox h2 {
+    font-size: var(--fds-fs-850);
+  }
+
+  .panel-title {
+    text-align: right;
+    right: 2rem;
+  }
+
+  .panel-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .panel-icon img {
+    max-width: 65px;
+  }
+
+  .panel-stat {
+    font-size: 130px;
+    line-height: 138px;
+  }
+
+  .panel-desc {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .learn-more-title {
+    font-size: 45px;
+    line-height: 53px;
+    max-width: 941px;
+    margin-inline: auto;
+  }
+
+  .built-better-title {
+    font-size: 45px;
+    line-height: 53px;
+    text-align: left;
+  }
+
+  .built-better-desc {
+    font-size: 19px;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  .built-better-logos {
+    max-width: 360px;
+  }
+
+  .built-better-btn {
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .john-img {
+    max-width: 45vw;
+    max-height: 700px;
+  }
+
+  .john-section-text {
+    max-width: 100%;
+    right: 350px;
+    padding: 5rem;
+  }
+  .left-quote-mark {
+    top: 4.5rem;
+    left: 3.5rem;
+  }
+
+  .right-quote-mark {
+    right: 3.5rem;
+    bottom: 7.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tab-box {
+    padding: 6rem 4rem;
+  }
+
+  .safeairstoriestabbox i.fa-chevron-down {
+    display: none;
+  }
+
+  .tab-img {
+    padding: 0;
+  }
+
+  .tab-img img {
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .tabs-side-title {
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  .tabs-side-desc {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .sustain-tab-text {
+    font-weight: 19;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .john-quote {
+    max-width: 90%;
+  }
+}
