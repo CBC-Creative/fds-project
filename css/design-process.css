@@ -1,3 +1,7 @@
+.maxh-600 {
+  max-height: 600px;
+}
+
 .ceo-text {
   position: absolute;
   top: 50%;
@@ -39,7 +43,7 @@
   right: 0;
 }
 .human-mobile-img {
-  height: 650px;
+  height: 600px;
   -o-object-fit: cover;
   object-fit: cover;
 }
