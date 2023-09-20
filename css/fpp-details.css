@@ -311,3 +311,44 @@
 .list-toggle.active .list-toggle-icon:before {
   background: var(--fds-tan);
 }
+
+.multi-shipment {
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--fds-tan);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.shipment-icon {
+  border: 1px solid;
+  border-radius: 500px;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  line-height: 1px;
+}
+
+.shipment-icon.fa-check {
+  color: green;
+}
+
+.shipment-icon.fa-minus {
+  color: grey;
+}
+
+[data-shipment-sent='true'] .fa-minus {
+  display: none;
+}
+
+[data-shipment-sent='false'] .fa-check {
+  display: none;
+}
+
+[data-multi-part-shipment='true'] .multi-shipment {
+  display: flex;
+}

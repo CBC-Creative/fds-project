@@ -1355,7 +1355,7 @@
                                       class="table line-table-sub text-black lint-item-table-main tr-border-bottom"
                                     >
                                       <tbody>
-                                        <tr class="lint-item-table parent-kit kit-collapsed">
+                                        <tr class="lint-item-table parent-kit kit-expanded">
                                           <td>
                                             <div class="line-item-wrapper">
                                               <div class="line-item-mobile-header">Line #</div>
@@ -1474,7 +1474,10 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr class="lint-item-table kit-hidden">
+                                        <tr
+                                          class="lint-item-table"
+                                          data-multi-part-shipment="false"
+                                        >
                                           <td>
                                             <div class="line-item-wrapper">
                                               <div class="line-item-mobile-header">Line #</div>
@@ -1520,6 +1523,17 @@
                                                 <div class="desc-track">
                                                   <strong>Tracking Number: </strong
                                                   >1Z43982098249824627
+                                                </div>
+                                                <div
+                                                  class="multi-shipment"
+                                                  data-shipment-sent="true"
+                                                >
+                                                  <i class="fa-solid fa-check shipment-icon"></i>
+                                                  <i class="fa-solid fa-minus shipment-icon"></i>
+                                                  <div class="shipment-text">
+                                                    Shipment <span class="shipment-num">1</span> of
+                                                    <span class="shipment-total-num">3</span>
+                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
