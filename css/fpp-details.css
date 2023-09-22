@@ -323,29 +323,17 @@
 }
 
 .shipment-icon {
-  border: 1px solid;
-  border-radius: 500px;
-  display: flex;
-  width: 15px;
-  height: 15px;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  width: 20px;
+  height: 20px;
   line-height: 1px;
 }
 
-.shipment-icon.fa-check {
-  color: green;
-}
-
-.shipment-icon.fa-minus {
-  color: grey;
-}
-
-[data-shipment-sent='true'] .fa-minus {
+[data-shipment-sent='true'] .custom-clock {
   display: none;
 }
 
-[data-shipment-sent='false'] .fa-check {
+[data-shipment-sent='false'] .custom-check {
   display: none;
 }
 
