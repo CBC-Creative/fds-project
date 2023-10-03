@@ -13,6 +13,12 @@
   line-height: 26px;
 }
 
+.mid-page-title {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
 .challenges-row {
   display: grid;
   gap: 2rem;
@@ -42,10 +48,11 @@
 }
 
 .challenges-sm-txt {
-  font-size: 12px;
+  font-size: 10px;
   color: #7b7b7b;
   font-weight: 300;
-  padding-left: 1rem;
+  padding-left: 1rem !important;
+  text-align: left;
 }
 
 .challenges-sm-txt a {
@@ -198,6 +205,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
   row-gap: 2rem;
+  align-items: baseline;
 }
 
 .benefit-icon {
@@ -261,6 +269,12 @@
 }
 
 @media (min-width: 768px) {
+  .mid-page-title {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+
   .benefit-icon-row {
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2rem;
