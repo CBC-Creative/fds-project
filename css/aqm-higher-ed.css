@@ -76,6 +76,7 @@
 }
 
 .p-s-img {
+  height: 100%;
   min-height: 450px;
   object-fit: cover;
 }
