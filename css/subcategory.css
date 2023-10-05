@@ -355,7 +355,8 @@
 
 .filters .color-text {
   font-size: var(--fds-fs-200);
-  height: var(--fds-fs-325);
+  /* height: var(--fds-fs-325); */
+  line-height: 0.75rem;
 }
 
 .filters .form-check-input {
@@ -363,6 +364,10 @@
   height: var(--fds-fs-325);
   border: 1px solid var(--fds-grey-700);
   aspect-ratio: 1 /1;
+}
+
+.form-check.color-filter {
+  margin-bottom: 0.2rem;
 }
 
 .filter-clr-picker-label {
@@ -504,4 +509,51 @@
 
 .desc-list ul {
   padding-left: 0;
+}
+
+/* Custom Colors */
+
+.bg-silver {
+  background-color: #cccccc !important;
+}
+
+.bg-swatch {
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-azure-azurelight {
+  background-image: url('../img/subcat-imgs/Swatches/In-Trend/Azure-and-Azure-Light.jpg');
+}
+
+.bg-sage-silver {
+  background-image: url('../img/subcat-imgs/Swatches/In-Trend/Sage-and-Bright-Silver.jpg');
+}
+
+.bg-slate-slate {
+  background-image: url('../img/subcat-imgs/Swatches/In-Trend/Slate-and-Slate-Light.jpg');
+}
+
+.bg-stardust-silver {
+  background-image: url('../img/subcat-imgs/Swatches/In-Trend/Stardust-and-Bright-Silver.jpg');
+}
+
+.bg-black-bronze {
+  background-image: url('../img/subcat-imgs/Swatches/Premium/Black-Matte-and-Bronze.jpg');
+}
+
+.bg-white-aluminum {
+  background-image: url('../img/subcat-imgs/Swatches/Premium/Designer-White-and-Polished-Aluminum.jpg');
+}
+
+.bg-black-black {
+  background-image: url('../img/subcat-imgs/Swatches/Standard/Black-Matte-and-Black-High-Gloss.jpg');
+}
+
+.bg-white-platinum {
+  background-image: url('../img/subcat-imgs/Swatches/Standard/Designer-White-and-Platinum.jpg');
+}
+
+.bg-platinum-silver {
+  background-image: url('../img/subcat-imgs/Swatches/Standard/Platinum-and-Dark-Silver.jpg');
 }
