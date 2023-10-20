@@ -1413,12 +1413,12 @@ a.two-col-section__link::after {
 }
 
 .btn-primary {
-  background: var(--fds-grey-200);
-  color: #58595b;
+  background: #719bd5;
+  color: #fff !important;
   font-size: var(--fds-fs-500);
   border-radius: 50px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: 0 4px 9px -4px #3b71ca61;
+  box-shadow: 0 4px 9px -4px #3b71ca61;
 }
 
 .btn-primary:first-child:hover,
@@ -1426,10 +1426,23 @@ a.two-col-section__link::after {
 .btn-primary:hover,
 .btn-primary:focus,
 :not(.btn-check) + .btn-primary:hover {
-  background: #e3e3e3;
-  color: #58595b;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background: #4c89d9;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 9px -4px #3b71ca61;
+  box-shadow: 0 4px 9px -4px #3b71ca61;
+}
+
+/* Disabled Button Fixes */
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  box-shadow: 0 4px 9px -4px #3b71ca61;
+  color: #838f9f !important;
+  pointer-events: none;
+  background-color: #e2e8f4;
+  border-color: #e2e8f4;
+  opacity: 1;
 }
 
 .search-list {
