@@ -23,6 +23,12 @@
     <link rel="stylesheet" href="css/mdb-css/mdb.min.css" />
     <!-- MDB PLUGINS -->
     <link rel="stylesheet" href="css/mdb-css/plugins/css/all.min.css" />
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <!-- Global Styles -->
     <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="css/design-center.css" />
@@ -33,7 +39,11 @@
 
     <header role="banner">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-xl navbar-light shadow-0" id="main-navbar" role="navigation">
+      <nav
+        class="navbar navbar-expand-xl navbar-light shadow-0 top-scrolled-up"
+        id="main-navbar"
+        role="navigation"
+      >
         <!-- Container wrapper -->
         <div class="container-fluid py-0 px-4">
           <!-- Navbar brand -->
@@ -55,7 +65,7 @@
                     data-name="Path 1"
                     d="M947,288.7a1.079,1.079,0,1,1,.315-.764A1.03,1.03,0,0,1,947,288.7Zm-1.368-1.378a.881.881,0,0,0,.006,1.243.87.87,0,0,0,1.238,0,.861.861,0,0,0,.257-.627.874.874,0,0,0-1.5-.614Zm.157,1.207v-1.181c.074,0,.183,0,.328,0h.24a.5.5,0,0,1,.238.057.3.3,0,0,1,.154.282.255.255,0,0,1-.084.216.4.4,0,0,1-.206.077.439.439,0,0,1,.174.07.318.318,0,0,1,.106.266v.1c0,.011,0,.025,0,.03a.072.072,0,0,0,.007.042l.006.033h-.3a.724.724,0,0,1-.016-.162.99.99,0,0,0-.019-.145.161.161,0,0,0-.09-.089.455.455,0,0,0-.1-.019l-.075,0h-.06v.42Zm.559-.956a.6.6,0,0,0-.18-.02h-.073v.344h.119a.275.275,0,0,0,.171-.045.154.154,0,0,0,.06-.14A.142.142,0,0,0,946.348,287.571Z"
                     transform="translate(-834.736 -265.784)"
-                    fill="#000"
+                    fill=""
                   />
                   <path
                     id="Path_2"
@@ -173,11 +183,11 @@
           <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left links -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="left-nav navbar-nav mx-auto mb-2 mb-lg-0">
               <!-- Dropdown -->
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link first-nav-link dropdown-toggle"
                   href="./megacat-walls.html"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -188,24 +198,38 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Modular Walls
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Products</a>
+                    <a class="dropdown-item d-xl-none" href="./megacat-walls.html"
+                      >Explore Modular Walls</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Products</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <!-- <li><a class="sub-dropdown-item" href="#">Titan</a></li> -->
-                      <li><a class="sub-dropdown-item" href="#">Volo</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Trendwall</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Products</a
+                        >
+                      </li>
+                      <!-- <li><a class="sub-dropdown-item" href="https://www.google.com/">Titan</a></li> -->
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Volo</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Trendwall</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Process</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Process</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Inspiration</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Inspiration</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Resources</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Resources</a>
                   </li>
                 </ul>
               </li>
@@ -222,77 +246,185 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Furniture
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Workstations</a>
-                    <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Panel Systems</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Desking</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Benching</a></li>
-                    </ul>
+                    <a class="dropdown-item d-xl-none" href="./megacat-furniture.html"
+                      >Explore Furniture</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Seating</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Workstations</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Elea</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Tables</a>
-                    <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Training Tables</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Conference Room Tables</a></li>
                       <li>
-                        <a class="sub-dropdown-item" href="#">Collaborative and Side Tables</a>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Workstations</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Panel Systems</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Desking</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Benching</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Height Adjustable Tables</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/">Seating</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Complete Tables</a></li>
                       <li>
-                        <a class="sub-dropdown-item" href="#">Bases Only</a>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Seating</a
+                        >
                       </li>
-                      <li><a class="sub-dropdown-item" href="#">Worksurfaces Only</a></li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Elea</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Table Enhancements</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/">Tables</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Organization</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Privacy & Modesty Screens</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Wire Management</a></li>
-                      <li><a class="sub-dropdown-item" href="#">CPU Holders & Carts</a></li>
                       <li>
-                        <a class="sub-dropdown-item" href="#">Supply & Technology Storage</a>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Tables</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Training Tables</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Conference Room Tables</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Collaborative and Side Tables</a
+                        >
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Storage</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Height Adjustable Tables</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Lateral & Pedestals</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Bookcases & Credenzas</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Lockers & Towers</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Height Adjustable Tables</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Complete Tables</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Bases Only</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Worksurfaces Only</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Collections</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Table Enhancements</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Intrinsic</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Trig</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Capture</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Choices</a></li>
-                      <!-- <li><a class="sub-dropdown-item" href="#">Rising</a></li> -->
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Table Enhancements</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Organization</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Privacy & Modesty Screens</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Wire Management</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >CPU Holders & Carts</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Supply & Technology Storage</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/">Storage</a>
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Storage</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Lateral & Pedestals</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Bookcases & Credenzas</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Lockers & Towers</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Collections</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Collections</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Intrinsic</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Trig</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Capture</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Choices</a>
+                      </li>
+                      <!-- <li><a class="sub-dropdown-item" href="https://www.google.com/">Rising</a></li> -->
                     </ul>
                   </li>
                   <!-- <li>
-                    <a class="dropdown-item" href="#">Inspiriation</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Inspiriation</a>
                   </li> -->
                   <li>
-                    <a class="dropdown-item" href="#">Resources</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Resources</a>
                   </li>
                 </ul>
               </li>
@@ -309,10 +441,15 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Air Quality Management
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#"
+                    <a class="dropdown-item d-xl-none" href="./megacat-aqm.html"
+                      >Explore Air Quality Management</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
                       >Array Networked Air Purifiers & Monitoring</a
                     >
                     <ul class="sub-dropdown-menu">
@@ -320,52 +457,125 @@
                         <li class="sub-dropdown-menu-title pe-xl-4 mb-3 mb-xl-4">
                           Networked Air Purifiers
                           <ul class="inner-list">
-                            <li><a class="sub-dropdown-item" href="#">Ceiling Mounted</a></li>
-                            <li><a class="sub-dropdown-item" href="#">Recessed</a></li>
-                            <li><a class="sub-dropdown-item" href="#">Wall & Stand </a></li>
+                            <li>
+                              <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                                >Explore Networked Air Purifiers</a
+                              >
+                            </li>
+                            <li>
+                              <a class="sub-dropdown-item" href="https://www.google.com/"
+                                >Ceiling Mounted</a
+                              >
+                            </li>
+                            <li>
+                              <a class="sub-dropdown-item" href="https://www.google.com/"
+                                >Recessed</a
+                              >
+                            </li>
+                            <li>
+                              <a class="sub-dropdown-item" href="https://www.google.com/"
+                                >Wall & Stand
+                              </a>
+                            </li>
                           </ul>
                         </li>
                         <li class="sub-dropdown-menu-title mb-3 mb-xl-4">
                           Monitoring
                           <ul class="inner-list">
-                            <li><a class="sub-dropdown-item" href="#">Display</a></li>
-                            <li><a class="sub-dropdown-item" href="#">Sensors</a></li>
-                            <li><a class="sub-dropdown-item" href="#">Software</a></li>
+                            <li>
+                              <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                                >Explore Monitoring</a
+                              >
+                            </li>
+                            <li>
+                              <a class="sub-dropdown-item" href="https://www.google.com/"
+                                >Display</a
+                              >
+                            </li>
+                            <li>
+                              <a class="sub-dropdown-item" href="https://www.google.com/"
+                                >Sensors</a
+                              >
+                            </li>
+                            <li>
+                              <a class="sub-dropdown-item" href="https://www.google.com/"
+                                >Software</a
+                              >
+                            </li>
                           </ul>
                         </li>
                       </div>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">AeraMax Air Purifiers</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >AeraMax Air Purifiers</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore AeraMax Air Purifiers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Commercial</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Small Office</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Filters & Accessories</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Filters & Accessories</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Networked</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Filters & Accessories</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Networked</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Commercial</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Small Office</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Services</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Services</a>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Technology</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Technology</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">How ARRAY Works</a></li>
-                      <li><a class="sub-dropdown-item" href="#">How AeraMax Pro Works</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Technology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >How ARRAY Works</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >How AeraMax Pro Works</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Industries</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Industries</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Resources</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Resources</a>
                   </li>
                 </ul>
               </li>
@@ -382,67 +592,169 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Workspace
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Monitor Arms</a>
-                    <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Rising</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Evolve</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Edge</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Sena</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Eppa</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Kata</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Accessories</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Organization</a></li>
-                    </ul>
+                    <a class="dropdown-item d-xl-none" href="./megacat-workspace.html"
+                      >Explore Workspace</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Power Solutions</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Monitor Arms</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Railway</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Flexcharge Power Hub</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Flexcharge Desktop Power</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Lighting</a>
-                    <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Amble</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Lustre</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Lily</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Lucera</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Ergonomic Accessories</a>
-                    <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Sit to Stand</a></li>
                       <li>
-                        <a class="sub-dropdown-item" href="#">Height Adjustable Tables</a>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Monitor Arms</a
+                        >
                       </li>
-                      <li><a class="sub-dropdown-item" href="#">Laptop Holders & Risers </a></li>
-                      <li><a class="sub-dropdown-item" href="#">Foot Support</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Anti-fatigue Mats</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Rising</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Evolve</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Edge</a></li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Sena</a></li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Eppa</a></li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Kata</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Accessories</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Organization</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Work From Home</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Power Solutions</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Monitor Arms</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Monitor & Laptop Stands</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Foot & Back Supports</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Keyboard Managers</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Wrist Supports</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Document Holders</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Power Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Railway</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Flexcharge Power Hub</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Flexcharge Desktop Power</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Lighting</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Lighting</a
+                        >
+                      </li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Amble</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Lustre</a>
+                      </li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">Lily</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Lucera</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Ergonomic Accessories</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Ergonomic Accessories</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Sit to Stand</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Height Adjustable Tables</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Laptop Holders & Risers
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Foot Support</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Keyboard Managers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Anti-fatigue Mats</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Work From Home</a
+                    >
+                    <ul class="sub-dropdown-menu">
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Work From Home</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Monitor Arms</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Monitor & Laptop Stands</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Foot & Back Supports</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Keyboard Managers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Wrist Supports</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Document Holders</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <!-- <li>
-                    <a class="dropdown-item" href="#">Inspiration</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Inspiration</a>
                   </li> -->
                   <li>
-                    <a class="dropdown-item" href="#">Resources</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Resources</a>
                   </li>
                 </ul>
               </li>
@@ -459,59 +771,135 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Business Machines
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Paper Shredders</a>
+                    <a class="dropdown-item d-xl-none" href="./megacat-bm.html"
+                      >Explore Business Machines</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Paper Shredders</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Commercial</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Personal</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Government</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Paper Shredders</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Commercial</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Small Office</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Personal</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Government</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Supplies</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Laminating</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Laminating</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Office</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Personal</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Laminating</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Office</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Small Office</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Personal</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Supplies</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Binding</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/">Binding</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Office</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Small Office</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Supplies</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Binding</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Office</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Small Office</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Supplies</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Stapling</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Stapling</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Classic</a></li>
-                      <li><a class="sub-dropdown-item" href="#">EasyPress</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Handheld Plier</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Removers & Supplies</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Stapling</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Classic</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">EasyPress</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Handheld Plier</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Removers & Supplies</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Collections</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Collections</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">LX Series</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Collections</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">LX Series</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Resources</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Resources</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item dropdown company-dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
+                  class="nav-link last-nav-link dropdown-toggle"
+                  href="https://www.google.com/"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-mdb-toggle="dropdown"
@@ -521,46 +909,123 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Our Company
+                    <i class="fas fa-angle-left"></i> Back
                   </div>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Overview</a>
+                    <a class="dropdown-item d-xl-none" href="https://www.google.com/"
+                      >Explore Our Company</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Overview</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Global Leadership</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Family Heritage</a></li>
-                      <li><a class="sub-dropdown-item" href="#">People</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Awards & Recognition</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Newsroom</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Contact Us</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Overview</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Global Leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Family Heritage</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">People</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Awards & Recognition</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Newsroom</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Contact Us</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Product & Design</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Product & Design</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Team & Process</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Innovations</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Inspirations</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Product & Design</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Team & Process</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Innovations</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Inspirations</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Purpose</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/">Purpose</a>
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Culture & Values</a></li>
-                      <li><a class="sub-dropdown-item" href="#">GIVE™</a></li>
-                      <li><a class="sub-dropdown-item" href="#">EARTH™</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Purpose</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Culture & Values</a
+                        >
+                      </li>
+                      <li><a class="sub-dropdown-item" href="https://www.google.com/">GIVE™</a></li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">EARTH™</a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item sub-dropdown" href="#">Locations</a>
+                    <a class="dropdown-item sub-dropdown" href="https://www.google.com/"
+                      >Locations</a
+                    >
                     <ul class="sub-dropdown-menu">
-                      <li><a class="sub-dropdown-item" href="#">Design & Experience Center</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Showrooms</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Corporate Offices</a></li>
-                      <li><a class="sub-dropdown-item" href="#">Manufacturing</a></li>
+                      <li>
+                        <a class="sub-dropdown-item d-xl-none" href="https://www.google.com/"
+                          >Explore Locations</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Design & Experience Center</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/">Showrooms</a>
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Corporate Offices</a
+                        >
+                      </li>
+                      <li>
+                        <a class="sub-dropdown-item" href="https://www.google.com/"
+                          >Manufacturing</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Careers</a>
+                    <a class="dropdown-item" href="https://www.google.com/">Careers</a>
                   </li>
                 </ul>
               </li>
@@ -576,29 +1041,23 @@
               <!-- Icon -->
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle stroke-svg"
+                  class="serviceMarkLink nav-link dropdown-toggle stroke-svg"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-mdb-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17.359"
-                    height="15.711"
-                    viewBox="0 0 17.359 15.711"
-                  >
-                    <path
-                      id="Path_1724"
-                      data-name="Path 1724"
-                      d="M3.014,6.627h15a.879.879,0,0,1,.822.923v9.482a.881.881,0,0,1-.823.925H9.874a.319.319,0,0,0-.241.112h0L7,21.027a.432.432,0,0,1-.745-.346V18.831a.831.831,0,0,0-.779-.875H3.451a.881.881,0,0,1-.823-.925V7.061a.415.415,0,0,1,.387-.434Z"
-                      transform="translate(-2.053 -6.052)"
-                      fill="none"
-                      stroke-miterlimit="10"
-                      stroke-width="1.15"
-                    />
-                  </svg>
+                  <img
+                    class="serviceMark questionBlack"
+                    src="./img/ServiceMark.svg"
+                    alt="question mark icon"
+                  />
+                  <img
+                    class="serviceMark questionWhite"
+                    src="./img/ServiceMarkWhite.svg"
+                    alt="question mark icon"
+                  />
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="mobile-back-btn d-xl-none">
@@ -608,16 +1067,13 @@
                     <a class="dropdown-item" href="#">Customer Service Support</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Find a Dealer</a>
+                    <a class="dropdown-item" href="#">Product Registration</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Find a Retailer</a>
+                    <a class="dropdown-item" href="#">Manuals & Downloads</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Get a Quote</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Schedule a Visit</a>
+                    <a class="dropdown-item" href="#">FAQs</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Subscribe</a>
@@ -1042,6 +1498,226 @@
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
+      <!-- Desktop Header Section -->
+      <section
+        class="desktop-header-section bg-tan text-white d-none d-md-block overflow-hidden position-relative mb-1"
+      >
+        <video
+          class="video-intro object-cover d-block maxh-700"
+          poster="./img/company-design-center/header-video-poster.jpg"
+          playsinline
+          autoplay
+          muted
+          loop
+        >
+          <source src="./img/company-design-center/Fulton.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!-- Mobile Header Section -->
+      <a
+        href="javascript:;"
+        class="d-block d-md-none"
+        data-mdb-toggle="modal"
+        data-mdb-target="#mobileVideoPopup"
+      >
+        <section
+          class="mobile-header-section bg-dark text-white position-relative overflow-hidden mb-1"
+        >
+          <img
+            src="./img/company-design-center/play-btn.svg"
+            alt="A play button icon"
+            class="position-absolute absolute-center"
+          />
+          <img
+            src="./img/company-design-center/header-video-mobile.jpg"
+            alt="Still shot of people discussing fabrics at a desk"
+            class="w-100 object-cover minH-600"
+          />
+        </section>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="mobileVideoPopup"
+          tabindex="-1"
+          aria-labelledby="mobileVideoPopupLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content rounded-0 position-relative">
+              <div
+                class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+              >
+                <button
+                  type="button"
+                  class="btn-close m-0 p-0"
+                  data-mdb-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 m-0 bg-black">
+                <video width="100%" controls>
+                  <source src="./img/company-design-center/Fulton.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- First Text Section -->
+
+      <section class="text-center py-5 px-4">
+        <div class="container mw-1000 py-md-4">
+          <h2 class="page-title mb-4 fw-300">Fellowes Design & Experience Center</h2>
+          <p class="preg19 fw-300">
+            Set in Chicago's iconic Fulton Market neighborhood, the Fellowes Design & Experience
+            Center is an immersive exploration of design, technology, and function. Part product
+            showcase, part product lab, part collaborative space. We invite you to come and be a
+            part of the experience
+          </p>
+          <p class="preg19 fw-300">
+            We are proud to share that our 12,000 sf Center is WELL v2 Gold pre-Certified. Our
+            commitment to providing healthy work environments is not just through the products we
+            sell, but for our employees and guests well-being.
+          </p>
+        </div>
+      </section>
+
+      <!-- See Touch Experience Section -->
+
+      <section class="px-4">
+        <div class="container pb-md-4">
+          <div class="row">
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <img
+                src="./img/company-design-center/see.jpg"
+                alt="Image of a showroom office space"
+                class="w-100 d-block mb-3"
+              />
+              <h3 class="ste-col-header">See</h3>
+              <p class="preg19 fw-300 ste-col-text">
+                fully-integrated Fellowes products in a range of office contexts
+              </p>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <img
+                src="./img/company-design-center/touch.jpg"
+                alt="Image of a showroom office space"
+                class="w-100 d-block mb-3"
+              />
+              <h3 class="ste-col-header">Touch</h3>
+              <p class="preg19 fw-300 ste-col-text">
+                the products and systems that create productive, human-centered workspaces
+              </p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <img
+                src="./img/company-design-center/experience.jpg"
+                alt="Image of a showroom office space"
+                class="w-100 d-block mb-3"
+              />
+              <h3 class="ste-col-header">Experience</h3>
+              <p class="preg19 fw-300 ste-col-text">
+                product demos, design workshops, and industry networking events
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visualize Section -->
+
+      <section class="py-5 px-4">
+        <div class="container">
+          <div class="row align-items-center gap-4 gap-md-0">
+            <div class="col-12 col-md-7">
+              <img
+                src="./img/company-design-center/vision-img.jpg"
+                alt="three people talking in a design center"
+                class="w-100 d-block"
+              />
+            </div>
+            <div class="col-12 col-md-5 text-center">
+              <h3 class="ste-col-header">Visualize</h3>
+              <div class="grey-centered-divider"></div>
+              <p class="preg19 fw-300 lh-sm">
+                PORTRAY is an interactive experience that brings inspiration and confidence to the
+                pre-spec stage for any project design.
+              </p>
+              <p class="preg19 fw-300 lh-sm">
+                Visualize Fellowes products by exploring configurations, finish and materials
+                options, in real-time and real-size, alone or within environments and even with
+                coordinating product categories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel Section -->
+
+      <section class="pb-4 py-md-5">
+        <div class="designCenterSlider">
+          <div class="slider-item active">
+            <img
+              src="./img/company-design-center/slide-1.jpg"
+              class="d-block w-100"
+              alt="People Walking in an open office area"
+            />
+          </div>
+          <div class="slider-item">
+            <img
+              src="./img/company-design-center/slide-2.jpg"
+              class="d-block w-100"
+              alt="A Woman walking in a lobby area"
+            />
+          </div>
+          <div class="slider-item">
+            <img
+              src="./img/company-design-center/slide-3.jpg"
+              class="d-block w-100"
+              alt="Man walking in office hallway"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule a Visit Section -->
+
+      <section class="py-5 px-4">
+        <div class="container">
+          <div class="row gx-0">
+            <div class="col-12 col-md-5">
+              <img
+                class="w-100 d-block mb-0 pb-0 object-cover h-100"
+                src="./img/company-design-center/800Fulton.jpg"
+                alt="Image of Chicago City Scape with the Fulton Building in view"
+              />
+            </div>
+            <div class="col-12 col-md-7 fds-tan-bg">
+              <div class="row p-4 p-md-5 gx-md-5">
+                <h2 class="page-title mb-4 mb-md-5 fw-300">Schedule a Visit</h2>
+                <div class="col-12 col-md-6">
+                  <p class="preg19 fw-300 lh-sm mb-4">Let us help craft an experience for you!</p>
+
+                  <p class="preg19 fw-300 lh-sm mb-4">
+                    Contact your local Representative to schedule your visit.
+                  </p>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="fw-bold">Address</div>
+                  <p>311 N Green Street, Floor 9 Chicago, IL 60607</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fulton Full Image Section -->
+
       <section class="band company-design-banner-image">
         <div class="d-none d-md-block">
           <img src="img/company-design-center/fulton-header-img.jpg" class="img-fluid w-100" />
@@ -1054,179 +1730,142 @@
         </div>
       </section>
 
-      <section class="band py-5 px-5 px-md-0">
-        <div class="container py-md-5">
-          <div class="row">
-            <div class="col-md-4 col-12 mb-md-0 mb-4">
-              <div class="company-title text-gray-company">
-                Welcome to <br /><span>FULTON<br />MARKET</span>
-              </div>
+      <!-- Designed Differently Section -->
+
+      <section class="text-center py-5 px-4">
+        <div class="container mw-840 py-md-4">
+          <h2 class="page-title mb-4 fw-300">Designed Differently, Built Better.</h2>
+          <p class="preg19 fw-300 lh-sm mb-4">
+            Selecting the location for Fellowes Design & Experience Center was just as important as
+            the space itself. The ambitious design of the 800 Fulton building was chosen as a
+            reflection to our commitment to workplace wellness and efficiency. The building holds
+            numerous sustainability and wellness awards, as well as the latest in building
+            intelligence technology.
+          </p>
+          <div class="row pt-md-4">
+            <div class="col-12 col-md-4 ddbb-logo-col">
+              <img
+                src="./img/company-design-center/Leed-Logo.png"
+                alt="U.S. Green Building Council Logo"
+                class="w-100 d-block pb-2 mw-474"
+              />
+              <p class="preg19 lh-sm mb-4">LEED Platinum<br />Certified</p>
             </div>
-            <div class="col-md-8 col-12">
-              <div class="row">
-                <div class="col-md-4 text-gray-company mb-md-0 mb-5">
-                  <div class="mb-3">
-                    <img
-                      src="img/company-design-center/WhereItBegan-desktop.jpg"
-                      class="img-fluid d-none d-md-block w-100"
-                    />
-                    <img
-                      src="img/company-design-center/WhereItBegan-mobile.jpg"
-                      class="img-fluid d-block d-md-none"
-                    />
-                  </div>
-                  <div class="company-sub-title fw-700">WHERE IT BEGAN</div>
-                  <div class="preg17">
-                    Just across the Chicago river from where Harry Fellowes opened the first office
-                    over 100 years ago, we’re excited to announce Fellowes brand expansion into
-                    Contract Interiors - back in the city where it all began.
-                  </div>
-                </div>
-                <div class="col-md-4 text-gray-company mb-md-0 mb-5">
-                  <div class="mb-3">
-                    <img
-                      src="img/company-design-center/theVision-desktop.jpg"
-                      class="img-fluid d-none d-md-block w-100"
-                    />
-                    <img
-                      src="img/company-design-center/theVision-mobile.jpg"
-                      class="img-fluid d-block d-md-none"
-                    />
-                  </div>
-                  <div class="company-sub-title fw-700">THE VISION</div>
-                  <div class="preg17">
-                    We sought out to create a place to learn, test, touch, see and experience our
-                    products in a new way. A place to create environments that unleash worklife
-                    potential through solutions that deliver on wellness, productivity and
-                    inspiration.
-                  </div>
-                </div>
-                <div class="col-md-4 text-gray-company mb-md-0 mb-0">
-                  <div class="mb-3">
-                    <img
-                      src="img/company-design-center/market-desktop.jpg"
-                      class="img-fluid d-none d-md-block w-100"
-                    />
-                    <img
-                      src="img/company-design-center/market-mobile.jpg"
-                      class="img-fluid d-block d-md-none"
-                    />
-                  </div>
-                  <div class="company-sub-title fw-700">FULTON MARKET</div>
-                  <div class="preg17">
-                    This thriving neighborhood is filled with growing businesses, restaurants and an
-                    expanding Contract Interiors industry. Fellowes is proud to foster our continued
-                    growth by creating a brand experience in the heart of Fulton Market.
-                  </div>
-                </div>
-              </div>
+            <div class="col-12 col-md-4 ddbb-logo-col">
+              <img
+                src="./img/company-design-center/Well-Gold-Logo.png"
+                alt="Well Gold Logo"
+                class="w-100 d-block pb-2 mw-474"
+              />
+              <p class="preg19 lh-sm mb-4">WELL Gold<br />Certified</p>
+            </div>
+            <div class="col-12 col-md-4 ddbb-logo-col">
+              <img
+                src="./img/company-design-center/Smart-Score-Logo.png"
+                alt="Smart Score Logo"
+                class="w-100 d-block pb-2 mw-474"
+              />
+              <p class="preg19 lh-sm mb-4">Smart Score<br />Platinum</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="band">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-12 pink-bg p-5">
-              <div class="p-md-5">
-                <div class="company-design-sub-title text-white mb-2 fw-500">FULTON MARKET</div>
-                <div class="company-design-title text-white">Design<br />Days</div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-12 p-5 bg-black">
-              <div class="p-md-5 company-design-p-tag text-white w-lg-80">
-                <div class="pt-lg-4">
-                  <p>
-                    Mark your calendar! While NeoCon is happening at The Mart, we will be welcoming
-                    you back to Chicago this June for the newly established Fulton Market DesignDays
-                    event.
-                  </p>
-                  <p>
-                    Fellowes will be celebrating the Grand Opening of our new Design & Experience
-                    Center in the heart of Fulton Market, along with four new product introductions,
-                    plus a digital experience like no other.
-                  </p>
-                  <p class="mb-0">We look forward to reuniting with you June 12-14th 2023!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="band">
-        <div class="d-none d-md-block">
-          <img src="img/company-design-center/map-desktop.jpg" class="img-fluid w-100" />
-        </div>
-        <div class="d-block d-md-none">
-          <img src="img/company-design-center/map-mobile.jpg" class="img-fluid w-100" />
-        </div>
-      </section>
-      <section class="band py-5 px-5 px-md-0 bg-black text-white">
-        <div class="container py-md-5 py-4">
-          <div class="row">
-            <div class="col-12 mb-md-5">
-              <div class="agenda-title mb-5 text-center">AGENDA</div>
-            </div>
-            <div class="col-lg-4 text-white mb-lg-0 mb-5 text-center">
-              <div class="fw-700 agenda-sub-title mb-2">Monday, June 12</div>
-              <div class="preg19">
-                8:00 – 9:30 Dealer Breakfast<br />
-                9:00 – 5:00 Showroom Open<br />
-                12:00 – 1:00 Light Lunch Buffet<br />
-                4:00 – 6:00 Grand Opening Reception
-              </div>
-            </div>
-            <div class="col-lg-4 text-white mb-lg-0 mb-5 text-center">
-              <div class="fw-700 agenda-sub-title mb-2">Tuesday, June 13</div>
-              <div class="preg19">
-                8:00 – 9:30 Dealer Breakfast<br />
-                9:00 – 5:00 Showroom Open<br />
-                12:00 – 1:00 Light Lunch Buffet
-              </div>
-            </div>
-            <div class="col-lg-4 text-white mb-lg-0 mb-0 text-center">
-              <div class="fw-700 agenda-sub-title mb-2">Wednesday, June 14</div>
-              <div class="preg19">
-                9:00 – 3:00 Showroom Opens<br />
-                9:00 – 10:00 Light Brunch
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="band py-5">
-        <div class="container py-md-5 py-4">
-          <div class="row">
-            <div class="col-12 mb-md-5">
-              <div class="agenda-title mb-5 text-center text-gray-company">TRANSPORTATION</div>
-              <div class="text-center mb-5 px-md-0 px-3">
-                <p class="company-design-p-tag mb-md-5 mb-3 text-gray-company">
-                  Information coming soon regarding shuttle but service to Fulton Market from the
-                  Mart.
-                </p>
-                <p class="company-design-p-tag mb-md-5 mb-3 text-gray-company">
-                  Check back soon for updates!
-                </p>
-              </div>
-              <div class="pt-md-5 text-center">
-                <img
-                  src="img/company-design-center/oneFellowes-desktop.jpg"
-                  class="img-fluid d-none d-md-block mx-auto"
-                />
-                <img
-                  src="img/company-design-center/oneFellowes-mobile.jpg"
-                  class="img-fluid d-block d-md-none mx-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- End your project here-->
     </main>
 
     <!-- Global Footer Start -->
+
+    <!-- Universal CTA Begins -->
+
+    <section
+      class="d-flex flex-column justify-content-center align-items-center px-4 py-5 text-white text-center fds-cta-grey"
+    >
+      <div class="py-md-4">
+        <h2 class="cta-header">
+          To Learn More About Fellowes Products and Services, Contact Us and A Fellowes
+          representative will be in touch with you
+        </h2>
+        <a
+          href="#"
+          class="link-underlined text-center text-white d-block mt-3 mt-lg-4 position-relative"
+          >Let's Get to Work</a
+        >
+      </div>
+    </section>
+
+    <!-- Last Section Begins -->
+    <section
+      class="last-section mh-600 position-relative d-flex justify-content-center align-content-center flex-wrap"
+      style="padding-inline: 2.25rem"
+    >
+      <div class="last-section-grid col-12 d-flex">
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/family.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/family.svg" alt="Give Icon" />
+            </div>
+            <p class="last-section-item-description">
+              In 1917, Harry Fellowes set in motion a way of doing business that has become our
+              cultural foundation at Fellowes to this very day. We are here to serve, through a
+              humble and helpful spirit. We strive each day to pursue our values of family,
+              innovation, quality and care. Into our fourth generation, our work is driven by a
+              purpose to add value to those we serve.
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/give.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/give.svg" alt="Give Icon" />
+            </div>
+            <p class="last-section-item-description last-section-desc-centered">
+              Established in 2014, GIVE is a purpose-led program dedicated to supporting local and
+              global partners who are addressing humanitarian's greatest social, education and
+              health-based needs..
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+        <div
+          class="last-section-item bg-image"
+          style="background-image: url(/img/homepage-imgs/earth.jpg)"
+        >
+          <div class="last-section-item-text text-center text-white d-flex flex-column py-5 px-4">
+            <div class="fge-logo">
+              <img src="/img/homepage-imgs/earth.svg" alt="Earth Icon" />
+            </div>
+            <p class="last-section-item-description">
+              Formed in 2021, Earth is a renewed commitment to preserve, protect and renew our
+              planet. Grounded in a conviction that we have great responsibility in caretaking our
+              generation's imprint on this world, the Earth framework is integrated into our product
+              development process, packaging design, organizational facilities and policies as well
+              as our daily decision-making.
+            </p>
+            <a
+              href="#"
+              class="link-underlined text-center text-white d-block mt-2 position-relative text-uppercase mt-auto"
+              >Learn About Our Initiatives</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="main-footer" class="px-4" role="contentinfo">
       <section class="container-xl mb-4 my-lg-4">
@@ -1267,7 +1906,12 @@
                 <a class="text-dark" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="text-dark" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="text-dark" href="#!" role="button"
+                  ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    /></svg
+                ></a>
 
                 <!-- Instagram -->
                 <a class="text-dark" href="#!" role="button"><i class="fab fa-instagram"></i></a>
@@ -1502,7 +2146,7 @@
         </div>
         <div class="footer-fine-print row text-center text-md-start mt-3">
           <div class="copyright col col-12 col-md-auto mb-2 pe-md-0">
-            Copyright &copy; 2022 Fellowes Brands, All Rights Reserved.
+            Copyright &copy; <span id="copyright-year"></span> Fellowes Brands, All Rights Reserved.
           </div>
           <div class="footer-nav col col-12 col-md-auto ps-md-0">
             <span class="d-none d-md-inline-block ps-md-1">|</span>
@@ -1527,7 +2171,13 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
+    <!-- Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/company-design-center.js"></script>
   </body>
 </html>
