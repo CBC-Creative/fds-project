@@ -714,31 +714,24 @@
                   </svg>
                 </a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button">
                   <div class="account-badge text-white">JF</div>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <div class="mobile-back-btn d-xl-none">
-                    <i class="fas fa-angle-left"></i> Account
-                  </div>
-                  <li>
-                    <a class="dropdown-item" href="#">My Account</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Array Viewpoint</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">My Cart</a>
-                  </li>
-                </ul>
+              </li>
+              <li class="nav-item" id="fpp-cart-trigger">
+                <a
+                  class="nav-link stroke-svg"
+                  href="javascript:;"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <span class="cart-panel">
+                    <i class="fa fa-shopping-cart"></i>
+                    <sup class="cartItemQuantity">0</sup>
+                  </span>
+                  <div class="bottom-indicator"><i class="fa-solid fa-caret-up"></i></div>
+                </a>
               </li>
               <li class="nav-item">
                 <button
@@ -767,6 +760,86 @@
 
     <div class="bodynavfixedtop" role="presentation"></div>
 
+    <!-- Cart Dropdown -->
+    <div class="cart-dropdown-div" data-cart-empty="false" aria-labelledby="fpp-cart-trigger">
+      <div class="cart-header">
+        <div class="cart-header-title">MY CART</div>
+        <div class="cart-header-close-btn"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <div class="cart-is-empty">Your shopping cart is currently empty.</div>
+      <div class="cart-has-items">
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="../img/fpp-imgs/cart-item-img.jpg" alt="Product Image" />
+          </div>
+          <div class="cart-item-title">AT&T Camera Protector - iPhone 15 Pro - Replacement</div>
+          <div class="cart-grouped-items">
+            <div class="cart-item-qty">Qty: <span>1</span></div>
+            <div class="cart-item-price">$<span>0.00</span></div>
+            <div class="cart-item-remove"><i class="fa-solid fa-trash-can"></i></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="../img/fpp-imgs/cart-item-img.jpg" alt="Product Image" />
+          </div>
+          <div class="cart-item-title">AT&T Camera Protector - iPhone 15 Pro - Replacement</div>
+          <div class="cart-grouped-items">
+            <div class="cart-item-qty">Qty: <span>1</span></div>
+            <div class="cart-item-price">$<span>0.00</span></div>
+            <div class="cart-item-remove"><i class="fa-solid fa-trash-can"></i></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="../img/fpp-imgs/cart-item-img.jpg" alt="Product Image" />
+          </div>
+          <div class="cart-item-title">AT&T Camera Protector - iPhone 15 Pro - Replacement</div>
+          <div class="cart-grouped-items">
+            <div class="cart-item-qty">Qty: <span>1</span></div>
+            <div class="cart-item-price">$<span>0.00</span></div>
+            <div class="cart-item-remove"><i class="fa-solid fa-trash-can"></i></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="../img/fpp-imgs/cart-item-img.jpg" alt="Product Image" />
+          </div>
+          <div class="cart-item-title">AT&T Camera Protector - iPhone 15 Pro - Replacement</div>
+          <div class="cart-grouped-items">
+            <div class="cart-item-qty">Qty: <span>1</span></div>
+            <div class="cart-item-price">$<span>0.00</span></div>
+            <div class="cart-item-remove"><i class="fa-solid fa-trash-can"></i></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="../img/fpp-imgs/cart-item-img.jpg" alt="Product Image" />
+          </div>
+          <div class="cart-item-title">AT&T Camera Protector - iPhone 15 Pro - Replacement</div>
+          <div class="cart-grouped-items">
+            <div class="cart-item-qty">Qty: <span>1</span></div>
+            <div class="cart-item-price">$<span>0.00</span></div>
+            <div class="cart-item-remove"><i class="fa-solid fa-trash-can"></i></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="../img/fpp-imgs/cart-item-img.jpg" alt="Product Image" />
+          </div>
+          <div class="cart-item-title">AT&T Camera Protector - iPhone 15 Pro - Replacement</div>
+          <div class="cart-grouped-items">
+            <div class="cart-item-qty">Qty: <span>1</span></div>
+            <div class="cart-item-price">$<span>0.00</span></div>
+            <div class="cart-item-remove"><i class="fa-solid fa-trash-can"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-footer-total">Your Total: <b>$</b><span>17.90</span></div>
+        <button class="cart-footer-btn">VIEW CART</button>
+      </div>
+    </div>
     <!-- Search Dropdown -->
 
     <div class="search-div">
@@ -1023,8 +1096,8 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    >
     <!-- Custom scripts -->
     <script type="text/javascript" src="../js/core.js"></script>
+    <script type="text/javascript" src="../js/fpp-nav.js"></script>
   </body>
 </html>
