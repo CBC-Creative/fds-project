@@ -1,4 +1,5 @@
 /* Homepage Navigation Styles start */
+
 @media (max-width: 1199px) {
   #primary-content {
     padding-top: 70px;
@@ -14,6 +15,22 @@
 }
 
 @media (min-width: 1200px) {
+  #main-navbar.top-scrolled-up .cart-panel i {
+    color: #fff;
+  }
+
+  #main-navbar.scrolled-down .cart-panel i {
+    color: #fff;
+  }
+
+  #main-navbar.top-scrolled-up:hover .cart-panel i {
+    color: #000;
+  }
+
+  #main-navbar.scrolled-up.scrolled-down .cart-panel i {
+    color: #000;
+  }
+
   #main-navbar {
     background-color: rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.3s ease-in-out;
