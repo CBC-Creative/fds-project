@@ -14,6 +14,11 @@
   margin-inline: auto !important;
 }
 
+.mw-400 {
+  max-width: 400px !important;
+  margin-inline: auto !important;
+}
+
 .font-weight-sbold {
   font-weight: 600;
 }
@@ -103,11 +108,38 @@
   z-index: 10;
 }
 
-.stepper-invalid .stepper-head-icon,
-.stepper-completed .stepper-head-icon {
-  background-color: #fff;
-  fill: #c3c3c3;
-  border-color: #c3c3c3;
+.disabled-step .stepper-head-icon {
+  background-color: var(--fds-grey-100);
+  color: var(--mdb-stepper-disabled-head-icon-color);
+  cursor: none;
+  pointer-events: none;
+  position: relative;
+}
+
+.disabled-step .stepper-head-icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: '\f00d';
+  font-size: 30px;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.disabled-content {
+  display: none;
+}
+
+.disabled-step .enabled-content {
+  display: none;
+}
+
+.disabled-step .disabled-content {
+  display: block;
 }
 
 .stepper-active .stepper-head-icon {
@@ -201,6 +233,15 @@ h3.stepper-content-title {
   margin-inline: auto;
 }
 
+.select-wrapper .form-outline {
+  --mdb-form-outline-select-notch-border-color: var(--fds-grey-700);
+}
+
+.select-wrapper .select-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .stepper-content-subSubtitle {
   margin-top: 0.5rem;
 }
@@ -225,6 +266,9 @@ h3.stepper-content-title {
 }
 
 .product-selection-wrapper .form-check-label {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding-left: 0;
   border: 2px solid var(--fds-tan);
   padding: 0.5rem;
@@ -313,32 +357,8 @@ h3.stepper-content-title {
   margin-bottom: 1rem;
 }
 
-.logo-file-upload {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.logo-file-upload-label {
-  margin-top: 1rem;
-  background-color: var(--fds-tan);
-  width: 100%;
-  text-align: center;
-  padding: 1.5rem;
+.file-upload {
   border: 2px dashed #97989c;
-}
-
-.logo-upload-title {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.file-types {
-  font-size: 12px;
-  max-width: 154px;
-  line-height: 1.1;
-  margin-inline: auto;
-  margin-top: 0.25rem;
 }
 
 [data-form-completed='false'] .thank-you-section,
@@ -465,6 +485,10 @@ h3.stepper-content-title {
   .logo-section .logo-upload-icon img {
     max-width: unset;
     margin-bottom: 1rem;
+  }
+
+  .disabled-step .stepper-head-icon::before {
+    font-size: 60px;
   }
 }
 
