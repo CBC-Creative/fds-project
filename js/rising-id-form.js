@@ -45,4 +45,52 @@ $(document).ready(function () {
       stepper.previousStep();
     });
   }
+
+  // Color Select Show/Hide
+  const primaryColorSelect = document.querySelectorAll('input[name="primaryColorRadio"]');
+  const primaryStandard = document.querySelector('.primary-color-section .standard-color-select');
+  const primaryCustom = document.querySelector('.primary-color-section .custom-color');
+
+  const secondaryColorSelect = document.querySelectorAll('input[name="secondaryColorRadio"]');
+  const secondaryStandard = document.querySelector(
+    '.secondary-color-section .standard-color-select'
+  );
+  const secondaryCustom = document.querySelector('.secondary-color-section .custom-color');
+
+  const accentColorSelect = document.querySelectorAll('input[name="accentColorRadio"]');
+  const accentStandard = document.querySelector('.accent-color-section .standard-color-select');
+  const accentCustom = document.querySelector('.accent-color-section .custom-color');
+
+  $(primaryColorSelect).change(function () {
+    let primary_selected_value = $('input[name="primaryColorRadio"]:checked').val();
+    if (primary_selected_value == 'customColor') {
+      $(primaryCustom).removeClass('hide');
+      $(primaryStandard).addClass('hide');
+    } else {
+      $(primaryCustom).addClass('hide');
+      $(primaryStandard).removeClass('hide');
+    }
+  });
+
+  $(secondaryColorSelect).change(function () {
+    let secondary_selected_value = $('input[name="secondaryColorRadio"]:checked').val();
+    if (secondary_selected_value == 'customColor') {
+      $(secondaryCustom).removeClass('hide');
+      $(secondaryStandard).addClass('hide');
+    } else {
+      $(secondaryCustom).addClass('hide');
+      $(secondaryStandard).removeClass('hide');
+    }
+  });
+
+  $(accentColorSelect).change(function () {
+    let accent_selected_value = $('input[name="accentColorRadio"]:checked').val();
+    if (accent_selected_value == 'customColor') {
+      $(accentCustom).removeClass('hide');
+      $(accentStandard).addClass('hide');
+    } else {
+      $(accentCustom).addClass('hide');
+      $(accentStandard).removeClass('hide');
+    }
+  });
 });

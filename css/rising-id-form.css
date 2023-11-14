@@ -108,12 +108,47 @@
   z-index: 10;
 }
 
+.stepper-invalid .stepper-head-icon,
+.stepper-completed .stepper-head-icon {
+  background-color: #fff;
+  color: #c3c3c3;
+  fill: #c3c3c3;
+}
+
+.stepper-invalid .stepper-head-icon::before,
+.stepper-completed .stepper-head-icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  color: #fff;
+  line-height: 1.6;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 9px;
+}
+
+.stepper-invalid .stepper-head-icon::before {
+  content: '\21';
+  background-color: #d05c5c;
+}
+
+.stepper-completed .stepper-head-icon::before {
+  content: '\f00c';
+  background-color: #6bad7f;
+}
+
 .disabled-step .stepper-head-icon {
-  background-color: var(--fds-grey-100);
-  color: var(--mdb-stepper-disabled-head-icon-color);
+  background-color: #fff;
+  color: #e8e8e8;
   cursor: none;
   pointer-events: none;
   position: relative;
+  overflow: hidden;
 }
 
 .disabled-step .stepper-head-icon::before {
@@ -121,13 +156,13 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font: var(--fa-font-solid);
-  content: '\f00d';
-  font-size: 30px;
-  color: red;
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotateY(0deg) rotate(45deg);
+  border: 1px solid #e8e8e8;
+  height: 100px;
 }
 
 .disabled-content {
@@ -371,6 +406,23 @@ h3.stepper-content-title {
   display: block;
 }
 
+.color-fields .form-check-input:checked {
+  border-color: #97989c;
+}
+
+.color-fields .form-check-input[type='radio']:checked:after {
+  border-color: #97989c;
+  background-color: #97989c;
+}
+
+.custom-color.hide {
+  display: none;
+}
+
+.standard-color-select.hide {
+  display: none;
+}
+
 @media (max-width: 767.99px) {
   #form-restart {
     font-size: 13px !important;
@@ -489,6 +541,16 @@ h3.stepper-content-title {
 
   .disabled-step .stepper-head-icon::before {
     font-size: 60px;
+  }
+
+  .stepper-invalid .stepper-head-icon::before,
+  .stepper-completed .stepper-head-icon::before {
+    line-height: 1.5;
+    bottom: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    font-size: inherit;
   }
 }
 
