@@ -2628,6 +2628,9 @@
                               type="radio"
                               name="logo-number"
                               id="sameLogo"
+                              value="same-logo"
+                              required
+                              checked
                             />
                             <label class="form-check-label" for="sameLogo">
                               Same logo on both sides of the arm
@@ -2640,6 +2643,8 @@
                               type="radio"
                               name="logo-number"
                               id="differentLogos"
+                              value="different-logos"
+                              required
                             />
                             <label class="form-check-label" for="differentLogos">
                               Place in Location 1 only
@@ -2657,7 +2662,7 @@
                               <option value="3">Right Justified</option>
                             </select>
                             <label for="primary-logo-placement" class="form-label select-label"
-                              >Choose a Logo Placement*</label
+                              >Choose a Logo Placement</label
                             >
                           </div>
 
@@ -2674,7 +2679,7 @@
                     </div>
                   </div>
 
-                  <div class="logo-section second-logo">
+                  <div class="logo-section second-logo hide">
                     <div class="row">
                       <div class="col-12 col-md-6 text-center order-2 order-md-1">
                         <img
@@ -2697,7 +2702,7 @@
                               <option value="3">Right Justified</option>
                             </select>
                             <label for="secondary-logo-placement" class="form-label select-label"
-                              >Choose a Logo Placement*</label
+                              >Choose a Logo Placement</label
                             >
                           </div>
 

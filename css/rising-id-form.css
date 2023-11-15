@@ -415,12 +415,13 @@ h3.stepper-content-title {
   background-color: #97989c;
 }
 
-.custom-color.hide {
+.custom-color.hide,
+.standard-color-select.hide {
   display: none;
 }
 
-.standard-color-select.hide {
-  display: none;
+.second-logo.hide {
+  opacity: 0;
 }
 
 @media (max-width: 767.99px) {

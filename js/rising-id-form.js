@@ -93,4 +93,18 @@ $(document).ready(function () {
       $(accentStandard).removeClass('hide');
     }
   });
+
+  // Second Logo Show/hide
+
+  const secondLogoRadio = document.querySelectorAll('input[name="logo-number"]');
+  const secondLogoSection = document.querySelector('.second-logo');
+
+  $(secondLogoRadio).change(function () {
+    let logo_selected_value = $('input[name="logo-number"]:checked').val();
+    if (logo_selected_value == 'different-logos') {
+      $(secondLogoSection).removeClass('hide');
+    } else {
+      $(secondLogoSection).addClass('hide');
+    }
+  });
 });
