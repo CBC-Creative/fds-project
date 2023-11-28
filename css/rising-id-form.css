@@ -142,7 +142,9 @@
   background-color: #6bad7f;
 }
 
-.disabled-step .stepper-head-icon {
+.disabled-step .stepper-head-icon,
+.disabled-step.stepper-invalid .stepper-head-icon,
+.disabled-step.stepper-completed .stepper-head-icon {
   background-color: #fff;
   color: #e8e8e8;
   cursor: none;
@@ -151,7 +153,9 @@
   overflow: hidden;
 }
 
-.disabled-step .stepper-head-icon::before {
+.disabled-step .stepper-head-icon::before,
+.disabled-step.stepper-invalid .stepper-head-icon::before,
+.disabled-step.stepper-completed .stepper-head-icon::before {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -162,6 +166,14 @@
   left: 50%;
   transform: translate(-50%, -50%) rotateY(0deg) rotate(45deg);
   border: 1px solid #e8e8e8;
+  height: 100px;
+}
+
+.disabled-step.stepper-invalid .stepper-head-icon::before,
+.disabled-step.stepper-completed .stepper-head-icon::before {
+  content: '';
+  background-color: #e8e8e8;
+  width: auto;
   height: 100px;
 }
 
