@@ -176,7 +176,7 @@
   }
 
   .limitless-design-ul {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -188,12 +188,6 @@
   height: 65px;
   width: 65px;
   overflow: hidden;
-}
-@media (min-width: 768px) {
-  .swatch {
-    height: 80px;
-    width: 80px;
-  }
 }
 
 .design-details-wrapper {
@@ -223,6 +217,7 @@
 
 .detail-header-text {
   font-size: 24px;
+  line-height: 1.1;
 }
 
 .titanHighlightImg {
@@ -239,12 +234,31 @@
 
 @media (min-width: 768px) {
   .design-details-wrapper .sub-title {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 992px) {
   .titanSliderDetailsWrapper {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titanSliderDetailsWrapper {
     padding: 3rem 2rem;
+  }
+
+  .swatch {
+    height: 80px;
+    width: 80px;
+  }
+
+  .design-details-wrapper .sub-title {
+    font-size: 20px;
+  }
+
+  .limitless-design-ul {
+    font-size: 18px;
   }
 }
