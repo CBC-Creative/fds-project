@@ -1,0 +1,17 @@
+.unleash-txt {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .header-banner-text {
+    left: 3em;
+    bottom: 3em;
+    right: 3rem;
+    max-width: unset;
+    text-align: center;
+  }
+
+  .sub-title {
+    line-height: 1;
+  }
+}

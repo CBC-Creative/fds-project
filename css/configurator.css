@@ -234,6 +234,27 @@
   gap: 1rem;
 }
 
+.pagination {
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  margin-bottom: 0;
+}
+
+.right-arrow-line-icon {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+
+.disabled > .page-link,
+.page-link.disabled {
+  opacity: 0.5;
+}
+
+.pagination-numbers {
+  padding-inline: 0.5rem;
+}
+
 @media (min-width: 768px) {
   .filter-wrapper {
     grid-template-columns: 1fr 1fr;
