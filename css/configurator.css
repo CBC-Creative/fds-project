@@ -4,11 +4,12 @@
   overflow: hidden;
 }
 
-.config-header {
+.mobile-config-header {
   margin-bottom: 2rem;
 }
 
-.configurator-section {
+.configurator-section,
+.loading-section {
   padding-top: 5px;
 }
 
@@ -265,11 +266,54 @@
   .mobile-config-header {
     opacity: 0;
     max-height: 0;
+    margin-bottom: 0;
   }
 
   .desktop-config-header {
     opacity: 1;
     max-height: fit-content;
     overflow: unset;
+    margin-bottom: 2rem;
   }
+}
+
+#primary-content[data-loading='true'] .configurator-section {
+  max-height: 0px;
+  opacity: 0;
+}
+
+#primary-content[data-loading='false'] .configurator-section {
+  max-height: 50000px;
+  opacity: 1;
+  padding-block: 3rem;
+}
+
+#primary-content[data-loading='true'] .loading-section {
+  max-height: 50000px;
+  opacity: 1;
+  padding-block: 3rem;
+}
+
+#primary-content[data-loading='false'] .loading-section {
+  max-height: 0px;
+  opacity: 0;
+  display: none;
+}
+
+.placeholder-accord-block {
+  height: 80px;
+  background: var(--fds-tan);
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.placeholder-accord-block .placeholder-lg {
+  max-height: 25px;
+}
+
+.placeholder-accord-block .placeholder-sm {
+  max-height: 15px;
 }
