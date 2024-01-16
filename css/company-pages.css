@@ -977,3 +977,87 @@ section#innovation:before {
     font-size: 60px;
   }
 }
+
+.maxW-1100 {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lit-section-svg {
+  width: 90%;
+  max-width: 160px;
+}
+
+.lit-section-bg {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lit-section-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 400;
+}
+
+.lit-section-desc {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .lit-section-svg {
+    max-width: 225px;
+  }
+
+  .lit-section-bg {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lit-section-svg {
+    max-width: 375px;
+  }
+
+  .lit-section-bg {
+    height: 600px;
+  }
+
+  .lit-section-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .lit-section-desc {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .lit-section-svg {
+    max-width: 500px;
+  }
+
+  .lit-section-bg {
+    height: 750px;
+  }
+
+  .lit-section-title {
+    font-size: 60px;
+    line-height: 74px;
+  }
+
+  .lit-section-desc {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
