@@ -1061,3 +1061,31 @@ section#innovation:before {
     line-height: 36px;
   }
 }
+
+.better-section {
+  background-image: url('../img/company-give/better-section-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.better-section-logo {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.better-section-round {
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+.better-section-round {
+  border-radius: 50000px;
+}
+
+@media (min-width: 1200px) {
+  .better-section-logo {
+    margin-top: unset;
+  }
+}
