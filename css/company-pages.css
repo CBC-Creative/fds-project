@@ -3,6 +3,34 @@
   margin-inline: auto;
 }
 
+.header-banner-text {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 1.5rem;
+}
+
+.investing-section-desc {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-banner-text {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1400px;
+    padding-inline: 1.5rem;
+  }
+
+  .investing-section-desc {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
 .back-btn-company,
 .back-btn-company:hover,
 .back-btn-company:focus,
@@ -263,8 +291,8 @@ a.inspiration-landing-link:hover {
   height: 600px;
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: top center;
-  object-position: top center;
+  -o-object-position: bottom center;
+  object-position: bottom center;
 }
 .company-banner img {
   height: 500px;
@@ -833,6 +861,7 @@ section#innovation:before {
   }
   .company-values-banner img {
     height: 700px;
+    object-position: bottom right;
   }
   .company-banner img {
     height: 700px;

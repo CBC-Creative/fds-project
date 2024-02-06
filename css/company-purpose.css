@@ -1,33 +1,14 @@
-.investing-section h2 {
-  font-size: 30px;
-  font-weight: 700;
-}
-
 .investing-section-subheader {
   font-size: 18px;
   line-height: 28px;
   margin-block: 1.5rem;
 }
 
-.investing-section-desc {
-  font-size: 14px;
-  line-height: 20px;
-}
-
 @media (min-width: 768px) {
-  .investing-section h2 {
-    font-size: 50px;
-  }
-
   .investing-section-subheader {
     font-size: 28px;
     line-height: 44px;
     max-width: 800px;
     margin-inline: auto;
-  }
-
-  .investing-section-desc {
-    font-size: 17px;
-    line-height: 27px;
   }
 }
