@@ -1595,7 +1595,7 @@ fieldset:disabled .btn {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .country-grid__item {
@@ -1614,6 +1614,9 @@ fieldset:disabled .btn {
 
 .lang-grid__item {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .lang-grid__item-inner {
@@ -1625,6 +1628,12 @@ fieldset:disabled .btn {
   align-items: center;
   border-radius: 1000px;
   cursor: pointer;
+}
+
+.lang-grid__inner-text {
+  font-size: var(--fds-fs-250);
+  width: min-content;
+  line-height: 1.1;
 }
 
 .lang-selected .lang-grid__item-inner {
