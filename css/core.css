@@ -1537,6 +1537,29 @@ fieldset:disabled .btn {
 .flag-nav-link {
   border: none;
   background-color: transparent;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navbar .right-nav .nav-link #lang-text {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--fds-grey-700);
+  font-size: var(--fds-fs-250) !important;
+  transition: color opacity width 0.5s ease-in-out;
+}
+
+.navbar .right-nav .nav-link #lang-text.lang-active {
+  display: block;
+}
+
+.navbar .right-nav .nav-link:hover #lang-text,
+.navbar .right-nav .nav-link:focus-visible #lang-text,
+.navbar .right-nav .nav-link:active #lang-text {
+  color: var(--fds-black);
 }
 
 .country-selector-modal.modal {
@@ -1568,21 +1591,70 @@ fieldset:disabled .btn {
   grid-template-columns: 1fr;
 }
 
+.lang-grid__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
 .country-grid__item {
   padding: 1.5rem;
   border-bottom: 2px solid var(--fds-grey-200);
   position: relative;
 }
 
+.lang-grid {
+  display: none;
+}
+
+.lang-grid__active {
+  display: block;
+}
+
+.lang-grid__item {
+  position: relative;
+}
+
+.lang-grid__item-inner {
+  background-color: var(--fds-tan);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.lang-selected .lang-grid__item-inner {
+  background-color: var(--fds-yellow);
+}
+
 .country-selected::before {
   position: absolute;
   content: '';
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   background-color: var(--fds-yellow);
   border-radius: 50%;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.lang-selected::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--fds-yellow);
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  left: -1.5rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2317,6 +2389,7 @@ fieldset:disabled .btn {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-direction: column;
   }
 
   .country-grid__wrapper {
