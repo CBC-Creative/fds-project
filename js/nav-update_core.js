@@ -123,10 +123,7 @@ $(window).on('load', function () {
           videoHeight = thisVideoEl.clientHeight,
           videoClientRect = thisVideoEl.getBoundingClientRect().top;
 
-        if (
-          videoClientRect <= windowHeight - videoHeight * 0.5 &&
-          videoClientRect >= 0 - videoHeight * 0.5
-        ) {
+        if (videoClientRect <= windowHeight - videoHeight * 0.5 && videoClientRect >= 0 - videoHeight * 0.5) {
           thisVideoEl.play();
         } else {
           thisVideoEl.pause();

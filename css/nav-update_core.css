@@ -315,13 +315,7 @@ a.hero-link {
   inset: 0;
   content: '';
   background: rgb(255, 255, 255);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(80%, rgba(255, 255, 255, 0)),
-    color-stop(90%, rgba(255, 255, 255, 1))
-  );
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, rgba(255, 255, 255, 0)), color-stop(90%, rgba(255, 255, 255, 1)));
   background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
   z-index: 10;
@@ -733,13 +727,7 @@ a.two-col-section__link::after {
   inset: 0;
 
   background: rgb(0, 0, 0);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(33%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 1) 100%);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
@@ -779,13 +767,7 @@ a.two-col-section__link::after {
 
 @media (min-with: 992px) {
   .dark-img-overlay-horizontal::before {
-    background: -webkit-gradient(
-      linear,
-      right top,
-      left top,
-      color-stop(33%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1))
-    );
+    background: -webkit-gradient(linear, right top, left top, color-stop(33%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
     background: -o-linear-gradient(right, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 1) 100%);
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 1) 100%);
   }
@@ -843,13 +825,7 @@ a.two-col-section__link::after {
     inset: 0;
     content: '';
     background: rgb(255, 255, 255);
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      color-stop(80%, rgba(255, 255, 255, 0)),
-      color-stop(90%, rgba(255, 255, 255, 1))
-    );
+    background: -webkit-gradient(linear, left top, right top, color-stop(80%, rgba(255, 255, 255, 0)), color-stop(90%, rgba(255, 255, 255, 1)));
     background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 90%);
     z-index: 10;
@@ -1304,10 +1280,8 @@ a.two-col-section__link::after {
 
 .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
   border-color: var(--fds-grey-700);
-  -webkit-box-shadow: -1px 0 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700),
-    0 -1px 0 0 var(--fds-grey-700);
-  box-shadow: -1px 0 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700),
-    0 -1px 0 0 var(--fds-grey-700);
+  -webkit-box-shadow: -1px 0 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700);
+  box-shadow: -1px 0 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700);
 }
 
 .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
@@ -1319,10 +1293,8 @@ a.two-col-section__link::after {
 
 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
   border-color: var(--fds-grey-700);
-  -webkit-box-shadow: 1px 0 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700),
-    0 1px 0 0 var(--fds-grey-700);
-  box-shadow: 1px 0 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700),
-    0 1px 0 0 var(--fds-grey-700);
+  -webkit-box-shadow: 1px 0 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700);
+  box-shadow: 1px 0 0 0 var(--fds-grey-700), 0 -1px 0 0 var(--fds-grey-700), 0 1px 0 0 var(--fds-grey-700);
 }
 
 .form-outline .form-control ~ .form-notch .form-notch-trailing {
