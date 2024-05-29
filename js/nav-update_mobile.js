@@ -1,71 +1,132 @@
 $(window).on('load', function () {
-  // Custom Mobile Navigation JS Begin
-  var navContainers = document.querySelectorAll('.navbar .dropdown-toggle');
-  var removenavactive = document.querySelectorAll('.navbar .mobile-back-btn');
-  var navlink = document.querySelectorAll('.navbar-nav .nav-item');
-  var closenav = document.querySelectorAll('.navbar .navbar-toggler');
-  var subnav = document.querySelectorAll('.navbar .sub-dropdown');
-  var subnavmenu = document.querySelectorAll('.navbar .sub-dropdown-menu');
-  var dropdownitem = document.querySelectorAll('.navbar .dropdown-item');
-  var navbarCollapse = document.querySelector('#navbarSupportedContent');
+  // Setting up custom media queries
+  const mediaQuerymax1200 = window.matchMedia('(max-width: 1199.98px)');
 
-  // Hides an open mobile nav on scroll
-  $(window).scroll(function () {
-    if ($(navbarCollapse).hasClass('show')) {
-      $(navbarCollapse).addClass('mobile-navbar-collapse-onscroll');
-      setTimeout(function () {
-        $(navbarCollapse).removeClass('show');
-        $(navbarCollapse).removeClass('mobile-navbar-collapse-onscroll');
-      }, 300);
+  if (mediaQuerymax1200.matches) {
+    // Custom Mobile Navigation JS Begin
+
+    // Custom Variables Setup
+    var navbarCollapse = document.querySelector('#navbarSupportedContent');
+    var closenav = document.querySelectorAll('.navbar .navbar-toggler');
+    var dropdownitem = document.querySelectorAll('.navbar .dropdown-item');
+    var subDropdownItem = document.querySelectorAll('.navbar .sub-dropdown-item');
+
+    var t1NavContainers = document.querySelectorAll('.navbar .nav-link.main-dropdown-toggle');
+    var t1Navlink = document.querySelectorAll('.navbar-nav .nav-item');
+    var t1DropdownMenu = document.querySelectorAll('.navbar .dropdown-menu');
+
+    var subnav = document.querySelectorAll('.navbar .sub-dropdown');
+    var subnavmenu = document.querySelectorAll('.navbar .sub-dropdown-menu');
+    var subsubnav = document.querySelectorAll('.navbar .sub-sub-dropdown');
+
+    var t1RemoveActive = document.querySelectorAll('.navbar .t1-back-btn');
+    var t2RemoveActive = document.querySelectorAll('.navbar .t2-back-btn');
+    var t3RemoveActive = document.querySelectorAll('.navbar .t3-back-btn');
+
+    // Loop through all Tier 1 Nav items
+    for (var i = 0; i < t1NavContainers.length; i++) {
+      // Whenever you click on a Tier 1 Nav Item on Mobile, Open its Subnav menu
+      t1NavContainers[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        this.setAttribute('aria-expanded', 'true');
+        this.parentElement.querySelector('.dropdown-menu').classList.add('show');
+
+        for (var ij = 0; ij < t1Navlink.length; ij++) {
+          t1Navlink[ij].classList.add('active');
+        }
+      });
+
+      // When clicking on a tier 2 nav item that has a subnav, this prevents the link from activating and shows the submenu instead
+      for (let lsnk = 0; lsnk < subnav.length; lsnk++) {
+        subnav[lsnk].addEventListener('click', function (e) {
+          e.preventDefault();
+          this.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+          this.parentElement.querySelector('.sub-dropdown-menu').classList.add('showsub');
+          this.parentElement.parentElement.classList.add('deeper');
+        });
+      }
+
+      // When clicking on a tier 3 nav item that has a subnav, this prevents the link from activating and shows the submenu instead
+      for (let lssnk = 0; lssnk < subsubnav.length; lssnk++) {
+        subsubnav[lssnk].addEventListener('click', function (e) {
+          e.preventDefault();
+          this.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+          this.parentElement.querySelector('.sub-sub-dropdown-menu').classList.add('showsubsub');
+          this.parentElement.parentElement.classList.add('deeper');
+        });
+      }
+
+      // Whenever you click on the "Back" link in each Tier 1 Subnav, close the subnav menu
+      for (var n = 0; n < t1RemoveActive.length; n++) {
+        t1RemoveActive[n].addEventListener('click', function () {
+          $(t1NavContainers).attr('aria-expanded', 'false');
+          for (var ik = 0; ik < t1Navlink.length; ik++) {
+            t1Navlink[ik].classList.remove('active');
+            t1DropdownMenu[ik].classList.remove('show');
+          }
+        });
+      }
     }
-  });
 
-  // Loop through all Tier 1 Nav items
-  for (var i = 0; i < navContainers.length; i++) {
-    // Get each Dropdown Instance, dispose of the old instance, and Reinitialize it
-    $(navContainers[i]).dropdown();
+    // Whenever you click on the "Back" link in each Tier 2 Subnav, close the subnav menu
+    for (var nsn = 0; nsn < t2RemoveActive.length; nsn++) {
+      t2RemoveActive[nsn].addEventListener('click', function () {
+        $(subnav).removeClass('active').attr('aria-expanded', 'false');
+        this.parentElement.classList.remove('showsub');
+        $(this).parent().parent().parent().removeClass('deeper');
+        $(this).parent().parent().parent().addClass('show');
+      });
+    }
 
-    // Whenever you click on a Tier 1 Nav Item on Mobile, Open its Subnav menu
-    navContainers[i].addEventListener('click', function () {
-      for (var ij = 0; ij < navlink.length; ij++) {
-        navlink[ij].classList.add('active');
+    // Whenever you click on the "Back" link in each Tier 3 Subnav, close the subnav menu
+    for (var nsn = 0; nsn < t3RemoveActive.length; nsn++) {
+      t3RemoveActive[nsn].addEventListener('click', function () {
+        $(subsubnav).removeClass('active').attr('aria-expanded', 'false');
+        this.parentElement.classList.remove('showsubsub');
+        $(this).parent().parent().parent().removeClass('deeper');
+      });
+    }
+
+    // Hides an open mobile nav on scroll
+    $(window).scroll(function () {
+      if ($(navbarCollapse).hasClass('show')) {
+        $(t1Navlink).removeClass('active');
+        $(t1NavContainers).attr('aria-expanded', 'false');
+        $(t1DropdownMenu).removeClass('show deeper');
+        $(subnav).removeClass('active').attr('aria-expanded', 'false');
+        $(subnavmenu).removeClass('showsub');
+        $(navbarCollapse).addClass('mobile-navbar-collapse-onscroll');
+
+        setTimeout(function () {
+          $(navbarCollapse).removeClass('show');
+          $(navbarCollapse).removeClass('mobile-navbar-collapse-onscroll');
+        }, 300);
       }
     });
-  }
 
-  // Whenever you click on the "Back" link in each Subnav, close the subnav menu
-  for (var n = 0; n < removenavactive.length; n++) {
-    removenavactive[n].addEventListener('click', function () {
-      for (var ik = 0; ik < navlink.length; ik++) {
-        navlink[ik].classList.remove('active');
-      }
+    // This closes any open subnav if you close the mobile menu with the hamburger menu
+    $(closenav).on('click', () => {
+      $(t1Navlink).removeClass('active');
+      $(t1NavContainers).attr('aria-expanded', 'false');
+      $(t1DropdownMenu).removeClass('show deeper');
+      $(subnav).removeClass('active').attr('aria-expanded', 'false');
+      $(subnavmenu).removeClass('showsub');
     });
-  }
 
-  // This closes any open subnav if you close the mobile menu with the hamburger menu
-  for (var k = 0; k < closenav.length; k++) {
-    closenav[k].addEventListener('click', function () {
-      for (var im = 0; im < navlink.length; im++) {
-        navlink[im].classList.remove('active');
-      }
-    });
-  }
+    // When on mobile, this stop the clicking of a submenu item from also activiating the parent link when clicked.
+    for (var a = 0; a < dropdownitem.length; a++) {
+      dropdownitem[a].addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    }
 
-  // When on mobile, this stop the clicking of a submenu item from also activiating the parent link when clicked.
-  for (var a = 0; a < dropdownitem.length; a++) {
-    dropdownitem[a].addEventListener('click', function (e) {
-      e.stopPropagation();
-    });
+    for (var sdi = 0; sdi < subDropdownItem.length; sdi++) {
+      subDropdownItem[sdi].addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    }
   }
-
-  // When clicking on a tier 2 nav item that has a subnav, this prevents the link from activating and shows the submenu instead
-  for (let l = 0; l < subnav.length; l++) {
-    subnav[l].addEventListener('click', function (e) {
-      e.preventDefault();
-      subnavmenu[l].classList.toggle('showsub');
-      subnav[l].classList.toggle('open');
-    });
-  }
-
   // Custom Mobile Navigation JS End
 });
