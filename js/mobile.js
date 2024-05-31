@@ -114,19 +114,6 @@ $(window).on('load', function () {
       $(subnav).removeClass('active').attr('aria-expanded', 'false');
       $(subnavmenu).removeClass('showsub');
     });
-
-    // When on mobile, this stop the clicking of a submenu item from also activiating the parent link when clicked.
-    for (var a = 0; a < dropdownitem.length; a++) {
-      dropdownitem[a].addEventListener('click', function (e) {
-        e.stopPropagation();
-      });
-    }
-
-    for (var sdi = 0; sdi < subDropdownItem.length; sdi++) {
-      subDropdownItem[sdi].addEventListener('click', function (e) {
-        e.stopPropagation();
-      });
-    }
   }
   // Custom Mobile Navigation JS End
 });

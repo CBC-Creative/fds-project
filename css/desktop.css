@@ -1,6 +1,7 @@
 @media (min-width: 1200px) {
-  #mobileMenuContainer {
-    display: none;
+  #mobileMenuContainer,
+  #mobileRightNav {
+    display: none !important;
   }
   /* Desktop Styles */
   .cart-item {

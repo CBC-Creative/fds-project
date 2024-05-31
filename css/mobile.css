@@ -7,8 +7,9 @@
 }
 
 @media (max-width: 1199.98px) {
-  #desktopMenuContainer {
-    display: none;
+  #desktopMenuContainer,
+  #desktopRightNav {
+    display: none !important;
   }
 
   .navbar-brand svg {
