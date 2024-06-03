@@ -327,6 +327,10 @@
   .oc-intro-img {
     background-image: url(../img/nav-update_imgs/oc-desktop-circle.png);
   }
+
+  .bodynavfixedtop {
+    height: 74px;
+  }
 }
 
 @media (min-width: 1220px) {
