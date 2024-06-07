@@ -27,6 +27,7 @@ $(window).on('load', function () {
     for (var i = 0; i < t1NavContainers.length; i++) {
       // Whenever you click on a Tier 1 Nav Item on Mobile, Open its Subnav menu
       t1NavContainers[i].addEventListener('click', function (e) {
+        console.log('T1 link clicked');
         e.preventDefault();
         this.setAttribute('aria-expanded', 'true');
         this.parentElement.querySelector('.dropdown-menu').classList.add('show');
@@ -39,22 +40,22 @@ $(window).on('load', function () {
       // When clicking on a tier 2 nav item that has a subnav, this prevents the link from activating and shows the submenu instead
       for (let lsnk = 0; lsnk < subnav.length; lsnk++) {
         subnav[lsnk].addEventListener('click', function (e) {
+          console.log('T2 link clicked');
           e.preventDefault();
           this.classList.add('active');
           this.setAttribute('aria-expanded', 'true');
           this.parentElement.querySelector('.sub-dropdown-menu').classList.add('showsub');
-          this.parentElement.parentElement.classList.add('deeper');
         });
       }
 
       // When clicking on a tier 3 nav item that has a subnav, this prevents the link from activating and shows the submenu instead
       for (let lssnk = 0; lssnk < subsubnav.length; lssnk++) {
         subsubnav[lssnk].addEventListener('click', function (e) {
+          console.log('T3 link clicked');
           e.preventDefault();
           this.classList.add('active');
           this.setAttribute('aria-expanded', 'true');
           this.parentElement.querySelector('.sub-sub-dropdown-menu').classList.add('showsubsub');
-          this.parentElement.parentElement.classList.add('deeper');
         });
       }
 
@@ -75,7 +76,6 @@ $(window).on('load', function () {
       t2RemoveActive[nsn].addEventListener('click', function () {
         $(subnav).removeClass('active').attr('aria-expanded', 'false');
         this.parentElement.classList.remove('showsub');
-        $(this).parent().parent().parent().removeClass('deeper');
         $(this).parent().parent().parent().addClass('show');
       });
     }
@@ -85,7 +85,6 @@ $(window).on('load', function () {
       t3RemoveActive[nsn].addEventListener('click', function () {
         $(subsubnav).removeClass('active').attr('aria-expanded', 'false');
         this.parentElement.classList.remove('showsubsub');
-        $(this).parent().parent().parent().removeClass('deeper');
       });
     }
 
@@ -94,7 +93,7 @@ $(window).on('load', function () {
       if ($(navbarCollapse).hasClass('show')) {
         $(t1Navlink).removeClass('active');
         $(t1NavContainers).attr('aria-expanded', 'false');
-        $(t1DropdownMenu).removeClass('show deeper');
+        $(t1DropdownMenu).removeClass('show');
         $(subnav).removeClass('active').attr('aria-expanded', 'false');
         $(subnavmenu).removeClass('showsub');
         $(navbarCollapse).addClass('mobile-navbar-collapse-onscroll');
@@ -110,7 +109,7 @@ $(window).on('load', function () {
     $(closenav).on('click', () => {
       $(t1Navlink).removeClass('active');
       $(t1NavContainers).attr('aria-expanded', 'false');
-      $(t1DropdownMenu).removeClass('show deeper');
+      $(t1DropdownMenu).removeClass('show');
       $(subnav).removeClass('active').attr('aria-expanded', 'false');
       $(subnavmenu).removeClass('showsub');
     });
