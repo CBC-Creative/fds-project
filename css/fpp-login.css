@@ -2,8 +2,13 @@
   padding: 30px 0px;
 }
 
+#main-footer {
+  border-top: none;
+}
+
 section h1 {
-  font-weight: 700;
+  font-size: 31px;
+  font-weight: 500;
 }
 
 .form-group {
@@ -38,12 +43,68 @@ section h1 {
   color: var(--fds-black);
   line-height: var(--fds-fs-350);
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .checkoutsubmit {
-  color: var(--fds-black);
+  color: #fff !important;
+  background-color: #000 !important;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 24px;
+  width: 220px;
+}
+
+.form-footer-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.login-page-img {
+  height: 225px;
+}
+
+.footer-nav-firstbar {
+  display: none;
+}
+
+.login-options {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .login-page-logo {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-nav-firstbar {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1277px) {
+  .footer-nav-firstbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1278px) {
+  .footer-nav-firstbar {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .login-page-img,
+  .login-page-wrapper {
+    height: 100vh;
+  }
+
+  .login-page-logo {
+    width: 180px;
+  }
 }

@@ -21,7 +21,6 @@
     width: calc(100% - 2rem);
     margin-bottom: 0 !important;
     position: relative;
-    isolation: isolate;
   }
 
   .navbar-collapse {

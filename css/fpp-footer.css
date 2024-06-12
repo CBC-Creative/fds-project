@@ -1,0 +1,13 @@
+#main-footer {
+  background-color: #000;
+}
+
+.footer-social-row svg {
+  fill: #fff;
+}
+
+.footer-fine-print {
+  font-size: var(--fds-fs-100);
+  font-weight: bold;
+  color: #fff;
+}
