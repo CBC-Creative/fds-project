@@ -24,6 +24,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/fpp-nav.css" />
     <link rel="stylesheet" href="css/fpp-footer.css" />
+    <link rel="stylesheet" href="css/fpp-account-launch-page.css" />
   </head>
 
   <body class="position-relative">
@@ -50,11 +51,11 @@
             <a class="d-block d-xl-none search-dropdown position-relative" href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" class="search-icon svg-icons-serach" width="16.884" height="16.884" viewBox="0 0 16.884 16.884">
                 <g id="Group_2749" data-name="Group 2749" transform="translate(2180 24666)">
-                  <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(-2180 -24666)" fill="none" stroke="#000" stroke-width="1.25">
+                  <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(-2180 -24666)" fill="none" stroke-width="1.25">
                     <circle cx="7" cy="7" r="7" stroke="none" />
                     <circle cx="7" cy="7" r="6.375" fill="none" />
                   </g>
-                  <line id="FrontLine2" x2="4" y2="4" transform="translate(-2168 -24654)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.25" />
+                  <line id="FrontLine2" x2="4" y2="4" transform="translate(-2168 -24654)" fill="none" stroke-linecap="round" stroke-width="1.25" />
                   <line id="FrontLine1" x1="1" y2="1" transform="translate(-2169 -24655)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.25" opacity="0" />
                 </g>
               </svg>
@@ -1706,10 +1707,28 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                   <div class="account-badge">FR</div>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn d-xl-none"><i class="fas fa-angle-left"></i> Contact</div>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Service Support</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Registration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Manuals & Downloads</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">FAQs</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Subscribe</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <button class="nav-link flag-nav-link" href="#" id="navbarDropdownMenuLink" data-mdb-toggle="modal" data-mdb-target="#countrySelectorModal" data-bs-config="{backdrop:true}">
@@ -1725,31 +1744,6 @@
             <!-- Mobile Right elements -->
             <div id="mobileRightNav" class="right-nav d-flex align-items-center">
               <!-- Icon -->
-              <li class="nav-item search-dropdown d-xl-block d-none">
-                <a class="nav-link stroke-svg" href="javascript:;" id="navbarDropdownMenuLink" role="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="search-icon svg-icons-serach" width="16.884" height="16.884" viewBox="0 0 16.884 16.884">
-                    <g id="Group_2749" data-name="Group 2749" transform="translate(2180 24666)">
-                      <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(-2180 -24666)" fill="none" stroke-width="1.25">
-                        <circle cx="7" cy="7" r="7" stroke="none" />
-                        <circle cx="7" cy="7" r="6.375" fill="none" />
-                      </g>
-                      <line id="FrontLine2" x2="4" y2="4" transform="translate(-2168 -24654)" fill="none" stroke-linecap="round" stroke-width="1.25" />
-                      <line id="FrontLine1" x1="1" y2="1" transform="translate(-2169 -24655)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.25" opacity="0" />
-                    </g>
-                  </svg>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" class="close-icon svg-icons-serach" width="16.884" height="16.884" viewBox="0 0 17.768 17.768">
-                    <g id="Group_2246" data-name="Group 2246" transform="translate(2180.884 24666.884)">
-                      <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(-2173 -24659)" fill="none" stroke="#000" stroke-width="1.25" opacity="0">
-                        <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
-                        <circle cx="0.5" cy="0.5" r="0.125" fill="none" />
-                      </g>
-                      <line id="FrontLine2" x2="16" y2="16" transform="translate(-2180 -24666)" fill="none" stroke="#fdb913" stroke-linecap="round" stroke-width="1.25" />
-                      <line id="FrontLine1" x1="16" y2="16" transform="translate(-2180 -24666)" fill="none" stroke="#fdb913" stroke-linecap="round" stroke-width="1.25" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
               <li class="nav-item main-dropdown">
                 <span class="serviceMarkLink nav-link main-dropdown-toggle stroke-svg" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                   <img class="serviceMark questionBlack" src="./img/ServiceMark.svg" alt="question mark icon" />
@@ -1774,11 +1768,30 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
+              <li class="nav-item main-dropdown">
+                <span class="nav-link main-dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                   <div class="account-badge">FR</div>
-                </a>
+                </span>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="mobile-back-btn t1-back-btn right-nav-back-btn"><i class="fas fa-angle-left"></i> Account</div>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Service Support</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Registration</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Manuals & Downloads</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">FAQs</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Subscribe</a>
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <button class="nav-link flag-nav-link" href="#" id="navbarDropdownMenuLink" data-mdb-toggle="modal" data-mdb-target="#countrySelectorModal" data-bs-config="{backdrop:true}">
                   <img src="/img/flags/United States.svg" alt="An image of the United States Flag" class="flag-svg" />
@@ -1968,7 +1981,43 @@
     <main id="primary-content" class="position-relative">
       <!-- Start your project here-->
 
-Content goes here
+      <section class="my-0 my-lg-5 p-4 p-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="acc-welcome-wrapper col-12 col-lg-6 px-0 pe-lg-5 pb-4 pb-lg-0">
+              <img src="./img/partner-portal-update-imgs/account-landing-header.jpg" alt="Woman sitting in the lobby of a Fellowes Building" class="d-block w-100 mb-4">
+              <div class="acc-welcome">
+                <div class="acc-welcome__subtitle">Welcome to the Fellowes Partner Portal</div>
+                <h1 class="acc-welcome__title">MCLAIN GROUP INC</h1>
+              </div>
+              <div class="acc-links">
+                <a href="#" class="acc-link-item">My Account</a>
+                <a href="#" class="acc-link-item">My Orders</a>
+                <a href="#" class="acc-link-item">Customer Service</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 ps-lg-5 pt-4 pt-lg-0">
+              <div class="catres-title">Category Resources</div>
+              <a href="#" class="catres-item">
+                <img class="catres-item-img" src="./img/partner-portal-update-imgs/aqm-nav-img.png" alt="Image of an Air purifier hanging from the ceiling">
+                <div class="catres-item-desc">Air Quality Management</div>
+              </a>
+              <a href="#" class="catres-item">
+                <img class="catres-item-img" src="./img/partner-portal-update-imgs/as-nav-img.png" alt="Image of a glass-walled office">
+                <div class="catres-item-desc">Architectural Solutions</div>
+              </a>
+              <a href="#" class="catres-item">
+                <img class="catres-item-img" src="./img/partner-portal-update-imgs/ci-nav-img.png" alt="Image of dual monitor arms attached to a desk">
+                <div class="catres-item-desc">Contract Interiors</div>
+              </a>
+              <a href="#" class="catres-item">
+                <img class="catres-item-img" src="./img/partner-portal-update-imgs/bm-nav-img.png" alt="Image of woman working at a desk">
+                <div class="catres-item-desc">Business Products</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- End your project here-->
     </main>

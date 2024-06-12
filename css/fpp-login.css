@@ -72,6 +72,10 @@ section h1 {
   gap: 0.5rem;
 }
 
+.login-form-section {
+  align-self: center;
+}
+
 @media (max-width: 991px) {
   .login-page-logo {
     position: absolute;
