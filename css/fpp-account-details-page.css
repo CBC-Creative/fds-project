@@ -82,6 +82,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  justify-content: center;
 }
 
 .resource-column {
@@ -159,7 +160,7 @@
   }
 
   .resource-column-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 48%);
     gap: 1rem;
     padding-inline: 0 !important;
   }
@@ -181,7 +182,7 @@
   }
 
   .resource-column-wrapper {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 24%);
     gap: 1rem;
   }
 }
