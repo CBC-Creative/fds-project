@@ -1,0 +1,187 @@
+.banner-text__header {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.header-banner-section img {
+  height: 168px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.header-banner-text {
+  left: 1em;
+  bottom: 0.5em;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block: 3rem;
+  width: 90%;
+  max-width: 1160px;
+  margin-inline: auto;
+  gap: 1.5rem;
+}
+
+.action-grid__item {
+  border: 2px solid #e2e2e2;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  padding: 0.5rem;
+}
+
+.action-grid__item:hover,
+.action-grid__item:focus-visible,
+.action-grid__item:active {
+  border-color: #000;
+}
+
+.separator-container {
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.action-grid__icon {
+  max-height: 35px;
+  margin-bottom: 1rem;
+}
+
+.action-grid__title {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.action-grid__btn {
+  color: #000;
+  font-size: 8px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.resources-section {
+  padding-block: 3rem;
+}
+
+.resources-section-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resource-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.resource-column {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.resource-column h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.resource-column-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resource-column-list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.resource-column-list-item img {
+  width: 100%;
+  max-width: 25px;
+}
+
+@media (min-width: 576px) {
+  .action-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-text__header {
+    font-size: 40px;
+  }
+
+  .header-banner-text {
+    left: 3em;
+    bottom: 2em;
+  }
+
+  .header-banner-section img {
+    height: 260px;
+  }
+
+  .action-grid {
+    gap: 2rem;
+  }
+
+  .action-grid__item {
+    padding: 1rem;
+  }
+
+  .action-grid__icon {
+    max-height: 60px;
+  }
+
+  .action-grid__title {
+    font-size: 21px;
+  }
+
+  .action-grid__btn {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .resources-section {
+    padding-block: 4rem;
+  }
+
+  .resource-column-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-inline: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .action-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-block: 3rem;
+    gap: 3rem;
+  }
+
+  .resources-section {
+    padding-block: 5rem;
+  }
+
+  .resources-section-title {
+    margin-bottom: 4rem;
+  }
+
+  .resource-column-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Partner Portal Account Page</title>
+    <title>Partner Portal Homepage</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/Favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -12,7 +12,7 @@
     <!-- Google Fonts Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <!-- MDB ESSENTIAL -->
     <link rel="stylesheet" href="css/mdb-css/mdb.min.css" />
     <!-- MDB PLUGINS -->
@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="/css/core.css" />
     <link rel="stylesheet" href="/css/desktop.css" />
     <link rel="stylesheet" href="/css/mobile.css" />
-    <!-- Custom Styles -->
+    <!-- FPP Styles -->
     <link rel="stylesheet" href="css/fpp-nav.css" />
     <link rel="stylesheet" href="css/fpp-footer.css" />
-    <link rel="stylesheet" href="css/fpp-account-launch-page.css" />
+    <link rel="stylesheet" href="css/fpp-account-details-page.css" />
   </head>
 
   <body class="position-relative">
@@ -1979,47 +1979,292 @@
     </div>
 
     <main id="primary-content" class="position-relative">
-      <!-- Start your project here-->
 
-      <section class="my-0 my-lg-5 p-4 p-lg-5">
-        <div class="container">
-          <div class="row">
-            <div class="acc-welcome-wrapper col-12 col-lg-6 offset-lg-1 px-0 pe-lg-5 pb-4 pb-lg-0">
-              <img src="./img/partner-portal-update-imgs/account-landing-header.jpg" alt="Woman sitting in the lobby of a Fellowes Building" class="d-block w-100 mb-4">
-              <div class="acc-welcome">
-                <div class="acc-welcome__subtitle">Welcome to the Fellowes Partner Portal</div>
-                <h1 class="acc-welcome__title">MCLAIN GROUP INC</h1>
-              </div>
-              <div class="acc-links">
-                <a href="#" class="acc-link-item">My Account</a>
-                <a href="#" class="acc-link-item">My Orders</a>
-                <a href="#" class="acc-link-item">Customer Service</a>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 px-0 ps-lg-5 pt-4 pt-lg-0">
-              <div class="catres-title">Category Resources</div>
-              <a href="#" class="catres-item">
-                <img class="catres-item-img" src="./img/partner-portal-update-imgs/aqm-nav-img.png" alt="Image of an Air purifier hanging from the ceiling">
-                <div class="catres-item-desc">Air Quality Management</div>
-              </a>
-              <a href="#" class="catres-item">
-                <img class="catres-item-img" src="./img/partner-portal-update-imgs/as-nav-img.png" alt="Image of a glass-walled office">
-                <div class="catres-item-desc">Architectural Solutions</div>
-              </a>
-              <a href="#" class="catres-item">
-                <img class="catres-item-img" src="./img/partner-portal-update-imgs/ci-nav-img.png" alt="Image of dual monitor arms attached to a desk">
-                <div class="catres-item-desc">Contract Interiors</div>
-              </a>
-              <a href="#" class="catres-item">
-                <img class="catres-item-img" src="./img/partner-portal-update-imgs/bm-nav-img.png" alt="Image of woman working at a desk">
-                <div class="catres-item-desc">Business Products</div>
-              </a>
-            </div>
-          </div>
+      <!-- Main Banner Begins -->
+      <section class="header-banner-section position-relative dark-img-overlay">
+        <img
+          src="./img/partner-portal-update-imgs/detail-page-desktop-header.jpg"
+          class="img-fluid w-100 d-none d-sm-block"
+        />
+        <img
+          src="./img/partner-portal-update-imgs/detail-page-mobile-header.jpg"
+          class="img-fluid w-100 d-sm-none"
+        />
+        <div class="header-banner-text">
+          <h1 class="banner-text__header">Contract Interiors</h1>
         </div>
       </section>
 
-      <!-- End your project here-->
+      <!-- Quick Action Section Begins -->
+      <section class="action-grid">
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-checkmark.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">My Orders</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">View Orders History</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-salesorder.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Sales Order Portal<br>(CPQ)</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Take Me There</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-trendealer.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Trendealer</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Take Me There</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-designrequest.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Design Request</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Submit Design Request</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-brochure.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Literature & Samples Fulfillment</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Take Me There</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-calendar.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Fellowes Design & Experience Center</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Take Me There</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-markerboard.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Markerboard ID</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Take Me There</div>
+          </div>
+        </a>
+        <a href="#" class="action-grid__item">
+          <div class="separator-container"></div>
+          <div class="upper-container">
+            <img class="action-grid__icon" src="./img/partner-portal-update-imgs/icon-rising.svg" alt="My Account Icon" />
+            <h3 class="action-grid__title">Rising ID</h3>
+          </div>
+          <div class="btn-container">
+            <div class="action-grid__btn">Take Me There</div>
+          </div>
+        </a>
+      </section>
+
+      <!-- Resources Section -->
+       <section class="resources-section fds-tan-bg">
+        <div class="container">
+          <h2 class="resources-section-title">Contract Interior Resources</h2>
+          <div class="resource-column-wrapper px-4">
+            <div class="resource-column">
+              <h3>Product Information</h3>
+              <ul class="resource-column-list">
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resource-column">
+              <h3>Support Resources</h3>
+              <ul class="resource-column-list">
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resource-column">
+              <h3>Marketing & Promotion</h3>
+              <ul class="resource-column-list">
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resource-column">
+              <h3>Design Resources</h3>
+              <ul class="resource-column-list">
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+                <li class="resource-column-list-item">
+                  <img src="./img/partner-portal-update-imgs/icon-resources.svg" alt="Resource Icon">
+                  <div class="resource-title">
+                    Spec Sheet
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- Recent stories Section Ends -->
     </main>
 
     <!-- Global Footer Start -->

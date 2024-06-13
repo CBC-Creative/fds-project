@@ -3,6 +3,10 @@
   border-bottom-color: var(--fds-black);
 }
 
+.bodynavfixedtop {
+  background-color: black;
+}
+
 .navbar .navbar-brand svg {
   fill: var(--fds-white);
   -webkit-transition: all 0.5s ease-in-out;
