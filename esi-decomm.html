@@ -2283,9 +2283,48 @@
           class="edi-link link-underlined text-center text-black d-block mt-3 mt-lg-4 position-relative"
           >Go to Fellowes.com</a
         >
+        <a
+          href="javascript:;"
+          class="edi-link link-underlined text-center text-black d-block mt-3 mt-lg-4 position-relative"
+          data-mdb-toggle="modal"
+          data-mdb-target="#ediVideo"
+          id="edi-modal-click"
+          >Watch Instructional Video</a
+        >
         </div>
       </section>
 
+        <!-- Modal -->
+      <div
+        class="modal fade"
+        id="ediVideo"
+        tabindex="-1"
+        aria-labelledby="ediVideoLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content rounded-0 position-relative">
+            <div
+              class="modal-header w-auto position-absolute zindex-900 bg-light rounded-circle p-2 top-neg50px end-0"
+            >
+              <button
+                type="button"
+                class="btn-close m-0 p-0"
+                data-mdb-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-0 m-0 bg-black">
+              <video id="edi-video" width="100%" controls>
+                <source
+                  src="./img/edi-imgs/portray_main_assembly_broll_2b_16-9_1080p (1080p).mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- End your project here-->
     </main>
 
@@ -2684,5 +2723,7 @@
     <script type="text/javascript" src="/js/core.js"></script>
     <script type="text/javascript" src="/js/desktop.js"></script>
     <script type="text/javascript" src="/js/mobile.js"></script>
+    <script type="text/javascript" src="/js/edi.js"></script>
+    
   </body>
 </html>
