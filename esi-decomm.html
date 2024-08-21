@@ -2314,13 +2314,20 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body p-0 m-0 bg-black">
+            <div class="modal-body p-0 m-0 bg-black position-relative">
               <video id="edi-video" width="100%" controls>
                 <source
                   src="./img/edi-imgs/portray_main_assembly_broll_2b_16-9_1080p (1080p).mp4"
                   type="video/mp4"
                 />
               </video>
+              <div class="video-play-wrapper">
+                <img src="img/company-portray/banner_image_desktop.jpg" class="img-fluid w-100 d-none d-md-block" />
+                <div class="video-icon">
+                  <img src="./img/company-portray/play-btn.svg" alt="Play Icon">
+                  <p id="portrayHeaderVidLabel" class="visually-hidden">Watch the full video</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
