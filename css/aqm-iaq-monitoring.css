@@ -112,6 +112,10 @@
   font-size: 9px;
 }
 
+.topic-img-container {
+  margin-top: 3rem;
+}
+
 @media (min-width: 576px) {
   .iaq-quote-icon-left {
     left: -1.5rem;
@@ -179,6 +183,10 @@
 
   .doc-ref-footer {
     font-size: 15px;
+  }
+
+  .topic-img-container {
+    margin-top: 4rem;
   }
 }
 
