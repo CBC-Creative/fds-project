@@ -1,0 +1,200 @@
+.mw-766 {
+  max-width: 766px;
+  margin-inline: auto;
+}
+
+.banner-text__subtitle {
+  font-size: var(--fds-fs-700);
+}
+
+.iaq-page-h2 {
+  font-size: var(--fds-fs-450);
+}
+
+.iaq-topics-wrapper {
+  display: grid;
+  row-gap: 2rem;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.iaq-topics-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+}
+
+.iaq-topic-description {
+  font-size: var(--fds-fs-300);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.iaq-topic-img {
+  width: 100%;
+  display: block;
+  max-width: 40px;
+}
+
+.iaq-section-title {
+  font-size: var(--fds-fs-750);
+  margin-bottom: 1.25rem;
+  color: var(--fds-blue);
+}
+
+.iaq-source-link {
+  font-size: var(--fds-fs-300);
+  color: var(--fds-blue);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.iaq-source-link:hover,
+.iaq-source-link:focus,
+.iaq-source-link:active {
+  color: var(--fds-yellow);
+}
+
+.iaq-quote-text-wrapper {
+  max-width: 740px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.iaq-quote-text {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.iaq-quote-icon {
+  display: block;
+  width: 100%;
+  max-width: 18px;
+}
+
+.iaq-quote-icon-left {
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+
+.iaq-quote-icon-right {
+  position: absolute;
+  bottom: 0;
+  right: -1rem;
+  transform: rotate(180deg);
+}
+
+.doctor-reference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 1.5rem;
+  line-height: 1.4;
+}
+
+.doc-ref-text {
+  font-size: 12px;
+}
+
+.doc-ref-img {
+  display: block;
+  width: 100%;
+  max-width: 28px;
+}
+
+.doc-ref-footer {
+  font-style: italic;
+  font-size: 9px;
+}
+
+@media (min-width: 576px) {
+  .iaq-quote-icon-left {
+    left: -1.5rem;
+  }
+
+  .iaq-quote-icon-right {
+    right: -1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-text__subtitle {
+    font-size: var(--fds-fs-905);
+  }
+
+  .iaq-page-h2 {
+    font-size: var(--fds-fs-775);
+  }
+
+  .iaq-topic-description {
+    font-size: var(--fds-fs-350);
+  }
+
+  .iaq-topics-wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    width: 100%;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+  }
+
+  .iaq-section-title {
+    font-size: var(--fds-fs-850);
+  }
+
+  .iaq-quote-text {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+
+  .iaq-quote-icon {
+    max-width: 40px;
+  }
+
+  .iaq-quote-icon-left {
+    left: -3rem;
+  }
+
+  .iaq-quote-icon-right {
+    right: -3rem;
+  }
+
+  .doctor-reference {
+    gap: 2rem;
+    margin-block: 2.5rem;
+  }
+
+  .doc-ref-text {
+    font-size: 23px;
+  }
+
+  .doc-ref-img {
+    max-width: 56px;
+  }
+
+  .doc-ref-footer {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .iaq-source-link {
+    margin-bottom: 0px;
+  }
+  .iaq-quote-icon {
+    max-width: 50px;
+  }
+
+  .iaq-quote-icon-left {
+    left: -5rem;
+  }
+
+  .iaq-quote-icon-right {
+    right: -4rem;
+  }
+}

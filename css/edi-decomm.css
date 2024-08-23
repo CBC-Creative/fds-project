@@ -107,6 +107,12 @@
   .edi-page-text {
     font-size: var(--fds-fs-325);
   }
+
+  .modal-dialog {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 768px) {
