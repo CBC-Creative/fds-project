@@ -3,14 +3,17 @@ $(window).on('load', function () {
   myModal.toggle();
 
   let videoPlay = document.querySelector('.video-play-wrapper');
-  let videoPauseCTA = document.querySelector('.video-pause-cta');
+
   if (videoPlay) {
     let ediVid = document.querySelector('#edi-video');
+    let videoPauseCTA = document.querySelector('.video-pause-cta');
     $(videoPlay).click(function () {
       $(ediVid).trigger('play');
     });
     $(ediVid).on('play', function () {
       $(videoPlay).addClass('hide');
+      $(ediVid).removeClass('hide');
+      $(videoPauseCTA).removeClass('show');
     });
     $(ediVid).on('ended', function () {
       $(ediVid).addClass('hide');
