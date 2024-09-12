@@ -649,6 +649,258 @@
   background-color: var(--fds-blue);
 }
 
+.tabbed-content-section {
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+.tabbed-content-header {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fds-blue);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.tabbed-content-tabs .nav-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.25rem;
+  row-gap: 0.75rem;
+}
+
+.tabbed-content-tabs .nav-link {
+  border-bottom: none;
+  background-color: var(--fds-blue);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabbed-content-tabs .nav-link::after {
+  display: none !important;
+}
+
+.tabbed-content-tabs .nav-link.active {
+  background-color: var(--fds-yellow);
+  color: black;
+}
+
+.tabbed-content-tabs .nav-link:hover {
+  background-color: var(--fds-tan);
+  color: black;
+}
+
+.tabbed-content-tabs .nav-link svg {
+  fill: #fff;
+  display: block;
+  height: 100%;
+  min-height: 15px;
+  max-height: 15px;
+  width: 100%;
+  max-width: 15px;
+}
+
+.tabbed-content-tabs .nav-link.active svg {
+  fill: #000;
+}
+
+.tabbed-content-tabs .nav-link:hover svg {
+  fill: #000;
+}
+
+.tabbed-nav-item-text {
+  font-size: 8px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.tabbed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabbed-header-text {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--fds-blue);
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tabbed-header svg {
+  fill: var(--fds-blue);
+  min-height: 36px;
+}
+
+.tabbed-subheader {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--fds-blue);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tabbed-subheader:first-child {
+  margin-top: 0;
+}
+
+.tabbed-list {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.tabbed-list-item {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--fds-blue);
+}
+
+.tabbed-list-item::marker {
+  font-size: x-large;
+  color: var(--fds-blue);
+}
+
+.tabbed-content-text {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--fds-blue);
+}
+
+.tabbed-content-img {
+  display: block;
+  width: 100%;
+}
+
+.co2-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 0.5rem;
+}
+
+.co2-grid-header {
+  background-color: var(--fds-blue);
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+}
+
+.co2-grid-level {
+  font-size: 13px;
+  line-height: 1;
+  color: var(--fds-blue);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.co2-grid-guidance {
+  font-size: 11px;
+  line-height: 1;
+  color: var(--fds-blue);
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  background-color: #fff;
+  height: 100%;
+}
+
+.hvac-diagram-block {
+  padding: 2.5rem 1.5rem;
+}
+
+.diagram-block-header {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--fds-blue);
+  margin-bottom: 1.5rem;
+}
+
+.diagram-block-stat {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--fds-blue);
+}
+
+.diagram-block-img {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.scientific-section-title {
+  max-width: 780px;
+  margin-inline: auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--fds-blue);
+}
+
+.scientific-section-desc {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.scientific-points-section {
+  margin-top: 3rem;
+  padding: 2rem 1.5rem;
+}
+
+.sci-point-item {
+  gap: 1rem;
+  display: flex;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.sci-point-icon {
+  display: block;
+  width: 100%;
+  max-width: 28px;
+}
+
+.sci-point-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--fds-blue);
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.sci-point-desc {
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 500;
+  color: var(--fds-blue);
+}
+
 @media (min-width: 576px) {
   .iaq-quote-icon-left {
     left: -1.5rem;
@@ -656,6 +908,17 @@
 
   .iaq-quote-icon-right {
     right: -1.5rem;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .particulate-tab-header {
+    max-width: 210px;
+  }
+
+  .hvac-last-section-header {
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
@@ -899,6 +1162,80 @@
     font-size: 13px;
     line-height: 20px;
   }
+
+  .tabbed-content-section {
+    padding: 2rem 3rem;
+    border-radius: 23px;
+  }
+
+  .tabbed-content-header {
+    font-size: 19px;
+    margin-bottom: 2rem;
+  }
+
+  .tabbed-content-tabs .nav-tabs {
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+  }
+
+  .tabbed-nav-item-text {
+    font-size: 17px;
+  }
+
+  .tabbed-content-tabs .nav-link {
+    padding: 0.5rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .tabbed-content-tabs .nav-link svg {
+    height: 100%;
+    min-height: 30px;
+    max-height: 30px;
+    width: 100%;
+    max-width: 30px;
+  }
+
+  .tabbed-header-text {
+    font-size: 24px;
+  }
+
+  .tabbed-subheader {
+    font-size: 23px;
+  }
+
+  .tabbed-list-item,
+  .tabbed-content-text {
+    font-size: 15px;
+  }
+
+  .co2-grid-header {
+    font-size: 17px;
+    padding: 1rem 1rem;
+  }
+
+  .co2-grid-level {
+    font-size: 17px;
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  .hvac-diagram-block {
+    padding: 2.5rem 2.5rem;
+  }
+
+  .diagram-block-header {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    max-width: 390px;
+    margin-inline: auto;
+  }
+
+  .diagram-block-stat {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 991.9px) {
@@ -1033,6 +1370,7 @@
   .btn-white {
     margin-top: 1.5rem;
     margin-inline: unset;
+    margin-bottom: 1.5rem;
   }
 
   .pyramid-cta-text {
@@ -1046,5 +1384,82 @@
 
   .pyramid-cta-btn {
     margin-inline: unset;
+  }
+
+  .tabbed-header-text {
+    font-size: 24px;
+  }
+
+  .diagram-block-img {
+    margin-top: -2rem;
+  }
+
+  .diagram-block-stat {
+    text-align: start;
+  }
+
+  .diagram-block-top-stat {
+    max-width: 315px;
+  }
+
+  .scientific-section-text {
+    background-color: var(--fds-grey-200);
+  }
+
+  .scientific-section-title {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .scientific-section-desc {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 730px;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .scientific-points-section {
+    margin-top: 3rem;
+    padding: 0rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .sci-point-item {
+    margin-bottom: 0;
+    background-color: #fff;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(33% - 0.5rem);
+    text-align: center;
+  }
+
+  .sci-point-icon {
+    max-width: 58px;
+  }
+
+  .sci-point-title {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sci-point-desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .diagram-block-img {
+    margin-top: -6rem;
   }
 }
