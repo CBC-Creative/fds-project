@@ -42,11 +42,14 @@ svg.search-icon.svg-icons-serach {
 
 .navbar .right-nav li:last-child .nav-link {
   color: var(--fds-white);
-  margin-left: 1.5rem !important;
 }
 
 .navbar .right-nav li:last-child .nav-link:hover {
   color: var(--fds-white);
+}
+
+.navbar .right-nav li:last-child .nav-link::after {
+  display: none;
 }
 
 .navbar .right-nav .nav-link {
@@ -198,5 +201,13 @@ svg.search-icon.svg-icons-serach {
 
   .sub-dropdown-menu-title {
     color: var(--fds-white);
+  }
+
+  .navbar .right-nav .dropdown-menu {
+    left: -105px;
+  }
+
+  .nav-cat-intro-text {
+    color: #fff;
   }
 }
