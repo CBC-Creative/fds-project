@@ -197,8 +197,20 @@
 
 .dbui-results-table thead th {
   font-size: 10px;
-  padding: 0.25rem 0.5rem;
+  padding: 0rem 0.5rem;
   font-weight: 700;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.dbui-results-table .form-check.check-all .form-check-input {
+  margin-top: 0;
+}
+
+.dbui-results-table .form-check.check-all {
+  display: flex;
+  align-items: center;
+  height: 15px;
 }
 
 .dbui-results-table > :not(caption) > * > * {
@@ -254,10 +266,29 @@
   margin-bottom: 0;
 }
 
+td.table-icon {
+  padding: 1rem 0.25rem;
+}
+
+.table-icon-img-wrapper {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.table-icon-img-wrapper:hover,
+.table-icon-img-wrapper:focus {
+  background-color: var(--fds-yellow);
+}
+
 .table-icon img {
   width: 15px;
   opacity: 0.6;
-  cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -268,6 +299,11 @@
 
 tbody tr {
   border-bottom: 1px solid rgba(226, 226, 226, 0.795);
+  transition: background-color 0.3s ease-in-out;
+}
+
+tbody tr.selected {
+  background-color: #e0ffff7d;
 }
 
 .item-title-col {
