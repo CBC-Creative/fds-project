@@ -1,0 +1,238 @@
+/* Subcategory-horizontal-CI Styles */
+
+.results-section-counter {
+  margin-bottom: 1rem;
+}
+
+.plp-inner-wrapper {
+  padding-inline: 1rem;
+}
+
+.plp-ci-item {
+  border-block-end: 1px solid var(--fds-grey-400);
+  padding: 2rem 1rem;
+}
+
+.plp-ci-item__title-section {
+  margin-block-end: 1rem;
+}
+
+.ci-prod-name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ci-prod-category {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.plp-ci-item__price {
+  margin-block-end: 1.5rem;
+}
+
+.ci-prod-price {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+span.ci-prod-list-aftertext {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.plp-ci-item__description {
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.ci-item-desc-snippet {
+  font-size: 14px;
+  line-height: 20px;
+  border-block-end: 1px solid var(--fds-grey-400);
+  margin-bottom: 0.5rem;
+}
+
+.ci-item-desc-list {
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.plp-ci-item__model {
+  margin-block-end: 1.5rem;
+}
+
+.model-num-txt {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.plp-ci-item__model-num {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.clr-picker-label {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: unset;
+}
+
+.clr-picker-circle {
+  width: 19px;
+  aspect-ratio: 1;
+}
+
+.plp-ci-item__colors .btn-check:checked + .btn {
+  color: var(--mdb-btn-active-color);
+  background-color: var(--mdb-btn-active-bg);
+  border-color: #5c5c5c;
+  box-shadow: var(--mdb-btn-active-shadow);
+}
+
+.bg-silver {
+  background-color: #e2e2e2;
+}
+
+.plp-ci-item__colors {
+  margin-block-end: 1.5rem;
+}
+
+.options__color-selector {
+  margin-block-end: 1.5rem;
+}
+
+.plp-ci-item__color-indicator {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.plp-ci-item__button {
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  border: 1px solid #5c5c5c;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.plp-ci-item__button:hover,
+.plp-ci-item__button:focus {
+  color: #000;
+  background-color: var(--fds-yellow);
+  border-color: var(--fds-yellow);
+}
+
+.options__color-selector.placeholder {
+  height: 30px;
+}
+
+.plp-ci-item__button.placeholder {
+  padding: 1.25rem 3.5rem;
+}
+
+.series-filter-item {
+  background-color: var(--fds-tan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  opacity: 0.6;
+  border: 1px solid var(--fds-tan);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.series-filter-item.selected {
+  opacity: 1;
+  border-color: #000;
+}
+
+.series-filter-item-img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+}
+
+.series-filter-title {
+  align-self: flex-start;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.series-filter-section-wrapper {
+  padding-block: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+  gap: 1rem;
+}
+
+.results-section__title,
+.filter-series__title {
+  font-size: var(--fds-fs-325);
+  font-weight: 600;
+}
+
+.filter-label-img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-form-check-input:checked + .form-check-label .filter-label-img {
+  border-color: #000;
+}
+
+.plp-ci-section .form-check {
+  padding-inline: 0;
+}
+
+.plp-ci-section .filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+}
+
+.filter-label-text {
+  font-size: 9px;
+}
+
+@media (max-width: 767.9px) {
+  .plp-section {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-label-text {
+    font-size: 10px;
+  }
+
+  .plp-horizontal .plp-inner-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
