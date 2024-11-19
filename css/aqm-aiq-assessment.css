@@ -1,0 +1,133 @@
+.mw-990 {
+  max-width: 990px;
+  margin-inline: auto;
+}
+
+.fds-bg-lightblue {
+  background-color: #f7f7f7;
+}
+
+.aqm-aiq-banner img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-text__header {
+  font-size: 25px;
+}
+
+.header-banner-text {
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.video-play-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+#assessment-vid {
+  z-index: 10;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.video-play-wrapper.hide {
+  z-index: -1;
+  opacity: 0;
+}
+
+#assessment-vid.hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+.video-play-wrapper img {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blue_section__text {
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.aqm-signal-img {
+  display: block;
+  width: 100%;
+  max-width: 428px;
+  margin-inline: auto;
+}
+
+.aqm-signal-img {
+  display: block;
+  width: 100%;
+  max-width: 428px;
+  margin-inline: auto;
+}
+
+.blue-colored-text {
+  color: #778495;
+}
+
+.complimentary-assessment-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 500;
+}
+
+.text-column__desc {
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.form-container {
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.assessment-form-btn {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.assessment-form-btn {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 600;
+  background-color: #778495;
+  height: 46px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .header-banner-text {
+    left: 2rem;
+    bottom: 2rem;
+    right: unset;
+    max-width: unset;
+  }
+
+  .banner-text__header {
+    font-size: 65px;
+  }
+
+  .blue_section__text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
