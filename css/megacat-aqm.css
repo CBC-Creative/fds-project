@@ -185,13 +185,7 @@
   content: '';
   width: 100%;
   height: 100%;
-  background: transparent -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#000000),
-      to(#00000000)
-    ) 0% 0% no-repeat;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#000000), to(#00000000)) 0% 0% no-repeat;
   background: transparent -o-linear-gradient(left, #000000 0%, #00000000 100%) 0% 0% no-repeat;
   background: transparent linear-gradient(90deg, #000000 0%, #00000000 100%) 0% 0% no-repeat;
   position: absolute;
@@ -430,10 +424,8 @@
   left: 0;
 }
 .aqm-small-img-banner:before {
-  background: transparent -o-linear-gradient(136deg, #00000000 0%, #00000099 47%, #000000 100%) 0% 0%
-    no-repeat padding-box;
-  background: transparent linear-gradient(314deg, #00000000 0%, #00000099 47%, #000000 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent -o-linear-gradient(136deg, #00000000 0%, #00000099 47%, #000000 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(314deg, #00000000 0%, #00000099 47%, #000000 100%) 0% 0% no-repeat padding-box;
   content: '';
   width: 100%;
   height: 100%;
@@ -477,8 +469,7 @@
 .select-input.focused ~ .form-notch .form-notch-trailing,
 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
   border-color: var(--fds-black);
-  -webkit-box-shadow: 1px 0 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black),
-    0 1px 0 0 var(--fds-black);
+  -webkit-box-shadow: 1px 0 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black);
   box-shadow: 1px 0 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black);
 }
 
@@ -486,8 +477,7 @@
 .select-input.focused ~ .form-notch .form-notch-leading,
 .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
   border-color: var(--fds-black);
-  -webkit-box-shadow: -1px 0 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black),
-    0 -1px 0 0 var(--fds-black);
+  -webkit-box-shadow: -1px 0 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black);
   box-shadow: -1px 0 0 0 var(--fds-black), 0 1px 0 0 var(--fds-black), 0 -1px 0 0 var(--fds-black);
 }
 
@@ -651,6 +641,11 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   text-transform: capitalize;
+  display: block;
+  width: fit-content;
+  padding: 0.75rem 2rem;
+  margin-inline: auto;
+  margin-top: 1rem;
 }
 
 .btn-blue:first-child:hover,
@@ -658,7 +653,6 @@
 .btn-blue:hover,
 .btn-blue:focus,
 :not(.btn-check) + .btn-blue:hover {
-  background: #748597;
   color: #ffffff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1265,10 +1259,8 @@ div[role='progressbar'] {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: -o-radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
-    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
-  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
-    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  background: -o-radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
   font-size: calc(var(--size) / 5);
   color: var(--fg);
   position: relative;
