@@ -653,6 +653,7 @@
 .btn-blue:hover,
 .btn-blue:focus,
 :not(.btn-check) + .btn-blue:hover {
+  background-color: #4c89d9;
   color: #ffffff;
   -webkit-box-shadow: none;
   box-shadow: none;
