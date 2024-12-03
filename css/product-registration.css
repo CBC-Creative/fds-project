@@ -8,8 +8,8 @@
 .input-circle,
 .select-circle input {
   padding: 0.875rem 2.625rem 0.875rem 1.563rem !important;
-  border-radius: 3.125rem !important;
-  border: unset;
+  /* border-radius: 3.125rem !important;
+  border: unset; */
   background: #f7f7f7 !important;
   color: var(--fds-black) !important;
 }

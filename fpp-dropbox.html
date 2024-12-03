@@ -1947,19 +1947,21 @@
 
           <!-- DBUI Nav -->
           <div class="dbui-dropdown d-xl-none">
-            <div class="dbui-dropdown-inner">
-              <img src="./img/fpp-dropbox/icon-home.svg" alt="Icon graphic of a house" class="dbui-list-icon">
-              Home
+            <div class="form-group text-center select-circle">
+              <label class="visually-hidden" for="dbui-selector">Select a main category</label>
+              <select
+                class="select form-control-lg"
+                id="dbui-selector"
+              >
+                <option value="0">Air Quality Management</option>
+                <option value="1">Architectural Solutions</option>
+                <option value="2">Business Products</option>
+                <option value="3" selected>Contract Interiors</option>
+              </select>
             </div>
-            <i class="fa-solid fa-chevron-down"></i>
           </div>
 
           <div class="dbui-list-group list-group list-group-light">
-            <button data-dbui-content="home" type="button" class="dbui-list-group-item list-group-item list-group-item-action px-4 border-0 active"
-              aria-current="true">
-              <img src="./img/fpp-dropbox/icon-home.svg" alt="Icon graphic of a house" class="dbui-list-icon">
-              Home
-            </button>
             <button data-dbui-content="air-quality-management" type="button" class="dbui-list-group-item list-group-item list-group-item-action px-4 border-0">
               <img src="./img/fpp-dropbox/icon-aqm.png" alt="Icon graphic of an air purifier" class="dbui-list-icon">
               Air Quality Management
@@ -1972,7 +1974,7 @@
               <img src="./img/fpp-dropbox/icon-BP.png" alt="Icon graphic of a monitor arm" class="dbui-list-icon">
               Business Products
             </button>
-            <button data-dbui-content="contract-interior" type="button" class="dbui-list-group-item list-group-item list-group-item-action px-4 border-0">
+            <button data-dbui-content="contract-interior" type="button" class="dbui-list-group-item list-group-item list-group-item-action px-4 border-0 active">
               <img src="./img/fpp-dropbox/icon-aqm.png" alt="Icon graphic of a paper shredder" class="dbui-list-icon">
               Contract Interiors
             </button>
