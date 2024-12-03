@@ -81,7 +81,7 @@
 }
 
 .dbui-dropdown .form-outline .form-control ~ .form-notch .form-notch-leading {
-  width: 0px;
+  width: 0px !important;
 }
 
 .list-group-light {
