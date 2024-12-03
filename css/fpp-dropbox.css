@@ -80,6 +80,10 @@
   transform: rotate(90deg) translate(-50%, -0.5rem);
 }
 
+.dbui-dropdown .form-outline .form-control ~ .form-notch .form-notch-leading {
+  width: 0px;
+}
+
 .list-group-light {
   --mdb-list-group-color: #000;
   --mdb-list-group-bg: tranparent;
